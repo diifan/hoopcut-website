@@ -109,10 +109,11 @@ body { container-type: inline-size; }
 
 .hero .copy p { font-family: inherit; font-weight: 400; font-style: normal; letter-spacing: normal; }
 
-.footer-email { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.footer-email { display: grid; grid-template-columns: 14px auto; align-items: center; gap: 8px; white-space: nowrap; }
 .footer-mail-icon { width: 14px; height: 14px; flex: none; }
 
 .footer-contact { flex: none; display: grid; gap: 8px; }
 .footer-email { line-height: 20px; }
-.site-footer .footer-copyright { margin: 0; padding-left: 22px; line-height: 20px; white-space: nowrap; }
+.site-footer .footer-copyright { display: grid; grid-template-columns: 14px auto; align-items: center; gap: 8px; margin: 0; padding: 0; line-height: 20px; white-space: nowrap; }
+.footer-copyright-mark { text-align: center; }
 @media (max-width: 480px) { .site-footer { flex-direction: column; align-items: flex-start; gap: 22px; } }
