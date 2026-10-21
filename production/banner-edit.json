@@ -1,0 +1,46 @@
+{
+  "source": "http://192.168.0.112:8132/media/all_makes.mp4?v=5m",
+  "reels": {
+    "all": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "blue": [
+      4,
+      5,
+      6,
+      7,
+      9
+    ],
+    "red": [
+      2,
+      3
+    ],
+    "black": [
+      10
+    ]
+  },
+  "crop_windows": {
+    "1": "1520:760:360:220",
+    "2": "1920:960:0:0",
+    "3": "1520:760:360:220",
+    "4": "1520:760:360:220",
+    "5": "1520:760:360:220",
+    "6": "1520:760:360:220",
+    "7": "1520:760:360:220",
+    "8": "1920:960:0:0",
+    "9": "1520:760:360:220",
+    "10": "1760:880:80:120"
+  },
+  "output": "1600x800 / 30fps",
+  "treatment": "Spatial crop only. No added titles, transitions, selection effects or speed changes. Original shot trails retained.",
+  "attribution": "Shot 1 has known incorrect attribution and shot 8 is unassigned: both are available only in All."
+}

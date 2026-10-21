@@ -1,0 +1,189 @@
+{
+  "title": "Basketball Half Court Pickup Game",
+  "subtitle": "Tee Tong \u00b7 source 06:00\u201309:00",
+  "analyzed_range": [
+    360,
+    540
+  ],
+  "original_duration": 180,
+  "source_offset_seconds": 360,
+  "makes": 10,
+  "all_src": "media/all_makes.mp4?v=5m",
+  "original_src": "media/original_3min.mp4",
+  "poster": "media/poster.jpg",
+  "players": [
+    {
+      "id": "P252",
+      "label": "P252",
+      "makes": 2,
+      "src": "media/player_P252_gates_r2.mp4",
+      "portrait": "media/portrait_P252.jpg",
+      "shots": [
+        1,
+        10
+      ],
+      "confirmed": true
+    },
+    {
+      "id": "P452",
+      "label": "P452",
+      "makes": 2,
+      "src": "media/player_P452_gates_r2.mp4",
+      "portrait": "media/portrait_P452.jpg",
+      "shots": [
+        2,
+        3
+      ],
+      "confirmed": true
+    },
+    {
+      "id": "P52",
+      "label": "P52",
+      "makes": 5,
+      "src": "media/player_P52_gates_r2.mp4",
+      "portrait": "media/portrait_P52.jpg",
+      "shots": [
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "confirmed": true
+    },
+    {
+      "id": "UNASSIGNED",
+      "label": "\u5f85\u5f52\u5c5e",
+      "makes": 1,
+      "src": "media/player_UNASSIGNED_gates_r2.mp4",
+      "portrait": "media/portrait_UNASSIGNED.jpg",
+      "shots": [
+        8
+      ],
+      "confirmed": false
+    }
+  ],
+  "shots": [
+    {
+      "number": 1,
+      "raw": 1,
+      "result": "make",
+      "player": "P252",
+      "start_s": 27.133333333333333,
+      "end_s": 31.4,
+      "duration_s": 4.266666666666666,
+      "src": "media/shot_01.mp4?v=5m",
+      "tracer": "smoothed_measured_arc",
+      "attribution_review": "user_confirmed_wrong"
+    },
+    {
+      "number": 2,
+      "raw": 2,
+      "result": "make",
+      "player": "P452",
+      "start_s": 49.53333333333333,
+      "end_s": 55.6,
+      "duration_s": 6.06666666666667,
+      "src": "media/shot_02.mp4?v=5m",
+      "tracer": "smoothed_measured_arc",
+      "attribution_review": "new_attribution_for_review"
+    },
+    {
+      "number": 3,
+      "raw": 3,
+      "result": "make",
+      "player": "P452",
+      "start_s": 64.0,
+      "end_s": 69.23333333333333,
+      "duration_s": 5.233333333333334,
+      "src": "media/shot_03.mp4?v=5m",
+      "tracer": "smoothed_measured_arc",
+      "attribution_review": "new_attribution_for_review"
+    },
+    {
+      "number": 4,
+      "raw": 4,
+      "result": "make",
+      "player": "P52",
+      "start_s": 89.4,
+      "end_s": 94.8,
+      "duration_s": 5.3999999999999915,
+      "src": "media/shot_04.mp4?v=5m",
+      "tracer": "smoothed_measured_arc"
+    },
+    {
+      "number": 5,
+      "raw": 5,
+      "result": "make",
+      "player": "P52",
+      "start_s": 93.2,
+      "end_s": 98.06666666666666,
+      "duration_s": 4.86666666666666,
+      "src": "media/shot_05.mp4?v=5m",
+      "tracer": "smoothed_measured_arc"
+    },
+    {
+      "number": 6,
+      "raw": 6,
+      "result": "make",
+      "player": "P52",
+      "start_s": 96.26666666666667,
+      "end_s": 101.2,
+      "duration_s": 4.933333333333337,
+      "src": "media/shot_06.mp4?v=5m",
+      "tracer": "smoothed_measured_arc"
+    },
+    {
+      "number": 7,
+      "raw": 7,
+      "result": "make",
+      "player": "P52",
+      "start_s": 122.4,
+      "end_s": 127.7,
+      "duration_s": 5.299999999999997,
+      "src": "media/shot_07.mp4?v=5m",
+      "tracer": "smoothed_measured_arc"
+    },
+    {
+      "number": 8,
+      "raw": 8,
+      "result": "make",
+      "player": "UNASSIGNED",
+      "start_s": 131.33333333333334,
+      "end_s": 135.8,
+      "duration_s": 4.466666666666669,
+      "src": "media/shot_08.mp4?v=5m",
+      "tracer": "smoothed_measured_arc"
+    },
+    {
+      "number": 9,
+      "raw": 9,
+      "result": "make",
+      "player": "P52",
+      "start_s": 136.26666666666668,
+      "end_s": 141.2,
+      "duration_s": 4.933333333333309,
+      "src": "media/shot_09.mp4?v=5m",
+      "tracer": "smoothed_measured_arc"
+    },
+    {
+      "number": 10,
+      "raw": 10,
+      "result": "make",
+      "player": "P252",
+      "start_s": 160.36666666666667,
+      "end_s": 166.9,
+      "duration_s": 6.533333333333331,
+      "src": "media/shot_10.mp4?v=5m",
+      "tracer": "smoothed_measured_arc"
+    }
+  ],
+  "original_audio": false,
+  "identity_corrections": "audit/identity_overrides.json",
+  "created": 1792496643.6685479,
+  "attribution_policy": "fit_requires_measured_support",
+  "known_wrong_attribution_shots": [
+    1
+  ],
+  "identity_binding": "reused cached confirmed tracking identities; zero new model calls"
+}
