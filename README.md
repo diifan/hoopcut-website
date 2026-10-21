@@ -1,41 +1,73 @@
-# Hoopcut website
+<div align="center">
+  <img src="assets/icon.png" alt="Hoopcut app icon" width="80" />
+  <h1>Hoopcut</h1>
+  <p><strong>Your game. Your highlights.</strong></p>
+  <p>AI basketball highlights, player-focused edits, shot trajectories and scoring.<br />Less editing. More game.</p>
+  <p><a href="https://apps.apple.com/us/search?term=hoopcut">Find Hoopcut on the App Store</a> · <a href="mailto:hello@goswie.com">Contact us</a></p>
+</div>
 
-Static marketing site for Hoopcut: AI basketball highlights, player selection,
-shot trajectories and scoring.
+![Hoopcut: basketball highlights with player selection and original shot trajectories](assets/readme/hoopcut-hero.png)
 
-## Deploy
+## From a full game to the plays that matter
 
-Publish this repository's root directory using any static web host.
-No package installation, build command, environment variables or backend are required.
-The entry point is `index.html`; legal pages are `terms.html` and `privacy.html`.
-Keep the `assets/` directory and filenames intact, including the MP4 videos.
+You came to play basketball. Reliving the best moments should be easy.
 
-## Local preview
+Hoopcut helps turn basketball footage into highlights worth sharing. Find the action with AI, focus on a player, bring made shots to life with trajectory effects, and keep track of the score.
 
-```sh
-python3 -m http.server 8080
-```
+| Find your best plays | Make the edit yours |
+| --- | --- |
+| **AI highlight detection** — Find key basketball moments without scrubbing through the entire recording. | **AI editing** — Bring selected moments together into a highlight reel ready to export and share. |
+| **Player selection** — Focus on one player and watch their made shots together. | **Shot Tracer** — Visualize the ball’s flight so each shot is easier to follow. |
+| **Basketball scoring** — Keep track of the score alongside the action. | **Shareable highlights** — Take the moments that matter back to your team and group chat. |
 
-Open http://localhost:8080.
+## Follow every shot
 
-## Files
+The play, the release, the finish. Shot trajectories make the ball’s journey visible while keeping the basketball footage at the center of the edit.
 
-- `index.html`: landing page
-- `terms.html`, `privacy.html`: legal pages
-- `assets/banner.css`: responsive layout and video styling
-- `assets/banner.js`: interactive player highlights
-- `assets/navigation.js`: mobile navigation
-- `assets/video/players/`: ready-to-serve reels and posters
-- `assets/players/`: player portraits
-- `production/`: video edit and attribution metadata
-- `scripts/render_banner.py`: optional reel regeneration with Python 3 and FFmpeg
+<div align="center">
+  <a href="assets/video/players/blue.mp4">
+    <img src="assets/readme/shot-tracer.gif" alt="Basketball footage showing the ball’s highlighted trajectory toward the hoop" width="800" />
+  </a>
+  <p><a href="assets/video/players/blue.mp4">Watch the player highlight reel</a></p>
+</div>
 
-All assets needed to serve the website are included. Regenerating the reels
-requires the original 52-second source footage separately:
+## One game. Different perspectives.
 
-```sh
-python3 scripts/render_banner.py --source /path/to/all_makes.mp4
-```
+Choose the whole game’s made shots or focus on a single player. The website’s interactive banner switches between real highlight reels, so you can see what player selection looks like in practice.
 
-The local source URL recorded in production metadata is provenance only; the
-website does not fetch it during playback. No video regeneration is needed for deployment.
+<table>
+  <tr>
+    <th align="center">Blue #1</th>
+    <th align="center">Red shorts</th>
+    <th align="center">Black kit</th>
+  </tr>
+  <tr>
+    <td align="center"><a href="assets/video/players/blue.mp4"><img src="assets/players/blue.jpg" alt="Blue number one player" width="80" /></a></td>
+    <td align="center"><a href="assets/video/players/red.mp4"><img src="assets/players/red.jpg" alt="Player in red shorts" width="80" /></a></td>
+    <td align="center"><a href="assets/video/players/black.mp4"><img src="assets/players/black.jpg" alt="Player in black kit" width="80" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="assets/video/players/blue.mp4">5 made shots</a></td>
+    <td align="center"><a href="assets/video/players/red.mp4">2 made shots</a></td>
+    <td align="center"><a href="assets/video/players/black.mp4">1 made shot</a></td>
+  </tr>
+</table>
+
+[Watch all 10 made shots](assets/video/players/all.mp4) from the sample game. Two additional plays remain in the full reel without an individual player assignment.
+
+## A simple path from footage to highlights
+
+1. **Bring your game.** Import your basketball recording.
+2. **Find your moments.** Let AI help identify plays and focus on the player you want to watch.
+3. **Shape the highlight.** Build your edit and make shots stand out with trajectory effects.
+4. **Share the game.** Export the result for teammates, friends and your next post.
+
+AI detections and scores can need correction. Review your results before sharing.
+
+---
+
+<div align="center">
+  <h3>Keep the play. Share the moment.</h3>
+  <p><a href="https://apps.apple.com/us/search?term=hoopcut">Find Hoopcut on the App Store</a></p>
+  <p><a href="mailto:hello@goswie.com">hello@goswie.com</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></p>
+</div>
