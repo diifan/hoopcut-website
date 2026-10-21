@@ -61,7 +61,7 @@
     video.setAttribute('aria-busy', 'true');
     video.setAttribute('aria-label', summary() + ' with original shot trajectories');
     video.poster = `assets/video/players/${key}.jpg?v=5`;
-    video.src = `assets/video/players/${key}.mp4?v=5`;
+    video.src = key === 'all' ? 'assets/video/players/all-web.mp4?v=1' : `assets/video/players/${key}.mp4?v=5`;
     video.load();
     play();
   }));

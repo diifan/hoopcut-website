@@ -3,7 +3,7 @@
   <h1>Hoopcut</h1>
   <p><strong>Your game. Your highlights.</strong></p>
   <p>AI basketball highlights, player-focused edits, shot trajectories and scoring.<br />Less editing. More game.</p>
-  <p><a href="https://apps.apple.com/us/search?term=hoopcut">Find Hoopcut on the App Store</a> · <a href="mailto:hello@goswie.com">Contact us</a></p>
+  <p><a href="mailto:hello@goswie.com?subject=Hoopcut%20TestFlight%20access">Ask about TestFlight access</a> · <a href="mailto:hello@goswie.com">Contact us</a></p>
 </div>
 
 ![Hoopcut: basketball highlights with player selection and original shot trajectories](assets/readme/hoopcut-hero.png)
@@ -68,6 +68,6 @@ AI detections and scores can need correction. Review your results before sharing
 
 <div align="center">
   <h3>Keep the play. Share the moment.</h3>
-  <p><a href="https://apps.apple.com/us/search?term=hoopcut">Find Hoopcut on the App Store</a></p>
+  <p><a href="mailto:hello@goswie.com?subject=Hoopcut%20TestFlight%20access">Ask about TestFlight access</a></p>
   <p><a href="mailto:hello@goswie.com">hello@goswie.com</a> · <a href="https://hoopcut.ai/terms">Terms</a> · <a href="https://hoopcut.ai/privacy">Privacy</a></p>
 </div>

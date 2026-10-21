@@ -108,3 +108,8 @@ body { container-type: inline-size; }
 }
 
 .hero .copy p { font-family: inherit; font-weight: 400; font-style: normal; letter-spacing: normal; }
+
+/* Keep the product description readable across smaller screens. */
+.hero .copy p { white-space: normal; width: auto; max-width: 380px; }
+.hero .copy .store-label strong { font-size: 21px; }
+@media (max-width: 700px) { .hero .copy p { max-width: 310px; } }
