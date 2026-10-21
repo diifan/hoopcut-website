@@ -69,5 +69,5 @@ AI detections and scores can need correction. Review your results before sharing
 <div align="center">
   <h3>Keep the play. Share the moment.</h3>
   <p><a href="https://apps.apple.com/us/search?term=hoopcut">Find Hoopcut on the App Store</a></p>
-  <p><a href="mailto:hello@goswie.com">hello@goswie.com</a> · <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a></p>
+  <p><a href="mailto:hello@goswie.com">hello@goswie.com</a> · <a href="https://hoopcut.ai/terms">Terms</a> · <a href="https://hoopcut.ai/privacy">Privacy</a></p>
 </div>

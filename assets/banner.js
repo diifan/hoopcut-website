@@ -10,7 +10,7 @@
     black: { label: 'Black kit', count: 1 },
   };
   const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  let selected = 'blue';
+  let selected = 'all';
   let userPaused = motion.matches;
   let inView = true;
   let failed = false;

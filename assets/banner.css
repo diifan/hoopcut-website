@@ -98,3 +98,11 @@ body { container-type: inline-size; }
   .site-nav .nav-download { position: static; margin-top: 10px; padding: 13px 18px; text-align: center; font-size: 14px; }
   .hero { height: calc(100svh - 72px); }
 }
+
+/* Match supporting text to the surrounding brand typography. */
+.site-nav, .site-nav a, .hero .copy p, .site-footer a[href^="mailto:"] {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+}
