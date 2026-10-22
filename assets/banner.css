@@ -174,7 +174,7 @@ body { container-type: inline-size; }
 
 /* A quiet close: divider, concise message, original light download button. */
 .end { border-radius: 0; background: none; }
-@media (min-width: 701px) { .feature h2 { min-height: 3.3em; } }
+
 @media (max-width: 700px) {
   .features { padding-top: 40px; gap: 36px; }
   .features-intro { margin-bottom: 0; }
@@ -195,3 +195,34 @@ body { container-type: inline-size; }
 @media (max-width: 700px) {
   .site-nav { max-height: calc(100svh - 72px); overflow-y: auto; overscroll-behavior: contain; }
 }
+
+/* Editorial hierarchy: color marks actions; quieter labels organize content. */
+.features-intro .section-kicker, .workflow > .section-kicker, .faq .section-kicker { color: #a5a99e; letter-spacing: 1.8px; font-size: 10px; }
+.feature h2 span { color: #a5a99e; letter-spacing: 1.5px; }
+.feature h2 { letter-spacing: -.035em; line-height: 1.2; }
+.features-intro > p, .feature p, .workflow-steps p, .faq-intro p, .faq-list p { color: #b5b8ad; }
+.features-intro > p { max-width: 360px; }
+.feature .visual { border-radius: 5px; }
+.workflow-steps li { border-color: #ffffff18; }
+.workflow-steps h3 { font-weight: 600; }
+@media (min-width: 1101px) {
+  .features { column-gap: 32px; padding-bottom: 80px; }
+  .features-intro { margin-bottom: 24px; }
+  .extra-section { padding-top: 72px; padding-bottom: 72px; }
+  .workflow-steps { gap: 32px; }
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .features { column-gap: 22px; }
+  .feature h2 { font-size: clamp(19px, 2.25vw, 24px); }
+  .workflow-steps { gap: 24px; }
+  .workflow-steps h3 { font-size: 23px; }
+}
+@media (max-width: 700px) {
+  .features { row-gap: 38px; }
+  .feature h2 span { margin-bottom: 9px; }
+  .feature p, .workflow-steps p, .faq-list p { line-height: 1.75; }
+  .workflow-steps h3 { font-size: 22px; }
+}
+/* Keep the keyboard shortcut out of screenshots/scrolling until keyboard focus. */
+.skip-link:not(:focus-visible) { clip-path: inset(50%); width: 1px; height: 1px; padding: 0; overflow: hidden; white-space: nowrap; }
+.skip-link:focus-visible { transform: translateY(0); }
