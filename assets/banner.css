@@ -117,3 +117,27 @@ body { container-type: inline-size; }
 .site-footer .footer-copyright { display: grid; grid-template-columns: 14px auto; align-items: center; gap: 8px; margin: 0; padding: 0; line-height: 20px; white-space: nowrap; }
 .footer-copyright-mark { text-align: center; }
 @media (max-width: 480px) { .site-footer { flex-direction: column; align-items: flex-start; gap: 22px; } }
+
+/* Consistent editorial rhythm, accessible targets and restrained interaction. */
+::selection { background: #ff5a19; color: #10110f; }
+.skip-link { position: fixed; top: 12px; left: 12px; z-index: 100; padding: 12px 18px; border-radius: 6px; background: #f7f5ef; color: #10110f; transform: translateY(-160%); }
+.skip-link:focus { transform: translateY(0); }
+.court-stories h3, .faq-intro h2 { text-wrap: balance; }
+.court-stories p, .feature p, .faq-list p { text-wrap: pretty; }
+.court-stories article { border-color: #ffffff20; }
+.faq-list summary { padding-right: 40px; min-height: 44px; display: flex; align-items: center; }
+.faq-list summary::after { top: 50%; transform: translateY(-50%); }
+.site-nav a, .player-option, .faq-list summary { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .court-stories article { transition: border-color .2s ease, background-color .2s ease; }
+  .court-stories article:hover { border-color: #ff5a1955; background-color: #1d2019; }
+  .site-nav a { transition: color .18s ease, background-color .18s ease; }
+}
+@media (max-width: 700px) {
+  .faq-intro h2 { font-size: clamp(28px, 7.5vw, 33px); line-height: 1.16; letter-spacing: -.035em; }
+  .court-stories h3 { font-size: clamp(24px, 6.8vw, 27px); line-height: 1.2; letter-spacing: -.03em; }
+  .court-stories article { padding: 26px 24px; }
+  .player-option { width: 44px; height: 44px; }
+  .player-picker { gap: 8px; }
+  .faq-list summary { font-size: 16px; }
+}
