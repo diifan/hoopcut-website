@@ -141,3 +141,40 @@ body { container-type: inline-size; }
   .player-picker { gap: 8px; }
   .faq-list summary { font-size: 16px; }
 }
+
+/* Product storytelling: clear hierarchy, generous imagery, consistent surfaces. */
+.features { padding-top: clamp(48px, 6vw, 88px); gap: 24px; }
+.features-intro { grid-column: 1 / -1; display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; margin-bottom: 16px; }
+.features-intro h2 { margin: 16px 0 0; font-size: clamp(34px, 4vw, 58px); line-height: 1.04; letter-spacing: -.045em; }
+.features-intro > p { max-width: 330px; margin: 0 0 4px; color: #a9aca0; font-size: 15px; line-height: 1.75; }
+.feature { overflow: hidden; border: 1px solid #ffffff1c; border-radius: 14px; background: #171a14; padding-bottom: 28px; }
+.feature .visual { border-radius: 0; height: auto; aspect-ratio: 1.6; }
+.feature .visual.shot-visual { height: auto; aspect-ratio: 1.6; }
+.feature h2 { margin: 25px 24px 12px; font-size: clamp(21px, 2vw, 27px); }
+.feature p { margin: 0 24px; max-width: none; }
+.workflow h2 { max-width: 640px; text-wrap: balance; }
+.workflow-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; padding: 12px 0 0; margin: 0; list-style: none; counter-reset: none; }
+.workflow-steps li { border-top: 1px solid #ffffff24; padding-top: 24px; }
+.step-number { color: #ff6b2b; font-size: 12px; font-variant-numeric: tabular-nums; letter-spacing: 1px; }
+.workflow-steps h3 { margin: 24px 0 12px; font-size: clamp(23px, 2.4vw, 30px); letter-spacing: -.035em; }
+.workflow-steps p { margin: 0; max-width: 310px; color: #a9aca0; font-size: 14px; line-height: 1.8; }
+.end { margin-top: 12px; margin-bottom: 48px; padding: 40px; border: 1px solid #ff5a1938; border-radius: 16px; background: radial-gradient(ellipse at 0 100%, #ff5a1915, transparent 70%), #191b16; }
+.end p { font-size: clamp(30px, 3.6vw, 48px); line-height: 1.08; letter-spacing: -.045em; margin-top: 18px; }
+.end .cta { flex: none; background: #ff5a19; color: #fff; }
+.end .cta:hover { background: #e7470a; }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .feature { transition: border-color .2s ease; }
+  .feature:hover { border-color: #ff5a1960; }
+}
+@media (max-width: 700px) {
+  .features-intro { display: block; margin-bottom: 4px; }
+  .features-intro > p { margin-top: 20px; max-width: 340px; font-size: 14px; }
+  .features { gap: 24px; }
+  .feature h2 { font-size: 25px; }
+  .workflow-steps { grid-template-columns: 1fr; gap: 28px; }
+  .workflow-steps h3 { margin-top: 16px; }
+  .workflow-steps p { max-width: none; }
+  .end { padding: 32px 20px; margin-bottom: 32px; }
+  .end .cta { margin-top: 28px; }
+}
+@media (min-width: 701px) { .feature h2 { min-height: 3.5em; } }
