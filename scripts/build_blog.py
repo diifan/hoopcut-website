@@ -80,19 +80,22 @@ def article_markup(item, selected=frozenset(), checklist_key=False, worksheet_ke
     sections = []
     for index, (heading, paragraph) in enumerate(item["sections"], 1):
         sections.append(f'<section id="step-{index}"><h2>{H(heading)}</h2><p>{c(paragraph)}</p></section>')
-    checklist_title = item["keyword"].capitalize() + ": final checks" if checklist_key else "Before you export"
+    checklist_title = item["keyword"].capitalize() + ": final checks" if checklist_key else item.get("checklistTitle", "Before you export")
     table_title = item["keyword"].capitalize() + ": a working checklist" if worksheet_key else item["tableTitle"]
     sources = [("Hoopcut product overview", BASE + "/")] + item.get("sources", [])
     sources_markup = "".join(f'<li><a href="{H(url, quote=True)}">{H(label)}</a></li>' for label, url in sources)
+    demo = '<figure class="guide-demo"><video controls playsinline preload="none" poster="/assets/video/players/all.jpg" width="1600" height="800"><source src="/assets/video/players/all.mp4" type="video/mp4"></video><figcaption>Hoopcut homepage demonstration: basketball clips with shot trajectories. This is a product example, not a recording of the steps below.</figcaption></figure>' if item.get('demo') else ''
+    cta = H(item.get('ctaText', 'Explore Hoopcut'))
     return f'''<article class="post" id="article-content">
 <header class="post-heading"><p class="eyebrow">{H(item['category'])}</p><h1>{H(item['title'])}</h1>
 <p class="lede">{H(item['summary'])}</p><p class="byline">By Hoopcut · <time datetime="{DATE}">October 23, 2026</time></p></header>
 <p>{c(item['lead'])}</p>
+{demo}
 {''.join(sections)}
 <section id="checklist"><h2>{H(checklist_title)}</h2><ul class="checklist">{''.join('<li>'+H(x)+'</li>' for x in item['checklist'])}</ul></section>
-<section id="worksheet"><h2>{H(table_title)}</h2><div class="table-wrap"><table><thead><tr><th scope="col">Check</th><th scope="col">What to look for</th></tr></thead><tbody>{''.join('<tr><th scope="row">'+H(a)+'</th><td>'+H(b)+'</td></tr>' for a,b in item['rows'])}</tbody></table></div></section>
+<section id="worksheet"><h2>{H(table_title)}</h2><div class="table-wrap"><table><thead><tr><th scope="col">{H(item.get("tableHeaders", ["Check", "What to look for"])[0])}</th><th scope="col">{H(item.get("tableHeaders", ["Check", "What to look for"])[1])}</th></tr></thead><tbody>{''.join('<tr><th scope="row">'+H(a)+'</th><td>'+H(b)+'</td></tr>' for a,b in item['rows'])}</tbody></table></div></section>
 <section id="questions"><h2>Practical questions</h2>{''.join('<h3>'+c(q)+'</h3><p>'+c(a)+'</p>' for q,a in item['faq'])}</section>
-<aside class="product-note"><h2>Where Hoopcut fits</h2><p>Hoopcut is currently in TestFlight testing. It focuses on basketball editing on iPhone. Confirm access, pricing and export options before planning a project. <a href="/">Explore Hoopcut</a>.</p></aside>
+<aside class="product-note"><h2>Where Hoopcut fits</h2><p>Hoopcut is currently in TestFlight testing. It focuses on basketball editing on iPhone. Confirm access, pricing and export options before planning a project. <a href="/" data-cta="article-product">{cta}</a>.</p></aside>
 <section id="sources" class="sources"><h2>Sources and further reading</h2><ul>{sources_markup}</ul><p>Workflows and checklists are editorial guidance. External product information is not a claim of hands-on comparative testing.</p></section>
 </article>'''
 
@@ -145,7 +148,8 @@ def build():
         stat = all_stats[item['keyword']]
         same = [x for x in ARTICLES if x != item and x['category'] == item['category']]
         others = [x for x in ARTICLES if x != item and x not in same]
-        related = (same + others)[:3]
+        preferred = [next(x for x in ARTICLES if x['keyword'] == key) for key in item.get('relatedKeywords', [])]
+        related = (preferred + [x for x in same + others if x not in preferred])[:3]
         toc = ''.join(f'<a href="#step-{i}">{H(heading)}</a>' for i,(heading,_) in enumerate(item['sections'],1))
         graph = [
             {'@type':'BlogPosting','@id':url+'#article','headline':item['title'],'description':item['summary'],'url':url,'mainEntityOfPage':{'@type':'WebPage','@id':url},'datePublished':DATE+'T12:00:00+08:00','dateModified':DATE+'T12:00:00+08:00','author':{'@type':'Organization','name':'Hoopcut','url':BASE+'/'},'publisher':{'@type':'Organization','name':'Hoopcut','url':BASE+'/'},'inLanguage':'en','wordCount':stat['words'],'image':BASE+'/assets/blog/court.webp','isPartOf':{'@type':'Blog','@id':BASE+'/blog#blog','url':BASE+'/blog','name':'Hoopcut Blog'}},
@@ -173,7 +177,7 @@ def build():
             assert anchor in source
             source=source.replace(anchor,'<a href="/blog">Blog</a>'+anchor,1)
             file.write_text(source)
-    report_dir = ROOT.parents[1] / 'outputs'
+    report_dir = ROOT / 'reports'
     report_dir.mkdir(exist_ok=True)
     rows=[dict(keyword=a['keyword'],path='/blog/'+slug(a['keyword']),**all_stats[a['keyword']]) for a in ARTICLES]
     (report_dir/'hoopcut-blog-density.json').write_text(json.dumps({'definition':'exact phrase matches × phrase word count / visible article word count; excludes metadata, navigation and related cards','minimum_percent':None,'articles':rows},indent=2))
