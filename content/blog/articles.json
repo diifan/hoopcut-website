@@ -1249,5 +1249,552 @@
         "caption": "A 16-second excerpt from existing Hoopcut game footage with embedded trajectories. It illustrates the basketball portion of a recap, not a real banquet, a full season montage or a slideshow-making feature."
       }
     }
+  },
+  {
+    "keyword": "how to film basketball games",
+    "title": "How to Film Basketball Games: Position, Framing & a Test Run",
+    "category": "Filming basketball",
+    "summary": "Learn where to place a basketball camera, what to keep in frame, and how to test your recording before tipoff. Includes a court diagram and clip log.",
+    "lead": "The best place to start filming a basketball game is an approved, stable position near midcourt with a clear view above spectators. From there, decide whether your camera will hold a full-court view or follow the possession. This guide is about capturing usable source footage; the highlight-editing guide covers what happens after the game. The court diagrams are proposed setups, not measurements from a particular gym.",
+    "sections": [
+      [
+        "Choose a midcourt position before you choose a zoom level",
+        "Walk to the filming area before warmups finish. Look toward both baskets and check whether people standing in the rows ahead will block the near sideline. A central position reduces the difference between the near and far ends. Synergy Sports also recommends a position near half-court. Ask the venue which locations and mounts are allowed; a diagram cannot establish access to a real gym. Do not place a stand where it interferes with spectators, players or staff. A permitted, clear seat is more useful than an ideal angle you cannot keep."
+      ],
+      [
+        "Pick a full-court view or a controlled follow shot",
+        "An unattended fixed camera needs enough width to retain the relevant action at both ends. Review a short recording on the actual phone: if jersey numbers are too small to identify, widening further will not solve that problem. A person operating the camera can follow the active half while retaining the ball handler, basket and nearby teammates. Move smoothly with the possession instead of chasing each pass. Avoid repeated zoom changes that make the sequence hard to watch. Our diagram contrasts these coverage choices; it does not promise automated camera tracking."
+      ],
+      [
+        "Test the corners as well as the basket",
+        "Ask a teammate to move through the near corner, far corner and lane before the game, where permitted. Record rather than judging only from the live preview. Play back the result to check whether the ball, feet and hoop remain visible. Leave space ahead of movement. If a spectator crosses the image during this test, consider whether a small approved change in position solves the obstruction. Keep enough context before a shot to show how the player received the ball, especially if you intend to review decisions later."
+      ],
+      [
+        "Make a short device check using the settings you will keep",
+        "Apple documents resolution and frame-rate choices in the iPhone Camera app; available options depend on the model. Choose a setting your phone can sustain for the session, then test it in that gym. Inspect motion, brightness and the saved file rather than assuming the highest setting is always the useful one. Check free space and power before recording a long game. This page does not prescribe a universal shutter speed or claim to cure gym-light flicker. If you see a problem, test changes before tipoff and keep the version that plays back clearly."
+      ],
+      [
+        "Log source time rather than guessing from the scoreboard",
+        "The game clock and the recording clock measure different things. A timeout may stop one while the other continues. Write a source filename and elapsed video time in the clip log, then add the period or game clock as a separate note. If you pause recording between periods, give the next file a distinct name. A useful entry identifies the player, what happened and where the clip begins. Mark uncertainty for later review instead of entering a made-up timestamp that another editor cannot locate."
+      ],
+      [
+        "Keep the original before you make highlights",
+        "After the game, confirm that each file opens and contains the expected period. Keep an original copy before trimming or replacing anything. Review a few candidate possessions with the clip log and use a separate shortlist for the final edit. Hoopcut can help with basketball auto clipping and Shot Tracer; it does not fix missing source action or operate your camera. For the editing stage, follow the linked highlight workflow and review the prepared clipping demo. Keep the capture decision and the editing decision separate so a short social reel does not become your only record of the game."
+      ]
+    ],
+    "checklist": [
+      "Confirm an approved location with a clear view of both ends.",
+      "Record and replay a near-corner and far-corner test.",
+      "Check power, available storage and the first saved file.",
+      "Label source files and keep elapsed video time in the log."
+    ],
+    "tableTitle": "Two recording approaches",
+    "rows": [
+      [
+        "Fixed wide view",
+        "Use when no operator can follow play. Test that the relevant action stays visible."
+      ],
+      [
+        "Operated follow shot",
+        "Keep the active possession readable with slow movement and enough surrounding context."
+      ],
+      [
+        "Source review",
+        "Watch a saved test, not only the camera preview."
+      ]
+    ],
+    "faq": [
+      [
+        "Should I film a basketball game vertically?",
+        "For a whole-game record, a horizontal view is a practical starting point because the action spreads across the court. A dedicated vertical social shot serves a different purpose. Test the intended framing before relying on it."
+      ],
+      [
+        "Can an app recover a basket that was outside the frame?",
+        "The original view limits what can be shown. Do not plan on an editing effect restoring action that was never recorded."
+      ]
+    ],
+    "sources": [
+      [
+        "Synergy Sports: Camera instructions for filming games",
+        "https://support.synergysports.com/support/solutions/articles/77000570456-camera-instructions-for-filming-games"
+      ],
+      [
+        "Apple: Record a video with iPhone",
+        "https://support.apple.com/guide/iphone/record-videos-iph61f49e4bb/ios"
+      ]
+    ],
+    "relatedKeywords": [
+      "how to make a basketball highlight video",
+      "how to make basketball highlights on iphone"
+    ],
+    "editorialLinks": [
+      [
+        "Log basketball clip timestamps",
+        "/templates/basketball-clip-log"
+      ],
+      [
+        "Review a single player’s possessions",
+        "/templates/basketball-player-highlight-log"
+      ]
+    ],
+    "seoTitle": "How to Film Basketball Games: Camera Setup | Hoopcut",
+    "datePublished": "2026-10-27",
+    "dateModified": "2026-10-27",
+    "reference": "the workflow",
+    "checklistTitle": "Before you begin",
+    "productNote": "Hoopcut focuses on basketball auto clipping and Shot Tracer on iPhone. The browser resources linked here are separate planning aids, not additional app capabilities.",
+    "visual": {
+      "image": "/assets/resources/how-to-film-basketball-games.jpg",
+      "alt": "How to Film Basketball Games: Position, Framing & a Test Run — original illustrated planning diagram",
+      "caption": "Original planning illustration, not a customer photo, venue survey or measured product result.",
+      "overviewTitle": "A PRACTICAL STARTING POINT",
+      "tiles": [
+        [
+          "Choose a midcourt position before you choose a zoom level",
+          "Walk to the filming area before warmups finish."
+        ],
+        [
+          "Pick a full-court view or a controlled follow shot",
+          "An unattended fixed camera needs enough width to retain the relevant action at both ends."
+        ],
+        [
+          "Test the corners as well as the basket",
+          "Ask a teammate to move through the near corner, far corner and lane before the game, where permitted."
+        ]
+      ]
+    }
+  },
+  {
+    "keyword": "record basketball practice alone",
+    "title": "How to Record Basketball Practice Alone: A Repeatable Setup",
+    "category": "Filming basketball",
+    "summary": "Set up a solo basketball practice recording with a court-position diagram, a short test routine and a log that separates attempts from selected clips.",
+    "lead": "To record basketball practice alone, choose one drill area, set a stable camera outside the movement path, and film a short test before the full set. A solo session benefits from a repeatable frame more than constant camera adjustments. The goal is to see the complete action you want to review. This is a filming workflow, not a claim that Hoopcut measures shooting form or counts every attempt.",
+    "sections": [
+      [
+        "Decide what the recording needs to show",
+        "Write one question for the session: can you see the gather and release, the route into a finish, or the footwork before the shot? That question sets the framing. A close view of hands may omit the feet; a wide view may make details too small. Choose the part you need to inspect and keep the other tradeoffs visible. Avoid changing the purpose halfway through a set. If you need a second angle, make it a separate set with its own label rather than trying to interpret unrelated views as one continuous test."
+      ],
+      [
+        "Put the phone outside the ball and movement path",
+        "Use a stable permitted support beside the drill area, with the lens aimed at both the start and finish positions. Keep the rebound route and other players in mind. The illustrated layout shows one possible relationship between phone, player and hoop; it is not a distance prescription. Walk the movement once without recording and check where you might step or chase a loose ball. If the camera sits on a shared court, confirm that the position works for others using the space. Move the drill or camera if the frame cannot stay clear."
+      ],
+      [
+        "Film one repetition and walk back to review it",
+        "Start recording, perform a single repetition, then replay the saved file. Check that the feet, release and basket stay visible for the question you chose. Make one framing adjustment at a time so you know what changed. A live preview can look usable while the saved image reveals clipped feet or an obscured rim. Apple’s Camera guide explains basic video controls; device options vary. This page does not claim there is one resolution or frame rate that will work for every phone, light and drill."
+      ],
+      [
+        "Record short, labeled sets",
+        "Name each set by drill and angle, such as corner-catch-set-01 or left-finish-side-02. Leave a little time before and after a repetition so the setup is visible. If you stop the recording, create a new log row rather than continuing old elapsed timestamps. Do not keep handling the phone between every attempt if that breaks the practice routine. A short block you can review clearly is more useful than a long recording with no notes. Keep the session structure simple enough to repeat next time."
+      ],
+      [
+        "Keep review notes separate from performance claims",
+        "A highlight shortlist records selected moments. It is not a complete attempt log and cannot establish shooting percentage. If you want to count attempts, review the complete set and define what qualifies before counting. Use the player review sheet to mark visibility, context and uncertainty. Do not infer an improvement trend from two edited reels filmed from different positions. For technique feedback, bring the original set and your question to a qualified coach rather than treating a visual tracer as a diagnosis."
+      ],
+      [
+        "Use the clip and the effect for different jobs",
+        "Auto clipping helps you move from a longer basketball recording to moments worth reviewing. Shot Tracer helps a viewer follow the ball in a selected shot. Neither changes the position of the camera or supplies a hidden angle. Keep an untrimmed source copy and select the clips that answer your original question. Use the highlight storyboard if you also want to share a short practice update. Label that update as selected moments so viewers do not mistake a polished sequence for an uninterrupted record of the session."
+      ]
+    ],
+    "checklist": [
+      "Choose one review question and one drill area.",
+      "Keep the phone outside the run and rebound paths.",
+      "Replay one complete test repetition.",
+      "Label every set and keep the complete source file."
+    ],
+    "tableTitle": "Match the frame to the question",
+    "rows": [
+      [
+        "Footwork before a shot",
+        "Include the start position, both feet and the release."
+      ],
+      [
+        "Route into a finish",
+        "Retain the approach and basket rather than only the last step."
+      ],
+      [
+        "Shareable practice clip",
+        "Keep readable context and describe it as selected footage."
+      ]
+    ],
+    "faq": [
+      [
+        "Can I calculate shooting percentage from a highlight reel?",
+        "No. A selection of makes does not contain the complete attempt set. Use a complete, consistently reviewed recording for any counting task."
+      ],
+      [
+        "Does a Shot Tracer analyze my technique?",
+        "Treat the demonstrated effect as a way to show the ball path. Do not present it as a coaching diagnosis or a measured shooting assessment."
+      ]
+    ],
+    "sources": [
+      [
+        "Apple: Record a video with iPhone",
+        "https://support.apple.com/guide/iphone/record-videos-iph61f49e4bb/ios"
+      ]
+    ],
+    "relatedKeywords": [
+      "how to make basketball highlights on iphone",
+      "how to add shot tracer to basketball video"
+    ],
+    "editorialLinks": [
+      [
+        "Use the player highlight review sheet",
+        "/templates/basketball-player-highlight-log"
+      ],
+      [
+        "Plan a short practice highlight sequence",
+        "/templates/basketball-highlight-storyboard"
+      ]
+    ],
+    "seoTitle": "How to Record Basketball Practice Alone | Hoopcut",
+    "datePublished": "2026-10-27",
+    "dateModified": "2026-10-27",
+    "reference": "the workflow",
+    "checklistTitle": "Before you begin",
+    "productNote": "Hoopcut focuses on basketball auto clipping and Shot Tracer on iPhone. The browser resources linked here are separate planning aids, not additional app capabilities.",
+    "visual": {
+      "image": "/assets/resources/record-basketball-practice-alone.jpg",
+      "alt": "How to Record Basketball Practice Alone: A Repeatable Setup — original illustrated planning diagram",
+      "caption": "Original planning illustration, not a customer photo, venue survey or measured product result.",
+      "overviewTitle": "A PRACTICAL STARTING POINT",
+      "tiles": [
+        [
+          "Decide what the recording needs to show",
+          "Write one question for the session: can you see the gather and release, the route into a finish, or the footwork before the shot? That question sets the framing."
+        ],
+        [
+          "Put the phone outside the ball and movement path",
+          "Use a stable permitted support beside the drill area, with the lens aimed at both the start and finish positions."
+        ],
+        [
+          "Film one repetition and walk back to review it",
+          "Start recording, perform a single repetition, then replay the saved file."
+        ]
+      ]
+    }
+  },
+  {
+    "keyword": "basketball senior night poster ideas",
+    "title": "Basketball Senior Night Poster Ideas: 3 Layouts to Make Your Own",
+    "category": "Sharing and team stories",
+    "summary": "Compare three basketball senior night poster layouts, plan the name and photo hierarchy, and edit a downloadable poster with your player’s details.",
+    "lead": "Start a basketball senior night poster with the player’s name, jersey number and one clear visual focus. The most useful layout is one a family can recognize quickly in a busy gym entrance. These three original concepts separate a portrait-led poster, a number-led poster and a memory-led poster. Use the editable template to try the hierarchy before arranging photos or committing to a print size.",
+    "sections": [
+      [
+        "Portrait-led: one photo, one name, one season",
+        "Give an approved portrait most of the page and place the name in a consistent band that does not cover the face. Keep the number and graduating class secondary. A single strong image is easier to check for cropping than a dense collage. Print a small draft and look at it from several steps away; if the name competes with four slogans, remove a slogan. Our illustrated concepts use a clearly marked photo placeholder. They do not contain a real athlete’s portrait, and the template does not generate one."
+      ],
+      [
+        "Number-led: let the jersey number carry the display",
+        "A large number can provide a clear focal point when you do not have a suitable portrait. Put the verified player name next to it and use team colors as accents rather than as the only way to distinguish text. Check contrast before printing, especially when the team uses two dark colors. Avoid copying a professional team’s marks into a school display without permission. The supplied graphic uses original linework and editable text. Its example player and school are fictional and should be replaced before use."
+      ],
+      [
+        "Memory-led: make a short message specific",
+        "Use a single sentence about a shared moment, then pair it with the player’s name and one simple visual element. Ask teammates for a concrete memory instead of a list of generic compliments. Check the wording with the player or organizer before putting an inside joke in public. If several seniors share a display wall, give each poster similar space and readable name sizing. A memory-led design can be personal without becoming a long biography that visitors cannot read while walking through the entrance."
+      ],
+      [
+        "Set the hierarchy before adding decoration",
+        "Read the design in this order: player, number, event, optional short message. If a viewer needs to search for the name, enlarge it or reduce competing elements. Leave a quiet area around each text block. The downloadable SVG remains editable, while the PNG export is a flattened image for convenience. Neither supplies a commercial printer’s bleed specification. Confirm the required dimensions and margins with your print provider, then check a proof at the final intended scale. Do not assume a screen preview guarantees print readability."
+      ],
+      [
+        "Connect the poster to the rest of senior night",
+        "Keep spelling, number and class year consistent with the table card and program. Make one verified roster the source for all three instead of retyping names from memory. If you want to include a video, choose a small number of approved game clips and give visitors a clear way to access them. A poster does not need a QR code to work; only add one after you have a stable destination and have tested it. This page supplies a poster design tool, not a QR generator or a hosted player profile."
+      ],
+      [
+        "Proof the details with someone who did not design it",
+        "Ask another organizer to check the name, number, class year and message against the roster. Then check image permission, face cropping and whether the display location is approved. Keep the original editable file in case a detail changes. The wider senior-night guide covers the event itself; this page focuses on the printed visual. Hoopcut’s role is the basketball footage portion if you choose a tribute clip. The poster resource is a separate free browser template, not an app feature or a claim about automatic graphic creation."
+      ]
+    ],
+    "checklist": [
+      "Verify names, jersey numbers and class year.",
+      "Choose portrait, number or memory as the primary visual.",
+      "Check contrast and the final print proof.",
+      "Keep the layout consistent with the program and table cards."
+    ],
+    "tableTitle": "Choose a poster layout",
+    "rows": [
+      [
+        "Portrait-led",
+        "Best when you have an approved photo with room for a clear text band."
+      ],
+      [
+        "Number-led",
+        "Useful when the number is recognizable and a portrait is unavailable."
+      ],
+      [
+        "Memory-led",
+        "Use a short, specific message that the player is comfortable sharing."
+      ]
+    ],
+    "faq": [
+      [
+        "Do I need a player photo?",
+        "No. A number-led design with an accurate name can work well. The template intentionally works without uploading a portrait."
+      ],
+      [
+        "Can I print the downloaded poster?",
+        "Yes, after checking the required output size with your printer. The SVG is scalable; test readability and margins before producing the full set."
+      ]
+    ],
+    "sources": [],
+    "relatedKeywords": [
+      "basketball senior night ideas",
+      "basketball senior night table ideas"
+    ],
+    "editorialLinks": [
+      [
+        "Edit the senior night poster",
+        "/templates/basketball-senior-night-poster"
+      ],
+      [
+        "Match the poster with a table card",
+        "/templates/basketball-senior-night-table-card"
+      ]
+    ],
+    "seoTitle": "Basketball Senior Night Poster Ideas & Layouts | Hoopcut",
+    "datePublished": "2026-10-27",
+    "dateModified": "2026-10-27",
+    "reference": "the workflow",
+    "checklistTitle": "Before you begin",
+    "productNote": "Hoopcut focuses on basketball auto clipping and Shot Tracer on iPhone. The browser resources linked here are separate planning aids, not additional app capabilities.",
+    "visual": {
+      "image": "/assets/resources/basketball-senior-night-poster-ideas.jpg",
+      "alt": "Basketball Senior Night Poster Ideas: 3 Layouts to Make Your Own — original illustrated planning diagram",
+      "caption": "Original planning illustration, not a customer photo, venue survey or measured product result.",
+      "overviewTitle": "A PRACTICAL STARTING POINT",
+      "tiles": [
+        [
+          "Portrait-led: one photo, one name, one season",
+          "Give an approved portrait most of the page and place the name in a consistent band that does not cover the face."
+        ],
+        [
+          "Number-led: let the jersey number carry the display",
+          "A large number can provide a clear focal point when you do not have a suitable portrait."
+        ],
+        [
+          "Memory-led: make a short message specific",
+          "Use a single sentence about a shared moment, then pair it with the player’s name and one simple visual element."
+        ]
+      ]
+    }
+  },
+  {
+    "keyword": "basketball senior night gift ideas",
+    "title": "Basketball Senior Night Gift Ideas: Personal, Shared & Practical",
+    "category": "Sharing and team stories",
+    "summary": "Plan basketball senior night gifts around real memories and a fair team budget. Compare keepsakes, shared notes and video gifts with a cost worksheet.",
+    "lead": "A good senior night gift makes a player feel recognized without creating a difficult spending contest between families. Start with the message, decide what the team will provide consistently, and let optional personal additions stay optional. These ideas are original planning suggestions, not product reviews or vendor price recommendations. Use the budget sheet to enter actual quotes before collecting money.",
+    "sections": [
+      [
+        "Begin with one shared recognition for every senior",
+        "Choose a baseline the group can deliver for the whole senior roster: a printed memory card, a short thank-you letter, or a simple framed team image where permission allows. Agree on the plan before individual families begin buying extras. A consistent format keeps recognition from depending on who can organize the largest package. Let the coach confirm the roster and event timing. If the group includes managers or other departing contributors, discuss how they will be thanked rather than discovering an omission during the ceremony."
+      ],
+      [
+        "Turn a team memory into a keepsake",
+        "Ask teammates to name one moment they remember: a welcoming conversation, encouragement after a difficult practice, or a helpful habit that made the group work better. Put a few verified lines in a memory card instead of copying a generic motivational quote. A photo or jersey number can anchor the design, but the specific words carry the value. The editable card is intended for handwritten or typed messages. It is not an automatic tribute generator, and the example details do not describe a real player."
+      ],
+      [
+        "Make a video gift with a manageable scope",
+        "Pick a handful of meaningful clips, label them accurately, and keep a copy in a format the family can play. A video gift can combine a short introduction, one or two distinct possessions and a thank-you. Avoid promising a complete career montage if you only have a few recent recordings. Ask before including private messages or family photos. Hoopcut can help with basketball auto clipping and Shot Tracer for the game-action part; other material still needs to be assembled and checked with the tools you use."
+      ],
+      [
+        "Choose a physical item only after checking the details",
+        "If the group wants an engraved, signed or printed item, verify the spelling and production requirements before placing an order. Collect a real quote that includes delivery and any setup cost. Check the deadline against the event date, leaving time to correct an error. This guide intentionally does not list unverified prices or imply a vendor endorsement. A modest item delivered accurately is preferable to a complicated personalization plan that cannot be completed for every senior. Keep a simple backup such as a printed card."
+      ],
+      [
+        "Build the budget from quantity and actual quotes",
+        "Separate the number of recipients from the number of items. Ten seniors receiving two cards each means twenty cards, while a single shared display is one expense. Record unit cost, quantity and extra cost in the budget tool; it calculates line totals and the combined amount. The sample numbers are fictional planning inputs, not prices. Include packaging or shipping as separate lines when needed. Use the notes column for the quote date and owner so another organizer can verify the amount without searching a message thread."
+      ],
+      [
+        "Plan the handoff and a copy of anything digital",
+        "Assign one person to check the labeled gifts against the roster and another to manage the handoff. Place the name where staff can find it without opening the package. For a digital gift, test access from a second device and confirm that the destination remains available after the event. Keep the original video and an alternate delivery method. The gift does not have to be elaborate to be useful; clear ownership, accurate details and a specific message are what make a small plan reliable."
+      ]
+    ],
+    "checklist": [
+      "Agree on a consistent team gift before optional additions.",
+      "Use specific, approved memories.",
+      "Enter real quotes and quantities in the budget.",
+      "Assign owners for proofing, ordering and handoff."
+    ],
+    "tableTitle": "Choose the gift by the work you can finish",
+    "rows": [
+      [
+        "Memory card",
+        "Collect and proof a few specific teammate messages."
+      ],
+      [
+        "Personalized item",
+        "Verify spelling, a current quote and the delivery date."
+      ],
+      [
+        "Video gift",
+        "Select approved clips, test playback and retain a backup."
+      ]
+    ],
+    "faq": [
+      [
+        "What is a good low-cost option?",
+        "A specific letter or memory card can be meaningful without a purchased item. Plan around the team’s actual budget rather than an assumed minimum spend."
+      ],
+      [
+        "Do the sample budget amounts reflect store prices?",
+        "No. They are arithmetic examples only. Replace every cost with a current quote or an agreed allowance before collecting funds."
+      ]
+    ],
+    "sources": [],
+    "relatedKeywords": [
+      "basketball senior night ideas",
+      "basketball senior night poster ideas"
+    ],
+    "editorialLinks": [
+      [
+        "Calculate the senior gift budget",
+        "/templates/basketball-senior-gift-budget"
+      ],
+      [
+        "Create a player memory card",
+        "/templates/basketball-senior-memory-card"
+      ],
+      [
+        "Plan a short tribute sequence",
+        "/templates/basketball-highlight-storyboard"
+      ]
+    ],
+    "seoTitle": "Basketball Senior Night Gift Ideas & Budget | Hoopcut",
+    "datePublished": "2026-10-27",
+    "dateModified": "2026-10-27",
+    "reference": "the workflow",
+    "checklistTitle": "Before you begin",
+    "productNote": "Hoopcut focuses on basketball auto clipping and Shot Tracer on iPhone. The browser resources linked here are separate planning aids, not additional app capabilities.",
+    "visual": {
+      "image": "/assets/resources/basketball-senior-night-gift-ideas.jpg",
+      "alt": "Basketball Senior Night Gift Ideas: Personal, Shared & Practical — original illustrated planning diagram",
+      "caption": "Original planning illustration, not a customer photo, venue survey or measured product result.",
+      "overviewTitle": "A PRACTICAL STARTING POINT",
+      "tiles": [
+        [
+          "Begin with one shared recognition for every senior",
+          "Choose a baseline the group can deliver for the whole senior roster: a printed memory card, a short thank-you letter, or a simple framed team image where permission allows."
+        ],
+        [
+          "Turn a team memory into a keepsake",
+          "Ask teammates to name one moment they remember: a welcoming conversation, encouragement after a difficult practice, or a helpful habit that made the group work better."
+        ],
+        [
+          "Make a video gift with a manageable scope",
+          "Pick a handful of meaningful clips, label them accurately, and keep a copy in a format the family can play."
+        ]
+      ]
+    }
+  },
+  {
+    "keyword": "basketball senior night table ideas",
+    "title": "Basketball Senior Night Table Ideas: 3 Clear Display Zones",
+    "category": "Sharing and team stories",
+    "summary": "Arrange a basketball senior night table with a name zone, memory zone and take-away zone. Includes an original layout diagram and editable table cards.",
+    "lead": "A useful senior night table has a clear player identity, a small set of meaningful items and room for visitors to pause without blocking the entrance. Divide it into three zones: recognize the player, explore a memory, and leave or collect a message. The layout here is an original planning diagram. It is not a photograph of a customer event or a scale plan for your venue.",
+    "sections": [
+      [
+        "Start with the traffic route, not the tablecloth",
+        "Ask the organizer where the display can sit and which side visitors will approach from. Check doors, staff access and the route to the stands before setting out keepsakes. A narrow entrance may need a smaller display or several shorter viewing points. Do not treat the scorer’s table or team bench as spare display space. Put the clearest name label on the side people see first. The illustrated three-zone plan is adaptable; measure the actual table and keep the required circulation space clear."
+      ],
+      [
+        "Zone one: make the player identifiable at a glance",
+        "Use a table card with the verified name, number and class year. Keep it readable above nearby objects without creating a high barrier. A consistent type size across the senior group helps visitors find everyone. If a matching poster stands behind the table, let the card repeat only the essential identity instead of duplicating a long biography. The editable table card uses a simple landscape ratio and original basketball linework. It is a flat card design; add a separate stand or approved fold support appropriate to your print material."
+      ],
+      [
+        "Zone two: choose a few memories with a clear connection",
+        "Select one team image, a small approved keepsake or a short written memory rather than filling every surface. Give each item a small context label when the meaning is not obvious. Ask before displaying family photos, personal messages or items that are difficult to replace. If you use a ball or another object that can roll, secure it appropriately. The aim is a readable story, not an inventory of everything the family owns. Leave enough empty space to see the table’s main elements."
+      ],
+      [
+        "Zone three: give visitors one simple action",
+        "Provide memory cards and pens, or a place to collect an approved handout. Put a short instruction next to them: write one team memory, sign your name, and place the card in the collection area. Assign someone to collect messages at the end so they are not lost during cleanup. A single clear action works better than several competing sign-up sheets. The program template can list the event order separately; the table does not need to carry every announcement for the evening."
+      ],
+      [
+        "Include video without making the display depend on it",
+        "If the venue permits a screen, test a short approved clip at the actual location and keep the name card readable when the screen is off. Avoid a loud loop that competes with introductions. Use a stable, tested link if you decide to share a digital tribute and offer a plain-text destination where practical. This resource does not host private videos or generate QR codes. Hoopcut is relevant to the basketball footage portion, while the physical display and event playback remain separate tasks."
+      ],
+      [
+        "Make a setup photo and a packing list",
+        "Before the event, arrange the approved items once, photograph the intended setup for your own team and note who brings each piece. Pack the table card, supports, message cards and pens together. At cleanup, check borrowed and personal items against the list. The printable program and memory card can use the same verified roster details as the table label. Consistency reduces correction work and helps the display feel coherent without buying a coordinated decoration package."
+      ]
+    ],
+    "checklist": [
+      "Confirm the approved location and visitor route.",
+      "Proof the name card against the roster.",
+      "Use a few meaningful items with clear labels.",
+      "Assign message collection and personal-item cleanup."
+    ],
+    "tableTitle": "Three display zones",
+    "rows": [
+      [
+        "Recognize",
+        "Player name, number and class year face the arrival route."
+      ],
+      [
+        "Remember",
+        "One or two approved images or keepsakes, with context."
+      ],
+      [
+        "Participate",
+        "A memory card, pen and clear collection point."
+      ]
+    ],
+    "faq": [
+      [
+        "Does every senior need a separate table?",
+        "No. A shared table can work with consistent labels and comparable space. Adapt the plan to the venue and roster."
+      ],
+      [
+        "Should we use a screen as the centerpiece?",
+        "Only if the location, equipment and program support it. Keep the display understandable when playback is unavailable."
+      ]
+    ],
+    "sources": [],
+    "relatedKeywords": [
+      "basketball senior night ideas",
+      "basketball senior night poster ideas"
+    ],
+    "editorialLinks": [
+      [
+        "Edit a senior night table card",
+        "/templates/basketball-senior-night-table-card"
+      ],
+      [
+        "Print senior memory cards",
+        "/templates/basketball-senior-memory-card"
+      ],
+      [
+        "Build the senior night program",
+        "/templates/basketball-senior-night-program"
+      ]
+    ],
+    "seoTitle": "Basketball Senior Night Table Ideas & Layout | Hoopcut",
+    "datePublished": "2026-10-27",
+    "dateModified": "2026-10-27",
+    "reference": "the workflow",
+    "checklistTitle": "Before you begin",
+    "productNote": "Hoopcut focuses on basketball auto clipping and Shot Tracer on iPhone. The browser resources linked here are separate planning aids, not additional app capabilities.",
+    "visual": {
+      "image": "/assets/resources/basketball-senior-night-table-ideas.jpg",
+      "alt": "Basketball Senior Night Table Ideas: 3 Clear Display Zones — original illustrated planning diagram",
+      "caption": "Original planning illustration, not a customer photo, venue survey or measured product result.",
+      "overviewTitle": "A PRACTICAL STARTING POINT",
+      "tiles": [
+        [
+          "Start with the traffic route, not the tablecloth",
+          "Ask the organizer where the display can sit and which side visitors will approach from."
+        ],
+        [
+          "Zone one: make the player identifiable at a glance",
+          "Use a table card with the verified name, number and class year."
+        ],
+        [
+          "Zone two: choose a few memories with a clear connection",
+          "Select one team image, a small approved keepsake or a short written memory rather than filling every surface."
+        ]
+      ]
+    }
   }
 ]

@@ -20,6 +20,20 @@ from xml.etree.ElementTree import Element, SubElement, tostring, parse
 ROOT = Path(__file__).resolve().parents[1]
 DATE = "2026-10-23"
 BASE = "https://hoopcut.ai"
+SEO_TITLES = {
+    'how to make a basketball highlight video':'How to Make a Basketball Highlight Video | Hoopcut',
+    'how to make basketball highlights on iphone':'Basketball Highlights on iPhone: A Step-by-Step Guide | Hoopcut',
+    'ai basketball highlight maker':'AI Basketball Highlight Maker: Clip Review Guide | Hoopcut',
+    'how to add shot tracer to basketball video':'How to Add Shot Tracer to Basketball Video | Hoopcut',
+    'how to make a basketball recruiting video':'How to Make a Basketball Recruiting Video | Hoopcut',
+    'how long should a basketball highlight video be':'How Long Should a Basketball Highlight Video Be? | Hoopcut',
+    'basketball highlight video examples':'Basketball Highlight Video Examples & Storyboards | Hoopcut',
+    'how to make basketball highlights for instagram':'How to Make Basketball Highlights for Instagram | Hoopcut',
+    'basketball senior night ideas':'Basketball Senior Night Ideas & Tribute Planning | Hoopcut',
+    'basketball captions for instagram':'60 Basketball Captions for Instagram | Hoopcut',
+    'basketball media day ideas':'Basketball Media Day Ideas, Photos & Shot List | Hoopcut',
+    'basketball banquet ideas':'Basketball Banquet Ideas: Awards & Season Recaps | Hoopcut',
+}
 ARTICLES = json.loads((ROOT / "content/blog/articles.json").read_text())
 H = html.escape
 
@@ -122,11 +136,11 @@ def resolve_article(item):
 
 
 def navigation(active='blog'):
-    return f'''<a class="skip" href="#main">Skip to content</a><header class="blog-header"><a class="brand" href="/" aria-label="Hoopcut home"><img src="/assets/blog/brand-icon.png" width="102" height="102" alt=""><span>HoopCut</span></a><nav aria-label="Main navigation"><a href="/">Product</a><a href="/blog"{' aria-current="page"' if active=='index' else ''}>Blog</a><a href="/privacy">Privacy</a></nav></header>'''
+    return f'''<a class="skip" href="#main">Skip to content</a><header class="blog-header"><a class="brand" href="/" aria-label="Hoopcut home"><img src="/assets/blog/brand-icon.png" width="102" height="102" alt=""><span>HoopCut</span></a><nav aria-label="Main navigation"><a href="/">Product</a><a href="/tools"{' aria-current="page"' if active=='tools' else ''}>Tools</a><a href="/blog"{' aria-current="page"' if active=='index' else ''}>Blog</a></nav></header>'''
 
 
 def footer():
-    return '<footer class="blog-footer"><a class="brand" href="/">HoopCut</a><p>More time on the court. Less time editing.</p><nav aria-label="Footer"><a href="/blog">All guides</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a><a href="mailto:hello@goswie.com">Contact</a></nav><small>© 2026 SWINK AI INC.</small></footer>'
+    return '<footer class="blog-footer"><a class="brand" href="/">HoopCut</a><p>More time on the court. Less time editing.</p><nav aria-label="Footer"><a href="/tools">Tools</a><a href="/blog">All guides</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a><a href="mailto:hello@goswie.com">Contact</a></nav><small>© 2026 SWINK AI INC.</small></footer>'
 
 
 def head(title, description, url, graph, image_path="/assets/blog/court.webp", image_alt="Basketball court action"):
@@ -137,7 +151,7 @@ def head(title, description, url, graph, image_path="/assets/blog/court.webp", i
 <title>{title}</title><meta name="description" content="{description}"><link rel="canonical" href="{url}">
 <link rel="icon" href="/assets/blog/brand-icon.png"><link rel="stylesheet" href="/assets/blog/blog.css">
 <meta property="og:type" content="{'article' if '/blog/' in url else 'website'}"><meta property="og:site_name" content="Hoopcut"><meta property="og:title" content="{title}"><meta property="og:description" content="{description}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE}{image_path}"><meta property="og:image:alt" content="{H(image_alt,quote=True)}">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{description}"><meta name="twitter:image" content="{BASE}{image_path}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{description}"><meta name="twitter:image" content="{BASE}{image_path}"><meta name="twitter:image:alt" content="{H(image_alt,quote=True)}">
 <script type="application/ld+json">{schema_json}</script></head><body>'''
 
 
@@ -173,7 +187,7 @@ def build():
             {'@type':'BlogPosting','@id':url+'#article','headline':item['title'],'description':item['summary'],'url':url,'mainEntityOfPage':{'@type':'WebPage','@id':url},'datePublished':published+'T12:00:00+08:00','dateModified':modified+'T12:00:00+08:00','author':{'@type':'Organization','name':'Hoopcut','url':BASE+'/'},'publisher':{'@type':'Organization','name':'Hoopcut','url':BASE+'/'},'inLanguage':'en','wordCount':stat['words'],'image':BASE+item.get('visual', {}).get('image', '/assets/blog/court.webp'),'isPartOf':{'@type':'Blog','@id':BASE+'/blog#blog','url':BASE+'/blog','name':'Hoopcut Blog'}},
             {'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':BASE+'/'},{'@type':'ListItem','position':2,'name':'Blog','item':BASE+'/blog'},{'@type':'ListItem','position':3,'name':item['title'],'item':url}]}
         ]
-        document = head(item['title']+' | Hoopcut Blog',item['summary'],url,graph,item.get('visual', {}).get('image', '/assets/blog/court.webp'),item.get('visual', {}).get('alt', 'Basketball court action'))+navigation()+f'''<main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog">Blog</a><span aria-hidden="true">/</span><span>{H(item['category'])}</span></nav><div class="reading-layout">{resolved[item['keyword']]}<aside class="on-this-page"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="On this page">{caption_toc}{toc}<a href="#checklist">Final checks</a><a href="#questions">Practical questions</a><a href="#sources">Sources</a></nav><a class="product-link" href="/">Explore Hoopcut <span aria-hidden="true">↗</span></a></aside></div><section class="related" aria-labelledby="related-title"><p class="eyebrow">KEEP READING</p><h2 id="related-title">More from the court.</h2>{cards(related,all_stats)}<a class="all-guides" href="/blog">Browse all basketball editing guides →</a></section></main>'''+footer()+'</body></html>'
+        document = head(item.get('seoTitle',SEO_TITLES.get(item['keyword'],item['title']+' | Hoopcut Blog')),item['summary'],url,graph,item.get('visual', {}).get('image', '/assets/blog/court.webp'),item.get('visual', {}).get('alt', 'Basketball court action'))+navigation()+f'''<main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog">Blog</a><span aria-hidden="true">/</span><span aria-current="page">{H(item['title'])}</span></nav><div class="reading-layout">{resolved[item['keyword']]}<aside class="on-this-page"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="On this page">{caption_toc}{toc}<a href="#checklist">Final checks</a><a href="#questions">Practical questions</a><a href="#sources">Sources</a></nav><a class="product-link" href="/">Explore Hoopcut <span aria-hidden="true">↗</span></a></aside></div><section class="related" aria-labelledby="related-title"><p class="eyebrow">KEEP READING</p><h2 id="related-title">More from the court.</h2>{cards(related,all_stats)}<a class="all-guides" href="/blog">Browse all basketball editing guides →</a></section></main>'''+footer()+'</body></html>'
         if item.get('visual'):
             document = document.replace('<body>', '<body class="visual-story'+(' caption-story' if item.get('captionGroups') else '')+'">')
         if item.get('captionGroups'):
@@ -182,8 +196,9 @@ def build():
     categories = list(dict.fromkeys(x['category'] for x in ARTICLES))
     index_url = BASE + '/blog'
     index_graph=[{'@type':'Blog','@id':index_url+'#blog','url':index_url,'name':'Hoopcut Blog','description':'Practical basketball video editing guides, review checklists and Shot Tracer workflows.','inLanguage':'en'},{'@type':'ItemList','itemListElement':[{'@type':'ListItem','position':i,'url':BASE+'/blog/'+slug(a['keyword']),'name':a['title']} for i,a in enumerate(ARTICLES,1)]}]
+    index_graph.append({'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':BASE+'/'},{'@type':'ListItem','position':2,'name':'Blog','item':index_url}]})
     sections=''.join(f'<section class="topic-section" id="{slug(cat)}"><div class="section-label"><h2>{H(cat)}</h2><span>{sum(x["category"]==cat for x in ARTICLES):02d} guides</span></div>{cards([x for x in ARTICLES if x["category"]==cat],all_stats)}</section>' for cat in categories)
-    index=head('Basketball Highlight Guides, Captions & Team Ideas | Hoopcut','Basketball editing guides, Instagram captions and team-event ideas. Plan highlights, inspect Shot Tracer effects, and prepare media day or a season celebration.',index_url,index_graph)+navigation('index')+f'''<main id="main" class="blog-index"><section class="index-hero"><div><p class="eyebrow">THE HOOPCUT PLAYBOOK</p><h1>Better footage.<br><span>Better highlights.</span></h1><p class="lede">Practical guides for the moments worth keeping. Learn to select the play, shape the edit and share a reel that makes sense.</p><p class="index-meta">{len(ARTICLES)} focused guides · Editing, captions & team stories</p></div><img src="/assets/blog/court.webp" width="1280" height="720" alt="Basketball players in action on an outdoor court" fetchpriority="high"></section><nav class="topic-nav" aria-label="Browse topics">{''.join('<a href="#'+slug(cat)+'">'+H(cat)+'</a>' for cat in categories)}</nav>{sections}</main>'''+footer()+'</body></html>'
+    index=head('Basketball Highlight Guides, Captions & Team Ideas | Hoopcut','Basketball editing guides, Instagram captions and team-event ideas. Plan highlights, inspect Shot Tracer effects, and prepare media day or a season celebration.',index_url,index_graph)+navigation('index')+f'''<main id="main" class="blog-index"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Blog</span></nav><section class="index-hero"><div><p class="eyebrow">THE HOOPCUT PLAYBOOK</p><h1>Better footage.<br><span>Better highlights.</span></h1><p class="lede">Practical guides for the moments worth keeping. Learn to select the play, shape the edit and share a reel that makes sense.</p><p class="index-meta">{len(ARTICLES)} focused guides · Editing, captions & team stories</p></div><img src="/assets/blog/court.webp" width="1280" height="720" alt="Basketball players in action on an outdoor court" fetchpriority="high"></section><nav class="topic-nav" aria-label="Browse topics">{''.join('<a href="#'+slug(cat)+'">'+H(cat)+'</a>' for cat in categories)}</nav>{sections}</main>'''+footer()+'</body></html>'
     (ROOT/'blog/index.html').write_text(index)
     # The existing site's cleanUrls/trailingSlash configuration serves these paths.
     sitemap = Element('urlset', xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
