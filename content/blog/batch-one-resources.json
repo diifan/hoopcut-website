@@ -1,0 +1,1261 @@
+{
+  "date": "2026-10-27",
+  "status": "local review only",
+  "resources": [
+    {
+      "slug": "basketball-clip-log",
+      "title": "Basketball Clip Log: Track Source Timestamps",
+      "short": "Clip timestamp log",
+      "category": "Editing",
+      "kind": "sheet",
+      "description": "Log basketball video timestamps, filenames and plays in an editable clip sheet. Add rows, download CSV or print a source log for your next edit.",
+      "intro": "Find the same play again without scrubbing the entire game. This log records where a moment lives in the original recording. Keep elapsed source time separate from the scoreboard clock, especially when recording stops between periods.",
+      "columns": [
+        "Source file",
+        "Start (mm:ss)",
+        "End (mm:ss)",
+        "Player / number",
+        "Play",
+        "Review note"
+      ],
+      "rows": [
+        [
+          "game-01.mp4",
+          "02:10",
+          "02:18",
+          "Player A / 12",
+          "Catch and finish",
+          "Example only: confirm identity"
+        ],
+        [
+          "game-01.mp4",
+          "05:24",
+          "05:34",
+          "Player B / 8",
+          "Drive and pass",
+          "Example only: review the full possession"
+        ]
+      ],
+      "steps": [
+        [
+          "Identify the original",
+          "Enter the exact source filename before the timestamp. If you rename a file, update the log too. A note that says only “third quarter” is difficult for a second editor to locate."
+        ],
+        [
+          "Mark readable boundaries",
+          "Use elapsed recording time and leave the setup and result visible. Start and end entries are notes, not automatic trim commands. Open the source and verify them before exporting."
+        ],
+        [
+          "Review a shortlist",
+          "Use the review note to mark a keeper, uncertainty or a duplicate. Move selected plays into the storyboard only after checking the source. This sheet is a location index, not the finished reel."
+        ]
+      ],
+      "mistake": "Do not put the scoreboard clock in the source-time columns. A stopped game clock and a continuously recording phone quickly diverge.",
+      "example": "The fictional first row points to eight seconds in game-01.mp4. Another editor would open that file, inspect the player before the catch and confirm that the finish is visible before selecting it.",
+      "faq": [
+        [
+          "Does this sheet cut the video?",
+          "No. It stores your notes locally in the page until you download them. Use a video editor or the clipping workflow to create actual clips."
+        ],
+        [
+          "What happens if recording was paused?",
+          "Give each new file its own name and start the elapsed source timestamp again for that file."
+        ]
+      ],
+      "links": [
+        [
+          "Try prepared clip selection",
+          "/demo/auto-clipping"
+        ],
+        [
+          "Plan the final sequence",
+          "/templates/basketball-highlight-storyboard"
+        ],
+        [
+          "Learn to film the source",
+          "/blog/how-to-film-basketball-games"
+        ]
+      ],
+      "videoSteps": [
+        "Name the source file",
+        "Mark start and end times",
+        "Download the clip log"
+      ]
+    },
+    {
+      "slug": "basketball-highlight-storyboard",
+      "title": "Basketball Highlight Storyboard Template",
+      "short": "Highlight storyboard",
+      "category": "Editing",
+      "kind": "sheet",
+      "description": "Plan a basketball highlight sequence with an editable storyboard. Define each clip’s job, source and duration, then download the plan as CSV.",
+      "intro": "A storyboard decides why one play follows another. Use this sheet after you have a source clip log: describe the purpose of each moment, estimate its space in the reel and remove repetitions before opening the final edit.",
+      "columns": [
+        "Order",
+        "Purpose",
+        "Source / timestamp",
+        "Planned seconds",
+        "Title or audio note"
+      ],
+      "rows": [
+        [
+          "1",
+          "Establish the player",
+          "game-01 / 02:10",
+          "8",
+          "Name shown briefly before action"
+        ],
+        [
+          "2",
+          "Show a different contribution",
+          "game-02 / review needed",
+          "10",
+          "Find a complete distinct possession"
+        ],
+        [
+          "3",
+          "Close with the team",
+          "approved-team-image",
+          "4",
+          "Example: short thank-you"
+        ]
+      ],
+      "steps": [
+        [
+          "Choose the audience",
+          "Write whether the reel is a family update, a team tribute or recruiting support. A short social sequence and a longer review file need different context. Do not begin by filling every available second."
+        ],
+        [
+          "Give each row a job",
+          "A row should establish identity, show a distinct action or close the story. Two rows with the same job may be redundant even when they come from different games. Mark missing footage honestly."
+        ],
+        [
+          "Test the sequence",
+          "Read the rows in order, then watch the rough edit with someone who did not select the clips. Replace a confusing transition or repeated idea before polishing effects. Timing entries are estimates, not platform requirements."
+        ]
+      ],
+      "mistake": "Do not label an unverified play as an assist or defensive stop just because the sequence needs one. Find matching evidence or choose a different purpose.",
+      "example": "The sample changes from player identity to a different contribution, then closes with the team. It is a proposed sequence, not a claim that the source library contains every shot listed.",
+      "faq": [
+        [
+          "How long should the finished reel be?",
+          "Choose a duration for the audience and retain enough context to understand each play. The sample timings are placeholders, not a universal rule."
+        ],
+        [
+          "Can I turn this CSV directly into a video?",
+          "No. The file is an editing plan. You still need source footage and an editing workflow."
+        ]
+      ],
+      "links": [
+        [
+          "Create a source clip log",
+          "/templates/basketball-clip-log"
+        ],
+        [
+          "Read the complete editing guide",
+          "/blog/how-to-make-a-basketball-highlight-video"
+        ]
+      ],
+      "videoSteps": [
+        "Give each scene a purpose",
+        "Arrange distinct moments",
+        "Check the estimated duration"
+      ]
+    },
+    {
+      "slug": "basketball-player-highlight-log",
+      "title": "Basketball Player Highlight Review Sheet",
+      "short": "Player review sheet",
+      "category": "Editing",
+      "kind": "sheet",
+      "description": "Review a single player’s basketball clips with identity, context and evidence fields. Edit the sheet, add possessions and download a printable CSV.",
+      "intro": "Track whether a selected possession actually shows the player you intend to feature. This review sheet focuses on identity and visible evidence, while the clip log focuses on locating files. It is not a statistics or scouting model.",
+      "columns": [
+        "Source / time",
+        "Player / jersey",
+        "Visible identifier",
+        "Observed action",
+        "Context retained?",
+        "Decision"
+      ],
+      "rows": [
+        [
+          "game-01 / 02:10",
+          "Player A / 12",
+          "Number visible before catch",
+          "Catch and finish",
+          "Setup and result",
+          "Review original"
+        ],
+        [
+          "game-02 / to locate",
+          "Player A / 12",
+          "Needs confirmation",
+          "Unverified play",
+          "Incomplete source",
+          "Hold"
+        ]
+      ],
+      "steps": [
+        [
+          "Confirm identity early",
+          "Find a visible number or another reliable link before the action. Similar jerseys and camera movement can make identification uncertain. Mark that uncertainty instead of making an attractive but unsupported selection."
+        ],
+        [
+          "Describe only what is visible",
+          "Write a plain observation such as catch, dribble or pass. Do not infer a statistic from a clip that starts too late or ends before the result. Keep the complete source for a second look."
+        ],
+        [
+          "Decide what belongs",
+          "Separate a confirmed keeper from a clip held for review. The final selection should show distinct contributions and enough context, rather than repeating the same action to fill time."
+        ]
+      ],
+      "mistake": "A highlight sheet contains selected moments. It cannot establish shooting percentage, total assists or a complete game assessment.",
+      "example": "The second example is held because the player and result are unconfirmed. Leaving it out of the current shortlist protects the accuracy of the reel until the original file is checked.",
+      "faq": [
+        [
+          "Does Hoopcut verify the observations in this sheet?",
+          "No. These are user-entered review notes. Confirm identities and claims from your recordings."
+        ],
+        [
+          "Can two players share one row?",
+          "For this single-player workflow, use separate rows or note the relationship clearly. Do not attribute another player’s action to the featured athlete."
+        ]
+      ],
+      "links": [
+        [
+          "Plan a solo practice recording",
+          "/blog/record-basketball-practice-alone"
+        ],
+        [
+          "Build a recruiting reel",
+          "/blog/how-to-make-a-basketball-recruiting-video"
+        ],
+        [
+          "Locate clips by timestamp",
+          "/templates/basketball-clip-log"
+        ]
+      ],
+      "videoSteps": [
+        "Confirm the player",
+        "Describe the visible action",
+        "Keep or hold for review"
+      ]
+    },
+    {
+      "slug": "basketball-recruiting-title-card",
+      "title": "Basketball Recruiting Title Card Template",
+      "short": "Recruiting title card",
+      "category": "Player graphics",
+      "kind": "graphic",
+      "layout": "recruiting",
+      "description": "Create a readable basketball recruiting video title card with player name, class, position and contact text. Edit locally and download SVG or PNG.",
+      "intro": "Identify the athlete before the action begins. This landscape title card keeps a name, jersey number and a few verified details together. It is a graphic template, not a recruiting service or a promise about coach interest.",
+      "fields": [
+        [
+          "Player name",
+          "Jordan Ellis"
+        ],
+        [
+          "Jersey number",
+          "12"
+        ],
+        [
+          "Team / school",
+          "Example High School"
+        ],
+        [
+          "Class / position",
+          "Class of 2027 · Guard"
+        ],
+        [
+          "Contact line",
+          "coach@example.com"
+        ]
+      ],
+      "steps": [
+        [
+          "Choose essential details",
+          "Use the verified name, school, class and playing role. Keep a contact line only when the player and team want it shared. The default name, school and address are fictional examples."
+        ],
+        [
+          "Check readability over decoration",
+          "The landscape layout is intended as a simple opening still. Keep the name dominant and limit the supporting line. Export an image, then test it in the actual editing project and on a phone."
+        ],
+        [
+          "Connect identity to the footage",
+          "Follow the card with a possession where the player is identifiable. A title does not resolve ambiguity in a distant or obstructed clip. Use the review sheet to check that link."
+        ]
+      ],
+      "mistake": "Do not add unverified measurements, achievements, rankings or contact details to make the card look complete.",
+      "example": "A guard from an example school is used to demonstrate hierarchy. Replace every personal detail and preview the downloaded file before inserting it in a reel.",
+      "faq": [
+        [
+          "Is this an official recruiting format?",
+          "No. It is an original editable layout. Follow any specific instructions supplied by the intended recipient."
+        ],
+        [
+          "Does the export include a video?",
+          "No. Download the still as PNG or SVG and import it into your editing workflow."
+        ]
+      ],
+      "links": [
+        [
+          "Read the recruiting video guide",
+          "/blog/how-to-make-a-basketball-recruiting-video"
+        ],
+        [
+          "Review player identification",
+          "/templates/basketball-player-highlight-log"
+        ]
+      ],
+      "videoSteps": [
+        "Replace fictional details",
+        "Preview the identity hierarchy",
+        "Export an opening card"
+      ]
+    },
+    {
+      "slug": "basketball-reel-cover",
+      "title": "Basketball Reel Cover Template: Name & Number",
+      "short": "Reel cover",
+      "category": "Player graphics",
+      "kind": "graphic",
+      "layout": "cover",
+      "description": "Design a basketball reel cover with editable title, player and jersey number. Preview a vertical 9:16 layout and export a PNG or editable SVG.",
+      "intro": "Give a short basketball reel a recognizable cover without hiding the name behind decorative text. This vertical design uses original court linework and a large number, so it works without uploading a player photo.",
+      "fields": [
+        [
+          "Player name",
+          "Jordan Ellis"
+        ],
+        [
+          "Jersey number",
+          "12"
+        ],
+        [
+          "Team / school",
+          "EXAMPLE BASKETBALL"
+        ],
+        [
+          "Cover title",
+          "GAME NIGHT"
+        ],
+        [
+          "Supporting line",
+          "Selected moments · 2026"
+        ]
+      ],
+      "steps": [
+        [
+          "Name this specific reel",
+          "Use a short title that describes the actual footage: game night, practice set or season moments. A cover should not promise a complete game when the file contains only selected clips."
+        ],
+        [
+          "Keep the subject recognizable",
+          "Use the correct name and number and limit supporting text. The preview is a 9:16 canvas; other display surfaces may crop it differently, so inspect the placement in the destination before posting."
+        ],
+        [
+          "Export and inspect",
+          "Download the PNG for a flattened graphic or SVG for later editing. Open the exported file and check long names. This tool produces a cover image, not a video or an automatic publishing action."
+        ]
+      ],
+      "mistake": "Do not rely on the full canvas always being visible in a feed or profile preview. Check the actual destination crop before sharing.",
+      "example": "The default is a fictional game-night cover. Change the supporting line to identify the session or game represented by your own selected footage.",
+      "faq": [
+        [
+          "Can I upload a photo here?",
+          "This version is a text-and-linework design. It does not upload, generate or cut out a portrait."
+        ],
+        [
+          "Is the cover linked to my reel automatically?",
+          "No. Add the exported graphic in the editing or posting workflow you use."
+        ]
+      ],
+      "links": [
+        [
+          "Choose a basketball Instagram caption",
+          "/blog/basketball-captions-for-instagram"
+        ],
+        [
+          "Plan social captions around the play",
+          "/templates/basketball-social-caption-planner"
+        ]
+      ],
+      "videoSteps": [
+        "Name the actual reel",
+        "Keep the number prominent",
+        "Export the vertical cover"
+      ]
+    },
+    {
+      "slug": "basketball-social-caption-planner",
+      "title": "Basketball Social Caption Planner",
+      "short": "Caption planner",
+      "category": "Social planning",
+      "kind": "sheet",
+      "description": "Match basketball clips with accurate social captions. Plan the moment, voice, credits and final wording in an editable sheet with CSV download.",
+      "intro": "Start with what the footage actually shows, then write the line. This planner connects a clip to its caption and credit checks. It complements the caption-ideas page by giving your team somewhere to make a final decision.",
+      "columns": [
+        "Clip / image",
+        "Actual moment",
+        "Voice",
+        "Draft caption",
+        "Credit / check",
+        "Status"
+      ],
+      "rows": [
+        [
+          "practice-01",
+          "Extra reps after practice",
+          "Quiet effort",
+          "One more before we go.",
+          "Confirm player permission",
+          "Draft"
+        ],
+        [
+          "game-02",
+          "A teammate creates the pass",
+          "Team first",
+          "The setup deserves a replay.",
+          "Confirm passer and scorer",
+          "Review"
+        ]
+      ],
+      "steps": [
+        [
+          "Describe the moment first",
+          "Write one factual sentence about the clip before choosing a joke or slogan. If the caption claims a winner, record or comeback, verify it against the actual game rather than inferring it from the selected shot."
+        ],
+        [
+          "Choose a fitting voice",
+          "Use short, funny or reflective wording to suit the player and moment. An inside joke should still make sense to the person featured. Borrow a starter from the caption library, then add a detail that belongs to this clip."
+        ],
+        [
+          "Check credit and approval",
+          "Note the people and material that need acknowledgement. Set a clear review status so a draft does not get mistaken for an approved post. This sheet does not publish or connect to a social account."
+        ]
+      ],
+      "mistake": "Do not use a caption to invent the result of a game or attribute a teammate’s play to the wrong person.",
+      "example": "The two fictional entries use different voices because a quiet practice moment and a team-created play tell different stories. Neither is a claim about an actual Hoopcut user.",
+      "faq": [
+        [
+          "Does this generate captions automatically?",
+          "No. It is an editable planning sheet. The linked caption library provides original starting ideas."
+        ],
+        [
+          "Can I use the same caption for every post?",
+          "You can, but a specific line is usually more useful to the audience. Match the text to what is visible in each clip."
+        ]
+      ],
+      "links": [
+        [
+          "Browse 60 caption ideas",
+          "/blog/basketball-captions-for-instagram"
+        ],
+        [
+          "Plan a week of team posts",
+          "/templates/basketball-team-post-calendar"
+        ],
+        [
+          "Create a reel cover",
+          "/templates/basketball-reel-cover"
+        ]
+      ],
+      "videoSteps": [
+        "Describe the visible moment",
+        "Write a matching line",
+        "Mark the review status"
+      ]
+    },
+    {
+      "slug": "basketball-team-post-calendar",
+      "title": "Basketball Team Post Calendar Template",
+      "short": "Team post calendar",
+      "category": "Social planning",
+      "kind": "sheet",
+      "description": "Organize a week of basketball team posts by purpose, asset, owner and approval. Edit the calendar and download a CSV without connecting any accounts.",
+      "intro": "A team content calendar coordinates who gathers, checks and shares each asset. This proposed week balances preparation, game action and recognition. It is a planning example, not an optimal posting-frequency claim or an automatic scheduler.",
+      "columns": [
+        "Day / date",
+        "Post purpose",
+        "Asset needed",
+        "Owner",
+        "Approval",
+        "Publication note"
+      ],
+      "rows": [
+        [
+          "Monday",
+          "Practice update",
+          "Approved practice clip",
+          "Team editor",
+          "Coach review",
+          "Draft only"
+        ],
+        [
+          "Wednesday",
+          "Player introduction",
+          "Media day portrait or card",
+          "Media volunteer",
+          "Player details checked",
+          "Use confirmed roster"
+        ],
+        [
+          "Friday",
+          "Game-day information",
+          "Verified event graphic",
+          "Team manager",
+          "Schedule confirmed",
+          "Check for changes"
+        ],
+        [
+          "Sunday",
+          "Team reflection",
+          "Approved game clip",
+          "Team editor",
+          "Identity and result checked",
+          "Do not repeat a claim unchecked"
+        ]
+      ],
+      "steps": [
+        [
+          "Choose a realistic cadence",
+          "Plan only the posts someone can prepare and review. Leave a day blank if the team has no useful update. The sample week is an organizational aid, not evidence about social algorithms or guaranteed engagement."
+        ],
+        [
+          "Assign one accountable owner",
+          "The person gathering a clip may differ from the person approving the post. Name the owner and the review state so work does not disappear between a group chat and the posting account."
+        ],
+        [
+          "Keep the schedule adjustable",
+          "Check game times and player details near publication. If plans change, update the calendar rather than posting an outdated draft. Use separate rows when one asset serves different purposes on different days."
+        ]
+      ],
+      "mistake": "A scheduled idea is not an approved announcement. Verify event information and permissions before anyone posts.",
+      "example": "The fictional week alternates a practice update, player introduction, game information and reflection. Remove any row that does not match your real team’s plans.",
+      "faq": [
+        [
+          "Will the page publish the posts?",
+          "No. It does not connect to social accounts. Download the plan and use your normal review and posting process."
+        ],
+        [
+          "How often should a team post?",
+          "Use the team’s capacity and the audience’s information needs. This resource does not claim one frequency is best for every team."
+        ]
+      ],
+      "links": [
+        [
+          "Prepare assets at media day",
+          "/blog/basketball-media-day-ideas"
+        ],
+        [
+          "Write captions tied to clips",
+          "/templates/basketball-social-caption-planner"
+        ]
+      ],
+      "videoSteps": [
+        "Plan useful updates",
+        "Assign an owner and review",
+        "Export the working calendar"
+      ]
+    },
+    {
+      "slug": "basketball-senior-night-poster",
+      "title": "Basketball Senior Night Poster Template",
+      "short": "Senior night poster",
+      "category": "Senior night",
+      "kind": "graphic",
+      "layout": "poster",
+      "description": "Edit a basketball senior night poster with player name, jersey number, school and class. Download a scalable SVG or PNG and check a print proof.",
+      "intro": "Make a number-led senior poster without needing a portrait. The original design gives the player’s name and jersey number room to read. Match the verified details to your program and table card before printing the set.",
+      "fields": [
+        [
+          "Player name",
+          "Jordan Ellis"
+        ],
+        [
+          "Jersey number",
+          "12"
+        ],
+        [
+          "Team / school",
+          "EXAMPLE HIGH SCHOOL"
+        ],
+        [
+          "Class year",
+          "CLASS OF 2027"
+        ],
+        [
+          "Short message",
+          "Thank you for every moment."
+        ]
+      ],
+      "steps": [
+        [
+          "Confirm the roster details",
+          "Use the same spelling and number as the event program. Ask the organizer which class year and team name should appear. Defaults are fictional placeholders, not a real student’s details."
+        ],
+        [
+          "Choose a short message",
+          "A specific thank-you or brief memory works better than a crowded paragraph. Keep the words within the input limits and inspect the live preview. The name should remain the strongest readable text."
+        ],
+        [
+          "Proof for the actual print size",
+          "The SVG is scalable and the PNG is a convenience export. Both use a 4:5 design ratio. Ask the printer about dimensions, margins and bleed, then check a proof; this browser preview does not certify print production."
+        ]
+      ],
+      "mistake": "Do not assume a small screen preview establishes legibility from across a gym. Inspect the design at the intended display size.",
+      "example": "The sample celebrates an example senior with a large number and a short thank-you. Use the poster ideas guide to compare this number-led approach with portrait-led and memory-led layouts.",
+      "faq": [
+        [
+          "Is the poster an image of a real senior?",
+          "No. The default is an original graphic with fictional details and no portrait."
+        ],
+        [
+          "Can I change the colors?",
+          "Yes. The accent selector changes the design accent. Keep text contrast strong and check your exported proof."
+        ]
+      ],
+      "links": [
+        [
+          "Compare senior night poster layouts",
+          "/blog/basketball-senior-night-poster-ideas"
+        ],
+        [
+          "Make a matching table card",
+          "/templates/basketball-senior-night-table-card"
+        ],
+        [
+          "Proof the event program",
+          "/templates/basketball-senior-night-program"
+        ]
+      ],
+      "videoSteps": [
+        "Replace name and number",
+        "Choose a short thank-you",
+        "Download and proof the poster"
+      ]
+    },
+    {
+      "slug": "basketball-senior-night-table-card",
+      "title": "Basketball Senior Night Table Card Template",
+      "short": "Senior table card",
+      "category": "Senior night",
+      "kind": "graphic",
+      "layout": "table-card",
+      "description": "Create a basketball senior night name card with player number and class year. Edit a landscape design, export SVG or PNG, and print for your display.",
+      "intro": "Help visitors identify a senior’s display before they examine the keepsakes. This flat landscape card keeps the name, number and class together. It pairs with a stand or holder you provide; it is not a folded tent-card dieline.",
+      "fields": [
+        [
+          "Player name",
+          "Jordan Ellis"
+        ],
+        [
+          "Jersey number",
+          "12"
+        ],
+        [
+          "Team / school",
+          "EXAMPLE BASKETBALL"
+        ],
+        [
+          "Class year",
+          "CLASS OF 2027"
+        ],
+        [
+          "Welcome line",
+          "Leave a favorite team memory."
+        ]
+      ],
+      "steps": [
+        [
+          "Face the arrival route",
+          "Place the card where visitors see the name before reaching the items. Use the table-layout guide to leave space for memories and a clear action. Measure the actual location rather than treating the illustration as a scale plan."
+        ],
+        [
+          "Use verified identity",
+          "Match the name and number to the program. Keep the supporting line brief: it can invite a message or identify the team, but should not compete with the name."
+        ],
+        [
+          "Print as a flat card",
+          "Download the scalable SVG or PNG, check your desired physical size and choose a suitable holder. No fold marks or production bleed are included. Print one test before making the full roster."
+        ]
+      ],
+      "mistake": "Do not describe this file as a ready-cut folded tent. It is a flat 3:2 layout intended for a holder or another support you arrange.",
+      "example": "The fictional card invites visitors to leave a favorite team memory. Pair it with printed memory cards and a clearly labeled collection area.",
+      "faq": [
+        [
+          "Can it stand by itself?",
+          "The exported design is flat. Use a stand or separately planned support appropriate to your paper and location."
+        ],
+        [
+          "Can several cards share a table?",
+          "Yes. Keep the format and text size consistent and give each player comparable display space."
+        ]
+      ],
+      "links": [
+        [
+          "Arrange the senior night table",
+          "/blog/basketball-senior-night-table-ideas"
+        ],
+        [
+          "Create a memory card",
+          "/templates/basketball-senior-memory-card"
+        ],
+        [
+          "Edit a matching poster",
+          "/templates/basketball-senior-night-poster"
+        ]
+      ],
+      "videoSteps": [
+        "Confirm player identity",
+        "Add one visitor instruction",
+        "Export the flat display card"
+      ]
+    },
+    {
+      "slug": "basketball-senior-night-program",
+      "title": "Basketball Senior Night Program Template",
+      "short": "Senior night program",
+      "category": "Senior night",
+      "kind": "sheet",
+      "description": "Build a printable basketball senior night program with cue, speaker, duration and responsibility fields. Edit the proposed order and export a CSV.",
+      "intro": "Give organizers one shared order for the recognition segment. This worksheet separates what the audience hears from who runs each cue. The proposed durations are planning examples and need to fit the actual game and venue schedule.",
+      "columns": [
+        "Order",
+        "Audience moment",
+        "Speaker / cue owner",
+        "Planned minutes",
+        "Setup or pronunciation note"
+      ],
+      "rows": [
+        [
+          "1",
+          "Welcome and purpose",
+          "Announcer",
+          "1",
+          "Confirm microphone cue"
+        ],
+        [
+          "2",
+          "Senior introductions",
+          "Coach / announcer",
+          "6",
+          "Verify roster and pronunciations"
+        ],
+        [
+          "3",
+          "Team thank-you",
+          "Coach",
+          "2",
+          "Check who is included"
+        ],
+        [
+          "4",
+          "Group photo and transition",
+          "Event organizer",
+          "3",
+          "Keep the game schedule clear"
+        ]
+      ],
+      "steps": [
+        [
+          "Confirm the event window",
+          "Ask the organizer where the segment fits relative to the game. Work backward from that real window rather than assuming the sample total is available."
+        ],
+        [
+          "Proof names and speaking cues",
+          "Assign one owner to the roster and another to the microphone sequence when appropriate. Put pronunciation reminders in the notes column and check them with the people concerned."
+        ],
+        [
+          "Rehearse the transition",
+          "Walk through how players arrive, where gifts are handed over and how the segment ends. A printed cue sheet can help staff recover if a speaker is absent or a media file fails."
+        ]
+      ],
+      "mistake": "Do not present this example as an official school or league ceremony order. Local requirements and the event owner take priority.",
+      "example": "The four sample moments form a short recognition segment. They do not include a meal or full banquet agenda, which belongs to a separate team event.",
+      "faq": [
+        [
+          "Is this a designed booklet?",
+          "It is an editable run-of-show sheet with a print view and CSV export. Use the data in another design tool if you need a folded booklet."
+        ],
+        [
+          "Can I add every senior separately?",
+          "Yes. Add one row per introduction and check that the total fits the confirmed window."
+        ]
+      ],
+      "links": [
+        [
+          "Plan the wider senior night",
+          "/blog/basketball-senior-night-ideas"
+        ],
+        [
+          "Create table labels",
+          "/templates/basketball-senior-night-table-card"
+        ],
+        [
+          "Plan a separate banquet",
+          "/blog/basketball-banquet-ideas"
+        ]
+      ],
+      "videoSteps": [
+        "Set the confirmed event window",
+        "Assign speaking cues",
+        "Print the working program"
+      ]
+    },
+    {
+      "slug": "basketball-senior-memory-card",
+      "title": "Basketball Senior Memory Card Template",
+      "short": "Senior memory card",
+      "category": "Senior night",
+      "kind": "graphic",
+      "layout": "memory",
+      "description": "Print a basketball senior memory card with a player name and a specific teammate prompt. Edit locally, download the design and collect handwritten notes.",
+      "intro": "Collect one specific memory rather than a generic signature. This printable card gives teammates and visitors a prompt and writing space. Download a blank-writing-area design, then collect and review the cards for the senior.",
+      "fields": [
+        [
+          "Player name",
+          "Jordan Ellis"
+        ],
+        [
+          "Jersey number",
+          "12"
+        ],
+        [
+          "Team / school",
+          "EXAMPLE BASKETBALL"
+        ],
+        [
+          "Memory prompt",
+          "A team moment I will remember…"
+        ],
+        [
+          "Closing prompt",
+          "From:"
+        ]
+      ],
+      "steps": [
+        [
+          "Choose a prompt people can answer",
+          "Ask for one moment, helpful habit or piece of encouragement. Avoid a broad request that leaves visitors staring at an empty card. Make it clear that a short response is enough."
+        ],
+        [
+          "Leave room to write",
+          "The exported design reserves lines for handwriting. This version does not type or generate the personal message. Print a test at your chosen size to check whether the writing area is comfortable."
+        ],
+        [
+          "Collect and deliver",
+          "Provide pens and a labeled collection point. Assign someone to gather cards after the event and check that the messages are suitable for sharing before putting them in the final keepsake."
+        ]
+      ],
+      "mistake": "Do not make a player’s private or uncomfortable story part of a public display without checking. A kind, specific memory is enough.",
+      "example": "The default card asks for a team moment and leaves the answer blank. It is a designed prompt, not a testimonial written by an actual teammate.",
+      "faq": [
+        [
+          "Can I type the entire memory here?",
+          "This template edits the identity and prompts; the answer area is for handwriting after printing. Use the SVG in a graphics editor for other layout changes."
+        ],
+        [
+          "How many cards should we print?",
+          "Estimate who will participate and print a small reserve. There is no required number per player."
+        ]
+      ],
+      "links": [
+        [
+          "Choose a meaningful senior gift",
+          "/blog/basketball-senior-night-gift-ideas"
+        ],
+        [
+          "Plan the display table",
+          "/blog/basketball-senior-night-table-ideas"
+        ]
+      ],
+      "videoSteps": [
+        "Choose one memory prompt",
+        "Print the writing card",
+        "Collect specific team memories"
+      ]
+    },
+    {
+      "slug": "basketball-senior-gift-budget",
+      "title": "Basketball Senior Gift Budget Calculator & Sheet",
+      "short": "Senior gift budget",
+      "category": "Senior night",
+      "kind": "budget",
+      "description": "Calculate a basketball senior gift budget from quantities, unit costs and extras. Edit line items, see totals and download the working sheet as CSV.",
+      "intro": "Turn a gift idea into a costed team decision. Enter quantity, unit cost and any extra amount for each line. The total is calculated in your browser. Every default cost is a fictional example, not a current quote or a recommended spend.",
+      "columns": [
+        "Item",
+        "Quantity",
+        "Unit cost (USD)",
+        "Extra cost (USD)",
+        "Owner / quote note"
+      ],
+      "rows": [
+        [
+          "Printed memory cards",
+          "20",
+          "0.50",
+          "0",
+          "Example arithmetic only"
+        ],
+        [
+          "Gift envelopes",
+          "10",
+          "1.00",
+          "0",
+          "Replace with actual quote"
+        ],
+        [
+          "Shared display",
+          "1",
+          "8.00",
+          "2",
+          "Example includes an extra charge"
+        ]
+      ],
+      "steps": [
+        [
+          "Count recipients and items separately",
+          "A group of ten seniors may need twenty cards but only one shared display. Set quantity for each item rather than multiplying the entire event budget by the roster size."
+        ],
+        [
+          "Enter actual quotes",
+          "Use the unit price and separate extras such as setup or shipping. Enter tax as an extra line or extra cost when applicable. The calculator does not fetch prices or calculate tax rates."
+        ],
+        [
+          "Agree the total before collecting money",
+          "Check the combined amount with the organizer and record an owner. Replace assumptions before ordering. Keep optional individual gifts separate from a shared team commitment."
+        ]
+      ],
+      "mistake": "Do not treat the example dollar amounts as vendor prices. This tool performs arithmetic on your inputs and does not verify affordability, quotes or payment.",
+      "example": "The sample combines 20 cards at $0.50, 10 envelopes at $1.00 and one $8 display with $2 extra. The arithmetic total is $30.00; all amounts are fictional.",
+      "faq": [
+        [
+          "What formula does the calculator use?",
+          "Each line is quantity × unit cost + extra cost. The grand total adds the line totals. Blank numeric cells count as zero; invalid or negative inputs must be corrected."
+        ],
+        [
+          "Can I use another currency?",
+          "This version labels amounts USD and does not convert currencies. Use consistent units and relabel the downloaded sheet yourself if planning in another currency."
+        ]
+      ],
+      "links": [
+        [
+          "Compare senior gift approaches",
+          "/blog/basketball-senior-night-gift-ideas"
+        ],
+        [
+          "Create a memory card",
+          "/templates/basketball-senior-memory-card"
+        ]
+      ],
+      "videoSteps": [
+        "Count the items",
+        "Replace example costs",
+        "Review the calculated total"
+      ]
+    },
+    {
+      "slug": "basketball-media-day-schedule",
+      "title": "Basketball Media Day Schedule Template",
+      "short": "Media day schedule",
+      "category": "Team events",
+      "kind": "sheet",
+      "description": "Plan basketball media day station rotations with groups, time blocks and owners. Edit a sample three-station schedule and download the CSV.",
+      "intro": "Keep players moving through portraits, interview prompts and detail shots without guessing which group goes next. This proposed rotation sheet makes the station owner and handoff visible. Adapt the blocks to your actual roster and staffing.",
+      "columns": [
+        "Time block",
+        "Player group",
+        "Station",
+        "Station owner",
+        "Handoff / check"
+      ],
+      "rows": [
+        [
+          "4:00–4:10",
+          "Group A",
+          "Portraits",
+          "Photographer",
+          "Check name and jersey"
+        ],
+        [
+          "4:00–4:10",
+          "Group B",
+          "Interview",
+          "Interviewer",
+          "Test recorded audio"
+        ],
+        [
+          "4:00–4:10",
+          "Group C",
+          "Details / jersey",
+          "Media volunteer",
+          "Confirm requested shots"
+        ],
+        [
+          "4:10–4:20",
+          "Group A",
+          "Interview",
+          "Interviewer",
+          "Rotate after station clears"
+        ],
+        [
+          "4:10–4:20",
+          "Group B",
+          "Details / jersey",
+          "Media volunteer",
+          "Track missing assets"
+        ],
+        [
+          "4:10–4:20",
+          "Group C",
+          "Portraits",
+          "Photographer",
+          "Keep group check-in list"
+        ],
+        [
+          "4:20–4:30",
+          "Group A",
+          "Details / jersey",
+          "Media volunteer",
+          "Confirm all three complete"
+        ],
+        [
+          "4:20–4:30",
+          "Group B",
+          "Portraits",
+          "Photographer",
+          "Confirm all three complete"
+        ],
+        [
+          "4:20–4:30",
+          "Group C",
+          "Interview",
+          "Interviewer",
+          "Confirm all three complete"
+        ]
+      ],
+      "steps": [
+        [
+          "Set the stations you can staff",
+          "A portrait, interview and detail station are one possible arrangement. Gipper’s guide discusses planning people, locations and a shot list; our rotation is an original example, not a schedule prescribed by that guide."
+        ],
+        [
+          "Balance groups and time blocks",
+          "Put each group through each required station once. The sample uses three groups over three ten-minute blocks. Test how long the real tasks take and add setup or catch-up time outside the rotation."
+        ],
+        [
+          "Record what is missing",
+          "Give a person responsibility for the completion check. If an athlete arrives late or audio fails, note the missing asset and arrange a catch-up rather than claiming the roster is complete."
+        ]
+      ],
+      "mistake": "The sample is a proposed rotation, not a capacity guarantee. Larger groups or a single photographer may require a different structure.",
+      "example": "Group A starts with portraits, then interviews, then details. Groups B and C start elsewhere. Each visits all three stations without being scheduled at two places in the same block.",
+      "faq": [
+        [
+          "Does the sheet check conflicts automatically?",
+          "No. It is an editable schedule. Review player groups, staff and station overlap yourself after changes."
+        ],
+        [
+          "Can we run only one station?",
+          "Yes. Replace the example with sequential groups and realistic timing for your available staff."
+        ]
+      ],
+      "sources": [
+        [
+          "Gipper: Guide to hosting a media day",
+          "https://www.gipper.com/hubfs/Downloadable%20Assets/Guide%20-%20Hosting%20Media%20Day.pdf"
+        ]
+      ],
+      "links": [
+        [
+          "Plan media day visuals and shots",
+          "/blog/basketball-media-day-ideas"
+        ],
+        [
+          "Prepare interview prompts",
+          "/templates/basketball-media-day-interview-cards"
+        ],
+        [
+          "Plan how to use the assets",
+          "/templates/basketball-team-post-calendar"
+        ]
+      ],
+      "videoSteps": [
+        "Choose staffed stations",
+        "Rotate groups through each task",
+        "Track missing assets"
+      ]
+    },
+    {
+      "slug": "basketball-media-day-interview-cards",
+      "title": "Basketball Media Day Interview Prompt Cards",
+      "short": "Media day interview cards",
+      "category": "Team events",
+      "kind": "interview",
+      "description": "Prepare basketball media day interview prompts with follow-up questions and recording notes. Edit the cards, print them or download a CSV.",
+      "intro": "Help an interviewer move beyond a player’s name without forcing a scripted answer. These original prompts focus on team memories, preparation and identity. They are question starters, not fabricated athlete quotes.",
+      "columns": [
+        "Prompt category",
+        "Opening question",
+        "Follow-up",
+        "Recording note"
+      ],
+      "rows": [
+        [
+          "Introduction",
+          "How do you say your name and jersey number?",
+          "Would you repeat that once at a normal pace?",
+          "Verify against roster"
+        ],
+        [
+          "Teamwork",
+          "What does a good teammate do at practice?",
+          "Can you give one specific example?",
+          "Let the player finish"
+        ],
+        [
+          "Preparation",
+          "What is one part of your routine before a game?",
+          "What helps you feel ready?",
+          "Avoid sensitive personal detail"
+        ],
+        [
+          "Memory",
+          "What team moment has stayed with you?",
+          "What made that moment stand out?",
+          "Check permission before sharing"
+        ]
+      ],
+      "steps": [
+        [
+          "Begin with identity and a sound check",
+          "Record a short answer and replay it before continuing. Confirm the name and jersey number against the roster. The interviewer should know who will review the material and where it is intended to appear."
+        ],
+        [
+          "Ask for a specific example",
+          "A follow-up often produces a clearer answer than asking several new questions. Leave a pause and let the player respond in their own words. Do not write an answer for them and present it as spontaneous."
+        ],
+        [
+          "Keep a useful edit note",
+          "Note which response is usable and any sharing restriction. Keep the question with the source file so an editor understands the answer. An interview clip should not be edited into a different claim."
+        ]
+      ],
+      "mistake": "Do not use these prompts to invent quotes or to pressure someone into sharing a private story. A short voluntary answer is sufficient.",
+      "example": "The teamwork prompt asks for a practical example rather than a ranked judgment about teammates. The cards contain questions only; no response is claimed to come from a real athlete.",
+      "faq": [
+        [
+          "Can I print separate cards?",
+          "Yes. The print view presents each edited row as a prompt card. You can also download the data as CSV."
+        ],
+        [
+          "Does Hoopcut record or transcribe the interview?",
+          "This page is a planning tool. It does not record audio, transcribe answers or add an interview feature to the app."
+        ]
+      ],
+      "sources": [
+        [
+          "Gipper: Guide to hosting a media day",
+          "https://www.gipper.com/hubfs/Downloadable%20Assets/Guide%20-%20Hosting%20Media%20Day.pdf"
+        ]
+      ],
+      "links": [
+        [
+          "Organize media day stations",
+          "/templates/basketball-media-day-schedule"
+        ],
+        [
+          "Read the media day guide",
+          "/blog/basketball-media-day-ideas"
+        ]
+      ],
+      "videoSteps": [
+        "Start with a clear question",
+        "Prepare one follow-up",
+        "Print the interview cards"
+      ]
+    },
+    {
+      "slug": "basketball-banquet-award-certificate",
+      "title": "Basketball Banquet Award Certificate Template",
+      "short": "Banquet award certificate",
+      "category": "Team events",
+      "kind": "graphic",
+      "layout": "certificate",
+      "description": "Create a basketball banquet recognition certificate with a verified player name and specific contribution. Edit locally and export a printable SVG or PNG.",
+      "intro": "Recognize something a teammate actually contributed. This certificate pairs a player name with an award title and a short explanation. It does not rank athletes, select winners or invent statistics.",
+      "fields": [
+        [
+          "Player name",
+          "Jordan Ellis"
+        ],
+        [
+          "Award title",
+          "TEAMMATE RECOGNITION"
+        ],
+        [
+          "Team / season",
+          "Example Basketball · 2026–27"
+        ],
+        [
+          "Specific contribution",
+          "For welcoming and encouraging new teammates."
+        ],
+        [
+          "Presented by",
+          "Presented by the team"
+        ]
+      ],
+      "steps": [
+        [
+          "Name an observable contribution",
+          "Choose a specific action that coaches or teammates can verify. If a formal competitive award exists, follow that selection process rather than using this template as a substitute. The example recognition is fictional."
+        ],
+        [
+          "Proof the wording with the organizer",
+          "Check the player’s name, team, season and award title. A short explanation is easier to read than a paragraph of generic praise. MBX’s local banquet guidance emphasizes coordination with coaches; it is not a universal award policy."
+        ],
+        [
+          "Make a print proof",
+          "The landscape certificate uses a 3:2 layout and does not include a signature image or official seal. Export, inspect the text and confirm the paper size and margins before printing the full set."
+        ]
+      ],
+      "mistake": "Do not use embarrassing joke awards or unverified achievements just to fill the design. The template cannot verify the claim you type.",
+      "example": "The example recognizes welcoming and encouraging new teammates. It demonstrates wording for a contribution, not an award actually granted by Hoopcut.",
+      "faq": [
+        [
+          "Is this an official school certificate?",
+          "No. It is an original editable design. Have the team or organization approve its use and wording."
+        ],
+        [
+          "Can I add a signature?",
+          "The page includes a presented-by text line. Download the SVG and edit it in another graphics tool if you need a separately approved signature element."
+        ]
+      ],
+      "sources": [
+        [
+          "MBX Foundation: Banquet planning (local guidance)",
+          "https://www.mbxfoundation.org/wp-content/uploads/Banquet-Planning.pdf"
+        ]
+      ],
+      "links": [
+        [
+          "Plan the basketball banquet",
+          "/blog/basketball-banquet-ideas"
+        ],
+        [
+          "Collect a teammate memory",
+          "/templates/basketball-senior-memory-card"
+        ]
+      ],
+      "videoSteps": [
+        "Verify the contribution",
+        "Personalize the certificate",
+        "Export and check a print proof"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+Source / time,Player / jersey,Visible identifier,Observed action,Context retained?,Decision
+game-01 / 02:10,Player A / 12,Number visible before catch,Catch and finish,Setup and result,Review original
+game-02 / to locate,Player A / 12,Needs confirmation,Unverified play,Incomplete source,Hold
