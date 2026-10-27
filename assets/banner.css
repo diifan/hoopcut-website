@@ -226,3 +226,8 @@ body { container-type: inline-size; }
 /* Keep the keyboard shortcut out of screenshots/scrolling until keyboard focus. */
 .skip-link:not(:focus-visible) { clip-path: inset(50%); width: 1px; height: 1px; padding: 0; overflow: hidden; white-space: nowrap; }
 .skip-link:focus-visible { transform: translateY(0); }
+
+/* Keep navigation and its mobile dropdown above the scrolling content. */
+.site-header{position:sticky;top:0;z-index:20}
+html{scroll-padding-top:98px}
+@media(max-width:700px){html{scroll-padding-top:88px}}
