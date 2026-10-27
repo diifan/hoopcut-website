@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-27",
+  "illustrations": [
+    {
+      "asset": "/assets/blog/editorial/basketball-captions.jpg",
+      "origin": "OpenAI imagegen, generated editorial illustration",
+      "originalGeneratedFile": "exec-01f5541b-3d28-4831-97d5-6930e1c9488b.png",
+      "disclosure": "Visible AI-generated editorial illustration or visual concept label; not a customer event."
+    },
+    {
+      "asset": "/assets/blog/editorial/basketball-media-day.jpg",
+      "origin": "OpenAI imagegen, generated editorial illustration",
+      "originalGeneratedFile": "exec-89159103-dbea-4ab7-93da-d6ae8cdafbdc.png",
+      "disclosure": "Visible AI-generated editorial illustration or visual concept label; not a customer event."
+    },
+    {
+      "asset": "/assets/blog/editorial/basketball-banquet.jpg",
+      "origin": "OpenAI imagegen, generated editorial illustration",
+      "originalGeneratedFile": "exec-d5e1661c-274a-4e05-a809-6a3582959c2e.png",
+      "disclosure": "Visible AI-generated editorial illustration or visual concept label; not a customer event."
+    }
+  ],
+  "videos": [
+    {
+      "asset": "/assets/blog/editorial/media-day-game-sample.mp4",
+      "source": "/assets/video/players/blue.mp4",
+      "durationSeconds": 5.4,
+      "treatment": "Excerpt and re-encode only; no fabricated event footage or new effects."
+    },
+    {
+      "asset": "/assets/blog/editorial/season-recap-sample.mp4",
+      "source": "/assets/video/players/all.mp4",
+      "durationSeconds": 15.566667,
+      "treatment": "Excerpt and re-encode only; no fabricated event footage or new effects."
+    }
+  ]
+}

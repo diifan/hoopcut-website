@@ -115,8 +115,9 @@ for a,b in itertools.combinations(article_words,2):
 worst=max(similarity)
 assert worst[0]<0.5, ('near-duplicate article bodies',worst)
 urls=[x.text for x in ElementTree.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
-assert len(urls)==len(ARTICLES)+4 and len(urls)==len(set(urls))
+assert len(urls)==len(ARTICLES)+6 and len(urls)==len(set(urls))
 assert all('https://hoopcut.ai/blog/'+slug(x['keyword']) in urls for x in ARTICLES)
+assert all('https://hoopcut.ai/demo/'+x in urls for x in ['auto-clipping','shot-tracer'])
 assert 'Sitemap: https://hoopcut.ai/sitemap.xml' in (ROOT/'robots.txt').read_text()
 print('PASS: consolidated guides, sitemap, canonical/schema/metadata, links/anchors, 350+ article words; no minimum keyword density.')
 print('Highest five-word-shingle Jaccard similarity:',round(worst[0],3),worst[1:])
