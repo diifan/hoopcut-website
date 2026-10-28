@@ -1,0 +1,1853 @@
+{
+  "version": 1,
+  "images": {
+    "/assets/icon.png": {
+      "sourceHash": "71944d031dcd",
+      "originalBytes": 1459266,
+      "width": 1254,
+      "height": 1254,
+      "variants": [
+        {
+          "url": "/assets/optimized/icon-48.c71b0dafa147.webp",
+          "width": 48,
+          "bytes": 872
+        },
+        {
+          "url": "/assets/optimized/icon-96.b82cd50d8b31.webp",
+          "width": 96,
+          "bytes": 2018
+        },
+        {
+          "url": "/assets/optimized/icon-192.51bda8be56ec.webp",
+          "width": 192,
+          "bytes": 4578
+        }
+      ],
+      "favicon": "/assets/optimized/favicon.438dce7a983a.png"
+    },
+    "/assets/game-jump-shot.png": {
+      "sourceHash": "bafb2dc1bc2c",
+      "originalBytes": 1945330,
+      "width": 1254,
+      "height": 1254,
+      "variants": [
+        {
+          "url": "/assets/optimized/game-jump-shot-320.b2715043187f.webp",
+          "width": 320,
+          "bytes": 14636
+        },
+        {
+          "url": "/assets/optimized/game-jump-shot-640.e09db02b4f5e.webp",
+          "width": 640,
+          "bytes": 37062
+        },
+        {
+          "url": "/assets/optimized/game-jump-shot-960.804abc8a1c52.webp",
+          "width": 960,
+          "bytes": 63194
+        },
+        {
+          "url": "/assets/optimized/game-jump-shot-1254.5114753edc07.webp",
+          "width": 1254,
+          "bytes": 87772
+        }
+      ]
+    },
+    "/assets/video/players/all.jpg": {
+      "sourceHash": "5e96b68d9068",
+      "originalBytes": 170673,
+      "width": 1600,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/all-320.bbab099c5a81.webp",
+          "width": 320,
+          "bytes": 8616
+        },
+        {
+          "url": "/assets/optimized/all-640.f03bae561f46.webp",
+          "width": 640,
+          "bytes": 25694
+        },
+        {
+          "url": "/assets/optimized/all-960.9181fdac98bc.webp",
+          "width": 960,
+          "bytes": 44552
+        },
+        {
+          "url": "/assets/optimized/all-1280.272611bde82b.webp",
+          "width": 1280,
+          "bytes": 63102
+        }
+      ]
+    },
+    "/assets/video/players/blue.jpg": {
+      "sourceHash": "a8b619f735ca",
+      "originalBytes": 169308,
+      "width": 1600,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/blue-320.4befad14acf5.webp",
+          "width": 320,
+          "bytes": 8130
+        },
+        {
+          "url": "/assets/optimized/blue-640.8c962bfce30e.webp",
+          "width": 640,
+          "bytes": 24754
+        },
+        {
+          "url": "/assets/optimized/blue-960.ae04340fd2ff.webp",
+          "width": 960,
+          "bytes": 43276
+        },
+        {
+          "url": "/assets/optimized/blue-1280.696f280fe951.webp",
+          "width": 1280,
+          "bytes": 62024
+        }
+      ]
+    },
+    "/assets/video/players/red.jpg": {
+      "sourceHash": "d61ee9555de5",
+      "originalBytes": 173316,
+      "width": 1600,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/red-320.fa9257390278.webp",
+          "width": 320,
+          "bytes": 8924
+        },
+        {
+          "url": "/assets/optimized/red-640.7dd4eaf6e05b.webp",
+          "width": 640,
+          "bytes": 24914
+        },
+        {
+          "url": "/assets/optimized/red-960.abea13ad065d.webp",
+          "width": 960,
+          "bytes": 43104
+        },
+        {
+          "url": "/assets/optimized/red-1280.1bc19186f4c3.webp",
+          "width": 1280,
+          "bytes": 61692
+        }
+      ]
+    },
+    "/assets/video/players/black.jpg": {
+      "sourceHash": "31635040abcf",
+      "originalBytes": 180061,
+      "width": 1600,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/black-320.127f3a1c8be9.webp",
+          "width": 320,
+          "bytes": 8798
+        },
+        {
+          "url": "/assets/optimized/black-640.00065e0fa48b.webp",
+          "width": 640,
+          "bytes": 25588
+        },
+        {
+          "url": "/assets/optimized/black-960.432ec94671ca.webp",
+          "width": 960,
+          "bytes": 45404
+        },
+        {
+          "url": "/assets/optimized/black-1280.9815fdae78a7.webp",
+          "width": 1280,
+          "bytes": 65104
+        }
+      ]
+    },
+    "/assets/players/blue.jpg": {
+      "sourceHash": "e3365004b5c8",
+      "originalBytes": 9220,
+      "width": 82,
+      "height": 216,
+      "variants": [
+        {
+          "url": "/assets/optimized/blue-82.563a412f34eb.webp",
+          "width": 82,
+          "bytes": 3196
+        }
+      ]
+    },
+    "/assets/players/red.jpg": {
+      "sourceHash": "57d526850d75",
+      "originalBytes": 27764,
+      "width": 174,
+      "height": 494,
+      "variants": [
+        {
+          "url": "/assets/optimized/red-174.4379f89014a0.webp",
+          "width": 174,
+          "bytes": 8418
+        }
+      ]
+    },
+    "/assets/players/black.jpg": {
+      "sourceHash": "611674b5f0df",
+      "originalBytes": 4132,
+      "width": 42,
+      "height": 147,
+      "variants": [
+        {
+          "url": "/assets/optimized/black-42.41f03232e9f5.webp",
+          "width": 42,
+          "bytes": 1304
+        }
+      ]
+    },
+    "/assets/day-clean.png": {
+      "sourceHash": "6238d3aa4531",
+      "originalBytes": 2199010,
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "url": "/assets/optimized/day-clean-320.db8b9b60aa23.webp",
+          "width": 320,
+          "bytes": 14128
+        },
+        {
+          "url": "/assets/optimized/day-clean-640.c062f922dc24.webp",
+          "width": 640,
+          "bytes": 40194
+        },
+        {
+          "url": "/assets/optimized/day-clean-960.e0d53ed5f4f3.webp",
+          "width": 960,
+          "bytes": 67622
+        },
+        {
+          "url": "/assets/optimized/day-clean-1280.35f7d5aae696.webp",
+          "width": 1280,
+          "bytes": 95856
+        }
+      ]
+    },
+    "/assets/dunk.png": {
+      "sourceHash": "14c029094d88",
+      "originalBytes": 1986160,
+      "width": 1672,
+      "height": 941,
+      "variants": [
+        {
+          "url": "/assets/optimized/dunk-320.0372f1fdd5b1.webp",
+          "width": 320,
+          "bytes": 9200
+        },
+        {
+          "url": "/assets/optimized/dunk-640.7b66ecf7a43b.webp",
+          "width": 640,
+          "bytes": 25410
+        },
+        {
+          "url": "/assets/optimized/dunk-960.23d2bbd064a7.webp",
+          "width": 960,
+          "bytes": 44714
+        },
+        {
+          "url": "/assets/optimized/dunk-1280.66361f7ce2b3.webp",
+          "width": 1280,
+          "bytes": 66338
+        }
+      ]
+    },
+    "/assets/resources/basketball-reel-cover.jpg": {
+      "sourceHash": "1dc0ff732052",
+      "originalBytes": 28631,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-reel-cover-320.0e5c39dd5a80.webp",
+          "width": 320,
+          "bytes": 3484
+        },
+        {
+          "url": "/assets/optimized/basketball-reel-cover-640.bbac916dfa6a.webp",
+          "width": 640,
+          "bytes": 7854
+        },
+        {
+          "url": "/assets/optimized/basketball-reel-cover-960.a5a18cf99014.webp",
+          "width": 960,
+          "bytes": 12288
+        },
+        {
+          "url": "/assets/optimized/basketball-reel-cover-1200.9d2a7b6e6e84.webp",
+          "width": 1200,
+          "bytes": 15684
+        }
+      ]
+    },
+    "/assets/resources/basketball-clip-log.jpg": {
+      "sourceHash": "fed761171efe",
+      "originalBytes": 28282,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-clip-log-320.853b0f39d47b.webp",
+          "width": 320,
+          "bytes": 2522
+        },
+        {
+          "url": "/assets/optimized/basketball-clip-log-640.418948c69146.webp",
+          "width": 640,
+          "bytes": 7588
+        },
+        {
+          "url": "/assets/optimized/basketball-clip-log-960.cf1e77f05509.webp",
+          "width": 960,
+          "bytes": 13246
+        },
+        {
+          "url": "/assets/optimized/basketball-clip-log-1200.e303914b0871.webp",
+          "width": 1200,
+          "bytes": 18212
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-gift-budget.jpg": {
+      "sourceHash": "9dedeef60ccb",
+      "originalBytes": 28821,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-gift-budget-320.cf750103ea6c.webp",
+          "width": 320,
+          "bytes": 2674
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-gift-budget-640.f862ceab51c3.webp",
+          "width": 640,
+          "bytes": 7670
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-gift-budget-960.5b2ed4ae93b0.webp",
+          "width": 960,
+          "bytes": 13084
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-gift-budget-1200.8bdf5d12110a.webp",
+          "width": 1200,
+          "bytes": 18008
+        }
+      ]
+    },
+    "/assets/blog/brand-icon.png": {
+      "sourceHash": "6c63021ec318",
+      "originalBytes": 13061,
+      "width": 102,
+      "height": 102,
+      "variants": [
+        {
+          "url": "/assets/optimized/brand-icon-48.5b5765961808.webp",
+          "width": 48,
+          "bytes": 876
+        },
+        {
+          "url": "/assets/optimized/brand-icon-96.f8bce08e3c1e.webp",
+          "width": 96,
+          "bytes": 1954
+        },
+        {
+          "url": "/assets/optimized/brand-icon-102.1413d923fd1f.webp",
+          "width": 102,
+          "bytes": 2134
+        }
+      ]
+    },
+    "/assets/resources/basketball-reel-cover-preview.jpg": {
+      "sourceHash": "cc5562e27d9a",
+      "originalBytes": 77731,
+      "width": 1080,
+      "height": 1920,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-reel-cover-preview-320.a22ccf563f97.webp",
+          "width": 320,
+          "bytes": 10036
+        },
+        {
+          "url": "/assets/optimized/basketball-reel-cover-preview-640.33af1d4d3d74.webp",
+          "width": 640,
+          "bytes": 22034
+        },
+        {
+          "url": "/assets/optimized/basketball-reel-cover-preview-960.07a66b8300a3.webp",
+          "width": 960,
+          "bytes": 34870
+        },
+        {
+          "url": "/assets/optimized/basketball-reel-cover-preview-1080.929e1f2734b2.webp",
+          "width": 1080,
+          "bytes": 37814
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-poster-preview.jpg": {
+      "sourceHash": "369716d4ccc2",
+      "originalBytes": 113048,
+      "width": 1200,
+      "height": 1500,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-preview-320.ac662206ccc4.webp",
+          "width": 320,
+          "bytes": 10564
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-preview-640.3098cb148a04.webp",
+          "width": 640,
+          "bytes": 23746
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-preview-960.26a174f1f1c8.webp",
+          "width": 960,
+          "bytes": 34916
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-preview-1200.061a10cd998b.webp",
+          "width": 1200,
+          "bytes": 45178
+        }
+      ]
+    },
+    "/assets/resources/basketball-recruiting-title-card.jpg": {
+      "sourceHash": "6fbcf14f1bd3",
+      "originalBytes": 37650,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-320.83f6934144f4.webp",
+          "width": 320,
+          "bytes": 4260
+        },
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-640.8ac055318290.webp",
+          "width": 640,
+          "bytes": 10090
+        },
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-960.ae8192752b3b.webp",
+          "width": 960,
+          "bytes": 16048
+        },
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-1200.9a9aaa777e30.webp",
+          "width": 1200,
+          "bytes": 19912
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-poster.jpg": {
+      "sourceHash": "d0dca6aa739e",
+      "originalBytes": 39084,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-320.8964414e0f4b.webp",
+          "width": 320,
+          "bytes": 4560
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-640.204ea429e611.webp",
+          "width": 640,
+          "bytes": 11100
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-960.6b9c9013a812.webp",
+          "width": 960,
+          "bytes": 17736
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-1200.f7db2dafd98e.webp",
+          "width": 1200,
+          "bytes": 23260
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-table-card.jpg": {
+      "sourceHash": "4d0e4ff17fe0",
+      "originalBytes": 33935,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-320.da1cfbe7b025.webp",
+          "width": 320,
+          "bytes": 3752
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-640.5a495405ff26.webp",
+          "width": 640,
+          "bytes": 8992
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-960.afdf3353c0f2.webp",
+          "width": 960,
+          "bytes": 13502
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-1200.de0bdd364074.webp",
+          "width": 1200,
+          "bytes": 17350
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-memory-card.jpg": {
+      "sourceHash": "e459fdd096b6",
+      "originalBytes": 24124,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-320.7120c1efc35e.webp",
+          "width": 320,
+          "bytes": 2184
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-640.8ef549f4b2ad.webp",
+          "width": 640,
+          "bytes": 5618
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-960.58ec8363d860.webp",
+          "width": 960,
+          "bytes": 9332
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-1200.d902d389e0b1.webp",
+          "width": 1200,
+          "bytes": 12098
+        }
+      ]
+    },
+    "/assets/resources/basketball-banquet-award-certificate.jpg": {
+      "sourceHash": "ced7c89e67aa",
+      "originalBytes": 38659,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-320.4758b746e5f9.webp",
+          "width": 320,
+          "bytes": 3990
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-640.dff6259559f7.webp",
+          "width": 640,
+          "bytes": 10452
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-960.5f8178c24394.webp",
+          "width": 960,
+          "bytes": 15272
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-1200.0904fe14843f.webp",
+          "width": 1200,
+          "bytes": 20760
+        }
+      ]
+    },
+    "/assets/resources/basketball-highlight-storyboard.jpg": {
+      "sourceHash": "4743ecbb2047",
+      "originalBytes": 33383,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-highlight-storyboard-320.0405afe5637e.webp",
+          "width": 320,
+          "bytes": 3064
+        },
+        {
+          "url": "/assets/optimized/basketball-highlight-storyboard-640.c8a0bcbd3ab3.webp",
+          "width": 640,
+          "bytes": 9024
+        },
+        {
+          "url": "/assets/optimized/basketball-highlight-storyboard-960.1366cadd68fb.webp",
+          "width": 960,
+          "bytes": 15682
+        },
+        {
+          "url": "/assets/optimized/basketball-highlight-storyboard-1200.64bdbb1e3df0.webp",
+          "width": 1200,
+          "bytes": 21470
+        }
+      ]
+    },
+    "/assets/resources/basketball-player-highlight-log.jpg": {
+      "sourceHash": "6e3a93592a79",
+      "originalBytes": 32751,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-player-highlight-log-320.17e349826153.webp",
+          "width": 320,
+          "bytes": 2878
+        },
+        {
+          "url": "/assets/optimized/basketball-player-highlight-log-640.26293284a6a3.webp",
+          "width": 640,
+          "bytes": 9290
+        },
+        {
+          "url": "/assets/optimized/basketball-player-highlight-log-960.12dd5c731ac2.webp",
+          "width": 960,
+          "bytes": 15852
+        },
+        {
+          "url": "/assets/optimized/basketball-player-highlight-log-1200.070506d45df7.webp",
+          "width": 1200,
+          "bytes": 21976
+        }
+      ]
+    },
+    "/assets/resources/basketball-social-caption-planner.jpg": {
+      "sourceHash": "ad227ceb18ae",
+      "originalBytes": 30950,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-social-caption-planner-320.f1974b9ed6f1.webp",
+          "width": 320,
+          "bytes": 2688
+        },
+        {
+          "url": "/assets/optimized/basketball-social-caption-planner-640.065c907e11db.webp",
+          "width": 640,
+          "bytes": 8354
+        },
+        {
+          "url": "/assets/optimized/basketball-social-caption-planner-960.771a409e45bf.webp",
+          "width": 960,
+          "bytes": 14798
+        },
+        {
+          "url": "/assets/optimized/basketball-social-caption-planner-1200.1510cc72101a.webp",
+          "width": 1200,
+          "bytes": 20472
+        }
+      ]
+    },
+    "/assets/resources/basketball-team-post-calendar.jpg": {
+      "sourceHash": "260544f98b0a",
+      "originalBytes": 40031,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-team-post-calendar-320.4ceefc77180c.webp",
+          "width": 320,
+          "bytes": 3550
+        },
+        {
+          "url": "/assets/optimized/basketball-team-post-calendar-640.f69c3302a7ac.webp",
+          "width": 640,
+          "bytes": 10566
+        },
+        {
+          "url": "/assets/optimized/basketball-team-post-calendar-960.b50e32f6b8b8.webp",
+          "width": 960,
+          "bytes": 19292
+        },
+        {
+          "url": "/assets/optimized/basketball-team-post-calendar-1200.594ccb0d5a7a.webp",
+          "width": 1200,
+          "bytes": 26908
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-program.jpg": {
+      "sourceHash": "0fd440b2f2a2",
+      "originalBytes": 35652,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-program-320.4fbce4830b11.webp",
+          "width": 320,
+          "bytes": 3146
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-program-640.209262dab051.webp",
+          "width": 640,
+          "bytes": 9334
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-program-960.650f37fb67b4.webp",
+          "width": 960,
+          "bytes": 16358
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-program-1200.de5516d32001.webp",
+          "width": 1200,
+          "bytes": 22882
+        }
+      ]
+    },
+    "/assets/resources/basketball-media-day-schedule.jpg": {
+      "sourceHash": "51b298ff37d6",
+      "originalBytes": 35628,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-media-day-schedule-320.03ff417560b4.webp",
+          "width": 320,
+          "bytes": 3162
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-schedule-640.9afcf3d59ae7.webp",
+          "width": 640,
+          "bytes": 9250
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-schedule-960.9f56988e19f9.webp",
+          "width": 960,
+          "bytes": 16662
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-schedule-1200.721c91388ec3.webp",
+          "width": 1200,
+          "bytes": 22936
+        }
+      ]
+    },
+    "/assets/resources/basketball-media-day-interview-cards.jpg": {
+      "sourceHash": "59e706061723",
+      "originalBytes": 47708,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-media-day-interview-cards-320.48a5919feb91.webp",
+          "width": 320,
+          "bytes": 4202
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-interview-cards-640.2c5c265ce844.webp",
+          "width": 640,
+          "bytes": 12998
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-interview-cards-960.06ad722e70d1.webp",
+          "width": 960,
+          "bytes": 23564
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-interview-cards-1200.5afa48efcbd1.webp",
+          "width": 1200,
+          "bytes": 33230
+        }
+      ]
+    },
+    "/assets/blog/editorial/basketball-banquet.jpg": {
+      "sourceHash": "00809978d4c6",
+      "originalBytes": 377685,
+      "width": 1536,
+      "height": 1024,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-banquet-320.c96b0d749b33.webp",
+          "width": 320,
+          "bytes": 14282
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-640.e113f47aad13.webp",
+          "width": 640,
+          "bytes": 35946
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-960.a604b2728b0b.webp",
+          "width": 960,
+          "bytes": 64034
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-1280.5846fc485cbb.webp",
+          "width": 1280,
+          "bytes": 95294
+        }
+      ]
+    },
+    "/assets/blog/editorial/season-recap-poster.jpg": {
+      "sourceHash": "0f53f2145f65",
+      "originalBytes": 65878,
+      "width": 960,
+      "height": 480,
+      "variants": [
+        {
+          "url": "/assets/optimized/season-recap-poster-320.68ad5162be7a.webp",
+          "width": 320,
+          "bytes": 8714
+        },
+        {
+          "url": "/assets/optimized/season-recap-poster-640.0beac674ec8b.webp",
+          "width": 640,
+          "bytes": 24722
+        },
+        {
+          "url": "/assets/optimized/season-recap-poster-960.e717fe04cdb6.webp",
+          "width": 960,
+          "bytes": 41580
+        }
+      ]
+    },
+    "/assets/blog/editorial/basketball-captions.jpg": {
+      "sourceHash": "fbaac5f0b1be",
+      "originalBytes": 362299,
+      "width": 1536,
+      "height": 1024,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-captions-320.2416f6fecb5e.webp",
+          "width": 320,
+          "bytes": 12222
+        },
+        {
+          "url": "/assets/optimized/basketball-captions-640.79382e4c883f.webp",
+          "width": 640,
+          "bytes": 30556
+        },
+        {
+          "url": "/assets/optimized/basketball-captions-960.52685efc17df.webp",
+          "width": 960,
+          "bytes": 54388
+        },
+        {
+          "url": "/assets/optimized/basketball-captions-1280.de96a13a392e.webp",
+          "width": 1280,
+          "bytes": 80518
+        }
+      ]
+    },
+    "/assets/blog/editorial/basketball-media-day.jpg": {
+      "sourceHash": "621e245e2fce",
+      "originalBytes": 342188,
+      "width": 1536,
+      "height": 1024,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-media-day-320.2361a3e75a1a.webp",
+          "width": 320,
+          "bytes": 10806
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-640.8c354ada5e4a.webp",
+          "width": 640,
+          "bytes": 27810
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-960.3a91b759124c.webp",
+          "width": 960,
+          "bytes": 48520
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-1280.0f9c133cc64e.webp",
+          "width": 1280,
+          "bytes": 71584
+        }
+      ]
+    },
+    "/assets/blog/editorial/media-day-game-poster.jpg": {
+      "sourceHash": "b57a6d1c4de7",
+      "originalBytes": 63285,
+      "width": 960,
+      "height": 480,
+      "variants": [
+        {
+          "url": "/assets/optimized/media-day-game-poster-320.9dfe4e228fa8.webp",
+          "width": 320,
+          "bytes": 8212
+        },
+        {
+          "url": "/assets/optimized/media-day-game-poster-640.2b956e12abe7.webp",
+          "width": 640,
+          "bytes": 23386
+        },
+        {
+          "url": "/assets/optimized/media-day-game-poster-960.6a47a596aa0c.webp",
+          "width": 960,
+          "bytes": 39710
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-gift-ideas.jpg": {
+      "sourceHash": "b2218bb4174f",
+      "originalBytes": 31425,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-gift-ideas-320.f81a84477e19.webp",
+          "width": 320,
+          "bytes": 3796
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-gift-ideas-640.eb49421b063b.webp",
+          "width": 640,
+          "bytes": 10352
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-gift-ideas-960.66735979311c.webp",
+          "width": 960,
+          "bytes": 16582
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-gift-ideas-1200.eb2b55789742.webp",
+          "width": 1200,
+          "bytes": 21690
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-gift-ideas-poster.jpg": {
+      "sourceHash": "af12e05b6b0e",
+      "originalBytes": 60912,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-gift-ideas-poster-320.4af86e7668a3.webp",
+          "width": 320,
+          "bytes": 4208
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-gift-ideas-poster-640.54e9e1ee58b5.webp",
+          "width": 640,
+          "bytes": 12756
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-gift-ideas-poster-960.92e106b3659a.webp",
+          "width": 960,
+          "bytes": 21624
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-gift-ideas-poster-1200.028120e201a5.webp",
+          "width": 1200,
+          "bytes": 29740
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-poster-ideas.jpg": {
+      "sourceHash": "b6b93c759e3f",
+      "originalBytes": 33450,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-ideas-320.fd8b91c7d8ef.webp",
+          "width": 320,
+          "bytes": 3172
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-ideas-640.6508a948ff90.webp",
+          "width": 640,
+          "bytes": 8506
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-ideas-960.4f58ed1a459b.webp",
+          "width": 960,
+          "bytes": 13834
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-ideas-1200.efebeb682d64.webp",
+          "width": 1200,
+          "bytes": 18230
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-poster-ideas-poster.jpg": {
+      "sourceHash": "dc5f33250f42",
+      "originalBytes": 63201,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-ideas-poster-320.ecf12858e798.webp",
+          "width": 320,
+          "bytes": 4280
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-ideas-poster-640.b2eefcd872eb.webp",
+          "width": 640,
+          "bytes": 12504
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-ideas-poster-960.77efe2e38f58.webp",
+          "width": 960,
+          "bytes": 20318
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-ideas-poster-1200.f2b9c7c5e23c.webp",
+          "width": 1200,
+          "bytes": 28330
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-table-ideas.jpg": {
+      "sourceHash": "01f8111afa05",
+      "originalBytes": 30910,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-ideas-320.bccbe307c960.webp",
+          "width": 320,
+          "bytes": 3282
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-ideas-640.6d9cd4059162.webp",
+          "width": 640,
+          "bytes": 9498
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-ideas-960.9a83f73100f0.webp",
+          "width": 960,
+          "bytes": 14736
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-ideas-1200.ed9477af7f44.webp",
+          "width": 1200,
+          "bytes": 18926
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-table-ideas-poster.jpg": {
+      "sourceHash": "dc417350cd96",
+      "originalBytes": 63214,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-ideas-poster-320.bb56566dd723.webp",
+          "width": 320,
+          "bytes": 4076
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-ideas-poster-640.6204d2cde166.webp",
+          "width": 640,
+          "bytes": 12584
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-ideas-poster-960.d847f7477fc9.webp",
+          "width": 960,
+          "bytes": 21590
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-ideas-poster-1200.8b5bb105b5b2.webp",
+          "width": 1200,
+          "bytes": 28838
+        }
+      ]
+    },
+    "/assets/resources/how-to-film-basketball-games.jpg": {
+      "sourceHash": "abcf4036e187",
+      "originalBytes": 32997,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/how-to-film-basketball-games-320.18b2c1b188ef.webp",
+          "width": 320,
+          "bytes": 3252
+        },
+        {
+          "url": "/assets/optimized/how-to-film-basketball-games-640.783d1f1858c3.webp",
+          "width": 640,
+          "bytes": 8526
+        },
+        {
+          "url": "/assets/optimized/how-to-film-basketball-games-960.26d08b8e9364.webp",
+          "width": 960,
+          "bytes": 14006
+        },
+        {
+          "url": "/assets/optimized/how-to-film-basketball-games-1200.b6f1179af452.webp",
+          "width": 1200,
+          "bytes": 17698
+        }
+      ]
+    },
+    "/assets/resources/how-to-film-basketball-games-poster.jpg": {
+      "sourceHash": "5b72a5d53c44",
+      "originalBytes": 61046,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/how-to-film-basketball-games-poster-320.99d88959de0a.webp",
+          "width": 320,
+          "bytes": 3930
+        },
+        {
+          "url": "/assets/optimized/how-to-film-basketball-games-poster-640.5abe63796957.webp",
+          "width": 640,
+          "bytes": 11610
+        },
+        {
+          "url": "/assets/optimized/how-to-film-basketball-games-poster-960.8972001f7b6b.webp",
+          "width": 960,
+          "bytes": 19612
+        },
+        {
+          "url": "/assets/optimized/how-to-film-basketball-games-poster-1200.033c05a3881a.webp",
+          "width": 1200,
+          "bytes": 27242
+        }
+      ]
+    },
+    "/assets/resources/record-basketball-practice-alone.jpg": {
+      "sourceHash": "67fe2794f35e",
+      "originalBytes": 32685,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/record-basketball-practice-alone-320.a42c3a3da6a4.webp",
+          "width": 320,
+          "bytes": 3324
+        },
+        {
+          "url": "/assets/optimized/record-basketball-practice-alone-640.d358ef7b62e9.webp",
+          "width": 640,
+          "bytes": 8590
+        },
+        {
+          "url": "/assets/optimized/record-basketball-practice-alone-960.85429d4ef94c.webp",
+          "width": 960,
+          "bytes": 14254
+        },
+        {
+          "url": "/assets/optimized/record-basketball-practice-alone-1200.6233f85a7eb1.webp",
+          "width": 1200,
+          "bytes": 18508
+        }
+      ]
+    },
+    "/assets/blog/court.webp": {
+      "sourceHash": "d22831fbd364",
+      "originalBytes": 98122,
+      "width": 1280,
+      "height": 720,
+      "variants": [
+        {
+          "url": "/assets/optimized/court-320.683d704cbd4c.webp",
+          "width": 320,
+          "bytes": 13684
+        },
+        {
+          "url": "/assets/optimized/court-640.103f3477706a.webp",
+          "width": 640,
+          "bytes": 38302
+        },
+        {
+          "url": "/assets/optimized/court-960.1a903b7be7b6.webp",
+          "width": 960,
+          "bytes": 59536
+        },
+        {
+          "url": "/assets/optimized/court-1280.3e9ed9096160.webp",
+          "width": 1280,
+          "bytes": 89810
+        }
+      ]
+    },
+    "/assets/resources/record-basketball-practice-alone-poster.jpg": {
+      "sourceHash": "d62aceca2b67",
+      "originalBytes": 62498,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/record-basketball-practice-alone-poster-320.bc3cad607fad.webp",
+          "width": 320,
+          "bytes": 4142
+        },
+        {
+          "url": "/assets/optimized/record-basketball-practice-alone-poster-640.a365d0135fdf.webp",
+          "width": 640,
+          "bytes": 11934
+        },
+        {
+          "url": "/assets/optimized/record-basketball-practice-alone-poster-960.a33f166f07ed.webp",
+          "width": 960,
+          "bytes": 20012
+        },
+        {
+          "url": "/assets/optimized/record-basketball-practice-alone-poster-1200.30f98e0ef1d0.webp",
+          "width": 1200,
+          "bytes": 28290
+        }
+      ]
+    },
+    "/assets/resources/basketball-banquet-award-certificate-preview.jpg": {
+      "sourceHash": "6237a893238f",
+      "originalBytes": 42978,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-preview-320.a6856d533102.webp",
+          "width": 320,
+          "bytes": 4026
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-preview-640.22c7137efa40.webp",
+          "width": 640,
+          "bytes": 10452
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-preview-960.2f17be780271.webp",
+          "width": 960,
+          "bytes": 14904
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-preview-1200.60b07eb4be5b.webp",
+          "width": 1200,
+          "bytes": 20036
+        }
+      ]
+    },
+    "/assets/resources/basketball-banquet-award-certificate-poster.jpg": {
+      "sourceHash": "ecbbb8998a04",
+      "originalBytes": 64491,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-poster-320.c680ceec046d.webp",
+          "width": 320,
+          "bytes": 4502
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-poster-640.e25433f5a545.webp",
+          "width": 640,
+          "bytes": 12198
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-poster-960.b151dfac1fcd.webp",
+          "width": 960,
+          "bytes": 19738
+        },
+        {
+          "url": "/assets/optimized/basketball-banquet-award-certificate-poster-1200.69fe2273e687.webp",
+          "width": 1200,
+          "bytes": 26442
+        }
+      ]
+    },
+    "/assets/resources/basketball-clip-log-poster.jpg": {
+      "sourceHash": "97da791cd894",
+      "originalBytes": 51319,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-clip-log-poster-320.813dd7159709.webp",
+          "width": 320,
+          "bytes": 3256
+        },
+        {
+          "url": "/assets/optimized/basketball-clip-log-poster-640.6a198f99af84.webp",
+          "width": 640,
+          "bytes": 9122
+        },
+        {
+          "url": "/assets/optimized/basketball-clip-log-poster-960.4ff49045e455.webp",
+          "width": 960,
+          "bytes": 16342
+        },
+        {
+          "url": "/assets/optimized/basketball-clip-log-poster-1200.399fc39f87d6.webp",
+          "width": 1200,
+          "bytes": 22522
+        }
+      ]
+    },
+    "/assets/resources/basketball-highlight-storyboard-poster.jpg": {
+      "sourceHash": "738e508cab28",
+      "originalBytes": 57262,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-highlight-storyboard-poster-320.53e7112abaf6.webp",
+          "width": 320,
+          "bytes": 3524
+        },
+        {
+          "url": "/assets/optimized/basketball-highlight-storyboard-poster-640.5b307e43bc51.webp",
+          "width": 640,
+          "bytes": 10570
+        },
+        {
+          "url": "/assets/optimized/basketball-highlight-storyboard-poster-960.4680df97cf27.webp",
+          "width": 960,
+          "bytes": 18734
+        },
+        {
+          "url": "/assets/optimized/basketball-highlight-storyboard-poster-1200.11657e649e94.webp",
+          "width": 1200,
+          "bytes": 25352
+        }
+      ]
+    },
+    "/assets/resources/basketball-media-day-interview-cards-poster.jpg": {
+      "sourceHash": "81cd1bf93fbf",
+      "originalBytes": 69215,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-media-day-interview-cards-poster-320.b8d211e22c27.webp",
+          "width": 320,
+          "bytes": 4198
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-interview-cards-poster-640.0189a62ea637.webp",
+          "width": 640,
+          "bytes": 12658
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-interview-cards-poster-960.a87c4f0576da.webp",
+          "width": 960,
+          "bytes": 23158
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-interview-cards-poster-1200.9b256d71b273.webp",
+          "width": 1200,
+          "bytes": 32150
+        }
+      ]
+    },
+    "/assets/resources/basketball-media-day-schedule-poster.jpg": {
+      "sourceHash": "807a6e63f3c5",
+      "originalBytes": 58719,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-media-day-schedule-poster-320.ffcc9766c309.webp",
+          "width": 320,
+          "bytes": 3572
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-schedule-poster-640.1243c1e6bf93.webp",
+          "width": 640,
+          "bytes": 10484
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-schedule-poster-960.d0ef78a3a42a.webp",
+          "width": 960,
+          "bytes": 18936
+        },
+        {
+          "url": "/assets/optimized/basketball-media-day-schedule-poster-1200.69714c7ce971.webp",
+          "width": 1200,
+          "bytes": 25830
+        }
+      ]
+    },
+    "/assets/resources/basketball-player-highlight-log-poster.jpg": {
+      "sourceHash": "40150e176bb6",
+      "originalBytes": 54735,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-player-highlight-log-poster-320.c726a87853b5.webp",
+          "width": 320,
+          "bytes": 3386
+        },
+        {
+          "url": "/assets/optimized/basketball-player-highlight-log-poster-640.8f4d29a8df42.webp",
+          "width": 640,
+          "bytes": 9958
+        },
+        {
+          "url": "/assets/optimized/basketball-player-highlight-log-poster-960.ee4438062deb.webp",
+          "width": 960,
+          "bytes": 17984
+        },
+        {
+          "url": "/assets/optimized/basketball-player-highlight-log-poster-1200.c745d0b0f995.webp",
+          "width": 1200,
+          "bytes": 24622
+        }
+      ]
+    },
+    "/assets/resources/basketball-recruiting-title-card-preview.jpg": {
+      "sourceHash": "7abe0a82434a",
+      "originalBytes": 39390,
+      "width": 1200,
+      "height": 675,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-preview-320.0319b2d69e42.webp",
+          "width": 320,
+          "bytes": 4160
+        },
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-preview-640.98d26af32f03.webp",
+          "width": 640,
+          "bytes": 9800
+        },
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-preview-960.61be949590e8.webp",
+          "width": 960,
+          "bytes": 14460
+        },
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-preview-1200.064ccb928d79.webp",
+          "width": 1200,
+          "bytes": 19270
+        }
+      ]
+    },
+    "/assets/resources/basketball-recruiting-title-card-poster.jpg": {
+      "sourceHash": "9f9dd3cc11d2",
+      "originalBytes": 63651,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-poster-320.0ece643c16d1.webp",
+          "width": 320,
+          "bytes": 4854
+        },
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-poster-640.ecec8883145c.webp",
+          "width": 640,
+          "bytes": 12622
+        },
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-poster-960.9dc649a92b50.webp",
+          "width": 960,
+          "bytes": 20560
+        },
+        {
+          "url": "/assets/optimized/basketball-recruiting-title-card-poster-1200.03715f9e4047.webp",
+          "width": 1200,
+          "bytes": 27406
+        }
+      ]
+    },
+    "/assets/resources/basketball-reel-cover-poster.jpg": {
+      "sourceHash": "7138d07e6568",
+      "originalBytes": 46644,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-reel-cover-poster-320.13b38cbb6abd.webp",
+          "width": 320,
+          "bytes": 3670
+        },
+        {
+          "url": "/assets/optimized/basketball-reel-cover-poster-640.280502f28cae.webp",
+          "width": 640,
+          "bytes": 9336
+        },
+        {
+          "url": "/assets/optimized/basketball-reel-cover-poster-960.77c3391e541e.webp",
+          "width": 960,
+          "bytes": 15382
+        },
+        {
+          "url": "/assets/optimized/basketball-reel-cover-poster-1200.397d27c6631c.webp",
+          "width": 1200,
+          "bytes": 20882
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-gift-budget-poster.jpg": {
+      "sourceHash": "17750ef3cf7b",
+      "originalBytes": 52113,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-gift-budget-poster-320.447c375e6643.webp",
+          "width": 320,
+          "bytes": 3244
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-gift-budget-poster-640.23b7d6fc5eec.webp",
+          "width": 640,
+          "bytes": 9528
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-gift-budget-poster-960.111fb6c2e829.webp",
+          "width": 960,
+          "bytes": 16260
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-gift-budget-poster-1200.bb852a86c501.webp",
+          "width": 1200,
+          "bytes": 22218
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-memory-card-preview.jpg": {
+      "sourceHash": "d825486fe6fd",
+      "originalBytes": 48983,
+      "width": 1000,
+      "height": 1400,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-preview-320.7b915142a56a.webp",
+          "width": 320,
+          "bytes": 5912
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-preview-640.7d592ac4f3fc.webp",
+          "width": 640,
+          "bytes": 13184
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-preview-960.43c662a49f31.webp",
+          "width": 960,
+          "bytes": 20550
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-preview-1000.896015c2c51d.webp",
+          "width": 1000,
+          "bytes": 21580
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-memory-card-poster.jpg": {
+      "sourceHash": "c3e787cacb53",
+      "originalBytes": 48939,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-poster-320.a845f346f4b4.webp",
+          "width": 320,
+          "bytes": 2950
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-poster-640.ccbfdd0dd559.webp",
+          "width": 640,
+          "bytes": 8440
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-poster-960.356c679a33fb.webp",
+          "width": 960,
+          "bytes": 14182
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-memory-card-poster-1200.d2fe5903082e.webp",
+          "width": 1200,
+          "bytes": 19798
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-poster-poster.jpg": {
+      "sourceHash": "b056b384f4d8",
+      "originalBytes": 60325,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-poster-320.bad9febe78d7.webp",
+          "width": 320,
+          "bytes": 4544
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-poster-640.4b24679153dd.webp",
+          "width": 640,
+          "bytes": 12270
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-poster-960.b6c2575ae22a.webp",
+          "width": 960,
+          "bytes": 20066
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-poster-poster-1200.95f10a47d9ad.webp",
+          "width": 1200,
+          "bytes": 27368
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-program-poster.jpg": {
+      "sourceHash": "0b54bc5af859",
+      "originalBytes": 58880,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-program-poster-320.19994c074149.webp",
+          "width": 320,
+          "bytes": 3542
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-program-poster-640.997b6e87b531.webp",
+          "width": 640,
+          "bytes": 10696
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-program-poster-960.dd59c58f72af.webp",
+          "width": 960,
+          "bytes": 18816
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-program-poster-1200.70a9b7c7b0b9.webp",
+          "width": 1200,
+          "bytes": 25762
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-table-card-preview.jpg": {
+      "sourceHash": "8c1b9e966ab1",
+      "originalBytes": 37830,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-preview-320.c9fb80b14c76.webp",
+          "width": 320,
+          "bytes": 3790
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-preview-640.51e2f3e70ab7.webp",
+          "width": 640,
+          "bytes": 8972
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-preview-960.5cbea7b179f7.webp",
+          "width": 960,
+          "bytes": 13408
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-preview-1200.f3b532ccc0f1.webp",
+          "width": 1200,
+          "bytes": 17252
+        }
+      ]
+    },
+    "/assets/resources/basketball-senior-night-table-card-poster.jpg": {
+      "sourceHash": "0d59dd8d487a",
+      "originalBytes": 58136,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-poster-320.ddf88c6ab2b9.webp",
+          "width": 320,
+          "bytes": 4316
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-poster-640.d42838595c0f.webp",
+          "width": 640,
+          "bytes": 10846
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-poster-960.d3d19bd3595c.webp",
+          "width": 960,
+          "bytes": 17360
+        },
+        {
+          "url": "/assets/optimized/basketball-senior-night-table-card-poster-1200.a5df0a57b611.webp",
+          "width": 1200,
+          "bytes": 23660
+        }
+      ]
+    },
+    "/assets/resources/basketball-social-caption-planner-poster.jpg": {
+      "sourceHash": "e411473abb73",
+      "originalBytes": 52905,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-social-caption-planner-poster-320.322069b897a3.webp",
+          "width": 320,
+          "bytes": 3206
+        },
+        {
+          "url": "/assets/optimized/basketball-social-caption-planner-poster-640.696813fdb2fa.webp",
+          "width": 640,
+          "bytes": 9928
+        },
+        {
+          "url": "/assets/optimized/basketball-social-caption-planner-poster-960.6551ee301b68.webp",
+          "width": 960,
+          "bytes": 17136
+        },
+        {
+          "url": "/assets/optimized/basketball-social-caption-planner-poster-1200.fa61189b54fe.webp",
+          "width": 1200,
+          "bytes": 23470
+        }
+      ]
+    },
+    "/assets/resources/basketball-team-post-calendar-poster.jpg": {
+      "sourceHash": "899069499c81",
+      "originalBytes": 62041,
+      "width": 1200,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/basketball-team-post-calendar-poster-320.16a880c2fbb7.webp",
+          "width": 320,
+          "bytes": 3712
+        },
+        {
+          "url": "/assets/optimized/basketball-team-post-calendar-poster-640.565c3bee77d6.webp",
+          "width": 640,
+          "bytes": 11034
+        },
+        {
+          "url": "/assets/optimized/basketball-team-post-calendar-poster-960.5ced311d78b8.webp",
+          "width": 960,
+          "bytes": 20288
+        },
+        {
+          "url": "/assets/optimized/basketball-team-post-calendar-poster-1200.86a56105df19.webp",
+          "width": 1200,
+          "bytes": 28018
+        }
+      ]
+    },
+    "/assets/demo/shot-04.jpg": {
+      "sourceHash": "9b37b0f32107",
+      "originalBytes": 23708,
+      "width": 480,
+      "height": 240,
+      "variants": [
+        {
+          "url": "/assets/optimized/shot-04-320.168066a9f75e.webp",
+          "width": 320,
+          "bytes": 8300
+        },
+        {
+          "url": "/assets/optimized/shot-04-480.d8e56c6a9ef1.webp",
+          "width": 480,
+          "bytes": 14994
+        }
+      ]
+    },
+    "/assets/demo/shot-02.jpg": {
+      "sourceHash": "61915ca597da",
+      "originalBytes": 24482,
+      "width": 480,
+      "height": 240,
+      "variants": [
+        {
+          "url": "/assets/optimized/shot-02-320.f77daff249b3.webp",
+          "width": 320,
+          "bytes": 8804
+        },
+        {
+          "url": "/assets/optimized/shot-02-480.29aa03481b8d.webp",
+          "width": 480,
+          "bytes": 15306
+        }
+      ]
+    },
+    "/assets/demo/shot-10.jpg": {
+      "sourceHash": "43d5398a9b66",
+      "originalBytes": 25116,
+      "width": 480,
+      "height": 240,
+      "variants": [
+        {
+          "url": "/assets/optimized/shot-10-320.14f29b570e1f.webp",
+          "width": 320,
+          "bytes": 8780
+        },
+        {
+          "url": "/assets/optimized/shot-10-480.3b423209c50b.webp",
+          "width": 480,
+          "bytes": 15576
+        }
+      ]
+    }
+  },
+  "videos": {
+    "all": {
+      "sourceHash": "32f0334b1bea",
+      "originalBytes": 20214983,
+      "variants": {
+        "desktop": {
+          "url": "/assets/optimized/reel-all-960.d88e1c570d4c.mp4",
+          "width": 960,
+          "bytes": 3367062
+        },
+        "mobile": {
+          "url": "/assets/optimized/reel-all-640.016ff8971a4b.mp4",
+          "width": 640,
+          "bytes": 1810996
+        }
+      }
+    },
+    "blue": {
+      "sourceHash": "e5983456d6d6",
+      "originalBytes": 9549127,
+      "variants": {
+        "desktop": {
+          "url": "/assets/optimized/reel-blue-960.1279e4ffb3f9.mp4",
+          "width": 960,
+          "bytes": 1490386
+        },
+        "mobile": {
+          "url": "/assets/optimized/reel-blue-640.6ad7129280d4.mp4",
+          "width": 640,
+          "bytes": 803093
+        }
+      }
+    },
+    "red": {
+      "sourceHash": "c93adc3a8e44",
+      "originalBytes": 4998927,
+      "variants": {
+        "desktop": {
+          "url": "/assets/optimized/reel-red-960.194acfceb28b.mp4",
+          "width": 960,
+          "bytes": 928984
+        },
+        "mobile": {
+          "url": "/assets/optimized/reel-red-640.edf08a840679.mp4",
+          "width": 640,
+          "bytes": 510319
+        }
+      }
+    },
+    "black": {
+      "sourceHash": "49a54d77f062",
+      "originalBytes": 2375885,
+      "variants": {
+        "desktop": {
+          "url": "/assets/optimized/reel-black-960.337cedaa8c69.mp4",
+          "width": 960,
+          "bytes": 371208
+        },
+        "mobile": {
+          "url": "/assets/optimized/reel-black-640.890566be13c7.mp4",
+          "width": 640,
+          "bytes": 197278
+        }
+      }
+    }
+  }
+}

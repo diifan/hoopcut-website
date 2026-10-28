@@ -21,7 +21,7 @@ body { container-type: inline-size; }
 .hero .copy { position: absolute; z-index: 2; left: 7%; top: clamp(202px, calc(24vh + 32px), 322px); bottom: auto; width: 60%; padding: 0; }
 .hero-kicker { font-size: 11px; font-weight: 700; letter-spacing: 2.3px; color: #e4e4da; margin-bottom: 22px; }
 .hero h1 { font-size: clamp(52px, 6.3vw, 120px); line-height: .98; letter-spacing: -.06em; margin-bottom: 24px; }
-.hero .copy p { white-space: nowrap; width: max-content; max-width: none; font-size: 13px; line-height: 1.6; color: #dddcd4; margin-bottom: 27px; }
+.hero .copy p { white-space: normal; width: 100%; max-width: 540px; font-size: 16px; line-height: 1.6; color: #dddcd4; margin-bottom: 27px; }
 .hero .copy .cta { margin: 0; }
 .hero .copy small { margin-top: 12px; text-align: left; color: #c2c2b8; }
 .player-picker { position: absolute; top: 24px; left: 50%; right: auto; transform: translateX(-50%); z-index: 4; display: flex; gap: 10px; }
@@ -74,9 +74,10 @@ body { container-type: inline-size; }
   .hero .copy { position: absolute; inset: 0; width: 100%; padding: 36px 5.5% 0; pointer-events: none; }
   .hero-kicker { display: none; }
   .hero h1 { font-size: clamp(30px, 11.5vw, 62px); line-height: 1.02; letter-spacing: -.055em; margin-bottom: 22px; white-space: nowrap; }
-  .hero .copy p { width: max-content; max-width: none; white-space: nowrap; font-size: min(11px, 1.7vw); line-height: 1.6; margin: 0; }
+  .hero .copy p { width: 100%; max-width: 36ch; white-space: normal; font-size: 15px; line-height: 1.65; margin: 0; }
   .hero .copy .cta { position: absolute; left: 50%; bottom: 62px; transform: translateX(-50%); display: inline-flex; width: max-content; max-width: 90%; margin: 0; padding: 12px 22px; min-height: 62px; pointer-events: auto; transition: background .2s; }
   .hero .copy small { position: absolute; bottom: 40px; left: 0; width: 100%; margin: 0; text-align: center; font-size: 10px; }
+  .hero .copy .store-label strong { font-size: 22px; }
   .player-picker { top: auto; bottom: 140px; gap: 10px; }
   .player-option { width: 36px; height: 36px; }
   .player-option svg { width: 19px; height: 19px; }
@@ -226,6 +227,12 @@ body { container-type: inline-size; }
 /* Keep the keyboard shortcut out of screenshots/scrolling until keyboard focus. */
 .skip-link:not(:focus-visible) { clip-path: inset(50%); width: 1px; height: 1px; padding: 0; overflow: hidden; white-space: nowrap; }
 .skip-link:focus-visible { transform: translateY(0); }
+
+/* Leave enough room for readable, wrapping copy at laptop/tablet widths. */
+@media (min-width: 701px) and (max-width: 1400px) {
+  .hero .copy { top: 14%; }
+  .hero .copy p { font-size: 14px; }
+}
 
 /* Keep navigation and its mobile dropdown above the scrolling content. */
 .site-header{position:sticky;top:0;z-index:20}

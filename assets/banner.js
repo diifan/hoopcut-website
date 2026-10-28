@@ -3,6 +3,8 @@
   const status = document.querySelector('#player-status');
   const choices = [...document.querySelectorAll('[data-player]')];
   if (!video || !status) return;
+  const media = JSON.parse(document.querySelector('#hero-media-data')?.textContent || '{}');
+  const smallScreen = window.matchMedia('(max-width: 700px)');
   const reels = {
     all: { label: 'All players', count: 10 },
     blue: { label: 'Blue #1', count: 5 },
@@ -15,16 +17,28 @@
   let inView = true;
   let failed = false;
   let switching = false;
+  let loaded = false;
+  let ready = false;
   const summary = () => {
     const reel = reels[selected];
     return `${reel.label} · ${reel.count} made shot${reel.count === 1 ? '' : 's'}`;
   };
+  const load = () => {
+    if (loaded) return;
+    const item = media[selected];
+    if (!item) return;
+    video.src = smallScreen.matches ? item.mobile : item.desktop;
+    loaded = true;
+    video.load();
+  };
   const play = () => {
+    load();
     video.play().catch(() => {
       // Explicitly selecting an avatar can retry playback if autoplay is blocked.
     });
   };
   const sync = () => {
+    if (!ready) return;
     if (document.hidden || !inView || userPaused) video.pause();
     else if (!failed) play();
   };
@@ -60,9 +74,8 @@
     status.textContent = `Loading ${reels[key].label}…`;
     video.setAttribute('aria-busy', 'true');
     video.setAttribute('aria-label', summary() + ' with original shot trajectories');
-    video.poster = `assets/video/players/${key}.jpg?v=5`;
-    video.src = `assets/video/players/${key}.mp4?v=5`;
-    video.load();
+    video.poster = media[key]?.poster || `assets/video/players/${key}.jpg?v=5`;
+    loaded = false;
     play();
   }));
   if ('IntersectionObserver' in window) {
@@ -76,4 +89,8 @@
     userPaused = event.matches;
     sync();
   });
+  // Let the hero poster and styles paint before starting background playback.
+  const begin = () => { ready = true; requestAnimationFrame(sync); };
+  if (document.readyState === 'complete') begin();
+  else window.addEventListener('load', begin, {once:true});
 })();

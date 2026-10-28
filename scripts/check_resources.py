@@ -78,11 +78,16 @@ old_urls=[x.text for x in ET.fromstring(prior).findall('{*}url/{*}loc')]
 assert set(old_urls).issubset(urls), 'Existing sitemap URLs dropped'
 before=subprocess.check_output(['git','show','HEAD:index.html'],cwd=ROOT).decode()
 after=(ROOT/'index.html').read_text()
-# Preserve the original review block and hero while adding an authorized Tools entry.
+# Preserve original reviews and hero identity while allowing approved audit fixes.
 review_pattern=r'<section class="reviews extra-section".*?</section>'
 assert re.search(review_pattern,after,re.S)[0]==re.search(review_pattern,before,re.S)[0]
-assert re.search(r'<section class="hero".*?</section>',after,re.S)[0]==re.search(r'<section class="hero".*?</section>',before,re.S)[0]
-assert after.count('id="tools"')==1 and after.count('href="/assets/tools/home-tools.css"')==1
+old_hero=re.search(r'<section class="hero".*?</section>',before,re.S)[0]
+new_hero=re.search(r'<section class="hero".*?</section>',after,re.S)[0]
+assert re.search(r'<h1>.*?</h1>',old_hero,re.S)[0]==re.search(r'<h1>.*?</h1>',new_hero,re.S)[0]
+assert re.findall(r'data-player="([^"]+)"',old_hero)==re.findall(r'data-player="([^"]+)"',new_hero)
+assert 'id="banner-video"' in new_hero and 'TestFlight beta' in new_hero
+static=json.loads((ROOT/'content/seo-static.json').read_text())
+assert after.count('id="tools"')==1 and after.count('href="'+static['/assets/tools/home-tools.css']+'"')==1
 hub=pages[ROOT/'tools.html']
 assert sum(t=='h1' for t,a in hub.tags)==1
 assert sum(t=='article' and 'data-tool' in a for t,a in hub.tags)==15
@@ -100,5 +105,5 @@ for p in (ROOT/'assets/resources').glob('*.mp4'):
     assert abs(float(probe['format']['duration'])-9)<.1
     assert probe['streams'][0]['codec_name']=='h264'
 reportdir=ROOT/'reports';reportdir.mkdir(exist_ok=True)
-(reportdir/'batch-one-static.json').write_text(json.dumps({'status':'pass','newPages':20,'additionalToolsDirectory':1,'sitemapURLs':39,'homepage':'Tools navigation and section added; hero/reviews unchanged','metadata':report},indent=2)+'\n')
-print('PASS: 20 planned pages + Tools hub; unique metadata; schema/breadcrumbs; links/anchors; media; 39 sitemap URLs; homepage hero/reviews unchanged.')
+(reportdir/'batch-one-static.json').write_text(json.dumps({'status':'pass','newPages':20,'additionalToolsDirectory':1,'sitemapURLs':39,'homepage':'Original reviews, hero heading and player controls preserved; approved media/access audit fixes applied','metadata':report},indent=2)+'\n')
+print('PASS: 20 planned pages + Tools hub; metadata, schema, links, media, 39 URLs; original reviews and hero identity preserved.')
