@@ -1,0 +1,12 @@
+{
+  "app": {
+    "status": "testflight",
+    "joinUrl": "",
+    "contactEmail": "hello@goswie.com"
+  },
+  "analytics": {
+    "enabled": false,
+    "customEvents": false,
+    "scriptSrc": "/_vercel/insights/script.js"
+  }
+}

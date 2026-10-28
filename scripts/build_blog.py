@@ -105,7 +105,9 @@ def article_markup(item, selected=frozenset(), checklist_key=False, worksheet_ke
     c = lambda text: copy(text, item, selected, cursor)
     sections = []
     for index, (heading, paragraph) in enumerate(item["sections"], 1):
-        sections.append(f'<section id="step-{index}"><h2>{H(heading)}</h2><p>{c(paragraph)}</p></section>')
+        tools = item.get('sectionTools', {}).get(str(index), [])
+        tool_links = '<p class="context-tools">Put this into practice: '+ ' · '.join('<a href="'+H(url,quote=True)+'">'+H(label)+'</a>' for label,url in tools)+'.</p>' if tools else ''
+        sections.append(f'<section id="step-{index}"><h2>{H(heading)}</h2><p>{c(paragraph)}</p>{tool_links}</section>')
         if item.get('visual', {}).get('videoAfter') == index:
             sections.append(video_block(item))
     checklist_title = item["keyword"].capitalize() + ": final checks" if checklist_key else item.get("checklistTitle", "Before you export")
@@ -114,10 +116,12 @@ def article_markup(item, selected=frozenset(), checklist_key=False, worksheet_ke
     sources_markup = "".join(f'<li><a href="{H(url, quote=True)}">{H(label)}</a></li>' for label, url in sources)
     demo = '<figure class="guide-demo"><video controls playsinline preload="none" poster="/assets/video/players/all.jpg" width="1600" height="800"><source src="/assets/video/players/all.mp4" type="video/mp4"></video><figcaption>Hoopcut homepage demonstration: basketball clips with shot trajectories. This is a product example, not a recording of the steps below.</figcaption></figure>' if item.get('demo') else ''
     cta = H(item.get('ctaText', 'Explore Hoopcut'))
-    product_note = H(item.get('productNote', 'Hoopcut is currently in TestFlight testing. It focuses on basketball editing on iPhone. Confirm access, pricing and export options before planning a project.'))
+    product_note = H(item.get('productNote', 'Hoopcut is currently in TestFlight testing on iPhone, focused on basketball auto clipping and Shot Tracer. Request access from the Hoopcut team; availability and testing terms are confirmed with your invitation.'))
+    modified = item.get('dateModified', published)
+    updated = ' · Updated <time datetime="'+modified+'">'+date.fromisoformat(modified).strftime('%B %d, %Y').replace(' 0',' ')+'</time>' if modified != published else ''
     return f'''<article class="post" id="article-content">
 <header class="post-heading"><p class="eyebrow">{H(item['category'])}</p><h1>{H(item['title'])}</h1>
-<p class="lede">{H(item['summary'])}</p><p class="byline">By Hoopcut · <time datetime="{published}">{display_date}</time></p></header>
+<p class="lede">{H(item['summary'])}</p><p class="byline">By Hoopcut · <time datetime="{published}">{display_date}</time>{updated}</p></header>
 {cover(item)}<p>{c(item['lead'])}</p>
 {demo}{overview(item)}
 {(caption_nav+caption_status+captions_markup+chr(10)) if caption_groups else ''}{''.join(sections)}
@@ -125,7 +129,7 @@ def article_markup(item, selected=frozenset(), checklist_key=False, worksheet_ke
 <section id="worksheet"><h2>{H(table_title)}</h2><div class="table-wrap"><table><thead><tr><th scope="col">{H(item.get("tableHeaders", ["Check", "What to look for"])[0])}</th><th scope="col">{H(item.get("tableHeaders", ["Check", "What to look for"])[1])}</th></tr></thead><tbody>{''.join('<tr><th scope="row">'+H(a)+'</th><td>'+H(b)+'</td></tr>' for a,b in item['rows'])}</tbody></table></div></section>
 <section id="questions"><h2>Practical questions</h2>{''.join('<h3>'+c(q)+'</h3><p>'+c(a)+'</p>' for q,a in item['faq'])}</section>
 <aside class="product-note"><h2>Where Hoopcut fits</h2><p>{product_note} <a href="/" data-cta="article-product">{cta}</a>.</p></aside>
-<section id="sources" class="sources"><h2>Sources and further reading</h2><ul>{sources_markup}</ul><p>Workflows and checklists are editorial guidance. External product information is not a claim of hands-on comparative testing.</p></section>
+<section id="sources" class="sources"><h2>Sources and further reading</h2><ul>{sources_markup}</ul><p>Editorial guide by Hoopcut at SWINK AI INC. Prepared examples and illustrations are labeled. External product information is not a claim of hands-on comparative testing. <a href="mailto:hello@goswie.com">Send a correction or a workflow question</a>.</p></section>
 </article>'''
 
 

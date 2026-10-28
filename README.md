@@ -113,3 +113,36 @@ AI detections and scores can need correction. Review your results before sharing
   <p><a href="https://apps.apple.com/us/search?term=hoopcut">Find Hoopcut on the App Store</a></p>
   <p><a href="mailto:hello@goswie.com">hello@goswie.com</a> · <a href="https://hoopcut.ai/terms">Terms</a> · <a href="https://hoopcut.ai/privacy">Privacy</a></p>
 </div>
+
+
+## SEO audit follow-up (local, 2026-10-28)
+
+The complete `python3 scripts/build_resources.py` now runs responsive media
+optimization and `scripts/polish_site.py` as its final pass. Re-running it produces
+the same public HTML. Do not deploy an intermediate `build_blog.py` output.
+
+- App access is configured in `content/site-config.json`. The current distribution
+  is TestFlight. With no verified public join URL, access buttons open a request
+  to the existing contact email. A real join URL can replace that fallback later.
+- `scripts/optimize_media.cjs` uses Sharp and ffmpeg to retain the full 52-second
+  sample and all player reels at 960px and 640px; original assets remain available.
+  It adds responsive WebP sizes without changing the graphic editor's SVG/PNG output.
+- Files under `assets/optimized/` and `assets/static/` use content hashes. Only those
+  paths have year-long immutable cache headers. HTML and editable source assets
+  keep their existing update behavior.
+- `assets/site-events.js` prepares anonymous tool/demo/access events. Analytics is
+  disabled in config and makes no requests from localhost. Enable Vercel Web
+  Analytics for the project before enabling page views. Custom events currently
+  require Vercel Pro/Enterprise; do not upgrade or enable billing automatically.
+  Only enable `customEvents` after confirming entitlement. Preview debug events
+  can be observed by setting `window.__HOOPCUT_ANALYTICS_DEBUG__ = true` before load
+  and listening for `hoopcut:analytics-debug`; no form contents are included.
+- A host-specific www redirect is prepared in `vercel.json`. It cannot repair TLS
+  by itself: the www domain must first be bound and have a valid certificate in
+  the hosting account. See `production/seo-audit-rollout.md`.
+
+Checks: `python3 scripts/check_site_seo.py --http`,
+`python3 scripts/check_blog.py`, `python3 scripts/check_resources.py`, and
+`node scripts/qa_audit_fixes.cjs`. Existing `qa_resources.cjs` / `qa_tools.cjs`
+cover all 15 browser tools. The preview runs on `http://127.0.0.1:8767/` and
+always returns `X-Robots-Tag: noindex, nofollow`.

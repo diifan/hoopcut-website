@@ -1,4 +1,4 @@
-/* Local-only editors. No network requests, accounts, storage or uploads. */
+/* Local editors. Optional anonymous analytics never include editor contents. */
 (() => {
   'use strict';
   const config = JSON.parse(document.getElementById('resource-data').textContent);
@@ -8,6 +8,10 @@
   const buttons = document.querySelector('.js-tools');
   const initialSvg = svg?.outerHTML;
   let serial = table ? table.rows.length : 0;
+  let started = false;
+  const track = (name, data={}) => window.hoopcutTrack?.(name, {tool:config.slug,...data});
+  const start = () => { if (!started) { started = true; track('tool_start'); } };
+  document.getElementById('workspace').addEventListener('input', start);
   buttons.hidden = false;
   const message = text => { status.textContent = text; };
   function download(blob, suffix) {
@@ -15,6 +19,7 @@
     const link = document.createElement('a');
     link.href = url; link.download = config.slug + '.' + suffix;
     document.body.append(link); link.click(); link.remove();
+    track('export_success', {format:suffix});
     setTimeout(() => URL.revokeObjectURL(url), 30000);
   }
   function rowValues() { return [...table.tBodies[0].rows].map(row => [...row.querySelectorAll('textarea')].map(input => input.value)); }
@@ -119,9 +124,10 @@
   window.addEventListener('beforeprint',printMirror);
   document.getElementById('print-resource').addEventListener('click',()=>{
     if(!calculate()){message('Correct the budget inputs before printing.');return;}
-    printMirror(); window.print();
+    start(); track('print_click'); printMirror(); window.print();
   });
   document.querySelectorAll('[data-export]').forEach(button=>button.addEventListener('click',async()=>{
+    start();
     try {
       const type=button.dataset.export;
       if(type==='csv') {

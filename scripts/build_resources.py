@@ -117,6 +117,14 @@ def build():
     (ROOT/'reports/batch-one-review.html').write_text(review)
     designs='<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>图形模板 · 本地视觉审核</title><link rel="stylesheet" href="/assets/blog/blog.css"><style>.design-grid .card{padding:20px}.design-grid img{width:100%;height:380px;object-fit:contain;background:#141a17;border-radius:6px;margin-bottom:20px}.design-grid h2{font-size:23px}.design-grid p{margin-bottom:15px}</style></head><body><main style="padding-top:45px;padding-bottom:60px"><p class="eyebrow">HOOPCUT / LOCAL DESIGN REVIEW</p><h1>六类图形模板 · 新版</h1><p class="lede">按使用场景重新设计排版、字体和色块。点击进入实际编辑页，修改姓名、号码或配色后可下载、打印。仅本地预览。</p><div class="cards design-grid">'+''.join('<article class="card"><img width="1200" height="800" loading="lazy" alt="'+H(r['short'],quote=True)+'新版设计" src="/assets/resources/'+r['slug']+'-preview.jpg"><h2><a href="/templates/'+r['slug']+'?design=3">'+H(r['title'])+'</a></h2><p>可编辑 · SVG / PNG · 打印</p></article>' for r in RESOURCES if r['kind']=='graphic')+'</div><p><a href="/reports/batch-one-review">返回首批 20 页审核目录 →</a></p></main></body></html>'
     (ROOT/'reports/graphic-templates-review.html').write_text(designs)
+    # This final pass is part of every complete build, so future content changes
+    # cannot silently remove access, schema, media or analytics improvements.
+    import subprocess
+    import shutil
+    node=shutil.which('node') or str(Path.home()/'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node')
+    subprocess.run([node,str(ROOT/'scripts/optimize_media.cjs')],check=True)
+    from polish_site import build as polish
+    polish()
     print('Built first batch: 5 new guides + 15 distinct editable resource pages. No publishing action.')
 
 if __name__=='__main__': build()

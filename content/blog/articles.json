@@ -33,6 +33,10 @@
       [
         "Export, reopen and check the actual file",
         "Watch the exported file outside the editor. Check the first frame, every clip boundary and the ending. On a phone, confirm that the player and ball remain visible. If the video will play on a school screen, test that screen’s playback setup as well. Keep the full recording and a clean master so you can revise the edit without starting again from a compressed social upload."
+      ],
+      [
+        "Check the same play in the prepared sample",
+        "Open the linked sample to review the difference between selecting a clip and inspecting its shot trajectory. The existing 52-second reel contains ten made shots. In the clipping demo, use a numbered marker to locate a play, add it to your shortlist, then play the selection in source order. In the Shot Tracer demo, pause at release, flight and finish to check whether the visible trail follows the ball. These controls let you inspect an existing example; they do not process your own game or reproduce the TestFlight app screens. Use the clip log to note what context you would keep for a similar play in your own recording."
       ]
     ],
     "checklist": [
@@ -90,7 +94,22 @@
       "how to make basketball highlights on iphone",
       "how long should a basketball highlight video be"
     ],
-    "demo": true
+    "demo": true,
+    "dateModified": "2026-10-28",
+    "editorialLinks": [
+      [
+        "Try the ten-shot basketball clipping sample",
+        "/demo/auto-clipping"
+      ],
+      [
+        "Inspect release, flight and finish in the Shot Tracer sample",
+        "/demo/shot-tracer"
+      ],
+      [
+        "Plan source timestamps in a basketball clip log",
+        "/templates/basketball-clip-log"
+      ]
+    ]
   },
   {
     "keyword": "how to make basketball highlights on iphone",
@@ -122,6 +141,10 @@
       [
         "Scope of this guide",
         "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is in TestFlight; available controls, processing behavior and export limits must be checked in the current build. No processing-speed or accuracy guarantee is implied."
+      ],
+      [
+        "Check the same play in the prepared sample",
+        "Open the linked sample to review the difference between selecting a clip and inspecting its shot trajectory. The existing 52-second reel contains ten made shots. In the clipping demo, use a numbered marker to locate a play, add it to your shortlist, then play the selection in source order. In the Shot Tracer demo, pause at release, flight and finish to check whether the visible trail follows the ball. These controls let you inspect an existing example; they do not process your own game or reproduce the TestFlight app screens. Use the clip log to note what context you would keep for a similar play in your own recording."
       ]
     ],
     "checklist": [
@@ -169,6 +192,22 @@
     "coveredKeywords": [
       "how to make basketball highlights on iphone",
       "basketball highlight app for iphone"
+    ],
+    "demo": true,
+    "dateModified": "2026-10-28",
+    "editorialLinks": [
+      [
+        "Try the ten-shot basketball clipping sample",
+        "/demo/auto-clipping"
+      ],
+      [
+        "Inspect release, flight and finish in the Shot Tracer sample",
+        "/demo/shot-tracer"
+      ],
+      [
+        "Plan source timestamps in a basketball clip log",
+        "/templates/basketball-clip-log"
+      ]
     ]
   },
   {
@@ -299,6 +338,10 @@
       [
         "Scope of this guide",
         "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is in TestFlight; available controls, processing behavior and export limits must be checked in the current build. No processing-speed or accuracy guarantee is implied."
+      ],
+      [
+        "Check the same play in the prepared sample",
+        "Open the linked sample to review the difference between selecting a clip and inspecting its shot trajectory. The existing 52-second reel contains ten made shots. In the clipping demo, use a numbered marker to locate a play, add it to your shortlist, then play the selection in source order. In the Shot Tracer demo, pause at release, flight and finish to check whether the visible trail follows the ball. These controls let you inspect an existing example; they do not process your own game or reproduce the TestFlight app screens. Use the clip log to note what context you would keep for a similar play in your own recording."
       ]
     ],
     "checklist": [
@@ -342,6 +385,22 @@
       "basketball shot tracer",
       "basketball shot tracer app",
       "basketball ball trail effect"
+    ],
+    "demo": true,
+    "dateModified": "2026-10-28",
+    "editorialLinks": [
+      [
+        "Try the ten-shot basketball clipping sample",
+        "/demo/auto-clipping"
+      ],
+      [
+        "Inspect release, flight and finish in the Shot Tracer sample",
+        "/demo/shot-tracer"
+      ],
+      [
+        "Plan source timestamps in a basketball clip log",
+        "/templates/basketball-clip-log"
+      ]
     ]
   },
   {
@@ -561,31 +620,40 @@
     "keyword": "how to make basketball highlights for instagram",
     "title": "How to Make Basketball Highlights for Instagram: Crop Without Losing the Play",
     "category": "iPhone editing",
-    "summary": "Create a readable mobile-first draft while protecting player identity, ball movement, captions and the original master.",
-    "lead": "The practical challenge in how to make basketball highlights for instagram is keeping the possession understandable on a small screen. A crop can remove the teammate who created the chance or hide the ball near the rim. Begin with a clean master, then create a separate social version from the same reviewed clips.",
+    "summary": "Turn basketball clips into an Instagram reel: preserve the whole play, choose a cover and caption, and review the finished video before posting.",
+    "lead": "Start with one moment worth sharing, not a full game squeezed into a short post. This workflow takes you from a source possession to a clear basketball reel, with a separate check for cropping, on-screen text, cover and caption. It uses a prepared basketball sample so you can practice reviewing a play before working on your own footage. It does not require Hoopcut to publish to Instagram; exporting a video and posting it are separate steps.",
     "sections": [
       [
-        "Choose a composition rather than blindly filling the frame",
-        "Try a portrait draft when the action can remain visible, but do not crop away the release or receiving player merely to fill the screen. A vertical 9:16 canvas is a useful creative starting point, not a promise about current upload requirements. Check Instagram’s current controls and preview before publishing."
+        "Select one complete possession before choosing an effect",
+        "For a made basket, keep enough lead-in to understand the move and enough time after the attempt to see the result. A clip that begins at the instant of the finish can hide the pass or footwork that made it interesting. Open our prepared ten-shot sample and use the markers to inspect the beginning and end of a play. Write down the source file and timestamp for your own equivalent; this makes later changes easier than searching the full recording again."
       ],
       [
-        "Keep text and effects subordinate to the action",
-        "When learning how to make basketball highlights for instagram, inspect the draft at the size someone will actually watch. Put identification before the action and keep captions off the ball, hand and hoop. If you use a trajectory effect, compare it with the clean possession. Hoopcut describes Shot Tracer, but verify the export options in your current build rather than assuming portrait presets or direct Instagram publishing."
+        "Build the reel around a readable first play",
+        "Choose the strongest readable moment for the opening, then add a few supporting clips only if they add a different view, skill or part of the story. In the clipping demo, selecting three shots changes the shortlist and its runtime; it does not create a new downloadable file. For your own project, review the chosen order in your editor, remove repeated versions of the same action and keep a clean copy before adding text or music."
       ],
       [
-        "Review the platform copy before sharing",
-        "Export a sample and inspect the upload preview. Check cropping, readable text, the opening frame and the ending after the platform processes it. Keep audio rights and footage permissions in mind. Preserve the original master so changes to delivery do not require reconstructing the reel or relying on a compressed copy downloaded from a previous post."
+        "Test the crop against the whole ball flight",
+        "Use a portrait draft when the player and the full action remain readable, but do not fill the frame at the cost of losing the release, pass or ball at the top of its arc. Pause the prepared Shot Tracer example at release, flight and finish to see which parts of the picture the action needs. Then check the same points in your draft. If a close crop loses the story, use a wider composition or background padding instead of stretching the picture. Preview in the current Instagram composer before posting; this guide does not promise fixed platform limits."
       ],
       [
-        "Scope of this guide",
-        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is in TestFlight; available controls, processing behavior and export limits must be checked in the current build. No processing-speed or accuracy guarantee is implied."
+        "Make a cover that identifies the moment",
+        "Choose a frame where the player is identifiable and the ball or outcome is visible. Add a short label such as Game Night or Season Recap only when it helps someone recognize the reel. Our reel cover tool exports a separate graphic; it does not add a cover to a video or upload anything to Instagram. After downloading it, check the cover crop in the app and keep important text away from areas hidden by the feed preview."
+      ],
+      [
+        "Pair a specific caption with the finished clip",
+        "A caption can explain the setup, credit a teammate or mark the occasion. Replace generic hype with one true detail from the play. For example, a made corner shot after an extra pass can use a short line about the assist instead of claiming a game-winning basket. Use the caption planner to keep the clip reference, draft and credit together. For ready-to-adapt wording, use the separate basketball captions guide; this page focuses on building and checking the video."
+      ],
+      [
+        "Review the saved file before sharing",
+        "Watch the exported file from beginning to end on a phone, including the first frame, text, audio and ending. Check that the saved crop preserves the play, the Shot Tracer is readable if used, and no private team or player information was added unintentionally. Use footage and audio you have permission to share, confirm credits with the people involved, then preview the actual post. Save the source timestamps and final version so a correction does not require rebuilding the entire reel."
       ]
     ],
     "checklist": [
-      "Keep a clean master separate from the social version.",
-      "Protect the player, ball and important teammates when cropping.",
-      "Check captions on a phone-sized preview.",
-      "Inspect the actual upload preview before publishing."
+      "The first play has a clear beginning and visible result.",
+      "The crop keeps the player, ball flight and relevant teammate in view.",
+      "Cover text is readable in the actual app preview.",
+      "The caption describes what happened and credits people appropriately.",
+      "The saved video plays correctly on a phone before it is posted."
     ],
     "tableTitle": "A mobile composition check",
     "rows": [
@@ -619,6 +687,42 @@
     "reference": "the social-editing workflow",
     "coveredKeywords": [
       "how to make basketball highlights for instagram"
+    ],
+    "dateModified": "2026-10-28",
+    "demo": true,
+    "sectionTools": {
+      "1": [
+        [
+          "Basketball clip log",
+          "/templates/basketball-clip-log"
+        ]
+      ],
+      "4": [
+        [
+          "Personalize a basketball reel cover",
+          "/templates/basketball-reel-cover"
+        ]
+      ],
+      "5": [
+        [
+          "Basketball caption planner",
+          "/templates/basketball-social-caption-planner"
+        ],
+        [
+          "Basketball captions for Instagram",
+          "/blog/basketball-captions-for-instagram"
+        ]
+      ]
+    },
+    "editorialLinks": [
+      [
+        "Practice choosing plays in the auto clipping demo",
+        "/demo/auto-clipping"
+      ],
+      [
+        "Check the shot arc in the Shot Tracer demo",
+        "/demo/shot-tracer"
+      ]
     ]
   },
   {
@@ -722,11 +826,28 @@
     "tableHeaders": [
       "Time",
       "What to show"
-    ]
+    ],
+    "sectionTools": {
+      "2": [
+        [
+          "Basketball senior night poster",
+          "/templates/basketball-senior-night-poster"
+        ],
+        [
+          "Basketball senior night program",
+          "/templates/basketball-senior-night-program"
+        ],
+        [
+          "Basketball senior gift budget planner",
+          "/templates/basketball-senior-gift-budget"
+        ]
+      ]
+    },
+    "dateModified": "2026-10-28"
   },
   {
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-27",
+    "dateModified": "2026-10-28",
     "reference": "the workflow",
     "checklistTitle": "Before you finish",
     "sources": [],
@@ -930,11 +1051,23 @@
         "title": "Basketball clip and caption pairing example",
         "caption": "Existing Hoopcut game-footage sample with an embedded trajectory. This is a caption-pairing example, not a live Instagram post."
       }
+    },
+    "sectionTools": {
+      "2": [
+        [
+          "Basketball social caption planner",
+          "/templates/basketball-social-caption-planner"
+        ],
+        [
+          "Basketball reel cover template",
+          "/templates/basketball-reel-cover"
+        ]
+      ]
     }
   },
   {
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-27",
+    "dateModified": "2026-10-28",
     "reference": "the workflow",
     "checklistTitle": "Before you finish",
     "sources": [
@@ -1091,11 +1224,23 @@
         "title": "A short game clip to sit beside a player introduction",
         "caption": "A 5-second excerpt from existing Hoopcut basketball footage. This is an example of game action you could pair with an introduction; it is not a media-day recording or a finished intro template."
       }
+    },
+    "sectionTools": {
+      "2": [
+        [
+          "Basketball media day schedule",
+          "/templates/basketball-media-day-schedule"
+        ],
+        [
+          "Basketball media day interview cards",
+          "/templates/basketball-media-day-interview-cards"
+        ]
+      ]
     }
   },
   {
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-27",
+    "dateModified": "2026-10-28",
     "reference": "the workflow",
     "checklistTitle": "Before you finish",
     "sources": [
@@ -1248,6 +1393,14 @@
         "title": "See a short basketball highlight sequence",
         "caption": "A 16-second excerpt from existing Hoopcut game footage with embedded trajectories. It illustrates the basketball portion of a recap, not a real banquet, a full season montage or a slideshow-making feature."
       }
+    },
+    "sectionTools": {
+      "2": [
+        [
+          "Basketball banquet award certificate",
+          "/templates/basketball-banquet-award-certificate"
+        ]
+      ]
     }
   },
   {
