@@ -115,8 +115,9 @@ def article_markup(item, selected=frozenset(), checklist_key=False, worksheet_ke
     sources = [("Hoopcut product overview", BASE + "/")] + item.get("sources", [])
     sources_markup = "".join(f'<li><a href="{H(url, quote=True)}">{H(label)}</a></li>' for label, url in sources)
     demo = '<figure class="guide-demo"><video controls playsinline preload="none" poster="/assets/video/players/all.jpg" width="1600" height="800"><source src="/assets/video/players/all.mp4" type="video/mp4"></video><figcaption>Hoopcut homepage demonstration: basketball clips with shot trajectories. This is a product example, not a recording of the steps below.</figcaption></figure>' if item.get('demo') else ''
-    cta = H(item.get('ctaText', 'Explore Hoopcut'))
-    product_note = H(item.get('productNote', 'Hoopcut is currently in TestFlight testing on iPhone, focused on basketball auto clipping and Shot Tracer. Request access from the Hoopcut team; availability and testing terms are confirmed with your invitation.'))
+    store_url = json.loads((ROOT/'content/site-config.json').read_text())['app']['appStoreUrl']
+    cta = 'Download Hoopcut on the App Store'
+    product_note = H(item.get('productNote', 'Hoopcut is available on the App Store for iPhone, focused on basketball auto clipping and Shot Tracer. Check the listing for current pricing, device requirements and feature availability.'))
     modified = item.get('dateModified', published)
     updated = ' · Updated <time datetime="'+modified+'">'+date.fromisoformat(modified).strftime('%B %d, %Y').replace(' 0',' ')+'</time>' if modified != published else ''
     return f'''<article class="post" id="article-content">
@@ -128,7 +129,7 @@ def article_markup(item, selected=frozenset(), checklist_key=False, worksheet_ke
 {(downloads+editorial_links+chr(10)) if downloads or editorial_links else ''}<section id="checklist"><h2>{H(checklist_title)}</h2><ul class="checklist">{''.join('<li>'+H(x)+'</li>' for x in item['checklist'])}</ul></section>
 <section id="worksheet"><h2>{H(table_title)}</h2><div class="table-wrap"><table><thead><tr><th scope="col">{H(item.get("tableHeaders", ["Check", "What to look for"])[0])}</th><th scope="col">{H(item.get("tableHeaders", ["Check", "What to look for"])[1])}</th></tr></thead><tbody>{''.join('<tr><th scope="row">'+H(a)+'</th><td>'+H(b)+'</td></tr>' for a,b in item['rows'])}</tbody></table></div></section>
 <section id="questions"><h2>Practical questions</h2>{''.join('<h3>'+c(q)+'</h3><p>'+c(a)+'</p>' for q,a in item['faq'])}</section>
-<aside class="product-note"><h2>Where Hoopcut fits</h2><p>{product_note} <a href="/" data-cta="article-product">{cta}</a>.</p></aside>
+<aside class="product-note"><h2>Where Hoopcut fits</h2><p>{product_note} <a href="{H(store_url,quote=True)}" data-app-access="app-store" data-cta="article-product">{cta}</a>.</p></aside>
 <section id="sources" class="sources"><h2>Sources and further reading</h2><ul>{sources_markup}</ul><p>Editorial guide by Hoopcut at SWINK AI INC. Prepared examples and illustrations are labeled. External product information is not a claim of hands-on comparative testing. <a href="mailto:hello@goswie.com">Send a correction or a workflow question</a>.</p></section>
 </article>'''
 

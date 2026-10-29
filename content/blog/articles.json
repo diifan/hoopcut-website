@@ -36,7 +36,7 @@
       ],
       [
         "Check the same play in the prepared sample",
-        "Open the linked sample to review the difference between selecting a clip and inspecting its shot trajectory. The existing 52-second reel contains ten made shots. In the clipping demo, use a numbered marker to locate a play, add it to your shortlist, then play the selection in source order. In the Shot Tracer demo, pause at release, flight and finish to check whether the visible trail follows the ball. These controls let you inspect an existing example; they do not process your own game or reproduce the TestFlight app screens. Use the clip log to note what context you would keep for a similar play in your own recording."
+        "Open the linked sample to review the difference between selecting a clip and inspecting its shot trajectory. The existing 52-second reel contains ten made shots. In the clipping demo, use a numbered marker to locate a play, add it to your shortlist, then play the selection in source order. In the Shot Tracer demo, pause at release, flight and finish to check whether the visible trail follows the ball. These controls let you inspect an existing example; they do not process your own game or reproduce the iPhone app screens. Use the clip log to note what context you would keep for a similar play in your own recording."
       ]
     ],
     "checklist": [
@@ -95,7 +95,7 @@
       "how long should a basketball highlight video be"
     ],
     "demo": true,
-    "dateModified": "2026-10-28",
+    "dateModified": "2026-10-29",
     "editorialLinks": [
       [
         "Try the ten-shot basketball clipping sample",
@@ -124,7 +124,7 @@
       ],
       [
         "Choose a manual or assisted route",
-        "A manual editor lets you arrange footage you have already selected. Basketball-focused tools may help find candidates, which still need checking. Apple's iMovie guide documents clip arrangement and titles. Hoopcut describes AI clipping, editing and Shot Tracer, with access currently through TestFlight. When working out how to make basketball highlights on iphone, use the route you can actually test rather than assuming every advertised feature is available to your account."
+        "A manual editor lets you arrange footage you have already selected. Basketball-focused tools may help find candidates, which still need checking. Apple's iMovie guide documents clip arrangement and titles. Hoopcut describes AI clipping, editing and Shot Tracer, and is available on the App Store for iPhone. When working out how to make basketball highlights on iphone, use the route you can actually test rather than assuming every advertised feature is available to your account."
       ],
       [
         "Export and verify on the phone",
@@ -140,11 +140,11 @@
       ],
       [
         "Scope of this guide",
-        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is in TestFlight; available controls, processing behavior and export limits must be checked in the current build. No processing-speed or accuracy guarantee is implied."
+        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is available on the App Store for iPhone; available controls, processing behavior and export limits should be checked in the installed version. No processing-speed or accuracy guarantee is implied."
       ],
       [
         "Check the same play in the prepared sample",
-        "Open the linked sample to review the difference between selecting a clip and inspecting its shot trajectory. The existing 52-second reel contains ten made shots. In the clipping demo, use a numbered marker to locate a play, add it to your shortlist, then play the selection in source order. In the Shot Tracer demo, pause at release, flight and finish to check whether the visible trail follows the ball. These controls let you inspect an existing example; they do not process your own game or reproduce the TestFlight app screens. Use the clip log to note what context you would keep for a similar play in your own recording."
+        "Open the linked sample to review the difference between selecting a clip and inspecting its shot trajectory. The existing 52-second reel contains ten made shots. In the clipping demo, use a numbered marker to locate a play, add it to your shortlist, then play the selection in source order. In the Shot Tracer demo, pause at release, flight and finish to check whether the visible trail follows the ball. These controls let you inspect an existing example; they do not process your own game or reproduce the iPhone app screens. Use the clip log to note what context you would keep for a similar play in your own recording."
       ]
     ],
     "checklist": [
@@ -194,7 +194,7 @@
       "basketball highlight app for iphone"
     ],
     "demo": true,
-    "dateModified": "2026-10-28",
+    "dateModified": "2026-10-29",
     "editorialLinks": [
       [
         "Try the ten-shot basketball clipping sample",
@@ -247,7 +247,7 @@
       ],
       [
         "Scope of this guide",
-        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is in TestFlight; available controls, processing behavior and export limits must be checked in the current build. No processing-speed or accuracy guarantee is implied."
+        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is available on the App Store for iPhone; available controls, processing behavior and export limits should be checked in the installed version. No processing-speed or accuracy guarantee is implied."
       ]
     ],
     "checklist": [
@@ -290,7 +290,8 @@
       "ai basketball highlight maker",
       "automatic basketball highlight maker",
       "ai basketball video editor"
-    ]
+    ],
+    "dateModified": "2026-10-29"
   },
   {
     "keyword": "how to add shot tracer to basketball video",
@@ -305,7 +306,7 @@
       ],
       [
         "Apply the effect and inspect the frames",
-        "Use a product with an actual basketball trajectory feature. Hoopcut describes Shot Tracer, but access is currently through TestFlight and exact controls may change. Follow the controls available in your version rather than an invented button sequence. When learning how to add shot tracer to basketball video, inspect release, apex and finish individually, then replay the possession at normal speed."
+        "Use a product with an actual basketball trajectory feature. Hoopcut includes Shot Tracer in its iPhone app, available on the App Store. Follow the controls available in your version rather than an invented button sequence. When learning how to add shot tracer to basketball video, inspect release, apex and finish individually, then replay the possession at normal speed."
       ],
       [
         "Compare clean and stylized exports",
@@ -337,11 +338,11 @@
       ],
       [
         "Scope of this guide",
-        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is in TestFlight; available controls, processing behavior and export limits must be checked in the current build. No processing-speed or accuracy guarantee is implied."
+        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is available on the App Store for iPhone; available controls, processing behavior and export limits should be checked in the installed version. No processing-speed or accuracy guarantee is implied."
       ],
       [
         "Check the same play in the prepared sample",
-        "Open the linked sample to review the difference between selecting a clip and inspecting its shot trajectory. The existing 52-second reel contains ten made shots. In the clipping demo, use a numbered marker to locate a play, add it to your shortlist, then play the selection in source order. In the Shot Tracer demo, pause at release, flight and finish to check whether the visible trail follows the ball. These controls let you inspect an existing example; they do not process your own game or reproduce the TestFlight app screens. Use the clip log to note what context you would keep for a similar play in your own recording."
+        "Open the linked sample to review the difference between selecting a clip and inspecting its shot trajectory. The existing 52-second reel contains ten made shots. In the clipping demo, use a numbered marker to locate a play, add it to your shortlist, then play the selection in source order. In the Shot Tracer demo, pause at release, flight and finish to check whether the visible trail follows the ball. These controls let you inspect an existing example; they do not process your own game or reproduce the iPhone app screens. Use the clip log to note what context you would keep for a similar play in your own recording."
       ]
     ],
     "checklist": [
@@ -387,7 +388,7 @@
       "basketball ball trail effect"
     ],
     "demo": true,
-    "dateModified": "2026-10-28",
+    "dateModified": "2026-10-29",
     "editorialLinks": [
       [
         "Try the ten-shot basketball clipping sample",
@@ -432,7 +433,7 @@
       ],
       [
         "Scope of this guide",
-        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is in TestFlight; available controls, processing behavior and export limits must be checked in the current build. No processing-speed or accuracy guarantee is implied."
+        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is available on the App Store for iPhone; available controls, processing behavior and export limits should be checked in the installed version. No processing-speed or accuracy guarantee is implied."
       ]
     ],
     "checklist": [
@@ -480,7 +481,8 @@
     "coveredKeywords": [
       "how to make a basketball recruiting video",
       "basketball recruiting video tips"
-    ]
+    ],
+    "dateModified": "2026-10-29"
   },
   {
     "keyword": "how long should a basketball highlight video be",
@@ -503,7 +505,7 @@
       ],
       [
         "Scope of this guide",
-        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is in TestFlight; available controls, processing behavior and export limits must be checked in the current build. No processing-speed or accuracy guarantee is implied."
+        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is available on the App Store for iPhone; available controls, processing behavior and export limits should be checked in the installed version. No processing-speed or accuracy guarantee is implied."
       ]
     ],
     "checklist": [
@@ -550,7 +552,8 @@
     ],
     "coveredKeywords": [
       "how long should a basketball highlight video be"
-    ]
+    ],
+    "dateModified": "2026-10-29"
   },
   {
     "keyword": "basketball highlight video examples",
@@ -573,7 +576,7 @@
       ],
       [
         "Scope of this guide",
-        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is in TestFlight; available controls, processing behavior and export limits must be checked in the current build. No processing-speed or accuracy guarantee is implied."
+        "This is an editorial planning guide, not a measured product test. The examples describe editing decisions rather than verified Hoopcut interface steps. Hoopcut is available on the App Store for iPhone; available controls, processing behavior and export limits should be checked in the installed version. No processing-speed or accuracy guarantee is implied."
       ]
     ],
     "checklist": [
@@ -614,7 +617,8 @@
     "reference": "these storyboard examples",
     "coveredKeywords": [
       "basketball highlight video examples"
-    ]
+    ],
+    "dateModified": "2026-10-29"
   },
   {
     "keyword": "how to make basketball highlights for instagram",
@@ -688,7 +692,7 @@
     "coveredKeywords": [
       "how to make basketball highlights for instagram"
     ],
-    "dateModified": "2026-10-28",
+    "dateModified": "2026-10-29",
     "demo": true,
     "sectionTools": {
       "1": [
@@ -843,11 +847,11 @@
         ]
       ]
     },
-    "dateModified": "2026-10-28"
+    "dateModified": "2026-10-29"
   },
   {
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-28",
+    "dateModified": "2026-10-29",
     "reference": "the workflow",
     "checklistTitle": "Before you finish",
     "sources": [],
@@ -1067,7 +1071,7 @@
   },
   {
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-28",
+    "dateModified": "2026-10-29",
     "reference": "the workflow",
     "checklistTitle": "Before you finish",
     "sources": [
@@ -1240,7 +1244,7 @@
   },
   {
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-28",
+    "dateModified": "2026-10-29",
     "reference": "the workflow",
     "checklistTitle": "Before you finish",
     "sources": [
@@ -1492,10 +1496,10 @@
     ],
     "seoTitle": "How to Film Basketball Games: Camera Setup | Hoopcut",
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-27",
+    "dateModified": "2026-10-29",
     "reference": "the workflow",
     "checklistTitle": "Before you begin",
-    "productNote": "Hoopcut focuses on basketball auto clipping and Shot Tracer on iPhone. The browser resources linked here are separate planning aids, not additional app capabilities.",
+    "productNote": "Hoopcut is available on the App Store for iPhone, focused on basketball auto clipping and Shot Tracer. The browser resources linked here are separate planning aids, not additional app capabilities.",
     "visual": {
       "image": "/assets/resources/how-to-film-basketball-games.jpg",
       "alt": "How to Film Basketball Games: Position, Framing & a Test Run — original illustrated planning diagram",
@@ -1602,10 +1606,10 @@
     ],
     "seoTitle": "How to Record Basketball Practice Alone | Hoopcut",
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-27",
+    "dateModified": "2026-10-29",
     "reference": "the workflow",
     "checklistTitle": "Before you begin",
-    "productNote": "Hoopcut focuses on basketball auto clipping and Shot Tracer on iPhone. The browser resources linked here are separate planning aids, not additional app capabilities.",
+    "productNote": "Hoopcut is available on the App Store for iPhone, focused on basketball auto clipping and Shot Tracer. The browser resources linked here are separate planning aids, not additional app capabilities.",
     "visual": {
       "image": "/assets/resources/record-basketball-practice-alone.jpg",
       "alt": "How to Record Basketball Practice Alone: A Repeatable Setup — original illustrated planning diagram",
@@ -1707,10 +1711,10 @@
     ],
     "seoTitle": "Basketball Senior Night Poster Ideas & Layouts | Hoopcut",
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-27",
+    "dateModified": "2026-10-29",
     "reference": "the workflow",
     "checklistTitle": "Before you begin",
-    "productNote": "Hoopcut focuses on basketball auto clipping and Shot Tracer on iPhone. The browser resources linked here are separate planning aids, not additional app capabilities.",
+    "productNote": "Hoopcut is available on the App Store for iPhone, focused on basketball auto clipping and Shot Tracer. The browser resources linked here are separate planning aids, not additional app capabilities.",
     "visual": {
       "image": "/assets/resources/basketball-senior-night-poster-ideas.jpg",
       "alt": "Basketball Senior Night Poster Ideas: 3 Layouts to Make Your Own — original illustrated planning diagram",
@@ -1816,10 +1820,10 @@
     ],
     "seoTitle": "Basketball Senior Night Gift Ideas & Budget | Hoopcut",
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-27",
+    "dateModified": "2026-10-29",
     "reference": "the workflow",
     "checklistTitle": "Before you begin",
-    "productNote": "Hoopcut focuses on basketball auto clipping and Shot Tracer on iPhone. The browser resources linked here are separate planning aids, not additional app capabilities.",
+    "productNote": "Hoopcut is available on the App Store for iPhone, focused on basketball auto clipping and Shot Tracer. The browser resources linked here are separate planning aids, not additional app capabilities.",
     "visual": {
       "image": "/assets/resources/basketball-senior-night-gift-ideas.jpg",
       "alt": "Basketball Senior Night Gift Ideas: Personal, Shared & Practical — original illustrated planning diagram",
@@ -1925,10 +1929,10 @@
     ],
     "seoTitle": "Basketball Senior Night Table Ideas & Layout | Hoopcut",
     "datePublished": "2026-10-27",
-    "dateModified": "2026-10-27",
+    "dateModified": "2026-10-29",
     "reference": "the workflow",
     "checklistTitle": "Before you begin",
-    "productNote": "Hoopcut focuses on basketball auto clipping and Shot Tracer on iPhone. The browser resources linked here are separate planning aids, not additional app capabilities.",
+    "productNote": "Hoopcut is available on the App Store for iPhone, focused on basketball auto clipping and Shot Tracer. The browser resources linked here are separate planning aids, not additional app capabilities.",
     "visual": {
       "image": "/assets/resources/basketball-senior-night-table-ideas.jpg",
       "alt": "Basketball Senior Night Table Ideas: 3 Clear Display Zones — original illustrated planning diagram",

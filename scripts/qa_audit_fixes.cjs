@@ -21,7 +21,7 @@ const assert=(ok,msg)=>{if(!ok)throw Error(msg);};
   assert(metrics.px>=14,'Readable hero '+width);
   const cta=await page.locator('.hero .cta').boundingBox();
   assert(cta.y>=metrics.bottom,'Hero CTA overlaps description '+width);
-  assert(await page.locator('.hero .cta').getAttribute('href').then(v=>v.startsWith('mailto:hello@goswie.com?')),'TestFlight access destination');
+  assert(await page.locator('.hero .cta').getAttribute('href').then(v=>v.startsWith('https://apps.apple.com/')&&v.endsWith('/id6824860341')),'Verified App Store destination');
   assert(await page.locator('.reviews article').count()===3,'Original reviews');
   try { await page.waitForFunction(()=>document.querySelector('#banner-video').currentTime>.15,{},{timeout:15000}); }
   catch(error) { console.log('Autoplay state',width,await page.locator('#banner-video').evaluate(v=>({src:v.currentSrc,paused:v.paused,ready:v.readyState,time:v.currentTime,error:v.error?.message,visibility:document.visibilityState,scroll:scrollY,rect:v.getBoundingClientRect().toJSON()})));throw error; }
@@ -90,5 +90,5 @@ const assert=(ok,msg)=>{if(!ok)throw Error(msg);};
  assert(!JSON.stringify(queue.events).includes('DO_NOT_SEND'),'No query in event payload');
  await mock.close();
  fs.writeFileSync(path.join(out,'checks.json'),JSON.stringify({status:'pass',home:rows,events,mockedProduction:queue,errors,broken,external,scope:'Local preview and mocked provider only; real Vercel delivery, TLS and Google indexing need separate live validation.'},null,2));
- await browser.close();console.log('PASS: mobile/desktop hero, 4 complete responsive reels, TestFlight CTA, reviews, rendered schema, PNG export, event privacy/failure handling, reduced motion, both demos; zero external analytics requests.');
+ await browser.close();console.log('PASS: mobile/desktop hero, 4 complete responsive reels, App Store CTA, reviews, rendered schema, PNG export, event privacy/failure handling, reduced motion, both demos; zero external analytics requests.');
 })().catch(e=>{console.error(e);process.exit(1);});

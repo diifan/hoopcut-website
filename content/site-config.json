@@ -1,7 +1,8 @@
 {
   "app": {
-    "status": "testflight",
-    "joinUrl": "",
+    "status": "app-store",
+    "appId": "6824860341",
+    "appStoreUrl": "https://apps.apple.com/us/app/hoopcut-basketball-highlights/id6824860341",
     "contactEmail": "hello@goswie.com"
   },
   "analytics": {
