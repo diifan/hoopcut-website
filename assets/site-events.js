@@ -31,7 +31,7 @@
   document.addEventListener('click', event => {
     const a = event.target.closest('a');
     if (!a) return;
-    if (a.dataset.appAccess === 'testflight') window.hoopcutTrack('app_outbound');
+    if (a.dataset.appAccess === 'app-store') window.hoopcutTrack('app_outbound');
     const match = a.getAttribute('href')?.match(/^\/demo\/(auto-clipping|shot-tracer)(?:#.*)?$/);
     if (match) window.hoopcutTrack('demo_click', {demo:match[1]});
   });

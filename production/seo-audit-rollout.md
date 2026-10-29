@@ -8,8 +8,8 @@ post-deployment Google verification; those require their own observed results.
 
 - Readable homepage text on mobile; original review copy and cards preserved.
 - Responsive WebP images and smaller complete background/player video reels.
-- TestFlight request buttons instead of App Store search URLs. The public join
-  URL is not supplied; the fallback uses the existing hello@goswie.com address.
+- App Store download buttons use the verified Hoopcut detail page (App ID
+  `6824860341`). The existing hello@goswie.com address remains for support.
 - Contextual guide-to-tool links, a revised Instagram video workflow, and links
   to the real prepared sample in the primary/iPhone/Tracer guides.
 - Shared Organization identity; clearer Tools and Blog headings; editorial
@@ -72,7 +72,8 @@ References: [Vercel quickstart](https://vercel.com/docs/analytics/quickstart),
 
 ## Evidence still needed for later improvements
 
-- The real public TestFlight link, if public joining is intended.
+- Store availability and download-link changes should be maintained in
+  `content/site-config.json` rather than generated HTML alone.
 - Genuine app screen recordings, source/output comparisons and the conditions
   under which they were made. Existing prepared footage is not an app tutorial
   or a benchmark and is labeled accordingly.

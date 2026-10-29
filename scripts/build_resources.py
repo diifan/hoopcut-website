@@ -70,8 +70,8 @@ def integrate_guides():
     seo_titles=['How to Film Basketball Games: Camera Setup | Hoopcut','How to Record Basketball Practice Alone | Hoopcut','Basketball Senior Night Poster Ideas & Layouts | Hoopcut','Basketball Senior Night Gift Ideas & Budget | Hoopcut','Basketball Senior Night Table Ideas & Layout | Hoopcut']
     for i,a in enumerate(GUIDES):
         a=dict(a);s=a['keyword'].replace(' ','-')
-        a.update(seoTitle=seo_titles[i],datePublished=DATE,dateModified=DATE,reference='the workflow',checklistTitle='Before you begin',
-                 productNote='Hoopcut focuses on basketball auto clipping and Shot Tracer on iPhone. The browser resources linked here are separate planning aids, not additional app capabilities.')
+        a.update(seoTitle=seo_titles[i],datePublished=DATE,dateModified='2026-10-29',reference='the workflow',checklistTitle='Before you begin',
+                 productNote='Hoopcut is available on the App Store for iPhone, focused on basketball auto clipping and Shot Tracer. The browser resources linked here are separate planning aids, not additional app capabilities.')
         a['visual']={'image':'/assets/resources/'+s+'.jpg','alt':a['title']+' — original illustrated planning diagram','caption':'Original planning illustration, not a customer photo, venue survey or measured product result.','overviewTitle':'A PRACTICAL STARTING POINT','tiles':[[h,p.split('. ')[0]+'.'] for h,p in a['sections'][:3]]}
         (ASSET/(s+'.svg')).write_text(guide_image(a,i))
         articles.append(a)

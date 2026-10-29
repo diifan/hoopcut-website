@@ -3,7 +3,7 @@
   <h1>Hoopcut</h1>
   <p><strong>Your game. Your highlights.</strong></p>
   <p>AI basketball highlights, player-focused edits, shot trajectories and scoring.<br />Less editing. More game.</p>
-  <p><a href="https://apps.apple.com/us/search?term=hoopcut">Find Hoopcut on the App Store</a> · <a href="mailto:hello@goswie.com">Contact us</a></p>
+  <p><a href="https://apps.apple.com/us/app/hoopcut-basketball-highlights/id6824860341">Find Hoopcut on the App Store</a> · <a href="mailto:hello@goswie.com">Contact us</a></p>
 </div>
 
 ## Local resource batch (2026-10-27)
@@ -110,7 +110,7 @@ AI detections and scores can need correction. Review your results before sharing
 
 <div align="center">
   <h3>Keep the play. Share the moment.</h3>
-  <p><a href="https://apps.apple.com/us/search?term=hoopcut">Find Hoopcut on the App Store</a></p>
+  <p><a href="https://apps.apple.com/us/app/hoopcut-basketball-highlights/id6824860341">Find Hoopcut on the App Store</a></p>
   <p><a href="mailto:hello@goswie.com">hello@goswie.com</a> · <a href="https://hoopcut.ai/terms">Terms</a> · <a href="https://hoopcut.ai/privacy">Privacy</a></p>
 </div>
 
@@ -121,9 +121,8 @@ The complete `python3 scripts/build_resources.py` now runs responsive media
 optimization and `scripts/polish_site.py` as its final pass. Re-running it produces
 the same public HTML. Do not deploy an intermediate `build_blog.py` output.
 
-- App access is configured in `content/site-config.json`. The current distribution
-  is TestFlight. With no verified public join URL, access buttons open a request
-  to the existing contact email. A real join URL can replace that fallback later.
+- App access is configured in `content/site-config.json`. The app is available on the App Store (ID `6824860341`). Download buttons use
+  the verified app detail URL; the existing contact email is for support.
 - `scripts/optimize_media.cjs` uses Sharp and ffmpeg to retain the full 52-second
   sample and all player reels at 960px and 640px; original assets remain available.
   It adds responsive WebP sizes without changing the graphic editor's SVG/PNG output.

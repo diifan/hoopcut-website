@@ -85,7 +85,7 @@ old_hero=re.search(r'<section class="hero".*?</section>',before,re.S)[0]
 new_hero=re.search(r'<section class="hero".*?</section>',after,re.S)[0]
 assert re.search(r'<h1>.*?</h1>',old_hero,re.S)[0]==re.search(r'<h1>.*?</h1>',new_hero,re.S)[0]
 assert re.findall(r'data-player="([^"]+)"',old_hero)==re.findall(r'data-player="([^"]+)"',new_hero)
-assert 'id="banner-video"' in new_hero and 'TestFlight beta' in new_hero
+assert 'id="banner-video"' in new_hero and 'App Store' in new_hero
 static=json.loads((ROOT/'content/seo-static.json').read_text())
 assert after.count('id="tools"')==1 and after.count('href="'+static['/assets/tools/home-tools.css']+'"')==1
 hub=pages[ROOT/'tools.html']

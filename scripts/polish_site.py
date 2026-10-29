@@ -8,12 +8,12 @@ import re
 from html import escape as H
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import urlsplit, urljoin, urlencode
+from urllib.parse import urlsplit, urljoin
 from xml.etree import ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://hoopcut.ai'
-DATE = '2026-10-28'
+DATE = '2026-10-29'
 
 
 def dumps(data):
@@ -41,7 +41,7 @@ def local_path(value):
 
 def build():
     config = json.loads((ROOT/'content/site-config.json').read_text())
-    assert config['app']['status'] == 'testflight', 'Update the access copy when distribution changes'
+    assert config['app']['status'] == 'app-store'
     media = json.loads((ROOT/'content/seo-media.json').read_text())
     static_file = ROOT/'content/seo-static.json'
     old_static = json.loads(static_file.read_text()) if static_file.exists() else {}
@@ -60,9 +60,9 @@ def build():
         source = re.sub(r'<link\b[^>]*>', stylesheet, source)
         return source
 
-    request_url = config['app']['joinUrl'] or ('mailto:'+config['app']['contactEmail']+'?'+urlencode({'subject':'Hoopcut TestFlight access'}))
-    if config['app']['joinUrl']:
-        assert request_url.startswith('https://testflight.apple.com/join/'), 'Use the real public TestFlight join URL'
+    request_url = config['app']['appStoreUrl']
+    store = urlsplit(request_url)
+    assert store.scheme == 'https' and store.netloc == 'apps.apple.com' and store.path.endswith('/id'+config['app']['appId']), 'Use the verified app detail URL'
 
     images = media['images']
     def variant(src, width=960):
@@ -74,12 +74,13 @@ def build():
     def access_anchor(match):
         tag = Tag('<a'+match[1]+'>')
         href = tag.attrs.get('href','')
-        if 'apps.apple.com' not in href and tag.attrs.get('data-app-access') != 'testflight':
+        is_access_mail = href.startswith('mailto:') and any(x in href.lower() for x in ['testflight','iphone%20access'])
+        if 'apps.apple.com' not in href and not tag.attrs.get('data-app-access') and not is_access_mail:
             return match[0]
         tag.attrs['href'] = request_url
-        tag.attrs['data-app-access'] = 'testflight'
+        tag.attrs['data-app-access'] = 'app-store'
         tag.attrs.pop('target',None); tag.attrs.pop('rel',None)
-        content = '<span class="store-label"><span>Request access to the</span><strong>TestFlight beta</strong></span>' if 'store-label' in match[2] else 'Request TestFlight access'
+        content = '<span class="store-label"><span>Download on the</span><strong>App Store</strong></span>' if 'store-label' in match[2] else 'Get the app' if 'nav-download' in tag.attrs.get('class','') else 'Download Hoopcut on the App Store'
         return tag.render()+content+'</a>'
 
     def optimize_tag(match):
@@ -113,8 +114,12 @@ def build():
         before = file.read_text(); src = restore(before)
         src = re.sub(r'<!-- AUDIT SETTINGS START -->.*?<!-- AUDIT SETTINGS END -->', '', src, flags=re.S)
         src = re.sub(r'<a\b([^>]*)>(.*?)</a>', access_anchor, src, flags=re.S)
-        src = src.replace('Find Hoopcut on the App Store', 'TestFlight access · request by email' if not config['app']['joinUrl'] else 'Join the Hoopcut TestFlight beta')
-        src = src.replace('Yes. Search for Hoopcut on the App Store to download the app and try it for free.', 'Hoopcut is currently in TestFlight testing on iPhone. Email us to request access; availability and testing terms are confirmed with your invitation.')
+        src = src.replace('TestFlight access · request by email', 'Available on the App Store for iPhone')
+        src = src.replace('Join the Hoopcut TestFlight beta', 'Available on the App Store for iPhone')
+        src = src.replace('Can I try Hoopcut for free?', 'Where can I download Hoopcut?')
+        for old in ['Yes. Search for Hoopcut on the App Store to download the app and try it for free.', 'Hoopcut is currently in TestFlight testing on iPhone. Email us to request access; availability and testing terms are confirmed with your invitation.']:
+            src = src.replace(old, 'Hoopcut is available on the App Store for iPhone. Download the app to create basketball highlights with auto clipping and Shot Tracer. Check the App Store listing for current pricing, device requirements and availability.')
+        src = src.replace('Current access and feature availability may vary.', 'Available on the App Store for iPhone. Check the listing for device requirements and current feature availability.')
         if file == ROOT/'index.html':
             # The original customer review block is intentionally untouched.
             src = re.sub(r'(<video\b[^>]*id="banner-video"[^>]*>).*?(</video>)', r'\1\2', src, flags=re.S)
@@ -141,6 +146,7 @@ def build():
         src = re.sub(r'<script type="application/ld\+json">(.*?)</script>', schema, src, flags=re.S)
         settings = '<!-- AUDIT SETTINGS START --><script id="site-settings" type="application/json">'+dumps({'analytics':config['analytics']})+'</script><script src="/assets/site-events.js" defer></script>'
         if file == ROOT/'index.html':
+            settings += '<meta name="apple-itunes-app" content="app-id='+config['app']['appId']+'">'
             settings += '<script id="hero-media-data" type="application/json">'+dumps(hero_media)+'</script>'
             # Preload the poster used as the background video's first frame.
             settings += '<link rel="preload" as="image" href="'+hero_media['all']['poster']+'" fetchpriority="high">'
@@ -178,7 +184,7 @@ def build():
     settings['redirects'] = [{'source':'/:path*','has':[{'type':'host','value':'www.hoopcut.ai'}],'destination':'https://hoopcut.ai/:path*','permanent':True}]
     settings['headers'] = [{'source':p,'headers':[{'key':'Cache-Control','value':'public, max-age=31536000, immutable'}]} for p in ['/assets/optimized/:path*','/assets/static/:path*']]
     (ROOT/'vercel.json').write_text(json.dumps(settings,indent=2)+'\n')
-    print(f'Polished {len(files)} local pages; TestFlight access and anonymous event hooks; no publishing.')
+    print(f'Polished {len(files)} local pages; App Store downloads and anonymous event hooks; no publishing.')
 
 
 if __name__ == '__main__':
