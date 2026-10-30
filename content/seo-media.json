@@ -1057,6 +1057,62 @@
         }
       ]
     },
+    "/assets/blog/product/tracer-flight.jpg": {
+      "sourceHash": "209f702b72f5",
+      "originalBytes": 168407,
+      "width": 1600,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/tracer-flight-320.267900304ba7.webp",
+          "width": 320,
+          "bytes": 8244
+        },
+        {
+          "url": "/assets/optimized/tracer-flight-640.f840ef7893da.webp",
+          "width": 640,
+          "bytes": 24806
+        },
+        {
+          "url": "/assets/optimized/tracer-flight-960.0b22f0ca7bd9.webp",
+          "width": 960,
+          "bytes": 43484
+        },
+        {
+          "url": "/assets/optimized/tracer-flight-1280.8536d8831013.webp",
+          "width": 1280,
+          "bytes": 62146
+        }
+      ]
+    },
+    "/assets/blog/product/tracer-finish.jpg": {
+      "sourceHash": "8dbdef414928",
+      "originalBytes": 168604,
+      "width": 1600,
+      "height": 800,
+      "variants": [
+        {
+          "url": "/assets/optimized/tracer-finish-320.bc7b7e6add99.webp",
+          "width": 320,
+          "bytes": 8334
+        },
+        {
+          "url": "/assets/optimized/tracer-finish-640.5ae4ac1e9316.webp",
+          "width": 640,
+          "bytes": 24812
+        },
+        {
+          "url": "/assets/optimized/tracer-finish-960.bb394fac8095.webp",
+          "width": 960,
+          "bytes": 43480
+        },
+        {
+          "url": "/assets/optimized/tracer-finish-1280.c23daf18f14f.webp",
+          "width": 1280,
+          "bytes": 62328
+        }
+      ]
+    },
     "/assets/resources/how-to-film-basketball-games.jpg": {
       "sourceHash": "abcf4036e187",
       "originalBytes": 32997,
@@ -1138,6 +1194,62 @@
           "url": "/assets/optimized/record-basketball-practice-alone-1200.6233f85a7eb1.webp",
           "width": 1200,
           "bytes": 18508
+        }
+      ]
+    },
+    "/assets/blog/product/app-store-02.jpg": {
+      "sourceHash": "cdd7a5f2d3e1",
+      "originalBytes": 456082,
+      "width": 1179,
+      "height": 2556,
+      "variants": [
+        {
+          "url": "/assets/optimized/app-store-02-320.6d1e3b7681c6.webp",
+          "width": 320,
+          "bytes": 28168
+        },
+        {
+          "url": "/assets/optimized/app-store-02-640.501fdadc0e99.webp",
+          "width": 640,
+          "bytes": 68702
+        },
+        {
+          "url": "/assets/optimized/app-store-02-960.89a2c78b7393.webp",
+          "width": 960,
+          "bytes": 107754
+        },
+        {
+          "url": "/assets/optimized/app-store-02-1179.57c3cc9f073f.webp",
+          "width": 1179,
+          "bytes": 135356
+        }
+      ]
+    },
+    "/assets/blog/product/app-store-04.jpg": {
+      "sourceHash": "883a2b9e8ba3",
+      "originalBytes": 344611,
+      "width": 1179,
+      "height": 2556,
+      "variants": [
+        {
+          "url": "/assets/optimized/app-store-04-320.b1e11a15ec4c.webp",
+          "width": 320,
+          "bytes": 18450
+        },
+        {
+          "url": "/assets/optimized/app-store-04-640.5b84a3e6b844.webp",
+          "width": 640,
+          "bytes": 42376
+        },
+        {
+          "url": "/assets/optimized/app-store-04-960.503d80590527.webp",
+          "width": 960,
+          "bytes": 65482
+        },
+        {
+          "url": "/assets/optimized/app-store-04-1179.6ad8e7dff2b0.webp",
+          "width": 1179,
+          "bytes": 81400
         }
       ]
     },

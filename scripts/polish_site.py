@@ -96,7 +96,7 @@ def build():
                 a[attr] = variant(src, 96 if 'icon' in src else 960)
                 if tag.name == 'img':
                     a['srcset'] = ', '.join(v['url']+' '+str(v['width'])+'w' for v in images[src]['variants'])
-                    a['sizes'] = '32px' if 'icon' in src else '(max-width: 700px) 90vw, (max-width: 1100px) 46vw, 640px' if any(x in a.get('class','') for x in ['hero-design','card-cover']) or '/resources/' in src else '(max-width: 700px) 90vw, 1000px'
+                    a['sizes'] = ('(max-width: 650px) 78vw, 340px' if 'evidence-image' in a.get('class','') and '/app-store-' in src else '(max-width: 700px) 90vw, 780px' if 'evidence-image' in a.get('class','') else '32px' if 'icon' in src else '(max-width: 700px) 90vw, (max-width: 1100px) 46vw, 640px' if any(x in a.get('class','') for x in ['hero-design','card-cover']) or '/resources/' in src else '(max-width: 700px) 90vw, 1000px')
                     a['decoding'] = 'async'
         if tag.name == 'video':
             src = local_path(a.get('data-original-poster', a.get('poster','')))
@@ -172,13 +172,14 @@ def build():
         src = re.sub(r'((?:src|href)=)"([^"]+)"', fingerprint, src)
         file.write_text(src)
     static_file.write_text(json.dumps(static,indent=2)+'\n')
-    # This rollout changes metadata/media/shared navigation on every URL.
+    # Keep the per-page editorial dates supplied by the content builders.
+    # Rebuilding shared assets alone must not refresh every URL's lastmod.
     ns = '{http://www.sitemaps.org/schemas/sitemap/0.9}'
     tree = ET.parse(ROOT/'sitemap.xml')
     for node in tree.getroot():
         stamp = node.find(ns+'lastmod')
-        if stamp is None: stamp = ET.SubElement(node,ns+'lastmod')
-        stamp.text = DATE
+        if stamp is None:
+            stamp = ET.SubElement(node,ns+'lastmod'); stamp.text = DATE
     ET.register_namespace('', ns[1:-1]); tree.write(ROOT/'sitemap.xml',encoding='utf-8',xml_declaration=True)
     settings = json.loads((ROOT/'vercel.json').read_text())
     settings['redirects'] = [{'source':'/:path*','has':[{'type':'host','value':'www.hoopcut.ai'}],'destination':'https://hoopcut.ai/:path*','permanent':True}]

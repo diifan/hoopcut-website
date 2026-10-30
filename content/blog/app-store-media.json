@@ -1,0 +1,46 @@
+{
+  "appId": 6824860341,
+  "name": "Hoopcut -Basketball Highlights",
+  "seller": "Swink AI Inc.",
+  "version": "1.0.0",
+  "retrieved": "2026-10-30",
+  "locale": "US English",
+  "source": "https://itunes.apple.com/lookup?id=6824860341&country=us",
+  "screenshots": [
+    {
+      "path": "/assets/blog/product/app-store-02.jpg",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cf/d1/9f/cfd19f30-24ae-75da-799c-d9d708b25ad6/Hoopcut_Auto_Detect_1179x2556.png/1179x2556bb.jpg",
+      "mime": "image/jpeg",
+      "sha256": "637b224fcda135fb0ce1866de0e08dcad484b03028cafcc976e378d344cf86fc",
+      "bytes": 456082,
+      "apiThumbnailSource": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/cf/d1/9f/cfd19f30-24ae-75da-799c-d9d708b25ad6/Hoopcut_Auto_Detect_1179x2556.png/320x480bb.jpg"
+    },
+    {
+      "path": "/assets/blog/product/app-store-04.jpg",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/29/da/20/29da20cb-3e41-fa3e-ab84-18791be261b3/Hoopcut_Share_1179x2556.png/1179x2556bb.jpg",
+      "mime": "image/jpeg",
+      "sha256": "7184098dd3408e374c6170ca439aee49e08db42c3c0e66e3777db2fac4908f64",
+      "bytes": 344611,
+      "apiThumbnailSource": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/29/da/20/29da20cb-3e41-fa3e-ab84-18791be261b3/Hoopcut_Share_1179x2556.png/320x480bb.jpg"
+    }
+  ],
+  "usage": "Only screenshots 02 and 04 are included in this local batch. These are promotional images, not a hands-on app recording.",
+  "preparedFrames": [
+    {
+      "path": "/assets/blog/product/tracer-flight.jpg",
+      "source": "/assets/video/players/all.mp4",
+      "seconds": 18.2,
+      "shot": 4,
+      "sha256": "0f559ad50517ba94159886ebf34057a801d0c01887f50811315cc40c8dade658",
+      "note": "Existing prepared reel, trail baked into the video; not a fresh app processing test."
+    },
+    {
+      "path": "/assets/blog/product/tracer-finish.jpg",
+      "source": "/assets/video/players/all.mp4",
+      "seconds": 18.6,
+      "shot": 4,
+      "sha256": "b04da28c32666a41cfc62eea804cdbb2afe443d9691dae8500907037a8f1be53",
+      "note": "Existing prepared reel, trail baked into the video; not a fresh app processing test."
+    }
+  ]
+}
