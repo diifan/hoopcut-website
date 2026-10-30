@@ -12,7 +12,7 @@ import math
 import re
 from collections import Counter
 from datetime import date
-from blog_visuals import cover, overview, video_block, caption_groups as render_caption_groups
+from blog_visuals import cover, overview, video_block, evidence_gallery, caption_groups as render_caption_groups
 from html.parser import HTMLParser
 from pathlib import Path
 from xml.etree.ElementTree import Element, SubElement, tostring, parse
@@ -108,6 +108,8 @@ def article_markup(item, selected=frozenset(), checklist_key=False, worksheet_ke
         tools = item.get('sectionTools', {}).get(str(index), [])
         tool_links = '<p class="context-tools">Put this into practice: '+ ' · '.join('<a href="'+H(url,quote=True)+'">'+H(label)+'</a>' for label,url in tools)+'.</p>' if tools else ''
         sections.append(f'<section id="step-{index}"><h2>{H(heading)}</h2><p>{c(paragraph)}</p>{tool_links}</section>')
+        if item.get('evidenceGallery', {}).get('afterSection') == index:
+            sections.append(evidence_gallery(item))
         if item.get('visual', {}).get('videoAfter') == index:
             sections.append(video_block(item))
     checklist_title = item["keyword"].capitalize() + ": final checks" if checklist_key else item.get("checklistTitle", "Before you export")
@@ -187,7 +189,7 @@ def build():
         caption_toc = ''.join('<a href="#captions-'+str(i)+'">'+H(group['heading'])+'</a>' for i,group in enumerate(item.get('captionGroups', []),1))
         published = item.get('datePublished', DATE)
         modified = item.get('dateModified', published)
-        toc = ''.join(f'<a href="#step-{i}">{H(heading)}</a>' for i,(heading,_) in enumerate(item['sections'],1))
+        toc = ''.join(f'<a href="#step-{i}">{H(heading)}</a>'+('<a href="#visual-example">Visual example</a>' if item.get('evidenceGallery', {}).get('afterSection') == i else '') for i,(heading,_) in enumerate(item['sections'],1))
         graph = [
             {'@type':'BlogPosting','@id':url+'#article','headline':item['title'],'description':item['summary'],'url':url,'mainEntityOfPage':{'@type':'WebPage','@id':url},'datePublished':published+'T12:00:00+08:00','dateModified':modified+'T12:00:00+08:00','author':{'@type':'Organization','name':'Hoopcut','url':BASE+'/'},'publisher':{'@type':'Organization','name':'Hoopcut','url':BASE+'/'},'inLanguage':'en','wordCount':stat['words'],'image':BASE+item.get('visual', {}).get('image', '/assets/blog/court.webp'),'isPartOf':{'@type':'Blog','@id':BASE+'/blog#blog','url':BASE+'/blog','name':'Hoopcut Blog'}},
             {'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':BASE+'/'},{'@type':'ListItem','position':2,'name':'Blog','item':BASE+'/blog'},{'@type':'ListItem','position':3,'name':item['title'],'item':url}]}
@@ -207,11 +209,17 @@ def build():
     (ROOT/'blog/index.html').write_text(index)
     # The existing site's cleanUrls/trailingSlash configuration serves these paths.
     sitemap = Element('urlset', xmlns='http://www.sitemaps.org/schemas/sitemap/0.9')
-    preserved = [node.text.removeprefix(BASE) for node in parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc') if node.text.startswith(BASE+'/') and not node.text.removeprefix(BASE).startswith('/blog')]
+    previous = {node.find('{*}loc').text.removeprefix(BASE): node.findtext('{*}lastmod') for node in parse(ROOT/'sitemap.xml').getroot()}
+    preserved = [path for path in previous if not path.startswith('/blog')]
+    article_dates = {'/blog/'+slug(a['keyword']): a.get('dateModified', a.get('datePublished', DATE)) for a in ARTICLES}
+    article_dates['/blog'] = max(article_dates.values())
     paths = list(dict.fromkeys(['/','/terms','/privacy','/blog'] + ['/blog/'+slug(a['keyword']) for a in ARTICLES] + preserved))
     for path in paths:
         node = SubElement(sitemap,'url')
         SubElement(node,'loc').text = BASE + path
+        modified = article_dates.get(path) or previous.get(path)
+        if modified:
+            SubElement(node,'lastmod').text = modified
     (ROOT/'sitemap.xml').write_bytes(b'<?xml version="1.0" encoding="UTF-8"?>\n'+tostring(sitemap,encoding='utf-8')+b'\n')
     for filename in ['index.html','terms.html','privacy.html']:
         file = ROOT / filename

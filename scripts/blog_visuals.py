@@ -2,6 +2,17 @@
 from html import escape as H
 
 
+def evidence_gallery(item):
+    """Keep product promotional art distinct from frames of the prepared reel."""
+    gallery = item.get('evidenceGallery')
+    if not gallery:
+        return ''
+    cards = []
+    for image in gallery['items']:
+        cards.append(f'''<figure><a href="{H(image['image'], quote=True)}" aria-label="View full-size image: {H(image['title'], quote=True)}"><img class="evidence-image" src="{H(image['image'], quote=True)}" alt="{H(image['alt'], quote=True)}" width="{image['width']}" height="{image['height']}" loading="lazy" decoding="async"></a><figcaption><strong>{H(image['title'])}</strong>{H(image['caption'])}</figcaption></figure>''')
+    return f'''<section id="visual-example" class="evidence-gallery {H(gallery['layout'], quote=True)}"><p class="eyebrow">{H(gallery['label'])}</p><h2>{H(gallery['heading'])}</h2><p>{H(gallery['description'])}</p><div class="evidence-grid">{''.join(cards)}</div><p class="evidence-source"><a href="{H(gallery['sourceUrl'], quote=True)}">{H(gallery['sourceLabel'])}</a> · Select an image to see it full size.</p></section>'''
+
+
 def cover(item):
     v = item.get('visual')
     if not v:

@@ -107,8 +107,8 @@ def build():
     for node in root:
         if node.find(ns+'loc').text in changed:
             stamp=node.find(ns+'lastmod')
-            if stamp is None:stamp=ET.SubElement(node,ns+'lastmod')
-            stamp.text=DATE
+            if stamp is None:
+                stamp=ET.SubElement(node,ns+'lastmod');stamp.text=DATE
     ET.register_namespace('',ns[1:-1]);tree.write(ROOT/'sitemap.xml',encoding='utf-8',xml_declaration=True)
     (ROOT/'content/blog/batch-one-resources.json').write_text(json.dumps({'date':DATE,'status':'local review only','resources':RESOURCES},ensure_ascii=False,indent=2)+'\n')
     review_items=[{'url':'/blog/'+a['keyword'].replace(' ','-'),'title':a['title'],'slug':a['keyword'].replace(' ','-'),'category':'专项指南'} for a in GUIDES]+[{'url':'/templates/'+r['slug'],'title':r['title'],'slug':r['slug'],'category':'图形模板 · SVG / PNG' if r['kind']=='graphic' else '编辑表格 · CSV / 打印'} for r in RESOURCES]
