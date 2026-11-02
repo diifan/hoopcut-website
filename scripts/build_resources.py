@@ -4,6 +4,7 @@ import csv
 import io
 import json
 import re
+from datetime import date
 from html import escape as H
 from pathlib import Path
 from xml.etree import ElementTree as ET
@@ -36,12 +37,16 @@ def workspace(r):
         preview='<div class="calculation" id="budget-total" role="status" aria-live="polite"></div>' if r['kind']=='budget' else ''
         tools='<button type="button" id="add-row">Add row</button><button type="button" data-export="csv">Download CSV</button>'
         fallback=f'<a download href="/assets/resources/{s}.csv">Download the original example CSV</a>'
+    if s=='basketball-clip-log':
+        editor=editor.replace('<div class="table-wrap">','<div class="table-wrap" role="region" aria-label="Clip log fields, horizontally scrollable" tabindex="0">',1)
+        preview+='''<section class="clip-log-summary" id="clip-log-summary" hidden aria-labelledby="clip-log-summary-title"><div><h3 id="clip-log-summary-title">Your selected clip time</h3><output id="clip-log-total" aria-label="Total duration of valid clips">0:00</output></div><div><p id="clip-log-count" role="status" aria-live="polite"></p><p>Sum of valid rows, not unique footage. Overlapping or repeated selections count separately.</p></div></section><p id="clip-log-help" class="clip-log-help">Use elapsed recording time: mm:ss or h:mm:ss, with up to three decimal places for seconds (02:10.500). Seconds and the middle hour-format field run from 00 to 59. Blank rows are ignored. Draft CSV and print copies keep incomplete rows and show timing notes. On small screens, scroll the table sideways to reach all fields.</p>'''
     return f'''<section id="workspace" class="workspace"><header><div><p class="eyebrow">MAKE IT YOURS</p><h2>{H(r['short'])}</h2></div><span>Browser editor · no sign-in</span></header><p class="editor-note">Start with the fictional example and replace the details. Edits stay in this page and are lost on refresh; download a copy to keep your work.</p><div class="editor {('graphic-editor' if r['kind']=='graphic' else 'sheet-editor')}">{editor}{preview}</div><div class="toolbar js-tools" hidden>{tools}<button type="button" id="print-resource">Print</button><button type="button" id="reset-resource">Reset example</button></div><p id="editor-status" role="status" aria-live="polite"></p><div class="fallback-download">{fallback}<span> · Unedited sample; replace fictional details before use.</span></div><noscript><p>The live editor needs JavaScript. You can still read the guide and download the editable original above.</p></noscript></section>'''
 
 def render_resources():
     from build_blog import head,navigation,footer
     for r in RESOURCES:
         s=r['slug'];url=BASE+'/templates/'+s
+        modified=r.get('dateModified',DATE)
         svg=graphic(r) if r['kind']=='graphic' else sheet_image(r)
         (ASSET/(s+'.svg')).write_text(svg)
         if r['kind']!='graphic':
@@ -60,6 +65,10 @@ def render_resources():
             w,h={'cover':(1080,1920),'poster':(1200,1500),'recruiting':(1200,675),'table-card':(1200,800),'memory':(1000,1400),'certificate':(1200,800)}[r['layout']]
             markup=markup.replace('class="resource-page"',f'class="resource-page graphic-resource graphic-{r["layout"]}"')
             markup=markup.replace(f'<img src="/assets/resources/{s}.jpg" width="1200" height="800"',f'<img src="/assets/resources/{s}-preview.jpg" width="{w}" height="{h}"')
+        if modified != DATE:
+            markup=markup.replace('"dateModified": "'+DATE+'"','"dateModified": "'+modified+'"')
+            display=date.fromisoformat(modified).strftime('%B %d, %Y').replace(' 0',' ')
+            markup=markup.replace('<time datetime="'+DATE+'">October 27, 2026</time>', '<time datetime="'+modified+'">'+display+'</time>')
         (ROOT/'templates'/(s+'.html')).write_text(markup)
 
 def integrate_guides():
@@ -109,6 +118,16 @@ def build():
             stamp=node.find(ns+'lastmod')
             if stamp is None:
                 stamp=ET.SubElement(node,ns+'lastmod');stamp.text=DATE
+    # A resource can advance its own date without refreshing untouched URLs.
+    resource_dates={BASE+'/templates/'+r['slug']:r['dateModified'] for r in RESOURCES if r.get('dateModified')}
+    if resource_dates:
+        resource_dates.update({BASE+'/tools':max(resource_dates.values()),BASE+'/blog':max(resource_dates.values())})
+    for node in root:
+        updated=resource_dates.get(node.find(ns+'loc').text)
+        if updated:
+            stamp=node.find(ns+'lastmod')
+            if stamp is None:stamp=ET.SubElement(node,ns+'lastmod')
+            stamp.text=max(stamp.text or '',updated)
     ET.register_namespace('',ns[1:-1]);tree.write(ROOT/'sitemap.xml',encoding='utf-8',xml_declaration=True)
     (ROOT/'content/blog/batch-one-resources.json').write_text(json.dumps({'date':DATE,'status':'local review only','resources':RESOURCES},ensure_ascii=False,indent=2)+'\n')
     review_items=[{'url':'/blog/'+a['keyword'].replace(' ','-'),'title':a['title'],'slug':a['keyword'].replace(' ','-'),'category':'专项指南'} for a in GUIDES]+[{'url':'/templates/'+r['slug'],'title':r['title'],'slug':r['slug'],'category':'图形模板 · SVG / PNG' if r['kind']=='graphic' else '编辑表格 · CSV / 打印'} for r in RESOURCES]

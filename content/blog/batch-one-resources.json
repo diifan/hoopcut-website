@@ -4,12 +4,13 @@
   "resources": [
     {
       "slug": "basketball-clip-log",
-      "title": "Basketball Clip Log: Track Source Timestamps",
+      "dateModified": "2026-11-02",
+      "title": "Basketball Clip Log & Duration Calculator",
       "short": "Clip timestamp log",
       "category": "Editing",
       "kind": "sheet",
-      "description": "Log basketball video timestamps, filenames and plays in an editable clip sheet. Add rows, download CSV or print a source log for your next edit.",
-      "intro": "Find the same play again without scrubbing the entire game. This log records where a moment lives in the original recording. Keep elapsed source time separate from the scoreboard clock, especially when recording stops between periods.",
+      "description": "Log basketball clips, check source timestamps and calculate selected footage duration. Edit the free log, then download a CSV with timing notes or print it.",
+      "intro": "Find the play again and estimate your selected clip time before editing. Enter a source file and elapsed start and end times; this free browser log checks the boundaries and adds the valid durations. Keep recording time separate from the scoreboard clock. It does not upload footage or cut video.",
       "columns": [
         "Source file",
         "Start (mm:ss)",
@@ -42,20 +43,32 @@
           "Enter the exact source filename before the timestamp. If you rename a file, update the log too. A note that says only “third quarter” is difficult for a second editor to locate."
         ],
         [
-          "Mark readable boundaries",
-          "Use elapsed recording time and leave the setup and result visible. Start and end entries are notes, not automatic trim commands. Open the source and verify them before exporting."
+          "Check the recording timestamps",
+          "Enter mm:ss or h:mm:ss, optionally with up to three decimal places in seconds. For example, 02:10.500 to 02:18.250 is 7.75 seconds; 1:02:10 to 1:02:18 is eight seconds. The end must be later than the start. Red timing notes identify incomplete or invalid rows. Completely empty rows do not count. Reopen the source to check the action: valid numbers alone cannot confirm the right player or a complete possession."
         ],
         [
-          "Review a shortlist",
-          "Use the review note to mark a keeper, uncertainty or a duplicate. Move selected plays into the storyboard only after checking the source. This sheet is a location index, not the finished reel."
+          "Read the total, then plan the actual edit",
+          "The total sums the durations of valid rows. Overlapping ranges and repeated entries count separately because each row represents a proposed clip; the calculator does not merge them. The estimate excludes titles, transitions and any changes you make later in an editor. Move verified plays into the storyboard. Export a draft CSV to keep unfinished rows and their timing notes, or print a review copy."
         ]
       ],
       "mistake": "Do not put the scoreboard clock in the source-time columns. A stopped game clock and a continuously recording phone quickly diverge.",
-      "example": "The fictional first row points to eight seconds in game-01.mp4. Another editor would open that file, inspect the player before the catch and confirm that the finish is visible before selecting it.",
+      "example": "The fictional rows contain eight and ten seconds, for a valid-row total of 18 seconds. Change the first end time to 02:09 and that row is flagged; only the remaining ten seconds count. The first row stays in your draft CSV with a timing note. Correct it to 02:18 to restore the 18-second total. These are planning examples, not measured app results.",
       "faq": [
         [
-          "Does this sheet cut the video?",
-          "No. It stores your notes locally in the page until you download them. Use a video editor or the clipping workflow to create actual clips."
+          "Does this tool cut or inspect my video?",
+          "No. It calculates durations from your entries and keeps notes in the current browser page. It does not open footage, verify player identity or create clips. Use a video editor or Hoopcut’s basketball auto clipping for the actual footage."
+        ],
+        [
+          "What timestamp formats work?",
+          "Use mm:ss, mm:ss.sss or h:mm:ss.sss with up to three decimal places. For example, 90:00 and 1:30:00 both mean 90 minutes of recording time. Seconds and the middle hour-format field must be 00 to 59. These are elapsed timestamps, not a game clock or a frames timecode."
+        ],
+        [
+          "Does the total remove overlaps or duplicate clips?",
+          "No. Each valid row counts separately. Two 10-second rows total 20 seconds even if they refer to the same footage. The estimate also excludes titles and transitions."
+        ],
+        [
+          "Can I save an unfinished log?",
+          "Yes. Download CSV or Print keeps incomplete rows and timing notes. Their durations stay blank and are excluded from the valid total. The original CSV link is the uncalculated starter sheet. Edits do not survive refresh; download a copy before leaving."
         ],
         [
           "What happens if recording was paused?",
@@ -63,6 +76,10 @@
         ]
       ],
       "links": [
+        [
+          "Turn the shortlist into a complete highlight video",
+          "/blog/how-to-make-a-basketball-highlight-video"
+        ],
         [
           "Try prepared clip selection",
           "/demo/auto-clipping"
