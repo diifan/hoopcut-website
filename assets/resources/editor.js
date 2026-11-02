@@ -14,6 +14,65 @@
   document.getElementById('workspace').addEventListener('input', start);
   buttons.hidden = false;
   const message = text => { status.textContent = text; };
+  const clipLog = config.slug === 'basketball-clip-log';
+  let clipSerial = 0, clipResults = [];
+  function sourceTime(value) {
+    const parts = value.trim().split(':');
+    if (parts.length !== 2 && parts.length !== 3) return null;
+    if (!/^\d+$/.test(parts[0])) return null;
+    if (parts.length === 3 && !/^[0-5]\d$/.test(parts[1])) return null;
+    const seconds = parts.at(-1).match(/^([0-5]\d)(?:\.(\d{1,3}))?$/);
+    if (!seconds) return null;
+    const leading = Number(parts[0]) * (parts.length === 3 ? 3600000 : 60000);
+    const ms = leading + (parts.length === 3 ? Number(parts[1])*60000 : 0) + Number(seconds[1])*1000 + Number((seconds[2] || '').padEnd(3,'0'));
+    return Number.isSafeInteger(ms) ? ms : null;
+  }
+  function durationText(ms) {
+    const seconds = Math.floor(ms/1000), hours = Math.floor(seconds/3600);
+    const minutes = Math.floor(seconds/60) % (hours ? 60 : Infinity);
+    const fraction = ms%1000 ? '.'+String(ms%1000).padStart(3,'0').replace(/0+$/,'') : '';
+    return (hours ? hours+':'+String(minutes).padStart(2,'0') : String(minutes)) + ':'+String(seconds%60).padStart(2,'0')+fraction;
+  }
+  function calculateClipLog() {
+    let total = 0, validCount = 0, filledCount = 0;
+    clipResults = rowValues().map((values,index)=>{
+      const row = table.tBodies[0].rows[index], inputs = [...row.querySelectorAll('textarea')];
+      let cell = row.querySelector('[data-clip-result]');
+      if (!cell) {
+        cell = document.createElement('td'); cell.dataset.clipResult=''; cell.id='clip-check-'+(++clipSerial);
+        row.insertBefore(cell,row.lastElementChild);
+      }
+      const filled = values.some(value=>value.trim()), errors = [], invalid = new Set();
+      const from = sourceTime(values[1]), to = sourceTime(values[2]);
+      if (filled) {
+        filledCount++;
+        if (!values[0].trim()) {errors.push('Add the source filename.');invalid.add(0);}
+        if (from === null) {errors.push('Enter a valid start time.');invalid.add(1);}
+        if (to === null) {errors.push('Enter a valid end time.');invalid.add(2);}
+        if (from !== null && to !== null && to <= from) {errors.push('End must be later than start.');invalid.add(2);}
+      }
+      const duration = filled && !errors.length ? to-from : null;
+      if (duration !== null && !Number.isSafeInteger(total+duration)) {errors.push('Total duration is too large.');invalid.add(2);}
+      inputs.forEach((input,i)=>{
+        input.setAttribute('aria-invalid',String(invalid.has(i)));
+        if (i<3) input.setAttribute('aria-describedby','clip-log-help '+cell.id);
+      });
+      if (duration !== null && !errors.length) {total+=duration;validCount++;}
+      const result={durationMs:errors.length ? null : duration,check:errors.join(' ') || (filled ? 'Ready' : 'Blank row')};
+      cell.textContent=result.durationMs === null ? (filled ? result.check : 'Add a clip') : durationText(result.durationMs)+' · Ready';
+      cell.classList.toggle('clip-error',errors.length>0);
+      return result;
+    });
+    document.getElementById('clip-log-summary').hidden=false;
+    document.getElementById('clip-log-total').textContent=durationText(total);
+    document.getElementById('clip-log-count').textContent=`${validCount} valid ${validCount===1?'clip':'clips'} · ${filledCount-validCount} ${filledCount-validCount===1?'row needs':'rows need'} attention`;
+  }
+  function exportRows() {
+    const rows = rowValues();
+    if (!clipLog) return [config.columns,...rows];
+    calculateClipLog();
+    return [[...config.columns,'Duration (seconds)','Timing check'],...rows.map((row,i)=>[...row,clipResults[i].durationMs === null ? '' : String(clipResults[i].durationMs/1000),clipResults[i].check])];
+  }
   function download(blob, suffix) {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -25,6 +84,7 @@
   function rowValues() { return [...table.tBodies[0].rows].map(row => [...row.querySelectorAll('textarea')].map(input => input.value)); }
   function numeric(value) { return value.trim() === '' ? 0 : Number(value); }
   function calculate() {
+    if (clipLog) {calculateClipLog();return true;}
     if (config.kind !== 'budget') return true;
     let total = 0, valid = true;
     rowValues().forEach((row, rowIndex) => {
@@ -79,6 +139,11 @@
     updateGraphic();
   }
   if (table) {
+    if (clipLog) {
+      const heading=document.createElement('th');heading.scope='col';heading.textContent='Duration / checks';
+      table.tHead.rows[0].insertBefore(heading,table.tHead.rows[0].lastElementChild);
+      table.classList.add('clip-log-table');
+    }
     table.addEventListener('input',calculate);
     table.addEventListener('click', event => {
       if (!event.target.matches('[data-remove]')) return;
@@ -114,10 +179,11 @@
     } else {
       const clone=document.createElement('table');
       const caption=document.createElement('caption'); caption.textContent=document.title.replace(' | Hoopcut','');clone.append(caption);
-      [config.columns,...rowValues()].forEach((row,j)=>{
+      exportRows().forEach((row,j)=>{
         const tr=document.createElement('tr'); row.forEach(value=>{const cell=document.createElement(j?'td':'th');cell.textContent=value;tr.append(cell);});clone.append(tr);
       });out.append(clone);
       if(config.kind==='budget'){const p=document.createElement('p');p.textContent=document.getElementById('budget-total').textContent;out.append(p);}
+      if(clipLog){const p=document.createElement('p');p.textContent='Valid clips total: '+document.getElementById('clip-log-total').textContent+'. Overlapping and repeated selections count separately. '+document.getElementById('clip-log-count').textContent;out.append(p);}
     }
     workspace.append(out);
   }
@@ -132,7 +198,7 @@
       const type=button.dataset.export;
       if(type==='csv') {
         if(!calculate()){message('Correct the budget inputs before downloading.');return;}
-        let rows=[config.columns,...rowValues()];
+        let rows=exportRows();
         if(config.kind==='budget') {
           rows[0]=[...rows[0],'Line total (USD)'];
           rows=rows.map((r,i)=>i?[...r,(numeric(r[1])*numeric(r[2])+numeric(r[3])).toFixed(2)]:r);
@@ -157,7 +223,7 @@
           } finally {URL.revokeObjectURL(url);}
         }
       }
-      message('Download prepared. Open the file and check your details before sharing or printing.');
+      message(clipLog && clipResults.some(r=>!['Ready','Blank row'].includes(r.check)) ? 'Draft downloaded with timing notes. Correct the flagged rows before cutting your video.' : 'Download prepared. Open the file and check your details before sharing or printing.');
     } catch(error) { message('The download could not be created. Try the original SVG or CSV link below, or use Print.'); }
   }));
 })();
