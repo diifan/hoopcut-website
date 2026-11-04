@@ -30,7 +30,7 @@ def check(http=False):
     urls=[x.text for x in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
     video_manifest=ROOT/'content/videos/manifest.json'
     videos=json.loads(video_manifest.read_text()) if video_manifest.exists() else []
-    expected_video_urls={'https://hoopcut.ai/videos/'+v['video_id'] for v in videos}
+    expected_video_urls={'https://hoopcut.ai/videos/'+v['slug'] for v in videos}
     if videos:expected_video_urls.add('https://hoopcut.ai/videos')
     assert {u for u in urls if u.startswith('https://hoopcut.ai/videos')}==expected_video_urls
     assert len(urls)==len(set(urls))==39+len(expected_video_urls)
@@ -58,7 +58,7 @@ def check(http=False):
         for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S):
             data=json.loads(raw);assert data.get('@context')=='https://schema.org';graphs+=data.get('@graph',[data])
         assert graphs,('structured data',path)
-        if path.startswith('/blog/') or path.startswith('/templates/') or path in ['/blog','/tools']:
+        if path.startswith('/blog/') or path.startswith('/templates/') or path.startswith('/videos/') or path in ['/blog','/tools']:
             assert any(x.get('@type')=='BreadcrumbList' for x in graphs),('breadcrumb schema',path)
             assert any(t=='nav' and a.get('aria-label')=='Breadcrumb' for t,a in p.tags),('visible breadcrumb',path)
         for t,a in p.tags:
@@ -80,6 +80,10 @@ def check(http=False):
             with urlopen('http://127.0.0.1:8767'+path,timeout=15) as response:
                 assert response.status==200,('HTTP status',path,response.status)
                 assert 'noindex' in response.headers.get('X-Robots-Tag',''),('local preview protection',path)
+    for v in videos:
+        alias=ROOT/'videos'/(v['video_id']+'.html')
+        preferred=BASE+'/videos/'+v['slug']
+        assert alias.is_file() and '<link rel="canonical" href="'+preferred+'"' in alias.read_text(),('video alias canonical',v['video_id'])
     for path,(file,source,p) in records.items():
         for t,a in p.tags:
             for key in ['href','src','poster']:
