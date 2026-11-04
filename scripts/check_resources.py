@@ -74,7 +74,7 @@ for f,p in pages.items():
 urls=[x.text for x in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
 video_manifest=ROOT/'content/videos/manifest.json'
 videos=json.loads(video_manifest.read_text()) if video_manifest.exists() else []
-expected_video_urls={'https://hoopcut.ai/videos/'+v['video_id'] for v in videos}
+expected_video_urls={'https://hoopcut.ai/videos/'+v['slug'] for v in videos}
 if videos:expected_video_urls.add('https://hoopcut.ai/videos')
 assert {u for u in urls if u.startswith('https://hoopcut.ai/videos')}==expected_video_urls
 assert len(urls)==len(set(urls))==39+len(expected_video_urls)
@@ -82,7 +82,12 @@ assert 'https://hoopcut.ai/tools' in urls
 assert all('https://hoopcut.ai'+p in urls for p in new_paths)
 prior=subprocess.check_output(['git','show','HEAD:sitemap.xml'],cwd=ROOT).decode()
 old_urls=[x.text for x in ET.fromstring(prior).findall('{*}url/{*}loc')]
-assert set(old_urls).issubset(urls), 'Existing sitemap URLs dropped'
+legacy_video_urls={'https://hoopcut.ai/videos/'+v['video_id'] for v in videos}
+assert set(old_urls)-legacy_video_urls <= set(urls), 'Existing sitemap URLs dropped'
+for v in videos:
+    alias=ROOT/'videos'/(v['video_id']+'.html')
+    preferred='https://hoopcut.ai/videos/'+v['slug']
+    assert alias.is_file() and '<link rel="canonical" href="'+preferred+'"' in alias.read_text(), 'Legacy video alias missing preferred canonical'
 before=subprocess.check_output(['git','show','HEAD:index.html'],cwd=ROOT).decode()
 after=(ROOT/'index.html').read_text()
 # Preserve original reviews and hero identity while allowing approved audit fixes.
