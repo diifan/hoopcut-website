@@ -144,6 +144,8 @@ def build():
     subprocess.run([node,str(ROOT/'scripts/optimize_media.cjs')],check=True)
     from polish_site import build as polish
     polish()
+    from build_videos import build as build_videos
+    build_videos(ROOT)
     print('Built first batch: 5 new guides + 15 distinct editable resource pages. No publishing action.')
 
 if __name__=='__main__': build()

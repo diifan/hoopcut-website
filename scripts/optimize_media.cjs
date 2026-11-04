@@ -1,7 +1,11 @@
 /* Build responsive WebP and complete, lighter reels. Originals are retained. */
 const fs = require('fs'), path = require('path'), os = require('os'), crypto = require('crypto');
 const {execFileSync} = require('child_process');
-const sharp = require(path.join(os.homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp'));
+const sharp = (() => {
+  try { return require('sharp'); }
+  catch { return require(path.join(os.homedir(), '.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/sharp')); }
+})();
+const ffmpeg = fs.existsSync('/opt/homebrew/bin/ffmpeg') ? '/opt/homebrew/bin/ffmpeg' : 'ffmpeg';
 const root = path.resolve(__dirname, '..');
 const dest = path.join(root, 'assets/optimized');
 const manifestFile = path.join(root, 'content/seo-media.json');
@@ -59,7 +63,7 @@ async function main() {
     const variants={};
     for (const [label,width] of [['desktop',960],['mobile',640]]) {
       const tmp=path.join(dest,key+'-'+label+'.next.mp4');
-      execFileSync('/opt/homebrew/bin/ffmpeg',['-y','-v','error','-i',input,'-vf',`scale=${width}:-2:flags=lanczos,setsar=1`,'-an','-c:v','libx264','-preset','medium','-crf','27','-pix_fmt','yuv420p','-threads','4','-movflags','+faststart',tmp]);
+      execFileSync(ffmpeg,['-y','-v','error','-i',input,'-vf',`scale=${width}:-2:flags=lanczos,setsar=1`,'-an','-c:v','libx264','-preset','medium','-crf','27','-pix_fmt','yuv420p','-threads','4','-movflags','+faststart',tmp]);
       const data=fs.readFileSync(tmp),url=`/assets/optimized/reel-${key}-${width}.${digest(data)}.mp4`;
       fs.renameSync(tmp,path.join(root,url));variants[label]={url,width,bytes:data.length};
     }

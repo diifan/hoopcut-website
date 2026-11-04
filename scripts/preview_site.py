@@ -89,8 +89,8 @@ class Handler(SimpleHTTPRequestHandler):
             self.end_headers()
             return
         candidate = ROOT / path.lstrip('/')
-        if path == '/blog':
-            self.path = '/blog/index.html'
+        if candidate.is_dir() and (candidate / 'index.html').is_file():
+            self.path = path.rstrip('/') + '/index.html'
         elif not candidate.is_file() and candidate.with_suffix('.html').is_file():
             self.path = path + '.html'
         if head_only:

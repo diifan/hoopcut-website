@@ -3,6 +3,7 @@
 import hashlib
 import json
 import re
+import shutil
 import subprocess
 from html.parser import HTMLParser
 from pathlib import Path
@@ -11,6 +12,7 @@ from xml.etree import ElementTree as ET
 from batch_one_content import GUIDES,RESOURCES
 
 ROOT=Path(__file__).resolve().parents[1]
+FFPROBE=shutil.which('ffprobe') or ('/opt/homebrew/bin/ffprobe' if Path('/opt/homebrew/bin/ffprobe').is_file() else None)
 class Page(HTMLParser):
     def __init__(self,source):
         super().__init__();self.tags=[];self.ids=set();self.text=[];self.feed(source)
@@ -70,7 +72,12 @@ for f,p in pages.items():
             if u.fragment and target in pages:assert unquote(u.fragment) in pages[target].ids,('broken anchor',str(f),value)
 
 urls=[x.text for x in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
-assert len(urls)==39==len(set(urls))
+video_manifest=ROOT/'content/videos/manifest.json'
+videos=json.loads(video_manifest.read_text()) if video_manifest.exists() else []
+expected_video_urls={'https://hoopcut.ai/videos/'+v['video_id'] for v in videos}
+if videos:expected_video_urls.add('https://hoopcut.ai/videos')
+assert {u for u in urls if u.startswith('https://hoopcut.ai/videos')}==expected_video_urls
+assert len(urls)==len(set(urls))==39+len(expected_video_urls)
 assert 'https://hoopcut.ai/tools' in urls
 assert all('https://hoopcut.ai'+p in urls for p in new_paths)
 prior=subprocess.check_output(['git','show','HEAD:sitemap.xml'],cwd=ROOT).decode()
@@ -100,10 +107,11 @@ plain_home=re.sub('<[^>]+>',' ',after)
 plain_home=re.sub(r'\s+',' ',plain_home)
 for phrase in ['Wait, it’s already','Got my evening','My friend watched']:assert phrase in plain_home
 assert len(list((ROOT/'assets/resources').glob('*.mp4')))==20
+assert FFPROBE, 'ffprobe is required to validate generated walkthrough videos'
 for p in (ROOT/'assets/resources').glob('*.mp4'):
-    probe=json.loads(subprocess.check_output(['/opt/homebrew/bin/ffprobe','-v','quiet','-show_format','-show_streams','-of','json',str(p)]))
+    probe=json.loads(subprocess.check_output([FFPROBE,'-v','quiet','-show_format','-show_streams','-of','json',str(p)]))
     assert abs(float(probe['format']['duration'])-9)<.1
     assert probe['streams'][0]['codec_name']=='h264'
-reportdir=ROOT/'reports';reportdir.mkdir(exist_ok=True)
+reportdir=ROOT/'reports';reportdir.mkdir(parents=True,exist_ok=True)
 (reportdir/'batch-one-static.json').write_text(json.dumps({'status':'pass','newPages':20,'additionalToolsDirectory':1,'sitemapURLs':39,'homepage':'Original reviews, hero heading and player controls preserved; approved media/access audit fixes applied','metadata':report},indent=2)+'\n')
 print('PASS: 20 planned pages + Tools hub; metadata, schema, links, media, 39 URLs; original reviews and hero identity preserved.')

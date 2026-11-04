@@ -28,7 +28,12 @@ def file_for(path):
 
 def check(http=False):
     urls=[x.text for x in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
-    assert len(urls)==len(set(urls))==39
+    video_manifest=ROOT/'content/videos/manifest.json'
+    videos=json.loads(video_manifest.read_text()) if video_manifest.exists() else []
+    expected_video_urls={'https://hoopcut.ai/videos/'+v['video_id'] for v in videos}
+    if videos:expected_video_urls.add('https://hoopcut.ai/videos')
+    assert {u for u in urls if u.startswith('https://hoopcut.ai/videos')}==expected_video_urls
+    assert len(urls)==len(set(urls))==39+len(expected_video_urls)
     records={};titles=set();descriptions=set();adjacency={};incoming=Counter()
     for url in urls:
         assert url.startswith(BASE+'/') and not urlsplit(url).query and not urlsplit(url).fragment
@@ -93,7 +98,9 @@ def check(http=False):
     config=json.loads((ROOT/'vercel.json').read_text());assert config.get('cleanUrls') is True and config.get('trailingSlash') is False
     assert 'reports/' in (ROOT/'.vercelignore').read_text()
     report={'status':'pass','pages':len(urls),'uniqueTitles':len(titles),'uniqueDescriptions':len(descriptions),'reachableFromHomepage':len(reached),'source':'production-ready static HTML; localhost responses intentionally noindex','httpPreviewChecked':http,'legalNavigation':'Terms and Privacy in footer only','checks':['canonical/sitemap agreement','single H1','schema and breadcrumbs','OG/Twitter metadata and images','image dimensions/alt','internal links and reachability','robots and clean URLs'],'searchPerformance':'Live indexing, rankings and Core Web Vitals require post-deployment checks; not asserted by this local audit.'}
-    (ROOT/'reports/site-seo-audit.json').write_text(json.dumps(report,indent=2)+'\n')
+    report_path=ROOT/'reports/site-seo-audit.json'
+    report_path.parent.mkdir(parents=True,exist_ok=True)
+    report_path.write_text(json.dumps(report,indent=2)+'\n')
     print('PASS: all 39 sitemap pages; unique metadata, canonical, H1, schema, links/assets, images, homepage reachability, legal footer.'+(' All preview URLs return HTTP 200 and noindex.' if http else ''))
 
 if __name__=='__main__':
