@@ -1,0 +1,23 @@
+[
+  {
+    "video_id": "MLcda_7VYkQ",
+    "status": "public_verified",
+    "channel_handle": "@HoopCut-Office",
+    "upload_receipt_id": "HCSEO-20261104-pilot01",
+    "verified_at": "2026-11-04T11:55:12.445790+00:00",
+    "published_at": "2026-11-04T11:54:04+00:00",
+    "title": "Two Pickup Jump Shots with Shot Tracer | HoopCut",
+    "description": "Two indoor pickup basketball plays with a measured ball-flight trail added using the HoopCut processing pipeline. Original footage: https://www.youtube.com/watch?v=ttHi4TcmqH0 — @cantfakethetape. Explore HoopCut: https://hoopcut.ai/",
+    "scene_notes": "Two jump shots on an indoor court. The first ball travels toward the hoop from the right of the frame; the second player shoots from the left side. Each clip includes the approach, visible ball flight and basket finish. The added trail follows observed ball positions and fades after the measured arc. Original footage and existing source watermark are retained.",
+    "source_url": "https://www.youtube.com/watch?v=ttHi4TcmqH0",
+    "duration_seconds": 7.223,
+    "tags": [
+      "pickup basketball",
+      "jump shot",
+      "shot tracer",
+      "indoor court"
+    ],
+    "thumbnail_width": 480,
+    "thumbnail_height": 360
+  }
+]
