@@ -35,11 +35,16 @@ def build(root):
   graph=[{'@type':'WebPage','@id':url+'#page','url':url,'name':r['title'],'mainEntity':{'@id':url+'#video'}},{'@type':'VideoObject','@id':url+'#video','name':r['title'],'description':r['description'],'thumbnailUrl':[ORIGIN+cover],'uploadDate':r['published_at'],'duration':'PT'+str(round(r['duration_seconds']))+'S','embedUrl':'https://www.youtube.com/embed/'+vid,'publisher':{'@type':'Organization','name':'HoopCut','url':ORIGIN}},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':ORIGIN+'/'},{'@type':'ListItem','position':2,'name':'Videos','item':ORIGIN+'/videos'},{'@type':'ListItem','position':3,'name':r['title'],'item':url}]}]
   related=sorted([x for x in records if x['video_id']!=vid],key=lambda x:len(set(x.get('tags',[]))&set(r.get('tags',[]))),reverse=True)[:3]
   more=''.join(card(x) for x in related) or '<p><a href="/blog/how-to-add-shot-tracer-to-basketball-video">How to review a basketball Shot Tracer</a> · <a href="/tools">Basketball planning tools</a></p>'
-  page=head(r['title']+' | HoopCut',r['description'],url,graph,cover,r['title'])+navigation()+f'''<main id="main"><nav aria-label="Breadcrumb"><a href="/">Home</a> / <a href="/videos">Videos</a></nav><h1>{H(r['title'])}</h1><p class="lede">{H(r['description'])}</p><iframe style="display:block;width:min(100%,430px);aspect-ratio:9/16;border:0;margin:24px auto" src="https://www.youtube-nocookie.com/embed/{vid}" title="{H(r['title'],quote=True)}" allow="fullscreen; picture-in-picture" allowfullscreen></iframe><h2>About this play</h2><p>{H(r['scene_notes'])}</p><p><a href="{H(r['source_url'],quote=True)}">Original footage</a> · <a href="https://www.youtube.com/watch?v={vid}">Watch on YouTube</a></p><h2>More from the court</h2><div class="cards">{more}</div></main>'''+footer()+'</body></html>'
+  from video_layout import detail
+  css=(root/'assets/video-page.css').read_text()
+  page=head(r['title'],r['description'],url,graph,cover,r['title']).replace('</head>','<style>'+css+'</style></head>').replace('<body>','<body class="video-page">')+navigation()+detail(r)+footer()+'</body></html>'
   (root/'videos'/f'{vid}.html').write_text(page)
  if records:
   url=ORIGIN+'/videos';graph=[{'@type':'CollectionPage','url':url,'name':'HoopCut basketball videos'}]
-  (root/'videos/index.html').write_text(head('Basketball Highlights with Shot Tracer | HoopCut','Watch basketball plays with Shot Tracer, source footage and notes about each clip.',url,graph)+navigation()+'<main id="main"><h1>Basketball highlights</h1><div class="cards">'+''.join(card(r) for r in records)+'</div></main>'+footer()+'</body></html>')
+  from video_layout import index
+  css=(root/'assets/video-page.css').read_text()
+  (root/'videos/index.html').write_text(head('Basketball Highlights with Shot Tracer | HoopCut','Watch basketball plays with Shot Tracer, source footage and notes about each clip.',url,graph).replace('</head>','<style>'+css+'</style></head>').replace('<body>','<body class="video-page">')+navigation()+index(records)+footer()+'</body></html>')
+
  tree=ET.parse(root/'sitemap.xml');ns='{http://www.sitemaps.org/schemas/sitemap/0.9}';smap=tree.getroot()
  known={x.findtext(ns+'loc') for x in smap}
  for url in ([ORIGIN+'/videos'] if records else [])+[ORIGIN+'/videos/'+r['video_id'] for r in records]:
