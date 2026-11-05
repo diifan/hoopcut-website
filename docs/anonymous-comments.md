@@ -17,7 +17,7 @@ Production reuses the existing HoopCut Supabase project in the isolated `hoopcut
 - `COMMENTS_ADMIN_TOKEN`: at least 32 random characters for post-publication report handling.
 - `COMMENTS_ALLOWED_ORIGINS`: defaults to `https://hoopcut.ai,https://www.hoopcut.ai`. Add an exact preview origin for preview deployments if needed.
 
-Provision the isolated schema using the database administrator, then run `npm run migrate:comments` using that migration role; give the runtime role SELECT/INSERT/UPDATE/DELETE on the four hc_comment tables and sequence usage for hc_comment_actions. The migration is idempotent and does not modify other tables. Keep credentials out of Git. Vercel functions must use external durable PostgreSQL, not temporary filesystem storage.
+Provision the isolated schema using the database administrator, then run `npm run migrate:comments` using that migration role; give the runtime role SELECT/INSERT/UPDATE/DELETE on the five hc_comment tables and sequence usage for hc_comment_actions. The migration is idempotent and does not modify other tables. Keep credentials out of Git. Vercel functions must use external durable PostgreSQL, not temporary filesystem storage.
 
 `/comment-admin` is an unindexed management shell. Loading reports or deleting others' comments requires the secret administrator token, held only in memory until the tab closes. This is post-publication handling, not pre-publication approval. No fabricated comments or counters are seeded in production.
 
@@ -39,9 +39,15 @@ Roll back the frontend/API deployment through the existing Git release process. 
 - Browser tests: 12 checks passed against the real HTTP API backed by a separate test database, including the collapsed-thread reply regression. Browser network requests were bridged through a Unix socket; the external YouTube iframe was excluded from these comment tests.
 - Full resources build, blog/resources/SEO checks, static build and whitespace checks passed.
 - Review page and its comments API return HTTP 200; review database was empty at verification. Test fixture content was removed only from the separate test database.
-- No remote push, merge or production deployment has been performed for this feature.
-- Production database migration verified: four isolated tables with RLS, no runtime read/write access to the ten existing App tables, verified TLS and restricted-role login. The production comment database is initially empty.
+- Initial production release: PR #17, commit `c4a08315f79fd30ff150f2fe1d48269ca48475a4`, verified live. The video-page integration extends that API without replacing existing comment records.
+- Production database migration verified: five isolated tables with RLS, no runtime read/write access to the ten existing App tables, verified TLS and restricted-role login. The production comment database is initially empty.
 - Vercel CLI refreshed its expired authentication successfully. Management access and the GitHub main deployment link were verified; all five server-only comments environment variables are configured for production.
 - Public certificate source: the Supabase Studio official `ssl:certificate_url` configuration points to https://supabase-downloads.s3-ap-southeast-1.amazonaws.com/prod/ssl/prod-ca-2021.crt .
 - Release authorization: the owner explicitly requested continuation through the existing Git release workflow on 2026-11-05. Deployment status is recorded separately after live verification.
 - Local review: http://192.168.0.112:8190/reviews/hoopcut-comments/videos/two-pickup-jump-shots-shot-tracer
+
+## Video-page integration
+
+Optional display names (40 characters), persistent reactions and top sorting use the same visitor identity. The additive migration adds `display_name` and `hc_comment_votes`; grant the runtime role table access and add the same runtime-only RLS policy. No existing comment is deleted.
+
+Run `python3 scripts/qa_comments.py` with a dedicated `_test` COMMENTS_DATABASE_URL plus the hash/admin test configuration and Playwright installed. `PLAYWRIGHT_CHROMIUM_EXECUTABLE` optionally selects a browser; `COMMENTS_TEST_OUTPUT` selects the evidence directory. This test clears only the explicitly selected test database.

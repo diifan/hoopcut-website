@@ -1,0 +1,103 @@
+{
+  "video_id": "MLcda_7VYkQ",
+  "slug": "two-pickup-jump-shots-shot-tracer",
+  "date_modified": "2026-11-05",
+  "meta_description": "Watch two pickup basketball jump shots with Shot Tracer. Follow the ball flight, inspect each play and learn what to keep when editing basketball clips.",
+  "heading": "Two shots. A closer look at the play.",
+  "intro": "This short basketball highlight pairs two indoor jump shots with a visible ball trail. After watching the clip, use these notes to inspect the action and decide what you would keep in a pickup-game edit of your own.",
+  "sections": [
+    {
+      "id": "watch-the-shots",
+      "nav_title": "In the clip",
+      "heading": "What happens in these pickup basketball highlights?",
+      "paragraphs": [
+        "The sequence contains two separate jump shots on an indoor court. The first shot travels toward the basket from the right of the frame; the second comes from the left. Each selection includes the approach, the ball in flight and the finish, rather than showing only an isolated release.",
+        "Watch each possession once with your attention on the player, then replay it while following the ball. Notice where the cut begins and whether you have enough time to locate the shooter before the attempt. The two-shot sequence is a compact editing example, not a full account of either player’s game."
+      ]
+    },
+    {
+      "id": "follow-the-arc",
+      "nav_title": "Reading the tracer",
+      "heading": "How to read the basketball Shot Tracer",
+      "paragraphs": [
+        "The added trail makes the ball’s route easier to pick out against the court and nearby players. In this edit, the line follows the observed flight and fades after the arc. Compare that visual path with the actual ball instead of judging the effect by its shape alone."
+      ],
+      "checks": [
+        [
+          "At release",
+          "Locate the ball leaving the shooter. The trail should help you find that moment while leaving the hand and ball visible."
+        ],
+        [
+          "Through the arc",
+          "Follow the ball toward the basket. Look for any gap between the recorded action and the line, especially near other players."
+        ],
+        [
+          "At the finish",
+          "Watch the ball and rim together. Keep the outcome visible; the drawn trajectory is a visual aid, not independent proof of a made shot."
+        ]
+      ],
+      "links": [
+        [
+          "Review a basketball Shot Tracer step by step",
+          "/blog/how-to-add-shot-tracer-to-basketball-video"
+        ]
+      ]
+    },
+    {
+      "id": "edit-the-highlight",
+      "nav_title": "Editing takeaways",
+      "heading": "What to keep when cutting your own jump-shot clips",
+      "paragraphs": [
+        "Use the setup, flight and finish as three checkpoints when selecting a play from a longer recording. Start early enough for someone who was not at the game to find the shooter. End after the action resolves, then remove the waiting time between possessions.",
+        "A basketball highlight does not need every moment to be the same length. If a pass or change of direction explains the attempt, leave room for it. If the ball or basket disappears from view, review the original before deciding that the clip communicates the whole play. Keep the unedited recording so you can revisit those decisions."
+      ],
+      "links": [
+        [
+          "Plan a clear basketball highlight sequence",
+          "/blog/how-to-make-a-basketball-highlight-video"
+        ],
+        [
+          "Save source timestamps in the basketball clip log",
+          "/templates/basketball-clip-log"
+        ]
+      ]
+    },
+    {
+      "id": "try-your-footage",
+      "nav_title": "Your next clip",
+      "heading": "Try basketball auto clipping and Shot Tracer",
+      "paragraphs": [
+        "For your own footage, Hoopcut on iPhone focuses on automatic basketball clipping and Shot Tracer. Review the selected moments first, then inspect how each traced shot reads in the saved edit. A strong clip still depends on visible action and a clear beginning and ending.",
+        "The browser demos let you explore prepared examples before working on a personal recording. Try selecting a play in the auto-clipping demo, or use the Shot Tracer demo to inspect an existing trajectory at a slower playback speed."
+      ],
+      "links": [
+        [
+          "Explore the basketball auto-clipping demo",
+          "/demo/auto-clipping"
+        ],
+        [
+          "Inspect prepared Shot Tracer footage",
+          "/demo/shot-tracer"
+        ]
+      ]
+    }
+  ],
+  "questions": [
+    [
+      "Can I upload a video and add a tracer on this page?",
+      "This is a watch page for the finished two-shot edit. It does not process uploaded footage. Use Hoopcut on iPhone for your own basketball recordings; the browser demos provide prepared examples and playback controls."
+    ],
+    [
+      "Does the tracer measure shooting accuracy or ball speed?",
+      "No such measurements are provided here. The visible line illustrates the ball’s flight in the recorded picture. It is not a calibrated speed reading, a release-angle measurement or a shooting-percentage report."
+    ],
+    [
+      "Where can I see the original basketball footage?",
+      "The original video by @cantfakethetape is linked in the play notes above. It provides source context for this edit. The source creator’s existing on-screen branding is retained in the footage."
+    ],
+    [
+      "Should my basketball highlight be this short?",
+      "Match the length to what you want to show. This seven-second pair is a quick example of two jump shots. A longer reel needs its own selection and sequence; keep enough of every play for the viewer to understand the action."
+    ]
+  ]
+}
