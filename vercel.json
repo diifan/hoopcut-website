@@ -34,5 +34,14 @@
         }
       ]
     }
-  ]
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "functions": {
+    "api/comments.js": {
+      "maxDuration": 15,
+      "includeFiles": "lib/{comment-videos.json,supabase-ca.crt}"
+    }
+  },
+  "installCommand": "npm ci"
 }
