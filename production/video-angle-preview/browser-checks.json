@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "pages": 10,
+  "uniqueTitles": 10,
+  "uniqueDescriptions": 10,
+  "uniqueBodies": 10,
+  "actualVideoUrls": 1,
+  "independentCommentThreads": 10,
+  "sampleComments": 30,
+  "realCrossVisitorThreadIsolation": true,
+  "editableChecklists": 10,
+  "downloadableWorksheets": 10,
+  "desktopAndMobile": true,
+  "jsErrors": [],
+  "productionWrites": 0
+}

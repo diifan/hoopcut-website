@@ -1,0 +1,425 @@
+{
+  "pages": [
+    {
+      "slug": "basketball-shot-tracer-example",
+      "title": "Basketball Shot Tracer Example: Follow the Arc | Hoopcut",
+      "description": "Watch a basketball Shot Tracer example with two pickup jump shots. Inspect the release, visible ball path and fading trail with a practical viewing checklist.",
+      "path": "/videos/basketball-shot-tracer-example",
+      "keyword": "basketball shot tracer",
+      "thread": "angle:basketball-shot-tracer-example",
+      "same_video_id": "MLcda_7VYkQ",
+      "download": "/downloads/basketball-shot-tracer-example.csv",
+      "metrics": {
+        "words": 397,
+        "exact_topic_mentions": 4,
+        "topic_occurrences_per_100_words": 1.01,
+        "topic_word_coverage_percent": 3.02,
+        "basketball_word_percent": 2.52
+      },
+      "content_sha256": "0e894a07e7d3113a6e5f0416c47bd7d77c5f5012310b5dfbc1e81ee28b9c780a"
+    },
+    {
+      "slug": "basketball-jump-shot-video-review",
+      "title": "Basketball Jump Shot Video: What to Observe | Hoopcut",
+      "description": "Review two basketball jump shots with a simple observation log. Separate what the footage shows from assumptions about distance, mechanics or shooting results.",
+      "path": "/videos/basketball-jump-shot-video-review",
+      "keyword": "basketball jump shot",
+      "thread": "angle:basketball-jump-shot-video-review",
+      "same_video_id": "MLcda_7VYkQ",
+      "download": "/downloads/basketball-jump-shot-video-review.csv",
+      "metrics": {
+        "words": 383,
+        "exact_topic_mentions": 5,
+        "topic_occurrences_per_100_words": 1.31,
+        "topic_word_coverage_percent": 3.92,
+        "basketball_word_percent": 1.83
+      },
+      "content_sha256": "06d8680d8f8b8d8308dcaabc7a88f7ad0addf13929a6c5ea981dda127df43b5d"
+    },
+    {
+      "slug": "pickup-basketball-highlight-edit",
+      "title": "Pickup Basketball Highlights: Build a Two-Play Edit | Hoopcut",
+      "description": "Use two pickup basketball highlights to plan a clear mini reel. Choose a sequence, preserve the useful setup and use a simple two-play storyboard before editing.",
+      "path": "/videos/pickup-basketball-highlight-edit",
+      "keyword": "pickup basketball highlights",
+      "thread": "angle:pickup-basketball-highlight-edit",
+      "same_video_id": "MLcda_7VYkQ",
+      "download": "/downloads/pickup-basketball-highlight-edit.csv",
+      "metrics": {
+        "words": 388,
+        "exact_topic_mentions": 5,
+        "topic_occurrences_per_100_words": 1.29,
+        "topic_word_coverage_percent": 3.87,
+        "basketball_word_percent": 2.06
+      },
+      "content_sha256": "de41a2923739c745e2bfb180b835a1444228386621036bbe535801787ded27f3"
+    },
+    {
+      "slug": "basketball-clip-start-end-points",
+      "title": "Basketball Clip Trimming: Choose the Start and End | Hoopcut",
+      "description": "Choose useful start and end points for a basketball clip. Review the shooter setup, release and result with a practical trimming worksheet and pickup example.",
+      "path": "/videos/basketball-clip-start-end-points",
+      "keyword": "basketball clip",
+      "thread": "angle:basketball-clip-start-end-points",
+      "same_video_id": "MLcda_7VYkQ",
+      "download": "/downloads/basketball-clip-start-end-points.csv",
+      "metrics": {
+        "words": 375,
+        "exact_topic_mentions": 6,
+        "topic_occurrences_per_100_words": 1.6,
+        "topic_word_coverage_percent": 3.2,
+        "basketball_word_percent": 1.6
+      },
+      "content_sha256": "de75d7228891eb7d345be8f0ce78e3802496bee14ed4aaf77c40cdef1818f6b9"
+    },
+    {
+      "slug": "vertical-basketball-video-framing",
+      "title": "Vertical Basketball Video: Keep the Shot in Frame | Hoopcut",
+      "description": "Review vertical basketball video framing with a pickup jump-shot example. Check the shooter, ball flight and rim before choosing a crop for a phone screen.",
+      "path": "/videos/vertical-basketball-video-framing",
+      "keyword": "vertical basketball video",
+      "thread": "angle:vertical-basketball-video-framing",
+      "same_video_id": "MLcda_7VYkQ",
+      "download": "/downloads/vertical-basketball-video-framing.csv",
+      "metrics": {
+        "words": 375,
+        "exact_topic_mentions": 5,
+        "topic_occurrences_per_100_words": 1.33,
+        "topic_word_coverage_percent": 4.0,
+        "basketball_word_percent": 1.87
+      },
+      "content_sha256": "e4ec3a47fc523dd25baaec4d05005c809a91a84077f1e3fea71bd5e61ee2d280"
+    },
+    {
+      "slug": "basketball-highlight-caption-ideas",
+      "title": "Basketball Highlight Captions for a Two-Shot Reel | Hoopcut",
+      "description": "Write basketball highlight captions that fit the footage. Try short lines for a two-shot pickup reel, then check context, tone and source credit before sharing.",
+      "path": "/videos/basketball-highlight-caption-ideas",
+      "keyword": "basketball highlight captions",
+      "thread": "angle:basketball-highlight-caption-ideas",
+      "same_video_id": "MLcda_7VYkQ",
+      "download": "/downloads/basketball-highlight-caption-ideas.csv",
+      "metrics": {
+        "words": 401,
+        "exact_topic_mentions": 2,
+        "topic_occurrences_per_100_words": 0.5,
+        "topic_word_coverage_percent": 1.5,
+        "basketball_word_percent": 2.49
+      },
+      "content_sha256": "8ae41c33e7f6d30334016547f1f1c18553e7e8c3fa7690729c32a4db0bad3e46"
+    },
+    {
+      "slug": "basketball-video-source-credit",
+      "title": "Basketball Video Source Credit: Label the Original | Hoopcut",
+      "description": "Keep basketball video source credit clear. Use this pickup edit to separate the original creator, source link and edited upload in a simple attribution worksheet.",
+      "path": "/videos/basketball-video-source-credit",
+      "keyword": "basketball video source",
+      "thread": "angle:basketball-video-source-credit",
+      "same_video_id": "MLcda_7VYkQ",
+      "download": "/downloads/basketball-video-source-credit.csv",
+      "metrics": {
+        "words": 377,
+        "exact_topic_mentions": 5,
+        "topic_occurrences_per_100_words": 1.33,
+        "topic_word_coverage_percent": 3.98,
+        "basketball_word_percent": 1.86
+      },
+      "content_sha256": "e58fdb19fa7eea80108787d40e2ba67d7509de3139514d811eea719231178697"
+    },
+    {
+      "slug": "basketball-highlight-shot-list",
+      "title": "Basketball Highlight Shot List: Organize the Plays | Hoopcut",
+      "description": "Build a basketball highlight shot list with a two-play pickup example. Track the source, visible action and selection reason without inventing timestamps or stats.",
+      "path": "/videos/basketball-highlight-shot-list",
+      "keyword": "basketball highlight shot list",
+      "thread": "angle:basketball-highlight-shot-list",
+      "same_video_id": "MLcda_7VYkQ",
+      "download": "/downloads/basketball-highlight-shot-list.csv",
+      "metrics": {
+        "words": 384,
+        "exact_topic_mentions": 4,
+        "topic_occurrences_per_100_words": 1.04,
+        "topic_word_coverage_percent": 4.17,
+        "basketball_word_percent": 1.82
+      },
+      "content_sha256": "b3f56a5e3697f3614d436e977826752b7ed0a284c45e13a04f609bc18ecd7e8d"
+    },
+    {
+      "slug": "basketball-tracer-visibility-check",
+      "title": "Basketball Tracer Visibility: Review the Ball Trail | Hoopcut",
+      "description": "Check basketball tracer visibility against the real ball and rim. Use a pickup example to review line contrast, overlap and fade with a focused inspection sheet.",
+      "path": "/videos/basketball-tracer-visibility-check",
+      "keyword": "basketball tracer visibility",
+      "thread": "angle:basketball-tracer-visibility-check",
+      "same_video_id": "MLcda_7VYkQ",
+      "download": "/downloads/basketball-tracer-visibility-check.csv",
+      "metrics": {
+        "words": 381,
+        "exact_topic_mentions": 3,
+        "topic_occurrences_per_100_words": 0.79,
+        "topic_word_coverage_percent": 2.36,
+        "basketball_word_percent": 2.36
+      },
+      "content_sha256": "bcd7e2c3b2c17f8241bf86aaf74960a2489e060ddf7375b2baae873b4401e245"
+    },
+    {
+      "slug": "basketball-highlight-export-review",
+      "title": "Basketball Highlight Video: Final Playback Checklist | Hoopcut",
+      "description": "Review a basketball highlight video before sharing it. Check the opening, ball visibility, framing, source notes and final playback with a practical release checklist.",
+      "path": "/videos/basketball-highlight-export-review",
+      "keyword": "basketball highlight video",
+      "thread": "angle:basketball-highlight-export-review",
+      "same_video_id": "MLcda_7VYkQ",
+      "download": "/downloads/basketball-highlight-export-review.csv",
+      "metrics": {
+        "words": 367,
+        "exact_topic_mentions": 5,
+        "topic_occurrences_per_100_words": 1.36,
+        "topic_word_coverage_percent": 4.09,
+        "basketball_word_percent": 2.18
+      },
+      "content_sha256": "043ad8afb245e309df17e44658209e4f97e154073154072713345aa94e8e0b69"
+    }
+  ],
+  "page_count": 10,
+  "underlying_video_count": 1,
+  "sample_comments": 30,
+  "comment_threads": 10,
+  "same_video_url": "MLcda_7VYkQ",
+  "local_only": true,
+  "deployed": false,
+  "metrics_note": "Visible authored text only; density is diagnostic, not a ranking target. Excludes metadata, navigation and fictional comments.",
+  "overlap_note": "Internal 5-word overlap only, not an AI detector or external plagiarism score.",
+  "max_pair_overlap": {
+    "a": "basketball-jump-shot-video-review",
+    "b": "vertical-basketball-video-framing",
+    "five_word_jaccard": 0.0013
+  },
+  "pairs": [
+    {
+      "a": "basketball-shot-tracer-example",
+      "b": "basketball-jump-shot-video-review",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-shot-tracer-example",
+      "b": "pickup-basketball-highlight-edit",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-shot-tracer-example",
+      "b": "basketball-clip-start-end-points",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-shot-tracer-example",
+      "b": "vertical-basketball-video-framing",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-shot-tracer-example",
+      "b": "basketball-highlight-caption-ideas",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-shot-tracer-example",
+      "b": "basketball-video-source-credit",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-shot-tracer-example",
+      "b": "basketball-highlight-shot-list",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-shot-tracer-example",
+      "b": "basketball-tracer-visibility-check",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-shot-tracer-example",
+      "b": "basketball-highlight-export-review",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-jump-shot-video-review",
+      "b": "pickup-basketball-highlight-edit",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-jump-shot-video-review",
+      "b": "basketball-clip-start-end-points",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-jump-shot-video-review",
+      "b": "vertical-basketball-video-framing",
+      "five_word_jaccard": 0.0013
+    },
+    {
+      "a": "basketball-jump-shot-video-review",
+      "b": "basketball-highlight-caption-ideas",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-jump-shot-video-review",
+      "b": "basketball-video-source-credit",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-jump-shot-video-review",
+      "b": "basketball-highlight-shot-list",
+      "five_word_jaccard": 0.0013
+    },
+    {
+      "a": "basketball-jump-shot-video-review",
+      "b": "basketball-tracer-visibility-check",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-jump-shot-video-review",
+      "b": "basketball-highlight-export-review",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "pickup-basketball-highlight-edit",
+      "b": "basketball-clip-start-end-points",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "pickup-basketball-highlight-edit",
+      "b": "vertical-basketball-video-framing",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "pickup-basketball-highlight-edit",
+      "b": "basketball-highlight-caption-ideas",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "pickup-basketball-highlight-edit",
+      "b": "basketball-video-source-credit",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "pickup-basketball-highlight-edit",
+      "b": "basketball-highlight-shot-list",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "pickup-basketball-highlight-edit",
+      "b": "basketball-tracer-visibility-check",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "pickup-basketball-highlight-edit",
+      "b": "basketball-highlight-export-review",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-clip-start-end-points",
+      "b": "vertical-basketball-video-framing",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-clip-start-end-points",
+      "b": "basketball-highlight-caption-ideas",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-clip-start-end-points",
+      "b": "basketball-video-source-credit",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-clip-start-end-points",
+      "b": "basketball-highlight-shot-list",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-clip-start-end-points",
+      "b": "basketball-tracer-visibility-check",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-clip-start-end-points",
+      "b": "basketball-highlight-export-review",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "vertical-basketball-video-framing",
+      "b": "basketball-highlight-caption-ideas",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "vertical-basketball-video-framing",
+      "b": "basketball-video-source-credit",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "vertical-basketball-video-framing",
+      "b": "basketball-highlight-shot-list",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "vertical-basketball-video-framing",
+      "b": "basketball-tracer-visibility-check",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "vertical-basketball-video-framing",
+      "b": "basketball-highlight-export-review",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-highlight-caption-ideas",
+      "b": "basketball-video-source-credit",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-highlight-caption-ideas",
+      "b": "basketball-highlight-shot-list",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-highlight-caption-ideas",
+      "b": "basketball-tracer-visibility-check",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-highlight-caption-ideas",
+      "b": "basketball-highlight-export-review",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-video-source-credit",
+      "b": "basketball-highlight-shot-list",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-video-source-credit",
+      "b": "basketball-tracer-visibility-check",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-video-source-credit",
+      "b": "basketball-highlight-export-review",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-highlight-shot-list",
+      "b": "basketball-tracer-visibility-check",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-highlight-shot-list",
+      "b": "basketball-highlight-export-review",
+      "five_word_jaccard": 0.0
+    },
+    {
+      "a": "basketball-tracer-visibility-check",
+      "b": "basketball-highlight-export-review",
+      "five_word_jaccard": 0.0
+    }
+  ]
+}

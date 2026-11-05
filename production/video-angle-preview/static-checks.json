@@ -1,0 +1,77 @@
+{
+  "status": "pass",
+  "pages": [
+    {
+      "path": "/videos/basketball-shot-tracer-example",
+      "title_chars": 56,
+      "description_chars": 158,
+      "words": 397,
+      "same_video": "MLcda_7VYkQ"
+    },
+    {
+      "path": "/videos/basketball-jump-shot-video-review",
+      "title_chars": 53,
+      "description_chars": 159,
+      "words": 383,
+      "same_video": "MLcda_7VYkQ"
+    },
+    {
+      "path": "/videos/pickup-basketball-highlight-edit",
+      "title_chars": 61,
+      "description_chars": 161,
+      "words": 388,
+      "same_video": "MLcda_7VYkQ"
+    },
+    {
+      "path": "/videos/basketball-clip-start-end-points",
+      "title_chars": 60,
+      "description_chars": 158,
+      "words": 375,
+      "same_video": "MLcda_7VYkQ"
+    },
+    {
+      "path": "/videos/vertical-basketball-video-framing",
+      "title_chars": 59,
+      "description_chars": 155,
+      "words": 375,
+      "same_video": "MLcda_7VYkQ"
+    },
+    {
+      "path": "/videos/basketball-highlight-caption-ideas",
+      "title_chars": 59,
+      "description_chars": 160,
+      "words": 401,
+      "same_video": "MLcda_7VYkQ"
+    },
+    {
+      "path": "/videos/basketball-video-source-credit",
+      "title_chars": 60,
+      "description_chars": 162,
+      "words": 377,
+      "same_video": "MLcda_7VYkQ"
+    },
+    {
+      "path": "/videos/basketball-highlight-shot-list",
+      "title_chars": 60,
+      "description_chars": 163,
+      "words": 384,
+      "same_video": "MLcda_7VYkQ"
+    },
+    {
+      "path": "/videos/basketball-tracer-visibility-check",
+      "title_chars": 61,
+      "description_chars": 161,
+      "words": 381,
+      "same_video": "MLcda_7VYkQ"
+    },
+    {
+      "path": "/videos/basketball-highlight-export-review",
+      "title_chars": 62,
+      "description_chars": 167,
+      "words": 367,
+      "same_video": "MLcda_7VYkQ"
+    }
+  ],
+  "candidate_sitemap_urls": 10,
+  "production_sitemap_unchanged_by_batch": true
+}
