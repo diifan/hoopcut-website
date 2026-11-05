@@ -30,6 +30,16 @@ def build(root):
  H=html.escape
  (root/'videos').mkdir(exist_ok=True)
  records.sort(key=lambda r:r['published_at'],reverse=True)
+ # Ship only the public allowlist needed by the comment API, not editorial receipts.
+ (root/'api').mkdir(exist_ok=True)
+ (root/'api/video-ids.json').write_text(json.dumps([r['video_id'] for r in records])+'\n')
+ def comment_asset(name):
+  raw=(root/'assets'/name).read_bytes(); suffix=Path(name).suffix
+  url='/assets/static/'+Path(name).stem+'.'+hashlib.sha256(raw).hexdigest()[:12]+suffix
+  (root/'assets/static').mkdir(exist_ok=True)
+  (root/url.lstrip('/')).write_bytes(raw)
+  return url
+ comment_css=comment_asset('video-comments.css');comment_js=comment_asset('video-comments.js')
  def card(r):
   vid=r['video_id'];return '<article class="card"><a href="/videos/'+r['slug']+'"><img src="/assets/videos/'+vid+'.jpg" alt="'+H(r['title'],quote=True)+'" loading="lazy" width="480" height="360" style="width:100%;height:auto"></a><h2><a href="/videos/'+r['slug']+'">'+H(r['title'])+'</a></h2><p>'+H(r['description'])+'</p></article>'
  for r in records:
@@ -40,7 +50,7 @@ def build(root):
   related=sorted([x for x in records if x['video_id']!=vid],key=lambda x:len(set(x.get('tags',[]))&set(r.get('tags',[]))),reverse=True)[:3]
   from video_layout import detail
   css=(root/'assets/video-page.css').read_text()
-  page=head(r['title'],r['description'],url,graph,cover,r['title']).replace('</head>','<style>'+css+'</style></head>').replace('<body>','<body class="video-page">')+navigation()+detail(r,related,store_url)+footer()+'</body></html>'
+  page=head(r['title'],r['description'],url,graph,cover,r['title']).replace('</head>','<style>'+css+'</style><link rel="stylesheet" href="'+comment_css+'"><script src="'+comment_js+'" defer></script></head>').replace('<body>','<body class="video-page">')+navigation()+detail(r,related,store_url)+footer()+'</body></html>'
   (root/'videos'/f'{r["slug"]}.html').write_text(page)
   # Preserve the published ID URL while consolidating search signals on the title URL.
   (root/'videos'/f'{vid}.html').write_text(page)
