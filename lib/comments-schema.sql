@@ -20,3 +20,9 @@ CREATE TABLE IF NOT EXISTS hc_comment_actions (
 );
 
 ALTER TABLE hc_comments ALTER COLUMN created_at TYPE timestamptz(3);
+
+ALTER TABLE hc_comments ADD COLUMN IF NOT EXISTS display_name text NOT NULL DEFAULT '' CHECK(char_length(display_name)<=40);
+CREATE TABLE IF NOT EXISTS hc_comment_votes (
+ comment_id uuid REFERENCES hc_comments(id), voter_hash text NOT NULL,
+ value smallint NOT NULL CHECK(value IN (-1,1)), PRIMARY KEY(comment_id,voter_hash)
+);

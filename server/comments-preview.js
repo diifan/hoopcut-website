@@ -14,7 +14,7 @@ export const server=http.createServer(async(req,res)=>{
   if(relative.startsWith('..')||path.isAbsolute(relative)||relative.split('/').some(x=>x.startsWith('.'))||!mime[path.extname(file)]||['server','lib','api','tests','node_modules','scripts','docs'].includes(relative.split('/')[0])){res.writeHead(404);res.end('Not found');return;}
   let data=await readFile(file);
   if(file.endsWith('.html')){
-   let html=data.toString();if(prefix)html=html.replaceAll('href="/','href="'+prefix+'/').replaceAll('src="/','src="'+prefix+'/').replace('data-comments-video=',`data-comments-api="${prefix}/api/comments" data-comments-video=`);
+   let html=data.toString();if(prefix)html=html.replaceAll('href="/','href="'+prefix+'/').replaceAll('src="/','src="'+prefix+'/').replace('data-video-comments',`data-comments-api="${prefix}/api/comments" data-video-comments`).replace('data-comments-video=',`data-comments-api="${prefix}/api/comments" data-comments-video=`);
    data=Buffer.from(html.replace('</head>','<meta name="robots" content="noindex,nofollow"></head>'));
   }
   res.writeHead(200,{'Content-Type':mime[path.extname(file)],'Cache-Control':'no-store','X-Robots-Tag':'noindex, nofollow'});res.end(data);

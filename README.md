@@ -145,3 +145,7 @@ Checks: `python3 scripts/check_site_seo.py --http`,
 `node scripts/qa_audit_fixes.cjs`. Existing `qa_resources.cjs` / `qa_tools.cjs`
 cover all 15 browser tools. The preview runs on `http://127.0.0.1:8767/` and
 always returns `X-Robots-Tag: noindex, nofollow`.
+
+## Video-page convention
+
+All `/videos/{slug}` pages follow [the owner-approved watch-page pattern](production/video-pages.md). Supply each video’s actual aspect ratio and its own editorial context; the complete builder checks these before generating pages. Use the shared player, anonymous comments, static play notes, contextual links and technical SEO structure. Show local changes before publishing.

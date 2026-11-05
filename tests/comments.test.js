@@ -52,5 +52,16 @@ await test('real PostgreSQL anonymous comments workflow',async t=>{
   const second=await comments(request('GET',null,a,'&cursor='+first.nextCursor));assert.ok(second.comments.length);assert.equal(new Set([...first.comments,...second.comments].map(x=>x.id)).size,first.comments.length+second.comments.length);
   await assert.rejects(comments(request('GET',null,a,'&cursor=invalid')),e=>e.status===400);
  });
+ await t.test('optional names and reactions persist; top ordering and cursor paging remain valid',async()=>{
+  await database().query('TRUNCATE hc_comment_rates');
+  const item=(await comments(request('POST',{...post('Named comment'),name:'Court guest'},a))).comment;assert.equal(item.author,'Court guest');
+  let voted=await comments(request('POST',{action:'vote',id:item.id,value:1},b));assert.equal(voted.likes,1);
+  await closeDatabase();let top=await comments(request('GET',null,b,'&sort=top'));assert.equal(top.comments[0].id,item.id);assert.equal(top.comments[0].myVote,1);
+  const page2=await comments(request('GET',null,b,'&sort=top&cursor='+top.nextCursor));assert.equal(new Set([...top.comments,...page2.comments].map(x=>x.id)).size,top.comments.length+page2.comments.length);
+  voted=await comments(request('POST',{action:'vote',id:item.id,value:-1},b));assert.equal(voted.likes,0);assert.equal(voted.my_vote,-1);
+  voted=await comments(request('POST',{action:'vote',id:item.id,value:0},b));assert.equal(voted.my_vote,0);
+  await assert.rejects(comments(request('POST',{action:'vote',id:item.id,value:3},b)),e=>e.status===400);
+  await assert.rejects(comments(request('POST',{...post('Bad name'),name:'x'.repeat(41)},a)),e=>e.status===400);
+ });
  await database().query('TRUNCATE hc_comment_reports,hc_comment_actions,hc_comments,hc_comment_rates CASCADE');await closeDatabase();
 });

@@ -15,6 +15,7 @@ def validate(r):
  if not r['source_url'].startswith('https://www.youtube.com/watch?v='):raise ValueError('Invalid source URL')
  datetime.datetime.fromisoformat(r['published_at'].replace('Z','+00:00'))
  if not 1<=float(r.get('duration_seconds',0))<=3600:raise ValueError('Invalid measured duration')
+ if r.get('display_aspect_ratio') not in ('9:16','16:9'):raise ValueError('Record a verified, supported display_aspect_ratio before building video '+r['slug'])
  return r
 
 def build(root):
@@ -22,8 +23,10 @@ def build(root):
  records=[validate(r) for r in json.loads(source.read_text())] if source.exists() else []
  if len({r['video_id'] for r in records})!=len(records):raise ValueError('Duplicate video IDs')
  if len({r['slug'] for r in records})!=len(records):raise ValueError('Duplicate video slugs')
- (root/'lib').mkdir(exist_ok=True)
- (root/'lib/comment-videos.json').write_text(json.dumps([r['video_id'] for r in records]))
+ # Check all individual context before writing output; missing copy must not
+ # silently fall back to a thin watch page or another video's text.
+ from video_editorial import load
+ editorials={r['video_id']:load(root,r) for r in records}
  site=json.loads((root/'content/site-config.json').read_text());store_url=site['app']['appStoreUrl']
  # Use the site's established design and metadata primitives.
  import sys
@@ -32,17 +35,36 @@ def build(root):
  H=html.escape
  (root/'videos').mkdir(exist_ok=True)
  records.sort(key=lambda r:r['published_at'],reverse=True)
+ # Ship only the public allowlist needed by the comment API, not editorial receipts.
+ (root/'lib').mkdir(exist_ok=True)
+ (root/'lib/comment-videos.json').write_text(json.dumps([r['video_id'] for r in records])+'\n')
+ def comment_asset(name):
+  raw=(root/'assets'/name).read_bytes(); suffix=Path(name).suffix
+  url='/assets/static/'+Path(name).stem+'.'+hashlib.sha256(raw).hexdigest()[:12]+suffix
+  (root/'assets/static').mkdir(exist_ok=True)
+  (root/url.lstrip('/')).write_bytes(raw)
+  return url
+ comment_css=comment_asset('video-comments.css');comment_js=comment_asset('video-comments.js')
+ editorial_dates={}
  def card(r):
   vid=r['video_id'];return '<article class="card"><a href="/videos/'+r['slug']+'"><img src="/assets/videos/'+vid+'.jpg" alt="'+H(r['title'],quote=True)+'" loading="lazy" width="480" height="360" style="width:100%;height:auto"></a><h2><a href="/videos/'+r['slug']+'">'+H(r['title'])+'</a></h2><p>'+H(r['description'])+'</p></article>'
  for r in records:
   vid=r['video_id'];url=ORIGIN+'/videos/'+r['slug']
+  editorial=editorials[r['video_id']]
+  description=editorial['meta_description'] if editorial else r['description']
+  editorial_assets=''
+  if editorial:
+   editorial_dates[url]=editorial['date_modified']
+   editorial_assets='<link rel="stylesheet" href="'+comment_asset('video-context.css')+'">'
   cover='/assets/videos/'+vid+'.jpg'
   if not (root/cover.lstrip('/')).is_file():raise ValueError('Verified thumbnail missing: '+vid)
   graph=[{'@type':'WebPage','@id':url+'#page','url':url,'name':r['title'],'mainEntity':{'@id':url+'#video'}},{'@type':'VideoObject','@id':url+'#video','name':r['title'],'description':r['description'],'thumbnailUrl':[ORIGIN+cover],'uploadDate':r['published_at'],'duration':'PT'+str(round(r['duration_seconds']))+'S','embedUrl':'https://www.youtube.com/embed/'+vid,'publisher':{'@type':'Organization','name':'HoopCut','url':ORIGIN}},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':ORIGIN+'/'},{'@type':'ListItem','position':2,'name':'Videos','item':ORIGIN+'/videos'},{'@type':'ListItem','position':3,'name':r['title'],'item':url}]}]
+  graph[0].update(description=description,inLanguage='en')
+  if editorial:graph[0]['dateModified']=editorial['date_modified']
   related=sorted([x for x in records if x['video_id']!=vid],key=lambda x:len(set(x.get('tags',[]))&set(r.get('tags',[]))),reverse=True)[:3]
   from video_layout import detail
   css=(root/'assets/video-page.css').read_text()
-  page=head(r['title'],r['description'],url,graph,cover,r['title']).replace('</head>','<style>'+css+'</style></head>').replace('<body>','<body class="video-page">')+navigation()+detail(r,related,store_url)+footer()+'</body></html>'
+  page=head(r['title'],description,url,graph,cover,r['title']).replace('</head>','<style>'+css+'</style><link rel="stylesheet" href="'+comment_css+'">'+editorial_assets+'<script src="'+comment_js+'" defer></script></head>').replace('<body>','<body class="video-page">')+navigation()+detail(r,related,store_url,editorial)+footer()+'</body></html>'
   (root/'videos'/f'{r["slug"]}.html').write_text(page)
   # Preserve the published ID URL while consolidating search signals on the title URL.
   (root/'videos'/f'{vid}.html').write_text(page)
@@ -61,6 +83,12 @@ def build(root):
  for node in list(smap):
   loc=node.findtext(ns+'loc')
   if loc in {ORIGIN+'/videos/'+r['video_id'] for r in records}:smap.remove(node)
+ for node in smap:
+  modified=editorial_dates.get(node.findtext(ns+'loc'))
+  if modified:
+   stamp=node.find(ns+'lastmod')
+   if stamp is None:stamp=ET.SubElement(node,ns+'lastmod')
+   stamp.text=max(stamp.text or '',modified)
  ET.register_namespace('',ns[1:-1]);tree.write(root/'sitemap.xml',encoding='utf-8',xml_declaration=True)
  return {'video_pages':len(records),'index':bool(records)}
 if __name__=='__main__':
