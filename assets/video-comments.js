@@ -208,6 +208,7 @@
       try {
         const data = await api({parent:comment.id,sort:'newest',offset:append ? replyNext : 0});
         if (ticket !== replyLoad) return;
+        updateCount(data.total);
         if (!append) replies.replaceChildren();
         for (const item of data.comments) replies.append(rowFor(item,comment.id));
         replyNext = data.next_offset; replyMore.hidden = replyNext === null;
