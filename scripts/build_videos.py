@@ -22,6 +22,8 @@ def build(root):
  records=[validate(r) for r in json.loads(source.read_text())] if source.exists() else []
  if len({r['video_id'] for r in records})!=len(records):raise ValueError('Duplicate video IDs')
  if len({r['slug'] for r in records})!=len(records):raise ValueError('Duplicate video slugs')
+ (root/'lib').mkdir(exist_ok=True)
+ (root/'lib/comment-videos.json').write_text(json.dumps([r['video_id'] for r in records]))
  site=json.loads((root/'content/site-config.json').read_text());store_url=site['app']['appStoreUrl']
  # Use the site's established design and metadata primitives.
  import sys

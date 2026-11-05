@@ -1,0 +1,8 @@
+(() => {
+ const prefix=location.pathname.replace(/\/comment-admin(?:\.html)?$/,'');const api=prefix+'/api/comments?videoId=MLcda_7VYkQ';
+ const status=document.querySelector('#status'),list=document.querySelector('#reports'),field=document.querySelector('#token');let token='';
+ const visitor='00000000-0000-4000-8000-000000000001';
+ async function request(method,body){const r=await fetch(api+(method==='GET'?'&action=reports':''),{method,headers:{Authorization:'Bearer '+token,'Content-Type':'application/json','X-Comment-Client':visitor,'X-SEO-Request':'1'},body:body?JSON.stringify(body):undefined});const data=await r.json();if(!r.ok)throw Error(data.error);return data;}
+ async function load(){status.textContent='Loading…';try{const data=await request('GET');list.replaceChildren();for(const report of data.reports){const item=document.createElement('article'),meta=document.createElement('p'),text=document.createElement('pre');meta.textContent=`${report.reports} reports · ${report.reasons.join(', ')} · ${report.deleted_at?'Deleted':'Visible'}`;text.textContent=report.body||'[Deleted]';item.append(meta,text);if(!report.deleted_at){const del=document.createElement('button');del.textContent='Delete comment';del.onclick=async()=>{if(!confirm('Remove this reported comment?'))return;del.disabled=true;try{await request('DELETE',{id:report.id});await load();}catch(e){status.textContent=e.message;del.disabled=false;}};item.append(del);}list.append(item);}status.textContent=data.reports.length?'Reports loaded.':'No reports.';}catch(e){status.textContent=e.message;}}
+ document.querySelector('#access').onsubmit=e=>{e.preventDefault();token=field.value;field.value='';load();};
+})();

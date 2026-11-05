@@ -7,3 +7,8 @@ __pycache__/
 *.log
 
 reports/
+
+node_modules/
+.env*
+*.sock
+dist/

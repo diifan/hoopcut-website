@@ -1,0 +1,20 @@
+{
+  "name": "hoopcut-website",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test:comments": "node --test tests/comments.test.js",
+    "dev:comments": "node server/comments-preview.js",
+    "migrate:comments": "node server/migrate-comments.js",
+    "build": "node server/build-vercel.js"
+  },
+  "dependencies": {
+    "pg": "8.16.3"
+  },
+  "devDependencies": {
+    "sharp": "0.35.5"
+  }
+}
