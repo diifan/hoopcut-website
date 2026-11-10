@@ -1,0 +1,71 @@
+{
+  "configured": [
+    {
+      "key": "HOOPCUT_ANALYTICS_ORIGINS",
+      "target": [
+        "production"
+      ],
+      "gitBranch": null,
+      "type": "encrypted"
+    },
+    {
+      "key": "HOOPCUT_ANALYTICS_RATE_SECRET",
+      "target": [
+        "production"
+      ],
+      "gitBranch": null,
+      "type": "encrypted"
+    },
+    {
+      "key": "HOOPCUT_ANALYTICS_SECRET_HEADER",
+      "target": [
+        "production"
+      ],
+      "gitBranch": null,
+      "type": "encrypted"
+    },
+    {
+      "key": "HOOPCUT_ANALYTICS_SECRET",
+      "target": [
+        "production"
+      ],
+      "gitBranch": null,
+      "type": "encrypted"
+    },
+    {
+      "key": "HOOPCUT_ANALYTICS_ORIGINS",
+      "target": [
+        "preview"
+      ],
+      "gitBranch": "feat/web-attribution-v1",
+      "type": "encrypted"
+    },
+    {
+      "key": "HOOPCUT_ANALYTICS_RATE_SECRET",
+      "target": [
+        "preview"
+      ],
+      "gitBranch": "feat/web-attribution-v1",
+      "type": "encrypted"
+    },
+    {
+      "key": "HOOPCUT_ANALYTICS_SECRET_HEADER",
+      "target": [
+        "preview"
+      ],
+      "gitBranch": "feat/web-attribution-v1",
+      "type": "encrypted"
+    },
+    {
+      "key": "HOOPCUT_ANALYTICS_SECRET",
+      "target": [
+        "preview"
+      ],
+      "gitBranch": "feat/web-attribution-v1",
+      "type": "encrypted"
+    }
+  ],
+  "production_deployed": false,
+  "preview_deployment": "dpl_5LpcbCwbggRBfDTyzR5fnKiLaSL5",
+  "tested_commit": "6737e4bc4b897d018ec7865b4b6157781886191d"
+}

@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "UTM whitelist, lowercase, staging, path-only",
+    "single initial page view",
+    "keyboard real activation with Store fallback",
+    "OneLink click_id equality, parameter allowlist, internal session source preserved",
+    "two activations distinct IDs",
+    "untrusted host/path/credentials/version/missing SDK flag fall back",
+    "SPA navigation vs same-URL rerender",
+    "real video playing only, resume deduplicated",
+    "503 retry same ID; direct defaults",
+    "30 minute expiry and first-touch retained",
+    "disabled storage uses memory without breaking page"
+  ],
+  "passed": 11,
+  "synthetic_only": true
+}

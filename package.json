@@ -9,12 +9,14 @@
     "test:comments": "node --test tests/comments.test.js",
     "dev:comments": "node server/comments-preview.js",
     "migrate:comments": "node server/migrate-comments.js",
-    "build": "node server/build-vercel.js"
+    "build": "node server/build-vercel.js",
+    "test:attribution": "node --test tests/attribution.test.js"
   },
   "dependencies": {
     "pg": "8.16.3"
   },
   "devDependencies": {
-    "sharp": "0.35.5"
+    "sharp": "0.35.5",
+    "undici": "^7.30.2"
   }
 }

@@ -1,0 +1,397 @@
+{
+  "oneLinkURL": "https://hoopcut.onelink.me/SDN0?pid=hoopcut_website&c=staging_onelink_20261110&af_channel=qa&af_sub1=e74cf4b1-cf9b-4105-9498-bd4bc020700f&af_sub2=hero_download&af_sub3=unspecified&af_sub5=staging&af_js_web=true&af_ss_ver=2_10_4",
+  "sdk_version": "2_10_4",
+  "fallback": "https://apps.apple.com/app/id6824860341",
+  "checks": [
+    "browser page_view/video_play/download_clicked persisted receipt",
+    "actual hero autoplay classified",
+    "same event retries duplicate",
+    "changed payload rejected",
+    "production environment rejected",
+    "raw_ip rejected"
+  ],
+  "scope": "staging browser via HTTP-over-Unix-socket transport bridge to real BFF and Supabase; TCP preview unavailable",
+  "receipts": [
+    {
+      "request": {
+        "schema_version": 1,
+        "events": [
+          {
+            "schema_version": 1,
+            "product": "hoopcut",
+            "environment": "staging",
+            "event_id": "341acd76-2a86-4b27-a197-bbeb579b82b1",
+            "event_name": "page_view",
+            "occurred_at": "2026-11-10T02:27:39.954Z",
+            "visitor_id": "d8c5caa3-2d87-45c7-8f1e-7dd638091f7a",
+            "visitor_scope": "session",
+            "web_session_id": "d5459ff9-da57-4dc5-8190-a7266a641f86",
+            "page_view_id": "46f0d954-6731-47b1-8d73-7b132c598b70",
+            "page_path": "/",
+            "referrer_host": null,
+            "first_touch_at": "2026-11-10T02:27:39.954Z",
+            "session_source": "qa",
+            "first_touch_source": "qa",
+            "session_medium": "unspecified",
+            "first_touch_medium": "unspecified",
+            "session_campaign": "staging_onelink_20261110",
+            "first_touch_campaign": "staging_onelink_20261110",
+            "session_content": null,
+            "first_touch_content": null,
+            "session_term": null,
+            "first_touch_term": null
+          }
+        ]
+      },
+      "status": 200,
+      "response": {
+        "accepted_event_ids": [
+          "341acd76-2a86-4b27-a197-bbeb579b82b1"
+        ],
+        "duplicate_event_ids": [],
+        "rejected": []
+      }
+    },
+    {
+      "request": {
+        "schema_version": 1,
+        "events": [
+          {
+            "schema_version": 1,
+            "product": "hoopcut",
+            "environment": "staging",
+            "event_id": "7c054844-da9a-4079-bc3d-e97adc14fa56",
+            "event_name": "download_clicked",
+            "occurred_at": "2026-11-10T02:27:40.018Z",
+            "visitor_id": "d8c5caa3-2d87-45c7-8f1e-7dd638091f7a",
+            "visitor_scope": "session",
+            "web_session_id": "d5459ff9-da57-4dc5-8190-a7266a641f86",
+            "page_view_id": "46f0d954-6731-47b1-8d73-7b132c598b70",
+            "page_path": "/",
+            "referrer_host": null,
+            "first_touch_at": "2026-11-10T02:27:39.954Z",
+            "click_id": "e74cf4b1-cf9b-4105-9498-bd4bc020700f",
+            "cta_id": "hero_download",
+            "destination_type": "onelink",
+            "session_source": "qa",
+            "first_touch_source": "qa",
+            "session_medium": "unspecified",
+            "first_touch_medium": "unspecified",
+            "session_campaign": "staging_onelink_20261110",
+            "first_touch_campaign": "staging_onelink_20261110",
+            "session_content": null,
+            "first_touch_content": null,
+            "session_term": null,
+            "first_touch_term": null
+          },
+          {
+            "schema_version": 1,
+            "product": "hoopcut",
+            "environment": "staging",
+            "event_id": "8e412987-8442-43ac-beaf-b60d54d24ae8",
+            "event_name": "video_play",
+            "occurred_at": "2026-11-10T02:27:40.023Z",
+            "visitor_id": "d8c5caa3-2d87-45c7-8f1e-7dd638091f7a",
+            "visitor_scope": "session",
+            "web_session_id": "d5459ff9-da57-4dc5-8190-a7266a641f86",
+            "page_view_id": "46f0d954-6731-47b1-8d73-7b132c598b70",
+            "page_path": "/",
+            "referrer_host": null,
+            "first_touch_at": "2026-11-10T02:27:39.954Z",
+            "video_id": "/assets/optimized/reel-all-640.016ff8971a4b.mp4",
+            "playback_trigger": "autoplay",
+            "session_source": "qa",
+            "first_touch_source": "qa",
+            "session_medium": "unspecified",
+            "first_touch_medium": "unspecified",
+            "session_campaign": "staging_onelink_20261110",
+            "first_touch_campaign": "staging_onelink_20261110",
+            "session_content": null,
+            "first_touch_content": null,
+            "session_term": null,
+            "first_touch_term": null
+          }
+        ]
+      },
+      "status": 200,
+      "response": {
+        "accepted_event_ids": [
+          "7c054844-da9a-4079-bc3d-e97adc14fa56",
+          "8e412987-8442-43ac-beaf-b60d54d24ae8"
+        ],
+        "duplicate_event_ids": [],
+        "rejected": []
+      }
+    },
+    {
+      "request": {
+        "schema_version": 1,
+        "events": [
+          {
+            "schema_version": 1,
+            "product": "hoopcut",
+            "environment": "staging",
+            "event_id": "341acd76-2a86-4b27-a197-bbeb579b82b1",
+            "event_name": "page_view",
+            "occurred_at": "2026-11-10T02:27:39.954Z",
+            "visitor_id": "d8c5caa3-2d87-45c7-8f1e-7dd638091f7a",
+            "visitor_scope": "session",
+            "web_session_id": "d5459ff9-da57-4dc5-8190-a7266a641f86",
+            "page_view_id": "46f0d954-6731-47b1-8d73-7b132c598b70",
+            "page_path": "/",
+            "referrer_host": null,
+            "first_touch_at": "2026-11-10T02:27:39.954Z",
+            "session_source": "qa",
+            "first_touch_source": "qa",
+            "session_medium": "unspecified",
+            "first_touch_medium": "unspecified",
+            "session_campaign": "staging_onelink_20261110",
+            "first_touch_campaign": "staging_onelink_20261110",
+            "session_content": null,
+            "first_touch_content": null,
+            "session_term": null,
+            "first_touch_term": null
+          },
+          {
+            "schema_version": 1,
+            "product": "hoopcut",
+            "environment": "staging",
+            "event_id": "7c054844-da9a-4079-bc3d-e97adc14fa56",
+            "event_name": "download_clicked",
+            "occurred_at": "2026-11-10T02:27:40.018Z",
+            "visitor_id": "d8c5caa3-2d87-45c7-8f1e-7dd638091f7a",
+            "visitor_scope": "session",
+            "web_session_id": "d5459ff9-da57-4dc5-8190-a7266a641f86",
+            "page_view_id": "46f0d954-6731-47b1-8d73-7b132c598b70",
+            "page_path": "/",
+            "referrer_host": null,
+            "first_touch_at": "2026-11-10T02:27:39.954Z",
+            "click_id": "e74cf4b1-cf9b-4105-9498-bd4bc020700f",
+            "cta_id": "hero_download",
+            "destination_type": "onelink",
+            "session_source": "qa",
+            "first_touch_source": "qa",
+            "session_medium": "unspecified",
+            "first_touch_medium": "unspecified",
+            "session_campaign": "staging_onelink_20261110",
+            "first_touch_campaign": "staging_onelink_20261110",
+            "session_content": null,
+            "first_touch_content": null,
+            "session_term": null,
+            "first_touch_term": null
+          },
+          {
+            "schema_version": 1,
+            "product": "hoopcut",
+            "environment": "staging",
+            "event_id": "8e412987-8442-43ac-beaf-b60d54d24ae8",
+            "event_name": "video_play",
+            "occurred_at": "2026-11-10T02:27:40.023Z",
+            "visitor_id": "d8c5caa3-2d87-45c7-8f1e-7dd638091f7a",
+            "visitor_scope": "session",
+            "web_session_id": "d5459ff9-da57-4dc5-8190-a7266a641f86",
+            "page_view_id": "46f0d954-6731-47b1-8d73-7b132c598b70",
+            "page_path": "/",
+            "referrer_host": null,
+            "first_touch_at": "2026-11-10T02:27:39.954Z",
+            "video_id": "/assets/optimized/reel-all-640.016ff8971a4b.mp4",
+            "playback_trigger": "autoplay",
+            "session_source": "qa",
+            "first_touch_source": "qa",
+            "session_medium": "unspecified",
+            "first_touch_medium": "unspecified",
+            "session_campaign": "staging_onelink_20261110",
+            "first_touch_campaign": "staging_onelink_20261110",
+            "session_content": null,
+            "first_touch_content": null,
+            "session_term": null,
+            "first_touch_term": null
+          }
+        ]
+      },
+      "status": 200,
+      "response": {
+        "accepted_event_ids": [],
+        "duplicate_event_ids": [
+          "341acd76-2a86-4b27-a197-bbeb579b82b1",
+          "7c054844-da9a-4079-bc3d-e97adc14fa56",
+          "8e412987-8442-43ac-beaf-b60d54d24ae8"
+        ],
+        "rejected": []
+      }
+    },
+    {
+      "request": {
+        "schema_version": 1,
+        "events": [
+          {
+            "schema_version": 1,
+            "product": "hoopcut",
+            "environment": "staging",
+            "event_id": "341acd76-2a86-4b27-a197-bbeb579b82b1",
+            "event_name": "page_view",
+            "occurred_at": "2026-11-10T02:27:39.954Z",
+            "visitor_id": "d8c5caa3-2d87-45c7-8f1e-7dd638091f7a",
+            "visitor_scope": "session",
+            "web_session_id": "d5459ff9-da57-4dc5-8190-a7266a641f86",
+            "page_view_id": "46f0d954-6731-47b1-8d73-7b132c598b70",
+            "page_path": "/",
+            "referrer_host": null,
+            "first_touch_at": "2026-11-10T02:27:39.954Z",
+            "session_source": "qa",
+            "first_touch_source": "qa",
+            "session_medium": "unspecified",
+            "first_touch_medium": "unspecified",
+            "session_campaign": "conflicting-payload",
+            "first_touch_campaign": "staging_onelink_20261110",
+            "session_content": null,
+            "first_touch_content": null,
+            "session_term": null,
+            "first_touch_term": null
+          }
+        ]
+      },
+      "status": 200,
+      "response": {
+        "accepted_event_ids": [],
+        "duplicate_event_ids": [],
+        "rejected": [
+          {
+            "event_id": "341acd76-2a86-4b27-a197-bbeb579b82b1",
+            "code": "invalid_event"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "schema_version": 1,
+        "events": [
+          {
+            "schema_version": 1,
+            "product": "hoopcut",
+            "environment": "production",
+            "event_id": "341acd76-2a86-4b27-a197-bbeb579b82b1",
+            "event_name": "page_view",
+            "occurred_at": "2026-11-10T02:27:39.954Z",
+            "visitor_id": "d8c5caa3-2d87-45c7-8f1e-7dd638091f7a",
+            "visitor_scope": "session",
+            "web_session_id": "d5459ff9-da57-4dc5-8190-a7266a641f86",
+            "page_view_id": "46f0d954-6731-47b1-8d73-7b132c598b70",
+            "page_path": "/",
+            "referrer_host": null,
+            "first_touch_at": "2026-11-10T02:27:39.954Z",
+            "session_source": "qa",
+            "first_touch_source": "qa",
+            "session_medium": "unspecified",
+            "first_touch_medium": "unspecified",
+            "session_campaign": "staging_onelink_20261110",
+            "first_touch_campaign": "staging_onelink_20261110",
+            "session_content": null,
+            "first_touch_content": null,
+            "session_term": null,
+            "first_touch_term": null
+          }
+        ]
+      },
+      "status": 200,
+      "response": {
+        "accepted_event_ids": [],
+        "duplicate_event_ids": [],
+        "rejected": [
+          {
+            "event_id": "341acd76-2a86-4b27-a197-bbeb579b82b1",
+            "code": "invalid_event"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "schema_version": 1,
+        "events": [
+          {
+            "schema_version": 1,
+            "product": "hoopcut",
+            "environment": "staging",
+            "event_id": "341acd76-2a86-4b27-a197-bbeb579b82b1",
+            "event_name": "page_view",
+            "occurred_at": "2026-11-10T02:27:39.954Z",
+            "visitor_id": "d8c5caa3-2d87-45c7-8f1e-7dd638091f7a",
+            "visitor_scope": "session",
+            "web_session_id": "d5459ff9-da57-4dc5-8190-a7266a641f86",
+            "page_view_id": "46f0d954-6731-47b1-8d73-7b132c598b70",
+            "page_path": "/",
+            "referrer_host": null,
+            "first_touch_at": "2026-11-10T02:27:39.954Z",
+            "session_source": "qa",
+            "first_touch_source": "qa",
+            "session_medium": "unspecified",
+            "first_touch_medium": "unspecified",
+            "session_campaign": "staging_onelink_20261110",
+            "first_touch_campaign": "staging_onelink_20261110",
+            "session_content": null,
+            "first_touch_content": null,
+            "session_term": null,
+            "first_touch_term": null,
+            "raw_ip": "synthetic"
+          }
+        ]
+      },
+      "status": 200,
+      "response": {
+        "accepted_event_ids": [],
+        "duplicate_event_ids": [],
+        "rejected": [
+          {
+            "event_id": "341acd76-2a86-4b27-a197-bbeb579b82b1",
+            "code": "invalid_event"
+          }
+        ]
+      }
+    },
+    {
+      "request": {
+        "schema_version": 1,
+        "events": [
+          {
+            "schema_version": 1,
+            "product": "hoopcut",
+            "environment": "staging",
+            "event_id": "800974b0-8720-45f9-9ddb-5a25dc0f24b5",
+            "event_name": "download_clicked",
+            "occurred_at": "2026-11-10T02:28:01.671Z",
+            "visitor_id": "d8c5caa3-2d87-45c7-8f1e-7dd638091f7a",
+            "visitor_scope": "session",
+            "web_session_id": "d5459ff9-da57-4dc5-8190-a7266a641f86",
+            "page_view_id": "46f0d954-6731-47b1-8d73-7b132c598b70",
+            "page_path": "/",
+            "referrer_host": null,
+            "first_touch_at": "2026-11-10T02:27:39.954Z",
+            "click_id": "789a32d7-dc7e-4b77-83bb-c71d79dc8984",
+            "cta_id": "hero_download",
+            "destination_type": "app_store_fallback",
+            "session_source": "qa",
+            "first_touch_source": "qa",
+            "session_medium": "unspecified",
+            "first_touch_medium": "unspecified",
+            "session_campaign": "staging_onelink_20261110",
+            "first_touch_campaign": "staging_onelink_20261110",
+            "session_content": null,
+            "first_touch_content": null,
+            "session_term": null,
+            "first_touch_term": null
+          }
+        ]
+      },
+      "status": 200,
+      "response": {
+        "accepted_event_ids": [
+          "800974b0-8720-45f9-9ddb-5a25dc0f24b5"
+        ],
+        "duplicate_event_ids": [],
+        "rejected": []
+      }
+    }
+  ]
+}
