@@ -1,0 +1,8 @@
+{
+  "url": "https://hoopcut-website-git-feat-web-attribution-v1-diifans-projects.vercel.app",
+  "status": 200,
+  "final_url": "https://vercel.com/login",
+  "attribution_script": false,
+  "onelink": false,
+  "result": "Vercel SSO protection; HTTP200 is login page, not website acceptance"
+}

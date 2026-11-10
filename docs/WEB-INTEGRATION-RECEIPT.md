@@ -89,3 +89,8 @@ HOOPCUT_SMART_SCRIPT_SRC=https://onelinksmartscript.appsflyer.com/onelink-smart-
 112现有CLI凭据与109现有CLI凭据访问该Vercel项目管理接口均HTTP403。109当前Chrome无Vercel登录页；GitHub diifan登录正常，自动部署链路不因此判为不可用。缺的是配置该项目服务器环境变量的有效管理访问：HOOPCUT_ANALYTICS_SECRET（production专用）、HOOPCUT_ANALYTICS_SECRET_HEADER=x-hoopcut-web-secret、HOOPCUT_ANALYTICS_RATE_SECRET、HOOPCUT_ANALYTICS_ORIGINS。预览须使用独立staging secret及准确preview origin。
 
 本机HTTP-over-Unix-socket验证不替代公网CSP/SDK/BFF验收。真实YouTube播放验证通过：实际媒体currentTime=7.261秒、无媒体错误，捕获唯一video_play事件；页面为本地构建拦截映射，YouTube走真实网络，分析接口在该测试中mock避免production事件。见youtube-playback.json。这不替代部署后的公网入口验收。正式发布继续原审核流程。AF安装及App installation_id关联仍为109范围。
+
+### Git与预览回执
+
+实施commit：ea1d9fa；审核Draft PR：https://github.com/diifan/hoopcut-website/pull/19 。未合并，生产未部署。
+Vercel于2026-11-10 02:33 UTC完成该commit的Preview构建，GitHub状态success。地址：https://hoopcut-website-git-feat-web-attribution-v1-diifans-projects.vercel.app 。匿名访问重定向到Vercel登录页，不能将登录页200计为官网验收。当前卡点还包含预览SSO访问；需要已有项目管理访问恢复后配置环境变量和预览访问，再进行公网验收。
