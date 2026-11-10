@@ -6,3 +6,5 @@ for(const entry of await readdir(root,{withFileTypes:true})){
  if((entry.isDirectory()&&directories.has(entry.name))||(entry.isFile()&&/\.(html|xml|txt|ico|svg|png|webmanifest)$/.test(entry.name)))await cp(new URL(entry.name,root),new URL(entry.name,out),{recursive:true});
 }
 console.log('Static output ready; /api/comments is bundled separately by Vercel.');
+const {buildAttribution}=await import('./build-attribution.js');
+await buildAttribution(out);

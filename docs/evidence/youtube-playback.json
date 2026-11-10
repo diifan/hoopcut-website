@@ -1,0 +1,39 @@
+{
+  "scope": "local built page on intercepted site origin; real YouTube requests via proxy; analytics mock only, no production events",
+  "player_text": "Two Pickup Jump Shots with Shot Tracer | HoopCut\nHoopCut\nHoopCut\n3\u4f4d\u8ba2\u9605\u8005",
+  "media": {
+    "time": 7.261,
+    "paused": true,
+    "error": null
+  },
+  "events": [
+    {
+      "schema_version": 1,
+      "product": "hoopcut",
+      "environment": "staging",
+      "event_id": "6117822c-dff1-4eaf-bbe0-5d17c4df0bd6",
+      "event_name": "video_play",
+      "occurred_at": "2026-11-10T02:32:16.076Z",
+      "visitor_id": "3993e3ed-e158-4f6f-b8ec-bf0737b8ed2c",
+      "visitor_scope": "session",
+      "web_session_id": "6915e385-bc8a-427d-a2ee-ca0171f316d0",
+      "page_view_id": "01290f8a-16f6-4253-9c0c-e9bfc5e3847e",
+      "page_path": "/videos/two-pickup-jump-shots-shot-tracer",
+      "referrer_host": null,
+      "first_touch_at": "2026-11-10T02:31:59.526Z",
+      "video_id": "MLcda_7VYkQ",
+      "playback_trigger": "user",
+      "session_source": "direct",
+      "first_touch_source": "direct",
+      "session_medium": "none",
+      "first_touch_medium": "none",
+      "session_campaign": "website_default",
+      "first_touch_campaign": "website_default",
+      "session_content": null,
+      "first_touch_content": null,
+      "session_term": null,
+      "first_touch_term": null
+    }
+  ],
+  "passed": true
+}

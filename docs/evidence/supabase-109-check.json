@@ -1,0 +1,17 @@
+{
+  "checked_at": "2026-11-09T08:30:29.463897+00:00",
+  "host109": "SSH connected",
+  "workspace": "/Users/soda/Swi-app/hoopcut",
+  "supabase_project": "cfskhucnihvnhcxoleaq",
+  "existing_receiver": "record_analytics authenticated RPC; unsuitable for anonymous web traffic",
+  "local_functions": [
+    "apple-attribution",
+    "people-gateway"
+  ],
+  "web_receiver_source": "only referenced in handoffs/HoopCut-Web-AF-Attribution-2026-11-09/README.md; no implementation found",
+  "web_receiver_http": 404,
+  "web_receiver_code": "NOT_FOUND",
+  "management_helper": "cloud/scripts/gateway_admin.py",
+  "management_check": "existing helper found; current HoopCut dashboard session did not provide token; login required",
+  "writes_to_remote_or_database": false
+}

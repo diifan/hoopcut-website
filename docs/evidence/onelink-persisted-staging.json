@@ -1,0 +1,34 @@
+[
+  {
+    "environment": "staging",
+    "event_id": "341acd76-2a86-4b27-a197-bbeb579b82b1",
+    "event_name": "page_view",
+    "click_id": null,
+    "destination_type": null,
+    "campaign": "staging_onelink_20261110"
+  },
+  {
+    "environment": "staging",
+    "event_id": "7c054844-da9a-4079-bc3d-e97adc14fa56",
+    "event_name": "download_clicked",
+    "click_id": "e74cf4b1-cf9b-4105-9498-bd4bc020700f",
+    "destination_type": "onelink",
+    "campaign": "staging_onelink_20261110"
+  },
+  {
+    "environment": "staging",
+    "event_id": "8e412987-8442-43ac-beaf-b60d54d24ae8",
+    "event_name": "video_play",
+    "click_id": null,
+    "destination_type": null,
+    "campaign": "staging_onelink_20261110"
+  },
+  {
+    "environment": "staging",
+    "event_id": "800974b0-8720-45f9-9ddb-5a25dc0f24b5",
+    "event_name": "download_clicked",
+    "click_id": "789a32d7-dc7e-4b77-83bb-c71d79dc8984",
+    "destination_type": "app_store_fallback",
+    "campaign": "staging_onelink_20261110"
+  }
+]

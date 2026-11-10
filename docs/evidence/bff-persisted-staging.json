@@ -1,0 +1,32 @@
+[
+  {
+    "environment": "staging",
+    "event_id": "ac734490-7931-439d-b7f4-b870b6f0867b",
+    "event_name": "page_view",
+    "click_id": null,
+    "received_at": "2026-11-09 09:09:37.907951+00",
+    "validation_flags": [],
+    "campaign": "staging_bff_20261109",
+    "playback_trigger": null
+  },
+  {
+    "environment": "staging",
+    "event_id": "90c3ab8d-e7f4-497a-b766-b16b20c62880",
+    "event_name": "download_clicked",
+    "click_id": "00ed5cf1-10b2-47c3-8c71-a36e19e16878",
+    "received_at": "2026-11-09 09:09:39.895445+00",
+    "validation_flags": [],
+    "campaign": "staging_bff_20261109",
+    "playback_trigger": null
+  },
+  {
+    "environment": "staging",
+    "event_id": "578a3c6e-b1e0-4d12-8a18-876149d445ae",
+    "event_name": "video_play",
+    "click_id": null,
+    "received_at": "2026-11-09 09:09:39.895445+00",
+    "validation_flags": [],
+    "campaign": "staging_bff_20261109",
+    "playback_trigger": "autoplay"
+  }
+]
