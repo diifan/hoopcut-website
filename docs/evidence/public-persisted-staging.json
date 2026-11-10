@@ -1,0 +1,44 @@
+[
+  {
+    "environment": "staging",
+    "event_id": "0d1f9363-e7c8-44f5-a5a2-0df64f8f58b0",
+    "event_name": "download_clicked",
+    "click_id": "c9a969a9-bece-4631-afda-5b59d95b2f71",
+    "destination_type": "onelink"
+  },
+  {
+    "environment": "staging",
+    "event_id": "311aebd2-c347-423a-bd7f-9924058f6520",
+    "event_name": "download_clicked",
+    "click_id": "0a78c2ff-ee51-4683-8704-767ba5f027d7",
+    "destination_type": "app_store_fallback"
+  },
+  {
+    "environment": "staging",
+    "event_id": "64035ffd-e70e-4b5f-bc6b-fa84d7dea351",
+    "event_name": "page_view",
+    "click_id": null,
+    "destination_type": null
+  },
+  {
+    "environment": "staging",
+    "event_id": "6a62a6e7-e81a-44fa-a56f-173a37424de0",
+    "event_name": "video_play",
+    "click_id": null,
+    "destination_type": null
+  },
+  {
+    "environment": "staging",
+    "event_id": "9daf0370-3ea7-43ea-9cf7-39dfc65ca64b",
+    "event_name": "page_view",
+    "click_id": null,
+    "destination_type": null
+  },
+  {
+    "environment": "staging",
+    "event_id": "d4a0c852-136d-4754-934b-634ce2124c2a",
+    "event_name": "video_play",
+    "click_id": null,
+    "destination_type": null
+  }
+]

@@ -94,3 +94,29 @@ HOOPCUT_SMART_SCRIPT_SRC=https://onelinksmartscript.appsflyer.com/onelink-smart-
 
 实施commit：ea1d9fa；审核Draft PR：https://github.com/diifan/hoopcut-website/pull/19 。未合并，生产未部署。
 Vercel于2026-11-10 02:33 UTC完成该commit的Preview构建，GitHub状态success。地址：https://hoopcut-website-git-feat-web-attribution-v1-diifans-projects.vercel.app 。匿名访问重定向到Vercel登录页，不能将登录页200计为官网验收。当前卡点还包含预览SSO访问；需要已有项目管理访问恢复后配置环境变量和预览访问，再进行公网验收。
+
+## 112 公网预览完成回填（2026-11-10）
+
+**本节覆盖上文403阻塞状态。** 使用 `/var/lib/swi-codex/agent-relay/bin/vercel` 自动刷新OAuth后，管理读写均成功；无需重新登录。没有读取旧token直调。
+
+### 环境与部署
+
+- Preview：仅 feat/web-attribution-v1 分支，已配置4项 HOOPCUT_ANALYTICS_*：SECRET（staging）、SECRET_HEADER、RATE_SECRET、ORIGINS（精确预览别名）。
+- Production：同4项独立配置，使用109私有配置中的production专用secret及独立rate secret，origin为 https://hoopcut.ai 与 https://www.hoopcut.ai 。只配置变量，**未触发production部署，未向production发送测试事件**。
+- 回读确认共8项，证据 vercel-attribution-environments.json 不含值。
+- 使用CLI redeploy明确environment=preview。部署 dpl_5LpcbCwbggRBfDTyzR5fnKiLaSL5，2026-11-10 02:43 UTC，READY，受测代码6737e4bc4b897d018ec7865b4b6157781886191d（功能commit ea1d9fa）。
+- 预览：https://hoopcut-website-git-feat-web-attribution-v1-diifans-projects.vercel.app 。保留SSO保护，CLI创建自动化测试bypass，凭据仅受限文件保存，仅向同源请求附加。未关闭项目保护，匿名请求仍需Vercel登录；不以登录页200冒充通过。
+
+### 真实公网验收
+
+- 浏览器直接访问Vercel公网部署，无本地HTML替换、无HTTP-over-Unix-socket桥、无SDK/API mock。390宽移动端首页、1280宽桌面视频页通过，截图已检查。
+- 官方SDK实加载2_10_4，链接严格保留 af_js_web / af_ss_ver；同次click_id=af_sub1、af_sub5=staging。禁用SDK后立即App Store fallback。
+- 浏览器→Vercel BFF→Supabase：6条事件accepted，含2 page_view、2 video_play（首页自动播放与YouTube用户播放）、2 download_clicked（正常与fallback）。重复3条返回duplicate。
+- 109既有管理入口只读SQL按本轮event_id核对：6条全部staging，字段/ID匹配，无重复新行。public-persisted-staging.json。
+- YouTube真实视频播放至7.261秒，无媒体错误，仅一个该视频video_play；通过真实BFF accepted并SQL确认。
+- 预览返回HSTS和X-Robots-Tag:noindex；当前部署未设置CSP响应头，实际SDK、播放器与同源BFF加载通过。这里不声称新增或测试了一套CSP策略。
+- 完整请求回执 public-staging.json，脚本 tests/qa_attribution_public.py；截图 public-mobile.png/public-desktop.png。不含凭据。
+
+### 剩余审核边界
+
+PR #19 待生产发布批准。环境变量与公网预览验收已完成，不再以Vercel403为阻塞。批准合并后仍需核验生产部署内容与实际入口；生产事件不通过合成安装来伪造闭环。AF安装首次打开/installation_id归因关联继续由109负责，不属于此Web验收结果。
