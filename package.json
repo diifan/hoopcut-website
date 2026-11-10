@@ -10,7 +10,7 @@
     "dev:comments": "node server/comments-preview.js",
     "migrate:comments": "node server/migrate-comments.js",
     "build": "node server/build-vercel.js",
-    "test:attribution": "node --test tests/attribution.test.js"
+    "test:attribution": "node --test tests/attribution.test.js tests/attribution-delivery.test.js"
   },
   "dependencies": {
     "pg": "8.16.3"
