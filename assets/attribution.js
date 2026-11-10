@@ -17,7 +17,8 @@
   let scope = persistent && write(persistent, key, state) ? 'persistent' : 'session';
   const save = () => write(scope === 'persistent' ? persistent : storage, key, state);
   let queue = (read(storage, key+'.queue') || []).filter(x => now()-Date.parse(x.occurred_at)<86400000).slice(-100);
-  let pageID, path, played = new Set(), timer, busy = false, retry = 1000;
+  let pageID, path, played = new Set(), timer, active = 0, retry = 1000;
+  const inFlight = new Set();
   const source = () => {
     const q = new URL(location.href).searchParams;
     const fields = Object.fromEntries(['source','medium','campaign','content','term'].map(k => [k,clean(q.get('utm_'+k))]));
@@ -32,21 +33,35 @@
   };
   const persistQueue = () => { queue = queue.filter(x => now()-Date.parse(x.occurred_at)<86400000).slice(-100); write(storage,key+'.queue',queue); };
   const later = delay => { clearTimeout(timer); timer = setTimeout(flush,delay); };
-  async function flush() {
-    persistQueue(); if (busy || !queue.length) return;
-    const batch=[]; for(const item of queue.slice(0,20)) { if(new TextEncoder().encode(JSON.stringify({schema_version:1,events:[...batch,item]})).length>32768) break; batch.push(item); }
-    busy=true;
+  async function flush(urgent=false) {
+    persistQueue();
+    // Reserve a second keepalive request for a download. A pending page/video
+    // request must not hold the click until after navigation suspends JS timers.
+    if (active >= (urgent ? 2 : 1)) return;
+    const pending=queue.filter(e=>!inFlight.has(e.event_id) && (!urgent || e.event_name==='download_clicked'));
+    const batch=[]; for(const item of pending.slice(0,20)) { if(new TextEncoder().encode(JSON.stringify({schema_version:1,events:[...batch,item]})).length>32768) break; batch.push(item); }
+    if (!batch.length) return;
+    const ids=new Set(batch.map(e=>e.event_id));
+    for (const id of ids) inFlight.add(id);
+    active++;
     try {
-      const response=await fetch('/api/analytics/events',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({schema_version:1,events:batch}),keepalive:true});
+      const response=await fetch('/api/analytics/events',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({schema_version:1,events:batch}),keepalive:true,...(typeof AbortSignal!=='undefined' && typeof AbortSignal.timeout==='function' ? {signal:AbortSignal.timeout(12000)} : {})});
       if (response.ok) {
-        const result=await response.json(); const done=new Set([...(result.accepted_event_ids||[]),...(result.duplicate_event_ids||[]),...(result.rejected||[]).map(x=>x.event_id)]);
+        const result=await response.json();
+        // HTTP 200 may contain per-event rejections. Never clear other requests'
+        // events or lose queued data on a malformed/incomplete acknowledgement.
+        if (!['accepted_event_ids','duplicate_event_ids','rejected'].every(k=>Array.isArray(result?.[k]))) throw Error('invalid_receipt');
+        const acknowledged=[...result.accepted_event_ids,...result.duplicate_event_ids,...result.rejected.map(x=>x?.event_id)];
+        if (acknowledged.some(id=>!ids.has(id)) || new Set(acknowledged).size!==acknowledged.length) throw Error('invalid_receipt');
+        const done=new Set(acknowledged);
         queue=queue.filter(x=>!done.has(x.event_id)); retry=done.size ? 1000 : Math.min(retry*2,300000);
-      } else if ([400,413].includes(response.status)) { const ids=new Set(batch.map(x=>x.event_id));queue=queue.filter(x=>!ids.has(x.event_id)); }
+      } else if ([400,413].includes(response.status)) { queue=queue.filter(x=>!ids.has(x.event_id)); }
       else if (response.status===429) { const h=response.headers.get('Retry-After');retry=Math.max(1000, Number.isFinite(Number(h))&&h ? Number(h)*1000 : Date.parse(h)-now() || 60000); }
       else retry=Math.min(retry*2,300000);
     } catch { retry=Math.min(retry*2,300000); }
-    finally { busy=false;persistQueue();if(queue.length) later(retry); }
+    finally { active--;for(const id of ids)inFlight.delete(id);persistQueue();if(queue.length) later(retry); }
   }
+
   function emit(name, detail={}) {
     touch(); const event={schema_version:1,product:'hoopcut',environment,event_id:uuid(),event_name:name,occurred_at:new Date().toISOString(),visitor_id:state.visitor,visitor_scope:scope,web_session_id:state.session.id,page_view_id:pageID,page_path:location.pathname,referrer_host:state.session.referrer_host,first_touch_at:state.first.at,...detail};
     for(const field of ['source','medium','campaign','content','term']) {event['session_'+field]=state.session[field];event['first_touch_'+field]=state.first[field];}
@@ -76,7 +91,7 @@
     if(!pageID)page();touch();const click=uuid(),dest=destination(click,a.dataset.attributionCta);
     a.href=dest.url;emit('download_clicked',{click_id:click,cta_id:a.dataset.attributionCta,destination_type:dest.type});
     // Native navigation (including keyboard/new tab) proceeds immediately. Never await collection.
-    void flush();setTimeout(()=>{a.href=storeURL;},0);
+    void flush(true);setTimeout(()=>{a.href=storeURL;},0);
   }
   document.addEventListener('click',activate);document.addEventListener('auxclick',activate);
   let lastActivity=0;for(const name of ['pointerdown','keydown','scroll'])document.addEventListener(name,()=>{if(now()-lastActivity>1000){lastActivity=now();touch();}},{passive:true});
@@ -92,9 +107,9 @@
   const subscribe=f=>{f.contentWindow?.postMessage(JSON.stringify({event:'listening',id:f.id}),'https://www.youtube-nocookie.com');f.contentWindow?.postMessage(JSON.stringify({event:'command',func:'addEventListener',args:['onStateChange']}),'https://www.youtube-nocookie.com');};
   document.querySelectorAll('iframe[data-analytics-video]').forEach(f=>{f.addEventListener('load',()=>subscribe(f));subscribe(f);});
   for(const method of ['pushState','replaceState']){const original=history[method];history[method]=function(...args){const old=location.pathname+location.search;const result=original.apply(this,args);if(old!==location.pathname+location.search)page(true);return result;};}
-  window.addEventListener('popstate',()=>page(true));window.addEventListener('pageshow',e=>{if(e.persisted)page(true);});
-  document.addEventListener('visibilitychange',()=>{if(document.hidden)void flush();else page();});
-  window.addEventListener('online',()=>later(0));window.addEventListener('pagehide',()=>void flush());
+  window.addEventListener('popstate',()=>page(true));window.addEventListener('pageshow',e=>{if(e.persisted)page(true);void flush(true);void flush();});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden){void flush(true);void flush();}else {page();void flush(true);void flush();}});
+  window.addEventListener('online',()=>later(0));window.addEventListener('pagehide',()=>{void flush(true);void flush();});
   window.hoopcutAttribution=Object.freeze({version:1});
   requestAnimationFrame(()=>page());
 })();
