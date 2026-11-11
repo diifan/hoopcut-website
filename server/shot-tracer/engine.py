@@ -23,46 +23,35 @@ def trim(source,target,start,end):
  return probe(target)
 
 def analyze(source,work):
- # The daily ingestion gate requires YouTube Shorts visual receipts, which do not
- # apply to user uploads. Replace it ONLY in this job-local adapter with the
- # web admission gate. Do not alter or forge daily source quality receipts.
+ import time
+ started=time.monotonic()
  code=(AGENT/'app/analyze_short.py').read_text()
  old=' from source_quality import require_review\n quality=require_review(a.source)'
  assert old in code
  code=code.replace(old," quality={'scope':'web_upload','duration_gate_seconds':30}")
- code=code.replace("'source_quality_receipt':str(a.source.with_suffix('.quality.json'))","'admission_scope':'web_upload_duration_checked_by_server'")
- adapter=work.parent/'analyze-upload.py';adapter.write_text(code)
+ start=code.index(" sdk=base/'delivery_copy'")
+ end=code.index('\ndef eval_fraction',start)
+ code=code[:start]+" status.update(status='native_ready');(root/'status.json').write_text(json.dumps(status))\n"+code[end:]
+ assert 'run_adaptive' not in code and "root/'people'" not in code
+ adapter=work.parent/'analyze-makemiss-only.py';adapter.write_text(code)
  env=dict(os.environ,PYTHONPATH=str(AGENT/'app')+os.pathsep+os.environ.get('PYTHONPATH',''))
  with (work.parent/'inference.log').open('w') as log:
-  subprocess.run([sys.executable,str(adapter),'--source',str(source),'--work',str(work),'--evidence-only'],env=env,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=1800)
+  subprocess.run([sys.executable,str(adapter),'--source',str(source),'--work',str(work),'--evidence-only'],env=env,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=900)
+ native_seconds=time.monotonic()-started
  status=json.loads((work/'status.json').read_text())
- if status['status']=='no_make_candidates':return []
- sys.path.insert(0,str(AGENT/'app'))
- from render_short import evidence_for
- final=Path(json.loads((work/'people/result.json').read_text())['final_work'])
- rows=json.loads((final/'owner_identity/assignments.json').read_text())
- hoops=[(r['active']['box'] if r.get('active') else None) for r in map(json.loads,(work/'native-input/native/frame_trace.jsonl').read_text().splitlines())]
- fn=[n for n in ast.parse(FITTER.read_text()).body if isinstance(n,ast.FunctionDef) and n.name=='smooth_arc']
- arcs=[]
- for row in rows:
-  if row.get('result')!='make':continue
-  match=evidence_for(work,row)
-  if not match:continue
-  folder,number=match
-  ball=[json.loads(l) for l in (folder/'ball_control_full_v2/trace.jsonl').read_text().splitlines()]
-  scope=dict(np=np,json=json,B=folder,ball=ball,hoops=hoops,UnivariateSpline=UnivariateSpline)
-  exec(compile(ast.Module(body=fn,type_ignores=[]),str(FITTER),'exec'),scope)
-  arc,audit=scope['smooth_arc']({**row,'number':number})
-  if arc is None:continue
-  ts=np.linspace(arc[0],arc[1],max(2,round((arc[1]-arc[0])*180)))
-  wh=np.array(status['analysis_size'])*1.5
-  points=arc[2](ts)/wh
-  if not np.isfinite(points).all():continue
-  arcs.append({'times':ts.tolist(),'points':points.tolist(),'audit':audit})
+ if status['status']=='no_make_candidates':arcs=[]
+ else:
+  libs=[str(p) for root in ['/data/envs/swi-crawler-research/lib/python3.10/site-packages/nvidia','/data/swi-algo/hc-external-gt/runtime/nvidia','/data/envs/torch-cu130/lib/python3.10/site-packages/nvidia'] for p in Path(root).glob('*/lib')]
+  env['LD_LIBRARY_PATH']=':'.join(libs)+':'+env.get('LD_LIBRARY_PATH','')
+  subprocess.run([sys.executable,str(Path(__file__).with_name('tracer_only.py')),str(work)],env=env,check=True,timeout=180)
+  arcs=json.loads((work.parent/'measured-arcs.json').read_text())
  (work.parent/'measured-arcs.json').write_text(json.dumps(arcs))
+ (work/'pipeline-receipt.json').write_text(json.dumps({'pipeline':'makemiss+tracer','people_analysis':False,'native_seconds':native_seconds,'analysis_seconds':time.monotonic()-started,'arcs':len(arcs)}))
  return arcs
 
 def draw(frame,time,arcs,effect):
+ arcs=[arc for arc in arcs if arc['times'][0]<=time<=arc['times'][-1]+.18]
+ if not arcs:return frame
  colors={'firework':(16,100,255),'ice':(255,225,80),'neon':(185,60,255),'ribbon':(100,245,160),'cosmic':(220,70,190),'sunset':(80,130,255)}
  color=colors[effect];h,w=frame.shape[:2];layer=np.zeros_like(frame)
  for arc in arcs:

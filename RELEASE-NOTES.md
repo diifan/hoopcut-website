@@ -1,12 +1,13 @@
-# Shot Tracer isolated preview — 2026-11-11
+# Shot Tracer web tool — 2026-11-11
 
-Preview only. Do not merge/promote this branch: public processing backend is not connected.
-Preserves comments, attribution and current Videos navigation; adds Shot Tracer page/navigation.
-12 local API contract tests, 72-page SEO and standard build passed. One real 25.67s portrait sample freshly processed with four effects on 112 isolated Unix HTTP; not public/Safari acceptance.
-CPU v1 failed because GPU-only configuration rejected CPU fallback; v2 adaptation script failed before inference. CPU v3 runs in a separate non-production copy; no final performance verdict yet.
-`/api/shot-tracer/cpu-probe` runs a bounded Python smoke check only when VERCEL_ENV=preview; production returns404. It does not run inference, access storage/database, or measure full pipeline performance.
-Preview must use staging attribution only; missing branch collector config remains fail-closed. No production synthetic analytics or videos are submitted for testing. No production variable changes.
-Models/native dependencies are NOT bundled in this preview. Full Vercel feasibility remains unverified.
+User authorized direct release after verification. PR25 preserves latest main 486237b (HomeCourt tools), comments and attribution. Adds /shot-tracer and mobile/desktop navigation.
 
-## Outbound bridge integration
-Added separate Supabase-backed leased jobs/private storage and 112 outbound worker; no SSH relay. Browser uploads directly to signed storage. Preview still not approved for production: real public compute verification in progress. Seven BFF security/contract tests passed. Runtime GPU pressure no longer preempts admitted jobs.
+Processing: Make/Miss native scan → independent ball detector → measured spline → render. No people tracking, pose, person ReID, ownership or adaptive people rounds. CUDA checked at model execution. 112 outbound worker, Vercel control API, private Supabase storage/leased queue. No public 112 port or new relay. One compute at a time; resource admission before claim, not GPU-pressure termination.
+
+Validation: 18 BFF/attribution tests pass; 90 sitemap pages and standard build pass. 25.64s public HTTPS staging test ready: compute73.923s, peak process GPU392MiB, preview/download SHA identical 91ed75c6d79ee2c7fe610d9d0f3ab0fc062c71bd5a562cff351b62918e354775. 31s processing request rejected400. Fresh 25.67s source scan plus ball-only tracer produces3 arcs; screenshot visually checked. First benchmark reused native output only to isolate tracer cost, not claimed end-to-end.
+
+Source limit512MiB/1h; process limit30s; longer videos require explicit trim. Four real effects; only Firework export unlocked. Videos private with24h access expiry; physical cleanup worker-scheduled. No synthetic production analytics.
+
+Boundaries: Vercel preview deployment has authentication protection; current HTTPS staging test directly exercises Edge/storage/112, not authenticated Vercel UI. Live browser end-to-end verification follows release. Comments destructive integration tests intentionally cannot run without dedicated *_test DB; no comments code changes. Mobile Safari device acceptance and general basketball detection accuracy are not inferred from one portrait fixture.
+
+Rollback: previous READY production dpl_BsrUWDbvJxt5BVgWUcpHRxPfiLmp, main486237bf079db67fb39e0163a3157d5cf8d5f2a6. Restore only this website if actual release fault occurs.
