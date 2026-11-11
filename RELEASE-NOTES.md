@@ -7,3 +7,6 @@ CPU v1 failed because GPU-only configuration rejected CPU fallback; v2 adaptatio
 `/api/shot-tracer/cpu-probe` runs a bounded Python smoke check only when VERCEL_ENV=preview; production returns404. It does not run inference, access storage/database, or measure full pipeline performance.
 Preview must use staging attribution only; missing branch collector config remains fail-closed. No production synthetic analytics or videos are submitted for testing. No production variable changes.
 Models/native dependencies are NOT bundled in this preview. Full Vercel feasibility remains unverified.
+
+## Outbound bridge integration
+Added separate Supabase-backed leased jobs/private storage and 112 outbound worker; no SSH relay. Browser uploads directly to signed storage. Preview still not approved for production: real public compute verification in progress. Seven BFF security/contract tests passed. Runtime GPU pressure no longer preempts admitted jobs.
