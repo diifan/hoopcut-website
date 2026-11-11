@@ -17,3 +17,28 @@ test('old imported short-video response still starts preflight',async()=>{const 
 test('long video still needs explicit trimming',async()=>{const x=await scenario({state:'imported',video:{duration:31}});assert.equal(x.calls.at(-1),'updateTrim');assert.equal(x.elements['trim-panel'].hidden,false);assert.ok(!x.calls.includes('process'));});
 test('invalid fused range fails without selection or processing',async()=>{const x=await scenario({state:'needs_hoop',video:{duration:25},trim:[0,24],selection:{candidates:[]}});assert.match(x.failure,/range is invalid/);assert.ok(!x.calls.includes('process')&&!x.calls.includes('showHoops'));});
 
+
+const hoopsSource=source.slice(source.indexOf('async function showHoops('),source.indexOf('async function upload()'));
+async function selectionScenario(partial){
+ const elements={},calls=[];
+ const make=()=>({hidden:false,disabled:false,style:{},children:[],classList:{add(){},remove(){}},setAttribute(){},replaceChildren(){this.children=[]},append(b){this.children.push(b)},querySelectorAll(){return this.children},getContext:()=>({drawImage(){},strokeRect(){}})});
+ const c={choiceEpoch:0,hoopId:null,start:0,localURL:'blob:fixture',$:id=>elements[id]??=make(),document:{createElement:make},message(){},failure(e){throw e},process:()=>calls.push({hoopId:c.hoopId}),Math,Number,Array,JSON,Error,Promise,setTimeout,clearTimeout};
+ Object.assign(c.$('preview'),{pause(){},src:'blob:fixture',readyState:4,currentTime:0,videoWidth:720,videoHeight:1280});
+ vm.createContext(c);vm.runInContext(hoopsSource,c);
+ await c.showHoops({partial,candidates:[{id:'detected-one',frame:0,box:[.1,.2,.1,.1]}]});
+ return {c,calls,elements};
+}
+test('partial selection offers full sampling without automatic confirmation',async()=>{
+ const x=await selectionScenario(true);assert.equal(x.calls.length,0);assert.equal(x.elements['hoop-confirm'].disabled,true);
+ assert.equal(x.elements['hoop-next'].hidden,false);assert.equal(x.elements['hoop-next'].textContent,'More frames');
+ x.elements['hoop-next'].onclick();assert.deepEqual(x.calls,[{hoopId:null}]);
+});
+test('hoop requires click and explicit confirm',async()=>{
+ const x=await selectionScenario(true);x.elements['hoop-confirm'].onclick();assert.equal(x.calls.length,0);
+ x.elements['hoop-boxes'].children[0].onclick();assert.equal(x.elements['hoop-confirm'].disabled,false);
+ assert.equal(x.calls.length,0);x.elements['hoop-confirm'].onclick();assert.deepEqual(x.calls,[{hoopId:'detected-one'}]);
+});
+test('complete single-frame selection hides next-frame action',async()=>{
+ const x=await selectionScenario(false);assert.equal(x.elements['hoop-next'].hidden,true);assert.equal(x.calls.length,0);
+});
+

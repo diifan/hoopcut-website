@@ -41,3 +41,7 @@ Supabase login restored. Transaction-isolated selection protocol test passed and
 - Approximately 30s end-to-end target remains unmet. No claim of production performance or browser validation.
 - Browser preview now actually completed the upload/explicit-selection/ready flow. Resource Timing upload start to result-video request: 63.9615s; a late DOM observer's 89.232s was corrected, not treated as processing latency.
 - Next preview pins only Shot Tracer BFF functions to sin1, near the Supabase region, and adds staging-only upstream Server-Timing / region evidence. No comments/attribution function region changes. Performance benefit still to be measured; not a 30s claim.
+
+### Early hoop choice staging UI
+- Partial first-frame choices offer More frames through the existing full preflight request; no automatic hoop confirmation. Existing complete selections retain Next frame.
+- 7 upload/selection and 10 bridge tests passed; build passed. Worker candidate remains isolated pending fallback/retry and browser validation; no production release claimed.

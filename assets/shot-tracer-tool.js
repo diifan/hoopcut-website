@@ -41,7 +41,8 @@ async function showHoops(selection){
  const run=++choiceEpoch,choices=selection?.candidates||[],frames=[...new Set(choices.map(c=>c.frame))];let index=0,picked=null;
  $('effects').hidden=true;$('hoop-panel').hidden=false;$('editor').classList.add('choosing-hoop');$('retry').hidden=true;$('hoop-confirm').disabled=true;
  if(!frames.length){message('No hoop found. Choose another range or video.');$('hoop-next').hidden=true;$('edit-trim').hidden=false;return;}
- $('hoop-next').hidden=frames.length<2;
+ $('hoop-next').hidden=frames.length<2&&!selection.partial;
+ $('hoop-next').textContent=selection.partial?'More frames':'Next frame';
  async function draw(){
   $('hoop-next').disabled=true;picked=null;$('hoop-confirm').disabled=true;$('hoop-boxes').replaceChildren();const frame=frames[index],video=$('preview');
   video.pause();if(video.src!==localURL)video.src=localURL;
@@ -57,7 +58,7 @@ async function showHoops(selection){
   }
   $('hoop-frame-label').textContent=`Frame ${index+1} of ${frames.length} · ${t.toFixed(2)}s`;$('hoop-next').disabled=false;message('Choose and confirm your hoop before processing.');
  }
- $('hoop-next').onclick=()=>{index=(index+1)%frames.length;draw().catch(failure);};
+ $('hoop-next').onclick=()=>{if(selection.partial){hoopId=null;++choiceEpoch;process();return;}index=(index+1)%frames.length;draw().catch(failure);};
  $('hoop-confirm').onclick=()=>{if(!picked)return;hoopId=picked.id;choiceEpoch++;process();};
  $('hoop-cancel').onclick=()=>{choiceEpoch++;$('hoop-panel').hidden=true;$('editor').classList.remove('choosing-hoop');message('Selection cancelled. Retry to choose again, or change video.');$('retry').hidden=false;};
  await draw();
