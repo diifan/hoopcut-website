@@ -30,7 +30,10 @@ def check(http=False):
     urls=[x.text for x in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
     video_manifest=ROOT/'content/videos/manifest.json'
     videos=json.loads(video_manifest.read_text()) if video_manifest.exists() else []
-    expected_video_urls={'https://hoopcut.ai/videos/'+v['slug'] for v in videos}
+    expected_video_urls={'https://hoopcut.ai/videos/'+v['slug'] for v in videos if v['status']=='public_verified'}
+    topics_file=ROOT/'content/videos/topics.json'
+    topics=json.loads(topics_file.read_text()) if topics_file.exists() else []
+    expected_video_urls.update('https://hoopcut.ai/videos/'+t['slug'] for t in topics if t['video_id'] in {v['video_id'] for v in videos if v['status']=='public_verified'})
     if videos:expected_video_urls.add('https://hoopcut.ai/videos')
     assert {u for u in urls if u.startswith('https://hoopcut.ai/videos')}==expected_video_urls
     assert len(urls)==len(set(urls))==39+len(expected_video_urls)
@@ -105,7 +108,7 @@ def check(http=False):
     report_path=ROOT/'reports/site-seo-audit.json'
     report_path.parent.mkdir(parents=True,exist_ok=True)
     report_path.write_text(json.dumps(report,indent=2)+'\n')
-    print('PASS: all 39 sitemap pages; unique metadata, canonical, H1, schema, links/assets, images, homepage reachability, legal footer.'+(' All preview URLs return HTTP 200 and noindex.' if http else ''))
+    print(f'PASS: all {len(urls)} sitemap pages; unique metadata, canonical, H1, schema, links/assets, images, homepage reachability, legal footer.'+(' All preview URLs return HTTP 200 and noindex.' if http else ''))
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--http',action='store_true');check(parser.parse_args().http)

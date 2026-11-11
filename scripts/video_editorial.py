@@ -10,6 +10,9 @@ def load(root, record):
     if not file.is_file():
         raise ValueError('Author individual video context before building: '+record['slug'])
     note = json.loads(file.read_text())
+    return validate_note(note,record)
+
+def validate_note(note,record):
     if (note['video_id'], note['slug']) != (record['video_id'], record['slug']):
         raise ValueError('Editorial notes do not match the verified video')
     date.fromisoformat(note['date_modified'])
@@ -41,9 +44,9 @@ def render(note, store_url):
             paragraphs += '<ol class="watch-checkpoints">'+''.join('<li><h4>'+H(title)+'</h4><p>'+H(text)+'</p></li>' for title,text in checks)+'</ol>'
         links = section.get('links',[])
         if links:
-            paragraphs += '<ul class="watch-context-links">'+''.join('<li><a href="'+H(url,quote=True)+'">'+H(label)+' <span aria-hidden="true">→</span></a></li>' for label,url in links)+'</ul>'
+            paragraphs += '<ul class="watch-context-links">'+''.join('<li><a href="'+H(url,quote=True)+'">'+H(label)+' <span aria-hidden="true"></span></a></li>' for label,url in links)+'</ul>'
         sections.append('<section id="'+H(section['id'],quote=True)+'" class="watch-context-section"><span class="watch-context-number" aria-hidden="true">'+str(i).zfill(2)+'</span><div><h3>'+H(section['heading'])+'</h3>'+paragraphs+'</div></section>')
     faq = '<section id="video-questions" class="watch-context-faq"><h3>Questions about this basketball clip</h3>'+''.join('<div><h4>'+H(q)+'</h4><p>'+H(a)+'</p></div>' for q,a in note['questions'])+'</section>'
     modified = date.fromisoformat(note['date_modified'])
     byline = 'Play notes by Hoopcut · Updated <time datetime="'+modified.isoformat()+'">'+modified.strftime('%B %d, %Y').replace(' 0',' ')+'</time>'
-    return '<section id="video-context" class="watch-context" aria-labelledby="video-context-title"><header><p class="watch-context-kicker">BEYOND THE REPLAY</p><h2 id="video-context-title">'+H(note['heading'])+'</h2><p class="watch-context-intro">'+H(note['intro'])+'</p><p class="watch-context-byline">'+byline+'</p></header><nav class="watch-context-nav" aria-label="Explore this video">'+nav+'</nav>'+''.join(sections)+faq+'<div class="watch-context-next"><p>Bring your own game to the next edit.</p><a href="'+H(store_url,quote=True)+'" data-app-access="app-store">Download Hoopcut on the App Store <span aria-hidden="true">↗</span></a><a href="#main">Back to the video <span aria-hidden="true">↑</span></a></div></section>'
+    return '<section id="video-context" class="watch-context" aria-labelledby="video-context-title"><header><p class="watch-context-kicker">BEYOND THE REPLAY</p><h2 id="video-context-title">'+H(note['heading'])+'</h2><p class="watch-context-intro">'+H(note['intro'])+'</p><p class="watch-context-byline">'+byline+'</p></header><nav class="watch-context-nav" aria-label="Explore this video">'+nav+'</nav>'+''.join(sections)+faq+'<div class="watch-context-next"><p>Bring your own game to the next edit.</p><a href="'+H(store_url,quote=True)+'" data-app-access="app-store">Download Hoopcut on the App Store <span aria-hidden="true"></span></a><a href="#main">Back to the video <span aria-hidden="true"></span></a></div></section>'
