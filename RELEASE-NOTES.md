@@ -31,3 +31,11 @@ Supabase login restored. Transaction-isolated selection protocol test passed and
 - Browser local UI mocks: upload, tracking, explicit hoop selection, ready;320/390/768/1440px no overflow or console errors. These are not GPU E2E tests. GPU isolated sandbox above is real inference.
 - Bridge7 tests, trim reuse1 regression, production build and90-page SEO passed. Preserve comments, attribution and navigation. Production browser test and iOS Safari visual acceptance still separate.
 - Runtime rollback: restore prior engine.py/compute.py from runtime/pull-app-v3-backup; website rollback target dpl_3GKqN8ytgJfR8c9L278yRWqUjy6h. Do not terminate an active job.
+
+## 2026-11-12 — fused short-video probe, preview-only activation
+- Accept a validated needs_hoop response directly after upload; preserve explicit user hoop selection and the existing long-video trim workflow.
+- Keep old imported responses compatible. Reject a fused range that differs from the reported full short video.
+- HC_TRACER_FAST_STAGING=1 selects the isolated fast-staging endpoint only outside production; production routing is unchanged.
+- 14 bridge/upload-flow tests and the standard website build passed. Tests mock browser DOM/requests; this is not mobile/browser acceptance.
+- Actual 112 HTTPS staging job ee37fbad67960a007d2a03fd6ab62421c384a8ad98db0750: upload-to-ready 52.249s, download complete 55.568s, exact baseline artifact SHA. Does not include Vercel BFF or human selection delay.
+- Approximately 30s end-to-end target remains unmet. No claim of production performance or browser validation.
