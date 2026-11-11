@@ -22,23 +22,44 @@ def trim(source,target,start,end):
  subprocess.run(['ffmpeg','-nostdin','-v','error','-y','-ss',str(start),'-i',str(source),'-t',str(end-start),'-map','0:v:0','-map','0:a:0?','-vf',"scale='min(1280,iw)':-2,fps=30,setsar=1",'-c:v','libx264','-threads','2','-preset','fast','-crf','20','-pix_fmt','yuv420p','-c:a','aac','-movflags','+faststart',str(target)],check=True,timeout=180)
  return probe(target)
 
-def analyze(source,work):
+def analyze(source,work,hoop=None):
  import time
  started=time.monotonic()
  code=(AGENT/'app/analyze_short.py').read_text()
  old=' from source_quality import require_review\n quality=require_review(a.source)'
  assert old in code
  code=code.replace(old," quality={'scope':'web_upload','duration_gate_seconds':30}")
- start=code.index(" sdk=base/'delivery_copy'")
- end=code.index('\ndef eval_fraction',start)
- code=code[:start]+" status.update(status='native_ready');(root/'status.json').write_text(json.dumps(status))\n"+code[end:]
+ start=code.index(' if a.dynamic_scene:')
+ end=code.index(" sdk=base/'delivery_copy'",start)
+ native=code[code.index(" run([sys.executable,base/'code/run_native.py']",start):end]
+ if hoop is None:
+  replacement=" status.update(status='selection_ready');(root/'status.json').write_text(json.dumps(status))\n"
+ else:
+  (work.parent/'selected-hoop.json').write_text(json.dumps(hoop))
+  replacement=""" chosen=json.loads((root.parent/'selected-hoop.json').read_text())
+ cap=cv2.VideoCapture(str(base/'input/input_3min.mp4'));count=int(cap.get(7));cap.release()
+ assert 0<=chosen['frame']<count
+ metadata=dict(video=str(base/'input/input_3min.mp4'),frames=count,fps=25,rim=chosen['rim'],rim_score=chosen['score'],rim_source='user_confirmed_detector_candidate',reference_frame=chosen['frame'])
+ (base/'input/selected_scene.json').write_text(json.dumps(metadata))
+ shutil.copy2(Path(__file__).parent/'selected_scene.py',base/'code/selected_scene.py')
+ q=base/'code/run_native.py';t=q.read_text();t=t.replace('from run_hc_half_persistent_overlay import PersistentHalfScene','from selected_scene import SelectedHoopScene')
+ t=t.replace("PersistentHalfScene(ROOT/'input/automatic_half_scene_metadata.json',args.video,cap)","SelectedHoopScene(ROOT/'input/selected_scene.json',args.video,cap)");q.write_text(t)
+"""+native+" status.update(status='native_ready');(root/'status.json').write_text(json.dumps(status))\n"
+ code=code[:start]+replacement+code[code.index('\ndef eval_fraction',end):]
  assert 'run_adaptive' not in code and "root/'people'" not in code
+ import shutil
+ shutil.copy2(Path(__file__).with_name('selected_scene.py'),work.parent/'selected_scene.py')
  adapter=work.parent/'analyze-makemiss-only.py';adapter.write_text(code)
  env=dict(os.environ,PYTHONPATH=str(AGENT/'app')+os.pathsep+os.environ.get('PYTHONPATH',''))
  with (work.parent/'inference.log').open('w') as log:
   subprocess.run([sys.executable,str(adapter),'--source',str(source),'--work',str(work),'--evidence-only'],env=env,stdout=log,stderr=subprocess.STDOUT,check=True,timeout=900)
  native_seconds=time.monotonic()-started
  status=json.loads((work/'status.json').read_text())
+ libs=[str(p) for root in ['/data/envs/swi-crawler-research/lib/python3.10/site-packages/nvidia','/data/swi-algo/hc-external-gt/runtime/nvidia','/data/envs/torch-cu130/lib/python3.10/site-packages/nvidia'] for p in Path(root).glob('*/lib')]
+ env['LD_LIBRARY_PATH']=':'.join(libs)+':'+env.get('LD_LIBRARY_PATH','')
+ if hoop is None:
+  subprocess.run([sys.executable,str(Path(__file__).with_name('hoop_candidates.py')),str(work/'native-input')],env=env,check=True,timeout=180)
+  return {'selection':json.loads((work/'native-input/hoop-candidates.json').read_text())}
  if status['status']=='no_make_candidates':arcs=[]
  else:
   libs=[str(p) for root in ['/data/envs/swi-crawler-research/lib/python3.10/site-packages/nvidia','/data/swi-algo/hc-external-gt/runtime/nvidia','/data/envs/torch-cu130/lib/python3.10/site-packages/nvidia'] for p in Path(root).glob('*/lib')]

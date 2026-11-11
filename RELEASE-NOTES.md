@@ -11,3 +11,15 @@ Source limit512MiB/1h; process limit30s; longer videos require explicit trim. Fo
 Boundaries: Vercel preview deployment has authentication protection; current HTTPS staging test directly exercises Edge/storage/112, not authenticated Vercel UI. Live browser end-to-end verification follows release. Comments destructive integration tests intentionally cannot run without dedicated *_test DB; no comments code changes. Mobile Safari device acceptance and general basketball detection accuracy are not inferred from one portrait fixture.
 
 Rollback: previous READY production dpl_BsrUWDbvJxt5BVgWUcpHRxPfiLmp, main486237bf079db67fb39e0163a3157d5cf8d5f2a6. Restore only this website if actual release fault occurs.
+
+## Pending selection hotfix — NOT deployed
+User production clip failed before Make/Miss: old initialize_segment_scene.py rejected all clusters with No stable hoop across samples. Not upload/GPU/person analysis failure. App ImportNativeSceneReference.prepare always presents candidate confirmation, then freezes actual frame/reference; website had omitted this flow.
+
+New candidate-v3: explicit selection even with one hoop, normalized upright boxes, next sampled frame, submit opaque candidate ID (never client-supplied geometry), reference bound to exact analysis frame, existing OriginalHoopImageTracker carries selected hoop. Native scan/MakeMiss and ball tracer preserved. Web uses existing detector/decoder candidate extraction; this is NOT a binary-identical port of the full Swift native scene-candidate controller. No moving-camera/general-accuracy parity claim.
+
+Verified: real fixture preflight8 candidates → selected frame0 native scan →4 measured arcs; browser UI-only fixture next frame→tap→confirm submits correct ID; confirm disabled until tapped;390px viewport no horizontal overflow.18 existing bridge/attribution tests pass. Python syntax and Deno type checks pass. UI-only mock is not end-to-end inference evidence.
+
+BLOCKED: Supabase management login expired (new actual dashboard tab Sign in, no auth storage). SQL rollback test did NOT run; Edge/migration not deployed; production worker remains v2. Do not merge this UI before new backend is tested and deployed. Production retains prior behavior until then. Download signed-attachment/direct-download change also pending; production prior blob-fetch failure not declared fixed.
+
+### 2026-11-12 deployment continuation
+Supabase login restored. Transaction-isolated selection protocol test passed and rolled back (invalid selection rejected; confirmed candidate preserved; changed trim clears candidate). Edge v2 ACTIVE and additive SQL migration deployed. Production queue verified empty before worker change; v2 Python backup retained; v3 worker active. This supersedes the management-login blocker above. Existing18 tests and90-page build/SEO passed before release. Final public browser selection→compute→export verification remains required.
