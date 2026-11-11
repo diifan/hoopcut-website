@@ -45,3 +45,5 @@ Supabase login restored. Transaction-isolated selection protocol test passed and
 ### Early hoop choice staging UI
 - Partial first-frame choices offer More frames through the existing full preflight request; no automatic hoop confirmation. Existing complete selections retain Next frame.
 - 7 upload/selection and 10 bridge tests passed; build passed. Worker candidate remains isolated pending fallback/retry and browser validation; no production release claimed.
+
+- Active upload/processing status polling waits 750 ms after each completed request (no overlapping polls); idle page does not poll. Cuts unnecessary ready/selection detection delay; still needs browser end-to-end timing.
