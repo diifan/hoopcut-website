@@ -23,3 +23,11 @@ BLOCKED: Supabase management login expired (new actual dashboard tab Sign in, no
 
 ### 2026-11-12 deployment continuation
 Supabase login restored. Transaction-isolated selection protocol test passed and rolled back (invalid selection rejected; confirmed candidate preserved; changed trim clears candidate). Edge v2 ACTIVE and additive SQL migration deployed. Production queue verified empty before worker change; v2 Python backup retained; v3 worker active. This supersedes the management-login blocker above. Existing18 tests and90-page build/SEO passed before release. Final public browser selection→compute→export verification remains required.
+
+## 2026-11-12 Shot Tracer: NVENC and measured progress
+- Final render uses A6000 NVENC p4/cq26; unchanged analysis input and exact existing arcs. Range-identical trim shared between hoop preflight and confirmation, never between different uploaded jobs or analysis selections.
+- 25.67s fixture: preflight17.66s; confirmed full-chain46.31s at cq20 versus prior70.00s. Final cq26 sandbox render4.67s,770frames,15,883,048bytes; full decode passed. Exact arcs match baseline. cq26 versus previous x264 output SSIM0.992309 (similarity, not perceptual sign-off). Synthetic landscape audio decoded hash preserved. No all-format claim.
+- Upload preview retained; real upload percent, stage-local render progress, indeterminate analysis, elapsed time, accessible retry/cancel, compact hoop selection and responsive status card. No invented ETA or fake progress.
+- Browser local UI mocks: upload, tracking, explicit hoop selection, ready;320/390/768/1440px no overflow or console errors. These are not GPU E2E tests. GPU isolated sandbox above is real inference.
+- Bridge7 tests, trim reuse1 regression, production build and90-page SEO passed. Preserve comments, attribution and navigation. Production browser test and iOS Safari visual acceptance still separate.
+- Runtime rollback: restore prior engine.py/compute.py from runtime/pull-app-v3-backup; website rollback target dpl_3GKqN8ytgJfR8c9L278yRWqUjy6h. Do not terminate an active job.

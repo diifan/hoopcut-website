@@ -103,7 +103,7 @@ def render(source,target,arcs,effect,progress=lambda _:None):
  p=probe(source);w,h=p['width'],p['height'];fps=30
  silent=target.with_suffix('.silent.mp4')
  dec=subprocess.Popen(['ffmpeg','-nostdin','-v','error','-i',str(source),'-an','-pix_fmt','bgr24','-f','rawvideo','pipe:1'],stdout=subprocess.PIPE)
- enc=subprocess.Popen(['ffmpeg','-nostdin','-v','error','-y','-f','rawvideo','-pix_fmt','bgr24','-s',f'{w}x{h}','-r','30','-i','pipe:0','-an','-c:v','libx264','-threads','2','-preset','fast','-crf','20','-pix_fmt','yuv420p',str(silent)],stdin=subprocess.PIPE)
+ enc=subprocess.Popen(['ffmpeg','-nostdin','-v','error','-y','-f','rawvideo','-pix_fmt','bgr24','-s',f'{w}x{h}','-r','30','-i','pipe:0','-an','-c:v','h264_nvenc','-preset','p4','-cq','26','-pix_fmt','yuv420p',str(silent)],stdin=subprocess.PIPE)
  count=0
  try:
   while True:
