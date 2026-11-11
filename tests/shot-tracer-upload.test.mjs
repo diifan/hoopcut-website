@@ -19,13 +19,13 @@ test('invalid fused range fails without selection or processing',async()=>{const
 
 
 const hoopsSource=source.slice(source.indexOf('async function showHoops('),source.indexOf('async function upload()'));
-async function selectionScenario(partial){
+async function selectionScenario(partial,overlapState=null){
  const elements={},calls=[];
  const make=()=>({hidden:false,disabled:false,style:{},children:[],classList:{add(){},remove(){}},setAttribute(){},replaceChildren(){this.children=[]},append(b){this.children.push(b)},querySelectorAll(){return this.children},getContext:()=>({drawImage(){},strokeRect(){}})});
- const c={choiceEpoch:0,hoopId:null,start:0,localURL:'blob:fixture',$:id=>elements[id]??=make(),document:{createElement:make},message(){},failure(e){throw e},process:()=>calls.push({hoopId:c.hoopId}),Math,Number,Array,JSON,Error,Promise,setTimeout,clearTimeout};
+ const c={job:'fixture',rpc:async(action,id)=>calls.push({action,id}),choiceEpoch:0,hoopId:null,start:0,localURL:'blob:fixture',$:id=>elements[id]??=make(),document:{createElement:make},message(){},failure(e){throw e},process:()=>calls.push({hoopId:c.hoopId}),Math,Number,Array,JSON,Error,Promise,setTimeout,clearTimeout};
  Object.assign(c.$('preview'),{pause(){},src:'blob:fixture',readyState:4,currentTime:0,videoWidth:720,videoHeight:1280});
  vm.createContext(c);vm.runInContext(hoopsSource,c);
- await c.showHoops({partial,candidates:[{id:'detected-one',frame:0,box:[.1,.2,.1,.1]}]});
+ await c.showHoops({partial,overlap_state:overlapState,candidates:[{id:'detected-one',frame:0,box:[.1,.2,.1,.1]}]});
  return {c,calls,elements};
 }
 test('partial selection offers full sampling without automatic confirmation',async()=>{
@@ -42,3 +42,17 @@ test('complete single-frame selection hides next-frame action',async()=>{
  const x=await selectionScenario(false);assert.equal(x.elements['hoop-next'].hidden,true);assert.equal(x.calls.length,0);
 });
 
+
+test('processing task with early choice displays hoops without requeueing',async()=>{
+ const x=await scenario({state:'processing',stage:'choosing_hoop',video:{duration:25},trim:[0,25],selection:{overlap_state:'waiting',candidates:[]}});
+ assert.equal(x.failure,undefined);assert.deepEqual(x.calls,['create','complete','status','showHoops']);
+});
+
+test('cancel live choice requests cancellation of processing task',async()=>{
+ const x=await selectionScenario(true,'waiting');await x.elements['hoop-cancel'].onclick();
+ assert.deepEqual(x.calls,[{action:'cancel',id:'fixture'}]);assert.equal(x.elements['hoop-panel'].hidden,true);
+});
+test('cancel completed preflight remains local and keeps retry available',async()=>{
+ const x=await selectionScenario(true);await x.elements['hoop-cancel'].onclick();
+ assert.equal(x.calls.length,0);assert.equal(x.elements['retry'].hidden,false);
+});
