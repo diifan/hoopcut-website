@@ -146,6 +146,10 @@ def build():
     polish()
     from build_videos import build as build_videos
     build_videos(ROOT)
+    from build_court_tools import build as build_court_tools
+    build_court_tools()
+    from build_homecourt import build as build_homecourt
+    build_homecourt()
     print('Built first batch: 5 new guides + 15 distinct editable resource pages. No publishing action.')
 
 if __name__=='__main__': build()

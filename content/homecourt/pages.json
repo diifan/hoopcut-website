@@ -1,0 +1,1205 @@
+{
+  "version": 1,
+  "checked_on": "2026-11-11",
+  "market": "US English target; public web results not a geo-controlled US rank report",
+  "sources": {
+    "home": {
+      "title": "HomeCourt official website",
+      "url": "https://www.homecourt.ai/",
+      "note": "Official product description; no hands-on verification.",
+      "checked_on": "2026-11-11"
+    },
+    "general": {
+      "title": "HomeCourt General FAQ",
+      "url": "https://www.homecourt.ai/faq/general",
+      "note": "Undated FAQ; historical device requirements differ from Help Center. Do not assert a current OS minimum.",
+      "checked_on": "2026-11-11"
+    },
+    "setup": {
+      "title": "HomeCourt device setup",
+      "url": "https://help.homecourt.ai/hc/en-us/articles/9344374524179-How-should-I-set-up-my-device",
+      "note": "Published update September 7, 2022. Guidance, not a recent app test.",
+      "checked_on": "2026-11-11"
+    },
+    "shots": {
+      "title": "HomeCourt shot detection help",
+      "url": "https://help.homecourt.ai/hc/en-us/articles/7018295384467-My-shots-are-not-being-detected-well-in-HomeCourt",
+      "note": "Published update June 16, 2022. Editing menu differs from the older General FAQ.",
+      "checked_on": "2026-11-11"
+    },
+    "dribbles": {
+      "title": "HomeCourt movement detection help",
+      "url": "https://help.homecourt.ai/hc/en-us/articles/9344135747987-My-dribbles-movements-are-not-being-detected-well-in-HomeCourt",
+      "note": "Published update September 7, 2022.",
+      "checked_on": "2026-11-11"
+    },
+    "lost": {
+      "title": "HomeCourt lost workout videos",
+      "url": "https://help.homecourt.ai/hc/en-us/articles/6992959898771-My-workout-videos-are-lost",
+      "note": "Published update June 15, 2022. Does not establish the cause of any particular failure.",
+      "checked_on": "2026-11-11"
+    },
+    "android": {
+      "title": "HomeCourt Android availability",
+      "url": "https://help.homecourt.ai/hc/en-us/articles/6994110547603-Is-HomeCourt-available-on-Android",
+      "note": "Published update October 3, 2022; also agrees with public General FAQ at review.",
+      "checked_on": "2026-11-11"
+    },
+    "offline": {
+      "title": "HomeCourt internet requirements",
+      "url": "https://help.homecourt.ai/hc/en-us/articles/7018838061331-Do-I-need-an-internet-connection-to-use-HomeCourt",
+      "note": "Published update June 16, 2022; distinguish recording, upload and leaderboard functions.",
+      "checked_on": "2026-11-11"
+    },
+    "analysis": {
+      "title": "HomeCourt Shot Analysis FAQ",
+      "url": "https://www.homecourt.ai/faq/shotanalysis",
+      "note": "Undated product documentation; no verified current accuracy benchmark.",
+      "checked_on": "2026-11-11"
+    },
+    "subscription": {
+      "title": "HomeCourt Subscription FAQ",
+      "url": "https://www.homecourt.ai/faq/subscription",
+      "note": "Undated and uses historical plan wording. Prices must be confirmed at checkout.",
+      "checked_on": "2026-11-11"
+    },
+    "family": {
+      "title": "HomeCourt Family FAQ",
+      "url": "https://www.homecourt.ai/faq/squads2",
+      "note": "Undated FAQ. Confirm eligibility in the account before buying.",
+      "checked_on": "2026-11-11"
+    },
+    "teams": {
+      "title": "HomeCourt Team FAQ",
+      "url": "https://www.homecourt.ai/faq/teams",
+      "note": "Undated FAQ; menus may differ by installed app version.",
+      "checked_on": "2026-11-11"
+    },
+    "cancel": {
+      "title": "HomeCourt App Store cancellation help",
+      "url": "https://help.homecourt.ai/hc/en-us/articles/6994050826003-How-do-I-cancel-my-subscription-if-I-purchased-it-in-the-App-Store",
+      "note": "Published update June 16, 2022; applies only to Apple-billed purchases.",
+      "checked_on": "2026-11-11"
+    },
+    "apple": {
+      "title": "Apple: cancel a subscription",
+      "url": "https://support.apple.com/en-us/118428",
+      "note": "Current public Apple cancellation instructions. Use the Apple Account that purchased the subscription.",
+      "checked_on": "2026-11-11"
+    },
+    "ball": {
+      "title": "Ball AI official website",
+      "url": "https://www.ballai.app/",
+      "note": "Published positioning, not a head-to-head performance test.",
+      "checked_on": "2026-11-11"
+    },
+    "hoopcut": {
+      "title": "Hoopcut on the App Store",
+      "url": "https://apps.apple.com/us/app/hoopcut-basketball-highlights/id6824860341",
+      "note": "Official product listing; Hoopcut focus is auto clipping and Shot Tracer.",
+      "checked_on": "2026-11-11"
+    },
+    "pe": {
+      "title": "HomeCourt PE curriculum",
+      "url": "https://www.homecourt.ai/hcpe",
+      "note": "Official educational workflow describes exported workout videos.",
+      "checked_on": "2026-11-11"
+    },
+    "appstore": {
+      "title": "HomeCourt — US App Store listing",
+      "url": "https://apps.apple.com/us/app/homecourt-basketball-training/id1258520424",
+      "checked_on": "2026-11-11",
+      "note": "US public listing at review: Monthly $7.99 and Yearly $69.99. An account-specific checkout offer can differ."
+    }
+  },
+  "pages": [
+    {
+      "slug": "alternatives",
+      "title": "HomeCourt Alternatives: Choose by Basketball Task",
+      "description": "Compare HomeCourt alternatives for shot tracking, manual basketball logs and highlight editing. Pick your task and find the right next step.",
+      "category": "Choose your workflow",
+      "keywords": [
+        "homecourt alternatives",
+        "apps like homecourt",
+        "homecourt alternative",
+        "free homecourt alternative"
+      ],
+      "intro": "Find the right next step for your basketball footage or practice. Start with the job you need done, then compare the tools that actually do it.",
+      "answer": "A useful HomeCourt alternative depends on the task. Automatic practice tracking, a manual shot log and a finished highlight video need different tools. Hoopcut covers basketball auto clipping and Shot Tracer on iPhone; it is not presented here as a replacement for every HomeCourt training feature.",
+      "sections": [
+        {
+          "heading": "Choose the result before choosing the app",
+          "body": "Write down what you want to leave practice with: a complete attempt record, a training activity, or a short video. A highlight reel can deliberately leave out misses; a shooting percentage cannot. If you need both, keep the full attempt record and make a separate selection for your reel. This simple distinction prevents a video editor from being mistaken for an automatic statistics service."
+        },
+        {
+          "heading": "Build a shortlist you can actually test",
+          "body": "For camera-based training, compare HomeCourt with Ball AI using their official product information. For an editable manual record, try the free Hoopcut browser shot chart. For extracting basketball clips and adding a visible flight trail, inspect Hoopcut’s iPhone workflow. The table describes intended jobs, not a measured ranking. We have not run a controlled accuracy comparison or verified every paid tier."
+        },
+        {
+          "heading": "Run one repeatable evaluation",
+          "body": "Use the same court and a short, counted set of attempts when evaluating shot tracking. Note what the camera can see, check the counted attempts and inspect the saved output. For editing, use footage you already own and judge whether the exported result preserves the play. Record the actual price and device requirements you see rather than relying on a marketing headline or an old review."
+        },
+        {
+          "heading": "Keep the option to stay with HomeCourt",
+          "body": "A replacement is not always necessary. If your only problem is camera framing, try the setup guide first. If you want a shareable video after a workout, export a usable file and evaluate a separate editing step. Do not delete your training history just to try another tool. Keep a local copy of any video you want to retain before changing your workflow."
+        }
+      ],
+      "checklist": [
+        "Choose tracking, manual logging or editing as the main task.",
+        "Check support for the device you already own.",
+        "Test a short session and inspect the saved output.",
+        "Record the current price before starting a paid plan."
+      ],
+      "sources": [
+        "home",
+        "ball",
+        "hoopcut"
+      ],
+      "related": [
+        "homecourt-vs-hoopcut",
+        "android",
+        "pricing",
+        "export-video"
+      ],
+      "cta": {
+        "label": "Try the manual basketball shot chart",
+        "url": "/tools/basketball-shot-chart"
+      },
+      "choices": [
+        {
+          "label": "Track attempts with a camera",
+          "answer": "Compare a short counted practice session in camera-based training apps. Check their current device support and plan limits.",
+          "url": "https://www.ballai.app/",
+          "link": "Explore Ball AI’s published features"
+        },
+        {
+          "label": "Log shots without camera tracking",
+          "answer": "Use a browser shot chart and enter every make and miss yourself. This is manual recording, not automatic detection.",
+          "url": "/tools/basketball-shot-chart",
+          "link": "Open the manual shot chart"
+        },
+        {
+          "label": "Make a highlight reel",
+          "answer": "Review basketball clips and build a selected sequence. The browser demo uses prepared footage; the iPhone app provides the product workflow.",
+          "url": "/demo/auto-clipping",
+          "link": "Try the clipping demo"
+        }
+      ],
+      "widget": "decision",
+      "table": {
+        "headers": [
+          "Option",
+          "Useful for",
+          "What to verify"
+        ],
+        "rows": [
+          [
+            "HomeCourt",
+            "Camera-based practice and training",
+            "Current device and plan support"
+          ],
+          [
+            "Ball AI",
+            "Camera-based basketball training",
+            "Official features and a sample workout"
+          ],
+          [
+            "Hoopcut iPhone app",
+            "Auto clipping and Shot Tracer",
+            "Your input footage and desired export"
+          ],
+          [
+            "Hoopcut browser shot chart",
+            "Manual makes, misses and locations",
+            "You enter every attempt; no cloud sync"
+          ]
+        ]
+      },
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "homecourt-vs-hoopcut",
+      "title": "HomeCourt vs Hoopcut: Training or Basketball Highlights?",
+      "description": "Compare HomeCourt and Hoopcut by workflow: practice tracking, basketball auto clipping and Shot Tracer. See which job each product addresses.",
+      "category": "Choose your workflow",
+      "keywords": [
+        "homecourt vs hoopcut",
+        "hoopcut vs homecourt",
+        "homecourt highlights app"
+      ],
+      "intro": "Training records and highlight videos tell different stories. Choose the workflow that matches the result you want.",
+      "answer": "HomeCourt’s published focus is interactive basketball training and camera-based analysis. Hoopcut’s focus is turning basketball footage into clips and adding Shot Tracer. They can serve different steps of the same session; this is a task comparison, not a claim that either app wins every category.",
+      "sections": [
+        {
+          "heading": "When the session itself is the product",
+          "body": "If you want to follow a training activity and review a practice record, evaluate the training features HomeCourt documents. Keep every attempt in the record and compare similar sessions. A selected sequence of made baskets may be enjoyable to watch, but it cannot tell you the success rate of the entire workout."
+        },
+        {
+          "heading": "When the finished video is the product",
+          "body": "If you already have basketball footage and want clips to review or share, evaluate Hoopcut’s auto clipping workflow. Then decide whether a Shot Tracer makes the ball flight easier to follow. Keep enough lead-in to show the player and enough ending to show the outcome. An effect should help the viewer read the play rather than hide missing context."
+        },
+        {
+          "heading": "A practical two-output workflow",
+          "body": "Plan the recording, retain the original file, and keep your practice record separate from your edit. If you use a file exported from another app, inspect the actual resolution, overlays and framing first. A saved video file is a handoff, not a direct account integration. No HomeCourt-to-Hoopcut account sync or statistics import is claimed."
+        },
+        {
+          "heading": "What this comparison does not measure",
+          "body": "This guide compares stated uses and the working browser resources on this site. It does not establish detection accuracy, rendering speed or player improvement. The free shot chart and court diagram are independent browser tools. They are not additional automatic tracking features inside the Hoopcut app."
+        }
+      ],
+      "checklist": [
+        "Decide whether the output is a training record or a video.",
+        "Keep an unedited source file.",
+        "Compare the actual result on your device.",
+        "Separate tracking statistics from selected highlights."
+      ],
+      "sources": [
+        "home",
+        "hoopcut"
+      ],
+      "related": [
+        "alternatives",
+        "shot-analysis",
+        "export-video"
+      ],
+      "cta": {
+        "label": "Try basketball auto clipping",
+        "url": "/demo/auto-clipping"
+      },
+      "choices": [
+        {
+          "label": "I want a practice record",
+          "answer": "Review HomeCourt’s training features and camera setup. A video edit alone will not record all your attempts.",
+          "url": "/homecourt/camera-setup",
+          "link": "Read the camera setup guide"
+        },
+        {
+          "label": "I want clips to share",
+          "answer": "Use the prepared clipping demo to explore selecting plays, then evaluate your own footage in the iPhone app.",
+          "url": "/demo/auto-clipping",
+          "link": "Explore clipping"
+        },
+        {
+          "label": "I want to show the ball flight",
+          "answer": "Preview the visual effect and read how it differs from numerical shot analysis.",
+          "url": "/demo/shot-tracer",
+          "link": "Explore Shot Tracer"
+        }
+      ],
+      "widget": "decision",
+      "table": {
+        "headers": [
+          "Your goal",
+          "Start with",
+          "Keep in mind"
+        ],
+        "rows": [
+          [
+            "Practice activities and a training record",
+            "HomeCourt official training features",
+            "Check current access and device support"
+          ],
+          [
+            "Basketball clips from footage",
+            "Hoopcut auto clipping",
+            "Review context before exporting"
+          ],
+          [
+            "Visible ball-flight effect",
+            "Hoopcut Shot Tracer",
+            "An effect is not a measured release angle"
+          ],
+          [
+            "Manual browser shot log",
+            "Hoopcut free shot chart",
+            "Separate tool; attempts entered by you"
+          ]
+        ]
+      },
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "android",
+      "title": "HomeCourt on Android: Availability & Practical Options",
+      "description": "Is HomeCourt available on Android? Check the official position, try a manual browser shot chart, and choose a practical basketball recording workflow.",
+      "category": "Choose your workflow",
+      "keywords": [
+        "homecourt android",
+        "homecourt app android",
+        "homecourt for android"
+      ],
+      "intro": "Have an Android phone? Separate the app you can install from the basketball task you can still complete.",
+      "answer": "HomeCourt’s public help page says it is available on iOS only. Hoopcut’s released app is also for iPhone. For manual basketball shot recording on an Android browser, the Hoopcut shot chart is an option; it does not provide camera-based tracking.",
+      "sections": [
+        {
+          "heading": "Start with the official distribution source",
+          "body": "Check the official availability link below rather than treating an unrelated app with a similar name as HomeCourt. This guide does not provide an APK or claim that an iPhone-only app runs on Android. An unofficial download is not evidence of compatibility, account access or equivalent features."
+        },
+        {
+          "heading": "Record a session without installing a training app",
+          "body": "For a manual practice record, open the shot chart in your phone browser. Choose Made or Missed and tap the approximate location. Enter all attempts, including misses, then download the record before leaving. You supply the observations; no camera is identifying the ball or deciding whether a shot went in."
+        },
+        {
+          "heading": "Keep a usable video alongside the log",
+          "body": "A normal camera recording and a separate attempt log can serve different purposes. Before practice, record a short test and replay it to confirm that the player and basket stay in frame. Use timestamps to connect selected attempts to the source video. Do not assume the browser shot chart imports, analyses or synchronises that recording."
+        },
+        {
+          "heading": "Evaluate automatic Android tracking separately",
+          "body": "If automatic counting is essential, make confirmed Android availability a requirement when comparing other products. Check the official store listing for your device and region, then test an actual session before relying on its numbers. A browser log can be a fallback, but it should not be advertised as equivalent to automatic tracking."
+        }
+      ],
+      "checklist": [
+        "Confirm the app’s official platform support.",
+        "Open the browser shot chart if manual entry suits the task.",
+        "Test a short camera recording separately.",
+        "Export the attempt log before clearing browser data."
+      ],
+      "sources": [
+        "android"
+      ],
+      "related": [
+        "alternatives",
+        "offline",
+        "edit-shot-chart"
+      ],
+      "cta": {
+        "label": "Open the browser shot chart",
+        "url": "/tools/basketball-shot-chart"
+      },
+      "choices": [],
+      "widget": "checklist",
+      "table": null,
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "pricing",
+      "title": "HomeCourt Pricing: Compare the Plan You Actually See",
+      "description": "Evaluate HomeCourt pricing with a plan checklist and cost-per-session calculator. Confirm current billing, included features and household access before paying.",
+      "category": "Choose your workflow",
+      "keywords": [
+        "homecourt pricing",
+        "homecourt cost",
+        "is homecourt free",
+        "homecourt subscription"
+      ],
+      "intro": "Compare the price on your checkout screen with the practice you will actually do. No assumed subscription price required.",
+      "answer": "The US App Store listing reviewed on November 11, 2026 lists HomeCourt Monthly at $7.99 and HomeCourt Yearly at $69.99, alongside a free download with in-app purchases. These are public listing prices, not a quote for your account. Confirm the offer and included features at checkout, then use your own numbers in the calculator.",
+      "sections": [
+        {
+          "heading": "What the US listing shows",
+          "body": "At the listed monthly price, twelve payments total $95.88; the listed yearly purchase is $69.99. That arithmetic alone does not decide which plan suits you. A short season, a different regional offer or features you do not need can change the decision. The listing also contains older purchase names, so use the actual offer presented to your account rather than selecting a price from a historical SKU."
+        },
+        {
+          "heading": "Separate a free download from the feature you need",
+          "body": "List the specific feature you intend to use: basic recording, older workout history, a training program or household access. Check whether that feature is available in your account before starting a subscription. Download availability and premium entitlement are different questions. Save the offer details you are comparing so a later renewal is not confused with an introductory offer."
+        },
+        {
+          "heading": "Compare equal billing periods",
+          "body": "An annual price should be compared with twelve monthly payments only if you expect to keep using the service for a year. A lower annual equivalent does not automatically mean a lower total cost for a short season. Enter the price and billing period you actually see, then estimate the number of sessions you are realistically likely to complete."
+        },
+        {
+          "heading": "Check the whole household or team arrangement",
+          "body": "Do not divide a plan price by a roster size until you confirm the allowed profiles and who receives the benefits. Individual, family and team arrangements can have different conditions. Record the organizer, purchase channel and renewal date along with the amount. A player leaving the team is a separate event from changing the subscription."
+        },
+        {
+          "heading": "Match spending to the outcome",
+          "body": "If you only need a manual shooting record, test the free browser shot chart first. If your goal is basketball editing, evaluate the clipping workflow separately. Spending more on a training plan does not itself produce a finished video, and paying for editing does not imply access to HomeCourt training history."
+        }
+      ],
+      "checklist": [
+        "Record price, currency and billing period from checkout.",
+        "Confirm the exact feature you need is included.",
+        "Check renewal and trial conditions.",
+        "Estimate actual practice sessions, not ideal attendance."
+      ],
+      "sources": [
+        "appstore",
+        "subscription"
+      ],
+      "related": [
+        "cancel-subscription",
+        "family-sharing",
+        "alternatives"
+      ],
+      "cta": {
+        "label": "Try a free manual shot chart",
+        "url": "/tools/basketball-shot-chart"
+      },
+      "choices": [],
+      "widget": "cost",
+      "table": {
+        "heading": "US public price references.",
+        "headers": [
+          "Listed purchase",
+          "Public price at review",
+          "How to compare"
+        ],
+        "rows": [
+          [
+            "HomeCourt Monthly",
+            "$7.99 USD",
+            "Check the renewal terms in your account"
+          ],
+          [
+            "HomeCourt Yearly",
+            "$69.99 USD",
+            "About $5.83/month equivalent; billed yearly"
+          ],
+          [
+            "Free download",
+            "In-app purchases available",
+            "Confirm access to the specific feature you need"
+          ]
+        ]
+      },
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "camera-setup",
+      "title": "HomeCourt Camera Setup: Frame a Basketball Session",
+      "description": "Plan a HomeCourt camera setup with a framing checklist and editable court diagram. Check player visibility, basket coverage and a short test recording.",
+      "category": "Set up & troubleshoot",
+      "keywords": [
+        "homecourt camera setup",
+        "homecourt tripod setup",
+        "how to set up homecourt",
+        "homecourt camera position"
+      ],
+      "intro": "Before counting shots, check what the camera can see. Build a repeatable setup for your next basketball session.",
+      "answer": "HomeCourt’s setup guidance recommends a stable elevated device near the sideline around half court, with the player, backboard and three-point line visible. Use that as a starting point, then verify the view on your actual court. A placement diagram cannot predict your phone’s field of view.",
+      "sections": [
+        {
+          "heading": "Use the documented position as a starting point",
+          "body": "HomeCourt’s published setup article suggests a tripod or stand around 3–5 feet high along the sideline near half court. It asks for a view of the player, backboard and full three-point line. Start there if your venue permits it, then check the actual phone preview from each planned shooting spot. The same physical position can frame differently on another phone or court."
+        },
+        {
+          "heading": "Check the venue before the screen",
+          "body": "Choose a position that does not obstruct players, spectators or an exit. Keep the support stable and outside the active playing area. Before adjusting the app, look at lighting, obstructions and whether another basket or moving group enters the intended view. These are observations you can record and repeat; they are not a guarantee of recognition accuracy."
+        },
+        {
+          "heading": "Test the edges of the planned activity",
+          "body": "Ask the shooter to stand at the nearest and farthest positions they will use. Watch the phone preview as they move. A frame that works for a stationary free throw may lose the ball or feet during a corner attempt. Leave enough room for the whole action rather than zooming in simply because the basket looks small."
+        },
+        {
+          "heading": "Make a short test before the full workout",
+          "body": "Record a few deliberate attempts and replay the saved result. Inspect visibility, the beginning and ending of each shot, and whether the phone moved. Change one setup variable at a time so you know what improved the view. Keep a note of the successful position, support height and recording orientation for the next visit."
+        },
+        {
+          "heading": "Draw the plan, then validate it in person",
+          "body": "Use the editable court diagram to place a camera marker and the planned shooting spots. The marker records your intention; it does not simulate lens coverage or certify a safe camera location. Export the diagram for another person helping with the session, then make the on-court check before recording."
+        }
+      ],
+      "checklist": [
+        "Confirm the phone support is stable and outside active play.",
+        "Check both near and far shooting positions in the preview.",
+        "Replay a short saved test.",
+        "Save a diagram of the setup that worked."
+      ],
+      "sources": [
+        "setup"
+      ],
+      "related": [
+        "shots-not-detected",
+        "dribbling-not-detected",
+        "offline"
+      ],
+      "cta": {
+        "label": "Draw your camera and shooting positions",
+        "url": "/tools/basketball-court-diagram"
+      },
+      "choices": [],
+      "widget": "checklist",
+      "table": null,
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "shots-not-detected",
+      "title": "HomeCourt Not Tracking Shots? A Focused Check",
+      "description": "Troubleshoot HomeCourt shot detection with a symptom selector, short test log and official support links. Separate missed attempts from incorrect results.",
+      "category": "Set up & troubleshoot",
+      "keywords": [
+        "homecourt not tracking shots",
+        "homecourt inaccurate",
+        "homecourt shots not detected"
+      ],
+      "intro": "Find out whether the problem is the attempt count, the result or the location. Then test one change at a time.",
+      "answer": "HomeCourt’s support guidance emphasizes visibility, lighting and keeping the device still during recording. Begin with a short counted set rather than repeating a long workout. Use the result to decide whether to adjust the camera, correct an existing session or contact support.",
+      "sections": [
+        {
+          "heading": "Name the error precisely",
+          "body": "An attempt that is absent from the log is different from a recorded attempt marked with the wrong outcome. A location error is different again. Write down the expected attempts and makes before reviewing the app record. Avoid using only the best clips as your reference because those omit the very attempts you are investigating."
+        },
+        {
+          "heading": "Use a small controlled check",
+          "body": "Choose a spot where the player, ball and basket are visible. Record a short sequence while someone counts attempts manually. Keep the device in place during the sequence. Compare the complete record with that count. If you change lighting or framing, run a new sequence and label it separately rather than combining the results."
+        },
+        {
+          "heading": "Correct the record carefully",
+          "body": "The linked official support article describes session editing. Menu labels can differ from older FAQ instructions, so use the controls present in your installed version. Before making a correction, verify the result against the actual play. Correcting one record does not prove the same setup will detect the next workout accurately."
+        },
+        {
+          "heading": "Send support something reproducible",
+          "body": "If the issue persists, preserve the session and record the device, app version, approximate conditions and observed discrepancy. The official article asks for profile and activity links. Send account-specific information only through HomeCourt support, not a public comment. This page cannot inspect your account or repair its data."
+        }
+      ],
+      "checklist": [
+        "Record expected attempts and makes for a short test.",
+        "Identify whether the error is count, result or location.",
+        "Change one recording condition and test again.",
+        "Keep session details for official support if needed."
+      ],
+      "sources": [
+        "shots"
+      ],
+      "related": [
+        "camera-setup",
+        "edit-shot-chart",
+        "shot-analysis"
+      ],
+      "cta": {
+        "label": "Use a manual shot log as your reference",
+        "url": "/tools/basketball-shot-chart"
+      },
+      "choices": [
+        {
+          "label": "Attempts are missing",
+          "answer": "Check whether the player, feet, ball and basket remain visible and whether the camera moved. Repeat a short manually counted set.",
+          "url": "/homecourt/camera-setup",
+          "link": "Check camera framing"
+        },
+        {
+          "label": "Makes or locations are wrong",
+          "answer": "Review the recorded attempt and correct only what you can verify. Do not invent a missing shot location.",
+          "url": "/homecourt/edit-shot-chart",
+          "link": "Review correction options"
+        },
+        {
+          "label": "The video will not play",
+          "answer": "Treat this as a playback or saving problem first. A visible statistic is not proof that the associated video saved successfully.",
+          "url": "/homecourt/video-not-loading",
+          "link": "Check missing video options"
+        }
+      ],
+      "widget": "decision",
+      "table": null,
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "dribbling-not-detected",
+      "title": "HomeCourt Dribbling Not Detected: Setup Checks",
+      "description": "Check HomeCourt dribbling detection with a whole-body framing worksheet, lighting checks and a short repeatable test before recording another drill.",
+      "category": "Set up & troubleshoot",
+      "keywords": [
+        "homecourt dribbling not detected",
+        "homecourt not detecting movement",
+        "homecourt dribbling setup"
+      ],
+      "intro": "A dribbling drill needs a different view from a shot at the basket. Check your movement space before trying again.",
+      "answer": "HomeCourt’s movement guidance asks for a clear view of the whole body, visible ground in front of the player and hands that are not hidden by the body. Start with the drill’s on-screen setup instructions, then use a short controlled test.",
+      "sections": [
+        {
+          "heading": "Frame the movement rather than the basket",
+          "body": "Set up for the area in which the player will move. A distant half-court shooting view is not automatically suitable for an activity that reads body movement. Check the screen with the player at the left, right and nearest edges of the intended space. If part of the body disappears, adjust the view before beginning."
+        },
+        {
+          "heading": "Remove avoidable visual ambiguity",
+          "body": "Inspect the background and the contrast between the player, ball and surroundings. Keep other people out of the test area and use consistent lighting. Follow the stance shown for the specific drill rather than inventing a different starting pose. A short test helps distinguish a setup issue from confusion about the activity instructions."
+        },
+        {
+          "heading": "Compare the same movement after one change",
+          "body": "Choose one short movement sequence and repeat it after a single setup change. Note the phone angle, position and whether hands or ball left the frame. A new drill, a new person and a new camera position all at once make it hard to identify what changed. Keep the comparison descriptive; do not turn a few attempts into an accuracy claim."
+        },
+        {
+          "heading": "Keep editing separate from movement detection",
+          "body": "If you film the practice for a recap, store that recording separately from any drill score. Hoopcut can be evaluated for basketball clip editing, but this guide does not claim it repairs HomeCourt dribbling detection or imports a drill score. Use official HomeCourt support for a persistent activity-specific error."
+        }
+      ],
+      "checklist": [
+        "Read the selected drill’s setup instruction.",
+        "Check whole-body visibility across the movement area.",
+        "Run a short test with one player in frame.",
+        "Document one change before repeating the same movement."
+      ],
+      "sources": [
+        "dribbles"
+      ],
+      "related": [
+        "camera-setup",
+        "shots-not-detected",
+        "alternatives"
+      ],
+      "cta": {
+        "label": "Plan a recording area",
+        "url": "/tools/basketball-court-diagram"
+      },
+      "choices": [],
+      "widget": "checklist",
+      "table": null,
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "video-not-loading",
+      "title": "HomeCourt Video Not Loading or Missing: What to Check",
+      "description": "Check HomeCourt workout video problems without confusing a saved score with a saved video. Preserve evidence, test playback and find official support.",
+      "category": "Set up & troubleshoot",
+      "keywords": [
+        "homecourt video not loading",
+        "homecourt videos lost",
+        "homecourt video not playing",
+        "homecourt cannot download video"
+      ],
+      "intro": "Keep the original session intact while you work out whether the video is unavailable, unsaved or simply not playing.",
+      "answer": "A visible workout score does not establish that a playable video was saved. HomeCourt’s lost-video article says recovery is not possible when the video neither saved locally nor uploaded. That statement describes one failure case; it does not diagnose every loading error.",
+      "sections": [
+        {
+          "heading": "Locate every copy you actually have",
+          "body": "Check whether there is a previously exported file in your own photo library or files. Try that copy directly and distinguish it from a thumbnail inside the app. Note whether the issue affects one session or all sessions. Do not erase app data or delete the workout as a first troubleshooting step when it may contain the only remaining copy."
+        },
+        {
+          "heading": "Separate network-dependent playback from a local file",
+          "body": "HomeCourt documents that viewing a video which is not cached locally requires connectivity. Retry on a working connection and note the exact screen or error. A file that plays locally but cannot be shared has a different problem from a session whose video never loads. Use those observations when asking for help."
+        },
+        {
+          "heading": "Prepare a useful support report",
+          "body": "Record the affected session date, device and app version, whether statistics still appear, and whether an exported copy exists. Keep the information concise enough that another person can reproduce the issue. Account-specific session links belong in official support correspondence, not in the public worksheet or a comment thread."
+        },
+        {
+          "heading": "Protect the next recording with a playback check",
+          "body": "After your next short session, confirm that the saved video opens before recording a full workout. Where export is available, retain a separate file and replay it outside the app. A second copy does not fix an already missing file, but it gives your future editing workflow a source you can inspect independently."
+        }
+      ],
+      "checklist": [
+        "Check whether any exported local copy exists.",
+        "Note whether one session or every session is affected.",
+        "Test playback on a working connection.",
+        "Preserve the session and send observed facts to official support."
+      ],
+      "sources": [
+        "lost",
+        "offline"
+      ],
+      "related": [
+        "export-video",
+        "offline",
+        "shots-not-detected"
+      ],
+      "cta": {
+        "label": "Open HomeCourt’s official support center",
+        "url": "https://help.homecourt.ai/hc/en-us"
+      },
+      "choices": [
+        {
+          "label": "A local exported file plays",
+          "answer": "Keep that file. The remaining issue is accessing or sharing the in-app copy, not reconstructing the visible basketball action.",
+          "url": "/homecourt/export-video",
+          "link": "Plan the editing handoff"
+        },
+        {
+          "label": "Statistics exist but video will not play",
+          "answer": "Check connectivity and preserve the session. The score alone does not prove the video saved.",
+          "url": "https://help.homecourt.ai/hc/en-us",
+          "link": "Open official support"
+        },
+        {
+          "label": "No playable copy can be found",
+          "answer": "Do not promise recovery. HomeCourt describes a case where unsaved and unuploaded videos cannot be recovered. Ask support about your specific session.",
+          "url": "https://help.homecourt.ai/hc/en-us/articles/6992959898771-My-workout-videos-are-lost",
+          "link": "Read the official lost-video explanation"
+        }
+      ],
+      "widget": "decision",
+      "table": null,
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "export-video",
+      "title": "Export HomeCourt Video: From Workout to Highlight Edit",
+      "description": "Prepare a HomeCourt video export for basketball editing. Check playback, permission, framing and timestamps before building a highlight reel.",
+      "category": "Video & sharing",
+      "keywords": [
+        "homecourt export video",
+        "download homecourt video",
+        "homecourt share video",
+        "homecourt highlights export"
+      ],
+      "intro": "Get a playable file first. Then decide which basketball moments belong in the final edit.",
+      "answer": "HomeCourt’s Team FAQ describes an export control in the video player for team administrators. Its PE materials also describe exporting recorded workouts. Availability and menu labels can differ by role and version; confirm the export action in your own session before planning the edit.",
+      "sections": [
+        {
+          "heading": "Check whose recording you are exporting",
+          "body": "Use your own recording or one you are allowed to edit and share. Being able to watch a team member’s session does not establish permission to publish it elsewhere. For a team video, check both the available account role and the player’s sharing agreement before moving the file into an editing workflow."
+        },
+        {
+          "heading": "Find the export action for an accessible team video",
+          "body": "For a team administrator, HomeCourt’s published Team FAQ describes opening the video, starting playback and selecting the export icon at the upper right. Treat that as the documented route for that role, not a promise that every viewer has the same control. If it is absent, check your role and the current official help rather than trying to copy an unavailable recording through this website."
+        },
+        {
+          "heading": "Verify the saved file outside HomeCourt",
+          "body": "After using the available export control, open the saved copy in your normal player. Check that it includes the intended attempt, sound if needed, and the beginning and ending of the action. Record whether a score overlay or crop is already part of the file. An editor cannot recover pixels or footage absent from the export."
+        },
+        {
+          "heading": "Create a shortlist with source timestamps",
+          "body": "Keep the exported recording unchanged and work from a copy. In the clip log, identify the start and end of each useful moment, the visible player and the outcome. Leave enough time to understand the movement before release. Mark uncertain plays for review instead of resolving uncertainty with a confident caption."
+        },
+        {
+          "heading": "Move from workout footage to a shareable edit",
+          "body": "A playable file can become the input to a separate basketball editing workflow. Explore Hoopcut’s clipping and Shot Tracer demos to understand those steps. No direct HomeCourt account connection or automatic data migration is offered here. Check your own file in the app before assuming that its format, overlays or framing will produce the result you want."
+        }
+      ],
+      "checklist": [
+        "Confirm access and permission for the recording.",
+        "Open the export outside the source app.",
+        "Inspect framing and existing overlays.",
+        "Log clip start and end times before editing."
+      ],
+      "sources": [
+        "teams",
+        "pe"
+      ],
+      "related": [
+        "video-not-loading",
+        "homecourt-vs-hoopcut",
+        "shot-analysis"
+      ],
+      "cta": {
+        "label": "Build a basketball clip timestamp log",
+        "url": "/templates/basketball-clip-log"
+      },
+      "choices": [],
+      "widget": "checklist",
+      "table": null,
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "shot-analysis",
+      "title": "HomeCourt Shot Analysis vs a Basketball Shot Tracer",
+      "description": "Understand HomeCourt shot analysis, release metrics and the difference from a visual Shot Tracer. Use a basketball video review checklist.",
+      "category": "Practice & records",
+      "keywords": [
+        "homecourt shot analysis",
+        "homecourt release angle",
+        "homecourt shot tracer",
+        "homecourt advanced metrics"
+      ],
+      "intro": "A number about a shot and a trail drawn over a shot answer different questions. Read each in context.",
+      "answer": "HomeCourt documents shot-analysis metrics such as release time and release angle. A Hoopcut Shot Tracer is a visual ball-flight effect. A visible curve should not be treated as a calibrated angle measurement or proof that a shooting technique is correct.",
+      "sections": [
+        {
+          "heading": "Decide what the observation can establish",
+          "body": "An analysis value is an output of a particular recording and measurement method. A visual trail helps a viewer follow the ball in the frame. Neither should be interpreted without checking what is visible and how the output was produced. Keep the raw recording available whenever you discuss a result with a coach or teammate."
+        },
+        {
+          "heading": "Check recording conditions before interpreting numbers",
+          "body": "Use a view that preserves the player, release and relevant flight. If the action is obscured or cut off, write that limitation alongside your observation. Compare repeated attempts under similar conditions rather than choosing one dramatic frame. This guide does not supply an ideal release-angle target or a personal biomechanics diagnosis."
+        },
+        {
+          "heading": "Choose an effect for communication",
+          "body": "For a short highlight, review whether the tracer makes the path clearer at normal playback speed. Check the start, finish, contrast and any overlap with the player. A thicker line is not necessarily more informative. Preserve a version without the effect so viewers can inspect the original action if the overlay creates ambiguity."
+        },
+        {
+          "heading": "Keep statistics and presentation in separate records",
+          "body": "Store the session’s measurements with their source and date. Keep editing choices such as crop, slow motion and trail appearance in your video notes. This separation helps prevent a polished highlight from being mistaken for a complete training report. Use the comparison below to decide which output you actually need."
+        }
+      ],
+      "checklist": [
+        "State whether you need a measurement or a visual explanation.",
+        "Review the unedited attempt before adding effects.",
+        "Keep recording limitations with any numerical claim.",
+        "Compare the edit with the original at normal speed."
+      ],
+      "sources": [
+        "analysis"
+      ],
+      "related": [
+        "homecourt-vs-hoopcut",
+        "edit-shot-chart",
+        "export-video"
+      ],
+      "cta": {
+        "label": "Try the basketball Shot Tracer demo",
+        "url": "/demo/shot-tracer"
+      },
+      "choices": [],
+      "widget": "checklist",
+      "table": {
+        "headers": [
+          "Output",
+          "Helps answer",
+          "Does not establish by itself"
+        ],
+        "rows": [
+          [
+            "Shot-analysis metric",
+            "What did this analysis report?",
+            "A personal coaching diagnosis"
+          ],
+          [
+            "Visual trajectory effect",
+            "Where does the ball appear to travel?",
+            "A calibrated release angle"
+          ],
+          [
+            "Complete attempt log",
+            "How many attempts and makes were recorded?",
+            "Why a shot was made or missed"
+          ],
+          [
+            "Selected highlight reel",
+            "Which plays do I want to share?",
+            "The accuracy of the entire session"
+          ]
+        ]
+      },
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "edit-shot-chart",
+      "title": "HomeCourt Shot Chart: Check Results & Keep a Manual Log",
+      "description": "Review HomeCourt make/miss and shot-location corrections, then keep a separate manual basketball shot chart with CSV and image downloads.",
+      "category": "Practice & records",
+      "keywords": [
+        "homecourt shot chart",
+        "homecourt edit shots",
+        "homecourt wrong shot location",
+        "homecourt edit make miss"
+      ],
+      "intro": "Correct only what you can verify. Keep a usable attempt record beside the video, not just a percentage.",
+      "answer": "HomeCourt’s support article describes editing a session’s outcome and shot location. A separate manual shot chart can help you retain your own observations, but it does not edit HomeCourt, synchronise an account or recover missing attempts automatically.",
+      "sections": [
+        {
+          "heading": "Compare the record with the full set of attempts",
+          "body": "Use the source recording or a reliable live count, not a selected highlight reel. Check attempts before checking percentage: the same percentage can describe very different sample sizes. Write down what was missing, incorrect or uncertain. If an attempt cannot be verified, keep that uncertainty visible instead of choosing a convenient result."
+        },
+        {
+          "heading": "Use the editing path documented for your version",
+          "body": "The linked HomeCourt support article gives this path: Profile → Activities → View Details → Settings → Edit Session. It describes changing makes/misses and shot locations. An older General FAQ instead describes shot-by-shot editing, so labels may differ on your device. Find the corresponding controls, make only a verified correction and inspect the saved result afterwards. A manual chart on this website cannot make that change inside HomeCourt."
+        },
+        {
+          "heading": "Keep a separate portable chart",
+          "body": "Open the browser shot chart, select the court reference and record each make or miss at an approximate location. Correct a misplaced marker and export the complete attempt log as CSV. Positions are manually entered estimates, not measured camera coordinates. Keep the original file if you want to compare records later."
+        },
+        {
+          "heading": "Compare like with like",
+          "body": "Separate free throws, stationary spot shooting and game-speed attempts when interpreting a practice record. Note the court, drill and session date in your own file. Do not treat a change over a tiny set of attempts as proof that a tool improved shooting. The record should make the practice easier to review, not create an unsupported performance claim."
+        }
+      ],
+      "checklist": [
+        "Verify the complete attempt count.",
+        "Identify incorrect outcomes separately from locations.",
+        "Inspect the saved correction in the source app.",
+        "Export a separate manual record if useful."
+      ],
+      "sources": [
+        "shots"
+      ],
+      "related": [
+        "shots-not-detected",
+        "shot-analysis",
+        "offline"
+      ],
+      "cta": {
+        "label": "Create a manual basketball shot chart",
+        "url": "/tools/basketball-shot-chart"
+      },
+      "choices": [],
+      "widget": "checklist",
+      "table": null,
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "teams",
+      "title": "HomeCourt Teams: A Basketball Practice Setup Checklist",
+      "description": "Plan a HomeCourt team workflow with roles, invitations, test activities and video-sharing checks. Keep a downloadable practice handoff checklist.",
+      "category": "Practice & records",
+      "keywords": [
+        "homecourt teams",
+        "homecourt team setup",
+        "homecourt for coaches",
+        "homecourt join team"
+      ],
+      "intro": "Get the first player working before inviting the whole roster. Make the recording and review routine clear.",
+      "answer": "HomeCourt documents creating teams, inviting players and reviewing team activity. Use the official instructions for account actions. The worksheet here helps a coach plan roles, a test session and a video-review handoff; it does not connect to or administer a HomeCourt team.",
+      "sections": [
+        {
+          "heading": "Write a simple first-session brief",
+          "body": "Specify the activity, what the player should record, and what the coach will review. Include a short setup check so players know what belongs in frame. Avoid making the first session a long collection of unrelated drills. One clearly defined task is easier to verify and explain when someone needs help."
+        },
+        {
+          "heading": "Separate access from responsibility",
+          "body": "The published Team FAQ describes creating a team through Settings → Teams → the plus control, then inviting players. Check the corresponding controls in your version. Name the invitation owner and the person reviewing submissions. Have one player accept and test access before distributing the workflow to the roster. For younger players, involve the responsible adult in the sharing arrangement; an invitation does not establish permission to republish a recording."
+        },
+        {
+          "heading": "Review one submission end to end",
+          "body": "Have a player complete a short test, find the activity afterwards and confirm what the coach can see. Check video availability separately from the recorded result. If you plan to create a recap, confirm the export role and permission before collecting a week of footage. Record any additional plan requirements shown in the account."
+        },
+        {
+          "heading": "Keep the recap distinct from the training record",
+          "body": "Use the team’s practice records for review and a separate clip log for the moments selected for sharing. A highlight can celebrate effort without implying that every participant had the same result. Keep player identification and clip context accurate. The browser storyboard can organize that edit without taking over the team’s accounts."
+        }
+      ],
+      "checklist": [
+        "Name the invitation owner and review owner.",
+        "Test access with one player.",
+        "Confirm activity and video visibility.",
+        "Agree on permission before making a public recap."
+      ],
+      "sources": [
+        "teams"
+      ],
+      "related": [
+        "family-sharing",
+        "export-video",
+        "pricing"
+      ],
+      "cta": {
+        "label": "Plan a team highlight storyboard",
+        "url": "/templates/basketball-highlight-storyboard"
+      },
+      "choices": [],
+      "widget": "checklist",
+      "table": null,
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "family-sharing",
+      "title": "HomeCourt Family Sharing: Profiles & Shared Devices",
+      "description": "Organize HomeCourt family profiles and a shared recording device. Use a player handoff checklist so basketball sessions stay attached to the right person.",
+      "category": "Practice & records",
+      "keywords": [
+        "homecourt family sharing",
+        "homecourt multiple players",
+        "homecourt profiles",
+        "homecourt family plan"
+      ],
+      "intro": "One device can be passed around. A player’s practice record should not be.",
+      "answer": "HomeCourt’s Family FAQ describes an organizer and up to three additional profiles, with profile switching on a shared device. Confirm the terms shown in your account. The practical task is to keep the active player, recording and saved session aligned every time the phone changes hands.",
+      "sections": [
+        {
+          "heading": "Name the player before starting",
+          "body": "Before recording, confirm the selected player with the person who will perform the activity. Use distinct, recognizable profile labels within your household. A quick verbal check is easier than untangling a complete workout recorded under the wrong person. Keep the session name or your separate notes clear enough to identify it later."
+        },
+        {
+          "heading": "Create a repeatable handoff",
+          "body": "HomeCourt’s Family FAQ describes selecting a person from Settings and using Switch to Profile. Before handing the device to the next player, finish and inspect the previous session, then confirm the new active profile on screen. Do not infer that changing a video caption transfers the underlying workout. If a record is attached to the wrong player, consult official support about correction rather than silently relabelling the result."
+        },
+        {
+          "heading": "Check the sharing arrangement before buying",
+          "body": "Distinguish an additional profile on a shared device from an independent account and from membership of a team. Ask which person manages the subscription and which benefits each participant receives. The family workflow described by HomeCourt is not automatically the same as every Apple Family Sharing arrangement."
+        },
+        {
+          "heading": "Keep exported clips identifiable",
+          "body": "For a family recap, label exported files with the player and session date in your own storage. Get agreement before posting someone else’s recording. Use a separate clip log to avoid mixing attempts from different people into a misleading performance story. The worksheet below is a local reminder, not a connection to family account data."
+        }
+      ],
+      "checklist": [
+        "Confirm the active player before recording.",
+        "Inspect the completed session before switching profiles.",
+        "Keep the organizer and billing account recorded privately.",
+        "Label exported videos by player and session."
+      ],
+      "sources": [
+        "family"
+      ],
+      "related": [
+        "teams",
+        "pricing",
+        "export-video"
+      ],
+      "cta": {
+        "label": "Organize clip identities and timestamps",
+        "url": "/templates/basketball-clip-log"
+      },
+      "choices": [],
+      "widget": "checklist",
+      "table": null,
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "offline",
+      "title": "Using HomeCourt Offline: Recording, Upload & Video Checks",
+      "description": "Plan a HomeCourt session without reliable internet. Separate offline recording from upload, playback and online features with a before-and-after checklist.",
+      "category": "Set up & troubleshoot",
+      "keywords": [
+        "homecourt offline",
+        "does homecourt need internet",
+        "homecourt wifi",
+        "homecourt upload workout"
+      ],
+      "intro": "A court with weak reception calls for a plan before practice and a verification step afterwards.",
+      "answer": "HomeCourt documents offline activity recording, followed by reconnecting to Wi-Fi with the app open for upload. It also lists features that require internet or may not update correctly for offline sessions. Offline recording should not be assumed to preserve every online feature.",
+      "sections": [
+        {
+          "heading": "Prepare while you still have a connection",
+          "body": "Open the app and make sure the intended account and activity are available before heading to the court. Confirm enough device storage and battery for your plan. Record and inspect a short test on your own device rather than assuming that a previous online session proves the offline path works the same way."
+        },
+        {
+          "heading": "Keep a modest independent record",
+          "body": "Write down the session time and the activity you completed. If the record matters for a team assignment, agree in advance how to report an upload delay. Avoid repeatedly starting new sessions simply because an online result has not appeared. A manual attempt log is useful context, but it cannot recreate a video that failed to save."
+        },
+        {
+          "heading": "Verify upload after reconnecting",
+          "body": "Follow the official guidance to reconnect and open HomeCourt in the foreground. Then inspect the activity and try its video. Do not stop at a thumbnail or a total shot count. Note which outputs are actually present and which remain unavailable before deciding that the session is safely retained."
+        },
+        {
+          "heading": "Treat leaderboards and sharing as separate checks",
+          "body": "The official offline article warns that some records and standings may not update even after a later upload. If participation depends on an online result, check the requirements before the session. For sharing a recap, confirm a playable exported file rather than assuming the workout’s appearance in a list makes it available to an editor."
+        }
+      ],
+      "checklist": [
+        "Open the intended account and activity before leaving.",
+        "Check storage and record a short test.",
+        "Reconnect and keep the app open for upload.",
+        "Verify video, record and any required online result separately."
+      ],
+      "sources": [
+        "offline"
+      ],
+      "related": [
+        "video-not-loading",
+        "export-video",
+        "edit-shot-chart"
+      ],
+      "cta": {
+        "label": "Keep a manual attempt record",
+        "url": "/tools/basketball-shot-chart"
+      },
+      "choices": [],
+      "widget": "checklist",
+      "table": null,
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    },
+    {
+      "slug": "cancel-subscription",
+      "title": "Cancel a HomeCourt Subscription: Find the Billing Route",
+      "description": "Find the right route to cancel HomeCourt billing through Apple or the original purchase channel. Use a checklist to confirm the renewal status.",
+      "category": "Choose your workflow",
+      "keywords": [
+        "cancel homecourt subscription",
+        "homecourt cancel subscription",
+        "homecourt unsubscribe"
+      ],
+      "intro": "Start with the receipt. The place that billed you determines where to manage renewal.",
+      "answer": "For an Apple-billed HomeCourt subscription, Apple’s instructions direct you to Settings, your name, then Subscriptions. HomeCourt says it cannot cancel App Store subscriptions on your behalf. A web purchase needs its own billing route; deleting the app is not a cancellation confirmation.",
+      "sections": [
+        {
+          "heading": "Identify the purchase account",
+          "body": "Find the subscription receipt and check the billing provider and account. If HomeCourt is missing from the subscription list, first confirm that you are looking at the account used to purchase it. Keep billing identifiers private. This guide does not collect credentials, receipts or payment information."
+        },
+        {
+          "heading": "Use the matching cancellation route",
+          "body": "For Apple billing, follow the current official Apple instructions linked below and inspect the HomeCourt subscription entry. For a direct website purchase, use the original receipt and HomeCourt support to find the appropriate management route. Do not assume that leaving a team or signing out changes billing."
+        },
+        {
+          "heading": "Keep evidence of the result",
+          "body": "After completing the available cancellation action, record the displayed expiration or renewal status for your own reference. A cancellation, a refund request and account deletion are different actions. If the screen does not make the outcome clear, ask the billing provider rather than assuming that closing the app completed it."
+        },
+        {
+          "heading": "Decide what records you want to keep",
+          "body": "Before separately changing account access, inspect any workouts or videos you want to retain and use the available export options. Keep a playable local copy where you have permission to do so. If you only want a lightweight future practice log, a manual chart is an independent option; it does not transfer paid history or cancel an existing plan."
+        }
+      ],
+      "checklist": [
+        "Find the receipt and billing account.",
+        "Use Apple or the original purchase channel as appropriate.",
+        "Confirm the displayed renewal or expiration status.",
+        "Keep wanted records before separately changing account access."
+      ],
+      "sources": [
+        "cancel",
+        "apple"
+      ],
+      "related": [
+        "pricing",
+        "export-video",
+        "alternatives"
+      ],
+      "cta": {
+        "label": "Read Apple’s current cancellation instructions",
+        "url": "https://support.apple.com/en-us/118428"
+      },
+      "choices": [
+        {
+          "label": "My receipt is from Apple",
+          "answer": "Manage the subscription through the Apple Account that purchased it. HomeCourt cannot cancel an App Store subscription for you.",
+          "url": "https://support.apple.com/en-us/118428",
+          "link": "Open Apple’s instructions"
+        },
+        {
+          "label": "I purchased on the website",
+          "answer": "Use your original receipt and HomeCourt support to identify the web billing route. Do not enter your payment information on this guide.",
+          "url": "https://help.homecourt.ai/hc/en-us",
+          "link": "Open official HomeCourt support"
+        },
+        {
+          "label": "I cannot find the subscription",
+          "answer": "Check the receipt for the purchasing account and billing provider before attempting a different cancellation route.",
+          "url": "https://support.apple.com/en-us/118428",
+          "link": "Check Apple’s missing-subscription guidance"
+        }
+      ],
+      "widget": "decision",
+      "table": null,
+      "updated": "2026-11-11",
+      "search_volume": null,
+      "kd": null,
+      "demand_status": "Public-source candidate; no measured keyword volume",
+      "evidence_type": "Official documentation and public search intent; not hands-on app testing"
+    }
+  ]
+}

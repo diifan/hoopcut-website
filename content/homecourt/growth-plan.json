@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "campaign": "HomeCourt organic demand capture",
+  "status": "local_review_only",
+  "batch_id": "HC-HOMECOURT-2026-11-11-01",
+  "goal": "Relevant Google organic clicks to Hoopcut; page and candidate-query counts are inventory only",
+  "primary_market": "United States",
+  "language": "en",
+  "search_type": "web",
+  "measurement": {
+    "baseline": null,
+    "baseline_reason": "No fresh authorized GSC Performance export obtained in this public-research implementation run. Indexing records are not click data.",
+    "release_date": null,
+    "organic_clicks_after_release": null,
+    "query_pattern": "(?i)home\\s*court",
+    "query_segmentation": "Inspect matching queries for the basketball app intent; separate ambiguous bare brand searches from software modifiers, and exclude the cleaning brand and NBA Street Homecourt game. Visible query totals exclude anonymized data.",
+    "page_segment": "/homecourt and /homecourt/*; contextual updates reported as a separate cohort",
+    "country": "USA",
+    "report_all_countries_separately": true,
+    "windows": "Matched completed 7-day and 28-day windows. Always disclose extraction time, date window, country and freshness; do not compare unequal launch exposure.",
+    "diagnostics": ["discovered", "crawled", "indexed", "impressions", "position", "qualified tool use", "App Store outbound clicks"],
+    "not_equivalent": ["App Store outbound clicks are not installs", "a submitted sitemap is not indexation", "time on page is not assumed to be a ranking signal", "a keyword candidate is not measured demand"]
+  },
+  "review_points": [
+    {"days_after_release": 7, "task": "Check discoverability, crawlability and URL inspection; do not interpret lack of early clicks as a definitive content failure"},
+    {"days_after_release": 14, "task": "Inspect actual queries, intent mismatch and early page-level impressions; avoid CTR claims on tiny samples"},
+    {"days_after_release": 28, "task": "Review matched complete windows and choose improve, consolidate, investigate or expand by intent family"}
+  ],
+  "production_pipeline": [
+    "Add or update source-backed demand record in pages.json; volume and KD remain null unless independently measured",
+    "Merge synonymous intents and map suitable demand to an existing page in existing-pages.json",
+    "Render all accepted records with the reusable generator; generated HTML is not the editing source",
+    "Run complete build, SEO validation and browser checks; package exact file hashes for review",
+    "Wait for approval of this batch before push, remote PR, merge, deployment or indexing submission",
+    "After approved deployment verification, record real release time and begin observation"
+  ],
+  "stop_or_rework": [
+    "No authoritative support for a factual claim: remove or defer it",
+    "Existing canonical page already answers the same intent: update it rather than add a synonym URL",
+    "Indexing failure: inspect the actual reason before adding pages",
+    "Indexed but no relevant impressions: reassess intent and competition before extending that family",
+    "Relevant impressions with weak ranking: identify missing evidence or functionality",
+    "Repeated relevant clicks: prioritize adjacent distinct needs without claiming guaranteed uplift"
+  ],
+  "automation": {"existing_id": "hoopcut-seo", "changed_in_this_run": false, "new_timer_created": false},
+  "analytics": {"existing_service_setting_preserved": true, "enabled": false, "new_account_or_paid_service": false, "prepared_events": "Existing tool_start/export_success hooks, only code-owned tool identifier and format; no entered costs or checklist contents"}
+}
