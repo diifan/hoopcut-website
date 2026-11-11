@@ -12,18 +12,19 @@ try:
  if not (0<video['duration']<=3600 and 0<video['width']<=7680 and 0<video['height']<=7680):raise ValueError('invalid_video')
  if task['operation']=='probe':finish({'state':'imported','video':video})
  else:
-  start,end=task['trim'];effect=task['effect'];key=hashlib.sha256(json.dumps([start,end,'makemiss-tracer-v2']).encode()).hexdigest()
+  start,end=task['trim'];effect=task['effect'];key=hashlib.sha256(json.dumps([start,end,'makemiss-tracer-selected-v3',task.get('hoop')]).encode()).hexdigest()
   work=root/key;work.mkdir(exist_ok=True)
   if not (work/'measured-arcs.json').exists():
    stage('trimming',5);engine.trim(root/'source',work/'trim.mp4',start,end)
    if (work/'analysis').exists():shutil.rmtree(work/'analysis')
-   stage('tracking',15);arcs=engine.analyze(work/'trim.mp4',work/'analysis')
+   stage('tracking',15);arcs=engine.analyze(work/'trim.mp4',work/'analysis',task.get('hoop'))
   else:arcs=json.loads((work/'measured-arcs.json').read_text())
-  if not arcs:finish({'state':'no_shots'})
+  if isinstance(arcs,dict):finish({'state':'needs_hoop','selection':arcs['selection']})
+  elif not arcs:finish({'state':'no_shots'})
   else:
    stage('rendering',70);output=root/'result.mp4'
    receipt=engine.render(work/'trim.mp4',output,arcs,effect,lambda p:stage('rendering',70+int(29*p)))
-   receipt.update(size_bytes=output.stat().st_size,model_version='hoopcut-makemiss-tracer-v2',renderer_version='web-v1')
+   receipt.update(size_bytes=output.stat().st_size,model_version='hoopcut-makemiss-tracer-selected-v3',renderer_version='web-v1')
    finish({'state':'ready','render':receipt})
 except Exception as e:
  import traceback;traceback.print_exc();finish({'state':'failed','error_code':'invalid_video' if task['operation']=='probe' else 'processing_failed','error_type':type(e).__name__})
