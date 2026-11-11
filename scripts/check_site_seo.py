@@ -23,7 +23,7 @@ class Page(HTMLParser):
 
 def file_for(path):
     p=ROOT/unquote(path).lstrip('/')
-    if p.is_dir():return p/'index.html'
+    if p.is_dir() and (p/'index.html').is_file():return p/'index.html'
     return p if p.is_file() else p.with_suffix('.html')
 
 def check(http=False):
@@ -36,8 +36,12 @@ def check(http=False):
     expected_video_urls.update('https://hoopcut.ai/videos/'+t['slug'] for t in topics if t['video_id'] in {v['video_id'] for v in videos if v['status']=='public_verified'})
     if videos:expected_video_urls.add('https://hoopcut.ai/videos')
     assert {u for u in urls if u.startswith('https://hoopcut.ai/videos')}==expected_video_urls
+    court_urls={'https://hoopcut.ai/tools/'+p.stem for p in (ROOT/'tools').glob('basketball-*.html')}
+    assert court_urls.issubset(set(urls)),('court tools missing from sitemap',court_urls-set(urls))
+    homecourt_urls={BASE+'/homecourt'}|{BASE+'/homecourt/'+p['slug'] for p in json.loads((ROOT/'content/homecourt/pages.json').read_text())['pages']}
+    assert homecourt_urls.issubset(set(urls))
     assert BASE+'/shot-tracer' in urls
-    assert len(urls)==len(set(urls))==40+len(expected_video_urls)
+    assert len(urls)==len(set(urls))==40+len(expected_video_urls)+len(court_urls)+len(homecourt_urls)
     records={};titles=set();descriptions=set();adjacency={};incoming=Counter()
     for url in urls:
         assert url.startswith(BASE+'/') and not urlsplit(url).query and not urlsplit(url).fragment
@@ -62,7 +66,7 @@ def check(http=False):
         for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S):
             data=json.loads(raw);assert data.get('@context')=='https://schema.org';graphs+=data.get('@graph',[data])
         assert graphs,('structured data',path)
-        if path.startswith('/blog/') or path.startswith('/templates/') or path.startswith('/videos/') or path in ['/blog','/tools']:
+        if path.startswith(('/blog/','/templates/','/videos/','/tools/','/homecourt/')) or path in ['/blog','/tools','/homecourt']:
             assert any(x.get('@type')=='BreadcrumbList' for x in graphs),('breadcrumb schema',path)
             assert any(t=='nav' and a.get('aria-label')=='Breadcrumb' for t,a in p.tags),('visible breadcrumb',path)
         for t,a in p.tags:
