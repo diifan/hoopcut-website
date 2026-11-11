@@ -161,7 +161,7 @@ def resolve_article(item):
 
 def navigation(active='blog'):
     video_manifest=ROOT/'content/videos/manifest.json'
-    video_link='<a href="/videos">Videos</a>' if video_manifest.exists() and json.loads(video_manifest.read_text()) else ''
+    video_link='<a href="/videos">Videos</a><a href="/shot-tracer">Shot Tracer</a>' if video_manifest.exists() and json.loads(video_manifest.read_text()) else ''
     return f'''<a class="skip" href="#main">Skip to content</a><header class="blog-header"><a class="brand" href="/" aria-label="Hoopcut home"><img src="/assets/blog/brand-icon.png" width="102" height="102" alt=""><span>HoopCut</span></a><nav aria-label="Main navigation"><a href="/">Product</a><a href="/tools"{' aria-current="page"' if active=='tools' else ''}>Tools</a><a href="/blog"{' aria-current="page"' if active=='index' else ''}>Blog</a>{video_link}</nav></header>'''
 
 

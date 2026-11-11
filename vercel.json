@@ -44,6 +44,12 @@
     },
     "api/analytics/events.js": {
       "maxDuration": 15
+    },
+    "api/shot-tracer/worker.js": {
+      "maxDuration": 15
+    },
+    "api/shot-tracer.js": {
+      "maxDuration": 15
     }
   },
   "installCommand": "npm ci"

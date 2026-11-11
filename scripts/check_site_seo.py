@@ -40,7 +40,8 @@ def check(http=False):
     assert court_urls.issubset(set(urls)),('court tools missing from sitemap',court_urls-set(urls))
     homecourt_urls={BASE+'/homecourt'}|{BASE+'/homecourt/'+p['slug'] for p in json.loads((ROOT/'content/homecourt/pages.json').read_text())['pages']}
     assert homecourt_urls.issubset(set(urls))
-    assert len(urls)==len(set(urls))==39+len(expected_video_urls)+len(court_urls)+len(homecourt_urls)
+    assert BASE+'/shot-tracer' in urls
+    assert len(urls)==len(set(urls))==40+len(expected_video_urls)+len(court_urls)+len(homecourt_urls)
     records={};titles=set();descriptions=set();adjacency={};incoming=Counter()
     for url in urls:
         assert url.startswith(BASE+'/') and not urlsplit(url).query and not urlsplit(url).fragment
