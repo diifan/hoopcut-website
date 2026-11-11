@@ -1,3 +1,6 @@
+import {execFileSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+execFileSync('python3',[fileURLToPath(new URL('../scripts/build_videos.py',import.meta.url)),fileURLToPath(new URL('../',import.meta.url))],{stdio:'inherit'});
 // Public assets only. Server source, tests, credentials and SQL never enter the static output.
 import {readdir,cp,mkdir,rm} from 'node:fs/promises';
 const root=new URL('../',import.meta.url);const out=new URL('../dist/',import.meta.url);await rm(out,{recursive:true,force:true});await mkdir(out,{recursive:true});

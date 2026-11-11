@@ -117,7 +117,10 @@ assert worst[0]<0.5, ('near-duplicate article bodies',worst)
 urls=[x.text for x in ElementTree.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
 resource_count = len(list((ROOT/'templates').glob('*.html')))
 video_records=json.loads((ROOT/'content/videos/manifest.json').read_text()) if (ROOT/'content/videos/manifest.json').exists() else []
-assert len(urls)==len(ARTICLES)+6+resource_count+int((ROOT/'tools.html').exists())+len(video_records)+int(bool(video_records)) and len(urls)==len(set(urls))
+video_records=[v for v in video_records if v['status']=='public_verified']
+topics_path=ROOT/'content/videos/topics.json'
+topic_count=len([t for t in json.loads(topics_path.read_text()) if t['video_id'] in {v['video_id'] for v in video_records}]) if topics_path.exists() else 0
+assert len(urls)==len(ARTICLES)+6+resource_count+int((ROOT/'tools.html').exists())+len(video_records)+int(bool(video_records))+topic_count and len(urls)==len(set(urls))
 assert all('https://hoopcut.ai/blog/'+slug(x['keyword']) in urls for x in ARTICLES)
 assert all('https://hoopcut.ai/demo/'+x in urls for x in ['auto-clipping','shot-tracer'])
 assert 'Sitemap: https://hoopcut.ai/sitemap.xml' in (ROOT/'robots.txt').read_text()

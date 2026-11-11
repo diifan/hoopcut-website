@@ -1,0 +1,60 @@
+{
+  "slug": "half-court-pickup-two-plays",
+  "video_id": "3LQUW2w2BrE",
+  "keyword": "Two Half-Court Pickup Plays with Shot Tracer",
+  "title": "Two Half-Court Pickup Plays with Shot Tracer | HoopCut",
+  "h1": "Watch Two Plays from a Fixed Half-Court Camera",
+  "description": "Use two indoor pickup plays to review the setup, ball flight and finish. See what a wide fixed camera preserves and what it cannot tell you.",
+  "meta_description": "Use two indoor pickup plays to review the setup, ball flight and finish. See what a wide fixed camera preserves and what it cannot tell you.",
+  "intro": "Use two indoor pickup plays to review the setup, ball flight and finish. See what a wide fixed camera preserves and what it cannot tell you.",
+  "date_modified": "2026-11-06",
+  "heading": "Watch Two Plays from a Fixed Half-Court Camera",
+  "sections": [
+    {
+      "id": "section-1",
+      "nav_title": "Follow the possession before the shot",
+      "heading": "Follow the possession before the shot",
+      "paragraphs": [
+        "Start with the player holding the ball, then locate the rim. In this wide indoor view, several players remain visible around the action. Pause before release and identify who is directly involved in the play instead of following every moving person. Replay once at normal speed to reconnect that static arrangement with the actual movement."
+      ],
+      "links": []
+    },
+    {
+      "id": "section-2",
+      "nav_title": "Compare the two retained plays",
+      "heading": "Compare the two retained plays",
+      "paragraphs": [
+        "The edit contains two selected shooting sequences rather than a complete game. Treat each sequence as its own observation: where is the shooter relative to the basket, when does the ball become visible, and when does the sequence end? A change between selected plays is an editing boundary, not evidence that the possessions happened back to back."
+      ],
+      "links": []
+    },
+    {
+      "id": "section-3",
+      "nav_title": "Keep the claims inside the frame",
+      "heading": "Keep the claims inside the frame",
+      "paragraphs": [
+        "The clip does not establish the players\u2019 names, the score, the result of the game or a shooting percentage. A visible trail helps follow the ball; it does not measure shot difficulty. If you make notes, describe observable actions and leave unknown game context blank."
+      ],
+      "links": [
+        [
+          "See another perspective on this clip",
+          "/videos/pickup-court-spacing-review"
+        ],
+        [
+          "Basketball Shot Tracer guide",
+          "/blog/how-to-add-shot-tracer-to-basketball-video"
+        ]
+      ]
+    }
+  ],
+  "questions": [
+    [
+      "Is this the full pickup game?",
+      "No. This HoopCut edit selects two plays from the linked source and includes a branded ending."
+    ],
+    [
+      "Can I infer shooting accuracy from these two plays?",
+      "No. Selected highlights do not include a verified total of attempts."
+    ]
+  ]
+}

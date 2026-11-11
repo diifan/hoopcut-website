@@ -74,7 +74,10 @@ for f,p in pages.items():
 urls=[x.text for x in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
 video_manifest=ROOT/'content/videos/manifest.json'
 videos=json.loads(video_manifest.read_text()) if video_manifest.exists() else []
-expected_video_urls={'https://hoopcut.ai/videos/'+v['slug'] for v in videos}
+expected_video_urls={'https://hoopcut.ai/videos/'+v['slug'] for v in videos if v['status']=='public_verified'}
+topics_file=ROOT/'content/videos/topics.json'
+topics=json.loads(topics_file.read_text()) if topics_file.exists() else []
+expected_video_urls.update('https://hoopcut.ai/videos/'+t['slug'] for t in topics if t['video_id'] in {v['video_id'] for v in videos if v['status']=='public_verified'})
 if videos:expected_video_urls.add('https://hoopcut.ai/videos')
 assert {u for u in urls if u.startswith('https://hoopcut.ai/videos')}==expected_video_urls
 assert len(urls)==len(set(urls))==39+len(expected_video_urls)
@@ -82,7 +85,7 @@ assert 'https://hoopcut.ai/tools' in urls
 assert all('https://hoopcut.ai'+p in urls for p in new_paths)
 prior=subprocess.check_output(['git','show','HEAD:sitemap.xml'],cwd=ROOT).decode()
 old_urls=[x.text for x in ET.fromstring(prior).findall('{*}url/{*}loc')]
-legacy_video_urls={'https://hoopcut.ai/videos/'+v['video_id'] for v in videos}
+legacy_video_urls={'https://hoopcut.ai/videos/'+v['video_id'] for v in videos if v['status']=='public_verified'}
 assert set(old_urls)-legacy_video_urls <= set(urls), 'Existing sitemap URLs dropped'
 for v in videos:
     alias=ROOT/'videos'/(v['video_id']+'.html')
