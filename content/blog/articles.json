@@ -3,7 +3,7 @@
     "keyword": "how to make a basketball highlight video",
     "title": "How to Make a Basketball Highlight Video: From Game Footage to Reel",
     "category": "Editing workflows",
-    "summary": "Make a basketball highlight video from game footage: identify your player, review AI clips, keep complete plays and check the export. Includes a practice clip log.",
+    "summary": "Turn game footage into a basketball highlight reel: choose complete plays, trim and sequence clips, check Shot Tracer, and export. See three real video examples.",
     "lead": "To make a basketball highlight video, choose the player and audience, review the game for complete plays, trim each selection around the action, arrange a short first cut, then reopen the exported file. Start with one recording and one clear purpose. A social recap, a family keepsake and a coach’s evaluation video need different selections from the same game.",
     "sections": [
       [
@@ -79,8 +79,8 @@
         "Include the actions that serve your purpose: passing decisions, defensive reads, off-ball movement or team reactions. For evaluation film, choose evidence relevant to the athlete’s role and the recipient’s request."
       ],
       [
-        "Are these screenshots a tested app tutorial?",
-        "The two images are official App Store promotional screenshots from the version 1.0.0 listing, retrieved October 30, 2026. They illustrate the advertised editing and sharing workflow. They are not a screen-by-screen recording or a measured test."
+        "What export settings should I use for basketball highlights?",
+        "When exporting, preserve the source frame rate when your editing workflow allows it so motion does not gain or lose cadence unnecessarily. Check the saved file for smooth playback, a readable crop and clear action on the device where it will be watched. Available export options depend on the editor and project; confirm the actual file rather than assuming a particular app control or setting."
       ]
     ],
     "reference": "the workflow",
@@ -95,12 +95,12 @@
     ],
     "ctaText": "Plan your own basketball highlight reel",
     "relatedKeywords": [
-      "basketball senior night ideas",
       "how to make basketball highlights on iphone",
-      "how long should a basketball highlight video be"
+      "how long should a basketball highlight video be",
+      "basketball highlight video examples"
     ],
-    "demo": true,
-    "dateModified": "2026-10-30",
+    "demo": false,
+    "dateModified": "2026-11-11",
     "editorialLinks": [
       [
         "Choose a duration for your intended audience",
@@ -147,39 +147,51 @@
           "Select and preview shots in the clipping demo",
           "/demo/auto-clipping"
         ]
+      ],
+      "7": [
+        [
+          "Check framing and playback before sharing",
+          "/videos/basketball-highlight-export-review"
+        ]
       ]
     },
     "tableHeaders": [
       "Sample segment",
       "What to review before keeping it"
     ],
-    "evidenceGallery": {
-      "afterSection": 3,
-      "layout": "portrait",
-      "label": "OFFICIAL APP STORE PROMOTIONAL IMAGES",
-      "heading": "Where auto clipping fits in the edit",
-      "description": "The version 1.0.0 listing illustrates a highlight timeline and a sharing screen. Use these as a product overview; the guide’s review checklist is independent of the controls in a particular app build.",
-      "sourceUrl": "https://apps.apple.com/us/app/hoopcut-basketball-highlights/id6824860341",
-      "sourceLabel": "View the Hoopcut App Store listing",
-      "items": [
-        {
-          "image": "/assets/blog/product/app-store-02.jpg",
-          "width": 1179,
-          "height": 2556,
-          "title": "Review the suggested highlights",
-          "alt": "Official Hoopcut App Store promotional screenshot showing basketball footage, a clip timeline and editing icons",
-          "caption": "The listing’s timeline illustration relates to the shortlist stage. Check which complete plays belong in your version."
-        },
-        {
-          "image": "/assets/blog/product/app-store-04.jpg",
-          "width": 1179,
-          "height": 2556,
-          "title": "Check the file before sharing",
-          "alt": "Official Hoopcut App Store promotional screenshot showing a vertical basketball video above a sharing panel",
-          "caption": "The listing illustrates a sharing stage. Reopen your exported file and check the player, ball and crop before delivery."
-        }
-      ]
-    }
+    "seoTitle": "How to Make a Basketball Highlight Video: Steps & Examples",
+    "quickSteps": [
+      "Choose one audience and purpose for the reel.",
+      "Identify the player and note useful moments in the full recording.",
+      "Shortlist distinct plays, then check each against its source.",
+      "Keep enough lead-in to show the setup and enough follow-through to show the result.",
+      "Arrange a small sequence with a clear opening and ending; remove repeated moments.",
+      "Play the exported file on the intended device and check the crop, transitions and final frame."
+    ],
+    "shortParagraphs": true,
+    "videoExamples": [
+      {
+        "video_id": "MLcda_7VYkQ",
+        "heading": "Two pickup jump shots",
+        "observation": "This seven-second indoor pickup edit shows two jump shots from different sides of the frame, with each play running through its setup, traced ball flight and finish. It retains the source watermark and has no brand outro.",
+        "takeaway": "A very short reel can still make two moments legible when each cut preserves the release and finish.",
+        "afterSection": 4
+      },
+      {
+        "video_id": "3LQUW2w2BrE",
+        "heading": "Two plays from a fixed half-court camera",
+        "observation": "This 12-second video presents two indoor pickup sequences recorded from a fixed wide camera and ends with a short branded ending.",
+        "takeaway": "A stable wide view can preserve more court context; review whether the player and ball remain easy to follow in each sequence.",
+        "afterSection": 5
+      },
+      {
+        "video_id": "lnq1_el2NXo",
+        "heading": "Three shots from solo indoor practice",
+        "observation": "This 16-second clip shows three solo practice shots, retains the original training captions and includes a short branded ending. It is a workout example, not game footage.",
+        "takeaway": "Keep useful original captions when they explain the drill, and label practice footage accurately so viewers understand its context.",
+        "afterSection": 6
+      }
+    ]
   },
   {
     "keyword": "how to make basketball highlights on iphone",

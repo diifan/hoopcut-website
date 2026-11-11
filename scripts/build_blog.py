@@ -90,6 +90,18 @@ def copy(text, item, selected, cursor):
     return result
 
 
+def video_example(example):
+    media = {v['video_id']:v for v in json.loads((ROOT/'content/videos/manifest.json').read_text())}
+    v = media[example['video_id']]
+    if v['status'] != 'public_verified':
+        raise ValueError('Article video examples require verified public media')
+    return ('<figure class="article-video-example"><div class="example-player"><iframe loading="lazy" '
+            'width="315" height="560" src="https://www.youtube-nocookie.com/embed/'+v['video_id']+'?rel=0" '
+            'title="'+H(example['heading'],quote=True)+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>'
+            '<figcaption><p class="eyebrow">WATCH THE EDIT</p><h3>'+H(example['heading'])+'</h3><p>'+H(example['observation'])+'</p><p><strong>Try this in your edit:</strong> '+H(example['takeaway'])+'</p>'
+            '<a href="/videos/'+H(v['slug'],quote=True)+'">Watch with the full play notes</a> · <a href="'+H(v['source_url'],quote=True)+'">Original footage</a></figcaption></figure>')
+
+
 def article_markup(item, selected=frozenset(), checklist_key=False, worksheet_key=False):
     published = item.get('datePublished', DATE)
     display_date = date.fromisoformat(published).strftime('%B %d, %Y').replace(' 0', ' ')
@@ -107,7 +119,11 @@ def article_markup(item, selected=frozenset(), checklist_key=False, worksheet_ke
     for index, (heading, paragraph) in enumerate(item["sections"], 1):
         tools = item.get('sectionTools', {}).get(str(index), [])
         tool_links = '<p class="context-tools">Put this into practice: '+ ' · '.join('<a href="'+H(url,quote=True)+'">'+H(label)+'</a>' for label,url in tools)+'.</p>' if tools else ''
-        sections.append(f'<section id="step-{index}"><h2>{H(heading)}</h2><p>{c(paragraph)}</p>{tool_links}</section>')
+        paragraphs = re.split(r'(?<=\.) ', paragraph, maxsplit=2) if item.get('shortParagraphs') else [paragraph]
+        if len(paragraphs)>2: paragraphs=[' '.join(paragraphs[:2]),paragraphs[2]]
+        sections.append(f'<section id="step-{index}"><h2>{H(heading)}</h2>'+''.join('<p>'+c(part)+'</p>' for part in paragraphs)+tool_links+'</section>')
+        for example in item.get('videoExamples',[]):
+            if example['afterSection']==index: sections.append(video_example(example))
         if item.get('evidenceGallery', {}).get('afterSection') == index:
             sections.append(evidence_gallery(item))
         if item.get('visual', {}).get('videoAfter') == index:
@@ -126,6 +142,7 @@ def article_markup(item, selected=frozenset(), checklist_key=False, worksheet_ke
 <header class="post-heading"><p class="eyebrow">{H(item['category'])}</p><h1>{H(item['title'])}</h1>
 <p class="lede">{H(item['summary'])}</p><p class="byline">By Hoopcut · <time datetime="{published}">{display_date}</time>{updated}</p></header>
 {cover(item)}<p>{c(item['lead'])}</p>
+{('<section class="quick-workflow" aria-labelledby="quick-workflow-title"><h2 id="quick-workflow-title">The edit in six steps</h2><ol>'+''.join('<li>'+H(step)+'</li>' for step in item['quickSteps'])+'</ol></section>') if item.get('quickSteps') else ''}
 {demo}{overview(item)}
 {(caption_nav+caption_status+captions_markup+chr(10)) if caption_groups else ''}{''.join(sections)}
 {(downloads+editorial_links+chr(10)) if downloads or editorial_links else ''}<section id="checklist"><h2>{H(checklist_title)}</h2><ul class="checklist">{''.join('<li>'+H(x)+'</li>' for x in item['checklist'])}</ul></section>
@@ -196,7 +213,15 @@ def build():
             {'@type':'BlogPosting','@id':url+'#article','headline':item['title'],'description':item['summary'],'url':url,'mainEntityOfPage':{'@type':'WebPage','@id':url},'datePublished':published+'T12:00:00+08:00','dateModified':modified+'T12:00:00+08:00','author':{'@type':'Organization','name':'Hoopcut','url':BASE+'/'},'publisher':{'@type':'Organization','name':'Hoopcut','url':BASE+'/'},'inLanguage':'en','wordCount':stat['words'],'image':BASE+item.get('visual', {}).get('image', '/assets/blog/court.webp'),'isPartOf':{'@type':'Blog','@id':BASE+'/blog#blog','url':BASE+'/blog','name':'Hoopcut Blog'}},
             {'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':BASE+'/'},{'@type':'ListItem','position':2,'name':'Blog','item':BASE+'/blog'},{'@type':'ListItem','position':3,'name':item['title'],'item':url}]}
         ]
+        if item.get('videoExamples'):
+            media = {v['video_id']:v for v in json.loads((ROOT/'content/videos/manifest.json').read_text())}
+            for example in item['videoExamples']:
+                v=media[example['video_id']]
+                graph.append({'@type':'VideoObject','@id':BASE+'/videos/'+v['slug']+'#video','name':v['title'],'description':v['description'],'thumbnailUrl':[BASE+'/assets/videos/'+v['video_id']+'.jpg'],'uploadDate':v['published_at'],'duration':'PT'+str(round(v['duration_seconds']))+'S','embedUrl':'https://www.youtube.com/embed/'+v['video_id']})
+            graph[0]['video']=[{'@id':BASE+'/videos/'+media[e['video_id']]['slug']+'#video'} for e in item['videoExamples']]
         document = head(item.get('seoTitle',SEO_TITLES.get(item['keyword'],item['title']+' | Hoopcut Blog')),item['summary'],url,graph,item.get('visual', {}).get('image', '/assets/blog/court.webp'),item.get('visual', {}).get('alt', 'Basketball court action'))+navigation()+f'''<main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/blog">Blog</a><span aria-hidden="true">/</span><span aria-current="page">{H(item['title'])}</span></nav><div class="reading-layout">{resolved[item['keyword']]}<aside class="on-this-page"><p class="eyebrow">ON THIS PAGE</p><nav aria-label="On this page">{caption_toc}{toc}<a href="#checklist">Final checks</a><a href="#questions">Practical questions</a><a href="#sources">Sources</a></nav><a class="product-link" href="/">Explore Hoopcut <span aria-hidden="true">↗</span></a></aside></div><section class="related" aria-labelledby="related-title"><p class="eyebrow">KEEP READING</p><h2 id="related-title">More from the court.</h2>{cards(related,all_stats)}<a class="all-guides" href="/blog">Browse all basketball editing guides →</a></section></main>'''+footer()+'</body></html>'
+        if item.get('videoExamples'):
+            document=document.replace('</head>','<style>.quick-workflow{padding:1.25rem;border:1px solid #42463c;border-radius:16px}.quick-workflow li{margin:.65rem 0}.article-video-example{display:grid;grid-template-columns:minmax(160px,240px) minmax(0,1fr);gap:1.5rem;margin:2rem 0;padding:1.25rem;border:1px solid #42463c;border-radius:16px}.example-player{aspect-ratio:9/16;background:#080a07;border-radius:10px;overflow:hidden}.example-player iframe{width:100%;height:100%;border:0}.article-video-example figcaption{min-width:0}.article-video-example h3{margin-top:.5rem}.article-video-example p{font-size:1rem;line-height:1.65}@media(max-width:600px){.article-video-example{grid-template-columns:1fr}.example-player{width:100%;max-width:260px;justify-self:center}}</style></head>')
         if item.get('visual'):
             document = document.replace('<body>', '<body class="visual-story'+(' caption-story' if item.get('captionGroups') else '')+'">')
         if item.get('captionGroups'):
