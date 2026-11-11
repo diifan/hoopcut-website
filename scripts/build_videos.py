@@ -102,7 +102,7 @@ def build(root):
   # Preserve the published ID URL while consolidating search signals on the title URL.
   if not r.get('topic'):(root/'videos'/f'{vid}.html').write_text(page)
  if records:
-  url=ORIGIN+'/videos';graph=[{'@type':'CollectionPage','url':url,'name':'HoopCut basketball videos'}]
+  url=ORIGIN+'/videos';graph=[{'@type':'CollectionPage','url':url,'name':'HoopCut basketball videos'},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':ORIGIN+'/'},{'@type':'ListItem','position':2,'name':'Videos','item':url}]}]
   from video_layout import index
   css=(root/'assets/video-page.css').read_text()
   (root/'videos/index.html').write_text(head('Basketball Highlights with Shot Tracer | HoopCut','Watch basketball plays with Shot Tracer, source footage and notes about each clip.',url,graph).replace('</head>','<style>'+css+'</style></head>').replace('<body>','<body class="video-page">')+navigation()+index([r for r in records if r['status']=='public_verified'],[t for t in topics if media_by_id[t['video_id']]['status']=='public_verified'])+footer()+'</body></html>')

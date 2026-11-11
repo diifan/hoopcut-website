@@ -7,3 +7,12 @@
 .watch-player.is-portrait{position:relative;background:transparent;min-height:360px}
 .watch-player.is-portrait :is(iframe,video){position:absolute;inset:0;margin:auto;width:max(202.5px,31.640625%);height:100%;border-radius:8px}
 @media(max-width:600px){.watch-player.is-portrait{aspect-ratio:9/16;min-height:0;max-width:360px;margin-inline:auto}.watch-player.is-portrait :is(iframe,video){width:100%}}
+
+/* Shared breadcrumb hierarchy: Home / Videos / current page. */
+.video-page .video-crumb{display:block;line-height:1.6}
+.video-crumb ol{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 0;list-style:none;margin:0;padding:0}
+.video-crumb li{display:inline;min-width:0;overflow-wrap:anywhere}
+.video-crumb li+li::before{content:"/";display:inline-block;margin:0 10px;color:#73796e}
+.video-page .video-crumb a{display:inline-block;padding:6px 0;text-decoration:underline;text-underline-offset:4px;text-decoration-color:#ffffff40}
+.video-page .video-crumb a:hover{color:#ff975f;text-decoration-color:currentColor}
+.video-crumb [aria-current="page"]{color:#d7d9d1}
