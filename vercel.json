@@ -46,10 +46,16 @@
       "maxDuration": 15
     },
     "api/shot-tracer/worker.js": {
-      "maxDuration": 15
+      "maxDuration": 15,
+      "regions": [
+        "sin1"
+      ]
     },
     "api/shot-tracer.js": {
-      "maxDuration": 15
+      "maxDuration": 15,
+      "regions": [
+        "sin1"
+      ]
     }
   },
   "installCommand": "npm ci"

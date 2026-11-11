@@ -39,3 +39,5 @@ Supabase login restored. Transaction-isolated selection protocol test passed and
 - 14 bridge/upload-flow tests and the standard website build passed. Tests mock browser DOM/requests; this is not mobile/browser acceptance.
 - Actual 112 HTTPS staging job ee37fbad67960a007d2a03fd6ab62421c384a8ad98db0750: upload-to-ready 52.249s, download complete 55.568s, exact baseline artifact SHA. Does not include Vercel BFF or human selection delay.
 - Approximately 30s end-to-end target remains unmet. No claim of production performance or browser validation.
+- Browser preview now actually completed the upload/explicit-selection/ready flow. Resource Timing upload start to result-video request: 63.9615s; a late DOM observer's 89.232s was corrected, not treated as processing latency.
+- Next preview pins only Shot Tracer BFF functions to sin1, near the Supabase region, and adds staging-only upstream Server-Timing / region evidence. No comments/attribution function region changes. Performance benefit still to be measured; not a 30s claim.
