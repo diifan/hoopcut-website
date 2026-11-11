@@ -36,7 +36,8 @@ def check(http=False):
     expected_video_urls.update('https://hoopcut.ai/videos/'+t['slug'] for t in topics if t['video_id'] in {v['video_id'] for v in videos if v['status']=='public_verified'})
     if videos:expected_video_urls.add('https://hoopcut.ai/videos')
     assert {u for u in urls if u.startswith('https://hoopcut.ai/videos')}==expected_video_urls
-    assert len(urls)==len(set(urls))==39+len(expected_video_urls)
+    assert BASE+'/shot-tracer' in urls
+    assert len(urls)==len(set(urls))==40+len(expected_video_urls)
     records={};titles=set();descriptions=set();adjacency={};incoming=Counter()
     for url in urls:
         assert url.startswith(BASE+'/') and not urlsplit(url).query and not urlsplit(url).fragment
