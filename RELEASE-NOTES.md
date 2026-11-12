@@ -70,3 +70,6 @@ Bounded <=32MiB result downloads now complete before ready, using identical Blob
 
 ## Direct hoop-box selection
 Removed numbered badges. Click the detector's actual normalized rectangle; selected box highlights, explicit confirmation remains. Transparent 44px minimum hit target and keyboard focus/accessible labels preserved. No detector, tracking, coordinates or rendering changes.
+
+## One-click Export
+Export starts the file download directly (buffered Blob reused; signed download URL fallback). Removed second Download button. Concurrent clicks guarded, errors retryable, stale responses ignored. Browser download completion is not claimed by the UI.
