@@ -33,7 +33,8 @@ def build_tools():
     page=page.replace('</head>','<link rel="stylesheet" href="/assets/tools/tools.css"><script src="/assets/tools/tools.js" defer></script></head>')
     hero=hero.replace('Your game.<br><span>Your toolkit.</span>', 'Free basketball tools.<br><span>Made for your game.</span>')
     page=page.replace('<body>','<body class="tools-directory">')+navigation('tools')+'<main id="main"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Tools</span></nav>'+hero+controls+sections+tail+'</main>'+footer()+'</body></html>'
-    (ROOT/'tools.html').write_text(page)
+    from build_shot_tracer import add_tool_link
+    (ROOT/'tools.html').write_text(add_tool_link(page))
 
 def home_tools_section():
     picks=[('basketball-reel-cover','A cover that feels like you.','Personalize the title, name and jersey number.','Make a reel cover'),('basketball-clip-log','Find that play again.','Keep source files and timestamps together for the next edit.','Open the clip log'),('basketball-senior-gift-budget','Make the team plan add up.','Work out quantities, costs and extras before ordering.','Plan the gift budget')]

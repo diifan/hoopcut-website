@@ -41,7 +41,14 @@ def check(http=False):
     homecourt_urls={BASE+'/homecourt'}|{BASE+'/homecourt/'+p['slug'] for p in json.loads((ROOT/'content/homecourt/pages.json').read_text())['pages']}
     assert homecourt_urls.issubset(set(urls))
     assert BASE+'/shot-tracer' in urls
-    assert len(urls)==len(set(urls))==40+len(expected_video_urls)+len(court_urls)+len(homecourt_urls)
+    from build_shot_tracer import route, directory_path, PAGE_SIZE, validate
+    tracer_pages=json.loads((ROOT/'content/shot-tracer/pages.json').read_text())
+    validate(tracer_pages)
+    approved=[p for p in tracer_pages if p['status']=='approved']
+    scene_count=sum(bool(p['slug']) for p in approved)
+    tracer_urls={BASE+route(p) for p in approved}|{BASE+directory_path(n) for n in range(1,(scene_count+PAGE_SIZE-1)//PAGE_SIZE+1)}
+    assert {u for u in urls if u==BASE+'/shot-tracer' or u.startswith(BASE+'/shot-tracer/')}==tracer_urls
+    assert len(urls)==len(set(urls))==39+len(tracer_urls)+len(expected_video_urls)+len(court_urls)+len(homecourt_urls)
     records={};titles=set();descriptions=set();adjacency={};incoming=Counter()
     for url in urls:
         assert url.startswith(BASE+'/') and not urlsplit(url).query and not urlsplit(url).fragment
@@ -66,7 +73,7 @@ def check(http=False):
         for raw in re.findall(r'<script type="application/ld\+json">(.*?)</script>',source,re.S):
             data=json.loads(raw);assert data.get('@context')=='https://schema.org';graphs+=data.get('@graph',[data])
         assert graphs,('structured data',path)
-        if path.startswith(('/blog/','/templates/','/videos/','/tools/','/homecourt/')) or path in ['/blog','/tools','/homecourt']:
+        if path.startswith(('/blog/','/templates/','/videos/','/tools/','/homecourt/','/shot-tracer/')) or path in ['/blog','/tools','/homecourt','/shot-tracer']:
             assert any(x.get('@type')=='BreadcrumbList' for x in graphs),('breadcrumb schema',path)
             assert any(t=='nav' and a.get('aria-label')=='Breadcrumb' for t,a in p.tags),('visible breadcrumb',path)
         for t,a in p.tags:

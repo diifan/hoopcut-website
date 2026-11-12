@@ -1,0 +1,140 @@
+[
+  {
+    "slug": "",
+    "status": "approved",
+    "intent": "basketball-shot-tracer-online",
+    "title": "Free Basketball Shot Tracer Online | HoopCut",
+    "description": "Add a shot tracer to your basketball video online. Upload a clip, trim to 30 seconds, preview four effects and export the free Firework effect with HoopCut.",
+    "heading": "Free basketball shot tracer online",
+    "intro": "Add a visible ball trail to your basketball video. Upload your footage, choose up to 30 seconds, preview the tracer and export the free Firework effect.",
+    "sections": [
+      {
+        "heading": "What is a basketball shot tracer?",
+        "text": "A basketball shot tracer adds a visible trail along the ball’s flight in a recorded video. It helps viewers follow the release and the path toward the hoop, especially when the ball is small on a phone screen. HoopCut uses the uploaded footage to create the effect. Review the preview before sharing: a trail is a visual editing effect, not a calibrated measurement of shooting mechanics or accuracy."
+      },
+      {
+        "heading": "How to add a tracer to your basketball video",
+        "steps": [
+          "Import your basketball video using the button above, or drag the file into the upload area. The tool accepts MP4, MOV and WebM files up to 512 MB; playback also depends on the video codec supported by your browser.",
+          "For longer footage, choose a segment of up to 30 seconds. Include the release, the ball’s flight and the finish at the hoop. Keep some context before and after the shot.",
+          "Let the tool process your clip, then replay the result. Preview Firework, Cosmic, Ice Beam and Sunset to see how the trail reads against your footage.",
+          "Export the free Firework effect when you are happy with the preview. Other effects are available to unlock in the app. Watch the exported video before sharing it."
+        ]
+      },
+      {
+        "heading": "Choose footage that makes the ball easy to follow",
+        "text": "Start with a steady camera angle that keeps both the basketball and hoop in view. Avoid zooming or panning during the shot. If another player blocks the ball, or the ball disappears into a dark background, try a clearer attempt or a shorter range. For pickup games, check that the visible trail follows the intended shot when several players move through the frame. Do not assume every recording will produce a usable trace."
+      },
+      {
+        "heading": "Free web export and the HoopCut app",
+        "text": "The web tool processes a selected clip of up to 30 seconds and exports the Firework effect for free. Cosmic, Ice Beam and Sunset can be previewed here, with an app download link for unlocking more effects. The app supports videos up to one hour. Uploaded videos are processed on the server. Access expires after 24 hours; background cleanup removes expired files; deletion may be delayed."
+      }
+    ],
+    "faq": [
+      [
+        "Is this basketball shot tracer free?",
+        "The web tool offers free Firework exports for clips up to 30 seconds. Other effects can be previewed, with an app link to unlock them."
+      ],
+      [
+        "Can I upload a full game?",
+        "The web upload limit is 512 MB and the processed range is up to 30 seconds. Trim a short shot sequence for the web tool, or use the app for videos up to one hour."
+      ],
+      [
+        "Does a shot tracer count makes and misses?",
+        "A visible ball trail is not a shot chart or shooting percentage. Use a separate shot log when you want to record makes, misses and shot locations."
+      ],
+      [
+        "Why does the tracer miss part of the shot?",
+        "Motion blur, an obscured ball or a moving camera can make the flight difficult to follow. Try a clearer clip with the ball and hoop visible, then review the result."
+      ],
+      [
+        "Can I use this for golf videos?",
+        "This tool is for basketball footage. A golf shot has different framing and tracking requirements, so this page does not promise golf ball tracing."
+      ]
+    ]
+  },
+  {
+    "slug": "three-point-shots",
+    "status": "draft",
+    "intent": "three-point-video-tracer",
+    "title": "Add a Tracer to Three-Point Basketball Shots | HoopCut",
+    "description": "Prepare a three-point basketball clip for a shot tracer. Keep the release, high arc and rim in view, then preview and export a short Firework video.",
+    "heading": "Add a tracer to a three-point shot",
+    "intro": "Keep the long ball flight visible from release to rim. Upload your three-point basketball clip and select a range of up to 30 seconds to preview the trail.",
+    "sections": [
+      {
+        "heading": "Frame the full arc, not just the shooter",
+        "text": "A three-point shot can leave the top of a tight crop. Choose footage with space above the player and the hoop visible at the far end. If the camera follows the player and loses the ball, a trail cannot supply the missing footage."
+      },
+      {
+        "heading": "Keep the result in the selected range",
+        "text": "Begin before the release and end after the ball reaches the rim. Review the long middle portion of the flight, where a small ball can blend into the crowd or gym background. Compare the trail with the visible ball before exporting."
+      }
+    ],
+    "faq": [
+      [
+        "Will the tracer measure three-point distance?",
+        "No. The visual trail does not establish a calibrated court distance. Verify the court markings in the original footage."
+      ]
+    ],
+    "demandEvidence": null,
+    "exampleEvidence": null,
+    "reviewedBy": null
+  },
+  {
+    "slug": "free-throws",
+    "status": "draft",
+    "intent": "free-throw-video-tracer",
+    "title": "Add a Basketball Tracer to Free Throw Videos | HoopCut",
+    "description": "Select a clear free throw video for a basketball shot tracer. Keep the release and rim visible, preview the ball trail and export a short Firework clip.",
+    "heading": "Add a tracer to a free throw video",
+    "intro": "Make a free throw’s ball flight visible in your video. Select one attempt or a short sequence, then preview the effect before exporting.",
+    "sections": [
+      {
+        "heading": "Separate the attempt from the routine",
+        "text": "A free throw recording may include a long pre-shot routine. Trim close enough to the attempt to keep the full release and finish within 30 seconds. Leave the player’s setup visible so viewers understand the moment."
+      },
+      {
+        "heading": "Review each attempt separately",
+        "text": "When teammates rebound or return another ball, check that the effect follows the intended attempt. A steady side angle can help show the flight, but a visual trace alone cannot diagnose technique. Keep a separate record if you want to compare makes and misses across a session."
+      }
+    ],
+    "faq": [
+      [
+        "Can I compare my shooting form using the trail?",
+        "The trail shows the ball’s visible path in the clip. Camera position changes its appearance, so do not treat it as a calibrated comparison of release angles."
+      ]
+    ],
+    "demandEvidence": null,
+    "exampleEvidence": null,
+    "reviewedBy": null
+  },
+  {
+    "slug": "pickup-games",
+    "status": "draft",
+    "intent": "pickup-game-video-tracer",
+    "title": "Basketball Shot Tracer for Pickup Game Clips | HoopCut",
+    "description": "Prepare pickup basketball footage for a shot tracer. Select one clear play, check for blocked ball flight and preview the effect before a free Firework export.",
+    "heading": "Trace a shot from your pickup game",
+    "intro": "Turn a clear shot from your pickup recording into a short traced clip. Choose the play, keep the ball in frame and review the trail before sharing.",
+    "sections": [
+      {
+        "heading": "Choose a play with an unobstructed ball flight",
+        "text": "Pickup footage often has defenders crossing the camera and players standing beneath the basket. Start with an attempt where the release, ball flight and rim are visible. If a player blocks the key part of the flight, choose another attempt instead of presenting an uncertain trace as precise."
+      },
+      {
+        "heading": "Keep enough context to identify the play",
+        "text": "Include the pass or dribble that leads to the shot and a brief view of the finish. Check the preview at the size friends will watch on their phones. A short clip with one clear attempt is easier to review than a crowded sequence with several unrelated possessions."
+      }
+    ],
+    "faq": [
+      [
+        "Will this automatically create a full pickup highlight reel?",
+        "This page adds a shot tracer to a selected short clip. Automatic highlight clipping is a separate HoopCut workflow."
+      ]
+    ],
+    "demandEvidence": null,
+    "exampleEvidence": null,
+    "reviewedBy": null
+  }
+]

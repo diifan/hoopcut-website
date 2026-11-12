@@ -150,6 +150,8 @@ def build():
     build_court_tools()
     from build_homecourt import build as build_homecourt
     build_homecourt()
+    from build_shot_tracer import build as build_shot_tracer
+    build_shot_tracer()
     print('Built first batch: 5 new guides + 15 distinct editable resource pages. No publishing action.')
 
 if __name__=='__main__': build()
