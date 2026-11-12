@@ -86,7 +86,7 @@ async function loadResultPreview(url,run,container){
  const controller=new AbortController();previewController=controller;
  const limit=32*1024*1024;let objectURL=null,blob=null,assignedURL=null,completed=false;
  try{
-  if(container!=='mp4-faststart'){
+  { // Buffer bounded results once: preview and export share identical local bytes.
   const response=await fetch(url,{signal:controller.signal});
   if(!response.ok)throw Error('Could not load your result. Please retry.');
   const length=Number(response.headers.get('Content-Length'));
@@ -95,9 +95,10 @@ async function loadResultPreview(url,run,container){
    try{
     while(true){const next=await reader.read();if(next.done)break;bytes+=next.value.byteLength;
      if(bytes>limit){oversize=true;await reader.cancel();break;}chunks.push(next.value);
+     if(run===epoch&&length>0&&typeof message==='function')message('Loading your preview… '+Math.min(100,Math.round(bytes/length*100))+'%');
     }
    }finally{reader.releaseLock();}
-   if(!oversize){if(!bytes)throw Error('Your result is empty. Please retry.');blob=new Blob(chunks,{type:'video/mp4'});}
+   if(!oversize){if(length>0&&bytes!==length)throw Error('Incomplete preview download. Please retry.');if(!bytes)throw Error('Your result is empty. Please retry.');blob=new Blob(chunks,{type:'video/mp4'});}
   }else if(response.body)await response.body.cancel();
   }
   if(run!==epoch||controller.signal.aborted)throw new DOMException('Cancelled','AbortError');

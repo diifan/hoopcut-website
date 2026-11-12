@@ -63,3 +63,7 @@ Production routes to the production-only overlap endpoint; preview stays staging
 
 ## Multi-hoop selection and cancel fix
 Retain detector candidates above the App candidate threshold (0.1), instead of discarding secondary hoops at 0.5. Three-hoop user fixture validated separately on GPU. Both cancel controls immediately return to upload and cancel the server job; stale callbacks cannot restore the old editor. 34 tracer tests passed.
+
+## Classic tracer and buffered playback
+Remove custom particle/starburst/glow drawing. Worker uses App classic tail defaults (0.45s, end hold 0.04s, 0.16s gap split, 8-step quadratic sampling), palette only. OpenCV is not claimed pixel-identical to CoreGraphics. User cancelled highlight cutting: full video remains.
+Bounded <=32MiB result downloads now complete before ready, using identical Blob for preview/export. Real download progress, cancellation, oversized remote fallback and incomplete transfer rejection retained. This trades initial buffer time for no network waits during bounded playback; not a claim of faster GPU/upload or complete trajectory-extraction parity.
