@@ -65,10 +65,11 @@ async function showHoops(selection){
 }
 
 let previewController=null;
-async function loadResultPreview(url,run){
+async function loadResultPreview(url,run,container){
  const controller=new AbortController();previewController=controller;
- const limit=32*1024*1024;let objectURL=null,blob=null;
+ const limit=32*1024*1024;let objectURL=null,blob=null,assignedURL=null,completed=false;
  try{
+  if(container!=='mp4-faststart'){
   const response=await fetch(url,{signal:controller.signal});
   if(!response.ok)throw Error('Could not load your result. Please retry.');
   const length=Number(response.headers.get('Content-Length'));
@@ -81,6 +82,7 @@ async function loadResultPreview(url,run){
    }finally{reader.releaseLock();}
    if(!oversize){if(!bytes)throw Error('Your result is empty. Please retry.');blob=new Blob(chunks,{type:'video/mp4'});}
   }else if(response.body)await response.body.cancel();
+  }
   if(run!==epoch||controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
   objectURL=blob?URL.createObjectURL(blob):null;
   const video=$('preview');
@@ -91,18 +93,19 @@ async function loadResultPreview(url,run){
    const aborted=()=>{cleanup();reject(new DOMException('Cancelled','AbortError'));};
    const timer=setTimeout(()=>{cleanup();reject(Error('Preview loading timed out. Please retry.'));},30000);
    video.addEventListener('loadeddata',loaded);video.addEventListener('error',failed);controller.signal.addEventListener('abort',aborted,{once:true});
-   video.src=objectURL||url;video.load();
+   video.src=objectURL||url;assignedURL=video.src;video.load();
   });
   if(run!==epoch||controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
-  exportBlob=blob;exportURL=objectURL;objectURL=null;
+  exportBlob=blob;exportURL=objectURL;objectURL=null;completed=true;
  }finally{
+  if(!completed&&previewController===controller&&assignedURL&&$('preview').src===assignedURL){$('preview').removeAttribute?.('src');$('preview').load();}
   if(objectURL)URL.revokeObjectURL(objectURL);
   if(previewController===controller)previewController=null;
  }
 }
 
 async function upload(){const run=++epoch;busy=true;ready=false;lastAction='upload';$('retry').hidden=true;message('Preparing upload…');actions();try{if(!uploadRequest)uploadRequest=await rpc('create','',{request_id:crypto.randomUUID(),size_bytes:file.size});job=uploadRequest.id;if(!uploadRequest.uploaded){await putVideo(uploadRequest.upload_url,file);uploadRequest.uploaded=true;}await rpc('complete',job);let d;const deadline=Date.now()+20*60*1000;while(run===epoch){d=await rpc('status',job);if(d.state==='imported'||d.state==='needs_hoop'||d.stage==='choosing_hoop')break;if(['failed','expired','cancelled'].includes(d.state))throw Error(d.error||'Cannot read this video. Import another file.');if(Date.now()>deadline)throw Error('Processing is taking longer than expected. Please retry.');message(d.stage==='downloading'?'Preparing your uploaded video…':'Checking your video…');await new Promise(r=>setTimeout(r,750));}if(run!==epoch)return;duration=d.video.duration;start=0;end=Math.min(30,duration);$('trim-start').value=0;$('trim-end').value=end.toFixed(2);$('trim-slider').max=Math.max(0,duration-1);$('trim-slider').value=0;busy=false;if(d.state==='needs_hoop'||d.stage==='choosing_hoop'){if(!Array.isArray(d.trim)||d.trim.length!==2||d.trim[0]!==0||d.trim[1]!==duration)throw Error('Prepared clip range is invalid. Please retry.');start=d.trim[0];end=d.trim[1];hoopId=null;hoopRange=JSON.stringify([start,end]);lastAction='process';$('effects').hidden=false;actions();await showHoops(d.selection);return;}if(duration>30){$('trim-panel').hidden=false;message('Choose the part you want to trace.');updateTrim();actions()}else await process();}catch(e){if(run===epoch)failure(e);}}
-async function process(){$('editor').classList.remove('choosing-hoop');if(hoopRange!==JSON.stringify([start,end])){hoopId=null;hoopRange=JSON.stringify([start,end]);}$('hoop-panel').hidden=true;$('edit-trim').hidden=true;const run=++epoch;busy=true;ready=false;lastAction='process';cleanExport();$('retry').hidden=true;$('trim-panel').hidden=true;$('effects').hidden=false;actions();message(hoopId?'Tracking the ball…':'Preparing your clip…');try{await request(`${api}/${job}/process`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({start,end,effect,...(hoopId?{hoop_id:hoopId}:{})})});while(run===epoch){const s=await request(`${api}/${job}`);if(s.stage==='needs_hoop'||s.stage==='choosing_hoop'){busy=false;ready=false;actions();await showHoops(s.selection);return;}if(s.stage==='ready'){message('Loading your preview…');await loadResultPreview(s.preview_url,run);if(run!==epoch)return;busy=false;ready=true;message('Ready to preview.');actions();return;}if(['failed','no_shots','cancelled','expired'].includes(s.stage))throw Error(s.error);message(stages[s.stage]||'Processing…',s.progress);await new Promise(r=>setTimeout(r,750));}}catch(e){if(run===epoch)failure(e);}}
+async function process(){$('editor').classList.remove('choosing-hoop');if(hoopRange!==JSON.stringify([start,end])){hoopId=null;hoopRange=JSON.stringify([start,end]);}$('hoop-panel').hidden=true;$('edit-trim').hidden=true;const run=++epoch;busy=true;ready=false;lastAction='process';cleanExport();$('retry').hidden=true;$('trim-panel').hidden=true;$('effects').hidden=false;actions();message(hoopId?'Tracking the ball…':'Preparing your clip…');try{await request(`${api}/${job}/process`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({start,end,effect,...(hoopId?{hoop_id:hoopId}:{})})});while(run===epoch){const s=await request(`${api}/${job}`);if(s.stage==='needs_hoop'||s.stage==='choosing_hoop'){busy=false;ready=false;actions();await showHoops(s.selection);return;}if(s.stage==='ready'){message('Loading your preview…');await loadResultPreview(s.preview_url,run,s.renders?.[effect]?.container);if(run!==epoch)return;busy=false;ready=true;message('Ready to preview.');actions();return;}if(['failed','no_shots','cancelled','expired'].includes(s.stage))throw Error(s.error);message(stages[s.stage]||'Processing…',s.progress);await new Promise(r=>setTimeout(r,750));}}catch(e){if(run===epoch)failure(e);}}
 function updateTrim(){start=Number($('trim-start').value);end=Number($('trim-end').value);const valid=Number.isFinite(start)&&Number.isFinite(end)&&start>=0&&end>start&&end<=duration+.01&&end-start<=30;$('apply-trim').disabled=!valid;$('trim-length').textContent=valid?`${(end-start).toFixed(1)} seconds`:'Choose a valid range of up to 30 seconds.';if(valid)$('preview').currentTime=start;}
 function chooseFile(chosen){$('editor').classList.remove('choosing-hoop');if(!chosen||busy)return;if(chosen.size>512*1024**2){message('Choose a video smaller than 512 MB.');return;}$('edit-trim').hidden=true;uploadRequest=null;hoopId=null;hoopRange='';$('hoop-panel').hidden=true;epoch++;file=chosen;job=null;effect='firework';cleanExport();if(localURL)URL.revokeObjectURL(localURL);localURL=URL.createObjectURL(file);$('preview').src=localURL;$('clip-name').textContent=file.name;$('editor').querySelector('h2').textContent='Your shot. Your spotlight.';$('editor').hidden=false;$('import-panel').hidden=true;$('effects').hidden=true;$('trim-panel').hidden=true;upload();$('step1').classList.remove('active');$('step2').classList.add('active');$('step3').classList.remove('active');}
 $('video-file').addEventListener('change',()=>chooseFile($('video-file').files[0]));

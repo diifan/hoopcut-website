@@ -52,3 +52,8 @@ Supabase login restored. Transaction-isolated selection protocol test passed and
 - Pin only fast staging BFF requests to ap-southeast-1, matching HoopCut database. Production route unchanged.
 - Expose non-secret staging edge region for verification; 28 tracer tests passed including production isolation.
 - Worker region benchmark: default us-west-1 warm 0.788/1.281s; pinned ap-southeast-1 warm 0.562/0.469s. Not an end-to-end result.
+
+## 2026-11-12 indexed staging output
+- Only server-marked mp4-faststart results load directly; legacy results retain bounded Blob loading.
+- Wait for loadeddata before ready; cancellation stops pending direct media. Export still refreshes signed download URL.
+- 31 tracer tests passed; worker isolated full computation produced verified indexed output with identical video/audio decoding to baseline. Full browser pipeline timing pending.
