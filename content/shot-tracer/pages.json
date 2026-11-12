@@ -13,15 +13,6 @@
         "text": "A basketball shot tracer adds a visible trail along the ball’s flight in a recorded video. It helps viewers follow the release and the path toward the hoop, especially when the ball is small on a phone screen. HoopCut uses the uploaded footage to create the effect. Review the preview before sharing: a trail is a visual editing effect, not a calibrated measurement of shooting mechanics or accuracy."
       },
       {
-        "heading": "How to add a tracer to your basketball video",
-        "steps": [
-          "Import your basketball video using the button above, or drag the file into the upload area. The tool accepts MP4, MOV and WebM files up to 512 MB; playback also depends on the video codec supported by your browser.",
-          "For longer footage, choose a segment of up to 30 seconds. Include the release, the ball’s flight and the finish at the hoop. Keep some context before and after the shot.",
-          "Let the tool process your clip, then replay the result. Preview Firework, Cosmic, Ice Beam and Sunset to see how the trail reads against your footage.",
-          "Export the free Firework effect when you are happy with the preview. Other effects are available to unlock in the app. Watch the exported video before sharing it."
-        ]
-      },
-      {
         "heading": "Choose footage that makes the ball easy to follow",
         "text": "Start with a steady camera angle that keeps both the basketball and hoop in view. Avoid zooming or panning during the shot. If another player blocks the ball, or the ball disappears into a dark background, try a clearer attempt or a shorter range. For pickup games, check that the visible trail follows the intended shot when several players move through the frame. Do not assume every recording will produce a usable trace."
       },
