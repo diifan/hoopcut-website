@@ -1,0 +1,80 @@
+{
+  "slug": "indoor-shooting-practice-video",
+  "video_id": "-PVooq0tJLo",
+  "keyword": "indoor basketball shooting practice video",
+  "title": "Indoor Basketball Shooting Practice Video: Three Clips to Review | HoopCut",
+  "h1": "Review Three Selected Indoor Shooting Sequences",
+  "description": "A short indoor basketball shooting practice video can help you focus on one observation at a time. This page uses three selected shooting sequences to.",
+  "meta_description": "A short indoor basketball shooting practice video can help you focus on one observation at a time. This page uses three selected shooting sequences to.",
+  "intro": "Use the clips as a viewing exercise, not as a complete record of a workout. The source is indoor training footage, and the edit selects three shooting sequences; it is not a pickup game and does not show every exercise from the source. The ball trail is a visual overlay, not a measurement of accuracy or mechanics.",
+  "date_modified": "2026-11-12",
+  "heading": "Review Three Selected Indoor Shooting Sequences",
+  "sections": [
+    {
+      "id": "section-1",
+      "nav_title": "Watch the action before the graphic",
+      "heading": "Watch the action before the graphic",
+      "paragraphs": [
+        "Play each sequence once at normal speed and follow the real basketball. Notice when the player prepares, releases, and the ball moves toward the basket. On another pass, notice how the tracer draws attention to the flight. Keeping these passes separate makes it easier to describe what is visible without treating the graphic as proof."
+      ]
+    },
+    {
+      "id": "section-2",
+      "nav_title": "Write observations that another viewer can check",
+      "heading": "Write observations that another viewer can check",
+      "paragraphs": [
+        "Use concrete language such as \u201cthe ball is visible after release\u201d or \u201cthe trail draws my eye toward the rim.\u201d Avoid adding a shot result, distance, player identity, or training outcome unless the footage clearly establishes it. The selected sequences are examples, not a complete sample from which to infer consistency."
+      ]
+    },
+    {
+      "id": "section-3",
+      "nav_title": "Turn a viewing pass into a practice note",
+      "heading": "Turn a viewing pass into a practice note",
+      "paragraphs": [
+        "For your own recording, note which repetition you watched, what remained visible, and what you would need to see again. Keep the original recording available if context before or after a selected clip matters. A short edited video can support a focused question while leaving broader practice evaluation open."
+      ],
+      "checks": [
+        [
+          "Scope",
+          "What does this selected edit establish?"
+        ],
+        [
+          "Visibility",
+          "Can I follow the real ball at normal speed?"
+        ],
+        [
+          "Uncertainty",
+          "What needs the original or another view?"
+        ],
+        [
+          "Next step",
+          "What specific question should I investigate?"
+        ]
+      ],
+      "links": [
+        [
+          "Read the basketball Shot Tracer guide",
+          "/blog/how-to-add-shot-tracer-to-basketball-video"
+        ],
+        [
+          "Open the prepared Shot Tracer demo",
+          "/demo/shot-tracer"
+        ]
+      ]
+    }
+  ],
+  "questions": [
+    [
+      "What does this video show?",
+      "Three selected indoor basketball shooting sequences from a practice recording, presented with a ball-trail overlay."
+    ],
+    [
+      "Does it show the full workout?",
+      "No. It is an edit of selected sequences and does not show every exercise in the source."
+    ],
+    [
+      "Can I use it to judge shooting accuracy?",
+      "No. The overlay is visual and the page provides no calibrated accuracy or performance result."
+    ]
+  ]
+}
