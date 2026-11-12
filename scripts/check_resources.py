@@ -105,7 +105,7 @@ static=json.loads((ROOT/'content/seo-static.json').read_text())
 assert after.count('id="tools"')==1 and after.count('href="'+static['/assets/tools/home-tools.css']+'"')==1
 hub=pages[ROOT/'tools.html']
 assert sum(t=='h1' for t,a in hub.tags)==1
-assert sum(t=='article' and 'data-tool' in a for t,a in hub.tags)==15
+assert sum(t=='article' and 'data-tool' in a for t,a in hub.tags)==17
 for f,p in pages.items():
     nav=re.search(r'<nav[^>]*aria-label="Main navigation"[^>]*>.*?</nav>',f.read_text(),re.S)
     assert nav and 'href="/tools"' in nav[0] and 'href="/blog"' in nav[0],('Tools/Blog navigation',f)
