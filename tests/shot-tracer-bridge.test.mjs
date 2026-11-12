@@ -12,3 +12,12 @@ test('server selects staging, does not trust client environment or rate key',asy
  globalThis.fetch=async(url,options)=>{sent=JSON.parse(options.body);return {status:200,json:async()=>({id:'fixture'})}};
  try{let r=res();let q=req({action:'create',environment:'production',data:{rate_key:'forged',size_bytes:4}});q.headers['x-vercel-forwarded-for']='192.0.2.1';await proxy(q,r);assert.equal(r.statusCode,200);assert.equal(sent.environment,'staging');assert.match(sent.data.rate_key,/^[a-f0-9]{64}$/);assert.notEqual(sent.data.rate_key,'forged');assert.equal(r.headers['Cache-Control'],'no-store')}finally{globalThis.fetch=previous}
 });
+for(const [environment,enabled,suffix] of [['preview','1','shot-tracer-overlap-staging'],['preview','0','shot-tracer-bridge'],['production','1','shot-tracer-overlap-production'],['production','0','shot-tracer-overlap-production']]){
+ test('endpoint isolation '+environment+' flag '+enabled,async()=>{
+  const previous=globalThis.fetch,oldEnv=process.env.VERCEL_ENV,oldFlag=process.env.HC_TRACER_FAST_STAGING;let target,sent,sentHeaders;
+  process.env.VERCEL_ENV=environment;process.env.HC_TRACER_FAST_STAGING=enabled;
+  globalThis.fetch=async(url,options)=>{target=url;sentHeaders=options.headers;sent=JSON.parse(options.body);return {status:200,json:async()=>({state:'imported'})}};
+  try{const r=res();await proxy(req({action:'status',id:'a'.repeat(48)}),r);assert.equal(r.statusCode,200);assert.equal(new URL(target).pathname.split('/').at(-1),suffix);assert.equal(sent.environment,environment==='production'?'production':'staging');const pinned=environment==='production'||enabled==='1';assert.equal(sentHeaders['x-region'],pinned?'ap-southeast-1':undefined);assert.equal(new URL(target).searchParams.get('forceFunctionRegion'),pinned?'ap-southeast-1':null);}
+  finally{globalThis.fetch=previous;oldEnv===undefined?delete process.env.VERCEL_ENV:process.env.VERCEL_ENV=oldEnv;oldFlag===undefined?delete process.env.HC_TRACER_FAST_STAGING:process.env.HC_TRACER_FAST_STAGING=oldFlag;}
+ });
+}
