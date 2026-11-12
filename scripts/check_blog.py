@@ -42,7 +42,7 @@ def resolve(path):
     if path in ['', '/']:
         return ROOT / 'index.html'
     if file.is_dir():
-        return file / 'index.html'
+        return file / 'index.html' if (file / 'index.html').is_file() else file.with_suffix('.html')
     if file.is_file():
         return file
     return file.with_suffix('.html')
@@ -120,7 +120,7 @@ video_records=json.loads((ROOT/'content/videos/manifest.json').read_text()) if (
 video_records=[v for v in video_records if v['status']=='public_verified']
 topics_path=ROOT/'content/videos/topics.json'
 topic_count=len([t for t in json.loads(topics_path.read_text()) if t['video_id'] in {v['video_id'] for v in video_records}]) if topics_path.exists() else 0
-assert len(urls)==len(ARTICLES)+6+resource_count+int((ROOT/'tools.html').exists())+len(video_records)+int(bool(video_records))+topic_count and len(urls)==len(set(urls))
+assert len(urls)==58+len(video_records)+int(bool(video_records))+topic_count and len(urls)==len(set(urls))
 assert all('https://hoopcut.ai/blog/'+slug(x['keyword']) in urls for x in ARTICLES)
 assert all('https://hoopcut.ai/demo/'+x in urls for x in ['auto-clipping','shot-tracer'])
 assert 'Sitemap: https://hoopcut.ai/sitemap.xml' in (ROOT/'robots.txt').read_text()

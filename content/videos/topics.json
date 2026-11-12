@@ -1948,5 +1948,725 @@
         "No accuracy score is supplied for this example."
       ]
     ]
+  },
+  {
+    "slug": "basketball-practice-video-observation-notes",
+    "video_id": "-PVooq0tJLo",
+    "keyword": "basketball practice video observation notes",
+    "title": "Basketball Practice Video Notes: Observation vs. Inference | HoopCut",
+    "h1": "Separate What You See from What You Assume",
+    "description": "A useful basketball practice video note should let someone else return to the same moment and see why you wrote it. This worksheet approach separates.",
+    "meta_description": "A useful basketball practice video note should let someone else return to the same moment and see why you wrote it. This worksheet approach separates.",
+    "intro": "The example is indoor shooting practice edited into three selected sequences. Use it to practice describing a video, not to fill gaps with assumed results. A short selection cannot establish all attempts, a player\u2019s habits, or the context of an omitted repetition.",
+    "date_modified": "2026-11-12",
+    "heading": "Separate What You See from What You Assume",
+    "sections": [
+      {
+        "id": "section-1",
+        "nav_title": "Use a two-column note",
+        "heading": "Use a two-column note",
+        "paragraphs": [
+          "In the first column write only details visible in the clip: a shooting action, a visible ball path, or the presence of an on-screen exercise label. In the second column write questions: where did the sequence begin in the full recording, what happened outside the crop, or is the outcome visible? This structure keeps observations useful without turning questions into claims."
+        ]
+      },
+      {
+        "id": "section-2",
+        "nav_title": "Reference the moment, not a guess",
+        "heading": "Reference the moment, not a guess",
+        "paragraphs": [
+          "For a working note, identify the sequence by its order in the edit and add a timestamp from your own player if you need to revisit it. Do not invent source timestamps or label a shot as made or missed when the available view does not establish that. Preserve the original source reference alongside any notes."
+        ]
+      },
+      {
+        "id": "section-3",
+        "nav_title": "Share notes with a clear scope",
+        "heading": "Share notes with a clear scope",
+        "paragraphs": [
+          "Tell a teammate whether your note describes the selected edit or the full practice. If you are discussing mechanics, ask for the full attempt or a better camera view before drawing conclusions. This makes a short basketball video a prompt for review rather than a substitute for evidence."
+        ],
+        "checks": [
+          [
+            "Scope",
+            "What does this selected edit establish?"
+          ],
+          [
+            "Visibility",
+            "Can I follow the real ball at normal speed?"
+          ],
+          [
+            "Uncertainty",
+            "What needs the original or another view?"
+          ],
+          [
+            "Next step",
+            "What specific question should I investigate?"
+          ]
+        ],
+        "links": [
+          [
+            "Use a player highlight observation log",
+            "/templates/basketball-player-highlight-log"
+          ],
+          [
+            "Read the basketball Shot Tracer guide",
+            "/blog/how-to-add-shot-tracer-to-basketball-video"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Why separate observations and questions?",
+        "It shows which statements are directly visible and which need more footage or context."
+      ],
+      [
+        "Can three selected clips show a whole practice pattern?",
+        "No. Selected footage is not a complete or representative record of every repetition."
+      ],
+      [
+        "Should I add a source timestamp?",
+        "Only after checking the original recording or player timeline; do not guess it from the edit."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-drill-label-context-check",
+    "video_id": "-PVooq0tJLo",
+    "keyword": "basketball drill video labels context",
+    "title": "Basketball Drill Video Labels: Keep Source Context | HoopCut",
+    "h1": "Preserve the Meaning of On-Screen Practice Labels",
+    "description": "On-screen drill labels can help viewers understand a basketball practice clip, but a selected edit may not include every step of the exercise. This guide.",
+    "meta_description": "On-screen drill labels can help viewers understand a basketball practice clip, but a selected edit may not include every step of the exercise. This guide.",
+    "intro": "The source footage contains exercise labels, and the edited video retains those labels in selected shooting sequences. The edit does not show every exercise from the original. Treat the wording as source context, not as a newly verified HoopCut coaching instruction.",
+    "date_modified": "2026-11-12",
+    "heading": "Preserve the Meaning of On-Screen Practice Labels",
+    "sections": [
+      {
+        "id": "section-1",
+        "nav_title": "Quote or describe the label accurately",
+        "heading": "Quote or describe the label accurately",
+        "paragraphs": [
+          "When a label is readable, preserve its wording and make clear it appears in the source footage. If the text is partly obscured or too brief to read, do not reconstruct it from memory. A caption added to your own post should distinguish a source label from your own explanation."
+        ]
+      },
+      {
+        "id": "section-2",
+        "nav_title": "Check whether the sequence supports the label",
+        "heading": "Check whether the sequence supports the label",
+        "paragraphs": [
+          "Ask whether the selected footage visibly demonstrates the labeled movement, or only shows a later portion of an exercise. A short excerpt may omit setup, repetitions, recovery, or coaching cues. Avoid turning an incomplete visual example into step-by-step instructions."
+        ]
+      },
+      {
+        "id": "section-3",
+        "nav_title": "Give viewers a path to fuller context",
+        "heading": "Give viewers a path to fuller context",
+        "paragraphs": [
+          "When the full source is available and appropriate to share, link it and explain that the edit is selective. Otherwise describe only what the clip itself shows. This is especially helpful when viewers might mistake a highlight for a complete lesson or assume the creator endorses a paraphrased coaching claim."
+        ],
+        "checks": [
+          [
+            "Scope",
+            "What does this selected edit establish?"
+          ],
+          [
+            "Visibility",
+            "Can I follow the real ball at normal speed?"
+          ],
+          [
+            "Uncertainty",
+            "What needs the original or another view?"
+          ],
+          [
+            "Next step",
+            "What specific question should I investigate?"
+          ]
+        ],
+        "links": [
+          [
+            "See a practice caption readability checklist",
+            "/videos/basketball-practice-caption-readability"
+          ],
+          [
+            "Read the basketball Shot Tracer guide",
+            "/blog/how-to-add-shot-tracer-to-basketball-video"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Are source labels HoopCut coaching advice?",
+        "No. They remain part of the source footage and should be attributed accordingly."
+      ],
+      [
+        "Does this edit show the full labeled exercise?",
+        "No. It contains selected shooting sequences, not every exercise from the source."
+      ],
+      [
+        "Can I paraphrase a label as a guaranteed result?",
+        "No. Preserve the wording and avoid claims about outcomes that the clip does not demonstrate."
+      ]
+    ]
+  },
+  {
+    "slug": "three-shot-viewing-discussion-guide",
+    "video_id": "-PVooq0tJLo",
+    "keyword": "basketball shooting video discussion questions",
+    "title": "Basketball Shooting Video Discussion: Three-Pass Guide | HoopCut",
+    "h1": "Use Three Passes to Discuss a Shooting Clip",
+    "description": "A short basketball shooting video can lead to a better discussion when viewers share one question at a time. This three-pass guide helps a coach, player,.",
+    "meta_description": "A short basketball shooting video can lead to a better discussion when viewers share one question at a time. This three-pass guide helps a coach, player,.",
+    "intro": "The example is an edit of three indoor practice shooting sequences with a rendered ball trail. It is not a game clip, a complete workout, or a measured shooting test. Use the prompts to structure conversation, not to infer results absent from the footage.",
+    "date_modified": "2026-11-12",
+    "heading": "Use Three Passes to Discuss a Shooting Clip",
+    "sections": [
+      {
+        "id": "section-1",
+        "nav_title": "Pass one: describe the scene",
+        "heading": "Pass one: describe the scene",
+        "paragraphs": [
+          "Watch without pausing. Ask each viewer to describe the sequence in plain language: what action is visible, where attention moves, and whether the basketball stays easy to follow. Do not begin by rating technique or assuming whether a shot went in."
+        ]
+      },
+      {
+        "id": "section-2",
+        "nav_title": "Pass two: discuss the visual aid",
+        "heading": "Pass two: discuss the visual aid",
+        "paragraphs": [
+          "Replay and notice the tracer separately from the ball. Does the line help you follow the flight, or does it compete with the rim or other information? A pleasing curve alone does not verify tracking, so compare it with the actual visible ball wherever possible."
+        ]
+      },
+      {
+        "id": "section-3",
+        "nav_title": "Pass three: choose a useful next question",
+        "heading": "Pass three: choose a useful next question",
+        "paragraphs": [
+          "Write one question that could be answered with a fuller source, a different camera angle, or another recording. Examples include whether the lead-in is long enough to see preparation or whether the finish remains visible. Keep questions specific and avoid converting a short selected edit into a verdict on the player."
+        ],
+        "checks": [
+          [
+            "Scope",
+            "What does this selected edit establish?"
+          ],
+          [
+            "Visibility",
+            "Can I follow the real ball at normal speed?"
+          ],
+          [
+            "Uncertainty",
+            "What needs the original or another view?"
+          ],
+          [
+            "Next step",
+            "What specific question should I investigate?"
+          ]
+        ],
+        "links": [
+          [
+            "Use the basketball player highlight observation log",
+            "/templates/basketball-player-highlight-log"
+          ],
+          [
+            "Read the basketball Shot Tracer guide",
+            "/blog/how-to-add-shot-tracer-to-basketball-video"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Can this clip settle a coaching debate?",
+        "Not by itself. It is a short selected edit without calibrated measurements or full practice context."
+      ],
+      [
+        "What should viewers discuss first?",
+        "Describe the visible action and what is easy to follow before interpreting technique."
+      ],
+      [
+        "Does the tracer verify ball tracking?",
+        "No. Compare the overlay with the real ball; the graphic alone is not verification."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-practice-clip-review-checklist",
+    "video_id": "-PVooq0tJLo",
+    "keyword": "basketball practice clip review checklist",
+    "title": "Basketball Practice Clip Review Checklist | HoopCut",
+    "h1": "Check a Practice Clip Before Sharing It",
+    "description": "Before sharing a basketball practice clip, check whether a new viewer can understand what the edit contains and what it leaves out. This checklist covers.",
+    "meta_description": "Before sharing a basketball practice clip, check whether a new viewer can understand what the edit contains and what it leaves out. This checklist covers.",
+    "intro": "The featured video presents three selected indoor shooting sequences from a practice video and includes a ball-trail graphic and branded ending. It does not present every exercise or provide measured shooting results. Use the checklist on this example or your own export.",
+    "date_modified": "2026-11-12",
+    "heading": "Check a Practice Clip Before Sharing It",
+    "sections": [
+      {
+        "id": "section-1",
+        "nav_title": "Confirm the clip\u2019s scope",
+        "heading": "Confirm the clip\u2019s scope",
+        "paragraphs": [
+          "State whether the video is practice footage or game footage and whether it is a selection. Do not call a training sequence pickup basketball. If the edit omits parts of the exercise, avoid wording that promises a complete drill demonstration."
+        ]
+      },
+      {
+        "id": "section-2",
+        "nav_title": "Check readability at normal speed",
+        "heading": "Check readability at normal speed",
+        "paragraphs": [
+          "Play the clip on the device where people are likely to view it. Follow the actual ball, the basket, any retained source text, and the transition between selected sequences. Pause only to investigate a moment; a still frame cannot tell you whether the sequence reads smoothly at speed."
+        ]
+      },
+      {
+        "id": "section-3",
+        "nav_title": "Review the overlay and ending",
+        "heading": "Review the overlay and ending",
+        "paragraphs": [
+          "Compare the graphic against visible ball positions, then watch through the ending. A successful media decode establishes file readability, not whether the trail is visually aligned. Make sure the branded ending is not described as part of the source practice footage."
+        ],
+        "checks": [
+          [
+            "Scope",
+            "What does this selected edit establish?"
+          ],
+          [
+            "Visibility",
+            "Can I follow the real ball at normal speed?"
+          ],
+          [
+            "Uncertainty",
+            "What needs the original or another view?"
+          ],
+          [
+            "Next step",
+            "What specific question should I investigate?"
+          ]
+        ],
+        "links": [
+          [
+            "Check a ball trail on practice footage",
+            "/videos/basketball-shot-trail-practice-qa"
+          ],
+          [
+            "Read the basketball Shot Tracer guide",
+            "/blog/how-to-add-shot-tracer-to-basketball-video"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Does a playable file prove the edit is visually correct?",
+        "No. Playback and decode do not replace visual review of the ball trail and sequence."
+      ],
+      [
+        "Should I call this a pickup highlight?",
+        "No. The source is indoor training footage, not a pickup game."
+      ],
+      [
+        "Does this edit represent the full workout?",
+        "No. It contains selected sequences only."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-shot-trail-viewing-worksheet",
+    "video_id": "-PVooq0tJLo",
+    "keyword": "basketball shot trail viewing worksheet",
+    "title": "Basketball Shot Trail Worksheet: Follow Ball and Overlay | HoopCut",
+    "h1": "Compare the Ball with Its Trail at Three Moments",
+    "description": "A basketball shot-trail worksheet can help a viewer inspect an overlay without mistaking a graphic for a measurement. Use three checkpoints\u2014release,.",
+    "meta_description": "A basketball shot-trail worksheet can help a viewer inspect an overlay without mistaking a graphic for a measurement. Use three checkpoints\u2014release,.",
+    "intro": "The example video contains a rendered ball trail over selected indoor shooting sequences. Its quality review inspected rendered frames, but this page does not publish a tracking score or claim that every unseen moment is verified. Treat occlusion and uncertainty honestly.",
+    "date_modified": "2026-11-12",
+    "heading": "Compare the Ball with Its Trail at Three Moments",
+    "sections": [
+      {
+        "id": "section-1",
+        "nav_title": "Checkpoint one: release",
+        "heading": "Checkpoint one: release",
+        "paragraphs": [
+          "Locate the real basketball near release before following the line. Record whether both the ball and trail are visible. If the release is outside the frame or obscured, note that limitation rather than inferring a precise starting point."
+        ]
+      },
+      {
+        "id": "section-2",
+        "nav_title": "Checkpoint two: middle of flight",
+        "heading": "Checkpoint two: middle of flight",
+        "paragraphs": [
+          "Check a moment while the ball is moving. Does the line remain near the ball, and can you still identify the actual object? A smooth path may look convincing while being offset, so visual polish is not enough. If the ball disappears, mark the interval as uncertain."
+        ]
+      },
+      {
+        "id": "section-3",
+        "nav_title": "Checkpoint three: near the basket",
+        "heading": "Checkpoint three: near the basket",
+        "paragraphs": [
+          "Follow the real ball and graphic toward the rim. Note whether either becomes hard to distinguish from the background or other objects. Replay the complete sequence after frame checks; isolated frames cannot show whether the overlay transition feels continuous."
+        ],
+        "checks": [
+          [
+            "Scope",
+            "What does this selected edit establish?"
+          ],
+          [
+            "Visibility",
+            "Can I follow the real ball at normal speed?"
+          ],
+          [
+            "Uncertainty",
+            "What needs the original or another view?"
+          ],
+          [
+            "Next step",
+            "What specific question should I investigate?"
+          ]
+        ],
+        "links": [
+          [
+            "Review a ball trail on practice footage",
+            "/videos/basketball-shot-trail-practice-qa"
+          ],
+          [
+            "Read the basketball Shot Tracer guide",
+            "/blog/how-to-add-shot-tracer-to-basketball-video"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Does this worksheet calculate trajectory accuracy?",
+        "No. It supports visual inspection and provides no calibrated accuracy score."
+      ],
+      [
+        "What if the ball is hidden?",
+        "Mark that portion uncertain; an overlay is not proof of the ball\u2019s unseen position."
+      ],
+      [
+        "Are three checkpoints enough to certify an effect?",
+        "No. They are a practical review aid, not a formal measurement or certification."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-training-edit-sequence-plan",
+    "video_id": "-PVooq0tJLo",
+    "keyword": "basketball training video sequence plan",
+    "title": "Basketball Training Video Sequence Plan: Three Selected Clips | HoopCut",
+    "h1": "Plan a Clear Sequence from Practice Footage",
+    "description": "A short training edit is easier to follow when each selected moment has a reason to appear. This planning guide helps you decide how to order a few.",
+    "meta_description": "A short training edit is easier to follow when each selected moment has a reason to appear. This planning guide helps you decide how to order a few.",
+    "intro": "The featured video uses three selected shooting sequences from indoor practice footage. This establishes that three sequences appear in the edit; it does not establish their original timestamps, every repetition, or the full workout order. Use your source recording to confirm those details for your own project.",
+    "date_modified": "2026-11-12",
+    "heading": "Plan a Clear Sequence from Practice Footage",
+    "sections": [
+      {
+        "id": "section-1",
+        "nav_title": "Choose the purpose before ordering",
+        "heading": "Choose the purpose before ordering",
+        "paragraphs": [
+          "Decide whether the edit is meant to show the visual trail, retain examples for discussion, or share a small training moment. One clear purpose makes selection easier. Do not invent a progression or drill structure just because clips are placed next to each other."
+        ]
+      },
+      {
+        "id": "section-2",
+        "nav_title": "Give each segment a role",
+        "heading": "Give each segment a role",
+        "paragraphs": [
+          "Write a short note for each selection: what the viewer should notice and what context is missing. If the clips come from a longer session, check their original order before implying chronology. A concise caption can explain that the video is selective."
+        ]
+      },
+      {
+        "id": "section-3",
+        "nav_title": "Test the sequence with a first-time viewer",
+        "heading": "Test the sequence with a first-time viewer",
+        "paragraphs": [
+          "Play the export at normal speed and ask whether the transitions make the next action easy to find. Then watch for the ending and confirm the branded close is understood as part of the edit. Remove decorative changes that obscure the basketball or the purpose of the sequence."
+        ],
+        "checks": [
+          [
+            "Scope",
+            "What does this selected edit establish?"
+          ],
+          [
+            "Visibility",
+            "Can I follow the real ball at normal speed?"
+          ],
+          [
+            "Uncertainty",
+            "What needs the original or another view?"
+          ],
+          [
+            "Next step",
+            "What specific question should I investigate?"
+          ]
+        ],
+        "links": [
+          [
+            "Use the basketball highlight storyboard",
+            "/templates/basketball-highlight-storyboard"
+          ],
+          [
+            "Choose useful clips from a shooting workout",
+            "/videos/basketball-practice-session-highlight-selection"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Do these three clips show the original order?",
+        "The page does not establish original timestamps or chronology; verify against the source."
+      ],
+      [
+        "Can a short edit stand for the full session?",
+        "No. It is a selection and should be described as such."
+      ],
+      [
+        "What should I do before adding effects?",
+        "Choose the sequence purpose and make the action understandable at normal speed."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-practice-source-context-card",
+    "video_id": "-PVooq0tJLo",
+    "keyword": "basketball practice video source context",
+    "title": "Basketball Practice Video Context Card: Describe an Edited Clip | HoopCut",
+    "h1": "Add a Context Card to a Basketball Practice Edit",
+    "description": "A context card can prevent a short basketball practice edit from being mistaken for a full lesson or game highlight. Before sharing, state the kind of.",
+    "meta_description": "A context card can prevent a short basketball practice edit from being mistaken for a full lesson or game highlight. Before sharing, state the kind of.",
+    "intro": "This reference video comes from indoor shooting practice and presents three selected shooting sequences. It retains original exercise labels and adds a ball trail and short branded ending. It is not pickup footage, does not show every exercise, and does not report shooting measurements.",
+    "date_modified": "2026-11-12",
+    "heading": "Add a Context Card to a Basketball Practice Edit",
+    "sections": [
+      {
+        "id": "section-1",
+        "nav_title": "Name the source category",
+        "heading": "Name the source category",
+        "paragraphs": [
+          "Use a direct description such as indoor shooting practice. Avoid calling a training clip a game, pickup run, or complete drill unless the source supports that. This basic context helps viewers interpret the action appropriately."
+        ]
+      },
+      {
+        "id": "section-2",
+        "nav_title": "Explain the selection",
+        "heading": "Explain the selection",
+        "paragraphs": [
+          "Say that the edit contains selected sequences. Do not imply that all repetitions or exercises are represented. If you provide a link to the original source, identify the creator and retain the source URL where appropriate; attribution does not itself establish reuse permission."
+        ]
+      },
+      {
+        "id": "section-3",
+        "nav_title": "Clarify what the visual treatment means",
+        "heading": "Clarify what the visual treatment means",
+        "paragraphs": [
+          "If the clip includes a tracer, describe it as a visual overlay. Do not imply that it measures speed, angle, accuracy, or player improvement. If an ending card is added, distinguish it from the underlying practice footage so viewers know which parts are editorial additions."
+        ],
+        "checks": [
+          [
+            "Scope",
+            "What does this selected edit establish?"
+          ],
+          [
+            "Visibility",
+            "Can I follow the real ball at normal speed?"
+          ],
+          [
+            "Uncertainty",
+            "What needs the original or another view?"
+          ],
+          [
+            "Next step",
+            "What specific question should I investigate?"
+          ]
+        ],
+        "links": [
+          [
+            "Review pickup highlight source context",
+            "/videos/pickup-highlight-source-context"
+          ],
+          [
+            "Read the basketball Shot Tracer guide",
+            "/blog/how-to-add-shot-tracer-to-basketball-video"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Is this a game or pickup clip?",
+        "No. It is indoor shooting practice footage."
+      ],
+      [
+        "Does the overlay report shot metrics?",
+        "No. It is a visual ball trail, with no calibrated metrics stated."
+      ],
+      [
+        "Does attribution prove permission to repost?",
+        "No. Attribution and reuse authorization are separate matters."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-practice-video-caption-plan",
+    "video_id": "-PVooq0tJLo",
+    "keyword": "basketball practice video caption plan",
+    "title": "Basketball Practice Video Captions: Write with Clear Scope | HoopCut",
+    "h1": "Caption a Practice Edit Without Overclaiming",
+    "description": "A caption can help viewers understand a basketball practice edit when it describes only what the clip supports. Use this simple caption plan to identify.",
+    "meta_description": "A caption can help viewers understand a basketball practice edit when it describes only what the clip supports. Use this simple caption plan to identify.",
+    "intro": "The video is an edit of three selected indoor shooting sequences. Original exercise labels remain visible, and a ball-trail visual effect is added. It is training footage rather than pickup play; the edit does not show every exercise in the source.",
+    "date_modified": "2026-11-12",
+    "heading": "Caption a Practice Edit Without Overclaiming",
+    "sections": [
+      {
+        "id": "section-1",
+        "nav_title": "Lead with a factual description",
+        "heading": "Lead with a factual description",
+        "paragraphs": [
+          "Name the visible activity and setting in plain terms. Avoid adding a player\u2019s name, exact location, drill title, or shot outcome unless reliable evidence supports it. If a label is inherited from the source, make that distinction clear."
+        ]
+      },
+      {
+        "id": "section-2",
+        "nav_title": "Describe selection and effects",
+        "heading": "Describe selection and effects",
+        "paragraphs": [
+          "A short sentence such as \u201cselected indoor shooting practice clips with a visual ball trail\u201d communicates scope and treatment. Avoid claims that the graphic measures a shot or proves improvement. Do not present a selected edit as a complete session."
+        ]
+      },
+      {
+        "id": "section-3",
+        "nav_title": "Add a useful viewing prompt",
+        "heading": "Add a useful viewing prompt",
+        "paragraphs": [
+          "Invite viewers to notice a specific visible feature, such as whether the ball remains easy to follow toward the basket. A prompt should encourage observation, not guarantee a training benefit. If the source video is referenced, attribute it accurately and do not imply that credit alone grants publishing rights."
+        ],
+        "checks": [
+          [
+            "Scope",
+            "What does this selected edit establish?"
+          ],
+          [
+            "Visibility",
+            "Can I follow the real ball at normal speed?"
+          ],
+          [
+            "Uncertainty",
+            "What needs the original or another view?"
+          ],
+          [
+            "Next step",
+            "What specific question should I investigate?"
+          ]
+        ],
+        "links": [
+          [
+            "Make basketball practice captions readable",
+            "/videos/basketball-practice-caption-readability"
+          ],
+          [
+            "Review basketball video source credit",
+            "/videos/basketball-video-source-credit"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Can I caption this as pickup basketball?",
+        "No. It is indoor training footage."
+      ],
+      [
+        "Can I say the tracer improves accuracy?",
+        "No such result is established; describe it as a visual overlay."
+      ],
+      [
+        "Should I disclose that the video is selected?",
+        "Yes. It clarifies that the edit does not show every exercise or repetition."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-shot-video-review-session-plan",
+    "video_id": "-PVooq0tJLo",
+    "keyword": "basketball shot video review session plan",
+    "title": "Basketball Shot Video Review: A 10-Minute Group Plan | HoopCut",
+    "h1": "Run a Focused Group Review of Shooting Footage",
+    "description": "A group reviewing basketball practice footage can lose time when everyone jumps to conclusions at once. This short session plan assigns separate passes to.",
+    "meta_description": "A group reviewing basketball practice footage can lose time when everyone jumps to conclusions at once. This short session plan assigns separate passes to.",
+    "intro": "The example is a 10.301-second edit with three selected shooting sequences and a rendered ball trail. That duration describes the edited file, not the source workout or time between attempts. The clip is practice footage and does not provide a shot percentage or calibrated analysis.",
+    "date_modified": "2026-11-12",
+    "heading": "Run a Focused Group Review of Shooting Footage",
+    "sections": [
+      {
+        "id": "section-1",
+        "nav_title": "Minute one: establish scope",
+        "heading": "Minute one: establish scope",
+        "paragraphs": [
+          "Tell the group this is selected indoor practice footage. Clarify that the edit does not show every exercise, and avoid framing it as pickup play. This prevents viewers from treating a short reel as a complete session record."
+        ]
+      },
+      {
+        "id": "section-2",
+        "nav_title": "Minutes two to five: silent observation",
+        "heading": "Minutes two to five: silent observation",
+        "paragraphs": [
+          "Watch once without discussion. Each person writes one visible detail and one uncertainty. On a second pass, focus on the real basketball and then the tracer. Compare notes only after the viewing so attention is not led by the first speaker\u2019s interpretation."
+        ]
+      },
+      {
+        "id": "section-3",
+        "nav_title": "Minutes six to ten: decide what evidence is missing",
+        "heading": "Minutes six to ten: decide what evidence is missing",
+        "paragraphs": [
+          "Group questions into those answerable from the current clip and those requiring the full source, another angle, or a longer sequence. Do not score mechanics from a graphic or claim consistency from three selected examples. End with one concrete next recording or review action."
+        ],
+        "checks": [
+          [
+            "Scope",
+            "What does this selected edit establish?"
+          ],
+          [
+            "Visibility",
+            "Can I follow the real ball at normal speed?"
+          ],
+          [
+            "Uncertainty",
+            "What needs the original or another view?"
+          ],
+          [
+            "Next step",
+            "What specific question should I investigate?"
+          ]
+        ],
+        "links": [
+          [
+            "Review a basketball jump shot video",
+            "/videos/basketball-jump-shot-video-review"
+          ],
+          [
+            "Use a player highlight observation log",
+            "/templates/basketball-player-highlight-log"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Does 10.301 seconds describe the workout?",
+        "No. It is the edited export duration, not the full practice or the interval between attempts."
+      ],
+      [
+        "Can a group assign a shooting percentage from this edit?",
+        "No. The clip provides neither a complete attempt set nor calibrated results."
+      ],
+      [
+        "What should the group produce?",
+        "A short list of visible observations, uncertainties, and evidence needed for a next review."
+      ]
+    ]
   }
 ]

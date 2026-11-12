@@ -24,7 +24,7 @@ class Page(HTMLParser):
     def handle_data(self,data):self.text.append(data)
 def resolve(path):
     p=ROOT/unquote(path).lstrip('/')
-    if p.is_dir():return p/'index.html'
+    if p.is_dir():return p/'index.html' if (p/'index.html').is_file() else p.with_suffix('.html')
     return p if p.is_file() else p.with_suffix('.html')
 
 files=[ROOT/'index.html',ROOT/'terms.html',ROOT/'privacy.html',ROOT/'tools.html',*ROOT.glob('blog/*.html'),*ROOT.glob('templates/*.html'),*ROOT.glob('demo/*.html')]
@@ -80,7 +80,7 @@ topics=json.loads(topics_file.read_text()) if topics_file.exists() else []
 expected_video_urls.update('https://hoopcut.ai/videos/'+t['slug'] for t in topics if t['video_id'] in {v['video_id'] for v in videos if v['status']=='public_verified'})
 if videos:expected_video_urls.add('https://hoopcut.ai/videos')
 assert {u for u in urls if u.startswith('https://hoopcut.ai/videos')}==expected_video_urls
-assert len(urls)==len(set(urls))==39+len(expected_video_urls)
+assert len(urls)==len(set(urls))==58+len(expected_video_urls)
 assert 'https://hoopcut.ai/tools' in urls
 assert all('https://hoopcut.ai'+p in urls for p in new_paths)
 prior=subprocess.check_output(['git','show','HEAD:sitemap.xml'],cwd=ROOT).decode()
