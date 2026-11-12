@@ -66,3 +66,9 @@ for(const reject of [false,true])test('cancel resets upload immediately, server 
  assert.equal(elements.editor.hidden,true);assert.equal(elements['import-panel'].hidden,false);assert.equal(elements['video-file'].value,'');assert.equal(c.job,null);assert.equal(c.uploadRequest,null);assert.equal(c.busy,false);assert.equal(aborts,2);assert.deepEqual(revoked,['blob:input']);
  resolve();await pending;assert.equal(elements.editor.hidden,true);
 });
+
+test('hoop control follows actual rectangle without visible numbering',async()=>{
+ const x=await selectionScenario(true);const b=x.elements['hoop-boxes'].children[0];
+ assert.ok(!b.textContent);assert.equal(b.style.left,'10%');assert.equal(b.style.top,'20%');assert.equal(b.style.width,'10%');assert.equal(b.style.height,'10%');
+ b.onclick();x.elements['hoop-confirm'].onclick();assert.deepEqual(x.calls,[{hoopId:'detected-one'}]);
+});

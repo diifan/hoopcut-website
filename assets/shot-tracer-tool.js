@@ -69,8 +69,9 @@ async function showHoops(selection){
   if(run!==choiceEpoch)return;
   const canvas=$('hoop-canvas');canvas.width=video.videoWidth;canvas.height=video.videoHeight;const ctx=canvas.getContext('2d');ctx.drawImage(video,0,0,canvas.width,canvas.height);
   for(const [i,c] of choices.filter(c=>c.frame===frame).entries()){
-   const [x,y,w,h]=c.box;ctx.strokeStyle='#ff861b';ctx.lineWidth=Math.max(2,canvas.width/350);ctx.strokeRect(x*canvas.width,y*canvas.height,w*canvas.width,h*canvas.height);
-   const b=document.createElement('button');b.type='button';b.textContent=String(i+1);b.setAttribute('aria-label',`Select hoop ${i+1}`);b.style.left=`${(x+w/2)*100}%`;b.style.top=`${(y+h/2)*100}%`;
+   const [x,y,w,h]=c.box;
+   const b=document.createElement('button');b.type='button';b.setAttribute('aria-label',`Select hoop ${i+1}`);b.setAttribute('aria-pressed','false');
+   b.style.left=`${x*100}%`;b.style.top=`${y*100}%`;b.style.width=`${w*100}%`;b.style.height=`${h*100}%`;
    b.onclick=()=>{picked=c;$('hoop-confirm').disabled=false;$('hoop-boxes').querySelectorAll('button').forEach(e=>e.setAttribute('aria-pressed',String(e===b)));};$('hoop-boxes').append(b);
   }
   $('hoop-frame-label').textContent=`Frame ${index+1} of ${frames.length} · ${t.toFixed(2)}s`;$('hoop-next').disabled=false;message('Choose and confirm your hoop before processing.');

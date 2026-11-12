@@ -67,3 +67,6 @@ Retain detector candidates above the App candidate threshold (0.1), instead of d
 ## Classic tracer and buffered playback
 Remove custom particle/starburst/glow drawing. Worker uses App classic tail defaults (0.45s, end hold 0.04s, 0.16s gap split, 8-step quadratic sampling), palette only. OpenCV is not claimed pixel-identical to CoreGraphics. User cancelled highlight cutting: full video remains.
 Bounded <=32MiB result downloads now complete before ready, using identical Blob for preview/export. Real download progress, cancellation, oversized remote fallback and incomplete transfer rejection retained. This trades initial buffer time for no network waits during bounded playback; not a claim of faster GPU/upload or complete trajectory-extraction parity.
+
+## Direct hoop-box selection
+Removed numbered badges. Click the detector's actual normalized rectangle; selected box highlights, explicit confirmation remains. Transparent 44px minimum hit target and keyboard focus/accessible labels preserved. No detector, tracking, coordinates or rendering changes.
