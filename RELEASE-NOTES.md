@@ -57,3 +57,6 @@ Supabase login restored. Transaction-isolated selection protocol test passed and
 - Only server-marked mp4-faststart results load directly; legacy results retain bounded Blob loading.
 - Wait for loadeddata before ready; cancellation stops pending direct media. Export still refreshes signed download URL.
 - 31 tracer tests passed; worker isolated full computation produced verified indexed output with identical video/audio decoding to baseline. Full browser pipeline timing pending.
+
+## Approved ~65-second Shot Tracer rollout
+Production routes to the production-only overlap endpoint; preview stays staging-isolated. Deploy alongside the verified progressive-download worker. Real staging browser measurement: 64.853s, not an SLA. Prior production deployment retained for rollback.
