@@ -139,7 +139,21 @@ $('apply-trim').onclick=process;document.querySelectorAll('[data-effect]').forEa
 $('edit-trim').onclick=()=>{if(busy||!job)return;$('preview').src=localURL;$('trim-panel').hidden=false;$('edit-trim').hidden=true;$('retry').hidden=true;updateTrim();actions();};
 $('cancel-job').onclick=cancelToUpload;
 $('retry').onclick=()=>lastAction==='upload'?upload():process();
-$('export').onclick=async()=>{if(!ready||effect!=='firework')return;$('export').disabled=true;message('Preparing your download…');try{if(!exportBlob){const signed=await rpc('download',job);exportURL=signed.url;}$('complete').hidden=false;$('actions').hidden=true;message('Export complete.');$('step2').classList.remove('active');$('step3').classList.add('active');}catch(e){message(e.message);$('export').disabled=false;}};
-$('download').onclick=()=>{const a=document.createElement('a');a.href=exportURL;a.download='HoopCut-Firework.mp4';a.target='_blank';a.rel='noopener';a.click();$('after-download').hidden=false;};
+let exporting=false;
+async function exportVideo(){
+ if(!ready||effect!=='firework'||exporting)return;
+ const run=epoch;exporting=true;$('export').disabled=true;message('Preparing your download…');
+ try{
+  let url=exportURL;
+  if(!exportBlob){const signed=await rpc('download',job);url=signed.url;}
+  if(run!==epoch)return;
+  if(!url)throw Error('Video download is unavailable. Please retry.');
+  const a=document.createElement('a');a.href=url;a.download='HoopCut-Tracer.mp4';a.rel='noopener';document.body.append(a);a.click();a.remove();
+  $('complete').hidden=false;$('after-download').hidden=false;$('actions').hidden=false;
+  message('Download started.');$('step2').classList.remove('active');$('step3').classList.add('active');
+ }catch(e){if(run===epoch)message(e.message);}
+ finally{exporting=false;if(run===epoch)$('export').disabled=!ready;}
+}
+$('export').onclick=exportVideo;
 $('share').onclick=async()=>{if(!exportBlob){message('Use your downloaded video to share in your favorite app.');return;}const f=new File([exportBlob],'HoopCut-Firework.mp4',{type:'video/mp4'});try{if(navigator.canShare?.({files:[f]}))await navigator.share({files:[f],title:'My shot with HoopCut'});else message('Attach your downloaded video in your favorite social app.');}catch(e){if(e.name!=='AbortError')message('Share your downloaded video from your photos or files.');}};
 })();
