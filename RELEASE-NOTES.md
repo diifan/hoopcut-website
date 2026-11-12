@@ -73,3 +73,9 @@ Removed numbered badges. Click the detector's actual normalized rectangle; selec
 
 ## One-click Export
 Export starts the file download directly (buffered Blob reused; signed download URL fallback). Removed second Download button. Concurrent clicks guarded, errors retryable, stale responses ignored. Browser download completion is not claimed by the UI.
+
+
+## Progressive result preview
+- Display the first decoded frame without waiting for a full-file Blob download. Browser media buffering handles subsequent playback.
+- Preserve cancellation, stale-run protection and one-click signed Export download.
+- Regression tests cover first-frame gating, no eager full fetch, errors and cancellation. Slow-network playback may still buffer; not claiming zero stalls.

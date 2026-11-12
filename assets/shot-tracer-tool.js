@@ -85,25 +85,10 @@ async function showHoops(selection){
 let previewController=null;
 async function loadResultPreview(url,run,container){
  const controller=new AbortController();previewController=controller;
- const limit=32*1024*1024;let objectURL=null,blob=null,assignedURL=null,completed=false;
+ let assignedURL=null,completed=false;
  try{
-  { // Buffer bounded results once: preview and export share identical local bytes.
-  const response=await fetch(url,{signal:controller.signal});
-  if(!response.ok)throw Error('Could not load your result. Please retry.');
-  const length=Number(response.headers.get('Content-Length'));
-  if(response.body&&(!Number.isFinite(length)||length<=limit)){
-   const reader=response.body.getReader(),chunks=[];let bytes=0,oversize=false;
-   try{
-    while(true){const next=await reader.read();if(next.done)break;bytes+=next.value.byteLength;
-     if(bytes>limit){oversize=true;await reader.cancel();break;}chunks.push(next.value);
-     if(run===epoch&&length>0&&typeof message==='function')message('Loading your preview… '+Math.min(100,Math.round(bytes/length*100))+'%');
-    }
-   }finally{reader.releaseLock();}
-   if(!oversize){if(length>0&&bytes!==length)throw Error('Incomplete preview download. Please retry.');if(!bytes)throw Error('Your result is empty. Please retry.');blob=new Blob(chunks,{type:'video/mp4'});}
-  }else if(response.body)await response.body.cancel();
-  }
+  // Let the media element use byte ranges. Never wait for a complete Blob.
   if(run!==epoch||controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
-  objectURL=blob?URL.createObjectURL(blob):null;
   const video=$('preview');
   await new Promise((resolve,reject)=>{
    const cleanup=()=>{clearTimeout(timer);video.removeEventListener('loadeddata',loaded);video.removeEventListener('error',failed);controller.signal.removeEventListener('abort',aborted);};
@@ -112,13 +97,12 @@ async function loadResultPreview(url,run,container){
    const aborted=()=>{cleanup();reject(new DOMException('Cancelled','AbortError'));};
    const timer=setTimeout(()=>{cleanup();reject(Error('Preview loading timed out. Please retry.'));},30000);
    video.addEventListener('loadeddata',loaded);video.addEventListener('error',failed);controller.signal.addEventListener('abort',aborted,{once:true});
-   video.src=objectURL||url;assignedURL=video.src;video.load();
+   video.preload="auto";video.src=url;assignedURL=video.src;video.load();
   });
   if(run!==epoch||controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
-  exportBlob=blob;exportURL=objectURL;objectURL=null;completed=true;
+  exportBlob=null;exportURL=null;completed=true;
  }finally{
   if(!completed&&previewController===controller&&assignedURL&&$('preview').src===assignedURL){$('preview').removeAttribute?.('src');$('preview').load();}
-  if(objectURL)URL.revokeObjectURL(objectURL);
   if(previewController===controller)previewController=null;
  }
 }
