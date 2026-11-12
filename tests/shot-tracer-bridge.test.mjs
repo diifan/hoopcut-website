@@ -14,10 +14,10 @@ test('server selects staging, does not trust client environment or rate key',asy
 });
 for(const [environment,enabled,suffix] of [['preview','1','shot-tracer-overlap-staging'],['preview','0','shot-tracer-bridge'],['production','1','shot-tracer-bridge']]){
  test('endpoint isolation '+environment+' flag '+enabled,async()=>{
-  const previous=globalThis.fetch,oldEnv=process.env.VERCEL_ENV,oldFlag=process.env.HC_TRACER_FAST_STAGING;let target,sent;
+  const previous=globalThis.fetch,oldEnv=process.env.VERCEL_ENV,oldFlag=process.env.HC_TRACER_FAST_STAGING;let target,sent,sentHeaders;
   process.env.VERCEL_ENV=environment;process.env.HC_TRACER_FAST_STAGING=enabled;
-  globalThis.fetch=async(url,options)=>{target=url;sent=JSON.parse(options.body);return {status:200,json:async()=>({state:'imported'})}};
-  try{const r=res();await proxy(req({action:'status',id:'a'.repeat(48)}),r);assert.equal(r.statusCode,200);assert.equal(target.split('/').at(-1),suffix);assert.equal(sent.environment,environment==='production'?'production':'staging');}
+  globalThis.fetch=async(url,options)=>{target=url;sentHeaders=options.headers;sent=JSON.parse(options.body);return {status:200,json:async()=>({state:'imported'})}};
+  try{const r=res();await proxy(req({action:'status',id:'a'.repeat(48)}),r);assert.equal(r.statusCode,200);assert.equal(new URL(target).pathname.split('/').at(-1),suffix);assert.equal(sent.environment,environment==='production'?'production':'staging');const pinned=environment==='preview'&&enabled==='1';assert.equal(sentHeaders['x-region'],pinned?'ap-southeast-1':undefined);assert.equal(new URL(target).searchParams.get('forceFunctionRegion'),pinned?'ap-southeast-1':null);}
   finally{globalThis.fetch=previous;oldEnv===undefined?delete process.env.VERCEL_ENV:process.env.VERCEL_ENV=oldEnv;oldFlag===undefined?delete process.env.HC_TRACER_FAST_STAGING:process.env.HC_TRACER_FAST_STAGING=oldFlag;}
  });
 }
