@@ -60,3 +60,6 @@ Supabase login restored. Transaction-isolated selection protocol test passed and
 
 ## Approved ~65-second Shot Tracer rollout
 Production routes to the production-only overlap endpoint; preview stays staging-isolated. Deploy alongside the verified progressive-download worker. Real staging browser measurement: 64.853s, not an SLA. Prior production deployment retained for rollback.
+
+## Multi-hoop selection and cancel fix
+Retain detector candidates above the App candidate threshold (0.1), instead of discarding secondary hoops at 0.5. Three-hoop user fixture validated separately on GPU. Both cancel controls immediately return to upload and cancel the server job; stale callbacks cannot restore the old editor. 34 tracer tests passed.
