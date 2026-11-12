@@ -32,7 +32,7 @@ async function rpc(action,id='',data={}){const r=await fetch('/api/shot-tracer',
 async function request(url,options={}){const parts=url.slice(api.length).split('/').filter(Boolean);return rpc(parts[1]==='process'?'process':'status',parts[0],options.body?JSON.parse(options.body):{});}
 function putVideo(url,file){return new Promise((resolve,reject)=>{const x=new XMLHttpRequest();activeUpload=x;x.onabort=()=>reject(Error('Upload cancelled.'));x.open('PUT',url);x.timeout=600000;x.setRequestHeader('Content-Type','application/octet-stream');x.upload.onprogress=e=>{if(e.lengthComputable)message('Uploading your video…',Math.round(100*e.loaded/e.total));};x.onload=()=>x.status>=200&&x.status<300?resolve():reject(Error('Upload failed. Please retry.'));x.onerror=()=>reject(Error('Upload connection failed. Please retry.'));x.ontimeout=()=>reject(Error('Upload timed out. Please retry.'));x.send(file);});}
 function failure(e){busy=false;ready=false;$('edit-trim').hidden=!job||duration<=30;phase='error';message(e.message);$('status-title').textContent=phaseNames.error;$('retry').hidden=false;actions();}
-function cleanExport(){if(exportURL?.startsWith('blob:'))URL.revokeObjectURL(exportURL);exportURL=null;exportBlob=null;$('complete').hidden=true;$('after-download').hidden=true;}
+function cleanExport(){previewController?.abort();if(exportURL?.startsWith('blob:'))URL.revokeObjectURL(exportURL);exportURL=null;exportBlob=null;$('complete').hidden=true;$('after-download').hidden=true;}
 let uploadRequest=null;let activeUpload=null;let hoopId=null,hoopRange='',choiceEpoch=0;
 const hoopPanel=document.createElement('section');hoopPanel.id='hoop-panel';hoopPanel.hidden=true;
 hoopPanel.innerHTML='<h2>Choose your hoop</h2><p>Tap your hoop, then confirm. Try another frame if needed.</p><div class="hoop-frame"><canvas id="hoop-canvas"></canvas><div id="hoop-boxes"></div></div><p id="hoop-frame-label"></p><button id="hoop-next" class="text-button">Next frame</button> <button id="hoop-confirm" class="primary" disabled>Confirm hoop</button> <button id="hoop-cancel" class="text-button">Cancel</button>';
@@ -64,8 +64,45 @@ async function showHoops(selection){
  await draw();
 }
 
+let previewController=null;
+async function loadResultPreview(url,run){
+ const controller=new AbortController();previewController=controller;
+ const limit=32*1024*1024;let objectURL=null,blob=null;
+ try{
+  const response=await fetch(url,{signal:controller.signal});
+  if(!response.ok)throw Error('Could not load your result. Please retry.');
+  const length=Number(response.headers.get('Content-Length'));
+  if(response.body&&(!Number.isFinite(length)||length<=limit)){
+   const reader=response.body.getReader(),chunks=[];let bytes=0,oversize=false;
+   try{
+    while(true){const next=await reader.read();if(next.done)break;bytes+=next.value.byteLength;
+     if(bytes>limit){oversize=true;await reader.cancel();break;}chunks.push(next.value);
+    }
+   }finally{reader.releaseLock();}
+   if(!oversize){if(!bytes)throw Error('Your result is empty. Please retry.');blob=new Blob(chunks,{type:'video/mp4'});}
+  }else if(response.body)await response.body.cancel();
+  if(run!==epoch||controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
+  objectURL=blob?URL.createObjectURL(blob):null;
+  const video=$('preview');
+  await new Promise((resolve,reject)=>{
+   const cleanup=()=>{clearTimeout(timer);video.removeEventListener('loadeddata',loaded);video.removeEventListener('error',failed);controller.signal.removeEventListener('abort',aborted);};
+   const loaded=()=>{cleanup();resolve();};
+   const failed=()=>{cleanup();reject(Error('Could not play your result. Please retry.'));};
+   const aborted=()=>{cleanup();reject(new DOMException('Cancelled','AbortError'));};
+   const timer=setTimeout(()=>{cleanup();reject(Error('Preview loading timed out. Please retry.'));},30000);
+   video.addEventListener('loadeddata',loaded);video.addEventListener('error',failed);controller.signal.addEventListener('abort',aborted,{once:true});
+   video.src=objectURL||url;video.load();
+  });
+  if(run!==epoch||controller.signal.aborted)throw new DOMException('Cancelled','AbortError');
+  exportBlob=blob;exportURL=objectURL;objectURL=null;
+ }finally{
+  if(objectURL)URL.revokeObjectURL(objectURL);
+  if(previewController===controller)previewController=null;
+ }
+}
+
 async function upload(){const run=++epoch;busy=true;ready=false;lastAction='upload';$('retry').hidden=true;message('Preparing upload…');actions();try{if(!uploadRequest)uploadRequest=await rpc('create','',{request_id:crypto.randomUUID(),size_bytes:file.size});job=uploadRequest.id;if(!uploadRequest.uploaded){await putVideo(uploadRequest.upload_url,file);uploadRequest.uploaded=true;}await rpc('complete',job);let d;const deadline=Date.now()+20*60*1000;while(run===epoch){d=await rpc('status',job);if(d.state==='imported'||d.state==='needs_hoop'||d.stage==='choosing_hoop')break;if(['failed','expired','cancelled'].includes(d.state))throw Error(d.error||'Cannot read this video. Import another file.');if(Date.now()>deadline)throw Error('Processing is taking longer than expected. Please retry.');message(d.stage==='downloading'?'Preparing your uploaded video…':'Checking your video…');await new Promise(r=>setTimeout(r,750));}if(run!==epoch)return;duration=d.video.duration;start=0;end=Math.min(30,duration);$('trim-start').value=0;$('trim-end').value=end.toFixed(2);$('trim-slider').max=Math.max(0,duration-1);$('trim-slider').value=0;busy=false;if(d.state==='needs_hoop'||d.stage==='choosing_hoop'){if(!Array.isArray(d.trim)||d.trim.length!==2||d.trim[0]!==0||d.trim[1]!==duration)throw Error('Prepared clip range is invalid. Please retry.');start=d.trim[0];end=d.trim[1];hoopId=null;hoopRange=JSON.stringify([start,end]);lastAction='process';$('effects').hidden=false;actions();await showHoops(d.selection);return;}if(duration>30){$('trim-panel').hidden=false;message('Choose the part you want to trace.');updateTrim();actions()}else await process();}catch(e){if(run===epoch)failure(e);}}
-async function process(){$('editor').classList.remove('choosing-hoop');if(hoopRange!==JSON.stringify([start,end])){hoopId=null;hoopRange=JSON.stringify([start,end]);}$('hoop-panel').hidden=true;$('edit-trim').hidden=true;const run=++epoch;busy=true;ready=false;lastAction='process';cleanExport();$('retry').hidden=true;$('trim-panel').hidden=true;$('effects').hidden=false;actions();message(hoopId?'Tracking the ball…':'Preparing your clip…');try{await request(`${api}/${job}/process`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({start,end,effect,...(hoopId?{hoop_id:hoopId}:{})})});while(run===epoch){const s=await request(`${api}/${job}`);if(s.stage==='needs_hoop'||s.stage==='choosing_hoop'){busy=false;ready=false;actions();await showHoops(s.selection);return;}if(s.stage==='ready'){busy=false;ready=true;$('preview').src=s.preview_url;message('Ready to preview.');actions();return;}if(['failed','no_shots','cancelled','expired'].includes(s.stage))throw Error(s.error);message(stages[s.stage]||'Processing…',s.progress);await new Promise(r=>setTimeout(r,750));}}catch(e){if(run===epoch)failure(e);}}
+async function process(){$('editor').classList.remove('choosing-hoop');if(hoopRange!==JSON.stringify([start,end])){hoopId=null;hoopRange=JSON.stringify([start,end]);}$('hoop-panel').hidden=true;$('edit-trim').hidden=true;const run=++epoch;busy=true;ready=false;lastAction='process';cleanExport();$('retry').hidden=true;$('trim-panel').hidden=true;$('effects').hidden=false;actions();message(hoopId?'Tracking the ball…':'Preparing your clip…');try{await request(`${api}/${job}/process`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({start,end,effect,...(hoopId?{hoop_id:hoopId}:{})})});while(run===epoch){const s=await request(`${api}/${job}`);if(s.stage==='needs_hoop'||s.stage==='choosing_hoop'){busy=false;ready=false;actions();await showHoops(s.selection);return;}if(s.stage==='ready'){message('Loading your preview…');await loadResultPreview(s.preview_url,run);if(run!==epoch)return;busy=false;ready=true;message('Ready to preview.');actions();return;}if(['failed','no_shots','cancelled','expired'].includes(s.stage))throw Error(s.error);message(stages[s.stage]||'Processing…',s.progress);await new Promise(r=>setTimeout(r,750));}}catch(e){if(run===epoch)failure(e);}}
 function updateTrim(){start=Number($('trim-start').value);end=Number($('trim-end').value);const valid=Number.isFinite(start)&&Number.isFinite(end)&&start>=0&&end>start&&end<=duration+.01&&end-start<=30;$('apply-trim').disabled=!valid;$('trim-length').textContent=valid?`${(end-start).toFixed(1)} seconds`:'Choose a valid range of up to 30 seconds.';if(valid)$('preview').currentTime=start;}
 function chooseFile(chosen){$('editor').classList.remove('choosing-hoop');if(!chosen||busy)return;if(chosen.size>512*1024**2){message('Choose a video smaller than 512 MB.');return;}$('edit-trim').hidden=true;uploadRequest=null;hoopId=null;hoopRange='';$('hoop-panel').hidden=true;epoch++;file=chosen;job=null;effect='firework';cleanExport();if(localURL)URL.revokeObjectURL(localURL);localURL=URL.createObjectURL(file);$('preview').src=localURL;$('clip-name').textContent=file.name;$('editor').querySelector('h2').textContent='Your shot. Your spotlight.';$('editor').hidden=false;$('import-panel').hidden=true;$('effects').hidden=true;$('trim-panel').hidden=true;upload();$('step1').classList.remove('active');$('step2').classList.add('active');$('step3').classList.remove('active');}
 $('video-file').addEventListener('change',()=>chooseFile($('video-file').files[0]));
@@ -78,9 +115,9 @@ $('trim-slider').oninput=()=>{$('trim-start').value=$('trim-slider').value;$('tr
 $('preview').ontimeupdate=()=>{if(!$('trim-panel').hidden&&$('preview').currentTime>=end)$('preview').pause();};
 $('apply-trim').onclick=process;document.querySelectorAll('[data-effect]').forEach(b=>b.onclick=()=>{if(!busy&&effect!==b.dataset.effect){effect=b.dataset.effect;process();}});
 $('edit-trim').onclick=()=>{if(busy||!job)return;$('preview').src=localURL;$('trim-panel').hidden=false;$('edit-trim').hidden=true;$('retry').hidden=true;updateTrim();actions();};
-$('cancel-job').onclick=async()=>{const id=job;epoch++;activeUpload?.abort();busy=false;ready=false;try{if(id)await rpc('cancel',id);message('Cancelled. You can import another video.');}catch{message('Cancellation could not be confirmed. Please retry.');}$('retry').hidden=true;actions();};
+$('cancel-job').onclick=async()=>{const id=job;epoch++;activeUpload?.abort();previewController?.abort();busy=false;ready=false;try{if(id)await rpc('cancel',id);message('Cancelled. You can import another video.');}catch{message('Cancellation could not be confirmed. Please retry.');}$('retry').hidden=true;actions();};
 $('retry').onclick=()=>lastAction==='upload'?upload():process();
-$('export').onclick=async()=>{if(!ready||effect!=='firework')return;$('export').disabled=true;message('Preparing your download…');try{const signed=await rpc('download',job);exportURL=signed.url;exportBlob=null;$('complete').hidden=false;$('actions').hidden=true;message('Export complete.');$('step2').classList.remove('active');$('step3').classList.add('active');}catch(e){message(e.message);$('export').disabled=false;}};
+$('export').onclick=async()=>{if(!ready||effect!=='firework')return;$('export').disabled=true;message('Preparing your download…');try{if(!exportBlob){const signed=await rpc('download',job);exportURL=signed.url;}$('complete').hidden=false;$('actions').hidden=true;message('Export complete.');$('step2').classList.remove('active');$('step3').classList.add('active');}catch(e){message(e.message);$('export').disabled=false;}};
 $('download').onclick=()=>{const a=document.createElement('a');a.href=exportURL;a.download='HoopCut-Firework.mp4';a.target='_blank';a.rel='noopener';a.click();$('after-download').hidden=false;};
 $('share').onclick=async()=>{if(!exportBlob){message('Use your downloaded video to share in your favorite app.');return;}const f=new File([exportBlob],'HoopCut-Firework.mp4',{type:'video/mp4'});try{if(navigator.canShare?.({files:[f]}))await navigator.share({files:[f],title:'My shot with HoopCut'});else message('Attach your downloaded video in your favorite social app.');}catch(e){if(e.name!=='AbortError')message('Share your downloaded video from your photos or files.');}};
 })();
