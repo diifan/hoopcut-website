@@ -111,9 +111,32 @@ class Tests(unittest.TestCase):
             for link in graph[queue.pop()].links:
                 if link in graph and link not in reached:reached.add(link);queue.append(link)
         self.assertEqual(reached,routes)
-        for route,p in graph.items():self.assertEqual(p.canonical,[tracer.BASE+route]);self.assertLess(len(p.links),45)
+        for route,p in graph.items():
+            self.assertEqual(p.canonical,[tracer.BASE+route])
+            self.assertLess(len(p.links),65 if '/scenarios' in route else 45)
         xml=ET.parse(self.root/'sitemap.xml');self.assertEqual(len(xml.getroot()),1044);self.assertEqual(xml.findtext('.//{*}lastmod'),'2026-10-01')
         (self.root/'content/shot-tracer/pages.json').write_text(json.dumps(self.pages))
         tracer.build(self.root);self.assertEqual(list((self.root/'shot-tracer').rglob('*.html')),[])
         self.assertEqual(len(ET.parse(self.root/'sitemap.xml').getroot()),2)
+    def test_navigation_respects_topics_and_approved_visibility(self):
+        pages=tracer.load_pages(ROOT);taxonomy=tracer.load_link_taxonomy(ROOT)
+        approved=[p for p in pages if p['status']=='approved'];mapped=taxonomy['pages']
+        self.assertEqual({p['slug'] for p in approved if p['slug']},set(mapped))
+        for p in approved:
+            if not p['slug']:continue
+            related=tracer.related_pages(p,approved,taxonomy)
+            if mapped[p['slug']]['relatedGroup'] is None:self.assertEqual(related,[])
+            for other in related:
+                self.assertNotEqual(p['slug'],other['slug'])
+                self.assertEqual(mapped[p['slug']]['relatedGroup'],mapped[other['slug']]['relatedGroup'])
+        self.assertEqual(tracer.category_catalog(self.pages,taxonomy),[])
+        shell=(ROOT/'content/shot-tracer/tool.html').read_text()
+        categories=tracer.category_catalog(approved,taxonomy)
+        all_links=Page(tracer.directory(1,[p for p in approved if p['slug']],shell,taxonomy)).links
+        for n in range(1,10):self.assertIn(tracer.directory_path(n),all_links)
+        for category in categories:
+            self.assertIn(tracer.category_path(category),all_links)
+            rendered=Page(tracer.directory(1,approved,shell,taxonomy,category))
+            self.assertEqual(rendered.canonical,[tracer.BASE+tracer.category_path(category)])
+            for member in category['pages']:self.assertIn(tracer.route(member),rendered.links)
 if __name__=='__main__':unittest.main()

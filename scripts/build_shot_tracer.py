@@ -37,15 +37,56 @@ def batch_preview_slugs(root,name):
     manifest=json.loads(file.read_text())
     return manifest['previewSlugs']
 
-def related_pages(p,pages):
-    topics={'home-court-basketball-training-app':'training','hot-shot-basketball':'rules','nba-scout':'scouting'}
-    topic=p.get('topic',topics.get(p['slug']))
-    words=set(re.findall(r'[a-z]+',p.get('keyword',p['title']).lower()))-{'basketball','app','a','the','and','for'}
-    def score(other):
-        shared=words.intersection(re.findall(r'[a-z]+',other.get('keyword',other['title']).lower()))
-        return 10*bool(topic and topic==other.get('topic',topics.get(other['slug'])))+len(shared)
-    candidates=[x for x in pages if x['slug'] and x['slug']!=p['slug']]
-    return sorted(candidates,key=lambda x:-score(x))[:3]
+def load_link_taxonomy(root=ROOT):
+    file=root/'content/shot-tracer/internal-link-taxonomy.json'
+    if not file.exists():return {'categories':[], 'pages':{}, 'featured':[]}
+    data=json.loads(file.read_text())
+    ids=[c['id'] for c in data['categories']]
+    if len(ids)!=len(set(ids)) or any(not re.fullmatch(r'[a-z]+(?:-[a-z]+)*',s) for s in ids):
+        raise ValueError('Invalid workflow category IDs')
+    if any(p['category'] not in ids for p in data['pages'].values()):raise ValueError('Unknown workflow category')
+    return data
+
+def category_path(category):return '/shot-tracer/scenarios/'+category['id']
+
+def category_catalog(pages,taxonomy):
+    mapping=taxonomy['pages']
+    result=[]
+    for category in taxonomy['categories']:
+        members=[p for p in pages if p['slug'] and p['status']=='approved' and mapping.get(p['slug'],{}).get('category')==category['id']]
+        if members:result.append(dict(category,pages=members))
+    return result
+
+def related_pages(p,pages,taxonomy=None):
+    taxonomy=taxonomy or load_link_taxonomy()
+    by_slug={x['slug']:x for x in pages if x['slug']}
+    if not p['slug']:return [by_slug[s] for s in taxonomy['featured'] if s in by_slug][:4]
+    group=taxonomy['pages'].get(p['slug'],{}).get('relatedGroup')
+    if not group:return []
+    peers=sorted(s for s in by_slug if taxonomy['pages'].get(s,{}).get('relatedGroup')==group)
+    # A circular neighborhood distributes relevant links instead of repeatedly
+    # recommending the first three records. Unclassified pages get no fallback.
+    position=peers.index(p['slug'])
+    ordered=peers[position+1:]+peers[:position]
+    return [by_slug[s] for s in ordered[:3]]
+
+def category_navigation(categories,current=None):
+    if not categories:return ''
+    items=[('/shot-tracer/scenarios','All workflows',None)]+[(category_path(c),c['label'],c['id']) for c in categories]
+    return '<nav class="workflow-categories" aria-label="Workflow topics">'+''.join('<a href="'+url+'"'+(' aria-current="page"' if current==key else '')+'>'+H(label)+'</a>' for url,label,key in items)+'</nav>'
+
+def pagination(number,total,position):
+    if total<=1:return ''
+    numbers=list(range(1,total+1)) if total<=9 else sorted({1,total,*range(max(1,number-2),min(total,number+2)+1)})
+    parts=[]
+    if number>1:parts.append(f'<a class="page-direction" href="{directory_path(number-1)}" rel="prev">← Previous</a>')
+    previous=0
+    for n in numbers:
+        if n>previous+1:parts.append('<span class="page-gap" aria-hidden="true">…</span>')
+        parts.append(f'<a href="{directory_path(n)}" aria-label="Workflow page {n}"'+(' aria-current="page"' if n==number else '')+f'>{n}</a>')
+        previous=n
+    if number<total:parts.append(f'<a class="page-direction" href="{directory_path(number+1)}" rel="next">Next →</a>')
+    return '<nav class="workflow-pagination" aria-label="Workflow pages '+position+'">'+''.join(parts)+'</nav>'
 
 def validate(pages):
     for key in ('slug','intent','title','description'):
@@ -96,9 +137,15 @@ def keyword_navigation(p):
         links.append('<a href="#'+target+'" aria-label="'+H(description,quote=True)+'"'+current+'><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">'+paths+'</svg><span>'+H(label)+'</span></a>')
     return '<nav class="keyword-jumps" aria-label="On this page">'+''.join(links)+'</nav>'
 
-def render(p,pages,shell):
+def render(p,pages,shell,taxonomy=None):
+    taxonomy=taxonomy or load_link_taxonomy()
+    categories=category_catalog(pages,taxonomy)
     crumbs=[('Home','/'),('Basketball shot tracer','/shot-tracer')]
-    if p['slug']:crumbs.append((p.get('label',p['heading']),route(p)))
+    if p['slug']:
+        crumbs.append(('Workflows','/shot-tracer/scenarios'))
+        category=next((c for c in categories if p in c['pages']),None)
+        if category:crumbs.append((category['label'],category_path(category)))
+        crumbs.append((p.get('label',p['heading']),route(p)))
     content='<div class="tracer-content"'+(' id="keyword-guide"' if p.get('keyword') else '')+'>'
     for sec in p['sections']:
         content+='<section><h2>'+H(sec['heading'])+'</h2>'
@@ -113,13 +160,15 @@ def render(p,pages,shell):
         content+='<section class="keyword-sources"><h2>Sources & further reading</h2><ul>'+''.join('<li><a href="'+H(s['url'],quote=True)+'">'+H(s['title'])+'</a></li>' for s in p['sources'])+'</ul></section>'
     if p.get('appCTA'):
         c=p['appCTA'];content+='<section class="keyword-app"><div><p class="tracer-kicker">YOUR NEXT SHOT</p><h2>'+H(c['heading'])+'</h2><p>'+H(c['text'])+'</p></div><a class="primary" data-keyword-app href="{{APP_URL}}">Download HoopCut <span aria-hidden="true">↗</span></a></section>'
-    related=related_pages(p,pages)
+    related=related_pages(p,pages,taxonomy)
     content+='<section><h2>Keep working on your basketball video</h2>'+cards(LINKS+[(route(x),x['heading'],x['intro']) for x in related])
     if any(x['slug'] for x in pages):content+='<p><a href="/shot-tracer/scenarios">Browse all shot tracer workflows</a></p>'
+    if p['slug'] and category:content+='<p><a href="'+category_path(category)+'">Explore '+H(category['label'].lower())+' workflows</a></p>'
     content+='<p><a href="#tracer-tool">Add a tracer to your video</a></p></section></div>'
     intro='<section class="intro">'+('<p class="keyword-eyebrow">HOOPCUT / BASKETBALL VIDEO TOOLS</p>' if p.get('keyword') else '')+'<h1>'+H(p['heading'])+'</h1><p>'+H(p['intro'])+'</p>'
     if p.get('heroDetail'):intro+='<p class="keyword-intro-detail">'+H(p['heroDetail'])+'</p>'
     if p.get('note'):intro+='<p class="keyword-note">'+H(p['note'])+'</p>'
+    if not p['slug'] and any(x['slug'] for x in pages):intro+='<p><a class="workflow-hub-entry" href="/shot-tracer/scenarios">Find a workflow for your basketball footage →</a></p>'
     intro+='</section>'
     if p.get('keyword'):
         intro+=keyword_navigation(p)
@@ -154,21 +203,56 @@ def render(p,pages,shell):
         shell=shell.replace(token,value)
     return shell
 
-def directory(number,pages,shell):
+def directory(number,pages,shell,taxonomy=None,category=None):
+    taxonomy=taxonomy or load_link_taxonomy()
+    categories=category_catalog(pages,taxonomy)
     path=directory_path(number);title='Basketball Shot Tracer Workflows'+(f' – Page {number}' if number>1 else '')+' | HoopCut'
     desc=f'Browse basketball shot tracer workflows, page {number}: choose footage and review the effect for each type of shot.'
     crumbs=[('Home','/'),('Shot tracer','/shot-tracer'),('Workflows',directory_path(1))]
     if number>1:crumbs.append((f'Page {number}',path))
     total=(len(pages)+PAGE_SIZE-1)//PAGE_SIZE
-    content='<div class="tracer-content"><h1>Basketball shot tracer workflows'+(f' – page {number}' if number>1 else '')+'</h1><p>Choose a workflow for your footage. Each page includes preparation advice and examples.</p>'+cards([(route(p),p['heading'],p['intro']) for p in pages[(number-1)*PAGE_SIZE:number*PAGE_SIZE]])+'<nav aria-label="Workflow pages">'
-    if number>1:content+=f'<a href="{directory_path(number-1)}">Previous page</a> · '
-    content+=f'Page {number} of {total}'
-    if number<total:content+=f' · <a href="{directory_path(number+1)}">Next page</a>'
-    content+='</nav></div>'
+    selection=pages[(number-1)*PAGE_SIZE:number*PAGE_SIZE]
+    heading='Basketball shot tracer workflows'+(f' — page {number}' if number>1 else '')
+    introduction='Start with your footage and what you want to do next. Browse training, game video, scouting and other workflows, then use the same shot tracer with your own clip.'
+    if category:
+        path=category_path(category);title=category['label']+' — Shot Tracer Workflows | HoopCut'
+        desc=category['description'];heading=category['label'];introduction=desc
+        crumbs=[('Home','/'),('Shot tracer','/shot-tracer'),('Workflows',directory_path(1)),(category['label'],path)]
+        selection=category['pages']
+    content='<div class="tracer-content workflow-library"><div class="workflow-intro"><p class="workflow-kicker">FIND YOUR WORKFLOW</p><h1>'+H(heading)+'</h1><p>'+H(introduction)+'</p><a class="workflow-upload" href="/shot-tracer#tracer-tool">Already have a clip? Add a shot tracer ↗</a></div>'
+    content+=category_navigation(categories,category['id'] if category else None)
+    count=f'{len(selection)} workflows in this topic' if category else f'{len(pages)} workflows · Page {number} of {total}'
+    content+='<p class="workflow-count">'+count+'</p>'
+    if not category:content+=pagination(number,total,'top')
+    content+=cards([(route(p),p.get('label',p['heading']),p['intro']) for p in selection])
+    if not category:content+=pagination(number,total,'bottom')
+    content+='</div>'
     header=re.search(r'<header>.*?</header>',shell,re.S)[0];footer=re.search(r'<footer>.*?</footer>',shell,re.S)[0]
     meta=metadata(title,desc,path,crumbs)
     if any(p['status']=='draft' for p in pages):meta=meta.replace('content="index,follow"','content="noindex,follow"')
-    return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+H(title)+'</title>'+meta+'<link rel="stylesheet" href="/assets/shot-tracer-tool.css"></head><body>'+header+'<main>'+breadcrumb(crumbs)+content+footer+'</main></body></html>'
+    return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+H(title)+'</title>'+meta+'<link rel="stylesheet" href="/assets/shot-tracer-tool.css"><link rel="stylesheet" href="/assets/tracer-directory.css"></head><body>'+header+'<main>'+breadcrumb(crumbs)+content+footer+'</main></body></html>'
+
+def apply_contextual_links(root,visible):
+    file=root/'content/shot-tracer/contextual-links.json'
+    if not file.exists():return
+    targets={route(p) for p in visible}
+    for placement in json.loads(file.read_text()):
+        source=placement['source']
+        if not re.fullmatch(r'/(?:blog|homecourt|tools|templates)/[a-z0-9-]+',source):raise ValueError('Invalid contextual source')
+        output=root/(source.lstrip('/')+'.html')
+        if not output.exists():continue
+        items=[x for x in placement['items'] if x['target'] in targets]
+        start='<!-- TRACER CONTEXT START -->';end='<!-- TRACER CONTEXT END -->'
+        html_source=re.sub(re.escape(start)+'.*?'+re.escape(end),'',output.read_text(),flags=re.S)
+        if items:
+            block=start+'<section class="tracer-context" aria-label="Related video workflows" style="max-width:1100px;margin:32px auto;padding:24px;border-top:1px solid #34382e"><h2>'+H(placement['heading'])+'</h2>'
+            for item in items:block+='<p>'+H(item['before'])+'<a href="'+H(item['target'],quote=True)+'">'+H(item['anchor'])+'</a>'+H(item['after'])+'</p>'
+            block+='</section>'+end
+            # Keep related advice before the main article footer when present.
+            match=re.search(r'<footer\b|</main>',html_source)
+            if not match:raise ValueError('Missing insertion point for '+source)
+            html_source=html_source[:match.start()]+block+html_source[match.start():]
+        output.write_text(html_source)
 
 def add_tool_link(source):
     if 'id="shot-tracer-upload-link"' in source:return source
@@ -183,12 +267,14 @@ def build(root=ROOT,preview_slugs=(),preview_batch=None):
     if unknown:raise ValueError('Unknown preview slugs: '+', '.join(sorted(unknown)))
     visible=[p for p in pages if p['status']=='approved' or p['slug'] in preview_slugs]
     scenes=[p for p in visible if p['slug']]
+    taxonomy=load_link_taxonomy(root)
     shell=(root/'content/shot-tracer/tool.html').read_text()
     # Read the product destination centrally, never per keyword.
     config=root/'content/site-config.json'
     app_url=json.loads(config.read_text())['app']['appStoreUrl'] if config.exists() else 'https://apps.apple.com/us/app/hoopcut-basketball-highlights/id6824860341'
-    outputs={route(p):render(p,visible,shell).replace('{{APP_URL}}',H(app_url,quote=True)) for p in visible}
-    for n in range(1,(len(scenes)+PAGE_SIZE-1)//PAGE_SIZE+1):outputs[directory_path(n)]=directory(n,scenes,shell)
+    outputs={route(p):render(p,visible,shell,taxonomy).replace('{{APP_URL}}',H(app_url,quote=True)) for p in visible}
+    for n in range(1,(len(scenes)+PAGE_SIZE-1)//PAGE_SIZE+1):outputs[directory_path(n)]=directory(n,scenes,shell,taxonomy)
+    for category in category_catalog(scenes,taxonomy):outputs[category_path(category)]=directory(1,scenes,shell,taxonomy,category)
     # This namespace is owned by this generator. Remove obsolete generated routes only.
     for old in (root/'shot-tracer').rglob('*.html'):
         if '/'+str(old.relative_to(root).with_suffix('')) not in outputs:old.unlink()
@@ -204,8 +290,15 @@ def build(root=ROOT,preview_slugs=(),preview_batch=None):
     # Local draft previews must never enter the production sitemap.
     approved_scenes=[p for p in approved if p['slug']]
     sitemap_paths=[route(p) for p in approved]+[directory_path(n) for n in range(1,(len(approved_scenes)+PAGE_SIZE-1)//PAGE_SIZE+1)]
+    sitemap_paths += [category_path(c) for c in category_catalog(approved_scenes,taxonomy)]
     for path in sitemap_paths:ET.SubElement(ET.SubElement(xml,ns+'url'),ns+'loc').text=BASE+path
     ET.register_namespace('',ns[1:-1]);tree.write(root/'sitemap.xml',encoding='utf-8',xml_declaration=True)
+    apply_contextual_links(root,approved)
+    if (root/'index.html').exists():
+        import sys
+        sys.path.insert(0,str(ROOT/'scripts'))
+        from tracer_home_entry import apply_home_entry
+        apply_home_entry(root)
     print(f'Built {len(approved)} approved tracer pages, {len(visible)-len(approved)} local draft previews; sitemap contains approved pages only.')
     return set(outputs)
 

@@ -41,11 +41,12 @@ def check(http=False):
     homecourt_urls={BASE+'/homecourt'}|{BASE+'/homecourt/'+p['slug'] for p in json.loads((ROOT/'content/homecourt/pages.json').read_text())['pages']}
     assert homecourt_urls.issubset(set(urls))
     assert BASE+'/shot-tracer' in urls
-    from build_shot_tracer import route, directory_path, PAGE_SIZE, load_pages
+    from build_shot_tracer import route, directory_path, PAGE_SIZE, load_pages, category_catalog, category_path, load_link_taxonomy
     tracer_pages=load_pages(ROOT)
     approved=[p for p in tracer_pages if p['status']=='approved']
     scene_count=sum(bool(p['slug']) for p in approved)
     tracer_urls={BASE+route(p) for p in approved}|{BASE+directory_path(n) for n in range(1,(scene_count+PAGE_SIZE-1)//PAGE_SIZE+1)}
+    tracer_urls|={BASE+category_path(c) for c in category_catalog(approved,load_link_taxonomy(ROOT))}
     assert {u for u in urls if u==BASE+'/shot-tracer' or u.startswith(BASE+'/shot-tracer/')}==tracer_urls
     assert len(urls)==len(set(urls))==39+len(tracer_urls)+len(expected_video_urls)+len(court_urls)+len(homecourt_urls)
     records={};titles=set();descriptions=set();adjacency={};incoming=Counter()
