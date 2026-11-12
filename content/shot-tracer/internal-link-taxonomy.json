@@ -1,0 +1,858 @@
+{
+  "categories": [
+    {
+      "id": "homecourt",
+      "label": "HomeCourt guides",
+      "description": "Independent HomeCourt app information and the separate step of preparing your own basketball footage."
+    },
+    {
+      "id": "basketball-apps",
+      "label": "Basketball apps",
+      "description": "Choose an app by the basketball task, input and result you need."
+    },
+    {
+      "id": "training",
+      "label": "Training & practice",
+      "description": "Organize practice recordings, from a dribble-to-shot sequence to a lesson recap."
+    },
+    {
+      "id": "video-effects",
+      "label": "Video & shot effects",
+      "description": "Work with saved basketball video, recording systems and visible ball-flight effects."
+    },
+    {
+      "id": "records-analytics",
+      "label": "Shot records & analytics",
+      "description": "Keep shot logs, scores and analysis separate from the visual effect added to a clip."
+    },
+    {
+      "id": "coaching-plays",
+      "label": "Coaching & playbooks",
+      "description": "Connect a play diagram, team workflow or coaching note with clearly labeled footage."
+    },
+    {
+      "id": "courts-filming",
+      "label": "Courts & filming",
+      "description": "Plan camera views, show the playing context and distinguish venue information from video editing."
+    },
+    {
+      "id": "challenges-rules",
+      "label": "Shooting games & rules",
+      "description": "Record shooting challenges with enough context to explain the format and scoring."
+    },
+    {
+      "id": "scouting-opportunities",
+      "label": "Scouting & opportunities",
+      "description": "Keep career research, event information and the preparation of personal footage distinct."
+    },
+    {
+      "id": "other-searches",
+      "label": "Other searches",
+      "description": "Queries about other products, services or unclear destinations, with their distinction from HoopCut stated on each page."
+    }
+  ],
+  "pages": {
+    "home-court-basketball-training-app": {
+      "category": "homecourt",
+      "relatedGroup": "homecourt-app-information"
+    },
+    "hot-shot-basketball": {
+      "category": "challenges-rules",
+      "relatedGroup": "hot-shot-challenge-footage"
+    },
+    "nba-scout": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "scouting-and-footage"
+    },
+    "basketball-apps": {
+      "category": "basketball-apps",
+      "relatedGroup": "basketball-app-selection"
+    },
+    "basketball-training-app": {
+      "category": "training",
+      "relatedGroup": "practice-video-recording"
+    },
+    "basketball-ai": {
+      "category": "video-effects",
+      "relatedGroup": "ai-shot-effects"
+    },
+    "basketball-dribbling-app": {
+      "category": "training",
+      "relatedGroup": "dribble-to-shot-recording"
+    },
+    "basketball-coaching-software": {
+      "category": "coaching-plays",
+      "relatedGroup": "coaching-video-workflows"
+    },
+    "interactive-basketball": {
+      "category": "training",
+      "relatedGroup": "interactive-practice-recording"
+    },
+    "online-basketball-training": {
+      "category": "training",
+      "relatedGroup": "practice-video-recording"
+    },
+    "basketball-game-recording-app": {
+      "category": "video-effects",
+      "relatedGroup": "saved-shot-video-editing"
+    },
+    "basketball-video-software": {
+      "category": "video-effects",
+      "relatedGroup": "saved-shot-video-editing"
+    },
+    "basketball-analytics-software": {
+      "category": "records-analytics",
+      "relatedGroup": "basketball-analytics-records"
+    },
+    "3-point-shootout-rules": {
+      "category": "challenges-rules",
+      "relatedGroup": "shooting-contest-format"
+    },
+    "how-many-points-is-a-full-court-shot": {
+      "category": "challenges-rules",
+      "relatedGroup": "full-court-shot-scoring"
+    },
+    "home-court": {
+      "category": "courts-filming",
+      "relatedGroup": "court-video-framing"
+    },
+    "homecourt-app": {
+      "category": "homecourt",
+      "relatedGroup": "homecourt-app-information"
+    },
+    "homecourt": {
+      "category": "homecourt",
+      "relatedGroup": "homecourt-app-information"
+    },
+    "homecourt-basketball": {
+      "category": "homecourt",
+      "relatedGroup": "homecourt-app-information"
+    },
+    "homecourt-basketball-training-app": {
+      "category": "homecourt",
+      "relatedGroup": "homecourt-app-information"
+    },
+    "home-court-basketball": {
+      "category": "courts-filming",
+      "relatedGroup": "court-video-framing"
+    },
+    "homecourt-basketball-app": {
+      "category": "homecourt",
+      "relatedGroup": "homecourt-app-information"
+    },
+    "apps-basketball": {
+      "category": "basketball-apps",
+      "relatedGroup": "basketball-app-selection"
+    },
+    "basketball-court-ai": {
+      "category": "video-effects",
+      "relatedGroup": "ai-shot-effects"
+    },
+    "basketball-training-apps": {
+      "category": "training",
+      "relatedGroup": "training-app-selection"
+    },
+    "home-court-app": {
+      "category": "homecourt",
+      "relatedGroup": "homecourt-app-information"
+    },
+    "basketball-app": {
+      "category": "basketball-apps",
+      "relatedGroup": "basketball-app-selection"
+    },
+    "basketball-application": {
+      "category": "basketball-apps",
+      "relatedGroup": "basketball-app-selection"
+    },
+    "homecort": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "home-court-basketball-training": {
+      "category": "training",
+      "relatedGroup": "practice-video-recording"
+    },
+    "home-court-nba": {
+      "category": "courts-filming",
+      "relatedGroup": "nba-home-venue-context"
+    },
+    "hot-shot-basketball-game": {
+      "category": "challenges-rules",
+      "relatedGroup": "hot-shot-challenge-footage"
+    },
+    "basketball-home-court": {
+      "category": "courts-filming",
+      "relatedGroup": "court-video-framing"
+    },
+    "basketball-tracker": {
+      "category": "records-analytics",
+      "relatedGroup": "shot-logs-and-video"
+    },
+    "app-basket": {
+      "category": "basketball-apps",
+      "relatedGroup": "basketball-app-selection"
+    },
+    "home-court-training-center": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "nba-scouting": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "scouting-and-footage"
+    },
+    "app-basketball": {
+      "category": "basketball-apps",
+      "relatedGroup": "basketball-app-selection"
+    },
+    "free-basketball-app": {
+      "category": "basketball-apps",
+      "relatedGroup": "basketball-app-selection"
+    },
+    "shot-contest": {
+      "category": "challenges-rules",
+      "relatedGroup": "shooting-contest-format"
+    },
+    "scouting-nba": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "scouting-and-footage"
+    },
+    "homecourt-basketball-game": {
+      "category": "homecourt",
+      "relatedGroup": "homecourt-app-information"
+    },
+    "interactive-basketball-training": {
+      "category": "training",
+      "relatedGroup": "interactive-practice-recording"
+    },
+    "example-pe-lesson-plans": {
+      "category": "training",
+      "relatedGroup": "pe-lesson-recordings"
+    },
+    "ai-basketball-training": {
+      "category": "training",
+      "relatedGroup": "training-app-selection"
+    },
+    "shot-tracking-basketball": {
+      "category": "records-analytics",
+      "relatedGroup": "shot-logs-and-video"
+    },
+    "basketball-shot-counter": {
+      "category": "records-analytics",
+      "relatedGroup": "shot-logs-and-video"
+    },
+    "application-basketball": {
+      "category": "basketball-apps",
+      "relatedGroup": "basketball-app-selection"
+    },
+    "online-basketball-lessons": {
+      "category": "training",
+      "relatedGroup": "practice-video-recording"
+    },
+    "basketball-artificial-intelligence": {
+      "category": "video-effects",
+      "relatedGroup": "ai-shot-effects"
+    },
+    "hotshot-basketball-game": {
+      "category": "challenges-rules",
+      "relatedGroup": "hot-shot-challenge-footage"
+    },
+    "hot-shot-game": {
+      "category": "challenges-rules",
+      "relatedGroup": "hot-shot-challenge-footage"
+    },
+    "homecourt-hoops": {
+      "category": "homecourt",
+      "relatedGroup": "homecourt-app-information"
+    },
+    "basketball-with-tracker": {
+      "category": "records-analytics",
+      "relatedGroup": "connected-basketball-hardware"
+    },
+    "basketball-coaching-app": {
+      "category": "coaching-plays",
+      "relatedGroup": "coaching-video-workflows"
+    },
+    "homecourt-query-8072cb": {
+      "category": "homecourt",
+      "relatedGroup": "homecourt-app-information"
+    },
+    "basketball-plays-app": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "tracking-basketball": {
+      "category": "video-effects",
+      "relatedGroup": "saved-shot-video-editing"
+    },
+    "space-jam-games": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-training-technology": {
+      "category": "training",
+      "relatedGroup": "practice-video-recording"
+    },
+    "court-for-basketball": {
+      "category": "courts-filming",
+      "relatedGroup": "court-video-framing"
+    },
+    "home-courts": {
+      "category": "courts-filming",
+      "relatedGroup": "court-video-framing"
+    },
+    "home-depot-orange-hex-code": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-dribble-app": {
+      "category": "training",
+      "relatedGroup": "dribble-to-shot-recording"
+    },
+    "nex-playground-basketball-game": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-hot-shot-game": {
+      "category": "challenges-rules",
+      "relatedGroup": "hot-shot-challenge-footage"
+    },
+    "nba-workout-tracker": {
+      "category": "training",
+      "relatedGroup": "workout-record-organization"
+    },
+    "coaching-basketball-apps": {
+      "category": "coaching-plays",
+      "relatedGroup": "coaching-video-workflows"
+    },
+    "basketball-shooting-tracker": {
+      "category": "records-analytics",
+      "relatedGroup": "shot-logs-and-video"
+    },
+    "basketball-tracking": {
+      "category": "records-analytics",
+      "relatedGroup": "shot-logs-and-video"
+    },
+    "homes-court": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "contest-shot": {
+      "category": "challenges-rules",
+      "relatedGroup": "contested-shot-context"
+    },
+    "best-basketball-training-apps": {
+      "category": "training",
+      "relatedGroup": "training-app-selection"
+    },
+    "the-home-court": {
+      "category": "courts-filming",
+      "relatedGroup": "court-video-framing"
+    },
+    "nba-scouts": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "scouting-and-footage"
+    },
+    "street-homecourt": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-team-app": {
+      "category": "coaching-plays",
+      "relatedGroup": "team-management-and-sharing"
+    },
+    "app-basketball-coach": {
+      "category": "coaching-plays",
+      "relatedGroup": "coaching-video-workflows"
+    },
+    "hot-shots-game-basketball": {
+      "category": "challenges-rules",
+      "relatedGroup": "hot-shot-challenge-footage"
+    },
+    "playing-basketball-overseas-tryouts": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "overseas-tryout-footage"
+    },
+    "software-for-basketball-coaches": {
+      "category": "coaching-plays",
+      "relatedGroup": "coaching-video-workflows"
+    },
+    "hawksquawk-homecourt": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "trace-basketball": {
+      "category": "video-effects",
+      "relatedGroup": "external-video-capture"
+    },
+    "basketball-scorebook-app": {
+      "category": "records-analytics",
+      "relatedGroup": "game-scorekeeping"
+    },
+    "how-many-points-is-a-full-court-shot-in-basketball": {
+      "category": "challenges-rules",
+      "relatedGroup": "full-court-shot-scoring"
+    },
+    "online-basketball-play-creator": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "free-basketball-play-creator": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "basketball-play-diagram-software": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "basketball-court-logos": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-play-creator-free": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "basketball-augmented-reality": {
+      "category": "video-effects",
+      "relatedGroup": "recorded-video-overlays"
+    },
+    "space-jam-court": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-overseas-tryouts": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "overseas-tryout-footage"
+    },
+    "interactive-basketball-court": {
+      "category": "training",
+      "relatedGroup": "interactive-practice-recording"
+    },
+    "nba-scores-diy-homeschool": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "homecourt-basketball-woodinville": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "homecourt-advantage": {
+      "category": "courts-filming",
+      "relatedGroup": "homecourt-advantage-context"
+    },
+    "basketball-management-software": {
+      "category": "coaching-plays",
+      "relatedGroup": "team-management-and-sharing"
+    },
+    "court-basket": {
+      "category": "courts-filming",
+      "relatedGroup": "court-video-framing"
+    },
+    "basketball-play-creator": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "basketball-team-management-app": {
+      "category": "coaching-plays",
+      "relatedGroup": "team-management-and-sharing"
+    },
+    "the-homecourt": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basket-application": {
+      "category": "basketball-apps",
+      "relatedGroup": "basketball-app-selection"
+    },
+    "basketball-scoring-app": {
+      "category": "records-analytics",
+      "relatedGroup": "game-scorekeeping"
+    },
+    "basketball-play-maker-free": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "semi-pro-basketball-tryouts-near-me": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "pro-tryout-footage"
+    },
+    "basketapp": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-court-maker": {
+      "category": "courts-filming",
+      "relatedGroup": "court-sketch-and-camera"
+    },
+    "pickup-basketball-app": {
+      "category": "basketball-apps",
+      "relatedGroup": "pickup-game-organization"
+    },
+    "passport-basketball-app": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "training-court-app": {
+      "category": "training",
+      "relatedGroup": "practice-video-recording"
+    },
+    "pacers-homecourt": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-playmaker": {
+      "category": "coaching-plays",
+      "relatedGroup": "playmaker-possession-recording"
+    },
+    "basketball-shooting-chart-templates": {
+      "category": "records-analytics",
+      "relatedGroup": "shot-logs-and-video"
+    },
+    "basketball-playmaker-free": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "basketball-play-maker": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "basketball-shot-tracker": {
+      "category": "records-analytics",
+      "relatedGroup": "shot-logs-and-video"
+    },
+    "how-to-cancel-home-ai-app": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-play-software": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "nba-court-iq": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-software": {
+      "category": "basketball-apps",
+      "relatedGroup": "basketball-app-selection"
+    },
+    "ball-ai": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "free-court-designer": {
+      "category": "courts-filming",
+      "relatedGroup": "court-sketch-and-camera"
+    },
+    "hometeam-app": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-scouts": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "scouting-and-footage"
+    },
+    "homecourt-home-care": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "how-do-you-become-an-nba-scout": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "scouting-career-research"
+    },
+    "online-basketball-play-maker": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "basketball-tracking-system": {
+      "category": "records-analytics",
+      "relatedGroup": "shot-logs-and-video"
+    },
+    "basketball-flooring-kit-homecourt-tiles": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-court-nike": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "thefuturesapp": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-ai-chat": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "coaching-apps-for-basketball": {
+      "category": "coaching-plays",
+      "relatedGroup": "coaching-video-workflows"
+    },
+    "basketball-hot-shot": {
+      "category": "challenges-rules",
+      "relatedGroup": "hot-shot-challenge-footage"
+    },
+    "homecourt-meridian": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "homecourt-company": {
+      "category": "homecourt",
+      "relatedGroup": "homecourt-app-information"
+    },
+    "basketball-digital": {
+      "category": "video-effects",
+      "relatedGroup": "saved-shot-video-editing"
+    },
+    "basketball-whiteboard-online": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "google-basketball-logo": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-play-app": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "basketball-playbook-app": {
+      "category": "coaching-plays",
+      "relatedGroup": "playbook-video-organization"
+    },
+    "hercourt": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-playmaker-online": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "court-set-up": {
+      "category": "courts-filming",
+      "relatedGroup": "court-video-framing"
+    },
+    "smartcourt": {
+      "category": "video-effects",
+      "relatedGroup": "external-video-capture"
+    },
+    "best-laptops-nba-scores": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "professional-summer-basketball-leagues": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "summer-league-research"
+    },
+    "tryouts-basketball-overseas": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "overseas-tryout-footage"
+    },
+    "homecourt-promo-code": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "wilson-x-connected-basketball": {
+      "category": "records-analytics",
+      "relatedGroup": "connected-basketball-hardware"
+    },
+    "basketball-court-designer": {
+      "category": "courts-filming",
+      "relatedGroup": "court-sketch-and-camera"
+    },
+    "2-11": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "digital-basketball": {
+      "category": "video-effects",
+      "relatedGroup": "saved-shot-video-editing"
+    },
+    "nexcourt-inc": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-scouting": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "scouting-and-footage"
+    },
+    "homecourt-discount-code": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "overseas-basketball-combine": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "overseas-tryout-footage"
+    },
+    "world-basketball-opportunities": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "basketball-opportunity-research"
+    },
+    "global-basketball": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "nba-street-home-court": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-play-simulator": {
+      "category": "coaching-plays",
+      "relatedGroup": "play-diagrams-and-footage"
+    },
+    "jngc": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "home-court-discount-code": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "on-court-basketball": {
+      "category": "video-effects",
+      "relatedGroup": "saved-shot-video-editing"
+    },
+    "virtual-basketball": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "homecourt-soap": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "playsight-smartcourt-pricing-models-subscription-fees-cloud-storage": {
+      "category": "video-effects",
+      "relatedGroup": "external-video-capture"
+    },
+    "basketball-playbook-creator-free": {
+      "category": "coaching-plays",
+      "relatedGroup": "playbook-video-organization"
+    },
+    "augmented-reality-basketball": {
+      "category": "video-effects",
+      "relatedGroup": "recorded-video-overlays"
+    },
+    "how-to-become-an-nba-scout": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "scouting-career-research"
+    },
+    "nike-basketball-court": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "how-to-cancel-home-ai-subscription": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-opportunities": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "basketball-opportunity-research"
+    },
+    "routing-for-the-home-team": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "3ak-app": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "free-basketball-playbook-creator": {
+      "category": "coaching-plays",
+      "relatedGroup": "playbook-video-organization"
+    },
+    "basket-app": {
+      "category": "basketball-apps",
+      "relatedGroup": "basketball-app-selection"
+    },
+    "homecourt-training-center": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-analytics-platform": {
+      "category": "records-analytics",
+      "relatedGroup": "basketball-analytics-records"
+    },
+    "basketball-playbook-creator": {
+      "category": "coaching-plays",
+      "relatedGroup": "playbook-video-organization"
+    },
+    "full-court-analytics": {
+      "category": "records-analytics",
+      "relatedGroup": "basketball-analytics-records"
+    },
+    "nba-home-court": {
+      "category": "courts-filming",
+      "relatedGroup": "nba-home-venue-context"
+    },
+    "third-person-basketball-court": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "start-shot-competition": {
+      "category": "challenges-rules",
+      "relatedGroup": "shooting-contest-format"
+    },
+    "court-shop": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-home": {
+      "category": "training",
+      "relatedGroup": "practice-video-recording"
+    },
+    "basketball-court-designer-online": {
+      "category": "courts-filming",
+      "relatedGroup": "court-sketch-and-camera"
+    },
+    "homecourt-for-paws": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-scorekeeping-app": {
+      "category": "records-analytics",
+      "relatedGroup": "game-scorekeeping"
+    },
+    "home2court": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basket-login": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "pro-basketball-tryouts": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "pro-tryout-footage"
+    },
+    "home-court-dc": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "basketball-scout": {
+      "category": "scouting-opportunities",
+      "relatedGroup": "scouting-and-footage"
+    },
+    "home-court-of-boston-celtics": {
+      "category": "courts-filming",
+      "relatedGroup": "nba-home-venue-context"
+    },
+    "basketball-court-creator": {
+      "category": "courts-filming",
+      "relatedGroup": "court-sketch-and-camera"
+    },
+    "homecourt-dc": {
+      "category": "other-searches",
+      "relatedGroup": null
+    },
+    "ai-basketball-training-platforms-2026": {
+      "category": "training",
+      "relatedGroup": "training-app-selection"
+    }
+  },
+  "featured": [
+    "basketball-video-software",
+    "basketball-game-recording-app",
+    "basketball-ai",
+    "court-set-up"
+  ]
+}

@@ -1,0 +1,306 @@
+[
+  {
+    "source": "/blog/how-to-add-shot-tracer-to-basketball-video",
+    "heading": "Try the effect on a shot you can verify",
+    "items": [
+      {
+        "before": "For a hands-on follow-up, use the ",
+        "target": "/shot-tracer/trace-basketball",
+        "anchor": "saved-video basketball tracing workflow",
+        "after": " to compare the added line with the ball you can actually see in your recording."
+      },
+      {
+        "before": "If the trail looks uncertain near a light or another player, follow these ",
+        "target": "/shot-tracer/basketball-artificial-intelligence",
+        "anchor": "checks for an AI-generated shot trail",
+        "after": " before treating the preview as a finished clip."
+      }
+    ],
+    "rationale": "The tutorial explicitly asks readers to inspect release, flight, and finish. These targets turn that inspection into the actual saved-video tool and explain how to review an uncertain effect without implying calibrated measurements."
+  },
+  {
+    "source": "/blog/how-to-film-basketball-games",
+    "heading": "Carry the camera test into your edit",
+    "items": [
+      {
+        "before": "Before recording a full session, use the ",
+        "target": "/shot-tracer/court-set-up",
+        "anchor": "court setup checks for a complete ball flight",
+        "after": " to review headroom, the target basket, and moving obstructions in a short test."
+      },
+      {
+        "before": "Once the game file is saved, the ",
+        "target": "/shot-tracer/basketball-game-recording-app",
+        "anchor": "recording-to-tracer workflow",
+        "after": " helps you choose a usable excerpt while keeping capture and video editing as separate steps."
+      }
+    ],
+    "rationale": "The filming guide covers fixed and following cameras, test recordings, and preserving sources. One target extends the camera test; the other carries an already-saved recording into the tracer without claiming that the web tool records games."
+  },
+  {
+    "source": "/blog/record-basketball-practice-alone",
+    "heading": "Keep the practice record beside the highlight",
+    "items": [
+      {
+        "before": "If you are keeping a record of your set, use the ",
+        "target": "/shot-tracer/basketball-shooting-tracker",
+        "anchor": "attempt-number and video-timestamp workflow",
+        "after": " to connect a selected highlight with the complete sequence of makes and misses."
+      },
+      {
+        "before": "When deciding what to do with the footage afterward, compare ",
+        "target": "/shot-tracer/basketball-training-apps",
+        "anchor": "practice records and shareable video outputs",
+        "after": " so an edited shot does not stand in for a training log or coaching feedback."
+      }
+    ],
+    "rationale": "The source already separates short labeled sets, manual notes, and visual effects. These links extend that exact distinction and provide practical organization steps for solo footage."
+  },
+  {
+    "source": "/blog/how-to-make-a-basketball-highlight-video",
+    "heading": "Give the selected shot a clear next step",
+    "items": [
+      {
+        "before": "For a single shot-effect version of your shortlist, try the ",
+        "target": "/shot-tracer/basketball-video-software",
+        "anchor": "basketball video workflow for a tracer highlight",
+        "after": " and keep the complete source available beside the export."
+      },
+      {
+        "before": "If the pass explains why you chose the possession, use the ",
+        "target": "/shot-tracer/basketball-play-app",
+        "anchor": "setup-and-shot clip guide",
+        "after": " to retain that lead-in when selecting a short segment for the effect."
+      }
+    ],
+    "rationale": "The source’s six-step workflow emphasizes a shortlist, complete decisions, and optional effects. These targets support the saved-video editing step and the specific choice to preserve the pass before a shot."
+  },
+  {
+    "source": "/blog/basketball-highlight-video-examples",
+    "heading": "Turn a storyboard into a clip from your own game",
+    "items": [
+      {
+        "before": "For the passing example, follow the ",
+        "target": "/shot-tracer/basketball-playmaker",
+        "anchor": "playmaker clip guide",
+        "after": " to keep the setup visible before adding a trail to the shot that follows."
+      },
+      {
+        "before": "If you draw the intended movement first, use the ",
+        "target": "/shot-tracer/basketball-play-diagram-software",
+        "anchor": "diagram-to-recording workflow",
+        "after": " to label the plan separately from what your actual possession shows."
+      }
+    ],
+    "rationale": "The source contains hypothetical storyboards for a made shot, a passing decision, and a team sequence. The targets help turn those plans into a real-footage example without presenting a drawing as executed play or an invented customer case study."
+  },
+  {
+    "source": "/blog/how-long-should-a-basketball-highlight-video-be",
+    "heading": "Choose the version your viewer actually needs",
+    "items": [
+      {
+        "before": "For a short personal recap, use the ",
+        "target": "/shot-tracer/on-court-basketball",
+        "anchor": "on-court shot selection guide",
+        "after": " to keep a clear lead-in and finish instead of cutting the attempt at release."
+      },
+      {
+        "before": "If someone has requested footage for a basketball opportunity, review ",
+        "target": "/shot-tracer/basketball-opportunities",
+        "anchor": "how to separate requested footage from a sharing edit",
+        "after": " before substituting a short effect clip for the format they asked to receive."
+      }
+    ],
+    "rationale": "The source chooses duration by audience and explicitly distinguishes a social recap from a recipient’s submission request. These two targets preserve that distinction rather than assigning one universal reel duration."
+  },
+  {
+    "source": "/blog/how-to-make-a-basketball-recruiting-video",
+    "heading": "Keep your review footage and presentation copy distinct",
+    "items": [
+      {
+        "before": "Use the ",
+        "target": "/shot-tracer/basketball-scouting",
+        "anchor": "scouting-footage organization guide",
+        "after": " to retain the player identifier, source timestamp, and complete possession beside any optional tracer highlight."
+      },
+      {
+        "before": "When maintaining files for different recipients, follow the ",
+        "target": "/shot-tracer/world-basketball-opportunities",
+        "anchor": "basketball video portfolio preparation checklist",
+        "after": " and check each organizer’s actual requirements; the editing tool does not provide recruitment or introductions."
+      }
+    ],
+    "rationale": "The recruiting article requires player identification, complete possessions, honest context, and recipient-specific materials. Both targets support organizing that evidence while explicitly separating a visual edit from recruitment access or evaluation."
+  },
+  {
+    "source": "/blog/how-to-make-basketball-highlights-for-instagram",
+    "heading": "Match the caption to the footage",
+    "items": [
+      {
+        "before": "For a clip from an informal run, use the ",
+        "target": "/shot-tracer/pickup-basketball-app",
+        "anchor": "pickup recording and highlight checklist",
+        "after": " to keep the session identifiable and the shot clear before preparing a social copy."
+      },
+      {
+        "before": "If the setting is part of the story, follow the ",
+        "target": "/shot-tracer/basketball-home-court",
+        "anchor": "home-court video framing guide",
+        "after": " to retain useful surroundings and describe the real location without guessing a venue or event name."
+      }
+    ],
+    "rationale": "The Instagram article links composition, a complete possession, cover, and an accurate caption. These targets give two concrete basketball contexts for that work and do not promise automatic publishing to Instagram."
+  },
+  {
+    "source": "/blog/how-to-make-basketball-highlights-on-iphone",
+    "heading": "Test a finished clip before a larger project",
+    "items": [
+      {
+        "before": "To try the browser route with footage already saved on your phone, use the ",
+        "target": "/shot-tracer/free-basketball-app",
+        "anchor": "free Firework tracer export workflow",
+        "after": " and inspect the downloaded result rather than judging only the preview."
+      },
+      {
+        "before": "Before choosing software for a larger edit, use the ",
+        "target": "/shot-tracer/basketball-application",
+        "anchor": "basketball video input-and-output checklist",
+        "after": " to define the file you have, the effect you need, and the result you want to keep."
+      }
+    ],
+    "rationale": "The iPhone guide recommends confirming local file availability and making a small test export first. The targets make that test concrete without promising mobile device compatibility beyond what the user can actually try."
+  },
+  {
+    "source": "/tools/basketball-shot-chart",
+    "heading": "Connect the chart to the original attempt",
+    "items": [
+      {
+        "before": "For a chart that accompanies video, use the ",
+        "target": "/shot-tracer/basketball-shooting-chart-templates",
+        "anchor": "chart-label and source-timestamp guide",
+        "after": " to connect each manual entry with its recording before choosing a highlight."
+      },
+      {
+        "before": "Before interpreting a collection of edited shots as a session record, read ",
+        "target": "/shot-tracer/basketball-shot-tracker",
+        "anchor": "the difference between a shot tracker and a tracer",
+        "after": "; the visual effect does not populate this chart or establish the number of attempts."
+      }
+    ],
+    "rationale": "The tool is a manual makes/misses/position log. Both links preserve that limitation while giving readers a useful route from an individual chart entry to a clearly labeled shot-effect copy."
+  },
+  {
+    "source": "/tools/basketball-court-diagram",
+    "heading": "Take the camera plan to a real recording",
+    "items": [
+      {
+        "before": "After placing a camera marker, use the ",
+        "target": "/shot-tracer/basketball-court-creator",
+        "anchor": "camera-position test workflow",
+        "after": " to compare real footage from your proposed views rather than relying on the drawing alone."
+      },
+      {
+        "before": "If your diagram explains a pass and finish, follow the ",
+        "target": "/shot-tracer/basketball-play-creator",
+        "anchor": "planned-play and traced-finish guide",
+        "after": " to keep the diagram, original possession, and optional effect version connected by a clear play label."
+      }
+    ],
+    "rationale": "The diagram supports player movement and camera placement, not construction or tactical simulation. These targets extend those two existing uses into checks of actual recordings without claiming generated basketball footage."
+  },
+  {
+    "source": "/homecourt/camera-setup",
+    "heading": "Review the shot your camera actually captured",
+    "items": [
+      {
+        "before": "If several baskets appear in the saved recording, use the ",
+        "target": "/shot-tracer/homecourt-hoops",
+        "anchor": "target-hoop and shot-direction checks",
+        "after": " to identify the attempt before making a separate HoopCut effect clip."
+      },
+      {
+        "before": "Before tightening the crop, review the ",
+        "target": "/shot-tracer/court-basket",
+        "anchor": "basket framing checklist",
+        "after": " to keep the intended rim and the visible result inside the selected shot."
+      }
+    ],
+    "rationale": "The HomeCourt guide asks readers to test their actual phone view and note other hoops or obstructions. The targets continue those concrete checks on a saved file, without claiming a HomeCourt account connection or repairing detection."
+  },
+  {
+    "source": "/homecourt/export-video",
+    "heading": "Work with the saved file after export",
+    "items": [
+      {
+        "before": "Once the recording plays outside HomeCourt, follow the ",
+        "target": "/shot-tracer/homecourt-basketball-app",
+        "anchor": "saved-video tracing workflow",
+        "after": " to prepare a clear attempt without needing an account integration between the two products."
+      },
+      {
+        "before": "For footage being passed between a team assistant and coach, use the ",
+        "target": "/shot-tracer/software-for-basketball-coaches",
+        "anchor": "original, review, and highlight file handoff",
+        "after": " to keep the intended audience and source reference clear for each copy."
+      }
+    ],
+    "rationale": "The export article distinguishes account roles, permission, and verifying a local playable file. These links start only after that file exists and support either a personal tracer edit or an organized coaching handoff."
+  },
+  {
+    "source": "/homecourt/shot-analysis",
+    "heading": "Keep measurements tied to their source",
+    "items": [
+      {
+        "before": "When pairing a chart or report with an edited attempt, use the ",
+        "target": "/shot-tracer/basketball-analytics-platform",
+        "anchor": "analytics-record and video-reference checklist",
+        "after": " to match the player and timestamp without reading measurements from the trail."
+      },
+      {
+        "before": "If the footage comes from a training session, read ",
+        "target": "/shot-tracer/ai-basketball-training",
+        "anchor": "how to separate training feedback from a shot effect",
+        "after": " before using a decorated clip to make claims about technique or improvement."
+      }
+    ],
+    "rationale": "The source contrasts documented analysis metrics with a visual ball-flight effect. These targets reinforce the same evidence boundary while offering the actual tool for a separately labeled presentation copy."
+  },
+  {
+    "source": "/homecourt/homecourt-vs-hoopcut",
+    "heading": "Try the video part of the comparison",
+    "items": [
+      {
+        "before": "For footage from your own practice, use the ",
+        "target": "/shot-tracer/home-court-basketball-training",
+        "anchor": "practice-session-to-tracer workflow",
+        "after": " to retain the session context while making a separate visual highlight."
+      },
+      {
+        "before": "For the finished-file side of the comparison, follow the ",
+        "target": "/shot-tracer/basketball-digital",
+        "anchor": "source, edit, and sharing-copy checklist",
+        "after": " and check the exported video from beginning to end before deciding whether it fits your task."
+      }
+    ],
+    "rationale": "The comparison is explicitly about training records versus a finished video, not ranking one app above the other. The links let readers test the video output and organize the original independently of another product’s account or metrics."
+  },
+  {
+    "source": "/homecourt/alternatives",
+    "heading": "Make the shortlist testable",
+    "items": [
+      {
+        "before": "If your desired result is a basketball video, use the ",
+        "target": "/shot-tracer/basketball-apps",
+        "anchor": "basketball app task-selection guide",
+        "after": " to distinguish the editing step from training, scorekeeping, and team administration."
+      },
+      {
+        "before": "If training remains the main requirement, use the ",
+        "target": "/shot-tracer/best-basketball-training-apps",
+        "anchor": "training-app evaluation checklist",
+        "after": " to define a repeatable test; the tracer example is a video task, not a tested ranking or a coaching replacement."
+      }
+    ],
+    "rationale": "The alternatives guide asks the reader to choose an output and test a repeatable task. These targets support that decision without inventing comparative scores or presenting the tracer as an alternative to every HomeCourt feature."
+  }
+]
