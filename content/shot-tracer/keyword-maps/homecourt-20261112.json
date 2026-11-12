@@ -1,0 +1,5486 @@
+{
+  "version": 2,
+  "createdOn": "2026-11-12",
+  "market": "US",
+  "sourceFile": "/Users/violetteeeeeee7/Downloads/homecourt.ai-organic.Positions-us-20261110-2026-11-12T10_05_16Z.csv",
+  "sourceSha256": "1704d6a140152d4a6ebf8c02062f741c553cf309f0a8d4b312af8fe6752039ef",
+  "sourceRowCount": 370,
+  "uniqueKeywordCount": 199,
+  "methodology": [
+    "Every exact distinct keyword has one action; sourceRecords retain every original ranking row.",
+    "Volume and KD remain source estimates as supplied; no KD or minimum-volume exclusion rule.",
+    "One create record per new/local-draft intent cluster; strong synonyms have merge actions. Every keyword assigned to an already usable page has an existing action. Existing targets were checked in this baseline sitemap and their HTML inspected.",
+    "Broad-topic pages must answer their informational task using sourced content before offering the Tracer. The Tracer alone is not represented as coaching, analytics, recording, scoring or recruiting.",
+    "Deferred phrases require missing capability, factual resources or intent verification. No empty or misleading landing page is created.",
+    "This is a local production plan, not a forecast of indexing, search clicks or conversions.",
+    "HomeCourt brand queries are not automatically excluded: existing independent guides and the confirmed training-app page may cover their app-information intent. Mapping explicitly does not claim to satisfy every navigational, venue or game interpretation."
+  ],
+  "summary": {
+    "actions": {
+      "existing": 43,
+      "merge": 52,
+      "create": 15,
+      "defer": 89
+    },
+    "createClusters": 15,
+    "existingLocalDraftClusters": 3,
+    "newCreateClusters": 12,
+    "existingTargetClusters": 4,
+    "sourceDataDates": {
+      "min": "2026-09-05",
+      "max": "2026-11-09"
+    },
+    "keywordsCoveredByCreateClusters": 67,
+    "keywordsCoveredByExistingTargets": 43
+  },
+  "clusters": [
+    {
+      "slug": "home-court-basketball-training-app",
+      "primaryKeyword": "home court basketball training app",
+      "keywords": [
+        "home court basketball training app",
+        "homecourt basketball training app",
+        "home court basketball training",
+        "homecourt app",
+        "homecourt basketball app",
+        "home court app",
+        "homecourt basketball",
+        "home court basketball",
+        "homecourt basketball game",
+        "homecourt hoops"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/home-court-basketball-training-app",
+      "existingLocalDraft": true,
+      "rationale": "保留已确认本地页；介绍HomeCourt训练用途，并承接用户自己已有篮球录像的Tracer编辑，明确独立关系。"
+    },
+    {
+      "slug": "hot-shot-basketball",
+      "primaryKeyword": "hot shot basketball",
+      "keywords": [
+        "hot shot basketball",
+        "hot shot basketball game",
+        "hotshot basketball game",
+        "hot shot game",
+        "basketball hot shot game",
+        "hot shots game basketball",
+        "basketball hot shot",
+        "shot contest",
+        "contest shot",
+        "start shot competition"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/hot-shot-basketball",
+      "existingLocalDraft": true,
+      "rationale": "保留已确认本地页；提供Hot Shot规则版本与自有挑战片段Tracer步骤，历史HomeCourt赛事仅作已结束案例。"
+    },
+    {
+      "slug": "nba-scout",
+      "primaryKeyword": "nba scout",
+      "keywords": [
+        "nba scout",
+        "nba scouting",
+        "scouting nba",
+        "nba scouts",
+        "basketball scouts",
+        "basketball scouting",
+        "basketball scout"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/nba-scout",
+      "existingLocalDraft": true,
+      "rationale": "保留已确认本地页；官方球探角色资料、原片整理和个人视频Tracer示例，不提供提交、评估或招募承诺。"
+    },
+    {
+      "slug": "basketball-apps",
+      "primaryKeyword": "basketball apps",
+      "keywords": [
+        "basketball apps",
+        "apps basketball",
+        "basketball app",
+        "basketball application",
+        "app basket",
+        "app basketball",
+        "free basketball app",
+        "application basketball",
+        "basket application",
+        "basket app",
+        "basketball software"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "existingLocalDraft": false,
+      "rationale": "篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。"
+    },
+    {
+      "slug": "basketball-training-app",
+      "primaryKeyword": "basketball training app",
+      "keywords": [
+        "basketball training app",
+        "basketball training apps",
+        "best basketball training apps",
+        "ai basketball training",
+        "basketball training technology",
+        "training court app",
+        "ai basketball training platforms 2026"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/basketball-training-app",
+      "existingLocalDraft": false,
+      "rationale": "训练应用需求指南，核实官方功能并提供训练录像准备步骤；不把Tracer说成训练指导、统计或AI教练。年份词需持续核实。"
+    },
+    {
+      "slug": "basketball-ai",
+      "primaryKeyword": "basketball ai",
+      "keywords": [
+        "basketball ai",
+        "basketball artificial intelligence",
+        "basketball court ai"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/basketball-ai",
+      "existingLocalDraft": false,
+      "rationale": "解释篮球AI的不同用途，并实际演示可用视频Tracer；不宣称自动计数、战术或场馆AI能力。"
+    },
+    {
+      "slug": "basketball-dribbling-app",
+      "primaryKeyword": "basketball dribbling app",
+      "keywords": [
+        "basketball dribbling app",
+        "basketball dribble app"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/basketball-dribbling-app",
+      "existingLocalDraft": false,
+      "rationale": "说明运球训练应用用途，提供运球衔接投篮录像准备方式；Tracer仅作用于所选投篮视频，不提供运球反馈。"
+    },
+    {
+      "slug": "basketball-coaching-software",
+      "primaryKeyword": "basketball coaching software",
+      "keywords": [
+        "basketball coaching software",
+        "basketball coaching app",
+        "coaching basketball apps",
+        "app basketball coach",
+        "software for basketball coaches",
+        "coaching apps for basketball"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/basketball-coaching-software",
+      "existingLocalDraft": false,
+      "rationale": "教练软件任务选型和录像交接指南；链接现有画图/记录工具，Tracer只是视频效果，不宣称战术分析或执教功能。"
+    },
+    {
+      "slug": "online-basketball-training",
+      "primaryKeyword": "online basketball training",
+      "keywords": [
+        "online basketball training",
+        "online basketball lessons"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/online-basketball-training",
+      "existingLocalDraft": false,
+      "rationale": "线上训练资源与练习录像准备指南；引用可信公开训练资源，工具只处理已有投篮录像，不提供教学承诺。"
+    },
+    {
+      "slug": "interactive-basketball",
+      "primaryKeyword": "interactive basketball",
+      "keywords": [
+        "interactive basketball",
+        "interactive basketball training"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/interactive-basketball",
+      "existingLocalDraft": false,
+      "rationale": "解释交互训练和录制后视觉编辑的用途，提供可操作Tracer预览，不冒充体感游戏或训练产品。"
+    },
+    {
+      "slug": "basketball-game-recording-app",
+      "primaryKeyword": "basketball game recording app",
+      "keywords": [
+        "basketball game recording app"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/basketball-game-recording-app",
+      "existingLocalDraft": false,
+      "rationale": "录制应用与视频后处理工作流；参考官方设备说明，先录制再上传Tracer，不把网页说成实时录像或自动摄像功能。"
+    },
+    {
+      "slug": "basketball-video-software",
+      "primaryKeyword": "basketball video software",
+      "keywords": [
+        "basketball video software"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/basketball-video-software",
+      "existingLocalDraft": false,
+      "rationale": "篮球视频软件选型/准备指南，强调已有录影可上传、短片预览及Tracer输出，并链接现有拍摄剪辑指南。"
+    },
+    {
+      "slug": "basketball-analytics-software",
+      "primaryKeyword": "basketball analytics software",
+      "keywords": [
+        "basketball analytics software",
+        "basketball analytics platform"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/basketball-analytics-software",
+      "existingLocalDraft": false,
+      "rationale": "解释分析软件需输出的统计/标记与可视轨迹区别；提供资料来源与原片管理流程，不将Tracer冒充分析软件。"
+    },
+    {
+      "slug": "3-point-shootout-rules",
+      "primaryKeyword": "3 point shootout rules",
+      "keywords": [
+        "3 point shootout rules"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/3-point-shootout-rules",
+      "existingLocalDraft": false,
+      "rationale": "独立三分投篮赛规则需求；采用官方已核实的具体规则版本，给出录制和Tracer步骤，不套用Hot Shot历史分值。"
+    },
+    {
+      "slug": "how-many-points-is-a-full-court-shot",
+      "primaryKeyword": "how many points is a full court shot",
+      "keywords": [
+        "how many points is a full court shot",
+        "how many points is a full court shot in basketball"
+      ],
+      "action": "create",
+      "targetPath": "/shot-tracer/how-many-points-is-a-full-court-shot",
+      "existingLocalDraft": false,
+      "rationale": "独立计分问答，按官方规则区分场上进球与活动自定义得分，展示远距离投篮录像准备；Tracer不自动判分。"
+    },
+    {
+      "slug": "basketball-shot-chart",
+      "primaryKeyword": "basketball shot tracker",
+      "keywords": [
+        "basketball shot tracker",
+        "basketball tracker",
+        "shot tracking basketball",
+        "basketball shot counter",
+        "tracking basketball",
+        "basketball shooting tracker",
+        "basketball tracking",
+        "basketball shooting chart templates"
+      ],
+      "action": "existing",
+      "targetPath": "/tools/basketball-shot-chart",
+      "existingLocalDraft": false,
+      "rationale": "已有工具可手工录入命中/未中/位置并计数、算百分比、导出图与CSV；必须保留手工记录说明，不承诺自动摄像检测。"
+    },
+    {
+      "slug": "basketball-court-diagram",
+      "primaryKeyword": "basketball play creator",
+      "keywords": [
+        "basketball play creator",
+        "basketball plays app",
+        "online basketball play creator",
+        "free basketball play creator",
+        "basketball play diagram software",
+        "basketball play creator free",
+        "basketball play maker free",
+        "basketball court maker",
+        "basketball playmaker",
+        "basketball playmaker free",
+        "basketball play maker",
+        "basketball play software",
+        "free court designer",
+        "online basketball play maker",
+        "basketball whiteboard online",
+        "basketball play app",
+        "basketball playmaker online",
+        "basketball court designer",
+        "basketball court designer online",
+        "basketball court creator",
+        "court for basketball",
+        "court basket"
+      ],
+      "action": "existing",
+      "targetPath": "/tools/basketball-court-diagram",
+      "existingLocalDraft": false,
+      "rationale": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。"
+    },
+    {
+      "slug": "homecourt-camera-setup",
+      "primaryKeyword": "court set up",
+      "keywords": [
+        "court set up"
+      ],
+      "action": "existing",
+      "targetPath": "/homecourt/camera-setup",
+      "existingLocalDraft": false,
+      "rationale": "竞品落地页为HomeCourt setup；本站已有相应摄像构图清单与球场图。词义宽泛，保留既有解释，不另造Tracer页。"
+    },
+    {
+      "slug": "homecourt-guides",
+      "primaryKeyword": "homecourt",
+      "keywords": [
+        "homecourt",
+        "homecourt.",
+        "homecort",
+        "the homecourt",
+        "home court",
+        "the home court",
+        "home courts",
+        "homes court",
+        "homecourt company",
+        "basketball home court",
+        "home court nba",
+        "nba home court"
+      ],
+      "action": "existing",
+      "targetPath": "/homecourt",
+      "existingLocalDraft": false,
+      "rationale": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "localEvidence": {
+        "path": "website-tracer-keywords/homecourt.html",
+        "observedContent": "Independent HomeCourt resource hub; 15 guides covering alternatives, app comparison, setup, video, shot records, teams, profiles and billing; official source links."
+      }
+    }
+  ],
+  "entries": [
+    {
+      "keyword": "home court",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 2,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/remote-practice",
+          "dataTimestamp": "2026-10-31"
+        },
+        {
+          "csvRow": 3,
+          "position": "2",
+          "positionType": "Organic",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/hcpe",
+          "dataTimestamp": "2026-10-31"
+        },
+        {
+          "csvRow": 5,
+          "position": "3",
+          "positionType": "Organic",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-10-31"
+        },
+        {
+          "csvRow": 11,
+          "position": "8",
+          "positionType": "Organic",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/events",
+          "dataTimestamp": "2026-10-31"
+        },
+        {
+          "csvRow": 16,
+          "position": "4",
+          "positionType": "Image pack",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-31"
+        },
+        {
+          "csvRow": 17,
+          "position": "4",
+          "positionType": "Image pack",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-31"
+        },
+        {
+          "csvRow": 20,
+          "position": "12",
+          "positionType": "Organic",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/org/sign-up",
+          "dataTimestamp": "2026-10-31"
+        },
+        {
+          "csvRow": 31,
+          "position": "14",
+          "positionType": "Organic",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/getting-setup",
+          "dataTimestamp": "2026-10-31"
+        },
+        {
+          "csvRow": 32,
+          "position": "19",
+          "positionType": "Organic",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/inapp-whats-new-31",
+          "dataTimestamp": "2026-10-31"
+        },
+        {
+          "csvRow": 51,
+          "position": "24",
+          "positionType": "Organic",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://help.homecourt.ai/hc/en-us",
+          "dataTimestamp": "2026-10-31"
+        },
+        {
+          "csvRow": 52,
+          "position": "26",
+          "positionType": "Organic",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://help.homecourt.ai/hc/en-us",
+          "dataTimestamp": "2026-10-31"
+        },
+        {
+          "csvRow": 138,
+          "position": "77",
+          "positionType": "Organic",
+          "searchVolume": "5400",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/hcpe",
+          "dataTimestamp": "2026-10-31"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt app",
+      "action": "merge",
+      "clusterSlug": "home-court-basketball-training-app",
+      "targetPath": "/shot-tracer/home-court-basketball-training-app",
+      "reason": "合并至已确认的HomeCourt训练应用独立指南，解释训练用途并承接自有录像Tracer编辑；只覆盖篮球App信息/使用场景意图，不冒充HomeCourt官方入口，也不保证覆盖所有品牌导航意图。",
+      "sourceRecords": [
+        {
+          "csvRow": 4,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "260",
+          "keywordDifficulty": "42",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-09"
+        },
+        {
+          "csvRow": 133,
+          "position": "4",
+          "positionType": "AI overview",
+          "searchVolume": "260",
+          "keywordDifficulty": "42",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-09"
+        },
+        {
+          "csvRow": 134,
+          "position": "4",
+          "positionType": "AI overview",
+          "searchVolume": "260",
+          "keywordDifficulty": "42",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-09-09"
+        },
+        {
+          "csvRow": 135,
+          "position": "4",
+          "positionType": "AI overview",
+          "searchVolume": "260",
+          "keywordDifficulty": "42",
+          "competitorUrl": "https://www.homecourt.ai/nike",
+          "dataTimestamp": "2026-09-09"
+        },
+        {
+          "csvRow": 136,
+          "position": "4",
+          "positionType": "AI overview",
+          "searchVolume": "260",
+          "keywordDifficulty": "42",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 6,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "8100",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 24,
+          "position": "15",
+          "positionType": "Organic",
+          "searchVolume": "8100",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://www.homecourt.ai/about",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 224,
+          "position": "44",
+          "positionType": "Organic",
+          "searchVolume": "8100",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://help.homecourt.ai/hc/en-us",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 225,
+          "position": "51",
+          "positionType": "Organic",
+          "searchVolume": "8100",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 226,
+          "position": "53",
+          "positionType": "Organic",
+          "searchVolume": "8100",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://www.homecourt.ai/dribble-workouts-v2",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 227,
+          "position": "62",
+          "positionType": "Organic",
+          "searchVolume": "8100",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://help.homecourt.ai/hc/en-us/categories/1500000588941-General",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 228,
+          "position": "65",
+          "positionType": "Organic",
+          "searchVolume": "8100",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://www.homecourt.ai/remote-practice",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 229,
+          "position": "68",
+          "positionType": "Organic",
+          "searchVolume": "8100",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://help.homecourt.ai/hc/en-us/categories/1500000588941-General",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 230,
+          "position": "90",
+          "positionType": "Organic",
+          "searchVolume": "8100",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 231,
+          "position": "93",
+          "positionType": "Organic",
+          "searchVolume": "8100",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://www.homecourt.ai/hcpe",
+          "dataTimestamp": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt basketball",
+      "action": "merge",
+      "clusterSlug": "home-court-basketball-training-app",
+      "targetPath": "/shot-tracer/home-court-basketball-training-app",
+      "reason": "合并至已确认的HomeCourt训练应用独立指南，解释训练用途并承接自有录像Tracer编辑；只覆盖篮球App信息/使用场景意图，不冒充HomeCourt官方入口，也不保证覆盖所有品牌导航意图。",
+      "sourceRecords": [
+        {
+          "csvRow": 7,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-04"
+        },
+        {
+          "csvRow": 105,
+          "position": "11",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-10-04"
+        },
+        {
+          "csvRow": 328,
+          "position": "28",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-10-04"
+        },
+        {
+          "csvRow": 329,
+          "position": "42",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/inapp-whats-new-212",
+          "dataTimestamp": "2026-10-04"
+        },
+        {
+          "csvRow": 330,
+          "position": "51",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/hcpe",
+          "dataTimestamp": "2026-10-04"
+        },
+        {
+          "csvRow": 331,
+          "position": "60",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/pricing",
+          "dataTimestamp": "2026-10-04"
+        },
+        {
+          "csvRow": 332,
+          "position": "64",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/nike",
+          "dataTimestamp": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "keyword": "home court basketball training app",
+      "action": "create",
+      "clusterSlug": "home-court-basketball-training-app",
+      "targetPath": "/shot-tracer/home-court-basketball-training-app",
+      "reason": "保留已确认本地页；介绍HomeCourt训练用途，并承接用户自己已有篮球录像的Tracer编辑，明确独立关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 8,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 48,
+          "position": "5",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/pricing",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 194,
+          "position": "15",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 195,
+          "position": "21",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/hcpe",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 196,
+          "position": "24",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/dribble-workouts-v2",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 197,
+          "position": "26",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/inapp-whats-new-212",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 198,
+          "position": "36",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/faq/general",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 199,
+          "position": "42",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/remote-practice",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 200,
+          "position": "53",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/membership",
+          "dataTimestamp": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt basketball training app",
+      "action": "merge",
+      "clusterSlug": "home-court-basketball-training-app",
+      "targetPath": "/shot-tracer/home-court-basketball-training-app",
+      "reason": "与 home court basketball training app 同一任务/意图，合并至同一页面。保留已确认本地页；介绍HomeCourt训练用途，并承接用户自己已有篮球录像的Tracer编辑，明确独立关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 9,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 82,
+          "position": "7",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 364,
+          "position": "13",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/pricing",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 365,
+          "position": "22",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/hcpe",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 366,
+          "position": "27",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/dribble-workouts-v2",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 367,
+          "position": "28",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/faq/general",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 368,
+          "position": "35",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/inapp-whats-new-212",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 369,
+          "position": "38",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/nike",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 370,
+          "position": "41",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/remote-practice",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 371,
+          "position": "49",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/membership",
+          "dataTimestamp": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball training app",
+      "action": "create",
+      "clusterSlug": "basketball-training-app",
+      "targetPath": "/shot-tracer/basketball-training-app",
+      "reason": "训练应用需求指南，核实官方功能并提供训练录像准备步骤；不把Tracer说成训练指导、统计或AI教练。年份词需持续核实。",
+      "sourceRecords": [
+        {
+          "csvRow": 10,
+          "position": "2",
+          "positionType": "Organic",
+          "searchVolume": "390",
+          "keywordDifficulty": "16",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 15,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "390",
+          "keywordDifficulty": "16",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 79,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "390",
+          "keywordDifficulty": "16",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 311,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "390",
+          "keywordDifficulty": "16",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-06"
+        },
+        {
+          "csvRow": 312,
+          "position": "74",
+          "positionType": "Organic",
+          "searchVolume": "390",
+          "keywordDifficulty": "16",
+          "competitorUrl": "https://www.homecourt.ai/dribble-workouts-v2",
+          "dataTimestamp": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "keyword": "home court basketball",
+      "action": "merge",
+      "clusterSlug": "home-court-basketball-training-app",
+      "targetPath": "/shot-tracer/home-court-basketball-training-app",
+      "reason": "合并至已确认的HomeCourt训练应用独立指南，解释训练用途并承接自有录像Tracer编辑；只覆盖篮球App信息/使用场景意图，不冒充HomeCourt官方入口，也不保证覆盖所有品牌导航意图。",
+      "sourceRecords": [
+        {
+          "csvRow": 12,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "47",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-24"
+        },
+        {
+          "csvRow": 53,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "110",
+          "keywordDifficulty": "47",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-24"
+        },
+        {
+          "csvRow": 144,
+          "position": "34",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "47",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-09-24"
+        },
+        {
+          "csvRow": 145,
+          "position": "71",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "47",
+          "competitorUrl": "https://www.homecourt.ai/remote-practice",
+          "dataTimestamp": "2026-09-24"
+        },
+        {
+          "csvRow": 146,
+          "position": "89",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "47",
+          "competitorUrl": "https://www.homecourt.ai/membership",
+          "dataTimestamp": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt basketball app",
+      "action": "merge",
+      "clusterSlug": "home-court-basketball-training-app",
+      "targetPath": "/shot-tracer/home-court-basketball-training-app",
+      "reason": "合并至已确认的HomeCourt训练应用独立指南，解释训练用途并承接自有录像Tracer编辑；只覆盖篮球App信息/使用场景意图，不冒充HomeCourt官方入口，也不保证覆盖所有品牌导航意图。",
+      "sourceRecords": [
+        {
+          "csvRow": 13,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 68,
+          "position": "6",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/pricing",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 150,
+          "position": "10",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/faq/general",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 151,
+          "position": "16",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 152,
+          "position": "27",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/faq/setup",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 153,
+          "position": "33",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 154,
+          "position": "40",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/remote-practice",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 155,
+          "position": "45",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/inapp-whats-new-212",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 156,
+          "position": "48",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/nike",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 157,
+          "position": "56",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/faq",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 158,
+          "position": "58",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/faq",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 159,
+          "position": "62",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/membership",
+          "dataTimestamp": "2026-09-17"
+        },
+        {
+          "csvRow": 160,
+          "position": "65",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/inapp-whats-new-39",
+          "dataTimestamp": "2026-09-17"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball ai",
+      "action": "create",
+      "clusterSlug": "basketball-ai",
+      "targetPath": "/shot-tracer/basketball-ai",
+      "reason": "解释篮球AI的不同用途，并实际演示可用视频Tracer；不宣称自动计数、战术或场馆AI能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 14,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "55",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-16"
+        },
+        {
+          "csvRow": 41,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "320",
+          "keywordDifficulty": "55",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball apps",
+      "action": "create",
+      "clusterSlug": "basketball-apps",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "reason": "篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 18,
+          "position": "2",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "52",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-14"
+        },
+        {
+          "csvRow": 50,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "320",
+          "keywordDifficulty": "52",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "keyword": "apps basketball",
+      "action": "merge",
+      "clusterSlug": "basketball-apps",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "reason": "与 basketball apps 同一任务/意图，合并至同一页面。篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 19,
+          "position": "2",
+          "positionType": "Organic",
+          "searchVolume": "210",
+          "keywordDifficulty": "50",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        },
+        {
+          "csvRow": 26,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "210",
+          "keywordDifficulty": "50",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        },
+        {
+          "csvRow": 102,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "210",
+          "keywordDifficulty": "50",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball court ai",
+      "action": "merge",
+      "clusterSlug": "basketball-ai",
+      "targetPath": "/shot-tracer/basketball-ai",
+      "reason": "与 basketball ai 同一任务/意图，合并至同一页面。解释篮球AI的不同用途，并实际演示可用视频Tracer；不宣称自动计数、战术或场馆AI能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 21,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "14",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-09"
+        },
+        {
+          "csvRow": 38,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "110",
+          "keywordDifficulty": "14",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-09"
+        },
+        {
+          "csvRow": 56,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "110",
+          "keywordDifficulty": "14",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-09"
+        },
+        {
+          "csvRow": 183,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "110",
+          "keywordDifficulty": "14",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball training apps",
+      "action": "merge",
+      "clusterSlug": "basketball-training-app",
+      "targetPath": "/shot-tracer/basketball-training-app",
+      "reason": "与 basketball training app 同一任务/意图，合并至同一页面。训练应用需求指南，核实官方功能并提供训练录像准备步骤；不把Tracer说成训练指导、统计或AI教练。年份词需持续核实。",
+      "sourceRecords": [
+        {
+          "csvRow": 22,
+          "position": "2",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "30",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-24"
+        },
+        {
+          "csvRow": 28,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "170",
+          "keywordDifficulty": "30",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-24"
+        },
+        {
+          "csvRow": 88,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "170",
+          "keywordDifficulty": "30",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-24"
+        },
+        {
+          "csvRow": 168,
+          "position": "75",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "30",
+          "competitorUrl": "https://www.homecourt.ai/dribble-workouts-v2",
+          "dataTimestamp": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "keyword": "home court app",
+      "action": "merge",
+      "clusterSlug": "home-court-basketball-training-app",
+      "targetPath": "/shot-tracer/home-court-basketball-training-app",
+      "reason": "合并至已确认的HomeCourt训练应用独立指南，解释训练用途并承接自有录像Tracer编辑；只覆盖篮球App信息/使用场景意图，不冒充HomeCourt官方入口，也不保证覆盖所有品牌导航意图。",
+      "sourceRecords": [
+        {
+          "csvRow": 23,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 171,
+          "position": "4",
+          "positionType": "AI overview",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 172,
+          "position": "4",
+          "positionType": "AI overview",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 173,
+          "position": "8",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/faq/general",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 174,
+          "position": "11",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 175,
+          "position": "21",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/pricing",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 176,
+          "position": "26",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/dribble-workouts-v2",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 177,
+          "position": "33",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/hcpe",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 178,
+          "position": "60",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/in-app/gettingstarted",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 179,
+          "position": "62",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/membership",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 180,
+          "position": "65",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball app",
+      "action": "merge",
+      "clusterSlug": "basketball-apps",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "reason": "与 basketball apps 同一任务/意图，合并至同一页面。篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 25,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "390",
+          "keywordDifficulty": "29",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-21"
+        },
+        {
+          "csvRow": 255,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "390",
+          "keywordDifficulty": "29",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball application",
+      "action": "merge",
+      "clusterSlug": "basketball-apps",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "reason": "与 basketball apps 同一任务/意图，合并至同一页面。篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 27,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "170",
+          "keywordDifficulty": "42",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-26"
+        }
+      ]
+    },
+    {
+      "keyword": "homecort",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 29,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "29",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-19"
+        },
+        {
+          "csvRow": 265,
+          "position": "39",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "29",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-09-19"
+        },
+        {
+          "csvRow": 266,
+          "position": "41",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "29",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-09-19"
+        }
+      ]
+    },
+    {
+      "keyword": "home court basketball training",
+      "action": "merge",
+      "clusterSlug": "home-court-basketball-training-app",
+      "targetPath": "/shot-tracer/home-court-basketball-training-app",
+      "reason": "与 home court basketball training app 同一任务/意图，合并至同一页面。保留已确认本地页；介绍HomeCourt训练用途，并承接用户自己已有篮球录像的Tracer编辑，明确独立关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 30,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 300,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 301,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 302,
+          "position": "11",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/faq/general",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 303,
+          "position": "18",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 304,
+          "position": "29",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 305,
+          "position": "37",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/pricing",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 306,
+          "position": "41",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/nike",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 307,
+          "position": "46",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/hcpe",
+          "dataTimestamp": "2026-11-09"
+        },
+        {
+          "csvRow": 308,
+          "position": "61",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/in-app/gettingstarted",
+          "dataTimestamp": "2026-11-09"
+        }
+      ]
+    },
+    {
+      "keyword": "home court nba",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 33,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "140",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-09"
+        },
+        {
+          "csvRow": 360,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "140",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-09"
+        },
+        {
+          "csvRow": 361,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "140",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "keyword": "hot shot basketball game",
+      "action": "merge",
+      "clusterSlug": "hot-shot-basketball",
+      "targetPath": "/shot-tracer/hot-shot-basketball",
+      "reason": "与 hot shot basketball 同一任务/意图，合并至同一页面。保留已确认本地页；提供Hot Shot规则版本与自有挑战片段Tracer步骤，历史HomeCourt赛事仅作已结束案例。",
+      "sourceRecords": [
+        {
+          "csvRow": 34,
+          "position": "3",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "13",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball home court",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 35,
+          "position": "3",
+          "positionType": "Organic",
+          "searchVolume": "210",
+          "keywordDifficulty": "59",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-29"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball tracker",
+      "action": "existing",
+      "clusterSlug": "basketball-shot-chart",
+      "targetPath": "/tools/basketball-shot-chart",
+      "reason": "已有工具可手工录入命中/未中/位置并计数、算百分比、导出图与CSV；必须保留手工记录说明，不承诺自动摄像检测。",
+      "sourceRecords": [
+        {
+          "csvRow": 36,
+          "position": "4",
+          "positionType": "Organic",
+          "searchVolume": "210",
+          "keywordDifficulty": "53",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-21"
+        },
+        {
+          "csvRow": 63,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "210",
+          "keywordDifficulty": "53",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "keyword": "app basket",
+      "action": "merge",
+      "clusterSlug": "basketball-apps",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "reason": "与 basketball apps 同一任务/意图，合并至同一页面。篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 37,
+          "position": "4",
+          "positionType": "Organic",
+          "searchVolume": "140",
+          "keywordDifficulty": "30",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "keyword": "home court training center",
+      "action": "defer",
+      "clusterSlug": "deferred-places-and-physical-courts",
+      "targetPath": null,
+      "reason": "特定场馆、地点、课程机构、球队主场或购物意图，需要真实地点/营业/活动或商品数据，Tracer不能完成该任务。",
+      "sourceRecords": [
+        {
+          "csvRow": 39,
+          "position": "4",
+          "positionType": "Organic",
+          "searchVolume": "480",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        },
+        {
+          "csvRow": 288,
+          "position": "39",
+          "positionType": "Organic",
+          "searchVolume": "480",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "nba scouting",
+      "action": "merge",
+      "clusterSlug": "nba-scout",
+      "targetPath": "/shot-tracer/nba-scout",
+      "reason": "与 nba scout 同一任务/意图，合并至同一页面。保留已确认本地页；官方球探角色资料、原片整理和个人视频Tracer示例，不提供提交、评估或招募承诺。",
+      "sourceRecords": [
+        {
+          "csvRow": 40,
+          "position": "5",
+          "positionType": "Organic",
+          "searchVolume": "210",
+          "keywordDifficulty": "23",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+          "dataTimestamp": "2026-09-17"
+        }
+      ]
+    },
+    {
+      "keyword": "app basketball",
+      "action": "merge",
+      "clusterSlug": "basketball-apps",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "reason": "与 basketball apps 同一任务/意图，合并至同一页面。篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 42,
+          "position": "6",
+          "positionType": "Organic",
+          "searchVolume": "210",
+          "keywordDifficulty": "62",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        },
+        {
+          "csvRow": 46,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "210",
+          "keywordDifficulty": "62",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        },
+        {
+          "csvRow": 184,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "210",
+          "keywordDifficulty": "62",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "free basketball app",
+      "action": "merge",
+      "clusterSlug": "basketball-apps",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "reason": "与 basketball apps 同一任务/意图，合并至同一页面。篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 43,
+          "position": "1",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "58",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-03"
+        },
+        {
+          "csvRow": 76,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "58",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-03"
+        },
+        {
+          "csvRow": 269,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "58",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-03"
+        }
+      ]
+    },
+    {
+      "keyword": "hot shot basketball",
+      "action": "create",
+      "clusterSlug": "hot-shot-basketball",
+      "targetPath": "/shot-tracer/hot-shot-basketball",
+      "reason": "保留已确认本地页；提供Hot Shot规则版本与自有挑战片段Tracer步骤，历史HomeCourt赛事仅作已结束案例。",
+      "sourceRecords": [
+        {
+          "csvRow": 44,
+          "position": "6",
+          "positionType": "Organic",
+          "searchVolume": "480",
+          "keywordDifficulty": "8",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-17"
+        }
+      ]
+    },
+    {
+      "keyword": "shot contest",
+      "action": "merge",
+      "clusterSlug": "hot-shot-basketball",
+      "targetPath": "/shot-tracer/hot-shot-basketball",
+      "reason": "与 hot shot basketball 同一任务/意图，合并至同一页面。保留已确认本地页；提供Hot Shot规则版本与自有挑战片段Tracer步骤，历史HomeCourt赛事仅作已结束案例。",
+      "sourceRecords": [
+        {
+          "csvRow": 45,
+          "position": "3",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "3",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "keyword": "scouting nba",
+      "action": "merge",
+      "clusterSlug": "nba-scout",
+      "targetPath": "/shot-tracer/nba-scout",
+      "reason": "与 nba scout 同一任务/意图，合并至同一页面。保留已确认本地页；官方球探角色资料、原片整理和个人视频Tracer示例，不提供提交、评估或招募承诺。",
+      "sourceRecords": [
+        {
+          "csvRow": 47,
+          "position": "3",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "7",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+          "dataTimestamp": "2026-09-18"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt basketball game",
+      "action": "merge",
+      "clusterSlug": "home-court-basketball-training-app",
+      "targetPath": "/shot-tracer/home-court-basketball-training-app",
+      "reason": "合并至已确认的HomeCourt训练应用独立指南，解释训练用途并承接自有录像Tracer编辑；只覆盖篮球App信息/使用场景意图，不冒充HomeCourt官方入口，也不保证覆盖所有品牌导航意图。",
+      "sourceRecords": [
+        {
+          "csvRow": 49,
+          "position": "2",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "23",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        },
+        {
+          "csvRow": 213,
+          "position": "10",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "23",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-10-10"
+        },
+        {
+          "csvRow": 214,
+          "position": "59",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "23",
+          "competitorUrl": "https://www.homecourt.ai/remote-practice",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "interactive basketball training",
+      "action": "merge",
+      "clusterSlug": "interactive-basketball",
+      "targetPath": "/shot-tracer/interactive-basketball",
+      "reason": "与 interactive basketball 同一任务/意图，合并至同一页面。解释交互训练和录制后视觉编辑的用途，提供可操作Tracer预览，不冒充体感游戏或训练产品。",
+      "sourceRecords": [
+        {
+          "csvRow": 54,
+          "position": "3",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "50",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-01"
+        },
+        {
+          "csvRow": 85,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "50",
+          "keywordDifficulty": "50",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-01"
+        }
+      ]
+    },
+    {
+      "keyword": "nba scout",
+      "action": "create",
+      "clusterSlug": "nba-scout",
+      "targetPath": "/shot-tracer/nba-scout",
+      "reason": "保留已确认本地页；官方球探角色资料、原片整理和个人视频Tracer示例，不提供提交、评估或招募承诺。",
+      "sourceRecords": [
+        {
+          "csvRow": 55,
+          "position": "3",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+          "dataTimestamp": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "keyword": "example pe lesson plans",
+      "action": "defer",
+      "clusterSlug": "deferred-lesson-plans",
+      "targetPath": null,
+      "reason": "体育课教案是独立教学资源需求；Tracer页不能完成课程计划，有可信教案内容后可另评估。",
+      "sourceRecords": [
+        {
+          "csvRow": 57,
+          "position": "2",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "3",
+          "competitorUrl": "https://www.homecourt.ai/pe-lessonplans",
+          "dataTimestamp": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball dribbling app",
+      "action": "create",
+      "clusterSlug": "basketball-dribbling-app",
+      "targetPath": "/shot-tracer/basketball-dribbling-app",
+      "reason": "说明运球训练应用用途，提供运球衔接投篮录像准备方式；Tracer仅作用于所选投篮视频，不提供运球反馈。",
+      "sourceRecords": [
+        {
+          "csvRow": 58,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "110",
+          "keywordDifficulty": "41",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-09"
+        },
+        {
+          "csvRow": 70,
+          "position": "4",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "41",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-09"
+        },
+        {
+          "csvRow": 192,
+          "position": "51",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "41",
+          "competitorUrl": "https://www.homecourt.ai/dribble-workouts-v2",
+          "dataTimestamp": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "keyword": "ai basketball training",
+      "action": "merge",
+      "clusterSlug": "basketball-training-app",
+      "targetPath": "/shot-tracer/basketball-training-app",
+      "reason": "与 basketball training app 同一任务/意图，合并至同一页面。训练应用需求指南，核实官方功能并提供训练录像准备步骤；不把Tracer说成训练指导、统计或AI教练。年份词需持续核实。",
+      "sourceRecords": [
+        {
+          "csvRow": 59,
+          "position": "2",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 91,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-20"
+        },
+        {
+          "csvRow": 204,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-20"
+        }
+      ]
+    },
+    {
+      "keyword": "shot tracking basketball",
+      "action": "existing",
+      "clusterSlug": "basketball-shot-chart",
+      "targetPath": "/tools/basketball-shot-chart",
+      "reason": "已有工具可手工录入命中/未中/位置并计数、算百分比、导出图与CSV；必须保留手工记录说明，不承诺自动摄像检测。",
+      "sourceRecords": [
+        {
+          "csvRow": 60,
+          "position": "5",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball shot counter",
+      "action": "existing",
+      "clusterSlug": "basketball-shot-chart",
+      "targetPath": "/tools/basketball-shot-chart",
+      "reason": "已有工具可手工录入命中/未中/位置并计数、算百分比、导出图与CSV；必须保留手工记录说明，不承诺自动摄像检测。",
+      "sourceRecords": [
+        {
+          "csvRow": 61,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "90",
+          "keywordDifficulty": "2",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-06"
+        },
+        {
+          "csvRow": 62,
+          "position": "5",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "2",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "keyword": "application basketball",
+      "action": "merge",
+      "clusterSlug": "basketball-apps",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "reason": "与 basketball apps 同一任务/意图，合并至同一页面。篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 64,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "170",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-03"
+        },
+        {
+          "csvRow": 108,
+          "position": "8",
+          "positionType": "Image pack",
+          "searchVolume": "170",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-03"
+        },
+        {
+          "csvRow": 334,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "170",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-03"
+        },
+        {
+          "csvRow": 335,
+          "position": "40",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+          "dataTimestamp": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball coaching software",
+      "action": "create",
+      "clusterSlug": "basketball-coaching-software",
+      "targetPath": "/shot-tracer/basketball-coaching-software",
+      "reason": "教练软件任务选型和录像交接指南；链接现有画图/记录工具，Tracer只是视频效果，不宣称战术分析或执教功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 65,
+          "position": "5",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "7",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "keyword": "online basketball lessons",
+      "action": "merge",
+      "clusterSlug": "online-basketball-training",
+      "targetPath": "/shot-tracer/online-basketball-training",
+      "reason": "与 online basketball training 同一任务/意图，合并至同一页面。线上训练资源与练习录像准备指南；引用可信公开训练资源，工具只处理已有投篮录像，不提供教学承诺。",
+      "sourceRecords": [
+        {
+          "csvRow": 66,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "70",
+          "keywordDifficulty": "53",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-26"
+        },
+        {
+          "csvRow": 127,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "70",
+          "keywordDifficulty": "53",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "keyword": "interactive basketball",
+      "action": "create",
+      "clusterSlug": "interactive-basketball",
+      "targetPath": "/shot-tracer/interactive-basketball",
+      "reason": "解释交互训练和录制后视觉编辑的用途，提供可操作Tracer预览，不冒充体感游戏或训练产品。",
+      "sourceRecords": [
+        {
+          "csvRow": 67,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "70",
+          "keywordDifficulty": "29",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-28"
+        },
+        {
+          "csvRow": 131,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "70",
+          "keywordDifficulty": "29",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball artificial intelligence",
+      "action": "merge",
+      "clusterSlug": "basketball-ai",
+      "targetPath": "/shot-tracer/basketball-ai",
+      "reason": "与 basketball ai 同一任务/意图，合并至同一页面。解释篮球AI的不同用途，并实际演示可用视频Tracer；不宣称自动计数、战术或场馆AI能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 69,
+          "position": "7",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "57",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-30"
+        },
+        {
+          "csvRow": 167,
+          "position": "14",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "57",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-30"
+        }
+      ]
+    },
+    {
+      "keyword": "hotshot basketball game",
+      "action": "merge",
+      "clusterSlug": "hot-shot-basketball",
+      "targetPath": "/shot-tracer/hot-shot-basketball",
+      "reason": "与 hot shot basketball 同一任务/意图，合并至同一页面。保留已确认本地页；提供Hot Shot规则版本与自有挑战片段Tracer步骤，历史HomeCourt赛事仅作已结束案例。",
+      "sourceRecords": [
+        {
+          "csvRow": 71,
+          "position": "5",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "12",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "keyword": "hot shot game",
+      "action": "merge",
+      "clusterSlug": "hot-shot-basketball",
+      "targetPath": "/shot-tracer/hot-shot-basketball",
+      "reason": "与 hot shot basketball 同一任务/意图，合并至同一页面。保留已确认本地页；提供Hot Shot规则版本与自有挑战片段Tracer步骤，历史HomeCourt赛事仅作已结束案例。",
+      "sourceRecords": [
+        {
+          "csvRow": 72,
+          "position": "8",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "17",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt hoops",
+      "action": "merge",
+      "clusterSlug": "home-court-basketball-training-app",
+      "targetPath": "/shot-tracer/home-court-basketball-training-app",
+      "reason": "合并至已确认的HomeCourt训练应用独立指南，解释训练用途并承接自有录像Tracer编辑；只覆盖篮球App信息/使用场景意图，不冒充HomeCourt官方入口，也不保证覆盖所有品牌导航意图。",
+      "sourceRecords": [
+        {
+          "csvRow": 73,
+          "position": "5",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-18"
+        },
+        {
+          "csvRow": 241,
+          "position": "52",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/faq/squads2",
+          "dataTimestamp": "2026-10-18"
+        },
+        {
+          "csvRow": 242,
+          "position": "59",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/faq/squads2",
+          "dataTimestamp": "2026-10-18"
+        },
+        {
+          "csvRow": 243,
+          "position": "79",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/faq/squads2",
+          "dataTimestamp": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball with tracker",
+      "action": "defer",
+      "clusterSlug": "deferred-hardware-ar-analytics",
+      "targetPath": null,
+      "reason": "可能需要实体传感器、自动跟踪、AR设施或特定分析系统；现有录制后Tracer不足以完成任务，待核实具体意图和能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 74,
+          "position": "7",
+          "positionType": "Organic",
+          "searchVolume": "140",
+          "keywordDifficulty": "32",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball coaching app",
+      "action": "merge",
+      "clusterSlug": "basketball-coaching-software",
+      "targetPath": "/shot-tracer/basketball-coaching-software",
+      "reason": "与 basketball coaching software 同一任务/意图，合并至同一页面。教练软件任务选型和录像交接指南；链接现有画图/记录工具，Tracer只是视频效果，不宣称战术分析或执教功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 75,
+          "position": "5",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "23",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt.",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 77,
+          "position": "2",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 275,
+          "position": "14",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 276,
+          "position": "25",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/teams",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 277,
+          "position": "44",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 278,
+          "position": "50",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/dribble-workouts-v2",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 279,
+          "position": "61",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/faq/general",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 280,
+          "position": "71",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/hcpe",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 281,
+          "position": "76",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/membership",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 282,
+          "position": "80",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/pricing",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 283,
+          "position": "84",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/nike",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 284,
+          "position": "87",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 285,
+          "position": "92",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/remote-practice",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 286,
+          "position": "94",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://help.homecourt.ai/hc/en-us/articles/6994110547603-Is-HomeCourt-available-on-Android",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 287,
+          "position": "98",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/in-app/gettingstarted",
+          "dataTimestamp": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball plays app",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 78,
+          "position": "7",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "44",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "keyword": "tracking basketball",
+      "action": "existing",
+      "clusterSlug": "basketball-shot-chart",
+      "targetPath": "/tools/basketball-shot-chart",
+      "reason": "已有工具可手工录入命中/未中/位置并计数、算百分比、导出图与CSV；必须保留手工记录说明，不承诺自动摄像检测。",
+      "sourceRecords": [
+        {
+          "csvRow": 80,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "70",
+          "keywordDifficulty": "14",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-26"
+        }
+      ]
+    },
+    {
+      "keyword": "space jam games",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 81,
+          "position": "5",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/spacejamgames",
+          "dataTimestamp": "2026-09-17"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball training technology",
+      "action": "merge",
+      "clusterSlug": "basketball-training-app",
+      "targetPath": "/shot-tracer/basketball-training-app",
+      "reason": "与 basketball training app 同一任务/意图，合并至同一页面。训练应用需求指南，核实官方功能并提供训练录像准备步骤；不把Tracer说成训练指导、统计或AI教练。年份词需持续核实。",
+      "sourceRecords": [
+        {
+          "csvRow": 83,
+          "position": "6",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "23",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-01"
+        }
+      ]
+    },
+    {
+      "keyword": "court for basketball",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 84,
+          "position": "10",
+          "positionType": "Organic",
+          "searchVolume": "390",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-07"
+        }
+      ]
+    },
+    {
+      "keyword": "home courts",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 86,
+          "position": "4",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "33",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-14"
+        },
+        {
+          "csvRow": 161,
+          "position": "59",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "33",
+          "competitorUrl": "https://www.homecourt.ai/dribble-workouts-v2",
+          "dataTimestamp": "2026-10-14"
+        },
+        {
+          "csvRow": 162,
+          "position": "64",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "33",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "keyword": "home depot orange hex code",
+      "action": "defer",
+      "clusterSlug": "deferred-unrelated-home-products",
+      "targetPath": null,
+      "reason": "家居、建材、宠物或另一Home AI产品需求，不能因home/court词形相近混作HomeCourt或HoopCut功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 87,
+          "position": "1",
+          "positionType": "Image pack",
+          "searchVolume": "140",
+          "keywordDifficulty": "20",
+          "competitorUrl": "https://www.homecourt.ai/branding-guidelines",
+          "dataTimestamp": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball dribble app",
+      "action": "merge",
+      "clusterSlug": "basketball-dribbling-app",
+      "targetPath": "/shot-tracer/basketball-dribbling-app",
+      "reason": "与 basketball dribbling app 同一任务/意图，合并至同一页面。说明运球训练应用用途，提供运球衔接投篮录像准备方式；Tracer仅作用于所选投篮视频，不提供运球反馈。",
+      "sourceRecords": [
+        {
+          "csvRow": 89,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "40",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-01"
+        },
+        {
+          "csvRow": 186,
+          "position": "6",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "40",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-01"
+        },
+        {
+          "csvRow": 187,
+          "position": "48",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "40",
+          "competitorUrl": "https://www.homecourt.ai/dribble-workouts-v2",
+          "dataTimestamp": "2026-10-01"
+        }
+      ]
+    },
+    {
+      "keyword": "nex playground basketball game",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 90,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "110",
+          "keywordDifficulty": "44",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-19"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball hot shot game",
+      "action": "merge",
+      "clusterSlug": "hot-shot-basketball",
+      "targetPath": "/shot-tracer/hot-shot-basketball",
+      "reason": "与 hot shot basketball 同一任务/意图，合并至同一页面。保留已确认本地页；提供Hot Shot规则版本与自有挑战片段Tracer步骤，历史HomeCourt赛事仅作已结束案例。",
+      "sourceRecords": [
+        {
+          "csvRow": 92,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "5",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-23"
+        },
+        {
+          "csvRow": 93,
+          "position": "2",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "5",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-23"
+        },
+        {
+          "csvRow": 207,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "5",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "keyword": "nba workout tracker",
+      "action": "defer",
+      "clusterSlug": "deferred-hardware-ar-analytics",
+      "targetPath": null,
+      "reason": "可能需要实体传感器、自动跟踪、AR设施或特定分析系统；现有录制后Tracer不足以完成任务，待核实具体意图和能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 94,
+          "position": "6",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "12",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "keyword": "coaching basketball apps",
+      "action": "merge",
+      "clusterSlug": "basketball-coaching-software",
+      "targetPath": "/shot-tracer/basketball-coaching-software",
+      "reason": "与 basketball coaching software 同一任务/意图，合并至同一页面。教练软件任务选型和录像交接指南；链接现有画图/记录工具，Tracer只是视频效果，不宣称战术分析或执教功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 95,
+          "position": "5",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "18",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball shooting tracker",
+      "action": "existing",
+      "clusterSlug": "basketball-shot-chart",
+      "targetPath": "/tools/basketball-shot-chart",
+      "reason": "已有工具可手工录入命中/未中/位置并计数、算百分比、导出图与CSV；必须保留手工记录说明，不承诺自动摄像检测。",
+      "sourceRecords": [
+        {
+          "csvRow": 96,
+          "position": "10",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball tracking",
+      "action": "existing",
+      "clusterSlug": "basketball-shot-chart",
+      "targetPath": "/tools/basketball-shot-chart",
+      "reason": "已有工具可手工录入命中/未中/位置并计数、算百分比、导出图与CSV；必须保留手工记录说明，不承诺自动摄像检测。",
+      "sourceRecords": [
+        {
+          "csvRow": 97,
+          "position": "8",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "36",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-05"
+        },
+        {
+          "csvRow": 222,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "50",
+          "keywordDifficulty": "36",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "keyword": "homes court",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 98,
+          "position": "36",
+          "positionType": "Organic",
+          "searchVolume": "2400",
+          "keywordDifficulty": "35",
+          "competitorUrl": "https://help.homecourt.ai/hc/en-us/categories/1500000588941-General",
+          "dataTimestamp": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "keyword": "contest shot",
+      "action": "merge",
+      "clusterSlug": "hot-shot-basketball",
+      "targetPath": "/shot-tracer/hot-shot-basketball",
+      "reason": "与 hot shot basketball 同一任务/意图，合并至同一页面。保留已确认本地页；提供Hot Shot规则版本与自有挑战片段Tracer步骤，历史HomeCourt赛事仅作已结束案例。",
+      "sourceRecords": [
+        {
+          "csvRow": 99,
+          "position": "5",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "16",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "keyword": "best basketball training apps",
+      "action": "merge",
+      "clusterSlug": "basketball-training-app",
+      "targetPath": "/shot-tracer/basketball-training-app",
+      "reason": "与 basketball training app 同一任务/意图，合并至同一页面。训练应用需求指南，核实官方功能并提供训练录像准备步骤；不把Tracer说成训练指导、统计或AI教练。年份词需持续核实。",
+      "sourceRecords": [
+        {
+          "csvRow": 100,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "15",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-29"
+        },
+        {
+          "csvRow": 245,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "15",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "keyword": "the home court",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 101,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "50",
+          "keywordDifficulty": "39",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        },
+        {
+          "csvRow": 257,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "50",
+          "keywordDifficulty": "39",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        },
+        {
+          "csvRow": 258,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "50",
+          "keywordDifficulty": "39",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-09-13"
+        },
+        {
+          "csvRow": 259,
+          "position": "12",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "39",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "keyword": "nba scouts",
+      "action": "merge",
+      "clusterSlug": "nba-scout",
+      "targetPath": "/shot-tracer/nba-scout",
+      "reason": "与 nba scout 同一任务/意图，合并至同一页面。保留已确认本地页；官方球探角色资料、原片整理和个人视频Tracer示例，不提供提交、评估或招募承诺。",
+      "sourceRecords": [
+        {
+          "csvRow": 103,
+          "position": "4",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "48",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+          "dataTimestamp": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "keyword": "street homecourt",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 104,
+          "position": "14",
+          "positionType": "Organic",
+          "searchVolume": "880",
+          "keywordDifficulty": "35",
+          "competitorUrl": "https://www.homecourt.ai/faq/setup",
+          "dataTimestamp": "2026-09-30"
+        },
+        {
+          "csvRow": 313,
+          "position": "55",
+          "positionType": "Organic",
+          "searchVolume": "880",
+          "keywordDifficulty": "35",
+          "competitorUrl": "https://www.homecourt.ai/faq/squads2",
+          "dataTimestamp": "2026-09-30"
+        }
+      ]
+    },
+    {
+      "keyword": "online basketball training",
+      "action": "create",
+      "clusterSlug": "online-basketball-training",
+      "targetPath": "/shot-tracer/online-basketball-training",
+      "reason": "线上训练资源与练习录像准备指南；引用可信公开训练资源，工具只处理已有投篮录像，不提供教学承诺。",
+      "sourceRecords": [
+        {
+          "csvRow": 106,
+          "position": "8",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "9",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball team app",
+      "action": "defer",
+      "clusterSlug": "deferred-unsupported-operations",
+      "targetPath": null,
+      "reason": "球队管理、比赛计分或多战术手册管理尚未实现；单场手工投篮记录/单张球场图不能假称完整对应系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 107,
+          "position": "4",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "36",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-29"
+        }
+      ]
+    },
+    {
+      "keyword": "app basketball coach",
+      "action": "merge",
+      "clusterSlug": "basketball-coaching-software",
+      "targetPath": "/shot-tracer/basketball-coaching-software",
+      "reason": "与 basketball coaching software 同一任务/意图，合并至同一页面。教练软件任务选型和录像交接指南；链接现有画图/记录工具，Tracer只是视频效果，不宣称战术分析或执教功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 109,
+          "position": "8",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "23",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "keyword": "hot shots game basketball",
+      "action": "merge",
+      "clusterSlug": "hot-shot-basketball",
+      "targetPath": "/shot-tracer/hot-shot-basketball",
+      "reason": "与 hot shot basketball 同一任务/意图，合并至同一页面。保留已确认本地页；提供Hot Shot规则版本与自有挑战片段Tracer步骤，历史HomeCourt赛事仅作已结束案例。",
+      "sourceRecords": [
+        {
+          "csvRow": 110,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "50",
+          "keywordDifficulty": "8",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-23"
+        },
+        {
+          "csvRow": 111,
+          "position": "4",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "8",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-23"
+        },
+        {
+          "csvRow": 363,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "50",
+          "keywordDifficulty": "8",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-23"
+        }
+      ]
+    },
+    {
+      "keyword": "playing basketball overseas tryouts",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 112,
+          "position": "42",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "8",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "keyword": "how many points is a full court shot",
+      "action": "create",
+      "clusterSlug": "how-many-points-is-a-full-court-shot",
+      "targetPath": "/shot-tracer/how-many-points-is-a-full-court-shot",
+      "reason": "独立计分问答，按官方规则区分场上进球与活动自定义得分，展示远距离投篮录像准备；Tracer不自动判分。",
+      "sourceRecords": [
+        {
+          "csvRow": 113,
+          "position": "23",
+          "positionType": "Organic",
+          "searchVolume": "140",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-09-27"
+        }
+      ]
+    },
+    {
+      "keyword": "software for basketball coaches",
+      "action": "merge",
+      "clusterSlug": "basketball-coaching-software",
+      "targetPath": "/shot-tracer/basketball-coaching-software",
+      "reason": "与 basketball coaching software 同一任务/意图，合并至同一页面。教练软件任务选型和录像交接指南；链接现有画图/记录工具，Tracer只是视频效果，不宣称战术分析或执教功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 114,
+          "position": "12",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "20",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-11"
+        }
+      ]
+    },
+    {
+      "keyword": "hawksquawk homecourt",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 115,
+          "position": "54",
+          "positionType": "Organic",
+          "searchVolume": "210",
+          "keywordDifficulty": "2",
+          "competitorUrl": "https://www.homecourt.ai/faq/squads2",
+          "dataTimestamp": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "keyword": "trace basketball",
+      "action": "defer",
+      "clusterSlug": "deferred-trace-camera-workflow",
+      "targetPath": null,
+      "reason": "公开检索已确认Trace官方篮球AI摄像机产品页；其自动拍摄/个人集锦与现有录制后Shot Tracer不是同一工具。保留该50量候选，待核实视频取得方式后可做真实录像→Tracer衔接指南，暂不把现有/shot-tracer误称Trace摄像机或官方入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 116,
+          "position": "15",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "11",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-04"
+        },
+        {
+          "csvRow": 117,
+          "position": "24",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "11",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-04"
+        }
+      ],
+      "publicEvidence": {
+        "checkedOn": "2026-11-12",
+        "queries": [
+          "\"trace basketball\"",
+          "\"trace basketball\" shot tracer",
+          "\"trace basketball\" app"
+        ],
+        "sources": [
+          {
+            "title": "Trace Basketball Camera | AI Highlights for Players",
+            "url": "https://traceup.com/sports/basketball",
+            "finding": "Official product page describes automatically recording the full court with a Trace AI basketball camera."
+          },
+          {
+            "title": "Trace Basketball Partners",
+            "url": "https://traceup.com/partner/trace-basketball-partners",
+            "finding": "Official basketball camera partner page supports the distinct Trace product interpretation."
+          }
+        ],
+        "coverageLimit": "Public search findings are not a complete US Google SERP capture; the source CSV keyword is retained for future workflow research."
+      }
+    },
+    {
+      "keyword": "basketball scorebook app",
+      "action": "defer",
+      "clusterSlug": "deferred-unsupported-operations",
+      "targetPath": null,
+      "reason": "球队管理、比赛计分或多战术手册管理尚未实现；单场手工投篮记录/单张球场图不能假称完整对应系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 118,
+          "position": "12",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "20",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "keyword": "how many points is a full court shot in basketball",
+      "action": "merge",
+      "clusterSlug": "how-many-points-is-a-full-court-shot",
+      "targetPath": "/shot-tracer/how-many-points-is-a-full-court-shot",
+      "reason": "与 how many points is a full court shot 同一任务/意图，合并至同一页面。独立计分问答，按官方规则区分场上进球与活动自定义得分，展示远距离投篮录像准备；Tracer不自动判分。",
+      "sourceRecords": [
+        {
+          "csvRow": 119,
+          "position": "22",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "20",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-09-07"
+        }
+      ]
+    },
+    {
+      "keyword": "online basketball play creator",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 120,
+          "position": "27",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "keyword": "free basketball play creator",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 121,
+          "position": "26",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "20",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball play diagram software",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 122,
+          "position": "13",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "42",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-18"
+        },
+        {
+          "csvRow": 123,
+          "position": "20",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "42",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball court logos",
+      "action": "defer",
+      "clusterSlug": "deferred-logo-assets",
+      "targetPath": null,
+      "reason": "需要相应真实品牌/球场标志资源或设计功能，当前Tracer工具不提供。",
+      "sourceRecords": [
+        {
+          "csvRow": 124,
+          "position": "48",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "4",
+          "competitorUrl": "https://www.homecourt.ai/media-logos",
+          "dataTimestamp": "2026-09-21"
+        },
+        {
+          "csvRow": 125,
+          "position": "50",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "4",
+          "competitorUrl": "https://www.homecourt.ai/media-logos",
+          "dataTimestamp": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball play creator free",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 126,
+          "position": "23",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-05"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball augmented reality",
+      "action": "defer",
+      "clusterSlug": "deferred-hardware-ar-analytics",
+      "targetPath": null,
+      "reason": "可能需要实体传感器、自动跟踪、AR设施或特定分析系统；现有录制后Tracer不足以完成任务，待核实具体意图和能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 128,
+          "position": "14",
+          "positionType": "Organic",
+          "searchVolume": "390",
+          "keywordDifficulty": "25",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-18"
+        }
+      ]
+    },
+    {
+      "keyword": "space jam court",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 129,
+          "position": "34",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/spacejamgames",
+          "dataTimestamp": "2026-09-18"
+        },
+        {
+          "csvRow": 130,
+          "position": "53",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/spacejamnike",
+          "dataTimestamp": "2026-09-18"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball analytics software",
+      "action": "create",
+      "clusterSlug": "basketball-analytics-software",
+      "targetPath": "/shot-tracer/basketball-analytics-software",
+      "reason": "解释分析软件需输出的统计/标记与可视轨迹区别；提供资料来源与原片管理流程，不将Tracer冒充分析软件。",
+      "sourceRecords": [
+        {
+          "csvRow": 132,
+          "position": "19",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "29",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball overseas tryouts",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 137,
+          "position": "44",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "18",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "keyword": "interactive basketball court",
+      "action": "defer",
+      "clusterSlug": "deferred-hardware-ar-analytics",
+      "targetPath": null,
+      "reason": "可能需要实体传感器、自动跟踪、AR设施或特定分析系统；现有录制后Tracer不足以完成任务，待核实具体意图和能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 139,
+          "position": "6",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "keyword": "nba scores diy homeschool",
+      "action": "defer",
+      "clusterSlug": "deferred-ambiguous",
+      "targetPath": null,
+      "reason": "含混、错配或其他产品具体信息需求；需单独核实意图与来源，当前不生成Tracer页。",
+      "sourceRecords": [
+        {
+          "csvRow": 140,
+          "position": "38",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "23",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-26"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt basketball woodinville",
+      "action": "defer",
+      "clusterSlug": "deferred-places-and-physical-courts",
+      "targetPath": null,
+      "reason": "特定场馆、地点、课程机构、球队主场或购物意图，需要真实地点/营业/活动或商品数据，Tracer不能完成该任务。",
+      "sourceRecords": [
+        {
+          "csvRow": 141,
+          "position": "15",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "10",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball game recording app",
+      "action": "create",
+      "clusterSlug": "basketball-game-recording-app",
+      "targetPath": "/shot-tracer/basketball-game-recording-app",
+      "reason": "录制应用与视频后处理工作流；参考官方设备说明，先录制再上传Tracer，不把网页说成实时录像或自动摄像功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 142,
+          "position": "19",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": null,
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt advantage",
+      "action": "defer",
+      "clusterSlug": "deferred-ambiguous",
+      "targetPath": null,
+      "reason": "含混、错配或其他产品具体信息需求；需单独核实意图与来源，当前不生成Tracer页。",
+      "sourceRecords": [
+        {
+          "csvRow": 143,
+          "position": "38",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "42",
+          "competitorUrl": "https://www.homecourt.ai/home",
+          "dataTimestamp": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball management software",
+      "action": "defer",
+      "clusterSlug": "deferred-unsupported-operations",
+      "targetPath": null,
+      "reason": "球队管理、比赛计分或多战术手册管理尚未实现；单场手工投篮记录/单张球场图不能假称完整对应系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 147,
+          "position": "54",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "5",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-28"
+        }
+      ]
+    },
+    {
+      "keyword": "court basket",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 148,
+          "position": "10",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "32",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-24"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball play creator",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 149,
+          "position": "34",
+          "positionType": "Organic",
+          "searchVolume": "1300",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball team management app",
+      "action": "defer",
+      "clusterSlug": "deferred-unsupported-operations",
+      "targetPath": null,
+      "reason": "球队管理、比赛计分或多战术手册管理尚未实现；单场手工投篮记录/单张球场图不能假称完整对应系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 163,
+          "position": "24",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "8",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "keyword": "the homecourt",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 164,
+          "position": "9",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-09-29"
+        },
+        {
+          "csvRow": 165,
+          "position": "52",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-09-29"
+        },
+        {
+          "csvRow": 166,
+          "position": "63",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-09-29"
+        }
+      ]
+    },
+    {
+      "keyword": "basket application",
+      "action": "merge",
+      "clusterSlug": "basketball-apps",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "reason": "与 basketball apps 同一任务/意图，合并至同一页面。篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 169,
+          "position": "10",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "17",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-07"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball scoring app",
+      "action": "defer",
+      "clusterSlug": "deferred-unsupported-operations",
+      "targetPath": null,
+      "reason": "球队管理、比赛计分或多战术手册管理尚未实现；单场手工投篮记录/单张球场图不能假称完整对应系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 170,
+          "position": "18",
+          "positionType": "Organic",
+          "searchVolume": "260",
+          "keywordDifficulty": "40",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball play maker free",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 181,
+          "position": "13",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "0",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "semi pro basketball tryouts near me",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 182,
+          "position": "97",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "30",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "keyword": "basketapp",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 185,
+          "position": "13",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "29",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-27"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball court maker",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 188,
+          "position": "43",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "17",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "keyword": "pickup basketball app",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 189,
+          "position": "36",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "keyword": "passport basketball app",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 190,
+          "position": "21",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "23",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-22"
+        }
+      ]
+    },
+    {
+      "keyword": "training court app",
+      "action": "merge",
+      "clusterSlug": "basketball-training-app",
+      "targetPath": "/shot-tracer/basketball-training-app",
+      "reason": "与 basketball training app 同一任务/意图，合并至同一页面。训练应用需求指南，核实官方功能并提供训练录像准备步骤；不把Tracer说成训练指导、统计或AI教练。年份词需持续核实。",
+      "sourceRecords": [
+        {
+          "csvRow": 191,
+          "position": "6",
+          "positionType": "Organic",
+          "searchVolume": "140",
+          "keywordDifficulty": "33",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "keyword": "pacers homecourt",
+      "action": "defer",
+      "clusterSlug": "deferred-brand-navigation",
+      "targetPath": null,
+      "reason": "品牌或实体导航需求；独立指南不等同对应实体的官方入口，不批量制作近似导航页。",
+      "sourceRecords": [
+        {
+          "csvRow": 193,
+          "position": "74",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "29",
+          "competitorUrl": "https://www.homecourt.ai/press",
+          "dataTimestamp": "2026-09-19"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball playmaker",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 201,
+          "position": "27",
+          "positionType": "Organic",
+          "searchVolume": "210",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball shooting chart templates",
+      "action": "existing",
+      "clusterSlug": "basketball-shot-chart",
+      "targetPath": "/tools/basketball-shot-chart",
+      "reason": "已有工具可手工录入命中/未中/位置并计数、算百分比、导出图与CSV；必须保留手工记录说明，不承诺自动摄像检测。",
+      "sourceRecords": [
+        {
+          "csvRow": 202,
+          "position": "2",
+          "positionType": "AI overview",
+          "searchVolume": "40",
+          "keywordDifficulty": "1",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball playmaker free",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 203,
+          "position": "16",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "25",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball play maker",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 205,
+          "position": "28",
+          "positionType": "Organic",
+          "searchVolume": "1000",
+          "keywordDifficulty": "38",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-16"
+        },
+        {
+          "csvRow": 206,
+          "position": "29",
+          "positionType": "Organic",
+          "searchVolume": "1000",
+          "keywordDifficulty": "38",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball shot tracker",
+      "action": "existing",
+      "clusterSlug": "basketball-shot-chart",
+      "targetPath": "/tools/basketball-shot-chart",
+      "reason": "已有工具可手工录入命中/未中/位置并计数、算百分比、导出图与CSV；必须保留手工记录说明，不承诺自动摄像检测。",
+      "sourceRecords": [
+        {
+          "csvRow": 208,
+          "position": "9",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "21",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "keyword": "how to cancel home ai app",
+      "action": "defer",
+      "clusterSlug": "deferred-unrelated-home-products",
+      "targetPath": null,
+      "reason": "家居、建材、宠物或另一Home AI产品需求，不能因home/court词形相近混作HomeCourt或HoopCut功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 209,
+          "position": "36",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "12",
+          "competitorUrl": "https://help.homecourt.ai/hc/en-us/articles/6994050826003-How-do-I-cancel-my-subscription-if-I-purchased-it-in-the-App-Store",
+          "dataTimestamp": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball play software",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 210,
+          "position": "14",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "keyword": "nba court iq",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 211,
+          "position": "23",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "30",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball software",
+      "action": "merge",
+      "clusterSlug": "basketball-apps",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "reason": "与 basketball apps 同一任务/意图，合并至同一页面。篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 212,
+          "position": "9",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "52",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "keyword": "ball.ai",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 215,
+          "position": "14",
+          "positionType": "Organic",
+          "searchVolume": "260",
+          "keywordDifficulty": "30",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-19"
+        }
+      ]
+    },
+    {
+      "keyword": "free court designer",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 216,
+          "position": "45",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "15",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "keyword": "hometeam app",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 217,
+          "position": "24",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "30",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball scouts",
+      "action": "merge",
+      "clusterSlug": "nba-scout",
+      "targetPath": "/shot-tracer/nba-scout",
+      "reason": "与 nba scout 同一任务/意图，合并至同一页面。保留已确认本地页；官方球探角色资料、原片整理和个人视频Tracer示例，不提供提交、评估或招募承诺。",
+      "sourceRecords": [
+        {
+          "csvRow": 218,
+          "position": "25",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "20",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+          "dataTimestamp": "2026-09-05"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt home care",
+      "action": "defer",
+      "clusterSlug": "deferred-unrelated-home-products",
+      "targetPath": null,
+      "reason": "家居、建材、宠物或另一Home AI产品需求，不能因home/court词形相近混作HomeCourt或HoopCut功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 219,
+          "position": "52",
+          "positionType": "Organic",
+          "searchVolume": "140",
+          "keywordDifficulty": "14",
+          "competitorUrl": "https://www.homecourt.ai/dribble-workouts-v2",
+          "dataTimestamp": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "keyword": "how do you become an nba scout",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 220,
+          "position": "4",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "14",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+          "dataTimestamp": "2026-11-06"
+        }
+      ]
+    },
+    {
+      "keyword": "online basketball play maker",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 221,
+          "position": "23",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball tracking system",
+      "action": "defer",
+      "clusterSlug": "deferred-hardware-ar-analytics",
+      "targetPath": null,
+      "reason": "可能需要实体传感器、自动跟踪、AR设施或特定分析系统；现有录制后Tracer不足以完成任务，待核实具体意图和能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 223,
+          "position": "13",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": null,
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball flooring kit - homecourt tiles",
+      "action": "defer",
+      "clusterSlug": "deferred-unrelated-home-products",
+      "targetPath": null,
+      "reason": "家居、建材、宠物或另一Home AI产品需求，不能因home/court词形相近混作HomeCourt或HoopCut功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 232,
+          "position": "65",
+          "positionType": "Organic",
+          "searchVolume": "210",
+          "keywordDifficulty": "6",
+          "competitorUrl": "https://www.homecourt.ai/faq/squads2",
+          "dataTimestamp": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball court nike",
+      "action": "defer",
+      "clusterSlug": "deferred-places-and-physical-courts",
+      "targetPath": null,
+      "reason": "特定场馆、地点、课程机构、球队主场或购物意图，需要真实地点/营业/活动或商品数据，Tracer不能完成该任务。",
+      "sourceRecords": [
+        {
+          "csvRow": 233,
+          "position": "29",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "33",
+          "competitorUrl": "https://www.homecourt.ai/nike",
+          "dataTimestamp": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "keyword": "thefuturesapp",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 234,
+          "position": "53",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "28",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball ai chat",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 235,
+          "position": "16",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "10",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "keyword": "coaching apps for basketball",
+      "action": "merge",
+      "clusterSlug": "basketball-coaching-software",
+      "targetPath": "/shot-tracer/basketball-coaching-software",
+      "reason": "与 basketball coaching software 同一任务/意图，合并至同一页面。教练软件任务选型和录像交接指南；链接现有画图/记录工具，Tracer只是视频效果，不宣称战术分析或执教功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 236,
+          "position": "7",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "25",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball hot shot",
+      "action": "merge",
+      "clusterSlug": "hot-shot-basketball",
+      "targetPath": "/shot-tracer/hot-shot-basketball",
+      "reason": "与 hot shot basketball 同一任务/意图，合并至同一页面。保留已确认本地页；提供Hot Shot规则版本与自有挑战片段Tracer步骤，历史HomeCourt赛事仅作已结束案例。",
+      "sourceRecords": [
+        {
+          "csvRow": 237,
+          "position": "4",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "5",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt meridian",
+      "action": "defer",
+      "clusterSlug": "deferred-places-and-physical-courts",
+      "targetPath": null,
+      "reason": "特定场馆、地点、课程机构、球队主场或购物意图，需要真实地点/营业/活动或商品数据，Tracer不能完成该任务。",
+      "sourceRecords": [
+        {
+          "csvRow": 238,
+          "position": "49",
+          "positionType": "Organic",
+          "searchVolume": "1000",
+          "keywordDifficulty": "16",
+          "competitorUrl": "https://www.homecourt.ai/faq/squads2",
+          "dataTimestamp": "2026-10-01"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt company",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 239,
+          "position": "9",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "33",
+          "competitorUrl": "https://www.homecourt.ai/about",
+          "dataTimestamp": "2026-09-19"
+        }
+      ]
+    },
+    {
+      "keyword": "3 point shootout rules",
+      "action": "create",
+      "clusterSlug": "3-point-shootout-rules",
+      "targetPath": "/shot-tracer/3-point-shootout-rules",
+      "reason": "独立三分投篮赛规则需求；采用官方已核实的具体规则版本，给出录制和Tracer步骤，不套用Hot Shot历史分值。",
+      "sourceRecords": [
+        {
+          "csvRow": 240,
+          "position": "22",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-09-27"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball digital",
+      "action": "defer",
+      "clusterSlug": "deferred-hardware-ar-analytics",
+      "targetPath": null,
+      "reason": "可能需要实体传感器、自动跟踪、AR设施或特定分析系统；现有录制后Tracer不足以完成任务，待核实具体意图和能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 244,
+          "position": "18",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball whiteboard online",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 246,
+          "position": "24",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "5",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "keyword": "google basketball logo",
+      "action": "defer",
+      "clusterSlug": "deferred-logo-assets",
+      "targetPath": null,
+      "reason": "需要相应真实品牌/球场标志资源或设计功能，当前Tracer工具不提供。",
+      "sourceRecords": [
+        {
+          "csvRow": 247,
+          "position": "36",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "41",
+          "competitorUrl": "https://www.homecourt.ai/media-logos",
+          "dataTimestamp": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball play app",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 248,
+          "position": "7",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "46",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball playbook app",
+      "action": "defer",
+      "clusterSlug": "deferred-unsupported-operations",
+      "targetPath": null,
+      "reason": "球队管理、比赛计分或多战术手册管理尚未实现；单场手工投篮记录/单张球场图不能假称完整对应系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 249,
+          "position": "13",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "44",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "keyword": "hercourt",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 250,
+          "position": "78",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball playmaker online",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 251,
+          "position": "16",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "keyword": "court set up",
+      "action": "existing",
+      "clusterSlug": "homecourt-camera-setup",
+      "targetPath": "/homecourt/camera-setup",
+      "reason": "竞品落地页为HomeCourt setup；本站已有相应摄像构图清单与球场图。词义宽泛，保留既有解释，不另造Tracer页。",
+      "sourceRecords": [
+        {
+          "csvRow": 252,
+          "position": "22",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "3",
+          "competitorUrl": "https://www.homecourt.ai/faq/setup",
+          "dataTimestamp": "2026-09-11"
+        }
+      ]
+    },
+    {
+      "keyword": "smartcourt",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 253,
+          "position": "56",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "20",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-04"
+        }
+      ]
+    },
+    {
+      "keyword": "best laptops nba scores",
+      "action": "defer",
+      "clusterSlug": "deferred-ambiguous",
+      "targetPath": null,
+      "reason": "含混、错配或其他产品具体信息需求；需单独核实意图与来源，当前不生成Tracer页。",
+      "sourceRecords": [
+        {
+          "csvRow": 254,
+          "position": "91",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "79",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "keyword": "professional summer basketball leagues",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 256,
+          "position": "94",
+          "positionType": "Organic",
+          "searchVolume": "480",
+          "keywordDifficulty": "46",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-09-26"
+        }
+      ]
+    },
+    {
+      "keyword": "tryouts basketball overseas",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 260,
+          "position": "30",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "13",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-09-14"
+        },
+        {
+          "csvRow": 261,
+          "position": "44",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "13",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt promo code",
+      "action": "defer",
+      "clusterSlug": "deferred-coupons",
+      "targetPath": null,
+      "reason": "没有核实的有效优惠码，不能生成假优惠或把价格指南包装成可用折扣。",
+      "sourceRecords": [
+        {
+          "csvRow": 262,
+          "position": "19",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "4",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-09-09"
+        },
+        {
+          "csvRow": 263,
+          "position": "42",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "4",
+          "competitorUrl": "https://help.homecourt.ai/hc/en-us",
+          "dataTimestamp": "2026-09-09"
+        },
+        {
+          "csvRow": 264,
+          "position": "79",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "4",
+          "competitorUrl": "https://www.homecourt.ai/faq/subscription",
+          "dataTimestamp": "2026-09-09"
+        }
+      ]
+    },
+    {
+      "keyword": "wilson x connected basketball",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 267,
+          "position": "14",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "13",
+          "competitorUrl": "https://www.homecourt.ai/wilson",
+          "dataTimestamp": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball court designer",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 268,
+          "position": "79",
+          "positionType": "Organic",
+          "searchVolume": "260",
+          "keywordDifficulty": "11",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "keyword": "2.11",
+      "action": "defer",
+      "clusterSlug": "deferred-ambiguous",
+      "targetPath": null,
+      "reason": "含混、错配或其他产品具体信息需求；需单独核实意图与来源，当前不生成Tracer页。",
+      "sourceRecords": [
+        {
+          "csvRow": 270,
+          "position": "72",
+          "positionType": "Organic",
+          "searchVolume": "260",
+          "keywordDifficulty": "9",
+          "competitorUrl": "https://www.homecourt.ai/inapp-whats-new-211",
+          "dataTimestamp": "2026-09-29"
+        }
+      ]
+    },
+    {
+      "keyword": "digital basketball",
+      "action": "defer",
+      "clusterSlug": "deferred-hardware-ar-analytics",
+      "targetPath": null,
+      "reason": "可能需要实体传感器、自动跟踪、AR设施或特定分析系统；现有录制后Tracer不足以完成任务，待核实具体意图和能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 271,
+          "position": "21",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "8",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-27"
+        }
+      ]
+    },
+    {
+      "keyword": "nexcourt inc",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 272,
+          "position": "18",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "39",
+          "competitorUrl": "https://www.homecourt.ai/about",
+          "dataTimestamp": "2026-10-07"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball scouting",
+      "action": "merge",
+      "clusterSlug": "nba-scout",
+      "targetPath": "/shot-tracer/nba-scout",
+      "reason": "与 nba scout 同一任务/意图，合并至同一页面。保留已确认本地页；官方球探角色资料、原片整理和个人视频Tracer示例，不提供提交、评估或招募承诺。",
+      "sourceRecords": [
+        {
+          "csvRow": 273,
+          "position": "25",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "14",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+          "dataTimestamp": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt discount code",
+      "action": "defer",
+      "clusterSlug": "deferred-coupons",
+      "targetPath": null,
+      "reason": "没有核实的有效优惠码，不能生成假优惠或把价格指南包装成可用折扣。",
+      "sourceRecords": [
+        {
+          "csvRow": 274,
+          "position": "49",
+          "positionType": "Organic",
+          "searchVolume": "210",
+          "keywordDifficulty": "9",
+          "competitorUrl": "https://www.homecourt.ai/faq/squads2",
+          "dataTimestamp": "2026-10-16"
+        }
+      ]
+    },
+    {
+      "keyword": "overseas basketball combine",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 289,
+          "position": "33",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "9",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "keyword": "world basketball opportunities",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 290,
+          "position": "49",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "13",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-10-06"
+        }
+      ]
+    },
+    {
+      "keyword": "global basketball",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 291,
+          "position": "40",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "keyword": "nba street home court",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 292,
+          "position": "65",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "28",
+          "competitorUrl": "https://www.homecourt.ai/faq/squads2",
+          "dataTimestamp": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball play simulator",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 293,
+          "position": "17",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-02"
+        }
+      ]
+    },
+    {
+      "keyword": "jngc",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 294,
+          "position": "36",
+          "positionType": "Organic",
+          "searchVolume": "880",
+          "keywordDifficulty": "66",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-10-18"
+        }
+      ]
+    },
+    {
+      "keyword": "home court discount code",
+      "action": "defer",
+      "clusterSlug": "deferred-coupons",
+      "targetPath": null,
+      "reason": "没有核实的有效优惠码，不能生成假优惠或把价格指南包装成可用折扣。",
+      "sourceRecords": [
+        {
+          "csvRow": 295,
+          "position": "20",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "6",
+          "competitorUrl": "https://www.homecourt.ai/contact-form",
+          "dataTimestamp": "2026-09-14"
+        },
+        {
+          "csvRow": 296,
+          "position": "33",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "6",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-09-14"
+        },
+        {
+          "csvRow": 297,
+          "position": "69",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "6",
+          "competitorUrl": "https://help.homecourt.ai/hc/en-us",
+          "dataTimestamp": "2026-09-14"
+        },
+        {
+          "csvRow": 298,
+          "position": "81",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "6",
+          "competitorUrl": "https://www.homecourt.ai/contact-index",
+          "dataTimestamp": "2026-09-14"
+        },
+        {
+          "csvRow": 299,
+          "position": "88",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "6",
+          "competitorUrl": "https://www.homecourt.ai/faq/subscription",
+          "dataTimestamp": "2026-09-14"
+        }
+      ]
+    },
+    {
+      "keyword": "on court basketball",
+      "action": "defer",
+      "clusterSlug": "deferred-places-and-physical-courts",
+      "targetPath": null,
+      "reason": "特定场馆、地点、课程机构、球队主场或购物意图，需要真实地点/营业/活动或商品数据，Tracer不能完成该任务。",
+      "sourceRecords": [
+        {
+          "csvRow": 309,
+          "position": "6",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "27",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "keyword": "virtual basketball",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 310,
+          "position": "14",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "32",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt soap",
+      "action": "defer",
+      "clusterSlug": "deferred-unrelated-home-products",
+      "targetPath": null,
+      "reason": "家居、建材、宠物或另一Home AI产品需求，不能因home/court词形相近混作HomeCourt或HoopCut功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 314,
+          "position": "60",
+          "positionType": "Organic",
+          "searchVolume": "260",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://www.homecourt.ai/faq/squads2",
+          "dataTimestamp": "2026-10-12"
+        }
+      ]
+    },
+    {
+      "keyword": "playsight smartcourt pricing models subscription fees cloud storage",
+      "action": "defer",
+      "clusterSlug": "deferred-ambiguous",
+      "targetPath": null,
+      "reason": "含混、错配或其他产品具体信息需求；需单独核实意图与来源，当前不生成Tracer页。",
+      "sourceRecords": [
+        {
+          "csvRow": 315,
+          "position": "60",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "9",
+          "competitorUrl": "https://www.homecourt.ai/pricing",
+          "dataTimestamp": "2026-10-25"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball playbook creator free",
+      "action": "defer",
+      "clusterSlug": "deferred-unsupported-operations",
+      "targetPath": null,
+      "reason": "球队管理、比赛计分或多战术手册管理尚未实现；单场手工投篮记录/单张球场图不能假称完整对应系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 316,
+          "position": "34",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "16",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "augmented reality basketball",
+      "action": "defer",
+      "clusterSlug": "deferred-hardware-ar-analytics",
+      "targetPath": null,
+      "reason": "可能需要实体传感器、自动跟踪、AR设施或特定分析系统；现有录制后Tracer不足以完成任务，待核实具体意图和能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 317,
+          "position": "8",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "24",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "keyword": "how to become an nba scout",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 318,
+          "position": "12",
+          "positionType": "Organic",
+          "searchVolume": "140",
+          "keywordDifficulty": "23",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+          "dataTimestamp": "2026-11-03"
+        }
+      ]
+    },
+    {
+      "keyword": "nike basketball court",
+      "action": "defer",
+      "clusterSlug": "deferred-places-and-physical-courts",
+      "targetPath": null,
+      "reason": "特定场馆、地点、课程机构、球队主场或购物意图，需要真实地点/营业/活动或商品数据，Tracer不能完成该任务。",
+      "sourceRecords": [
+        {
+          "csvRow": 319,
+          "position": "41",
+          "positionType": "Organic",
+          "searchVolume": "140",
+          "keywordDifficulty": "30",
+          "competitorUrl": "https://www.homecourt.ai/nike",
+          "dataTimestamp": "2026-10-24"
+        }
+      ]
+    },
+    {
+      "keyword": "how to cancel home ai subscription",
+      "action": "defer",
+      "clusterSlug": "deferred-unrelated-home-products",
+      "targetPath": null,
+      "reason": "家居、建材、宠物或另一Home AI产品需求，不能因home/court词形相近混作HomeCourt或HoopCut功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 320,
+          "position": "39",
+          "positionType": "Organic",
+          "searchVolume": "170",
+          "keywordDifficulty": "4",
+          "competitorUrl": "https://help.homecourt.ai/hc/en-us/articles/6994915498899-How-do-I-cancel-my-subscription",
+          "dataTimestamp": "2026-10-05"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball opportunities",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 321,
+          "position": "62",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "keyword": "routing for the home team",
+      "action": "defer",
+      "clusterSlug": "deferred-ambiguous",
+      "targetPath": null,
+      "reason": "含混、错配或其他产品具体信息需求；需单独核实意图与来源，当前不生成Tracer页。",
+      "sourceRecords": [
+        {
+          "csvRow": 322,
+          "position": "35",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "18",
+          "competitorUrl": "https://www.homecourt.ai/teams",
+          "dataTimestamp": "2026-10-15"
+        }
+      ]
+    },
+    {
+      "keyword": "3ak app",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 323,
+          "position": "29",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "19",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "keyword": "free basketball playbook creator",
+      "action": "defer",
+      "clusterSlug": "deferred-unsupported-operations",
+      "targetPath": null,
+      "reason": "球队管理、比赛计分或多战术手册管理尚未实现；单场手工投篮记录/单张球场图不能假称完整对应系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 324,
+          "position": "32",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "30",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-10"
+        }
+      ]
+    },
+    {
+      "keyword": "basket app",
+      "action": "merge",
+      "clusterSlug": "basketball-apps",
+      "targetPath": "/shot-tracer/basketball-apps",
+      "reason": "与 basketball apps 同一任务/意图，合并至同一页面。篮球应用类型/任务选型指南；用真实功能区分训练、记录与视频效果，Tracer为可实际使用的视频入口。",
+      "sourceRecords": [
+        {
+          "csvRow": 325,
+          "position": "20",
+          "positionType": "Organic",
+          "searchVolume": "210",
+          "keywordDifficulty": "33",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-19"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt training center",
+      "action": "defer",
+      "clusterSlug": "deferred-places-and-physical-courts",
+      "targetPath": null,
+      "reason": "特定场馆、地点、课程机构、球队主场或购物意图，需要真实地点/营业/活动或商品数据，Tracer不能完成该任务。",
+      "sourceRecords": [
+        {
+          "csvRow": 326,
+          "position": "17",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-11-04"
+        },
+        {
+          "csvRow": 327,
+          "position": "29",
+          "positionType": "Organic",
+          "searchVolume": "90",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/homecourt-may-2020",
+          "dataTimestamp": "2026-11-04"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball analytics platform",
+      "action": "merge",
+      "clusterSlug": "basketball-analytics-software",
+      "targetPath": "/shot-tracer/basketball-analytics-software",
+      "reason": "与 basketball analytics software 同一任务/意图，合并至同一页面。解释分析软件需输出的统计/标记与可视轨迹区别；提供资料来源与原片管理流程，不将Tracer冒充分析软件。",
+      "sourceRecords": [
+        {
+          "csvRow": 333,
+          "position": "17",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "40",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-23"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball playbook creator",
+      "action": "defer",
+      "clusterSlug": "deferred-unsupported-operations",
+      "targetPath": null,
+      "reason": "球队管理、比赛计分或多战术手册管理尚未实现；单场手工投篮记录/单张球场图不能假称完整对应系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 336,
+          "position": "36",
+          "positionType": "Organic",
+          "searchVolume": "260",
+          "keywordDifficulty": "23",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-13"
+        }
+      ]
+    },
+    {
+      "keyword": "full court analytics",
+      "action": "defer",
+      "clusterSlug": "deferred-hardware-ar-analytics",
+      "targetPath": null,
+      "reason": "可能需要实体传感器、自动跟踪、AR设施或特定分析系统；现有录制后Tracer不足以完成任务，待核实具体意图和能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 337,
+          "position": "20",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-15"
+        },
+        {
+          "csvRow": 338,
+          "position": "54",
+          "positionType": "Organic",
+          "searchVolume": "320",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/faq/shotanalysis",
+          "dataTimestamp": "2026-09-15"
+        }
+      ]
+    },
+    {
+      "keyword": "nba home court",
+      "action": "existing",
+      "clusterSlug": "homecourt-guides",
+      "targetPath": "/homecourt",
+      "reason": "现有/homecourt包含15篇独立指南及官方来源，覆盖HomeCourt篮球App的信息、选型和使用问题。该词可能兼有品牌导航/主场/场馆等意图，此映射仅承接App信息意图，不等于官方入口或覆盖全部SERP需求。",
+      "sourceRecords": [
+        {
+          "csvRow": 339,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "140",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-26"
+        },
+        {
+          "csvRow": 340,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "140",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-26"
+        },
+        {
+          "csvRow": 341,
+          "position": "1",
+          "positionType": "AI overview",
+          "searchVolume": "140",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+          "dataTimestamp": "2026-10-26"
+        }
+      ]
+    },
+    {
+      "keyword": "third person basketball court",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 342,
+          "position": "36",
+          "positionType": "Organic",
+          "searchVolume": "720",
+          "keywordDifficulty": "25",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-17"
+        }
+      ]
+    },
+    {
+      "keyword": "start shot competition",
+      "action": "merge",
+      "clusterSlug": "hot-shot-basketball",
+      "targetPath": "/shot-tracer/hot-shot-basketball",
+      "reason": "与 hot shot basketball 同一任务/意图，合并至同一页面。保留已确认本地页；提供Hot Shot规则版本与自有挑战片段Tracer步骤，历史HomeCourt赛事仅作已结束案例。",
+      "sourceRecords": [
+        {
+          "csvRow": 343,
+          "position": "8",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "7",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-09-22"
+        },
+        {
+          "csvRow": 344,
+          "position": "9",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "7",
+          "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "dataTimestamp": "2026-09-22"
+        }
+      ]
+    },
+    {
+      "keyword": "court shop",
+      "action": "defer",
+      "clusterSlug": "deferred-places-and-physical-courts",
+      "targetPath": null,
+      "reason": "特定场馆、地点、课程机构、球队主场或购物意图，需要真实地点/营业/活动或商品数据，Tracer不能完成该任务。",
+      "sourceRecords": [
+        {
+          "csvRow": 345,
+          "position": "34",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "43",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-11-05"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball home",
+      "action": "defer",
+      "clusterSlug": "deferred-ambiguous",
+      "targetPath": null,
+      "reason": "含混、错配或其他产品具体信息需求；需单独核实意图与来源，当前不生成Tracer页。",
+      "sourceRecords": [
+        {
+          "csvRow": 346,
+          "position": "8",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "28",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-16"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball court designer online",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 347,
+          "position": "49",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "1",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-14"
+        },
+        {
+          "csvRow": 348,
+          "position": "50",
+          "positionType": "Organic",
+          "searchVolume": "40",
+          "keywordDifficulty": "1",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt for paws",
+      "action": "defer",
+      "clusterSlug": "deferred-unrelated-home-products",
+      "targetPath": null,
+      "reason": "家居、建材、宠物或另一Home AI产品需求，不能因home/court词形相近混作HomeCourt或HoopCut功能。",
+      "sourceRecords": [
+        {
+          "csvRow": 349,
+          "position": "46",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "15",
+          "competitorUrl": "https://www.homecourt.ai/new-page-24",
+          "dataTimestamp": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball scorekeeping app",
+      "action": "defer",
+      "clusterSlug": "deferred-unsupported-operations",
+      "targetPath": null,
+      "reason": "球队管理、比赛计分或多战术手册管理尚未实现；单场手工投篮记录/单张球场图不能假称完整对应系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 350,
+          "position": "19",
+          "positionType": "Organic",
+          "searchVolume": "30",
+          "keywordDifficulty": "31",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-14"
+        }
+      ]
+    },
+    {
+      "keyword": "home2court",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 351,
+          "position": "15",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "34",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-09-19"
+        }
+      ]
+    },
+    {
+      "keyword": "basket login",
+      "action": "defer",
+      "clusterSlug": "deferred-other-products-and-games",
+      "targetPath": null,
+      "reason": "其他产品/游戏/社交匹配/模拟器或账户入口意图；当前Tracer不提供对应体验，需要核实需求与能力。",
+      "sourceRecords": [
+        {
+          "csvRow": 352,
+          "position": "18",
+          "positionType": "Organic",
+          "searchVolume": "140",
+          "keywordDifficulty": "5",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-11"
+        }
+      ]
+    },
+    {
+      "keyword": "pro basketball tryouts",
+      "action": "defer",
+      "clusterSlug": "deferred-events-and-scout-careers",
+      "targetPath": null,
+      "reason": "试训/职业/赛事机会需要真实当前地点、日期、资格、报名或职业资料；Tracer不满足此任务，不编造机会或推荐关系。",
+      "sourceRecords": [
+        {
+          "csvRow": 353,
+          "position": "49",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "9",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout/events",
+          "dataTimestamp": "2026-10-28"
+        }
+      ]
+    },
+    {
+      "keyword": "home court dc",
+      "action": "defer",
+      "clusterSlug": "deferred-places-and-physical-courts",
+      "targetPath": null,
+      "reason": "特定场馆、地点、课程机构、球队主场或购物意图，需要真实地点/营业/活动或商品数据，Tracer不能完成该任务。",
+      "sourceRecords": [
+        {
+          "csvRow": 354,
+          "position": "20",
+          "positionType": "Organic",
+          "searchVolume": "480",
+          "keywordDifficulty": "33",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-10-20"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball scout",
+      "action": "merge",
+      "clusterSlug": "nba-scout",
+      "targetPath": "/shot-tracer/nba-scout",
+      "reason": "与 nba scout 同一任务/意图，合并至同一页面。保留已确认本地页；官方球探角色资料、原片整理和个人视频Tracer示例，不提供提交、评估或招募承诺。",
+      "sourceRecords": [
+        {
+          "csvRow": 355,
+          "position": "20",
+          "positionType": "Organic",
+          "searchVolume": "140",
+          "keywordDifficulty": "26",
+          "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+          "dataTimestamp": "2026-10-21"
+        }
+      ]
+    },
+    {
+      "keyword": "home court of boston celtics",
+      "action": "defer",
+      "clusterSlug": "deferred-places-and-physical-courts",
+      "targetPath": null,
+      "reason": "特定场馆、地点、课程机构、球队主场或购物意图，需要真实地点/营业/活动或商品数据，Tracer不能完成该任务。",
+      "sourceRecords": [
+        {
+          "csvRow": 356,
+          "position": "40",
+          "positionType": "Organic",
+          "searchVolume": "70",
+          "keywordDifficulty": "22",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball court creator",
+      "action": "existing",
+      "clusterSlug": "basketball-court-diagram",
+      "targetPath": "/tools/basketball-court-diagram",
+      "reason": "已有免费交互球场图可放置球员/球/镜头、绘制箭头、选全半场、导出PNG/SVG；满足基础示意图绘制，不是场馆建造或动态模拟系统。",
+      "sourceRecords": [
+        {
+          "csvRow": 357,
+          "position": "53",
+          "positionType": "Organic",
+          "searchVolume": "110",
+          "keywordDifficulty": "13",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-09-08"
+        }
+      ]
+    },
+    {
+      "keyword": "homecourt dc",
+      "action": "defer",
+      "clusterSlug": "deferred-places-and-physical-courts",
+      "targetPath": null,
+      "reason": "特定场馆、地点、课程机构、球队主场或购物意图，需要真实地点/营业/活动或商品数据，Tracer不能完成该任务。",
+      "sourceRecords": [
+        {
+          "csvRow": 358,
+          "position": "15",
+          "positionType": "Organic",
+          "searchVolume": "260",
+          "keywordDifficulty": "10",
+          "competitorUrl": "https://www.homecourt.ai/store",
+          "dataTimestamp": "2026-09-11"
+        }
+      ]
+    },
+    {
+      "keyword": "ai basketball training platforms 2026",
+      "action": "merge",
+      "clusterSlug": "basketball-training-app",
+      "targetPath": "/shot-tracer/basketball-training-app",
+      "reason": "与 basketball training app 同一任务/意图，合并至同一页面。训练应用需求指南，核实官方功能并提供训练录像准备步骤；不把Tracer说成训练指导、统计或AI教练。年份词需持续核实。",
+      "sourceRecords": [
+        {
+          "csvRow": 359,
+          "position": "8",
+          "positionType": "Organic",
+          "searchVolume": "50",
+          "keywordDifficulty": "20",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-09"
+        }
+      ]
+    },
+    {
+      "keyword": "basketball video software",
+      "action": "create",
+      "clusterSlug": "basketball-video-software",
+      "targetPath": "/shot-tracer/basketball-video-software",
+      "reason": "篮球视频软件选型/准备指南，强调已有录影可上传、短片预览及Tracer输出，并链接现有拍摄剪辑指南。",
+      "sourceRecords": [
+        {
+          "csvRow": 362,
+          "position": "21",
+          "positionType": "Organic",
+          "searchVolume": "140",
+          "keywordDifficulty": "12",
+          "competitorUrl": "https://www.homecourt.ai/",
+          "dataTimestamp": "2026-10-09"
+        }
+      ]
+    }
+  ]
+}

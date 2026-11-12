@@ -1,0 +1,899 @@
+[
+  {
+    "slug": "online-basketball-training",
+    "status": "approved",
+    "batchId": "HC-TRACER-KEYWORD-BULK-2026-11-12-01",
+    "topic": "training",
+    "intent": "online-basketball-training-guide-and-personal-video-tracer",
+    "keyword": "online basketball training",
+    "label": "Online basketball training",
+    "title": "Online Basketball Training Videos & Shot Tracer | HoopCut",
+    "description": "Organize footage for online basketball training, keep a clear practice record and add a shot tracer to a short sharing clip. Export Firework free with HoopCut.",
+    "heading": "Online basketball training: turn your practice into a tracer clip",
+    "intro": "Online basketball training starts with a lesson or practice goal. A recording gives you something concrete to revisit afterward. Keep that complete session for review, then use HoopCut to add a shot tracer to one clear attempt and make a separate clip to share.",
+    "heroDetail": "Upload footage already saved on your device, choose up to 30 seconds and preview the trail from release to basket. Firework export is free; your original recording remains the reference for any coaching discussion.",
+    "toolHeading": "Add a tracer to a recorded practice attempt",
+    "workflowHeading": "From an online lesson to a shareable practice clip",
+    "sampleHeading": "See how a visible ball trail looks",
+    "faqHeading": "Online training and practice video questions",
+    "examplesHeading": "Explore a basketball shot tracer example",
+    "sections": [
+      {
+        "heading": "Choose an online basketball training format with a clear next step",
+        "text": "A lesson library, a scheduled remote session and a workout-tracking app ask different things of a player. Before starting, identify the activity, the equipment and whether anyone will review your recording. Jr. NBA provides an official instructional curriculum and practice resources; follow the instructions for the activity you choose. Write one question you want to revisit after the session so your recording has a purpose."
+      },
+      {
+        "heading": "Build a useful practice video record",
+        "text": "Keep a simple session note beside the original file: date, activity, camera position and the part you want to review. If an instructor requests an angle or an unedited sequence, record that first. For a shooting clip, choose a position that keeps the player, basketball and basket visible throughout the attempt.",
+        "subsections": [
+          {
+            "heading": "Keep attempts in their original order",
+            "text": "Save the complete sequence before picking a favorite. A short highlight can sit beside the full session, with its start time in the filename or notes so you can find the surrounding attempts again."
+          }
+        ],
+        "steps": [
+          "Save the source lesson or activity name with your session notes.",
+          "Check a short test recording before completing the activity.",
+          "Record the timestamp of the attempt you want to share."
+        ]
+      },
+      {
+        "heading": "Add a shot tracer to a practice highlight",
+        "text": "Choose a visible attempt from your own footage and import it into the tool above. Select a range of up to 30 seconds that includes the release and finish. Watch whether the trail follows the intended basketball, especially when another player crosses the frame. Export an edited copy after checking the preview.",
+        "subsections": [
+          {
+            "heading": "Send the right version for the purpose",
+            "text": "Use the original when discussing the recording with an instructor, and the traced copy when you want to share the flight of a favorite shot. Give each file a clear name so the two versions remain easy to identify."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Does HoopCut provide online basketball lessons?",
+        "HoopCut is a video-editing tool. Choose instruction separately, then use this page to add a tracer to a practice recording you already have."
+      ],
+      [
+        "What should I record for a remote coach?",
+        "Ask the coach for their required view, duration and file format. Preserve that recording before making a short edited version."
+      ],
+      [
+        "Can a tracer tell me whether my technique improved?",
+        "A tracer visualizes the ball in a clip. It does not provide a technique assessment or prove improvement between sessions."
+      ],
+      [
+        "What if my training session is longer than 30 seconds?",
+        "Keep the full recording separately and select a range of up to 30 seconds for this web tool."
+      ],
+      [
+        "Can I share the exported clip?",
+        "You can download the free Firework version and share it through your chosen app, with the lesson or session context you want viewers to understand."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Jr. NBA / Jr. WNBA: official instructional curriculum",
+        "url": "https://jr.nba.com/jr-nba-instructional-curriculum/"
+      }
+    ],
+    "workflowSteps": [
+      {
+        "title": "Choose a practice moment",
+        "text": "Import a saved attempt from your training session."
+      },
+      {
+        "title": "Check the shot trail",
+        "text": "Preview the full release and finish within 30 seconds."
+      },
+      {
+        "title": "Save a sharing copy",
+        "text": "Export Firework and keep your original session file."
+      }
+    ],
+    "appCTA": {
+      "heading": "Keep your basketball practice clips together",
+      "text": "Export a short Firework clip free here. Preview Cosmic, Ice Beam and Sunset, then open the HoopCut app for more tracer effects."
+    },
+    "examples": [
+      [
+        "/videos/basketball-shot-tracer-example",
+        "Watch a HoopCut tracer demonstration",
+        "Generic HoopCut basketball footage demonstrating the tracer effect."
+      ]
+    ],
+    "demandEvidence": {
+      "source": "User-provided Semrush Organic Positions CSV",
+      "file": "homecourt.ai-organic.Positions-us-20261110-2026-11-12T10_05_16Z.csv",
+      "sourceSha256": "1704d6a140152d4a6ebf8c02062f741c553cf309f0a8d4b312af8fe6752039ef",
+      "market": "US",
+      "keyword": "online basketball training",
+      "records": [
+        {
+          "row": 106,
+          "Keyword": "online basketball training",
+          "Position": "8",
+          "Previous position": "8",
+          "Search Volume": "90",
+          "Keyword Difficulty": "9",
+          "CPC": "1.08",
+          "URL": "https://www.homecourt.ai/",
+          "Traffic": "1",
+          "Traffic (%)": "0.05",
+          "Traffic Cost": "1.00",
+          "Competition": "0.27",
+          "Number of Results": "150",
+          "Trends": "11, 11, 8, 15, 18, 18, 15, 18, 15, 18, 15, 8",
+          "Timestamp": "2026-10-05",
+          "SERP Features by Keyword": "Sitelinks, Reviews, Video, People also ask, Related searches, AI overview",
+          "Keyword Intents": "informational",
+          "Position Type": "Organic"
+        }
+      ],
+      "note": "Original estimates and record dates retained. No search-volume summation, predicted traffic or organic results inferred."
+    },
+    "exampleEvidence": {
+      "url": "/videos/basketball-shot-tracer-example",
+      "scope": "Shared HoopCut basketball tracer demonstration; not evidence of affiliation or topic-specific footage",
+      "validation": "Shared media and uploader checked in the approved local review"
+    },
+    "reviewedBy": "Site owner approved local batch HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01 version d019251331d0",
+    "targetKeywords": [
+      "online basketball lessons",
+      "online basketball training"
+    ],
+    "releaseApproval": {
+      "batch_id": "HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01",
+      "review_version": "d019251331d0",
+      "approved_at": "2026-11-12T12:33:39.386317+00:00",
+      "user_instruction": "行 我抽查了OK 上线吧 上线后check下technical seo",
+      "scope": "199 reviewed keyword pages plus generated directory and sitemap integration"
+    }
+  },
+  {
+    "slug": "basketball-game-recording-app",
+    "status": "approved",
+    "batchId": "HC-TRACER-KEYWORD-BULK-2026-11-12-01",
+    "topic": "video",
+    "intent": "basketball-game-recording-app-guide-and-personal-video-tracer",
+    "keyword": "basketball game recording app",
+    "label": "Basketball game recording",
+    "title": "Basketball Game Recording App Guide & Shot Tracer | HoopCut",
+    "description": "Plan a basketball game recording, check your saved footage and turn one visible shot into a tracer clip. Try a free Firework export in the HoopCut web tool.",
+    "heading": "Basketball game recording app: add a shot tracer to your footage",
+    "intro": "A basketball game recording app needs to capture usable footage before any highlight can be edited. Start with a camera and a clear view of the action. Once the game is saved, bring one visible shooting sequence into HoopCut and add a shot tracer for sharing.",
+    "heroDetail": "Use the checklist below to keep the release, ball flight and finish in the recording. The web tool imports a saved video and processes a selected clip of up to 30 seconds; Firework export is free.",
+    "toolHeading": "Add a tracer to your saved game footage",
+    "workflowHeading": "From a game recording to a traced highlight",
+    "sampleHeading": "Preview the effect on a basketball recording",
+    "faqHeading": "Basketball recording and tracer questions",
+    "examplesHeading": "Explore a basketball shot tracer example",
+    "sections": [
+      {
+        "heading": "Check what your basketball game recording app actually saves",
+        "text": "Start with the file you need at the end: a playable recording that you can locate, copy and edit. Check the recorder’s supported device, storage location and export options before the game. Apple’s Camera guide explains the video controls on iPhone; recording options vary by model. Test the settings you plan to use in the same gym, then play the saved test rather than relying only on the live camera view."
+      },
+      {
+        "heading": "Frame the sequence you will want to show",
+        "text": "A close view of the shooter can lose the ball at the top of its flight. Leave room above the basket and enough court around the shooter for the attempt to make sense. Keep the camera steady when possible, and check that spectators or equipment will not block the view.",
+        "subsections": [
+          {
+            "heading": "Make a short capture-and-playback check",
+            "text": "Record an ordinary attempt, stop recording and replay it. Confirm that the player remains identifiable, the ball is visible in flight and the finish stays in frame before committing to a longer recording."
+          }
+        ],
+        "steps": [
+          "Confirm available storage and battery before recording.",
+          "Keep a note of the period or time when an interesting play occurs.",
+          "Save the complete recording before making edited highlights."
+        ]
+      },
+      {
+        "heading": "Turn a saved shot into a tracer clip",
+        "text": "Find the sequence in your game file and upload the recording to HoopCut. Choose up to 30 seconds with a little context before release and after the result. If the ball leaves the image, choose another angle or attempt from your footage. Preview the trace before downloading Firework.",
+        "subsections": [
+          {
+            "heading": "Keep game time and file time separate",
+            "text": "A scoreboard time and a video timestamp may describe different points. Write both down when available so you can locate the play in the original file after you have exported a shorter version."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Does this page record a live basketball game?",
+        "This page imports a video already saved on your device. Use your camera or recording app to capture the game first."
+      ],
+      [
+        "Can I upload an entire game?",
+        "The upload limit is 512 MB, and each web result covers up to 30 seconds. Prepare a smaller source excerpt if the game file exceeds the upload limit."
+      ],
+      [
+        "Should I zoom in on the shooter?",
+        "Check that your framing still contains the ball’s complete flight and the basket. Choose the view that preserves the sequence you want to show."
+      ],
+      [
+        "Does the recorder need to be HoopCut?",
+        "You can start with your own saved basketball footage. The web upload accepts MP4, MOV and WebM files; preview the result to confirm your file works."
+      ],
+      [
+        "Will a tracer fix a blocked recording?",
+        "The visual effect cannot restore action that was hidden or outside the frame. Try a clearer recording or select another attempt."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Apple: record a video with your iPhone camera",
+        "url": "https://support.apple.com/en-euro/guide/iphone/iph61f49e4bb/ios"
+      }
+    ],
+    "workflowSteps": [
+      {
+        "title": "Locate the saved play",
+        "text": "Use your game notes to find a complete shooting sequence."
+      },
+      {
+        "title": "Select and preview",
+        "text": "Choose up to 30 seconds and check the traced ball."
+      },
+      {
+        "title": "Download the highlight",
+        "text": "Save Firework with a recognizable game and player label."
+      }
+    ],
+    "appCTA": {
+      "heading": "Give a game highlight a visible shot trail",
+      "text": "Export a short Firework clip free here. Preview Cosmic, Ice Beam and Sunset, then open the HoopCut app for more tracer effects."
+    },
+    "examples": [
+      [
+        "/videos/basketball-shot-tracer-example",
+        "Watch a HoopCut tracer demonstration",
+        "Generic HoopCut basketball footage demonstrating the tracer effect."
+      ]
+    ],
+    "demandEvidence": {
+      "source": "User-provided Semrush Organic Positions CSV",
+      "file": "homecourt.ai-organic.Positions-us-20261110-2026-11-12T10_05_16Z.csv",
+      "sourceSha256": "1704d6a140152d4a6ebf8c02062f741c553cf309f0a8d4b312af8fe6752039ef",
+      "market": "US",
+      "keyword": "basketball game recording app",
+      "records": [
+        {
+          "row": 142,
+          "Keyword": "basketball game recording app",
+          "Position": "19",
+          "Previous position": "19",
+          "Search Volume": "40",
+          "Keyword Difficulty": "",
+          "CPC": "0.00",
+          "URL": "https://www.homecourt.ai/",
+          "Traffic": "0",
+          "Traffic (%)": "0",
+          "Traffic Cost": "0.00",
+          "Competition": "0.29",
+          "Number of Results": "0",
+          "Trends": "18, 18, 18, 18, 18, 18, 18, 100, 18, 81, 81, 63",
+          "Timestamp": "2026-10-24",
+          "SERP Features by Keyword": "Reviews, Video, Video Carousel, People also ask, Related searches, AI overview",
+          "Keyword Intents": "informational, transactional",
+          "Position Type": "Organic"
+        }
+      ],
+      "note": "Original estimates and record dates retained. No search-volume summation, predicted traffic or organic results inferred."
+    },
+    "exampleEvidence": {
+      "url": "/videos/basketball-shot-tracer-example",
+      "scope": "Shared HoopCut basketball tracer demonstration; not evidence of affiliation or topic-specific footage",
+      "validation": "Shared media and uploader checked in the approved local review"
+    },
+    "reviewedBy": "Site owner approved local batch HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01 version d019251331d0",
+    "targetKeywords": [
+      "basketball game recording app"
+    ],
+    "releaseApproval": {
+      "batch_id": "HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01",
+      "review_version": "d019251331d0",
+      "approved_at": "2026-11-12T12:33:39.386317+00:00",
+      "user_instruction": "行 我抽查了OK 上线吧 上线后check下technical seo",
+      "scope": "199 reviewed keyword pages plus generated directory and sitemap integration"
+    }
+  },
+  {
+    "slug": "basketball-video-software",
+    "status": "approved",
+    "batchId": "HC-TRACER-KEYWORD-BULK-2026-11-12-01",
+    "topic": "video",
+    "intent": "basketball-video-software-guide-and-personal-video-tracer",
+    "keyword": "basketball video software",
+    "label": "Basketball video software",
+    "title": "Basketball Video Software: Add a Shot Tracer | HoopCut",
+    "description": "Choose a basketball video workflow for trimming, organizing and sharing footage. Add a shot tracer to a saved clip and export Firework free with HoopCut.",
+    "heading": "Basketball video software for a clear shot tracer highlight",
+    "intro": "Basketball video software can help with different parts of the edit: finding a play, choosing its boundaries, adding an effect or preparing a file to share. Use HoopCut here when you already have a shooting clip and want a visible trail on the basketball.",
+    "heroDetail": "Keep the source recording, select up to 30 seconds and compare the preview with the original. Export the Firework effect free, or preview other tracer styles before continuing in the HoopCut app.",
+    "toolHeading": "Try the basketball shot tracer editor",
+    "workflowHeading": "Build a short basketball edit in three steps",
+    "sampleHeading": "Watch the shot tracer before editing your clip",
+    "faqHeading": "Basketball video editing questions",
+    "examplesHeading": "Explore a basketball shot tracer example",
+    "sections": [
+      {
+        "heading": "Match basketball video software to your editing task",
+        "text": "A single traced shot needs a clear source clip and an effect preview. A multi-play reel also needs a timeline or editor for arranging separate sequences. A coaching review may need notes and access to the original footage. Check that your chosen software supports the workflow you need."
+      },
+      {
+        "heading": "Prepare a source clip that survives the handoff",
+        "text": "Find the original recording and make a working copy. Keep the release and the ball reaching the basket inside the selection; avoid starting after the shot is already in the air. If you first trim on iPhone, Apple’s Photos guide explains how to save the trimmed selection as a separate clip.",
+        "subsections": [
+          {
+            "heading": "Use filenames that describe the edit",
+            "text": "For example, combine a date, a player identifier and the source timestamp. Add a short effect label to the exported filename so you can distinguish the traced version from the original without opening both files."
+          }
+        ],
+        "steps": [
+          "Locate the original and note the start and end of your chosen play.",
+          "Keep a playable source copy before trimming or adding effects.",
+          "Check the exported file in the app where you intend to share it."
+        ]
+      },
+      {
+        "heading": "Preview a basketball tracer before the final export",
+        "text": "Upload your saved clip and select a range of up to 30 seconds. Review the trail at the beginning, through the middle of the flight and near the hoop. If the effect follows the wrong ball or loses the flight behind another player, try a clearer section. Download Firework when you are happy with the preview.",
+        "subsections": [
+          {
+            "heading": "Review the result at its viewing size",
+            "text": "A clip that looks clear on a large screen may be harder to read in a phone feed. Play the exported file on the device you expect to use and make sure the shooter, ball and finish are still recognizable."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "What part of basketball video editing does HoopCut handle here?",
+        "This web tool adds a shot tracer to a selected portion of your saved basketball video and lets you preview the result."
+      ],
+      [
+        "Can I combine several plays on this page?",
+        "The web workflow processes one selected range. Use a separate editor if your project needs a timeline containing several clips."
+      ],
+      [
+        "Which files can I try?",
+        "The upload accepts MP4, MOV and WebM, with a 512 MB maximum file size. Keep a copy of the source and confirm that its preview plays correctly."
+      ],
+      [
+        "Is the shot tracer export free?",
+        "Firework export is free for a selected clip up to 30 seconds. Cosmic, Ice Beam and Sunset are preview options here, with an app link for more effects."
+      ],
+      [
+        "Should I delete the original after editing?",
+        "Keeping the original lets you make a new selection, compare the effect with the visible ball and recover the surrounding play later."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Apple: trim a video and save a separate clip",
+        "url": "https://support.apple.com/guide/iphone/trim-video-length-adjust-speed-and-edit-audio-iph1d1344a2d/ios"
+      }
+    ],
+    "workflowSteps": [
+      {
+        "title": "Select your source play",
+        "text": "Import a saved clip and retain the unedited recording."
+      },
+      {
+        "title": "Review the visual trail",
+        "text": "Choose up to 30 seconds and inspect the traced flight."
+      },
+      {
+        "title": "Export your finished copy",
+        "text": "Download Firework and label the result for sharing."
+      }
+    ],
+    "appCTA": {
+      "heading": "Add more style to your next basketball edit",
+      "text": "Export a short Firework clip free here. Preview Cosmic, Ice Beam and Sunset, then open the HoopCut app for more tracer effects."
+    },
+    "examples": [
+      [
+        "/videos/basketball-shot-tracer-example",
+        "Watch a HoopCut tracer demonstration",
+        "Generic HoopCut basketball footage demonstrating the tracer effect."
+      ]
+    ],
+    "demandEvidence": {
+      "source": "User-provided Semrush Organic Positions CSV",
+      "file": "homecourt.ai-organic.Positions-us-20261110-2026-11-12T10_05_16Z.csv",
+      "sourceSha256": "1704d6a140152d4a6ebf8c02062f741c553cf309f0a8d4b312af8fe6752039ef",
+      "market": "US",
+      "keyword": "basketball video software",
+      "records": [
+        {
+          "row": 362,
+          "Keyword": "basketball video software",
+          "Position": "21",
+          "Previous position": "21",
+          "Search Volume": "140",
+          "Keyword Difficulty": "12",
+          "CPC": "0.00",
+          "URL": "https://www.homecourt.ai/",
+          "Traffic": "0",
+          "Traffic (%)": "0",
+          "Traffic Cost": "0.00",
+          "Competition": "0.33",
+          "Number of Results": "0",
+          "Trends": "80, 42, 66, 80, 66, 42, 42, 66, 66, 66, 80, 52",
+          "Timestamp": "2026-10-09",
+          "SERP Features by Keyword": "Reviews, Video, People also ask, Related searches, Discussions and forums, AI overview",
+          "Keyword Intents": "informational",
+          "Position Type": "Organic"
+        }
+      ],
+      "note": "Original estimates and record dates retained. No search-volume summation, predicted traffic or organic results inferred."
+    },
+    "exampleEvidence": {
+      "url": "/videos/basketball-shot-tracer-example",
+      "scope": "Shared HoopCut basketball tracer demonstration; not evidence of affiliation or topic-specific footage",
+      "validation": "Shared media and uploader checked in the approved local review"
+    },
+    "reviewedBy": "Site owner approved local batch HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01 version d019251331d0",
+    "targetKeywords": [
+      "basketball video software"
+    ],
+    "releaseApproval": {
+      "batch_id": "HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01",
+      "review_version": "d019251331d0",
+      "approved_at": "2026-11-12T12:33:39.386317+00:00",
+      "user_instruction": "行 我抽查了OK 上线吧 上线后check下technical seo",
+      "scope": "199 reviewed keyword pages plus generated directory and sitemap integration"
+    }
+  },
+  {
+    "slug": "basketball-analytics-software",
+    "status": "approved",
+    "batchId": "HC-TRACER-KEYWORD-BULK-2026-11-12-01",
+    "topic": "analytics",
+    "intent": "basketball-analytics-software-guide-and-personal-video-tracer",
+    "keyword": "basketball analytics software",
+    "label": "Basketball analytics software",
+    "title": "Basketball Analytics Software & Video Context | HoopCut",
+    "description": "Plan a useful basketball analytics workflow, keep shot records linked to footage and create a separate tracer highlight. Try HoopCut’s free Firework export.",
+    "heading": "Basketball analytics software guide: create a shot tracer highlight",
+    "intro": "Basketball analytics software is useful when a number can be traced back to the play it describes. Keep your attempt log and original footage together. For a separate sharing version, use HoopCut to add a shot tracer to a short basketball clip you already recorded.",
+    "heroDetail": "Choose up to 30 seconds, preview the visible ball trail and export Firework free. Use the original recording for checking events; the tracer is a visual effect rather than a source of shooting statistics.",
+    "toolHeading": "Create a tracer copy of a recorded shot",
+    "workflowHeading": "From a logged attempt to a sharing highlight",
+    "sampleHeading": "Preview a visual shot trail",
+    "faqHeading": "Basketball analytics and video questions",
+    "examplesHeading": "Explore a basketball shot tracer example",
+    "sections": [
+      {
+        "heading": "Define the question before choosing basketball analytics software",
+        "text": "Start with the decision your data should support. You might want to review attempts from one location, find a particular possession or compare notes from two sessions. List the fields needed for that question, such as date, player, attempt result and source timestamp. Some products measure specific aspects of a shot: HomeCourt’s official analysis FAQ describes metrics such as release time and angle. Check the documented capabilities before choosing."
+      },
+      {
+        "heading": "Keep your shot log connected to the source video",
+        "text": "Give each attempt a stable identifier and use it in both the log and your clip filenames. Record makes and misses consistently, and preserve ambiguous attempts for later review. The basketball shot chart linked below is a separate browser tool for manual logging; use it when you want to record your own observations.",
+        "subsections": [
+          {
+            "heading": "Compare like-for-like groups",
+            "text": "Write down what a group includes before calculating a percentage. Ten attempts from one session and ten highlights selected from several sessions describe different samples. Keep the selection rule with the result so another reader can interpret it."
+          }
+        ],
+        "steps": [
+          "Choose a small set of fields that you can record consistently.",
+          "Add the source filename and timestamp to each attempt.",
+          "Recheck uncertain entries against the original footage."
+        ]
+      },
+      {
+        "heading": "Make an edited highlight alongside the analysis record",
+        "text": "Once you find an attempt worth sharing, import its footage and choose up to 30 seconds. Keep enough of the play to recognize the shooter and the result. Preview the shot tracer, export Firework and retain the same attempt identifier on the edited file. That lets viewers return to the source recording when they need more context.",
+        "subsections": [
+          {
+            "heading": "Keep the overlay separate from the measurement",
+            "text": "Check counts, locations or timing against the footage and your chosen data tool. Save the tracer version as an edited copy for presentation, with any statistics taken from the record you actually verified."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Does HoopCut calculate basketball statistics on this page?",
+        "No. This tool adds a visual ball trail to a clip. Keep statistics in your chosen analytics product or manual shot log."
+      ],
+      [
+        "Can a bright trajectory show my exact release angle?",
+        "A displayed effect is not a calibrated angle measurement. Use documented measurement software when you need that metric."
+      ],
+      [
+        "What should I include in a simple attempt log?",
+        "Date, player, a consistent attempt identifier, result, source filename and timestamp give you a practical starting point for locating and checking the footage."
+      ],
+      [
+        "How do I connect a highlight to my notes?",
+        "Use the same attempt identifier in the source log, original clip and traced export. Add the effect name to the edited version."
+      ],
+      [
+        "What can I try for free here?",
+        "Upload your own footage, choose up to 30 seconds and export Firework. Review the result separately from any statistical assessment."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "HomeCourt: documented shot analysis capabilities",
+        "url": "https://www.homecourt.ai/faq/shotanalysis"
+      }
+    ],
+    "workflowSteps": [
+      {
+        "title": "Find the recorded attempt",
+        "text": "Use its identifier and timestamp to locate the source."
+      },
+      {
+        "title": "Preview a traced copy",
+        "text": "Select a clear shot and inspect the visible ball trail."
+      },
+      {
+        "title": "Save with the same ID",
+        "text": "Export Firework while retaining the original and notes."
+      }
+    ],
+    "appCTA": {
+      "heading": "Turn a recorded attempt into a sharing clip",
+      "text": "Export a short Firework clip free here. Preview Cosmic, Ice Beam and Sunset, then open the HoopCut app for more tracer effects."
+    },
+    "examples": [
+      [
+        "/videos/basketball-shot-tracer-example",
+        "Watch a HoopCut tracer demonstration",
+        "Generic HoopCut basketball footage demonstrating the tracer effect."
+      ]
+    ],
+    "demandEvidence": {
+      "source": "User-provided Semrush Organic Positions CSV",
+      "file": "homecourt.ai-organic.Positions-us-20261110-2026-11-12T10_05_16Z.csv",
+      "sourceSha256": "1704d6a140152d4a6ebf8c02062f741c553cf309f0a8d4b312af8fe6752039ef",
+      "market": "US",
+      "keyword": "basketball analytics software",
+      "records": [
+        {
+          "row": 132,
+          "Keyword": "basketball analytics software",
+          "Position": "19",
+          "Previous position": "19",
+          "Search Volume": "90",
+          "Keyword Difficulty": "29",
+          "CPC": "1.50",
+          "URL": "https://www.homecourt.ai/",
+          "Traffic": "0",
+          "Traffic (%)": "0",
+          "Traffic Cost": "0.00",
+          "Competition": "0.08",
+          "Number of Results": "0",
+          "Trends": "78, 50, 64, 100, 50, 78, 50, 78, 35, 28, 50, 28",
+          "Timestamp": "2026-10-10",
+          "SERP Features by Keyword": "Sitelinks, Reviews, Video, People also ask, Related searches, AI overview",
+          "Keyword Intents": "informational",
+          "Position Type": "Organic"
+        }
+      ],
+      "note": "Original estimates and record dates retained. No search-volume summation, predicted traffic or organic results inferred."
+    },
+    "exampleEvidence": {
+      "url": "/videos/basketball-shot-tracer-example",
+      "scope": "Shared HoopCut basketball tracer demonstration; not evidence of affiliation or topic-specific footage",
+      "validation": "Shared media and uploader checked in the approved local review"
+    },
+    "reviewedBy": "Site owner approved local batch HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01 version d019251331d0",
+    "targetKeywords": [
+      "basketball analytics platform",
+      "basketball analytics software"
+    ],
+    "releaseApproval": {
+      "batch_id": "HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01",
+      "review_version": "d019251331d0",
+      "approved_at": "2026-11-12T12:33:39.386317+00:00",
+      "user_instruction": "行 我抽查了OK 上线吧 上线后check下technical seo",
+      "scope": "199 reviewed keyword pages plus generated directory and sitemap integration"
+    }
+  },
+  {
+    "slug": "3-point-shootout-rules",
+    "status": "approved",
+    "batchId": "HC-TRACER-KEYWORD-BULK-2026-11-12-01",
+    "topic": "rules",
+    "intent": "3-point-shootout-rules-guide-and-personal-video-tracer",
+    "keyword": "3 point shootout rules",
+    "label": "3-point shootout rules",
+    "title": "3-Point Shootout Rules & Traced Basketball Clips | HoopCut",
+    "description": "Understand a dated NBA 3-point shootout format, write down your own contest rules and add a shot tracer to a recorded attempt. Export Firework free with HoopCut.",
+    "heading": "3-point shootout rules and shot tracer highlights",
+    "intro": "Check the rules for the three-point shootout you are playing before recording. The NBA’s 2026 contest is one published format; your local event may use another. Keep the complete round for scoring, then use HoopCut to create a short tracer clip of one attempt.",
+    "heroDetail": "Upload your own saved footage, include the shooting location and basket, and select up to 30 seconds. Preview the trail and export Firework free, with your round’s format explained in the caption you write.",
+    "toolHeading": "Add a tracer to a shootout attempt",
+    "workflowHeading": "From contest recording to traced shot",
+    "sampleHeading": "See the ball trail on sample basketball footage",
+    "faqHeading": "Three-point shootout and tracer questions",
+    "examplesHeading": "Explore a basketball shot tracer example",
+    "sections": [
+      {
+        "heading": "A published example: the NBA 2026 three-point contest",
+        "text": "The official 2026 rules gave each shooter 70 seconds for 27 balls. Four racks held four one-point balls and a two-point money ball; the fifth held five two-point balls. Two additional blue balls were worth three points each. The possible total was 40. The three highest first-round scores advanced to the final. This is a dated NBA contest format, not a universal rule for every shooting challenge."
+      },
+      {
+        "heading": "Write a complete rule sheet for your own shootout",
+        "text": "Agree on your format before starting. Decide how many positions and attempts you will use, which balls are worth extra points, when the clock starts and what happens in a tie. Give everyone the same sheet and keep it beside the score record. Refer to the official event document when reproducing a particular competition.",
+        "subsections": [
+          {
+            "heading": "Keep attempt order visible in the recording",
+            "text": "Frame the shooting positions and retain the continuous round, even if you later share just one make. Number the attempts in your notes so a short export can be matched back to the correct place in the sequence."
+          }
+        ],
+        "steps": [
+          "Record the event or house-rule version and its date.",
+          "List timing, scoring, attempt order and tiebreak procedure.",
+          "Save the full-round file with the score sheet."
+        ]
+      },
+      {
+        "heading": "Add a shot tracer to one shootout highlight",
+        "text": "Choose an attempt with the release and hoop clearly visible. Keep the location recognizable so the clip makes sense alongside your scoring notes. Select up to 30 seconds in the tool, inspect the trail and export Firework. When sharing, describe the format you actually played rather than borrowing a score label from another event.",
+        "subsections": [
+          {
+            "heading": "Keep the round and highlight as separate files",
+            "text": "An edited clip can draw attention to one ball flight, while the complete recording preserves the sequence. Give both files the same round identifier and add the attempt number to the highlight."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Does every 3-point shootout use NBA contest rules?",
+        "No. Check the organizer’s published format or agree on a written format with the people playing."
+      ],
+      [
+        "Are contest points the same as a normal game basket?",
+        "A shootout assigns points according to its own format. Use the playing rules for a regulation game and the event rules for a contest."
+      ],
+      [
+        "Where can I check the NBA example on this page?",
+        "The source below is the official 2026 State Farm 3-Point Contest rules PDF. Check a newer event’s document when following a different year."
+      ],
+      [
+        "Can HoopCut keep score or decide a disputed attempt?",
+        "No. The tool adds a visual shot trail. Retain your score sheet and complete original footage for any scoring review."
+      ],
+      [
+        "Can I export the complete shootout?",
+        "The web tool processes up to 30 seconds at a time. Keep the full round and choose an individual sequence for the tracer highlight."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "NBA: official 2026 State Farm 3-Point Contest rules (PDF)",
+        "url": "https://pr.nba.com/wp-content/uploads/sites/46/2026/02/2026-State-Farm-3-Point-Contest-Rules.pdf"
+      }
+    ],
+    "workflowSteps": [
+      {
+        "title": "Choose a recorded attempt",
+        "text": "Keep its place in the complete round and score notes."
+      },
+      {
+        "title": "Trace the visible shot",
+        "text": "Select a short range with the location and hoop visible."
+      },
+      {
+        "title": "Export the highlight",
+        "text": "Save Firework and describe the contest format when sharing."
+      }
+    ],
+    "appCTA": {
+      "heading": "Give your shooting challenge a traced highlight",
+      "text": "Export a short Firework clip free here. Preview Cosmic, Ice Beam and Sunset, then open the HoopCut app for more tracer effects."
+    },
+    "examples": [
+      [
+        "/videos/basketball-shot-tracer-example",
+        "Watch a HoopCut tracer demonstration",
+        "Generic HoopCut basketball footage demonstrating the tracer effect."
+      ]
+    ],
+    "demandEvidence": {
+      "source": "User-provided Semrush Organic Positions CSV",
+      "file": "homecourt.ai-organic.Positions-us-20261110-2026-11-12T10_05_16Z.csv",
+      "sourceSha256": "1704d6a140152d4a6ebf8c02062f741c553cf309f0a8d4b312af8fe6752039ef",
+      "market": "US",
+      "keyword": "3 point shootout rules",
+      "records": [
+        {
+          "row": 240,
+          "Keyword": "3 point shootout rules",
+          "Position": "22",
+          "Previous position": "22",
+          "Search Volume": "110",
+          "Keyword Difficulty": "26",
+          "CPC": "0.00",
+          "URL": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "Traffic": "0",
+          "Traffic (%)": "0",
+          "Traffic Cost": "0.00",
+          "Competition": "0.33",
+          "Number of Results": "119",
+          "Trends": "1, 1, 1, 1, 2, 2, 45, 4, 2, 2, 1, 4",
+          "Timestamp": "2026-09-27",
+          "SERP Features by Keyword": "Sitelinks, Video, People also ask, AI overview",
+          "Keyword Intents": "informational",
+          "Position Type": "Organic"
+        }
+      ],
+      "note": "Original estimates and record dates retained. No search-volume summation, predicted traffic or organic results inferred."
+    },
+    "exampleEvidence": {
+      "url": "/videos/basketball-shot-tracer-example",
+      "scope": "Shared HoopCut basketball tracer demonstration; not evidence of affiliation or topic-specific footage",
+      "validation": "Shared media and uploader checked in the approved local review"
+    },
+    "reviewedBy": "Site owner approved local batch HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01 version d019251331d0",
+    "targetKeywords": [
+      "3 point shootout rules"
+    ],
+    "releaseApproval": {
+      "batch_id": "HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01",
+      "review_version": "d019251331d0",
+      "approved_at": "2026-11-12T12:33:39.386317+00:00",
+      "user_instruction": "行 我抽查了OK 上线吧 上线后check下technical seo",
+      "scope": "199 reviewed keyword pages plus generated directory and sitemap integration"
+    }
+  },
+  {
+    "slug": "how-many-points-is-a-full-court-shot",
+    "status": "approved",
+    "batchId": "HC-TRACER-KEYWORD-BULK-2026-11-12-01",
+    "topic": "rules",
+    "intent": "how-many-points-is-a-full-court-shot-guide-and-personal-video-tracer",
+    "keyword": "how many points is a full court shot",
+    "label": "Full-court shot points",
+    "title": "How Many Points Is a Full-Court Shot? | HoopCut",
+    "description": "Learn how a legal full-court shot is scored under NBA rules, keep the play’s context and add a shot tracer to your own recorded attempt with HoopCut.",
+    "heading": "How many points is a full-court shot? Trace the play after checking the rule",
+    "intro": "Under NBA rules, a legal made full-court field goal at the basket your team is attacking is worth three points. Extra distance does not add a bonus. Use HoopCut to add a tracer to your own recorded attempt while keeping the original.",
+    "heroDetail": "Keep the shooter, release and basket visible in the source. Select up to 30 seconds and check the effect along the ball’s flight. Export Firework free when the preview follows the intended shot.",
+    "toolHeading": "Add a tracer to your long-range basketball clip",
+    "workflowHeading": "From a long-range attempt to a traced copy",
+    "sampleHeading": "Preview a basketball shot tracer example",
+    "faqHeading": "Full-court scoring and video questions",
+    "examplesHeading": "Explore a basketball shot tracer example",
+    "sections": [
+      {
+        "heading": "Full-court shot scoring under NBA playing rules",
+        "text": "NBA Rule 5 values a legal made field goal outside the offensive three-point line at three points. The distance beyond that line does not create a four-point or five-point basket. A long attempt still has to be legal and count as a field goal. A special exhibition or local shooting contest may set different point values, so identify the rule set before labeling the clip."
+      },
+      {
+        "heading": "Keep the release and result in your recording",
+        "text": "A long flight may move far beyond a camera view chosen only for the shooter. Check that your view includes the release, ball flight and far basket. Keep the full original sequence. If the video is being used to discuss a live-game call, retain any available clock and surrounding action as well.",
+        "subsections": [
+          {
+            "heading": "Separate what is visible from what you infer",
+            "text": "Write down which details the recording actually shows. If the release, foot position or clock is out of view, preserve that uncertainty in your description rather than treating the edited highlight as proof of the missing detail."
+          }
+        ],
+        "steps": [
+          "Identify whether the clip comes from a game, practice or contest.",
+          "Keep the complete attempt and any visible timing context.",
+          "Note the source timestamp before creating a short copy."
+        ]
+      },
+      {
+        "heading": "Use a tracer to highlight a visible long-range flight",
+        "text": "Import your saved basketball clip and select up to 30 seconds. Follow the preview from release through the middle of the flight to the basket. A distant ball can become small, blurred or hidden, so choose another recording if the trail does not follow it clearly. The shared sample shows the effect on ordinary basketball footage; it is not evidence of a full-court make.",
+        "subsections": [
+          {
+            "heading": "Describe the attempt accurately when sharing",
+            "text": "Pair the edited file with a caption that identifies the session and the outcome visible in the original. Keep the original linked in your own notes to retain the surrounding play."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Is a made full-court shot worth four points in the NBA?",
+        "No. A legal made field goal from that distance is worth three points under NBA Rule 5."
+      ],
+      [
+        "Does this answer cover every basketball competition?",
+        "This page states the NBA rule. Check the rules for your own league, exhibition or shooting challenge before applying a point value."
+      ],
+      [
+        "Can the tracer confirm whether the basket should count?",
+        "No. It adds a visual trail. It does not officiate timing, foot position, violations or scoring."
+      ],
+      [
+        "What if the ball disappears halfway through the clip?",
+        "Try a clearer source angle or another attempt. A tracer cannot recover a reliable view of a ball that is missing from the recording."
+      ],
+      [
+        "Can I try the effect on a shorter shot?",
+        "Yes. Upload your own clear basketball recording, choose up to 30 seconds and preview or export Firework free."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "NBA Rule 5: scoring and timing",
+        "url": "https://official.nba.com/rule-no-5-scoring-and-timing/"
+      }
+    ],
+    "workflowSteps": [
+      {
+        "title": "Choose a complete attempt",
+        "text": "Keep the release and far basket in the selected sequence."
+      },
+      {
+        "title": "Inspect the full flight",
+        "text": "Check the preview while the ball travels across the frame."
+      },
+      {
+        "title": "Save an edited copy",
+        "text": "Export Firework and retain the original play for context."
+      }
+    ],
+    "appCTA": {
+      "heading": "Make your next clear shot easier to follow",
+      "text": "Export a short Firework clip free here. Preview Cosmic, Ice Beam and Sunset, then open the HoopCut app for more tracer effects."
+    },
+    "examples": [
+      [
+        "/videos/basketball-shot-tracer-example",
+        "Watch a HoopCut tracer demonstration",
+        "Generic HoopCut basketball footage demonstrating the tracer effect."
+      ]
+    ],
+    "demandEvidence": {
+      "source": "User-provided Semrush Organic Positions CSV",
+      "file": "homecourt.ai-organic.Positions-us-20261110-2026-11-12T10_05_16Z.csv",
+      "sourceSha256": "1704d6a140152d4a6ebf8c02062f741c553cf309f0a8d4b312af8fe6752039ef",
+      "market": "US",
+      "keyword": "how many points is a full court shot",
+      "records": [
+        {
+          "row": 113,
+          "Keyword": "how many points is a full court shot",
+          "Position": "23",
+          "Previous position": "23",
+          "Search Volume": "140",
+          "Keyword Difficulty": "22",
+          "CPC": "0.00",
+          "URL": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+          "Traffic": "0",
+          "Traffic (%)": "0",
+          "Traffic Cost": "0.00",
+          "Competition": "0.33",
+          "Number of Results": "107",
+          "Trends": "2, 2, 4, 5, 13, 8, 7, 5, 5, 5, 8, 3",
+          "Timestamp": "2026-09-27",
+          "SERP Features by Keyword": "Video, People also ask, Related searches, AI overview",
+          "Keyword Intents": "informational",
+          "Position Type": "Organic"
+        }
+      ],
+      "note": "Original estimates and record dates retained. No search-volume summation, predicted traffic or organic results inferred."
+    },
+    "exampleEvidence": {
+      "url": "/videos/basketball-shot-tracer-example",
+      "scope": "Shared HoopCut basketball tracer demonstration; not evidence of affiliation or topic-specific footage",
+      "validation": "Shared media and uploader checked in the approved local review"
+    },
+    "reviewedBy": "Site owner approved local batch HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01 version d019251331d0",
+    "targetKeywords": [
+      "how many points is a full court shot",
+      "how many points is a full court shot in basketball"
+    ],
+    "releaseApproval": {
+      "batch_id": "HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01",
+      "review_version": "d019251331d0",
+      "approved_at": "2026-11-12T12:33:39.386317+00:00",
+      "user_instruction": "行 我抽查了OK 上线吧 上线后check下technical seo",
+      "scope": "199 reviewed keyword pages plus generated directory and sitemap integration"
+    }
+  }
+]
