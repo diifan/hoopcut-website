@@ -37,6 +37,23 @@ let uploadRequest=null;let activeUpload=null;let hoopId=null,hoopRange='',choice
 const hoopPanel=document.createElement('section');hoopPanel.id='hoop-panel';hoopPanel.hidden=true;
 hoopPanel.innerHTML='<h2>Choose your hoop</h2><p>Tap your hoop, then confirm. Try another frame if needed.</p><div class="hoop-frame"><canvas id="hoop-canvas"></canvas><div id="hoop-boxes"></div></div><p id="hoop-frame-label"></p><button id="hoop-next" class="text-button">Next frame</button> <button id="hoop-confirm" class="primary" disabled>Confirm hoop</button> <button id="hoop-cancel" class="text-button">Cancel</button>';
 $('editor').append(hoopPanel);
+function resetToUpload(){
+ epoch++;choiceEpoch++;activeUpload?.abort();activeUpload=null;previewController?.abort();
+ busy=false;ready=false;cleanExport();const preview=$('preview');preview.pause();preview.removeAttribute('src');preview.load();
+ if(localURL)URL.revokeObjectURL(localURL);localURL=null;
+ file=null;job=null;uploadRequest=null;hoopId=null;hoopRange='';duration=0;start=0;end=0;lastAction='upload';phase='idle';
+ $('editor').classList.remove('choosing-hoop');$('editor').hidden=true;$('import-panel').hidden=false;
+ for(const id of ['hoop-panel','trim-panel','effects','retry','status-panel'])$(id).hidden=true;
+ $('video-file').value='';$('step1').classList.add('active');$('step2').classList.remove('active');$('step3').classList.remove('active');
+ actions();$('import-panel').scrollIntoView?.({block:'start',behavior:'smooth'});
+}
+async function cancelToUpload(){
+ const id=job;resetToUpload();const cancelledEpoch=epoch;
+ try{if(id)await rpc('cancel',id);}catch{
+  // Never restore a cancelled editor or affect a subsequent upload.
+  if(epoch===cancelledEpoch){message('Upload cancelled. Server cancellation could not be confirmed.');}
+ }
+}
 async function showHoops(selection){
  const run=++choiceEpoch,choices=selection?.candidates||[],frames=[...new Set(choices.map(c=>c.frame))];let index=0,picked=null;
  $('effects').hidden=true;$('hoop-panel').hidden=false;$('editor').classList.add('choosing-hoop');$('retry').hidden=true;$('hoop-confirm').disabled=true;
@@ -60,7 +77,7 @@ async function showHoops(selection){
  }
  $('hoop-next').onclick=()=>{if(selection.partial){hoopId=null;++choiceEpoch;process();return;}index=(index+1)%frames.length;draw().catch(failure);};
  $('hoop-confirm').onclick=()=>{if(!picked)return;hoopId=picked.id;choiceEpoch++;process();};
- $('hoop-cancel').onclick=async()=>{choiceEpoch++;if(selection.overlap_state==='waiting'){try{await rpc('cancel',job);}catch(e){failure(e);return;}}$('hoop-panel').hidden=true;$('editor').classList.remove('choosing-hoop');message('Selection cancelled. Retry to choose again, or change video.');$('retry').hidden=false;};
+ $('hoop-cancel').onclick=cancelToUpload;
  await draw();
 }
 
@@ -118,7 +135,7 @@ $('trim-slider').oninput=()=>{$('trim-start').value=$('trim-slider').value;$('tr
 $('preview').ontimeupdate=()=>{if(!$('trim-panel').hidden&&$('preview').currentTime>=end)$('preview').pause();};
 $('apply-trim').onclick=process;document.querySelectorAll('[data-effect]').forEach(b=>b.onclick=()=>{if(!busy&&effect!==b.dataset.effect){effect=b.dataset.effect;process();}});
 $('edit-trim').onclick=()=>{if(busy||!job)return;$('preview').src=localURL;$('trim-panel').hidden=false;$('edit-trim').hidden=true;$('retry').hidden=true;updateTrim();actions();};
-$('cancel-job').onclick=async()=>{const id=job;epoch++;activeUpload?.abort();previewController?.abort();busy=false;ready=false;try{if(id)await rpc('cancel',id);message('Cancelled. You can import another video.');}catch{message('Cancellation could not be confirmed. Please retry.');}$('retry').hidden=true;actions();};
+$('cancel-job').onclick=cancelToUpload;
 $('retry').onclick=()=>lastAction==='upload'?upload():process();
 $('export').onclick=async()=>{if(!ready||effect!=='firework')return;$('export').disabled=true;message('Preparing your download…');try{if(!exportBlob){const signed=await rpc('download',job);exportURL=signed.url;}$('complete').hidden=false;$('actions').hidden=true;message('Export complete.');$('step2').classList.remove('active');$('step3').classList.add('active');}catch(e){message(e.message);$('export').disabled=false;}};
 $('download').onclick=()=>{const a=document.createElement('a');a.href=exportURL;a.download='HoopCut-Firework.mp4';a.target='_blank';a.rel='noopener';a.click();$('after-download').hidden=false;};

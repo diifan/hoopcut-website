@@ -22,7 +22,7 @@ const hoopsSource=source.slice(source.indexOf('async function showHoops('),sourc
 async function selectionScenario(partial,overlapState=null){
  const elements={},calls=[];
  const make=()=>({hidden:false,disabled:false,style:{},children:[],classList:{add(){},remove(){}},setAttribute(){},replaceChildren(){this.children=[]},append(b){this.children.push(b)},querySelectorAll(){return this.children},getContext:()=>({drawImage(){},strokeRect(){}})});
- const c={job:'fixture',rpc:async(action,id)=>calls.push({action,id}),choiceEpoch:0,hoopId:null,start:0,localURL:'blob:fixture',$:id=>elements[id]??=make(),document:{createElement:make},message(){},failure(e){throw e},process:()=>calls.push({hoopId:c.hoopId}),Math,Number,Array,JSON,Error,Promise,setTimeout,clearTimeout};
+ const c={cancelToUpload:async()=>{calls.push({action:'cancel',id:'fixture'});elements['hoop-panel'].hidden=true;},job:'fixture',rpc:async(action,id)=>calls.push({action,id}),choiceEpoch:0,hoopId:null,start:0,localURL:'blob:fixture',$:id=>elements[id]??=make(),document:{createElement:make},message(){},failure(e){throw e},process:()=>calls.push({hoopId:c.hoopId}),Math,Number,Array,JSON,Error,Promise,setTimeout,clearTimeout};
  Object.assign(c.$('preview'),{pause(){},src:'blob:fixture',readyState:4,currentTime:0,videoWidth:720,videoHeight:1280});
  vm.createContext(c);vm.runInContext(hoopsSource,c);
  await c.showHoops({partial,overlap_state:overlapState,candidates:[{id:'detected-one',frame:0,box:[.1,.2,.1,.1]}]});
@@ -52,7 +52,17 @@ test('cancel live choice requests cancellation of processing task',async()=>{
  const x=await selectionScenario(true,'waiting');await x.elements['hoop-cancel'].onclick();
  assert.deepEqual(x.calls,[{action:'cancel',id:'fixture'}]);assert.equal(x.elements['hoop-panel'].hidden,true);
 });
-test('cancel completed preflight remains local and keeps retry available',async()=>{
+test('cancel completed preflight also returns to upload',async()=>{
  const x=await selectionScenario(true);await x.elements['hoop-cancel'].onclick();
- assert.equal(x.calls.length,0);assert.equal(x.elements['retry'].hidden,false);
+ assert.deepEqual(x.calls,[{action:'cancel',id:'fixture'}]);assert.equal(x.elements['hoop-panel'].hidden,true);
+});
+
+const resetSource=source.slice(source.indexOf('function resetToUpload()'),source.indexOf('async function showHoops('));
+for(const reject of [false,true])test('cancel resets upload immediately, server rejection '+reject,async()=>{
+ const elements={};let aborts=0,revoked=[],resolve;
+ const c={epoch:4,choiceEpoch:1,activeUpload:{abort(){aborts++}},previewController:{abort(){aborts++}},busy:true,ready:true,localURL:'blob:input',file:{},job:'fixture',uploadRequest:{},hoopId:'old',hoopRange:'old',duration:30,start:0,end:30,lastAction:'process',phase:'selection',
+ $:id=>elements[id]??={hidden:false,value:'old',classList:{add(){},remove(){}},pause(){},removeAttribute(){},load(){},scrollIntoView(){}},cleanExport(){},actions(){},message(){},URL:{revokeObjectURL:v=>revoked.push(v)},rpc:()=>new Promise((yes,no)=>{resolve=()=>reject?no(Error('offline')):yes({});})};
+ vm.createContext(c);vm.runInContext(resetSource,c);const pending=c.cancelToUpload();
+ assert.equal(elements.editor.hidden,true);assert.equal(elements['import-panel'].hidden,false);assert.equal(elements['video-file'].value,'');assert.equal(c.job,null);assert.equal(c.uploadRequest,null);assert.equal(c.busy,false);assert.equal(aborts,2);assert.deepEqual(revoked,['blob:input']);
+ resolve();await pending;assert.equal(elements.editor.hidden,true);
 });
