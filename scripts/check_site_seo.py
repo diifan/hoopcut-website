@@ -41,9 +41,8 @@ def check(http=False):
     homecourt_urls={BASE+'/homecourt'}|{BASE+'/homecourt/'+p['slug'] for p in json.loads((ROOT/'content/homecourt/pages.json').read_text())['pages']}
     assert homecourt_urls.issubset(set(urls))
     assert BASE+'/shot-tracer' in urls
-    from build_shot_tracer import route, directory_path, PAGE_SIZE, validate
-    tracer_pages=json.loads((ROOT/'content/shot-tracer/pages.json').read_text())
-    validate(tracer_pages)
+    from build_shot_tracer import route, directory_path, PAGE_SIZE, load_pages
+    tracer_pages=load_pages(ROOT)
     approved=[p for p in tracer_pages if p['status']=='approved']
     scene_count=sum(bool(p['slug']) for p in approved)
     tracer_urls={BASE+route(p) for p in approved}|{BASE+directory_path(n) for n in range(1,(scene_count+PAGE_SIZE-1)//PAGE_SIZE+1)}

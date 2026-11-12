@@ -127,5 +127,393 @@
     "demandEvidence": null,
     "exampleEvidence": null,
     "reviewedBy": null
+  },
+  {
+    "slug": "home-court-basketball-training-app",
+    "status": "approved",
+    "intent": "homecourt-training-app-and-personal-video-tracer",
+    "keyword": "home court basketball training app",
+    "label": "HomeCourt training app",
+    "title": "HomeCourt Basketball Training App & Video Tracer Guide | HoopCut",
+    "description": "Learn what the HomeCourt basketball training app does, then add a tracer to your own recorded basketball clip with HoopCut's free Firework web export.",
+    "heading": "HomeCourt basketball training app: add a shot tracer to your video",
+    "intro": "Looking for the HomeCourt basketball training app? Learn how its training focus fits alongside your own practice recordings. When you have a clear basketball clip saved on your device, use HoopCut here to add a visible shot tracer and turn one attempt into a short video to share.",
+    "heroDetail": "Choose up to 30 seconds from your footage, keep the release and hoop visible, and compare the traced result with the original. Export Firework free or preview more effects before opening the app.",
+    "toolHeading": "Add a shot tracer to your practice video",
+    "workflowHeading": "Turn a practice recording into a traced clip",
+    "sampleHeading": "Preview the basketball shot tracer effect",
+    "faqHeading": "HomeCourt training and basketball video questions",
+    "examplesHeading": "More basketball tracer examples",
+    "sections": [
+      {
+        "heading": "What the HomeCourt basketball training app offers",
+        "text": "HomeCourt describes camera-based shooting activities, ball-handling workouts and training feedback on its official website. Its setup guidance covers device positioning for different activities. Start with its official information when choosing a workout or checking membership and device requirements. Once you have a practice video saved on your device, the HoopCut tool here lets you add a visible trail to a selected basketball shot."
+      },
+      {
+        "heading": "Prepare your practice footage for a shot tracer",
+        "text": "Choose a saved video with the shooter, basketball and hoop visible. A steady camera and a clear view above the rim help you follow the entire flight. Leave a little footage before the release and after the finish. Keep the original recording alongside your edited copy so you can compare the visible ball with the added trail.",
+        "steps": [
+          "Choose one clear attempt or a short sequence from your own footage.",
+          "Select up to 30 seconds, including the release and the finish.",
+          "Review whether the tracer follows the visible basketball before saving."
+        ],
+        "subsections": [
+          {
+            "heading": "Choose one complete shooting attempt",
+            "text": "Look for an attempt with an unobstructed flight. If another ball enters the frame, check that the preview follows the shot you intended to show."
+          }
+        ]
+      },
+      {
+        "heading": "Share a traced moment from basketball training",
+        "text": "A ball trail makes the flight easier to follow when you share a practice clip. Choose one attempt with a clear release and finish, then watch the preview at the size friends will see on their phones. Use a different attempt if a player hides the ball. Export Firework free, or compare Cosmic, Ice Beam and Sunset previews before opening the app for more effects.",
+        "subsections": [
+          {
+            "heading": "Keep your practice clip easy to identify",
+            "text": "Save the edited video with the practice date or a short description. Keep the original nearby so you can find that attempt again when sharing your session."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "Where can I find HomeCourt setup instructions?",
+        "Follow the official HomeCourt website linked below for its current camera setup, device and workout information."
+      ],
+      [
+        "Does this tool connect to HomeCourt or track workout results?",
+        "No. HoopCut works with a recording you upload and adds a visual trail. HomeCourt integration, shooting statistics and coaching assessments are outside this workflow."
+      ],
+      [
+        "What footage should I choose?",
+        "Start with a steady recording that shows the release, full ball flight and hoop. Include a short lead-in and the result of the shot."
+      ],
+      [
+        "What can I export for free?",
+        "You can select up to 30 seconds and export the Firework effect free. Cosmic, Ice Beam and Sunset are previews here; more effects are available through the app."
+      ],
+      [
+        "Why does a trail look incomplete?",
+        "A moving camera, motion blur or another player hiding the ball can interrupt the trace. Try a clearer attempt and compare the preview with the source."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "HomeCourt: official training app information",
+        "url": "https://www.homecourt.ai/"
+      }
+    ],
+    "workflowSteps": [
+      {
+        "title": "Choose a practice shot",
+        "text": "Choose a basketball video already saved on your device."
+      },
+      {
+        "title": "Preview the shot trail",
+        "text": "Choose up to 30 seconds and check the trail against the ball."
+      },
+      {
+        "title": "Save your traced attempt",
+        "text": "Save the free effect, or open HoopCut for more effects."
+      }
+    ],
+    "appCTA": {
+      "heading": "Keep editing your basketball videos",
+      "text": "Preview the available tracer styles here. Export Firework free on the web, or open the HoopCut app to unlock more effects."
+    },
+    "note": "HoopCut is independent of HomeCourt.",
+    "examples": [
+      [
+        "/videos/basketball-shot-tracer-example",
+        "Watch a HoopCut tracer demonstration",
+        "Generic HoopCut basketball footage demonstrating the tracer effect."
+      ]
+    ],
+    "demandEvidence": {
+      "source": "User-provided Semrush Organic Positions CSV",
+      "file": "homecourt.ai-organic.Positions-us-20261110-2026-11-12T10_05_16Z.csv",
+      "market": "US",
+      "keyword": "home court basketball training app",
+      "searchVolume": 170,
+      "keywordDifficulty": 19,
+      "position": 1,
+      "positionType": "Organic",
+      "competitorUrl": "https://www.homecourt.ai/",
+      "dataTimestamp": "2026-09-06",
+      "note": "Values are from the supplied ranking record, not HoopCut traffic or a growth forecast."
+    },
+    "exampleEvidence": {
+      "url": "/videos/basketball-shot-tracer-example",
+      "scope": "Shared HoopCut basketball tracer demonstration; not evidence of affiliation or topic-specific footage",
+      "validation": "Shared media and uploader checked in the approved local review"
+    },
+    "reviewedBy": "Site owner approved local batch HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01 version d019251331d0",
+    "releaseApproval": {
+      "batch_id": "HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01",
+      "review_version": "d019251331d0",
+      "approved_at": "2026-11-12T12:33:39.386317+00:00",
+      "user_instruction": "行 我抽查了OK 上线吧 上线后check下technical seo",
+      "scope": "199 reviewed keyword pages plus generated directory and sitemap integration"
+    }
+  },
+  {
+    "slug": "hot-shot-basketball",
+    "status": "approved",
+    "intent": "hot-shot-basketball-rules-and-recorded-shot-tracer",
+    "keyword": "hot shot basketball",
+    "label": "Hot Shot basketball",
+    "title": "Hot Shot Basketball: Rules and Shot Tracer Clips | HoopCut",
+    "description": "Check which Hot Shot basketball rules apply to your challenge, then add a tracer to a recorded attempt and export a short Firework clip free with HoopCut.",
+    "heading": "Hot Shot basketball: add a tracer to your challenge video",
+    "intro": "Record your Hot Shot basketball attempt, then make the ball's flight easier to follow with a shot tracer. Use the rules guide below to identify your challenge format and the HoopCut tool to create a short, traced version of a video you already have.",
+    "heroDetail": "Select a shot with the scoring location and basket in view. Preview up to 30 seconds, export Firework free, and keep the full round alongside your edited highlight for timing and score context.",
+    "toolHeading": "Add a shot tracer to a Hot Shot basketball clip",
+    "workflowHeading": "Create a traced clip from your shooting challenge",
+    "sampleHeading": "See the tracer effect before uploading",
+    "faqHeading": "Hot Shot basketball and tracer questions",
+    "examplesHeading": "Explore more traced basketball clips",
+    "sections": [
+      {
+        "heading": "Which Hot Shot basketball rules are you using?",
+        "text": "Use your organizer's rules for the version you are playing. As a historical example, HomeCourt's NBA HotShot contest ended on January 9, 2020. It allowed one minute, one ball and no rebounder assistance. Made shots scored 3 points from either baseline location, 4 from either elbow and 5 from the top of the three-point arc. Players could attempt at most two layups, worth 2 points each when made. Making a shot from each of the five hot spots earned a 5-point bonus for each completed set. These values belong to that historical version."
+      },
+      {
+        "heading": "Record your shooting locations and score",
+        "text": "For a practice challenge with friends, agree on the format before the first attempt. Write down the locations, point values and any bonus so everyone uses the same scoring sheet. Keep a full-round recording to review the order of attempts and the timer, then select a favorite shot for a separate traced clip.",
+        "steps": [
+          "Confirm shooting locations, point values and the time limit.",
+          "Agree whether rebounds, layups and bonus points are part of the format.",
+          "Keep a separate score record and retain the complete original round."
+        ],
+        "subsections": [
+          {
+            "heading": "Keep the clock with the complete round",
+            "text": "Retain the full recording and any timer or score notes together. This gives your short highlight a reference point when friends ask about the rest of the round."
+          }
+        ]
+      },
+      {
+        "heading": "Add a tracer to a Hot Shot attempt",
+        "text": "Select an attempt with the ball visible from release to basket. Include enough of the approach for viewers to recognize the shooting location, and leave the finish in frame. Choose up to 30 seconds, preview the trace and export Firework free. When sharing, add your round's rules or scoring notes in the caption so friends understand the challenge.",
+        "subsections": [
+          {
+            "heading": "Show the shooting spot and the finish",
+            "text": "Begin the excerpt before the release, with enough of the court visible to explain the attempt. Keep the ball reaching the basket in the selected range."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "How should I record a Hot Shot round?",
+        "Keep the shooting locations and basket in view, record the full round and save your timer and score notes alongside the original video."
+      ],
+      [
+        "Are all Hot Shot basketball games scored the same way?",
+        "Use the rules for the version you are playing. For an informal session, agree on locations, timing and scoring before recording."
+      ],
+      [
+        "Can HoopCut count points or validate my score?",
+        "No. The tool adds a visual trail to your footage. It does not score a round, verify eligibility or submit a competition entry."
+      ],
+      [
+        "Can I export an entire one-minute round here?",
+        "The web tool processes a selected range of up to 30 seconds. Keep the full round separately and choose a short excerpt for the tracer."
+      ],
+      [
+        "Which tracer effect is free?",
+        "Firework can be exported free on the web. You can preview Cosmic, Ice Beam and Sunset here, then open the app for more effects."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "HomeCourt NBA HotShot rules: historical contest ending January 9, 2020",
+        "url": "https://www.homecourt.ai/hotshot-contest-rules-nba"
+      }
+    ],
+    "workflowSteps": [
+      {
+        "title": "Choose a Hot Shot attempt",
+        "text": "Upload your own recording and keep the full round separately."
+      },
+      {
+        "title": "Trace release to basket",
+        "text": "Select up to 30 seconds with the release and hoop visible."
+      },
+      {
+        "title": "Save your challenge clip",
+        "text": "Export Firework free and add your own challenge context when sharing."
+      }
+    ],
+    "appCTA": {
+      "heading": "Add a tracer to your next basketball clip",
+      "text": "Export a short Firework clip free here. Open the HoopCut app when you want to unlock more tracer effects for your footage."
+    },
+    "note": "HoopCut provides an independent video-editing tool for your own basketball footage.",
+    "examples": [
+      [
+        "/videos/basketball-shot-tracer-example",
+        "Watch a HoopCut tracer demonstration",
+        "Generic HoopCut basketball footage demonstrating the tracer effect."
+      ]
+    ],
+    "demandEvidence": {
+      "source": "User-provided Semrush Organic Positions CSV",
+      "file": "homecourt.ai-organic.Positions-us-20261110-2026-11-12T10_05_16Z.csv",
+      "market": "US",
+      "keyword": "hot shot basketball",
+      "searchVolume": 480,
+      "keywordDifficulty": 8,
+      "position": 6,
+      "positionType": "Organic",
+      "competitorUrl": "https://www.homecourt.ai/hotshot-contest-rules-nba",
+      "dataTimestamp": "2026-10-17",
+      "note": "Values are from the supplied ranking record, not HoopCut traffic or a growth forecast."
+    },
+    "exampleEvidence": {
+      "url": "/videos/basketball-shot-tracer-example",
+      "scope": "Shared HoopCut basketball tracer demonstration; not evidence of affiliation or topic-specific footage",
+      "validation": "Shared media and uploader checked in the approved local review"
+    },
+    "reviewedBy": "Site owner approved local batch HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01 version d019251331d0",
+    "releaseApproval": {
+      "batch_id": "HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01",
+      "review_version": "d019251331d0",
+      "approved_at": "2026-11-12T12:33:39.386317+00:00",
+      "user_instruction": "行 我抽查了OK 上线吧 上线后check下technical seo",
+      "scope": "199 reviewed keyword pages plus generated directory and sitemap integration"
+    }
+  },
+  {
+    "slug": "nba-scout",
+    "status": "approved",
+    "intent": "nba-scout-information-and-personal-video-context",
+    "keyword": "nba scout",
+    "label": "NBA scout and video",
+    "title": "NBA Scout Guide & Basketball Video Tracer | HoopCut",
+    "description": "Learn what an NBA scout does, organize your basketball footage and add a tracer to a short clip. Preview styles and export HoopCut's Firework effect free.",
+    "heading": "NBA scout guide: add a tracer to your basketball video",
+    "intro": "Exploring what an NBA scout does while preparing your basketball footage? Start with a clear recording and useful context. This guide pairs official scouting information with a practical video-editing step: adding a shot tracer to a short copy of your own basketball clip.",
+    "heroDetail": "Keep the original recording, choose one visible shot and preview its ball trail. Export a Firework highlight free, or compare the other effects before continuing in the HoopCut app.",
+    "toolHeading": "Add a shot tracer to a basketball highlight",
+    "workflowHeading": "Prepare and trace your basketball footage",
+    "sampleHeading": "Preview the effect on a basketball clip",
+    "faqHeading": "NBA scouts and basketball video questions",
+    "examplesHeading": "Basketball video tracer examples",
+    "sections": [
+      {
+        "heading": "Find official NBA scout and program information",
+        "text": "Start with the source that matches your question. The linked Washington Wizards article offers an account of scouting work, while HomeCourt describes its NBA Global Scout program on a separate official page. For a specific opportunity, check the provider's current dates, eligibility and submission instructions. Keep those details with your footage so you can follow the requirements of the opportunity you actually choose."
+      },
+      {
+        "heading": "Organize your basketball footage before editing",
+        "text": "Save the unedited recording alongside any short version you make. Note the recording date, the player shown and the excerpt's position in the original. Use descriptive filenames so a practice shot, game sequence and edited highlight remain easy to tell apart. Keep a short note about the session with the files, adding only details you can verify.",
+        "steps": [
+          "Keep the original file with a descriptive name and recording date.",
+          "Record the excerpt's start and end time so you can find the full sequence.",
+          "Label the exported version as edited and retain a version without the tracer."
+        ],
+        "subsections": [
+          {
+            "heading": "Identify the player and original sequence",
+            "text": "Use a consistent player name or identifier across your files. Note the source timestamp so you can quickly locate the possessions surrounding an edited shot."
+          }
+        ]
+      },
+      {
+        "heading": "Create a basketball shot tracer highlight",
+        "text": "Choose a shot from your own footage with the ball and hoop visible. Preview a range of up to 30 seconds, including the release and finish. Watch the trail through the middle of the flight, where the ball can blend into a busy background. Export Firework free once you are happy with the result, and save the edited copy beside the original recording.",
+        "subsections": [
+          {
+            "heading": "Label your traced copy for sharing",
+            "text": "Give the edited file a clear name, such as a session date followed by shot-tracer. Keep the same source identifier on both versions so they remain easy to match."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "What does an NBA scout do?",
+        "An NBA scout evaluates players using game observation, video and background research. The linked Wizards article describes this work."
+      ],
+      [
+        "Does HoopCut submit or evaluate my video for scouting?",
+        "No. HoopCut adds a visual tracer; it does not contact scouts, submit to programs or assess a player's ability."
+      ],
+      [
+        "What details should I save with a clip?",
+        "Keep the recording date, player identifier and start and end times within the source video. Use the original file to check any details you add."
+      ],
+      [
+        "Should I keep a copy without effects?",
+        "Yes. Keeping the original makes it possible to view the recording without the added trail and recover the surrounding sequence."
+      ],
+      [
+        "What can I try on this page?",
+        "Upload your own basketball footage, choose up to 30 seconds and export Firework free. Other styles are previews here, with an app link for more effects."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Washington Wizards: an account of scouting work, June 21, 2022",
+        "url": "https://www.nba.com/wizards/for-wizards-scouts-draft-night-represents-culmination-years-work-062122"
+      },
+      {
+        "title": "HomeCourt: NBA Global Scout program information",
+        "url": "https://www.homecourt.ai/nbaglobalscout"
+      }
+    ],
+    "workflowSteps": [
+      {
+        "title": "Choose your basketball clip",
+        "text": "Upload your own clip while retaining its original recording and context."
+      },
+      {
+        "title": "Preview the shot tracer",
+        "text": "Select up to 30 seconds and compare the visible ball with the trail."
+      },
+      {
+        "title": "Save a traced highlight",
+        "text": "Save Firework free and keep the traced version separate from the original."
+      }
+    ],
+    "appCTA": {
+      "heading": "Explore more basketball tracer effects",
+      "text": "Export a short Firework clip free, or preview the other styles and open the HoopCut app to unlock more effects."
+    },
+    "note": "HoopCut is independent of the NBA and HomeCourt.",
+    "examples": [
+      [
+        "/videos/basketball-shot-tracer-example",
+        "Watch a HoopCut tracer demonstration",
+        "Generic HoopCut basketball footage demonstrating the tracer effect."
+      ]
+    ],
+    "demandEvidence": {
+      "source": "User-provided Semrush Organic Positions CSV",
+      "file": "homecourt.ai-organic.Positions-us-20261110-2026-11-12T10_05_16Z.csv",
+      "market": "US",
+      "keyword": "nba scout",
+      "searchVolume": 320,
+      "keywordDifficulty": 43,
+      "position": 3,
+      "positionType": "Organic",
+      "competitorUrl": "https://www.homecourt.ai/nbaglobalscout",
+      "dataTimestamp": "2026-10-13",
+      "note": "Values are from the supplied ranking record, not HoopCut traffic or a growth forecast."
+    },
+    "exampleEvidence": {
+      "url": "/videos/basketball-shot-tracer-example",
+      "scope": "Shared HoopCut basketball tracer demonstration; not evidence of affiliation or topic-specific footage",
+      "validation": "Shared media and uploader checked in the approved local review"
+    },
+    "reviewedBy": "Site owner approved local batch HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01 version d019251331d0",
+    "releaseApproval": {
+      "batch_id": "HC-TRACER-ONE-PER-KEYWORD-2026-11-12-01",
+      "review_version": "d019251331d0",
+      "approved_at": "2026-11-12T12:33:39.386317+00:00",
+      "user_instruction": "行 我抽查了OK 上线吧 上线后check下technical seo",
+      "scope": "199 reviewed keyword pages plus generated directory and sitemap integration"
+    }
   }
 ]

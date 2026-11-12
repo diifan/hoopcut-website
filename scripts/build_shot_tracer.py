@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate approved tracer landing pages from one shared, functional tool shell."""
 import html
+import argparse
 import json
 import re
 from pathlib import Path
@@ -20,6 +21,32 @@ H = html.escape
 
 def route(p): return '/shot-tracer' + ('/' + p['slug'] if p['slug'] else '')
 def directory_path(number): return '/shot-tracer/scenarios' + (f'/page-{number}' if number > 1 else '')
+def load_pages(root=ROOT):
+    pages=json.loads((root/'content/shot-tracer/pages.json').read_text())
+    for file in sorted((root/'content/shot-tracer/batches').glob('*/*.json')):
+        batch=json.loads(file.read_text())
+        if not isinstance(batch,list):raise ValueError(f'Expected a page array in {file.name}')
+        pages.extend(batch)
+    validate(pages)
+    return pages
+
+def batch_preview_slugs(root,name):
+    if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*',name):raise ValueError('Invalid preview batch name')
+    file=root/'content/shot-tracer/batch-manifests'/f'{name}.json'
+    if not file.is_file():raise ValueError('Unknown preview batch: '+name)
+    manifest=json.loads(file.read_text())
+    return manifest['previewSlugs']
+
+def related_pages(p,pages):
+    topics={'home-court-basketball-training-app':'training','hot-shot-basketball':'rules','nba-scout':'scouting'}
+    topic=p.get('topic',topics.get(p['slug']))
+    words=set(re.findall(r'[a-z]+',p.get('keyword',p['title']).lower()))-{'basketball','app','a','the','and','for'}
+    def score(other):
+        shared=words.intersection(re.findall(r'[a-z]+',other.get('keyword',other['title']).lower()))
+        return 10*bool(topic and topic==other.get('topic',topics.get(other['slug'])))+len(shared)
+    candidates=[x for x in pages if x['slug'] and x['slug']!=p['slug']]
+    return sorted(candidates,key=lambda x:-score(x))[:3]
+
 def validate(pages):
     for key in ('slug','intent','title','description'):
         values=[p[key].strip().casefold() for p in pages]
@@ -37,6 +64,11 @@ def validate(pages):
         for url,_,_ in p.get('examples',[]):
             parsed=urlsplit(url)
             if not (url.startswith('/') and not url.startswith('//') or parsed.scheme=='https' and parsed.netloc): raise ValueError('Unsafe example URL')
+        for source in p.get('sources',[]):
+            parsed=urlsplit(source['url'])
+            if parsed.scheme!='https' or not parsed.netloc: raise ValueError('Unsafe source URL')
+        if p.get('keyword') and len(p.get('workflowSteps',[]))!=3:
+            raise ValueError('Keyword pages require the same three workflow steps')
 
 def metadata(title,description,path,crumbs):
     result=f'<meta name="description" content="{H(description,quote=True)}"><meta name="robots" content="index,follow"><link rel="canonical" href="{BASE+path}">'
@@ -51,22 +83,71 @@ def breadcrumb(crumbs):
 def cards(links):
     return '<ul class="related-grid">'+''.join(f'<li><a href="{H(url,quote=True)}">{H(label)}</a><p>{H(desc)}</p></li>' for url,label,desc in links)+'</ul>'
 
+def keyword_navigation(p):
+    items=[
+        ('tracer-tool','Add a tracer','Add a tracer to your basketball video','<path d="M12 16V4m-4 4 4-4 4 4M4 15v5h16v-5"/>'),
+        ('tracer-sample','See the effect','See the shot tracer effect','<rect x="3" y="4" width="18" height="16" rx="3"/><path d="m10 8 6 4-6 4Z"/>'),
+        ('keyword-guide','Video guide',p.get('label','Basketball video')+' guide','<path d="M12 6v15M3 3h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5v16h-5a4 4 0 0 0-4 2 4 4 0 0 0-4-2H3Z"/>'),
+        ('keyword-questions','Questions','Basketball shot tracer questions','<circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4 2c-1.5 1-1.5 1-1.5 2m0 3h.01"/>')
+    ]
+    links=[]
+    for i,(target,label,description,paths) in enumerate(items):
+        current=' aria-current="location"' if i==0 else ''
+        links.append('<a href="#'+target+'" aria-label="'+H(description,quote=True)+'"'+current+'><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">'+paths+'</svg><span>'+H(label)+'</span></a>')
+    return '<nav class="keyword-jumps" aria-label="On this page">'+''.join(links)+'</nav>'
+
 def render(p,pages,shell):
     crumbs=[('Home','/'),('Basketball shot tracer','/shot-tracer')]
-    if p['slug']:crumbs.append((p['heading'],route(p)))
-    content='<div class="tracer-content">'
+    if p['slug']:crumbs.append((p.get('label',p['heading']),route(p)))
+    content='<div class="tracer-content"'+(' id="keyword-guide"' if p.get('keyword') else '')+'>'
     for sec in p['sections']:
         content+='<section><h2>'+H(sec['heading'])+'</h2>'
         if sec.get('text'):content+='<p>'+H(sec['text'])+'</p>'
+        for sub in sec.get('subsections',[]):
+            content+='<div class="keyword-subsection"><h3>'+H(sub['heading'])+'</h3><p>'+H(sub['text'])+'</p></div>'
         if sec.get('steps'):content+='<ol>'+''.join('<li>'+H(x)+'</li>' for x in sec['steps'])+'</ol>'
         content+='</section>'
-    if p.get('examples'):content+='<section><h2>Examples for this workflow</h2>'+cards(p['examples'])+'</section>'
-    content+='<section><h2>Basketball shot tracer questions</h2>'+''.join('<details><summary>'+H(q)+'</summary><p>'+H(a)+'</p></details>' for q,a in p['faq'])+'</section>'
-    related=[x for x in pages if x['slug'] and x['slug']!=p['slug']][:3]
+    if p.get('examples'):content+='<section><h2>'+H(p.get('examplesHeading','Examples for this workflow'))+'</h2>'+cards(p['examples'])+'</section>'
+    content+='<section'+(' id="keyword-questions"' if p.get('keyword') else '')+'><h2>'+H(p.get('faqHeading','Basketball shot tracer questions'))+'</h2>'+''.join('<details><summary>'+H(q)+'</summary><p>'+H(a)+'</p></details>' for q,a in p['faq'])+'</section>'
+    if p.get('sources'):
+        content+='<section class="keyword-sources"><h2>Sources & further reading</h2><ul>'+''.join('<li><a href="'+H(s['url'],quote=True)+'">'+H(s['title'])+'</a></li>' for s in p['sources'])+'</ul></section>'
+    if p.get('appCTA'):
+        c=p['appCTA'];content+='<section class="keyword-app"><div><p class="tracer-kicker">YOUR NEXT SHOT</p><h2>'+H(c['heading'])+'</h2><p>'+H(c['text'])+'</p></div><a class="primary" data-keyword-app href="{{APP_URL}}">Download HoopCut <span aria-hidden="true">↗</span></a></section>'
+    related=related_pages(p,pages)
     content+='<section><h2>Keep working on your basketball video</h2>'+cards(LINKS+[(route(x),x['heading'],x['intro']) for x in related])
     if any(x['slug'] for x in pages):content+='<p><a href="/shot-tracer/scenarios">Browse all shot tracer workflows</a></p>'
     content+='<p><a href="#tracer-tool">Add a tracer to your video</a></p></section></div>'
-    values={'TITLE':'<title>'+H(p['title'])+'</title>','INTRO':'<section class="intro"><h1>'+H(p['heading'])+'</h1><p>'+H(p['intro'])+'</p></section>','META':metadata(p['title'],p['description'],route(p),crumbs),'BREADCRUMB':breadcrumb(crumbs),'CONTENT':content}
+    intro='<section class="intro">'+('<p class="keyword-eyebrow">HOOPCUT / BASKETBALL VIDEO TOOLS</p>' if p.get('keyword') else '')+'<h1>'+H(p['heading'])+'</h1><p>'+H(p['intro'])+'</p>'
+    if p.get('heroDetail'):intro+='<p class="keyword-intro-detail">'+H(p['heroDetail'])+'</p>'
+    if p.get('note'):intro+='<p class="keyword-note">'+H(p['note'])+'</p>'
+    intro+='</section>'
+    if p.get('keyword'):
+        intro+=keyword_navigation(p)
+        shell=shell.replace('<body>','<body class="keyword-landing">')
+        shell=shell.replace('href="/shot-tracer" aria-current="page"','href="/shot-tracer" aria-current="location"')
+        shell=shell.replace('</head>','<link rel="stylesheet" href="/assets/tracer-keywords.css"><script defer src="/assets/tracer-keyword-nav.js"></script></head>')
+        if p.get('toolHeading'):
+            shell=shell.replace('<div class="workspace" id="tracer-tool">','<h2 class="keyword-tool-heading">'+H(p['toolHeading'])+'</h2><div class="workspace" id="tracer-tool">',1)
+        shell=shell.replace('<h2 id="tracer-steps-title">Three simple steps.</h2>','<h2 id="tracer-steps-title">'+H(p.get('workflowHeading','Three simple steps.'))+'</h2>')
+        # Keep the actual upload/editor markup and processing script unchanged.
+        # Only the surrounding content is configured for each search intent.
+        for old,new in zip([
+            ('Upload your video','Choose a basketball clip. Trim to 30 seconds if needed.'),
+            ('Preview your tracer','Choose your hoop when prompted, then preview an effect.'),
+            ('Export &amp; share','Export Firework for free and share your shot.')
+        ],p['workflowSteps']):
+            shell=shell.replace('<h3>'+old[0]+'</h3><p>'+old[1]+'</p>','<h3>'+H(new['title'])+'</h3><p>'+H(new['text'])+'</p>')
+        sample=re.search(r'<section class="tracer-sample".*?</section>',shell,re.S)
+        if not sample:raise ValueError('Shared sample module missing')
+        sample=sample[0].replace('Watch a sample video.',H(p.get('sampleHeading','See the ball trail in action.'))).replace('A prepared HoopCut example with the ball trail already added.','A prepared HoopCut clip demonstrating the shot trail effect.')
+        shell=re.sub(r'<section class="tracer-sample".*?</section>','',shell,flags=re.S)
+        shell=shell.replace('<section class="tracer-walkthrough"',sample+'<section class="tracer-walkthrough"',1)
+    meta=metadata(p['title'],p['description'],route(p),crumbs)
+    if p['status']=='draft':meta=meta.replace('content="index,follow"','content="noindex,follow"')
+    if p.get('keyword'):
+        graph={'@context':'https://schema.org','@type':'WebPage','@id':BASE+route(p)+'#page','url':BASE+route(p),'name':p['title'],'description':p['description'],'inLanguage':'en','mainEntity':{'@id':BASE+'/shot-tracer#tool'}}
+        meta+='<script type="application/ld+json">'+json.dumps(graph).replace('<','\\u003c')+'</script>'
+    values={'TITLE':'<title>'+H(p['title'])+'</title>','INTRO':intro,'META':meta,'BREADCRUMB':breadcrumb(crumbs),'CONTENT':content}
     for key,value in values.items():
         token='{{'+key+'}}'
         if shell.count(token)!=1:raise ValueError(f'Template needs one {token}')
@@ -74,7 +155,7 @@ def render(p,pages,shell):
     return shell
 
 def directory(number,pages,shell):
-    path=directory_path(number);title=f'Basketball Shot Tracer Workflows – Page {number} | HoopCut'
+    path=directory_path(number);title='Basketball Shot Tracer Workflows'+(f' – Page {number}' if number>1 else '')+' | HoopCut'
     desc=f'Browse basketball shot tracer workflows, page {number}: choose footage and review the effect for each type of shot.'
     crumbs=[('Home','/'),('Shot tracer','/shot-tracer'),('Workflows',directory_path(1))]
     if number>1:crumbs.append((f'Page {number}',path))
@@ -85,18 +166,28 @@ def directory(number,pages,shell):
     if number<total:content+=f' · <a href="{directory_path(number+1)}">Next page</a>'
     content+='</nav></div>'
     header=re.search(r'<header>.*?</header>',shell,re.S)[0];footer=re.search(r'<footer>.*?</footer>',shell,re.S)[0]
-    return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+H(title)+'</title>'+metadata(title,desc,path,crumbs)+'<link rel="stylesheet" href="/assets/shot-tracer-tool.css"></head><body>'+header+'<main>'+breadcrumb(crumbs)+content+footer+'</main></body></html>'
+    meta=metadata(title,desc,path,crumbs)
+    if any(p['status']=='draft' for p in pages):meta=meta.replace('content="index,follow"','content="noindex,follow"')
+    return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+H(title)+'</title>'+meta+'<link rel="stylesheet" href="/assets/shot-tracer-tool.css"></head><body>'+header+'<main>'+breadcrumb(crumbs)+content+footer+'</main></body></html>'
 
 def add_tool_link(source):
     if 'id="shot-tracer-upload-link"' in source:return source
     if source.count('</main>')!=1:raise ValueError('Expected one main for tool entry')
     return source.replace('</main>','<section id="shot-tracer-upload-link" style="max-width:960px;margin:32px auto;padding:24px"><h2><a href="/shot-tracer">Add a shot tracer to your own basketball video</a></h2><p>Upload your clip, choose up to 30 seconds, preview the ball trail and export the free Firework effect.</p></section></main>')
 
-def build(root=ROOT):
-    pages=json.loads((root/'content/shot-tracer/pages.json').read_text());validate(pages)
-    approved=[p for p in pages if p['status']=='approved'];scenes=[p for p in approved if p['slug']]
+def build(root=ROOT,preview_slugs=(),preview_batch=None):
+    pages=load_pages(root)
+    if preview_batch:preview_slugs=[*preview_slugs,*batch_preview_slugs(root,preview_batch)]
+    approved=[p for p in pages if p['status']=='approved']
+    unknown=set(preview_slugs)-{p['slug'] for p in pages if p['slug']}
+    if unknown:raise ValueError('Unknown preview slugs: '+', '.join(sorted(unknown)))
+    visible=[p for p in pages if p['status']=='approved' or p['slug'] in preview_slugs]
+    scenes=[p for p in visible if p['slug']]
     shell=(root/'content/shot-tracer/tool.html').read_text()
-    outputs={route(p):render(p,approved,shell) for p in approved}
+    # Read the product destination centrally, never per keyword.
+    config=root/'content/site-config.json'
+    app_url=json.loads(config.read_text())['app']['appStoreUrl'] if config.exists() else 'https://apps.apple.com/us/app/hoopcut-basketball-highlights/id6824860341'
+    outputs={route(p):render(p,visible,shell).replace('{{APP_URL}}',H(app_url,quote=True)) for p in visible}
     for n in range(1,(len(scenes)+PAGE_SIZE-1)//PAGE_SIZE+1):outputs[directory_path(n)]=directory(n,scenes,shell)
     # This namespace is owned by this generator. Remove obsolete generated routes only.
     for old in (root/'shot-tracer').rglob('*.html'):
@@ -110,9 +201,17 @@ def build(root=ROOT):
     for node in list(xml):
         url=node.findtext(ns+'loc','')
         if url==BASE+'/shot-tracer' or url.startswith(BASE+'/shot-tracer/'):xml.remove(node)
-    for path in outputs:ET.SubElement(ET.SubElement(xml,ns+'url'),ns+'loc').text=BASE+path
+    # Local draft previews must never enter the production sitemap.
+    approved_scenes=[p for p in approved if p['slug']]
+    sitemap_paths=[route(p) for p in approved]+[directory_path(n) for n in range(1,(len(approved_scenes)+PAGE_SIZE-1)//PAGE_SIZE+1)]
+    for path in sitemap_paths:ET.SubElement(ET.SubElement(xml,ns+'url'),ns+'loc').text=BASE+path
     ET.register_namespace('',ns[1:-1]);tree.write(root/'sitemap.xml',encoding='utf-8',xml_declaration=True)
-    print(f'Built {len(approved)} approved tracer pages, {len(outputs)-len(approved)} directory pages; drafts excluded.')
+    print(f'Built {len(approved)} approved tracer pages, {len(visible)-len(approved)} local draft previews; sitemap contains approved pages only.')
     return set(outputs)
 
-if __name__=='__main__':build()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--preview-slugs',nargs='*',default=[],help='Explicit local draft previews; never added to the sitemap')
+    parser.add_argument('--preview-batch',help='Local preview manifest name; excludes deferred terms and production sitemap')
+    args=parser.parse_args()
+    build(preview_slugs=args.preview_slugs,preview_batch=args.preview_batch)
