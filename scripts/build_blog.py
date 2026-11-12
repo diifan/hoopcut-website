@@ -226,6 +226,9 @@ def build():
             document = document.replace('<body>', '<body class="visual-story'+(' caption-story' if item.get('captionGroups') else '')+'">')
         if item.get('captionGroups'):
             document = document.replace('</head>', '<script src="/assets/blog/captions.js" defer></script></head>')
+        if slug(item['keyword']) == 'how-to-add-shot-tracer-to-basketball-video':
+            from build_shot_tracer import add_tool_link
+            document = add_tool_link(document)
         (ROOT/'blog'/(slug(item['keyword'])+'.html')).write_text(document)
     categories = list(dict.fromkeys(x['category'] for x in ARTICLES))
     index_url = BASE + '/blog'
