@@ -47,7 +47,10 @@ def load_link_taxonomy(root=ROOT):
     if any(p['category'] not in ids for p in data['pages'].values()):raise ValueError('Unknown workflow category')
     return data
 
-def category_path(category):return '/shot-tracer/scenarios/'+category['id']
+def category_path(category,number=1):
+    return '/shot-tracer/scenarios/'+category['id']+(f'/page-{number}' if number>1 else '')
+
+def category_page_count(category):return (len(category['pages'])+PAGE_SIZE-1)//PAGE_SIZE
 
 def category_catalog(pages,taxonomy):
     mapping=taxonomy['pages']
@@ -75,18 +78,36 @@ def category_navigation(categories,current=None):
     items=[('/shot-tracer/scenarios','All workflows',None)]+[(category_path(c),c['label'],c['id']) for c in categories]
     return '<nav class="workflow-categories" aria-label="Workflow topics">'+''.join('<a href="'+url+'"'+(' aria-current="page"' if current==key else '')+'>'+H(label)+'</a>' for url,label,key in items)+'</nav>'
 
-def pagination(number,total,position):
+def category_index(categories):
+    """Expose every category list page from the main directory in one click."""
+    if not categories:return ''
+    groups=[]
+    for category in categories:
+        links=[]
+        for number in range(1,category_page_count(category)+1):
+            start=(number-1)*PAGE_SIZE+1;end=min(number*PAGE_SIZE,len(category['pages']))
+            label=f"{category['label']}, page {number}, workflows {start} to {end}"
+            links.append('<a href="'+category_path(category,number)+'" aria-label="'+H(label,quote=True)+'"><span>Page '+str(number)+'</span><small>'+str(start)+'–'+str(end)+'</small></a>')
+        groups.append('<li><div class="workflow-topic-heading"><h3><a href="'+category_path(category)+'">'+H(category['label'])+'</a></h3><p>'+str(len(category['pages']))+' workflows</p></div><nav aria-label="'+H(category['label']+' list pages',quote=True)+'">'+''.join(links)+'</nav></li>')
+    return '<section class="workflow-topic-index" aria-labelledby="workflow-topic-title"><h2 id="workflow-topic-title">Browse by topic</h2><p>Choose a topic and a page to find the workflow for your footage.</p><ul>'+''.join(groups)+'</ul></section>'
+
+def pagination(number,total,position,category=None):
     if total<=1:return ''
-    numbers=list(range(1,total+1)) if total<=9 else sorted({1,total,*range(max(1,number-2),min(total,number+2)+1)})
+    path=lambda n:category_path(category,n) if category else directory_path(n)
+    # Category pages expose their complete, bounded list of page links. The main
+    # directory also links every category page through its grouped topic index.
+    numbers=list(range(1,total+1)) if category or total<=9 else sorted({1,total,*range(max(1,number-2),min(total,number+2)+1)})
     parts=[]
-    if number>1:parts.append(f'<a class="page-direction" href="{directory_path(number-1)}" rel="prev">← Previous</a>')
+    if number>1:parts.append(f'<a class="page-direction" href="{path(number-1)}" rel="prev">← Previous</a>')
     previous=0
     for n in numbers:
         if n>previous+1:parts.append('<span class="page-gap" aria-hidden="true">…</span>')
-        parts.append(f'<a href="{directory_path(n)}" aria-label="Workflow page {n}"'+(' aria-current="page"' if n==number else '')+f'>{n}</a>')
+        label=(category['label']+', page ' if category else 'Workflow page ')+str(n)
+        parts.append(f'<a href="{path(n)}" aria-label="'+H(label,quote=True)+'"'+(' aria-current="page"' if n==number else '')+f'>{n}</a>')
         previous=n
-    if number<total:parts.append(f'<a class="page-direction" href="{directory_path(number+1)}" rel="next">Next →</a>')
-    return '<nav class="workflow-pagination" aria-label="Workflow pages '+position+'">'+''.join(parts)+'</nav>'
+    if number<total:parts.append(f'<a class="page-direction" href="{path(number+1)}" rel="next">Next →</a>')
+    label=(category['label']+' pages ' if category else 'Workflow pages ')+position
+    return '<nav class="workflow-pagination'+(' category-pagination' if category else '')+'" aria-label="'+H(label,quote=True)+'">'+''.join(parts)+'</nav>'
 
 def validate(pages):
     for key in ('slug','intent','title','description'):
@@ -210,26 +231,33 @@ def directory(number,pages,shell,taxonomy=None,category=None):
     desc=f'Browse basketball shot tracer workflows, page {number}: choose footage and review the effect for each type of shot.'
     crumbs=[('Home','/'),('Shot tracer','/shot-tracer'),('Workflows',directory_path(1))]
     if number>1:crumbs.append((f'Page {number}',path))
-    total=(len(pages)+PAGE_SIZE-1)//PAGE_SIZE
-    selection=pages[(number-1)*PAGE_SIZE:number*PAGE_SIZE]
+    listing_pages=category['pages'] if category else pages
+    total=(len(listing_pages)+PAGE_SIZE-1)//PAGE_SIZE
+    if number<1 or number>total:raise ValueError('Directory page outside its available range')
+    selection=listing_pages[(number-1)*PAGE_SIZE:number*PAGE_SIZE]
     heading='Basketball shot tracer workflows'+(f' — page {number}' if number>1 else '')
     introduction='Start with your footage and what you want to do next. Browse training, game video, scouting and other workflows, then use the same shot tracer with your own clip.'
     if category:
-        path=category_path(category);title=category['label']+' — Shot Tracer Workflows | HoopCut'
-        desc=category['description'];heading=category['label'];introduction=desc
-        crumbs=[('Home','/'),('Shot tracer','/shot-tracer'),('Workflows',directory_path(1)),(category['label'],path)]
-        selection=category['pages']
+        path=category_path(category,number)
+        title=category['label']+' — Shot Tracer Workflows'+(f' — Page {number}' if number>1 else '')+' | HoopCut'
+        desc=category['description']+(f' Page {number} of {total}.' if number>1 else '')
+        heading=category['label']+(f' — page {number}' if number>1 else '');introduction=category['description']
+        crumbs=[('Home','/'),('Shot tracer','/shot-tracer'),('Workflows',directory_path(1)),(category['label'],category_path(category))]
+        if number>1:crumbs.append((f'Page {number}',path))
     content='<div class="tracer-content workflow-library"><div class="workflow-intro"><p class="workflow-kicker">FIND YOUR WORKFLOW</p><h1>'+H(heading)+'</h1><p>'+H(introduction)+'</p><a class="workflow-upload" href="/shot-tracer#tracer-tool">Already have a clip? Add a shot tracer ↗</a></div>'
-    content+=category_navigation(categories,category['id'] if category else None)
-    count=f'{len(selection)} workflows in this topic' if category else f'{len(pages)} workflows · Page {number} of {total}'
+    if number==1 and not category:
+        content+=category_index(categories)
+        if categories:content+='<h2 class="workflow-all-heading">All workflows</h2>'
+    else:content+=category_navigation(categories,category['id'] if category else None)
+    count=(f'{len(listing_pages)} workflows in this topic' if category else f'{len(pages)} workflows')+f' · Page {number} of {total}'
     content+='<p class="workflow-count">'+count+'</p>'
-    if not category:content+=pagination(number,total,'top')
+    content+=pagination(number,total,'top',category)
     content+=cards([(route(p),p.get('label',p['heading']),p['intro']) for p in selection])
-    if not category:content+=pagination(number,total,'bottom')
+    content+=pagination(number,total,'bottom',category)
     content+='</div>'
     header=re.search(r'<header>.*?</header>',shell,re.S)[0];footer=re.search(r'<footer>.*?</footer>',shell,re.S)[0]
     meta=metadata(title,desc,path,crumbs)
-    if any(p['status']=='draft' for p in pages):meta=meta.replace('content="index,follow"','content="noindex,follow"')
+    if any(p['status']=='draft' for p in listing_pages):meta=meta.replace('content="index,follow"','content="noindex,follow"')
     return '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+H(title)+'</title>'+meta+'<link rel="stylesheet" href="/assets/shot-tracer-tool.css"><link rel="stylesheet" href="/assets/tracer-directory.css"></head><body>'+header+'<main>'+breadcrumb(crumbs)+content+footer+'</main></body></html>'
 
 def apply_contextual_links(root,visible):
@@ -274,7 +302,9 @@ def build(root=ROOT,preview_slugs=(),preview_batch=None):
     app_url=json.loads(config.read_text())['app']['appStoreUrl'] if config.exists() else 'https://apps.apple.com/us/app/hoopcut-basketball-highlights/id6824860341'
     outputs={route(p):render(p,visible,shell,taxonomy).replace('{{APP_URL}}',H(app_url,quote=True)) for p in visible}
     for n in range(1,(len(scenes)+PAGE_SIZE-1)//PAGE_SIZE+1):outputs[directory_path(n)]=directory(n,scenes,shell,taxonomy)
-    for category in category_catalog(scenes,taxonomy):outputs[category_path(category)]=directory(1,scenes,shell,taxonomy,category)
+    for category in category_catalog(scenes,taxonomy):
+        for number in range(1,category_page_count(category)+1):
+            outputs[category_path(category,number)]=directory(number,scenes,shell,taxonomy,category)
     # This namespace is owned by this generator. Remove obsolete generated routes only.
     for old in (root/'shot-tracer').rglob('*.html'):
         if '/'+str(old.relative_to(root).with_suffix('')) not in outputs:old.unlink()
@@ -290,7 +320,7 @@ def build(root=ROOT,preview_slugs=(),preview_batch=None):
     # Local draft previews must never enter the production sitemap.
     approved_scenes=[p for p in approved if p['slug']]
     sitemap_paths=[route(p) for p in approved]+[directory_path(n) for n in range(1,(len(approved_scenes)+PAGE_SIZE-1)//PAGE_SIZE+1)]
-    sitemap_paths += [category_path(c) for c in category_catalog(approved_scenes,taxonomy)]
+    sitemap_paths += [category_path(c,n) for c in category_catalog(approved_scenes,taxonomy) for n in range(1,category_page_count(c)+1)]
     for path in sitemap_paths:ET.SubElement(ET.SubElement(xml,ns+'url'),ns+'loc').text=BASE+path
     ET.register_namespace('',ns[1:-1]);tree.write(root/'sitemap.xml',encoding='utf-8',xml_declaration=True)
     apply_contextual_links(root,approved)

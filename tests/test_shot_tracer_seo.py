@@ -133,10 +133,73 @@ class Tests(unittest.TestCase):
         shell=(ROOT/'content/shot-tracer/tool.html').read_text()
         categories=tracer.category_catalog(approved,taxonomy)
         all_links=Page(tracer.directory(1,[p for p in approved if p['slug']],shell,taxonomy)).links
-        for n in range(1,10):self.assertIn(tracer.directory_path(n),all_links)
+        total=(len(approved)-1+tracer.PAGE_SIZE-1)//tracer.PAGE_SIZE
+        for n in range(1,min(total,3)+1):self.assertIn(tracer.directory_path(n),all_links)
+        self.assertIn(tracer.directory_path(total),all_links)
         for category in categories:
             self.assertIn(tracer.category_path(category),all_links)
-            rendered=Page(tracer.directory(1,approved,shell,taxonomy,category))
-            self.assertEqual(rendered.canonical,[tracer.BASE+tracer.category_path(category)])
-            for member in category['pages']:self.assertIn(tracer.route(member),rendered.links)
+            for n in range(1,tracer.category_page_count(category)+1):
+                self.assertIn(tracer.category_path(category,n),all_links)
+                rendered=Page(tracer.directory(n,approved,shell,taxonomy,category))
+                self.assertEqual(rendered.canonical,[tracer.BASE+tracer.category_path(category,n)])
+                actual={url for url in rendered.links if url in {tracer.route(p) for p in category['pages']}}
+                expected={tracer.route(p) for p in category['pages'][(n-1)*tracer.PAGE_SIZE:n*tracer.PAGE_SIZE]}
+                self.assertEqual(actual,expected)
+    def test_category_pagination_ships_all_lists_and_excludes_drafts(self):
+        import re
+        published=[]
+        for i in range(2*tracer.PAGE_SIZE+5):
+            p=copy.deepcopy(self.pages[1])
+            p.update(slug=f'category-fixture-{i}',intent=f'category-fixture-{i}',title=f'Category fixture {i}',description=f'Category fixture description {i}',status='approved',reviewedBy='Synthetic test approval',demandEvidence={'source':'Synthetic test only'},exampleEvidence={'url':'/demo/shot-tracer'},examples=[['/demo/shot-tracer','Fixture example','Synthetic test only']])
+            published.append(p)
+        draft=copy.deepcopy(published[-1]);draft.update(slug='category-draft',intent='category-draft',title='Category draft',description='Category draft description',status='draft',reviewedBy=None,exampleEvidence=None)
+        draft_only=copy.deepcopy(draft);draft_only.update(slug='unlisted-draft',intent='unlisted-draft',title='Unlisted draft',description='Unlisted draft description')
+        data=[self.pages[0],*published,draft,draft_only]
+        (self.root/'content/shot-tracer/pages.json').write_text(json.dumps(data))
+        taxonomy={'categories':[{'id':'test-basketball','label':'Test basketball','description':'Synthetic basketball video list.'},{'id':'unlisted','label':'Unlisted','description':'Draft-only fixture.'}],
+                  'pages':{p['slug']:{'category':'test-basketball','relatedGroup':'test-group'} for p in [*published,draft]},'featured':[]}
+        taxonomy['pages'][draft_only['slug']]={'category':'unlisted','relatedGroup':None}
+        (self.root/'content/shot-tracer/internal-link-taxonomy.json').write_text(json.dumps(taxonomy))
+        routes=tracer.build(self.root)
+        category=tracer.category_catalog(data,taxonomy)[0]
+        expected_lists={tracer.category_path(category,n) for n in range(1,4)}
+        self.assertTrue(expected_lists.issubset(routes))
+        sitemap={node.text for node in ET.parse(self.root/'sitemap.xml').getroot().findall('{*}url/{*}loc')}
+        self.assertEqual({tracer.BASE+p for p in routes}|{tracer.BASE+'/'},sitemap)
+        self.assertNotIn(tracer.BASE+'/shot-tracer/category-draft',sitemap)
+        self.assertFalse(any('/unlisted' in p or '/page-1' in p for p in routes))
+        graph={path:Page((self.root/(path.lstrip('/')+'.html')).read_text()) for path in routes}
+        root_links=graph['/shot-tracer/scenarios'].links
+        self.assertTrue(expected_lists.issubset(root_links))
+        titles=set();descriptions=set();found=[]
+        for n in range(1,4):
+            path=tracer.category_path(category,n);file=self.root/(path.lstrip('/')+'.html');source=file.read_text();page=graph[path]
+            self.assertEqual(page.canonical,[tracer.BASE+path])
+            self.assertIn('content="index,follow"',source)
+            self.assertNotIn('/shot-tracer/category-draft',page.links)
+            targets=[x for x in page.links if x in {tracer.route(p) for p in published}]
+            self.assertEqual(targets,[tracer.route(p) for p in published[(n-1)*tracer.PAGE_SIZE:n*tracer.PAGE_SIZE]])
+            found.extend(targets)
+            self.assertTrue(expected_lists.issubset(page.links))
+            if n>1:self.assertIn(f'href="{tracer.category_path(category,n-1)}" rel="prev"',source)
+            if n<3:self.assertIn(f'href="{tracer.category_path(category,n+1)}" rel="next"',source)
+            titles.add(re.search(r'<title>(.*?)</title>',source)[1])
+            descriptions.add(re.search(r'<meta name="description" content="(.*?)">',source)[1])
+        self.assertEqual(len(titles),3);self.assertEqual(len(descriptions),3)
+        self.assertEqual(found,[tracer.route(p) for p in published])
+        reached={'/shot-tracer/scenarios'};queue=list(reached)
+        while queue:
+            for target in graph[queue.pop()].links:
+                if target in graph and target not in reached:reached.add(target);queue.append(target)
+        self.assertTrue({tracer.route(p) for p in published}.issubset(reached))
+        # A local draft preview must not noindex category lists of approved pages.
+        tracer.build(self.root,preview_slugs=[draft['slug']])
+        for path in expected_lists:self.assertIn('content="index,follow"',(self.root/(path.lstrip('/')+'.html')).read_text())
+        # Shrinking a category removes obsolete list routes and sitemap entries.
+        for p in published[tracer.PAGE_SIZE:]:p.update(status='draft',reviewedBy=None,exampleEvidence=None)
+        (self.root/'content/shot-tracer/pages.json').write_text(json.dumps(data))
+        tracer.build(self.root)
+        for path in expected_lists-{tracer.category_path(category)}:
+            self.assertFalse((self.root/(path.lstrip('/')+'.html')).exists())
+            self.assertNotIn(tracer.BASE+path,(self.root/'sitemap.xml').read_text())
 if __name__=='__main__':unittest.main()

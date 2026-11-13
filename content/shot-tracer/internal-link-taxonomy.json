@@ -49,6 +49,41 @@
       "id": "other-searches",
       "label": "Other searches",
       "description": "Queries about other products, services or unclear destinations, with their distinction from HoopCut stated on each page."
+    },
+    {
+      "id": "basketball-skills",
+      "label": "Basketball shots & skills",
+      "description": "Connect basketball shot terms and visible play details with your own traced recording."
+    },
+    {
+      "id": "basketball-teams",
+      "label": "Team & player video context",
+      "description": "Find a team or player source, then work with your own clearly identified basketball footage."
+    },
+    {
+      "id": "basketball-schedules",
+      "label": "Schedules, scores & footage",
+      "description": "Check the event source and keep dates, scores and video excerpts correctly identified."
+    },
+    {
+      "id": "basketball-video",
+      "label": "Basketball editing workflows",
+      "description": "Choose basketball footage, review a shot trail and save a clearly labeled highlight."
+    },
+    {
+      "id": "scouting",
+      "label": "Scouting footage preparation",
+      "description": "Keep source footage and player context organized when preparing a basketball highlight."
+    },
+    {
+      "id": "sports-video",
+      "label": "Sports recording workflows",
+      "description": "Plan sports recordings and use the basketball Tracer on your own court footage."
+    },
+    {
+      "id": "fan-basketball",
+      "label": "Fans on the basketball court",
+      "description": "Bring your own basketball clip into HoopCut while keeping team information and other sports distinct."
     }
   ],
   "pages": {
@@ -847,6 +882,4006 @@
     "ai-basketball-training-platforms-2026": {
       "category": "training",
       "relatedGroup": "training-app-selection"
+    },
+    "ferris-state-football": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-football-ferris-state"
+    },
+    "gannon-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-gannon-university"
+    },
+    "types-of-basketball-shots": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-general"
+    },
+    "basketball-editor": {
+      "category": "basketball-video",
+      "relatedGroup": "hudl-20261113-1000-basketball-video-basketball-general"
+    },
+    "what-field-goal-in-basketball": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-field goal"
+    },
+    "whats-a-fg-in-basketball": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-general"
+    },
+    "what-is-a-basketball-field-goal": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-field goal"
+    },
+    "what-is-fg-in-basketball": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-general"
+    },
+    "field-goal-basketball": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-field goal"
+    },
+    "basketball-shot": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-general"
+    },
+    "what-is-a-field-goal-basketball": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-field goal"
+    },
+    "what-does-fg-mean-in-basketball": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-general"
+    },
+    "what-is-a-turnover-in-basketball": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-general"
+    },
+    "basketball-fouls-list": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-foul"
+    },
+    "basketball-shooting-shot": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-general"
+    },
+    "what-counts-as-an-assist-in-basketball": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-general"
+    },
+    "what-is-a-turnover-basketball": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-general"
+    },
+    "basketball-shots-names": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-general"
+    },
+    "basketball-philadelphia-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-prep-charter"
+    },
+    "john-harrell-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "columbia-lions-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-columbia-college"
+    },
+    "st-thomas-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-thomas-univer"
+    },
+    "lsu-womens-basketball-roster": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-louisiana-state-univ"
+    },
+    "gannon-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-gannon-university"
+    },
+    "psu-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-penn-state-universit"
+    },
+    "rainier-beach-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-rainier-beach-high-school"
+    },
+    "pacific-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pacific-university"
+    },
+    "wiaa-boys-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-crescent-high-school"
+    },
+    "high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-johns-high-school"
+    },
+    "ihsa-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-instituto-health-sci-high-school"
+    },
+    "ihsaa-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-indiana-school-for-t-high-school"
+    },
+    "eybl-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-nike-eybl"
+    },
+    "penn-state-basketball-womens": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-penn-state-universit"
+    },
+    "columbia-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-columbia-college"
+    },
+    "penn-state-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-penn-state-universit"
+    },
+    "university-of-saint-thomas-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-thomas-univer"
+    },
+    "iowa-high-school-boys-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-iowa-high-school"
+    },
+    "collegiate-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-collegiate-baton-rou-high-school"
+    },
+    "img-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-img-academy"
+    },
+    "mhsaa-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-alma-high-school"
+    },
+    "csu-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-colorado-state"
+    },
+    "ihsaa-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "gannon-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-gannon-university"
+    },
+    "ihsaa-basketball-scores-indiana": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-score"
+    },
+    "niagara-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-niagara-county-cc"
+    },
+    "indiana-h-s-basketball-scores": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-score"
+    },
+    "martin-sports-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-martin-high-school"
+    },
+    "pv-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pymatuning-valley-high-school"
+    },
+    "montverde-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-montverde-academy"
+    },
+    "madison-basketball-roster": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-madisonhamilton-high-school"
+    },
+    "bergen-catholic-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "northeast-basketball-roster": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-northeast-high-school"
+    },
+    "charlie-kirk-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "holy-cross-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-holy-cross-college"
+    },
+    "emory-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oxford-college-of-em"
+    },
+    "dominic-james-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dominic-james"
+    },
+    "iowa-high-school-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-iowa-high-school"
+    },
+    "sd-state-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dakota-state"
+    },
+    "indiana-high-school-basketball-scores": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-score"
+    },
+    "st-francis-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-francis-de-sales-high-school"
+    },
+    "kent-state-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-kent-state-universit"
+    },
+    "seven-lakes-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-seven-lakes-high-school"
+    },
+    "lhsaa-boys-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-louisiana-high-school"
+    },
+    "spire-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-spire-academy"
+    },
+    "wisconsin-lutheran-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-milwaukee-lutheran-high-school"
+    },
+    "lima-senior-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "oak-hill-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oak-hill-academy-hig"
+    },
+    "west-charlotte-high-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-west-mecklenburg-high-school"
+    },
+    "wheeler-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wheeler-high-school"
+    },
+    "basketball-oak-hill-academy": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oak-hill-academy-hig"
+    },
+    "west-charlotte-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-west-charlotte-high-school"
+    },
+    "mn-girls-basketball-hub": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-b-o-l-d-high-school"
+    },
+    "john-harrell-indiana-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "father-judge-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-father-judge-high-school"
+    },
+    "shoo-in-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "washburn-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-washburn-university"
+    },
+    "iowa-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-iowa-high-school"
+    },
+    "lhsaa-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-franklin-high-school"
+    },
+    "bergen-catholic-hs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bergen-catholic-high-school"
+    },
+    "wpial-basketball-scores": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-rochester-high-school"
+    },
+    "coatesville-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-coatesville-high-school"
+    },
+    "syracuse-vs-kansas-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-syracuse-high-school"
+    },
+    "mater-dei-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mater-dei-high-school"
+    },
+    "ne-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-wisner-pilger-high-school"
+    },
+    "iowa-united-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-iowa-united"
+    },
+    "air-force-academy-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-air-academy"
+    },
+    "john-carroll-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-john-carroll"
+    },
+    "stepinac-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-archbishop-stepinac-high-school"
+    },
+    "mnbasketballhub": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "kcs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-knoxville-christian-high-school"
+    },
+    "section-v-boys-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-south-side-high-school"
+    },
+    "la-lumiere-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-la-lumiere-high-school"
+    },
+    "chino-hills-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-chino-hillssch-high-school"
+    },
+    "darren-watkins-jr-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "southern-university-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-southern-university"
+    },
+    "central-catholic-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-central-catholic-high-school"
+    },
+    "lakota-west-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lakota-west-high-school"
+    },
+    "section-v-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-valley-view-high-school"
+    },
+    "red-cedar-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cedar-city-high-school"
+    },
+    "hope-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hope-college"
+    },
+    "lhsaa-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-caruthers-high-school"
+    },
+    "xavier-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-xavier-high-school"
+    },
+    "christopher-newport-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-christopher-newport"
+    },
+    "img-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-img-academy"
+    },
+    "ferris-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ferris-state"
+    },
+    "la-lumiere-indiana-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-la-lumiere-high-school"
+    },
+    "michigan-collegiate-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-michigan-collegiate-high-school"
+    },
+    "plainfield-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-plainfield-high-school"
+    },
+    "john-carroll-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-john-carroll"
+    },
+    "petersburg-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-petersburg-high-school"
+    },
+    "saint-francis-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-francis"
+    },
+    "illinois-wesleyan-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-illinois-wesleyan"
+    },
+    "grand-valley-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grand-valley-state"
+    },
+    "delphos-st-johns-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-johns-high-school"
+    },
+    "john-carroll-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-john-carroll"
+    },
+    "illinois-wesleyan-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-illinois-wesleyan"
+    },
+    "mount-vernon-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mount-vernon-high-school"
+    },
+    "bethel-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bethel-university"
+    },
+    "central-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-knoxville-central-high-school"
+    },
+    "christopher-newport-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-christopher-newport"
+    },
+    "jcu-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-john-carroll"
+    },
+    "isaiah-hill-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "ryder-seidel-davison-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-davison-high-school"
+    },
+    "walsh-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-walsh-university"
+    },
+    "armuchee-maxpreps-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-armuchee-high-school"
+    },
+    "wisconsin-stevens-point-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-wiscon"
+    },
+    "uw-stevens-point-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-wiscon"
+    },
+    "benet-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-benet-academy-high"
+    },
+    "northeast-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-northeast-early-coll-high-school"
+    },
+    "sunnyslope-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-sunnyslope-high-school"
+    },
+    "st-francis-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-francis"
+    },
+    "concordia-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-concordia-university"
+    },
+    "hooper-academy": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--hooper-academy"
+    },
+    "luhi-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-long-island-lutheran-high-school"
+    },
+    "brother-rice-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-brother-rice-high-school"
+    },
+    "trinity-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-trinity-high-school"
+    },
+    "0-gravity-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-zero-gravity"
+    },
+    "washu-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-washington-u"
+    },
+    "uwsp-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-wiscon"
+    },
+    "fullerton-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-fullerton-college"
+    },
+    "jason-maxiell-basketball-player": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "saint-francis-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-francis"
+    },
+    "fairmont-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-fairmont-state"
+    },
+    "mount-union-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-mount"
+    },
+    "duncanville-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-duncanville-high-school"
+    },
+    "east-lansing-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-east-lansing-high-school"
+    },
+    "liberty-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-liberty-high-school"
+    },
+    "petersburg-high-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-petersburg-high-school"
+    },
+    "st-francis-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-francis"
+    },
+    "orange-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-orange-high-school"
+    },
+    "de-la-salle-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-de-la-salle-high-school"
+    },
+    "montverde-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-montverde-academy"
+    },
+    "northwest-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-northwest-high-school"
+    },
+    "maryland-bowie-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bowie-high-school"
+    },
+    "brewster-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-brewster-academy"
+    },
+    "hilliard-bradley-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hilliard-bradley-high-school"
+    },
+    "lincoln-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lincoln-high-school"
+    },
+    "christian-brothers-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-christian-brothers-high-school"
+    },
+    "st-marys-mens-basketball-roster": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-mary-of-the-wo"
+    },
+    "zerogravitybasketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-zero-gravity"
+    },
+    "district-3-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-benedictine-high-school"
+    },
+    "bethel-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bethel-university"
+    },
+    "dallas-baptist-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dallas-baptist-unive"
+    },
+    "richland-bomber-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-richland-high-school"
+    },
+    "uw-stevens-point-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-wiscon"
+    },
+    "princeton-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-princeton-high-school"
+    },
+    "reidsville-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-reidsville-high-school"
+    },
+    "angel-rodriguez-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "wssu-mens-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-winston-salem-st"
+    },
+    "basketball-what-is-an-assist": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "west-liberty-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-west-liberty-high-school"
+    },
+    "washington-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-washingtonscho-high-school"
+    },
+    "caleb-murphy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "westminster-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-westminster-college"
+    },
+    "pvi-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-paul-vi-high-school"
+    },
+    "brandon-larson-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "east-st-louis-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-east-st-louis-high-school"
+    },
+    "cnu-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-christopher-newport"
+    },
+    "lenoir-rhyne-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lenoir-rhyne-univers"
+    },
+    "northwood-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-northwood-university"
+    },
+    "concordia-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-concordia-high-school"
+    },
+    "unc-pembroke-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-unc-pembroke"
+    },
+    "gvsu-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grand-valley-state"
+    },
+    "concordia-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-concordia-high-school"
+    },
+    "heritage-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-heritage-high-school"
+    },
+    "lenoir-rhyne-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lenoir-rhyne-univers"
+    },
+    "wesleyan-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-indiana-wesleyan-uni"
+    },
+    "embry-riddle-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-embry-riddle-aeronau"
+    },
+    "iup-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-indiana-university"
+    },
+    "uw-platteville-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-uw-platteville"
+    },
+    "virginia-union-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-virginia-union"
+    },
+    "ihsa-basketball-scores": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-crescent-high-school"
+    },
+    "madison-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-madison-high-school"
+    },
+    "ahsaa-basketball-scores": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-windward-high-school"
+    },
+    "st-ignatius-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-ignatius-high-school"
+    },
+    "mba-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "mit-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-massachusetts-instit"
+    },
+    "pike-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pike-high-school"
+    },
+    "uwsp-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-uw-stevens-point"
+    },
+    "richland-bombers-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-richland-high-school"
+    },
+    "st-edwards-austin-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-edwards-univers"
+    },
+    "uw-lacrosse-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wisc-lax"
+    },
+    "rainier-beach-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-rainier-beach-high-school"
+    },
+    "centennial-boys-basketball-bakersfield": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-centennial-high-school"
+    },
+    "grinnell-college-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grinnell-college"
+    },
+    "cleveland-state-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cleveland-state-comm"
+    },
+    "elac-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-east-los-angeles"
+    },
+    "marietta-pioneers-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-marietta-college"
+    },
+    "nj-hs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "uw-platteville-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-uw-platteville"
+    },
+    "desales-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-desales-university"
+    },
+    "notre-dame-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-notre-dame-high-school"
+    },
+    "depaul-prep-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-depaul-prep"
+    },
+    "walsh-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-walsh-jesuit-high-school"
+    },
+    "highland-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-highland-high-school"
+    },
+    "moeller-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-archbishop-moeller-high-school"
+    },
+    "leonard-butler-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "westwood-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-westwood-regional-high-school"
+    },
+    "mt-union-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-mount"
+    },
+    "nhiaa-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-denver-east-high-school"
+    },
+    "gauchos-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-george-school-high-school"
+    },
+    "caden-nowicki-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "wpial-basketball-results": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-san-juan-hills-high-school"
+    },
+    "slippery-rock-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-slippery-rock"
+    },
+    "damien-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-damien-high-school"
+    },
+    "little-elm-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-little-elm-high-school"
+    },
+    "westerville-north-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-westerville-north-high-school"
+    },
+    "franklin-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-franklin-k-lane-high-school"
+    },
+    "grinnell-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grinnell-high-school"
+    },
+    "seton-hall-prep-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-seton-hall-prep"
+    },
+    "bowie-state-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bowie-state"
+    },
+    "virginia-union-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-virginia-union"
+    },
+    "pace-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pace-high-school"
+    },
+    "freed-hardeman-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-freed-hardeman-unive"
+    },
+    "saint-marys-basketball-roster": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-mary-of-the-wo"
+    },
+    "mceachern-high-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mceachern-high-school"
+    },
+    "bartlett-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bartlett-high-school"
+    },
+    "tampa-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-tampa"
+    },
+    "keene-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-keene-state-college"
+    },
+    "wybl-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-chapman-basketball-a"
+    },
+    "grand-valley-state-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grand-valley-state"
+    },
+    "william-penn-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-william-penn"
+    },
+    "cmsu-mules-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-central-missouri"
+    },
+    "uwf-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-west"
+    },
+    "cleveland-state-university-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cleveland-state-comm"
+    },
+    "fishers-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-fishers-high-school"
+    },
+    "indianahsbasketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-indiana-school-for-t-high-school"
+    },
+    "don-bosco-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-don-bosco-prep-high"
+    },
+    "ferris-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ferris-state"
+    },
+    "worcester-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-worcester-state"
+    },
+    "marian-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-marian-university"
+    },
+    "desales-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-desales-university"
+    },
+    "seton-hill-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-seton-hill"
+    },
+    "petersburg-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-petersburg-high-school"
+    },
+    "iowa-boys-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-iowa-high-school"
+    },
+    "otterbein-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-otterbein-university"
+    },
+    "westfield-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-spring-westfield-high-school"
+    },
+    "elijah-moore-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "iowa-high-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-iowa-high-school"
+    },
+    "scranton-university-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "crown-point-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-crown-point-high-school"
+    },
+    "westfield-high-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-west-fieldscho-high-school"
+    },
+    "otterbein-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-otterbein-university"
+    },
+    "north-mecklenburg-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-north-mecklenburg-high-school"
+    },
+    "minnesota-state-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-minnesota-state"
+    },
+    "augustana-illinois-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "plymouth-whitemarsh-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-plymouth-whitemarsh-high-school"
+    },
+    "desales-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-desales-university"
+    },
+    "trine-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-trine-university"
+    },
+    "colton-hiller-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "westview-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-westview-high-school"
+    },
+    "morningside-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-morningside-college"
+    },
+    "wssu-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-winston-salem-st"
+    },
+    "connor-williams-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "sacajewa-middle-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-chagrin-falls-high-school"
+    },
+    "oostburg-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oostburg-high-school"
+    },
+    "varsity-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-marquette-university-high-school"
+    },
+    "dynamic-prep-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dynamic-prep-school"
+    },
+    "chapman-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-chapman-basketball-a"
+    },
+    "hunter-huss-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hunter-huss-high-school"
+    },
+    "imhotep-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-imhotep-charter-high-school"
+    },
+    "pike-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pike-high-school"
+    },
+    "long-island-lutheran-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-long-island-lutheran-high-school"
+    },
+    "winona-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-winona-state"
+    },
+    "immaculata-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-immaculata-high-school"
+    },
+    "gannon-university-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-gannon-university"
+    },
+    "darlington-maxpreps-basketball-ga": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-darlington-high-school"
+    },
+    "virginia-union-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-virginia-union"
+    },
+    "crownpoint-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-milton-academy"
+    },
+    "bethel-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bethel-university"
+    },
+    "marcus-johnson-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "north-meck-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-north-mecklenburg-high-school"
+    },
+    "assumption-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-assumption-high-school"
+    },
+    "garfield-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-garfield-high-school"
+    },
+    "cbc-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-community-college-of"
+    },
+    "ferris-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ferris-high-school"
+    },
+    "westlake-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-westlake-high-school"
+    },
+    "mceachern-hs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mceachern-high-school"
+    },
+    "hope-mens-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-hope-college"
+    },
+    "truman-bulldogs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-truman-state"
+    },
+    "central-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-central-high-school"
+    },
+    "cherry-hill-east-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cherry-hill-east-high-school"
+    },
+    "gvsu-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grand-valley-state"
+    },
+    "benet-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-benet-academy-high"
+    },
+    "st-eds-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-edward-high-school"
+    },
+    "wisconsin-la-crosse-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wisc-lax"
+    },
+    "riordan-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-archbishop-riordan-high-school"
+    },
+    "uw-oshkosh-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "dordt-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dordt-college"
+    },
+    "brick-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-brick-township-memor-high-school"
+    },
+    "high-school-basketball-games-today": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "jps-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-stevens-high-school"
+    },
+    "hooper-academy-hope-hull-al": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--hooper-academy"
+    },
+    "penn-state-harrisburg-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-penn-state-harrisbur"
+    },
+    "illinois-wesleyan-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-illinois-wesleyan"
+    },
+    "armuchee-maxpreps-basketball-girls": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-armuchee-high-school"
+    },
+    "winona-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-winona-state"
+    },
+    "gvsu-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grand-valley-state"
+    },
+    "franklin-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-franklin-high-school"
+    },
+    "william-penn-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-william-penn"
+    },
+    "marietta-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-marietta-college"
+    },
+    "hudson-catholic-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hudson-catholic-high-school"
+    },
+    "rockhurst-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-rockhurst-university"
+    },
+    "vhsl-basketball-scores": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-score"
+    },
+    "benedictine-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-benedictine-high-school"
+    },
+    "truman-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-truman-state"
+    },
+    "cp3-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cp3-basketball-acade"
+    },
+    "princeton-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-princeton-high-school"
+    },
+    "kansas-high-school-basketball-scores": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-kansas-high-school"
+    },
+    "cherokee-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cherokee-high-school"
+    },
+    "mt-vernon-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mount-vernon-high-school"
+    },
+    "iwu-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-illinois-wesleyan"
+    },
+    "arcadia-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-arcadia-university"
+    },
+    "grace-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grace-college"
+    },
+    "harding-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-harding-university"
+    },
+    "north-park-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-north-park"
+    },
+    "coatesville-pa-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-coatesville-high-school"
+    },
+    "new-castle-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-new-castle-high-school"
+    },
+    "uw-whitewater-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-uw-whitewater"
+    },
+    "farmville-central-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-farmville-central-high-school"
+    },
+    "florida-southern-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-florida-southern-col"
+    },
+    "stony-brook-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-the-stony-brook-scho-high-school"
+    },
+    "monroe-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-monroe-high-school"
+    },
+    "warsaw-school-basketball-canceled": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-warsaw-high-school"
+    },
+    "cathedral-prep-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cathedral-prep"
+    },
+    "pace-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pace-high-school"
+    },
+    "centennial-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-centennial-high-school"
+    },
+    "umass-boston-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-umass-boston"
+    },
+    "nmhu-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-northern-new-mexico"
+    },
+    "university-of-wisconsin-oshkosh-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "denison-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-denison-high-school"
+    },
+    "black-hills-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-black-hills-state"
+    },
+    "uw-oshkosh-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oshkosh-west-high-school"
+    },
+    "plymouth-whitemarsh-basketball-team": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-plymouth-whitemarsh-high-school"
+    },
+    "chs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-charlottesville-high-school"
+    },
+    "roselle-catholic-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-roselle-catholic-hig-high-school"
+    },
+    "oklahoma-wesleyan-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oklahoma-wesleyan"
+    },
+    "benet-hs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-benet-academy-high"
+    },
+    "don-bosco-prep-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-don-bosco-prep-high"
+    },
+    "kinds-of-shooting-in-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "northpark-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-north-park"
+    },
+    "anthony-brown-jr-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "st-x-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-xavier-high-school"
+    },
+    "freed-hardeman-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-freed-hardeman-unive"
+    },
+    "slippery-rock-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-slippery-rock"
+    },
+    "neuqua-valley-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "principia-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-principiaschoo-high-school"
+    },
+    "wheeler-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wheeler-high-school"
+    },
+    "wittenberg-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wittenberg"
+    },
+    "oit-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oregon-institute-of"
+    },
+    "rockhurst-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-rockhurst-university"
+    },
+    "baylor-university-womens-basketball-roster": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-baylor-school-high-school"
+    },
+    "indiana-wesleyan-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-indiana-wesleyan-uni"
+    },
+    "snhu-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-southern-new-hampshi"
+    },
+    "uva-wise-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-virginia-wise"
+    },
+    "nj-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "central-dauphin-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-central-dauphin-east-high-school"
+    },
+    "uw-stout-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wisconsin-stout"
+    },
+    "wichita-hoops": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-heights-high-school"
+    },
+    "nebraska-wesleyan-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-nebraska-wesleyan"
+    },
+    "morris-catholic-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-morris-catholic-high-school"
+    },
+    "truman-state-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-truman-state"
+    },
+    "vincennes-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-vincennes-university"
+    },
+    "uindy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "neumann-goretti-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-sts-neumann-high-school"
+    },
+    "ashland-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ashland-high-school"
+    },
+    "lutheran-east-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lutheran-east-high-school"
+    },
+    "bethesda-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-american-indian-coll"
+    },
+    "upj-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "central-missouri-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-central-missouri"
+    },
+    "centennial-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-centennial-high-school"
+    },
+    "anderson-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-anderson-university"
+    },
+    "wabash-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wabash-valley-colleg"
+    },
+    "tpa-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-the-process-athletic"
+    },
+    "hustle-hoops-warminster": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-westminster-college"
+    },
+    "wv-hs-basketball-scores": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-morgantown-high-school"
+    },
+    "iowa-high-school-basketball-scores": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-score"
+    },
+    "wisconsin-lacrosse-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wisc-lax"
+    },
+    "harding-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-harding-academy"
+    },
+    "ghsa-scores-basketball": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-st-xavier-high-school"
+    },
+    "wisconsin-oshkosh-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "mesa-state-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mesa-community"
+    },
+    "stevenson-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-stevenson-university"
+    },
+    "winston-salem-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-winston-salem-st"
+    },
+    "westlake-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-westlake-high-school"
+    },
+    "slippery-rock-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-slippery-rock"
+    },
+    "did-charlie-kirk-play-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "missouri-southern-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-missouri-southern"
+    },
+    "st-anselm-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-anselm-college"
+    },
+    "keiser-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-keiser-university"
+    },
+    "oklahoma-wesleyan-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oklahoma-wesleyan"
+    },
+    "franklin-and-marshall-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-allegany-college-of"
+    },
+    "phs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-parkersburg-high-school"
+    },
+    "heritage-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-frisco-heritage-high-school"
+    },
+    "truman-state-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-truman-state"
+    },
+    "ut-tyler-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-texas-tyler"
+    },
+    "spaulding-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-spalding-university"
+    },
+    "linden-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-linden-high-school"
+    },
+    "ccny-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-city-college-of-new"
+    },
+    "bishop-mcnamara-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bishop-mcnamara-high-school"
+    },
+    "wittenberg-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wittenberg"
+    },
+    "sewickley-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-sewickley-academy-hi"
+    },
+    "lees-mcrae-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lees-mcrae-college"
+    },
+    "northern-state-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-northern-state"
+    },
+    "arcadia-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-arcadia-high-school"
+    },
+    "lees-mcrae-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lees-mcrae-college"
+    },
+    "new-jersey-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "jj-smith-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-jj-smith"
+    },
+    "devon-prep-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-devon-prep-high-scho"
+    },
+    "blair-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-blair-academy"
+    },
+    "newman-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-the-newman-school-high-school"
+    },
+    "emerson-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-emerson-high-school"
+    },
+    "truman-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-truman-state"
+    },
+    "connors-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-connors-state"
+    },
+    "wisconsin-lutheran-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wisconsin-lutheran-high-school"
+    },
+    "basketball-heritage": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-frisco-heritage-high-school"
+    },
+    "brescia-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-brescia-university"
+    },
+    "beaumont-united-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-united-high-school"
+    },
+    "barry-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-barry-university"
+    },
+    "lenoir-rhyne-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lenoir-rhyne-univers"
+    },
+    "lincoln-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lincoln-high-school"
+    },
+    "ohio-basketball-club": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cincinnati-royals"
+    },
+    "notre-dame-west-haven-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-notre-dame-high-school"
+    },
+    "olympia-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-olympia-high-school"
+    },
+    "st-john-fisher-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-priory-high-school"
+    },
+    "basketball-turnover": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "winona-state-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-winona-state"
+    },
+    "claflin-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-claflin-university"
+    },
+    "harding-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-harding-academy"
+    },
+    "north-county-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-north-county-high-school"
+    },
+    "southeastern-prep-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-southeastern-prepara"
+    },
+    "basketball-de-la-salle": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-delasalle-high-school"
+    },
+    "basketball-heidelberg": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-heidelberg"
+    },
+    "cullman-basketball-complex": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cullman-high-school"
+    },
+    "indiana-university-pennsylvania-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-indiana-university"
+    },
+    "grind-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grind-basketball"
+    },
+    "lima-sr-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "dallastown-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dallastown-high-school"
+    },
+    "ghsa-basketball-results": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-weston-mcewen-high-school"
+    },
+    "winston-salem-state-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-winston-salem-st"
+    },
+    "jefferson-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-jefferson-high-school"
+    },
+    "truman-state-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-truman-state"
+    },
+    "anderson-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-anderson-high-school"
+    },
+    "maryville-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-maryville-high-school"
+    },
+    "florida-southwestern-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-florida-southwestern"
+    },
+    "hoban-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-archbishop-hoban-high-school"
+    },
+    "east-jackson-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-east-jackson-high-school"
+    },
+    "micah-gordon-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "msu-mankato-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-minnesota-state"
+    },
+    "okwu-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oklahoma-wesleyan"
+    },
+    "riverside-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-riverside-high-school"
+    },
+    "adelphi-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-josephs-high-school"
+    },
+    "darlington-maxpreps-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-darlington-high-school"
+    },
+    "uco-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-central-oklahoma"
+    },
+    "csu-pueblo-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-colorado-state"
+    },
+    "lincoln-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lincoln-university"
+    },
+    "spire-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-spire-academy"
+    },
+    "st-francis-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-francis-high-school"
+    },
+    "hillgrove-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hillgrove-high-school"
+    },
+    "crown-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-crown-college"
+    },
+    "whs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-washingtonscho-high-school"
+    },
+    "uw-stout-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wisconsin-stout"
+    },
+    "elle-evans-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-elle-evans"
+    },
+    "carroll-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-carroll-university"
+    },
+    "central-oklahoma-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "southern-new-hampshire-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-southern-new-hampshi"
+    },
+    "millikin-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-millikin-university"
+    },
+    "trinity-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-trinity-high-school"
+    },
+    "king-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-king-high-school"
+    },
+    "university-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-high-school"
+    },
+    "westside-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-westside-high-school"
+    },
+    "depauw-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-depauw-university"
+    },
+    "dakota-wesleyan-university-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dakota-wesleyan"
+    },
+    "rutgers-camden-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-rutgers-camden"
+    },
+    "oregon-tech-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oregon-institute-of"
+    },
+    "northside-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-northsideschoo-high-school"
+    },
+    "east-kentwood-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-east-kentwood-high-school"
+    },
+    "rutgers-prep-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-rutgers-prep"
+    },
+    "mchi-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mcallen-high-school"
+    },
+    "center-grove-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-center-grove-high-school"
+    },
+    "william-paterson-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-william-paterson"
+    },
+    "immaculata-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-immaculata"
+    },
+    "ucm-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-central-missouri"
+    },
+    "basketball-hobart": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hobart-high-school"
+    },
+    "cleveland-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cleveland-high-school"
+    },
+    "marion-local-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-marion-local-high-school"
+    },
+    "stars-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-stars-basketball-clu"
+    },
+    "rutgers-basketball-camden": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-rutgers-camden"
+    },
+    "oregon-waves-ibl-basketball-logo": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "indian-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-elton-high-school"
+    },
+    "jack-yates-basketball-team": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-yates-high-school"
+    },
+    "pitt-johnstown-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "dwu-athletics-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dakota-wesleyan"
+    },
+    "turnover-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "william-paterson-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-william-paterson"
+    },
+    "angelo-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-angelo-state"
+    },
+    "uc-santa-cruz-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "susquehanna-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-susquehanna-high-school"
+    },
+    "uw-la-crosse-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wisc-lax"
+    },
+    "pfeiffer-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pfeiffer-university"
+    },
+    "oregon-institute-of-technology-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oregon-institute-of"
+    },
+    "lakeland-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lakeland-high-school"
+    },
+    "jackson-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-jackson-high-school"
+    },
+    "principia-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-principiaschoo-high-school"
+    },
+    "trinity-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-trinity-college-of-f"
+    },
+    "wilson-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wilson-high-school"
+    },
+    "suny-oneonta-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-suny-oneonta"
+    },
+    "lubbock-christian-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lubbock-christian-high-school"
+    },
+    "oklahoma-wesleyan-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oklahoma-wesleyan"
+    },
+    "southern-nh-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-southern-new-hampshi"
+    },
+    "basketball-riverside": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-riverside-high-school"
+    },
+    "kent-state-university-mens-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-kent-state-universit"
+    },
+    "pfeiffer-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pfeiffer-university"
+    },
+    "penn-state-york-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-penn-state-universit"
+    },
+    "calvary-christian-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-calvary-christian-high-school"
+    },
+    "harvard-westlake-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-harvard-westlake-high-school"
+    },
+    "dunbar-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dunbar-high-school"
+    },
+    "holy-family-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-holy-family-universi"
+    },
+    "westlake-high-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-westlake-high-school"
+    },
+    "dwu-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dakota-wesleyan"
+    },
+    "milton-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-milton-high-school"
+    },
+    "fisk-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-fisk-university"
+    },
+    "drew-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-drew-university"
+    },
+    "mankato-state-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-minnesota-state"
+    },
+    "harrell-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "northern-nash-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-northern-nash-high-school"
+    },
+    "chris-bell-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "ithaca-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ithaca-college"
+    },
+    "qhs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-quincy-senior-high-school"
+    },
+    "montclair-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-montclair-high-school"
+    },
+    "westlake-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-westlake-high-school"
+    },
+    "bobcats-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-berryville-high-school"
+    },
+    "uw-whitewater-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-uw-whitewater"
+    },
+    "scranton-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "cal-u-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-video"
+    },
+    "westmont-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grossmont-college"
+    },
+    "butler-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-butler-high-school"
+    },
+    "chicago-simeon-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-simeon-high-school"
+    },
+    "northcentral-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-north-central-michig"
+    },
+    "mcallen-high-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mcallen-high-school"
+    },
+    "pace-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pace-high-school"
+    },
+    "jc-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-tyler-jc"
+    },
+    "geneseo-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-suny-geneseo"
+    },
+    "st-peters-prep-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-peters-prep"
+    },
+    "wisconsin-oshkosh-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oshkosh-west-high-school"
+    },
+    "marissa-thomas-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "lubbock-christian-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lubbock-christian-un"
+    },
+    "winona-state-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-winona-state"
+    },
+    "desales-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-desales-university"
+    },
+    "tvba-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-tennessee-valley-defenders"
+    },
+    "snhu-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-southern-new-hampshi"
+    },
+    "hoggard-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hoggard-high-school"
+    },
+    "wadsworth-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wadsworth-high-school"
+    },
+    "wasatch-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wasatch-wasps-high-school"
+    },
+    "tampa-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-tampa"
+    },
+    "edinboro-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-edinboro-university"
+    },
+    "davis-and-elkins-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-davis-elkins-colle"
+    },
+    "northview-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-northview-high-school"
+    },
+    "hargrave-military-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hargrave-military-high-school"
+    },
+    "montgomery-bell-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-montgomery-bell-high-school"
+    },
+    "dakota-wesleyan-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dakota-wesleyan"
+    },
+    "drake-maye-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-drake-maye"
+    },
+    "quentin-coleman-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "bryant-and-stratton-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bryant-stratton-co"
+    },
+    "oit-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oregon-institute-of"
+    },
+    "ontario-christian-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ontario-christian-high-school"
+    },
+    "greenville-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-greenville-high-school"
+    },
+    "uw-lacrosse-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wisc-lax"
+    },
+    "centerburg-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-liberty-center-high-school"
+    },
+    "union-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-union-high-school"
+    },
+    "emporia-state-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-emporia-state"
+    },
+    "msu-mankato-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-minnesota-state"
+    },
+    "lavar-johnson-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "district-11-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-henry-county-high-school"
+    },
+    "edinboro-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-edinboro-university"
+    },
+    "st-xavier-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-xavier-high-school"
+    },
+    "ut-tyler-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-texas-tyler"
+    },
+    "petersburg-va-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-petersburg-high-school"
+    },
+    "maryville-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-maryville-high-school"
+    },
+    "msu-denver-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-metropolitan-state-u"
+    },
+    "crespi-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-crespi-high-school"
+    },
+    "drew-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-drew-university"
+    },
+    "shaw-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-shaw-university"
+    },
+    "upj-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "wcupa-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-west-chester"
+    },
+    "crean-lutheran-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-crean-lutheran-high-school"
+    },
+    "st-edwards-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-priory-high-school"
+    },
+    "susquehanna-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-susquehanna-high-school"
+    },
+    "lewis-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lewis-university"
+    },
+    "roosevelt-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-roosevelt-university"
+    },
+    "kent-state-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-kent-state-universit"
+    },
+    "delaware-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-delaware-valley-high-school"
+    },
+    "camden-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-camden-high-school"
+    },
+    "grand-valley-state-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grand-valley-state"
+    },
+    "vanguard-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-vanguard-university"
+    },
+    "carmel-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-carmel-high-school"
+    },
+    "cchs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-central-catholic-high-school"
+    },
+    "stephen-kmetz-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "madison-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-madison-high-school"
+    },
+    "midland-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-midland-college"
+    },
+    "concord-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-concord-high-school"
+    },
+    "grayson-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grayson-county-high-school"
+    },
+    "morningside-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-morningside-college"
+    },
+    "great-northwest-basketball-league": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bruce-high-school"
+    },
+    "valdosta-state-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-valdosta-state"
+    },
+    "upper-st-clair-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-upper-st-clair-high-school"
+    },
+    "junior-varsity-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oregon-high-school"
+    },
+    "logan-rogersville-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-logan-rogersville-high-school"
+    },
+    "pitt-johnstown-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "cornerstone-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cornerstone-high-school"
+    },
+    "jordan-mcdonald-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "riverside-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-riverside-high-school"
+    },
+    "midland-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-midland-university"
+    },
+    "saint-xavier-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-xavier"
+    },
+    "vashon-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mountainside-high-school"
+    },
+    "lynn-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lynn-university"
+    },
+    "plano-east-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-plano-eastscho-high-school"
+    },
+    "bethel-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bethel-university"
+    },
+    "embry-riddle-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-embry-riddle-aeronau"
+    },
+    "new-trier-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-new-trier-high-school"
+    },
+    "susquehanna-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-susquehanna-high-school"
+    },
+    "niagara-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-niagara-county-cc"
+    },
+    "st-francis-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-francis"
+    },
+    "william-and-penn-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grand-view-univ"
+    },
+    "minnesota-basketball-hub": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "north-shore-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-north-shore-high-school"
+    },
+    "mansfield-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mansfield-university"
+    },
+    "st-edwards-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-edward-high-school"
+    },
+    "jack-yates-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-yates-high-school"
+    },
+    "caroline-bradley-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "freedom-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-freedom-high-school"
+    },
+    "st-john-fisher-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-john-fisher"
+    },
+    "franklin-pierce-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-franklin-pierce"
+    },
+    "houston-jack-yates-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-yates-high-school"
+    },
+    "allen-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-allen-high-school"
+    },
+    "uah-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-alabam"
+    },
+    "akron-st-vincent-st-mary-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-vincent-st-mary-high-school"
+    },
+    "seton-hill-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-seton-hill"
+    },
+    "ohio-dominican-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ohio-dominican"
+    },
+    "dunbar-baltimore-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dunbar-high-school"
+    },
+    "rockford-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-rockford-high-school"
+    },
+    "immaculata-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-immaculata"
+    },
+    "img-academy-basketball-roster": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-img-academy"
+    },
+    "woodward-academy-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-woodward-academy"
+    },
+    "benedictine-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-benedictine-high-school"
+    },
+    "fort-lewis-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-fort-lewis-college"
+    },
+    "oak-hills-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oak-hills-high-school"
+    },
+    "colonial-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-colonia-high-school"
+    },
+    "grand-valley-state-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grand-valley-state"
+    },
+    "concord-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-concord-university"
+    },
+    "roman-catholic-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-roman-catholic-high-school"
+    },
+    "kaneland-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-kaneland-high-school"
+    },
+    "okwu-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oklahoma-wesleyan"
+    },
+    "black-hills-state-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-black-hills-state"
+    },
+    "carroll-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-carroll-high-school"
+    },
+    "section-6-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-paul-vi-high-school"
+    },
+    "uofa-fort-smith-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-arkans"
+    },
+    "kentucky-wesleyan-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-kentucky-wesleyan"
+    },
+    "massillon-tigers-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-washington-high-school"
+    },
+    "maryville-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-maryville-high-school"
+    },
+    "christ-the-king-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-christ-the-king-jesu-high-school"
+    },
+    "emory-university-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oxford-college-of-em"
+    },
+    "barry-university-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-barry-university"
+    },
+    "wayzata-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wayzata-high-school"
+    },
+    "summit-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mansfield-high-school"
+    },
+    "carnegie-mellon-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-carnegie-mellon"
+    },
+    "brunswick-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-brunswick-high-school"
+    },
+    "archbishop-stepinac-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-archbishop-stepinac-high-school"
+    },
+    "basketball-what-is-a-turnover": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "redlands-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-redlands"
+    },
+    "auburn-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-auburn-high-school"
+    },
+    "brennan-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-brennan-high-school"
+    },
+    "grand-valley-state-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grand-valley-state"
+    },
+    "columbia-high-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-columbia-high-school"
+    },
+    "junior-high-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-syracuse-high-school"
+    },
+    "wheaton-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wheaton-college"
+    },
+    "west-forsyth-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-west-forsyth-high-school"
+    },
+    "simeon-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-simeon-high-school"
+    },
+    "gannon-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-gannon-university"
+    },
+    "university-of-scranton-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of"
+    },
+    "lagrange-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-la-grange-college"
+    },
+    "north-park-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-north-park"
+    },
+    "southern-new-hampshire-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-southern-new-hampshi"
+    },
+    "suny-cortland-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-suny-oneonta"
+    },
+    "kentucky-wesleyan-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-kentucky-wesleyan"
+    },
+    "gannon-basketball-schedule": {
+      "category": "basketball-schedules",
+      "relatedGroup": "hudl-20261113-1000-basketball-schedules-basketball-gannon-university"
+    },
+    "emory-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-emory-university"
+    },
+    "st-thomas-womens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-thomas-univer"
+    },
+    "stevens-point-pointers-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-uw-stevens-point"
+    },
+    "kutztown-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-kutztown-high-school"
+    },
+    "richland-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-richland-high-school"
+    },
+    "ferris-state-mens-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ferris-state"
+    },
+    "reggie-love-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-reggie-love"
+    },
+    "butler-high-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-butler-high-school"
+    },
+    "st-james-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-saint-james-school-high-school"
+    },
+    "regis-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-regis-high-school"
+    },
+    "upper-iowa-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-upper-iowa"
+    },
+    "ohio-northern-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ohio-northern"
+    },
+    "camden-hs-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-camden-high-school"
+    },
+    "crandall-girls-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-crandall-high-school"
+    },
+    "pickerington-central-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pickerington-central-high-school"
+    },
+    "mceachern-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mceachern-high-school"
+    },
+    "barry-mitchell-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-barry-mitchell"
+    },
+    "middle-school-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cumberland-academy"
+    },
+    "bartlett-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bartlett-high-school"
+    },
+    "cal-lutheran-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-california-lutheran"
+    },
+    "tenafly-basketball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-tenafly-high-school"
+    },
+    "johnson-ladies": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-johnson-wales"
+    },
+    "wor-wor": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-worcester-state"
+    },
+    "warren-east": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-warren-east-high-school"
+    },
+    "sunnyslope-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-sunnyslope-high-school"
+    },
+    "summer-creek": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-summer-creek-high-school"
+    },
+    "greendale-martin-luther": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-martin-luther-high-school"
+    },
+    "kemmerer-wy": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-big-piney-high-school"
+    },
+    "brooke-point-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-brooke-point-high-school"
+    },
+    "fairfield-vs-iowa": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-fairfield-high-school"
+    },
+    "syracuse-vs-kansas": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-syracuse-high-school"
+    },
+    "bishop-hendricken-rhode-island": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bishop-hendricken-high-school"
+    },
+    "bearden-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bearden-high-school"
+    },
+    "hortonville": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hortonville-high-school"
+    },
+    "crivitz-wisconsin": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-crivitz-high-school"
+    },
+    "heights-wichita-ks": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-heights-high-school"
+    },
+    "naperville-central": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-naperville-central-h-high-school"
+    },
+    "east-high-wichita-kansas": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wichita-east-high-school"
+    },
+    "felton-grove-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-felton-grovesc-high-school"
+    },
+    "governor-livingston-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-governor-livingston-high-school"
+    },
+    "fg-made": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-general"
+    },
+    "banner-rams": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-winston-salem-st"
+    },
+    "great-mills-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "sunrise-christian-academy": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-sunrise-christian-high-school"
+    },
+    "franklin-heights": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-franklin-heights-high-school"
+    },
+    "central-city-breakers": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-central-city-high-school"
+    },
+    "cordell-pope": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pope-john-paul-ii-high-school"
+    },
+    "alah": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-arthur-high-school"
+    },
+    "clearbrook-park": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-clearbrook-gonvick-high-school"
+    },
+    "griffin-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-griffin-high-school"
+    },
+    "st-vincent-st-mary-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-vincent-st-mary-high-school"
+    },
+    "triton-central-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-triton-central-high-school"
+    },
+    "ripon-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "conant": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-conant-high-school"
+    },
+    "cranfills-gap": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cranfills-gap-high-school"
+    },
+    "bakersfield-christian-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bakersfield-christia-high-school"
+    },
+    "loy-norrix": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-norrix-high-school"
+    },
+    "usc-salkehatchie-allendale": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-usc-salkehatchie"
+    },
+    "marcello-thedford": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-sandhillsthedford-high-school"
+    },
+    "bonner-springs-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bonner-springs-high-school"
+    },
+    "wfhs": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-west-fargo-high-school"
+    },
+    "tioga-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-tioga-high-school"
+    },
+    "mona-capuchino": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-capuchino-high-school"
+    },
+    "loudon-va-to-lynchburg": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lynchburg-home-schoo"
+    },
+    "stlhighschoolsports": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-louis-high-school"
+    },
+    "purcell-marian-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-purcell-marian-high-school"
+    },
+    "bodine-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-william-w-bodine-hi-high-school"
+    },
+    "york-suburban-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-york-suburban-high-school"
+    },
+    "max-hayes": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-max-hayes-high-school"
+    },
+    "pkms": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-central-high-school"
+    },
+    "aaron-spearman": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-sanford-fritch-high-school"
+    },
+    "mghs": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mountain-grove-high-school"
+    },
+    "erskine-academy-maine": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-erskine-academy"
+    },
+    "carlynton": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-carlynton-high-school"
+    },
+    "verndale": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-verndale-high-school"
+    },
+    "hockinson": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ridgefield-high-school"
+    },
+    "hibriten-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hibriten-high-school"
+    },
+    "grafton-nd-usa": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grafton-high-school"
+    },
+    "fan-24-st": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-thomas-aquinas-high-school"
+    },
+    "dallas-carter": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-carter-high-school"
+    },
+    "bigfoot-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-big-foot-high-school"
+    },
+    "mater-academy-cutler-bay": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mater-academy-cutler"
+    },
+    "idea-monterrey-park": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-idea-monterrey-park-high-school"
+    },
+    "piketon": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-piketon-high-school"
+    },
+    "macarthur-hs-levittown": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-macarthur-high-school"
+    },
+    "pc-west": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-putnam-city-west-high-school"
+    },
+    "what-is-a-loose-ball-foul": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-foul"
+    },
+    "sturgis-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-sturgis-high-school"
+    },
+    "sheldon-high-eugene": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-sheldon-high-school"
+    },
+    "vaqueros-de-saucillo-basquetbol": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-cypress-ranch-high-school"
+    },
+    "c-c-l-a": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-centenary-college-of"
+    },
+    "jc-harmon": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-j-c-harmon-high-school"
+    },
+    "pjc-ecg": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-paris-jc"
+    },
+    "denver-bas": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-denver-high-school"
+    },
+    "eastbrook-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-eastbrook-high-school"
+    },
+    "grand-lakes-junior-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-grand-lakes-junior-h"
+    },
+    "mediapolis-savings-bank": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mediapolis-high-school"
+    },
+    "william-penn-senior-high-york-pa": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-william-penn-high-school"
+    },
+    "ponaganset-middle": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ponaganset-high-school"
+    },
+    "millbrook-hs-raleigh": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-millbrook-high-school"
+    },
+    "south-carroll": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-south-carroll-high-school"
+    },
+    "northscott": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-north-scott-high-school"
+    },
+    "raiders-lady": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-southland-academy"
+    },
+    "wickenburg-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wickenburg-high-school"
+    },
+    "east-jackson-high-school-commerce-ga": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-east-jackson-high-school"
+    },
+    "davidson-charter-academy": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-davidson-charter-aca"
+    },
+    "east-bridgewater-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-east-bridgewater-high-school"
+    },
+    "university-of-the-southwest-in-hobbs-new-mexico": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-university-of-the-so"
+    },
+    "wildcats-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-clear-creek-high-school"
+    },
+    "bridgton-academy-athletic-facilities": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bridgton-academy"
+    },
+    "rocktown-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-rocktown-high-school"
+    },
+    "east-cary-middle-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-east-cary-middle"
+    },
+    "baldwin-woodville-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-baldwin-woodville-high-school"
+    },
+    "cooper-junior-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wylie-high-school"
+    },
+    "reedsburg-to-dodgeville": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-reedsburg-high-school"
+    },
+    "park-hill-south-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-park-hill-south-high-school"
+    },
+    "tombstone-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-tombstone-high-school"
+    },
+    "webster-city-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-webster-city-high-school"
+    },
+    "heb-palmview": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-palmview-high-school"
+    },
+    "monomoy-capital-partners-lp": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-monomoy-high-school"
+    },
+    "varsity-vs-junior-varsity": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-missouri-valley"
+    },
+    "plymouth-christian": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-plymouth-christian-a-high-school"
+    },
+    "glenmora": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-glenmora-high-school"
+    },
+    "millard-west-nebraska": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-millard-west-high-school"
+    },
+    "mnw": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-northwest-webster-high-school"
+    },
+    "viewmont-diner-dickson-city-pa": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-viewmont-high-school"
+    },
+    "west-boca-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-west-boca-raton-high-school"
+    },
+    "rapid-city-christian": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-rapid-city-christian-high-school"
+    },
+    "st-john-fisher-bball": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-st-john-fisher"
+    },
+    "bowling-green-junior-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bowling-green"
+    },
+    "bonner-springs-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bonner-springs-high-school"
+    },
+    "img-charlotte": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-img-academy"
+    },
+    "bdjh": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-beckendorff-junior"
+    },
+    "eastcary": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-east-cary-middle"
+    },
+    "ottoville-ohio": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-ottoville-high-school"
+    },
+    "lady-jays": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-johnson-creek-high-school"
+    },
+    "fultonville": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-fonda-fultonville-high-school"
+    },
+    "warrior-run": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-warrior-run-high-school"
+    },
+    "marsh-valley": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-marsh-valley-high-school"
+    },
+    "gnms": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lagrange-high-school"
+    },
+    "img-blue": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-img-academy"
+    },
+    "oak-creek-hs": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-oak-creek-high-school"
+    },
+    "raytown-south-hs": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-raytown-south-high-school"
+    },
+    "plaucheville-la": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-castor-la-high-school"
+    },
+    "alden-conger": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-alden-conger-high-school"
+    },
+    "singita-sasakwa-lodge-serengeti": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-sasakwa-high-school"
+    },
+    "montverde-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-montverde-academy"
+    },
+    "washington-warriors": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-washington-high-school"
+    },
+    "central-springs": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-central-springs-high-school"
+    },
+    "huntington-prep-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-huntington-prep"
+    },
+    "jjhuddle": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "sherman-texoma-christian": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-texoma-christian-high-school"
+    },
+    "moravian-prep": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-moravian-prep"
+    },
+    "conrad-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-conrad-high-school"
+    },
+    "texas-leadership-charter-academy": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-texas-leadership-high-school"
+    },
+    "marinette-marines": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-marinette-high-school"
+    },
+    "neelyville": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-neelyvillescho-high-school"
+    },
+    "normangee-tractor": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-normangee-high-school"
+    },
+    "homes-for-sale-in-pardeeville-wi": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pardeeville-high-school"
+    },
+    "wilmington-christian-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wilmington-christian-high-school"
+    },
+    "paul-kinder-middle-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-paul-kinder-middle-s"
+    },
+    "hopkins-middle": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hopkins-middle-schoo"
+    },
+    "sumner-high-school-st-louis": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-sumner-high-school"
+    },
+    "kenneth-henderson": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-garden-city-high-school"
+    },
+    "pernell-walker": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-velma-alma-high-school"
+    },
+    "david-w-carter-high-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-carter-high-school"
+    },
+    "conway-junior-high-arkansas": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-conway-high-school"
+    },
+    "reach-in-foul": {
+      "category": "basketball-skills",
+      "relatedGroup": "hudl-20261113-1000-basketball-skills-basketball-foul"
+    },
+    "mvhs-pharmacy": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-medicine-valley-high-school"
+    },
+    "gnwl": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-bruce-high-school"
+    },
+    "barr-reeve": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-barr-reeve-high-school"
+    },
+    "lauc": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-leap-academy-univers"
+    },
+    "8th-grade-girls": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-mcpherson-middle-sch"
+    },
+    "hoop-heaven-waldwick": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-waldwick-high-school"
+    },
+    "net-rating": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-general"
+    },
+    "monett-8-movie-theater": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-monett-high-school"
+    },
+    "easton-valley": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-easton-valley-high-school"
+    },
+    "christian-fellowship-academy": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-christian-fellowship-high-school"
+    },
+    "studentvue-wlwv": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-westside-christian-h-high-school"
+    },
+    "earlsboro": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-earlsboroschoo-high-school"
+    },
+    "freire-tech": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-freire-charter-schoo-high-school"
+    },
+    "claiborne-christian": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-claiborne-christian-high-school"
+    },
+    "horton-michigan": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hanover-horton-high-school"
+    },
+    "franklin-bulls": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-franklin-basketball"
+    },
+    "maple-northwestern": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-northwestern-high-school"
+    },
+    "labrae": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-lakeview-high-school"
+    },
+    "team1sport": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-basketball"
+    },
+    "tnca": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-true-north-classical-high-school"
+    },
+    "champaign-centennial": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-centennial-high-school"
+    },
+    "the-webb": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-the-webb-school-high-school"
+    },
+    "pontiac-holiday-tournament": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-pontiac-high-school"
+    },
+    "union-high-school-virginia": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-union-school-high-school"
+    },
+    "wossman-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-wossman-high-school"
+    },
+    "tongue-burns": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-burns-high-school"
+    },
+    "neelyville-mo": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-neelyvillescho-high-school"
+    },
+    "conway-jr-high": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-conway-high-school"
+    },
+    "redbank-chevrolet": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-redbank-valley-high-school"
+    },
+    "cpt-95886": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-abundant-life-christ-high-school"
+    },
+    "upper-dauphin": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-upper-dauphin-area-high-school"
+    },
+    "d2-sports": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-salem-lutheran-schoo"
+    },
+    "principia-vs-saint-louis": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-principiaschoo-high-school"
+    },
+    "dhs-muskegon": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-dearborn-high-school"
+    },
+    "sand-valley-leopold-way-nekoosa-wi": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-nekoosa-high-school"
+    },
+    "southern-regional-middle-school": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-southern-regional-high-school"
+    },
+    "the-crest-pleasant-hill": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-crest-ridge-high-school"
+    },
+    "washu-athletics": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-washington-u"
+    },
+    "columbia-vs-california": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-columbia-college"
+    },
+    "htms": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-hewitt-trussville-high-school"
+    },
+    "slam-academy-nevada": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-slam-academy-of-neva"
+    },
+    "east-buchanan": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-east-buchanan-high-school"
+    },
+    "christoval-tx-winery": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-christoval-high-school"
+    },
+    "sunburg": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-new-london-spicer-high-school"
+    },
+    "timothy-christian-academy": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-timothy-christian-high-school"
+    },
+    "chattooga-white-water-rafting": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-chattooga-high-school"
+    },
+    "clyde-c-miller": {
+      "category": "basketball-teams",
+      "relatedGroup": "hudl-20261113-1000-basketball-teams-basketball-miller-career-academ-high-school"
+    },
+    "handbreak-video-compressor": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--general"
+    },
+    "highlights-for-soccer": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video-soccer-highlight"
+    },
+    "usc-scout": {
+      "category": "scouting",
+      "relatedGroup": "hudl-20261113-1000-scouting--general"
+    },
+    "fast-scout": {
+      "category": "scouting",
+      "relatedGroup": "hudl-20261113-1000-scouting--general"
+    },
+    "soccer-camera": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video-soccer-camera"
+    },
+    "caleb-downs-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "sonny-styles-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "drake-maye-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "jadarian-price-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "best-camera-for-sports-videography": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--camera"
+    },
+    "kc-concepcion-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "denzel-boston-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "recruiting-in-sports": {
+      "category": "scouting",
+      "relatedGroup": "hudl-20261113-1000-scouting--recruit"
+    },
+    "skattebo-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "bo-jackson-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "highlights-of-bo-jackson": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "cooper-camferdam-video": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--general"
+    },
+    "ronaldinho-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "film-malik": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--general"
+    },
+    "kenyon-sadiq-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "ty-simpson-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "best-video-camera-for-sports": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--camera"
+    },
+    "omarion-hampton-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "sports-video-camera": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--camera"
+    },
+    "shaq-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "sports-filming": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--general"
+    },
+    "derrick-henry-high-school-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "jonah-coleman-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "micah-parsons-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "chris-bell-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "diego-pavia-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "caden-nowicki-recruiting": {
+      "category": "scouting",
+      "relatedGroup": "hudl-20261113-1000-scouting--recruit"
+    },
+    "lacrosse-video-games": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video-lacrosse-general"
+    },
+    "lacrosse-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video-lacrosse-highlight"
+    },
+    "dante-moore-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "mike-washington-jr-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "deion-sanders-highlights": {
+      "category": "sports-video",
+      "relatedGroup": "hudl-20261113-1000-sports-video--highlight"
+    },
+    "high-school-football": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-football-general"
+    },
+    "wheeling-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "jamesville-dewitt-sports": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--jamesville-dewitt-high-school"
+    },
+    "bright-football-club": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-football-ute-conference-footb"
+    },
+    "caleb-pressley-football": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-football-general"
+    },
+    "el-toro-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-football-general"
+    },
+    "wakefield-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "southlake-carroll-football": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-football-southlake-carroll-high-school"
+    },
+    "maryville-university-of-st-louis": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--maryville"
+    },
+    "beckman-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--beckman-high-school"
+    },
+    "bishop-gorman-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--bishop-gorman-high-school"
+    },
+    "jserra-catholic-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "portola-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "pinkerton-academy": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "martin-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "lower-merion-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--lower-merion-high-school"
+    },
+    "whitney-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--whitney-high-school"
+    },
+    "panther-creek-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "butler-community-college": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "patrick-bailey-football": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-football-general"
+    },
+    "img-academy-football": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-football-img-academy"
+    },
+    "vista-ridge-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "yorktown-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--yorktown-high-school"
+    },
+    "obrotka-football": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-football-general"
+    },
+    "cupertino-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--cupertino-high-school"
+    },
+    "lassiter-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "milpitas-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--milpitas-high-school"
+    },
+    "apex-friendship-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--apex-friendship-high-school"
+    },
+    "oakland-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--oakland-high-school"
+    },
+    "berkmar-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "nathan-hale-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--nathan-hale-high-school"
+    },
+    "stl-hockey": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-hockey-st-louis-blues-aaa"
+    },
+    "naperville-central-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "south-hills-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--south-hills-high-school"
+    },
+    "south-brunswick-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "john-harrell-football": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-football-general"
+    },
+    "juanita-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--juanita-high-school"
+    },
+    "icing-hockey": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball-hockey-general"
+    },
+    "discovery-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "rocky-mountain-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--general"
+    },
+    "johnson-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--johnson-high-school"
+    },
+    "blake-high-school": {
+      "category": "fan-basketball",
+      "relatedGroup": "hudl-20261113-1000-fan-basketball--blake-high-school"
     }
   },
   "featured": [
