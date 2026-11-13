@@ -117,10 +117,13 @@ assert worst[0]<0.5, ('near-duplicate article bodies',worst)
 urls=[x.text for x in ElementTree.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
 resource_count = len(list((ROOT/'templates').glob('*.html')))
 video_records=json.loads((ROOT/'content/videos/manifest.json').read_text()) if (ROOT/'content/videos/manifest.json').exists() else []
-video_records=[v for v in video_records if v['status']=='public_verified']
+video_records=[v for v in video_records if v['status'] in ('public_verified','unlisted_playback_verified')]
 topics_path=ROOT/'content/videos/topics.json'
 topic_count=len([t for t in json.loads(topics_path.read_text()) if t['video_id'] in {v['video_id'] for v in video_records}]) if topics_path.exists() else 0
-assert len(urls)==58+len(video_records)+int(bool(video_records))+topic_count and len(urls)==len(set(urls))
+assert len(urls)==len(set(urls))
+# Central inventory-aware audit includes tracer, HomeCourt, tools and videos.
+from check_site_seo import check as check_inventory
+check_inventory()
 assert all('https://hoopcut.ai/blog/'+slug(x['keyword']) in urls for x in ARTICLES)
 assert all('https://hoopcut.ai/demo/'+x in urls for x in ['auto-clipping','shot-tracer'])
 assert 'Sitemap: https://hoopcut.ai/sitemap.xml' in (ROOT/'robots.txt').read_text()
