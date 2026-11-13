@@ -1,0 +1,268 @@
+[
+  {
+    "slug": "basketball-editor",
+    "status": "draft",
+    "intent": "basketball-editor-add-shot-tracer-to-saved-footage",
+    "keyword": "basketball editor",
+    "label": "Basketball editor",
+    "title": "Basketball Editor: Add a Shot Tracer to Your Clip | HoopCut",
+    "description": "Use HoopCut's basketball editor to add a shot tracer to your own video. Choose up to 30 seconds, preview the ball trail and export the Firework effect free.",
+    "heading": "Basketball editor: give your shot a visible ball trail",
+    "intro": "Turn a saved basketball moment into a short traced highlight. Bring a recording with the ball and hoop visible, choose the play you want to show and preview its trajectory. This basketball editor focuses on adding Shot Tracer to footage you already have.",
+    "heroDetail": "Keep the setup, release and finish together. Export Firework free, or compare other styles before opening HoopCut for more effects.",
+    "toolHeading": "Add a shot tracer with the basketball editor",
+    "workflowHeading": "Edit one basketball shot in three steps",
+    "sampleHeading": "See the basketball shot tracer effect",
+    "faqHeading": "Basketball editor questions",
+    "examplesHeading": "Watch a basketball tracer example",
+    "sections": [
+      {
+        "heading": "Choose the basketball moment before adding effects",
+        "text": "Start with a recording that shows one readable play. Leave enough time before the release to understand the setup and enough afterward to see the result. A very tight crop can hide the ball or basket.",
+        "subsections": [
+          {
+            "heading": "Preserve the original recording",
+            "text": "Keep the unedited file so you can return to the full sequence. Save your traced version with a different filename."
+          }
+        ]
+      },
+      {
+        "heading": "Check the shot tracer against the visible ball",
+        "text": "Select a range of up to 30 seconds and mark the hoop in the uploader. Watch the preview through the complete flight, including moments when the ball crosses a busy background.",
+        "subsections": [
+          {
+            "heading": "Review before downloading",
+            "text": "If the trail looks wrong, adjust the selected clip or hoop position and preview again. Do not treat the effect as a shot measurement."
+          }
+        ]
+      },
+      {
+        "heading": "Keep your basketball edit focused on the play",
+        "text": "Choose an effect that lets the action remain easy to follow. The browser workflow exports Firework free; the other styles can be previewed before continuing in the app.",
+        "subsections": [
+          {
+            "heading": "Retain the surrounding context",
+            "text": "Use an accurate filename or sharing caption. A tracer highlights the ball's movement without explaining the score or the full game situation."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      ["What does this basketball editor do?", "It adds a visual shot tracer to your saved basketball recording. It does not generate new footage or assemble a multi-clip reel here."],
+      ["How long can my selected highlight be?", "Choose a range of up to 30 seconds. Include the release and finish so you can check the complete shot in the preview."],
+      ["Which effect can I export free?", "The shared browser uploader offers a free Firework export. Other styles are available to preview, with more effects accessible in the HoopCut app."],
+      ["Can I keep a version without the tracer?", "Yes. Retain your original file separately and save the downloaded edit alongside it with a clear, different name."]
+    ],
+    "sources": [],
+    "workflowSteps": [
+      {"title": "Upload a saved basketball clip", "text": "Choose your own recording with the ball and hoop visible."},
+      {"title": "Select and preview the shot", "text": "Choose up to 30 seconds, mark the hoop and check the ball trail."},
+      {"title": "Save the traced edit", "text": "Export Firework free and retain the original recording."}
+    ],
+    "appCTA": {"heading": "Explore more basketball editing effects", "text": "Preview other tracer styles here, then open HoopCut to explore more effects for your basketball footage."},
+    "examples": [["/videos/basketball-shot-tracer-example", "Watch a HoopCut tracer demonstration", "Shared HoopCut basketball footage showing the shot tracer effect."]],
+    "demandEvidence": null,
+    "exampleEvidence": null,
+    "reviewedBy": null
+  },
+  {
+    "slug": "types-of-basketball-shots",
+    "status": "draft",
+    "intent": "types-of-basketball-shots-personal-clip-visual-context",
+    "keyword": "types of basketball shots",
+    "label": "Types of basketball shots",
+    "title": "Types of Basketball Shots: Trace Your Own Clip | HoopCut",
+    "description": "Explore types of basketball shots through your own footage. Pick a clear shot, preview its ball trail and export HoopCut's Firework tracer effect free.",
+    "heading": "Types of basketball shots: show the play with a tracer",
+    "intro": "Show a jumper, layup or free throw through your own recording. Add a trail to the ball's flight while keeping the action visible. Your original footage explains the play; HoopCut supplies the visual effect.",
+    "heroDetail": "Keep the approach and release in your practice clip. The tracer illustrates the ball's flight without identifying the shot type or evaluating technique.",
+    "toolHeading": "Trace a shot from your basketball recording",
+    "workflowHeading": "Choose, trace and save your shot example",
+    "sampleHeading": "Preview a basketball shot with a tracer",
+    "faqHeading": "Basketball shot types and tracer questions",
+    "examplesHeading": "See the shared basketball tracer demonstration",
+    "sections": [
+      {
+        "heading": "Describe types of basketball shots using visible details",
+        "text": "Choose a simple description that matches your recording, such as a jumper, layup or free throw. Keep the beginning of the action visible so viewers can understand the label without guessing from the final frame.",
+        "subsections": [
+          {
+            "heading": "Avoid labels the clip cannot support",
+            "text": "If the recording hides the approach or release, use a broader description. A short excerpt may not show enough to explain the entire play."
+          }
+        ]
+      },
+      {
+        "heading": "Compare your shot example with its traced version",
+        "text": "Select up to 30 seconds with the ball and hoop visible. After marking the hoop, watch the preview alongside your memory of the unedited recording. Check that the trail follows the visible flight.",
+        "subsections": [
+          {
+            "heading": "Treat the trail as an illustration",
+            "text": "The effect draws attention to movement. It does not provide a shot classification, shooting score or an assessment of your form."
+          }
+        ]
+      },
+      {
+        "heading": "Organize different shot clips for later viewing",
+        "text": "Save each original and traced copy together. Include a descriptive filename, recording date and source timestamp so you can find the practice moment again.",
+        "subsections": [
+          {
+            "heading": "Use one clear example at a time",
+            "text": "A focused clip is easier to explain than several unrelated attempts. Leave enough time after the release to show what actually happened."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      ["Does HoopCut recognize types of basketball shots?", "No. You choose the description yourself. This page adds a visual ball trail rather than automatically classifying the shot."],
+      ["Can I use a layup or free-throw clip?", "Choose a recording where the ball and hoop remain visible, then inspect the preview. The result depends on the footage and the selected range."],
+      ["Will the tracer tell me whether my technique is correct?", "No. The trail is a visual effect, not a coaching assessment, technique score or measurement of shooting performance."],
+      ["Can I save a traced shot example free?", "Yes. Export the Firework effect from the browser workflow. Keep the original recording so you can also show the play without effects."]
+    ],
+    "sources": [],
+    "workflowSteps": [
+      {"title": "Pick one shot example", "text": "Upload your own recording with the approach, release and basket visible."},
+      {"title": "Preview its ball trail", "text": "Choose up to 30 seconds, mark the hoop and review the effect."},
+      {"title": "Keep both versions", "text": "Export Firework free and store it beside the unedited shot."}
+    ],
+    "appCTA": {"heading": "Try more basketball tracer styles", "text": "Compare the previews here or open HoopCut to explore more effects for your recordings."},
+    "examples": [["/videos/basketball-shot-tracer-example", "Watch the basketball shot tracer example", "A shared effect demonstration, not a catalog or automatic classification of shot types."]],
+    "demandEvidence": null,
+    "exampleEvidence": null,
+    "reviewedBy": null
+  },
+  {
+    "slug": "gannon-mens-basketball",
+    "status": "draft",
+    "intent": "gannon-mens-basketball-fan-personal-shot-video",
+    "keyword": "gannon men's basketball",
+    "label": "Gannon men's basketball fans",
+    "title": "Gannon Men's Basketball Fans: Trace Your Own Shot | HoopCut",
+    "description": "Follow Gannon men's basketball and play yourself? Add Shot Tracer to your own court footage. Preview a short clip and export HoopCut's Firework effect free.",
+    "heading": "Gannon men's basketball fan? Trace your own court moment",
+    "intro": "Follow Gannon men's basketball and give your own court session a highlight too. Upload a shot you recorded, choose a short excerpt and add a tracer to the ball's flight.",
+    "heroDetail": "Use your own practice jumper or pickup recording. The generic HoopCut demonstration is not a Gannon game; this uploader does not provide team footage.",
+    "toolHeading": "Add Shot Tracer to your own basketball footage",
+    "workflowHeading": "Make a personal basketball tracer highlight",
+    "sampleHeading": "See the effect on the shared basketball sample",
+    "faqHeading": "Gannon men's basketball fans and personal video questions",
+    "examplesHeading": "Watch the independent HoopCut tracer example",
+    "sections": [
+      {
+        "heading": "Keep Gannon men's basketball fandom separate from your footage",
+        "text": "Describe your court recording accurately when sharing. A personal game-night jumper is different from a team highlight. Keep the original so the full sequence remains available.",
+        "subsections": [
+          {
+            "heading": "Identify the session you actually recorded",
+            "text": "Save the date and source timestamp with your clip. Add only player or session details that the recording and your own notes support."
+          }
+        ]
+      },
+      {
+        "heading": "Choose a basketball shot that stays visible",
+        "text": "A practice attempt or pickup jumper works best as a readable sequence: setup, release and finish. Choose up to 30 seconds without cutting off the basket, then mark the hoop in the uploader.",
+        "subsections": [
+          {
+            "heading": "Review the ball through the whole preview",
+            "text": "Watch the trail where the ball passes people or court markings. If it looks wrong, adjust the selection or hoop position and preview again."
+          }
+        ]
+      },
+      {
+        "heading": "Share a personal highlight with clear context",
+        "text": "Export Firework free and save it as an edited copy of your recording. A straightforward caption can identify your own court moment without presenting it as official Gannon men's basketball media.",
+        "subsections": [
+          {
+            "heading": "Let the original remain available",
+            "text": "Keep an unedited version alongside the traced file. The added trail illustrates the ball's movement, not a player's identity or team connection."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      ["Is this an official Gannon men's basketball tool?", "No. HoopCut is independent. This page offers its existing basketball Tracer for your personal recordings and does not represent the team."],
+      ["Does the sample show a Gannon game?", "No. It is a shared HoopCut basketball demonstration used to show the effect, not team footage or a player highlight."],
+      ["What should I upload on this page?", "Choose your own saved basketball clip with the ball and hoop visible. Keep the unedited recording for context and later reference."],
+      ["Can I export my own tracer highlight free?", "Yes. The shared browser workflow offers a free Firework export. Other styles can be previewed before exploring more effects in the app."]
+    ],
+    "sources": [],
+    "workflowSteps": [
+      {"title": "Choose your own court moment", "text": "Upload a personal practice or pickup recording with a visible shot."},
+      {"title": "Check the basketball tracer", "text": "Select up to 30 seconds, mark the hoop and inspect the preview."},
+      {"title": "Save your personal highlight", "text": "Export Firework free and keep the original footage alongside it."}
+    ],
+    "appCTA": {"heading": "Bring more effects to your own basketball clips", "text": "Try the tracer previews here, then open HoopCut to explore more styles for your next court recording."},
+    "note": "HoopCut is independent of Gannon men's basketball. The shared sample is not team footage.",
+    "examples": [["/videos/basketball-shot-tracer-example", "Watch a HoopCut basketball tracer demonstration", "Generic basketball footage showing the effect; not a Gannon team recording."]],
+    "demandEvidence": null,
+    "exampleEvidence": null,
+    "reviewedBy": null
+  },
+  {
+    "slug": "ferris-state-football",
+    "status": "draft",
+    "intent": "ferris-state-football-fan-own-basketball-practice-video",
+    "keyword": "ferris state football",
+    "label": "Ferris State football fans",
+    "title": "Ferris State Football Fans: Basketball Tracer | HoopCut",
+    "description": "A basketball video tool for Ferris State football fans who also play hoops. Add a tracer to your own court clip; this page does not track football footage.",
+    "heading": "Ferris State football fan? Trace your own basketball shot",
+    "intro": "Follow Ferris State football and also play basketball? Bring your own practice or pickup recording and turn one shot into a traced highlight. This workflow is for your basketball footage, not football editing.",
+    "heroDetail": "Choose your own gym recording with the ball and hoop visible. The shared example is generic basketball footage, not a Ferris State football game.",
+    "toolHeading": "Add a tracer to a basketball clip",
+    "workflowHeading": "Turn your own basketball shot into a highlight",
+    "sampleHeading": "Preview the basketball-only tracer example",
+    "faqHeading": "Ferris State football fans and basketball Tracer questions",
+    "examplesHeading": "See a personal basketball tracer demonstration",
+    "sections": [
+      {
+        "heading": "Use your own basketball session as the starting point",
+        "text": "For a Ferris State football fan who also plays basketball, this page edits a saved court clip. Bring your own recording; no team replays or football broadcasts are provided.",
+        "subsections": [
+          {
+            "heading": "Keep the sport clear in your description",
+            "text": "Describe the output as your basketball practice or pickup highlight. A fan reference should not make the recording appear to show a football game."
+          }
+        ]
+      },
+      {
+        "heading": "Select a visible shot for the basketball tracer",
+        "text": "Keep the ball, release and hoop in frame. Choose a range of up to 30 seconds and mark the basket. Watch the preview through the end of the shot before saving the effect.",
+        "subsections": [
+          {
+            "heading": "Check the trail against your recording",
+            "text": "Look for parts where the ball blends into the background. Adjust the selected range or hoop position if the preview does not match the visible action."
+          }
+        ]
+      },
+      {
+        "heading": "Save a personal basketball highlight with context",
+        "text": "Export Firework free and keep the original file. A session date and descriptive filename help you find the unedited recording and traced copy together.",
+        "subsections": [
+          {
+            "heading": "Keep team claims out of a personal clip",
+            "text": "The effect does not identify teams or players. Share only context you know, without presenting your court session as official Ferris State footage."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      ["Can HoopCut add a tracer to football footage here?", "No. This is the shared basketball Tracer workflow. The Ferris State football connection is a fan's own basketball session, not football tracking."],
+      ["Does this page contain Ferris State football highlights?", "No. The demonstration uses generic basketball footage. This page does not provide team games, player footage, schedules or results."],
+      ["What basketball recording should I choose?", "Use your own saved clip with a visible ball and hoop. Include the setup and finish so you can inspect the tracer in context."],
+      ["What can I export without the app?", "You can export the Firework effect free from the browser uploader. Other styles are previews here, with more effects available in HoopCut."]
+    ],
+    "sources": [],
+    "workflowSteps": [
+      {"title": "Upload your basketball recording", "text": "Choose a court clip from your own practice or pickup session."},
+      {"title": "Preview the visible shot", "text": "Select up to 30 seconds, mark the hoop and review the trail."},
+      {"title": "Save the basketball highlight", "text": "Export Firework free and retain your original clip."}
+    ],
+    "appCTA": {"heading": "Explore more basketball effects", "text": "Export Firework free here or open HoopCut to explore additional basketball tracer styles."},
+    "note": "HoopCut is independent of Ferris State football. The uploader is for basketball footage only.",
+    "examples": [["/videos/basketball-shot-tracer-example", "Watch the shared basketball tracer example", "A generic basketball effect demonstration, not Ferris State football footage."]],
+    "demandEvidence": null,
+    "exampleEvidence": null,
+    "reviewedBy": null
+  }
+]

@@ -41,12 +41,12 @@ def check(http=False):
     homecourt_urls={BASE+'/homecourt'}|{BASE+'/homecourt/'+p['slug'] for p in json.loads((ROOT/'content/homecourt/pages.json').read_text())['pages']}
     assert homecourt_urls.issubset(set(urls))
     assert BASE+'/shot-tracer' in urls
-    from build_shot_tracer import route, directory_path, PAGE_SIZE, load_pages, category_catalog, category_path, load_link_taxonomy
+    from build_shot_tracer import route, directory_path, PAGE_SIZE, load_pages, category_catalog, category_path, category_page_count, load_link_taxonomy
     tracer_pages=load_pages(ROOT)
     approved=[p for p in tracer_pages if p['status']=='approved']
     scene_count=sum(bool(p['slug']) for p in approved)
     tracer_urls={BASE+route(p) for p in approved}|{BASE+directory_path(n) for n in range(1,(scene_count+PAGE_SIZE-1)//PAGE_SIZE+1)}
-    tracer_urls|={BASE+category_path(c) for c in category_catalog(approved,load_link_taxonomy(ROOT))}
+    tracer_urls|={BASE+category_path(c,n) for c in category_catalog(approved,load_link_taxonomy(ROOT)) for n in range(1,category_page_count(c)+1)}
     assert {u for u in urls if u==BASE+'/shot-tracer' or u.startswith(BASE+'/shot-tracer/')}==tracer_urls
     assert len(urls)==len(set(urls))==39+len(tracer_urls)+len(expected_video_urls)+len(court_urls)+len(homecourt_urls)
     records={};titles=set();descriptions=set();adjacency={};incoming=Counter()
@@ -57,7 +57,9 @@ def check(http=False):
         assert sum(t=='h1' for t,a in p.tags)==1,('single H1',path)
         canonical=[a.get('href') for t,a in p.tags if t=='link' and a.get('rel')=='canonical']
         assert canonical==[url],('canonical/sitemap agreement',path)
-        title=html.unescape(re.search(r'<title>(.*?)</title>',source,re.S)[1])
+        head=re.search(r'<head\b[^>]*>(.*?)</head>',source,re.S|re.I)
+        assert head,('missing document head',path)
+        title=html.unescape(re.search(r'<title>(.*?)</title>',head[1],re.S|re.I)[1])
         desc=[a.get('content','') for t,a in p.tags if t=='meta' and a.get('name')=='description']
         assert title.strip() and title not in titles,('unique title',path)
         assert len(desc)==1 and desc[0].strip() and desc[0] not in descriptions,('unique description',path)
