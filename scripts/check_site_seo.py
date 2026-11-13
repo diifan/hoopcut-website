@@ -30,10 +30,10 @@ def check(http=False):
     urls=[x.text for x in ET.parse(ROOT/'sitemap.xml').getroot().findall('{*}url/{*}loc')]
     video_manifest=ROOT/'content/videos/manifest.json'
     videos=json.loads(video_manifest.read_text()) if video_manifest.exists() else []
-    expected_video_urls={'https://hoopcut.ai/videos/'+v['slug'] for v in videos if v['status']=='public_verified'}
+    expected_video_urls={'https://hoopcut.ai/videos/'+v['slug'] for v in videos if v['status'] in ('public_verified','unlisted_playback_verified')}
     topics_file=ROOT/'content/videos/topics.json'
     topics=json.loads(topics_file.read_text()) if topics_file.exists() else []
-    expected_video_urls.update('https://hoopcut.ai/videos/'+t['slug'] for t in topics if t['video_id'] in {v['video_id'] for v in videos if v['status']=='public_verified'})
+    expected_video_urls.update('https://hoopcut.ai/videos/'+t['slug'] for t in topics if t['video_id'] in {v['video_id'] for v in videos if v['status'] in ('public_verified','unlisted_playback_verified')})
     if videos:expected_video_urls.add('https://hoopcut.ai/videos')
     assert {u for u in urls if u.startswith('https://hoopcut.ai/videos')}==expected_video_urls
     court_urls={'https://hoopcut.ai/tools/'+p.stem for p in (ROOT/'tools').glob('basketball-*.html')}
