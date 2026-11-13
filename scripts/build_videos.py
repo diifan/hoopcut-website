@@ -8,7 +8,10 @@ ORIGIN='https://hoopcut.ai'
 def validate(r):
  if not ID.fullmatch(r.get('video_id','')):raise ValueError('Invalid returned YouTube ID')
  if not SLUG.fullmatch(r.get('slug','')):raise ValueError('Invalid stable video slug')
- if r.get('status') not in ('public_verified','scheduled_private') or r.get('channel_handle')!='@HoopCut-Office':raise ValueError('Upload/public-channel verification required')
+ if r.get('status') not in ('public_verified','scheduled_private','unlisted_playback_verified') or r.get('channel_handle')!='@HoopCut-Office':raise ValueError('Upload/public-channel verification required')
+ if r.get('status')=='unlisted_playback_verified':
+  proof=r.get('anonymous_playback',{});api=r.get('youtube_api_status',{})
+  if not (api.get('privacyStatus')=='unlisted' and api.get('uploadStatus')=='processed' and api.get('embeddable') is True and proof.get('video_id')==r['video_id'] and proof.get('anonymous') is True and proof.get('watch_video_id')==r['video_id'] and proof.get('embed_video_id')==r['video_id'] and proof.get('watch_ad_free') is True and proof.get('watch_played_seconds',0)>=3 and proof.get('embed_played_seconds',0)>=3 and proof.get('checked_at')):raise ValueError('Unlisted requires actual anonymous watch and embed evidence')
  if not r.get('upload_receipt_id') or not r.get('verified_at'):raise ValueError('Upload receipt required')
  if r.get('status')=='scheduled_private' and (not r.get('uploaded_at') or not r.get('scheduled_publish_at')):raise ValueError('Draft requires actual upload and schedule receipt')
  for key in ['title','description','scene_notes','source_url','published_at']:
@@ -53,7 +56,7 @@ def build(root):
  records.sort(key=lambda r:r['published_at'],reverse=True)
  # Ship only the public allowlist needed by the comment API, not editorial receipts.
  (root/'lib').mkdir(exist_ok=True)
- (root/'lib/comment-videos.json').write_text(json.dumps([r['video_id'] for r in records if r['status']=='public_verified'])+'\n')
+ (root/'lib/comment-videos.json').write_text(json.dumps([r['video_id'] for r in records if r['status'] in ('public_verified','unlisted_playback_verified')])+'\n')
  def comment_asset(name):
   raw=(root/'assets'/name).read_bytes(); suffix=Path(name).suffix
   url='/assets/static/'+Path(name).stem+'.'+hashlib.sha256(raw).hexdigest()[:12]+suffix
@@ -105,17 +108,17 @@ def build(root):
   url=ORIGIN+'/videos';graph=[{'@type':'CollectionPage','url':url,'name':'HoopCut basketball videos'},{'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'Home','item':ORIGIN+'/'},{'@type':'ListItem','position':2,'name':'Videos','item':url}]}]
   from video_layout import index
   css=(root/'assets/video-page.css').read_text()
-  (root/'videos/index.html').write_text(head('Basketball Highlights with Shot Tracer | HoopCut','Watch basketball plays with Shot Tracer, source footage and notes about each clip.',url,graph).replace('</head>','<style>'+css+'</style></head>').replace('<body>','<body class="video-page">')+navigation()+index([r for r in records if r['status']=='public_verified'],[t for t in topics if media_by_id[t['video_id']]['status']=='public_verified'])+footer()+'</body></html>')
+  (root/'videos/index.html').write_text(head('Basketball Highlights with Shot Tracer | HoopCut','Watch basketball plays with Shot Tracer, source footage and notes about each clip.',url,graph).replace('</head>','<style>'+css+'</style></head>').replace('<body>','<body class="video-page">')+navigation()+index([r for r in records if r['status'] in ('public_verified','unlisted_playback_verified')],[t for t in topics if media_by_id[t['video_id']]['status'] in ('public_verified','unlisted_playback_verified')])+footer()+'</body></html>')
 
  tree=ET.parse(root/'sitemap.xml');ns='{http://www.sitemaps.org/schemas/sitemap/0.9}';smap=tree.getroot()
  known={x.findtext(ns+'loc') for x in smap}
- for url in ([ORIGIN+'/videos'] if records else [])+[ORIGIN+'/videos/'+r['slug'] for r in pages if r['status']=='public_verified']:
+ for url in ([ORIGIN+'/videos'] if records else [])+[ORIGIN+'/videos/'+r['slug'] for r in pages if r['status'] in ('public_verified','unlisted_playback_verified')]:
   if url not in known:
    node=ET.SubElement(smap,ns+'url');ET.SubElement(node,ns+'loc').text=url
  # Keep only preferred title URLs in the sitemap; the old ID page remains accessible.
  for node in list(smap):
   loc=node.findtext(ns+'loc')
-  if loc in {ORIGIN+'/videos/'+r['video_id'] for r in records} or loc in {ORIGIN+'/videos/'+r['slug'] for r in pages if r['status']!='public_verified'}:smap.remove(node)
+  if loc in {ORIGIN+'/videos/'+r['video_id'] for r in records} or loc in {ORIGIN+'/videos/'+r['slug'] for r in pages if r['status'] not in ('public_verified','unlisted_playback_verified')}:smap.remove(node)
  for node in smap:
   modified=editorial_dates.get(node.findtext(ns+'loc'))
   if modified:

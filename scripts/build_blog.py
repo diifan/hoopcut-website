@@ -93,7 +93,7 @@ def copy(text, item, selected, cursor):
 def video_example(example):
     media = {v['video_id']:v for v in json.loads((ROOT/'content/videos/manifest.json').read_text())}
     v = media[example['video_id']]
-    if v['status'] != 'public_verified':
+    if v['status'] not in ('public_verified','unlisted_playback_verified'):
         raise ValueError('Article video examples require verified public media')
     return ('<figure class="article-video-example"><div class="example-player"><iframe loading="lazy" '
             'width="315" height="560" src="https://www.youtube-nocookie.com/embed/'+v['video_id']+'?rel=0" '
