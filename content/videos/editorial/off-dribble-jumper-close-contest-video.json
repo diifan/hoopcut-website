@@ -1,0 +1,88 @@
+{
+  "slug": "off-dribble-jumper-close-contest-video",
+  "video_id": "UiYJ-ZfjRyE",
+  "meta_description": "Replay an indoor off-dribble jump shot against a close contest. Follow the ball from the gather to the basket and use a simple observation log for the short clip.",
+  "heading": "Review the gather and contest as separate moments",
+  "intro": "The navy-shirt player gathers into a jump shot as a black-shirt defender in orange shorts raises a hand. This continuous excerpt includes the setup, release and basket finish, with a measured light-blue ball trail and a three-second HoopCut ending.",
+  "date_modified": "2026-11-17",
+  "sections": [
+    {
+      "id": "gather-window",
+      "nav_title": "Gather window",
+      "heading": "Begin before the ball leaves the hand",
+      "paragraphs": [
+        "The beginning of this edit gives you a brief view of the approach before the jumper. Follow the ball into the shooter's hands, then watch the rise. That sequence is more useful than starting a replay at the highest point of the ball, because it retains the transition from handling the ball to releasing it.",
+        "For a clip log, record a visible action rather than a move name you cannot confirm. Here, 'off-dribble gather into a contested jumper' describes the excerpt. It does not establish a particular coaching system, the player's identity or what happened in earlier possessions. The selected action lasts about 3.2 seconds; the remaining three seconds are the branded ending."
+      ]
+    },
+    {
+      "id": "contest-timing",
+      "nav_title": "The contest",
+      "heading": "Compare the raised hand with the release moment",
+      "paragraphs": [
+        "Watch the defender's raised hand on one replay and the basketball on the next. The two players overlap in the image, so a single still can make the space between them hard to interpret. Use several consecutive frames to describe when the hand rises relative to the visible release, without converting screen distance into a measured physical gap.",
+        "A made shot does not prove that the defense was poor, and this selected excerpt does not show a player's normal success rate under pressure. If you are reviewing your own recording, keep attempts that miss as well as attempts that score. A consistent clip log makes later comparisons possible without selecting only the favorable outcomes."
+      ],
+      "checks": [
+        [
+          "First pass",
+          "Watch the shooter's gather and upward motion."
+        ],
+        [
+          "Second pass",
+          "Watch the defender's hand while keeping the release in view."
+        ],
+        [
+          "Note",
+          "Describe the visible order of events; mark anything obscured as uncertain."
+        ]
+      ]
+    },
+    {
+      "id": "flight-evidence",
+      "nav_title": "Ball and basket",
+      "heading": "Keep the finish when shortening a highlight",
+      "paragraphs": [
+        "After release, the camera follows the ball toward the backboard. The light-blue trail is rendered into the video from measured ball positions. It helps locate the flight but is not a calibrated speed, height or release-angle measurement. Check the actual ball at the front of the effect rather than treating the graphic as a separate object.",
+        "The edit retains the ball reaching the basket and a short moment afterward. When making a similar short highlight, leave enough of the finish to make the outcome visible before the end card. An abrupt cut at the rim can obscure the result; a long reaction segment can bury the action you wanted to review. Keep the original recording so viewers can revisit the surrounding context."
+      ]
+    },
+    {
+      "id": "clip-record",
+      "nav_title": "Clip record",
+      "heading": "Use this four-field review note",
+      "paragraphs": [
+        "A compact record for this clip would include source: RunTheFloorTv; visible action: navy-shirt player taking an indoor jumper; contest: raised hand by the defender in orange shorts; outcome: ball and basket finish visible. Add an uncertainty field for facts the video cannot establish, such as score, player identity or the exact physical distance between players.",
+        "The source link under the player opens the original footage. Creator credit identifies where the footage came from and does not imply endorsement or independent permission. For clips you record yourself, save the untouched file alongside your selected edit and notes so a later review can check the observations."
+      ],
+      "links": [
+        [
+          "Use a basketball clip log",
+          "/templates/basketball-clip-log"
+        ],
+        [
+          "Plan a highlight video",
+          "/blog/how-to-make-a-basketball-highlight-video"
+        ],
+        [
+          "Browse basketball videos",
+          "/videos"
+        ]
+      ]
+    }
+  ],
+  "questions": [
+    [
+      "Does this video prove that the defender was late?",
+      "No. You can compare the visible hand and release timing, but the short camera view does not establish the defender's assignment or the full spacing."
+    ],
+    [
+      "Is the trail a live analysis performed by this page?",
+      "No. The measured ball trail is already rendered into the uploaded clip. Replaying the page does not run a new analysis."
+    ],
+    [
+      "How much of the video shows basketball action?",
+      "Approximately 3.2 seconds show the selected continuous action, followed by the three-second HoopCut ending."
+    ]
+  ]
+}
