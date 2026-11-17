@@ -285,5 +285,40 @@
     },
     "h1": "Watch the Gather on a Left-Side Drive and Layup",
     "editorial_summary": "Review a continuous left-side drive, gather and layup. Track hand control, defender position and the basket finish without inferring a foul or player identity."
+  },
+  {
+    "video_id": "LGc-jvwS-Hc",
+    "slug": "indoor-jump-shot-demonstration",
+    "status": "public_verified",
+    "channel_handle": "@HoopCut-Office",
+    "upload_receipt_id": "HC-2026-11-13-01",
+    "verified_at": "2026-11-17T05:54:45.754088+00:00",
+    "uploaded_at": "2026-11-12T16:03:18.463890+00:00",
+    "scheduled_publish_at": "2026-11-17T01:28:02Z",
+    "published_at": "2026-11-12T16:03:18.463890+00:00",
+    "title": "Indoor Jump Shot Demonstration: Watch the Sequence | HoopCut",
+    "h1": "Watch One Selected Indoor Jump Shot",
+    "description": "One selected indoor jump-shot demonstration from a short basketball video. The original caption remains visible. HoopCut adds a measured ball trail and a three-second branded ending. This selected clip does not establish game context or shooting consistency.\n\nOriginal footage: https://www.youtube.com/shorts/0r3BzMJ-Yo4\nCreator: @PETERDANYLIV\nExplore HoopCut: https://hoopcut.ai/\n\n#Basketball #ShotTracer #HoopCut",
+    "scene_notes": "One selected continuous indoor jump-shot demonstration; original caption retained. Training/demonstration context, no verified game facts.",
+    "source_url": "https://www.youtube.com/watch?v=0r3BzMJ-Yo4",
+    "duration_seconds": 5,
+    "tags": [
+      "basketball",
+      "jump shot",
+      "shot tracer",
+      "HoopCut",
+      "basketball video"
+    ],
+    "display_aspect_ratio": "9:16",
+    "local_review_media": "/review-media/HC-2026-11-13-01.mp4",
+    "youtube_api_status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
   }
 ]
