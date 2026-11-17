@@ -1,0 +1,74 @@
+{
+  "slug": "left-side-drive-layup-gather-review",
+  "video_id": "h2gu99DXudE",
+  "meta_description": "Review a continuous left-side drive, gather and layup. Track hand control, defender position and the basket finish without inferring a foul or player identity.",
+  "heading": "Watch the Gather on a Left-Side Drive and Layup",
+  "intro": "Review a continuous left-side drive, gather and layup. Track hand control, defender position and the basket finish without inferring a foul or player identity.",
+  "date_modified": "2026-11-17",
+  "sections": [
+    {
+      "id": "control-window",
+      "nav_title": "Start with the ball before the gather",
+      "heading": "Start with the ball before the gather",
+      "paragraphs": [
+        "The player in orange shorts drives left with a navy-shirt defender nearby, brings the ball upward and releases near the basket. Watch the hand and ball together during the approach, rather than beginning with the ball already in flight.",
+        "For a review note, distinguish a dribble visible in the excerpt from the point at which the ball appears held for the finish. If a body hides the ball, mark that interval as obscured. Do not fill missing frames with an assumed hand switch or a named move."
+      ]
+    },
+    {
+      "id": "defender-location",
+      "nav_title": "Describe position without deciding contact",
+      "heading": "Describe position without deciding contact",
+      "paragraphs": [
+        "As the shooter rises, the defender is beside and behind the action in this camera view. Consecutive frames help explain the order of movement, but overlap in a two-dimensional image is not proof of physical contact.",
+        "This page is a replay guide, not an officiating decision. The short excerpt cannot establish the defender\u2019s assignment, earlier contact or a complete rules context. Write a factual observation such as \u201cdefender follows the left-side drive\u201d rather than claiming a foul or a clean defensive play."
+      ]
+    },
+    {
+      "id": "finish-frame",
+      "nav_title": "Leave the basket outcome in the edit",
+      "heading": "Leave the basket outcome in the edit",
+      "paragraphs": [
+        "Follow the released ball until it reaches the rim and continues below the net. The selected edit retains that finish before the HoopCut ending. An export that cuts at the release would show the approach but leave the outcome unresolved.",
+        "When trimming a similar play, choose the start before the meaningful gather and the end after the visible result. Keep enough surrounding action to make the sequence understandable. This upload contains about 3.2 seconds of action and a three-second brand ending."
+      ]
+    },
+    {
+      "id": "comparison-log",
+      "nav_title": "Compare drives with a simple log",
+      "heading": "Compare drives with a simple log",
+      "paragraphs": [
+        "For a collection of your own drives, record starting side, visible ball control, defender location, finish visibility and any obscured interval. Use the same fields for makes and misses so the collection remains useful for review.",
+        "This clip is one example of that record, not proof that a particular finish will work against every defender. The measured trail helps locate the basketball during flight; it does not measure contact, footwork legality or decision quality."
+      ],
+      "links": [
+        [
+          "Use a basketball clip log",
+          "/templates/basketball-clip-log"
+        ],
+        [
+          "Browse basketball videos",
+          "/videos"
+        ],
+        [
+          "Plan a basketball highlight",
+          "/blog/how-to-make-a-basketball-highlight-video"
+        ]
+      ]
+    }
+  ],
+  "questions": [
+    [
+      "Does left-side drive mean a left-handed finish?",
+      "No. Court side and finishing hand are different observations. Check the hand in the original frames rather than inferring it from direction."
+    ],
+    [
+      "Can this replay establish whether there was a foul?",
+      "No. The limited camera view and selected excerpt do not establish all contact and rules context."
+    ],
+    [
+      "What should I keep when trimming a layup?",
+      "Retain the approach needed to understand the gather, the release and the visible basket result before an ending card."
+    ]
+  ]
+}
