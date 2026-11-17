@@ -1,0 +1,54 @@
+{
+  "slug": "indoor-jump-shot-demonstration",
+  "video_id": "LGc-jvwS-Hc",
+  "keyword": "indoor jump shot demonstration",
+  "title": "Indoor Jump Shot Demonstration: Watch the Sequence | HoopCut",
+  "h1": "Watch One Selected Indoor Jump Shot",
+  "description": "Watch a short indoor jump-shot demonstration with a ball trail, source context and a guide to the visible action.",
+  "meta_description": "Watch a short indoor jump-shot demonstration with a ball trail, source context and a guide to the visible action.",
+  "intro": "Watch a short indoor jump-shot demonstration with a ball trail, source context and a guide to the visible action.",
+  "date_modified": "2026-11-13",
+  "heading": "Watch One Selected Indoor Jump Shot",
+  "sections": [
+    {
+      "id": "observe",
+      "nav_title": "Read the selected action",
+      "heading": "Read the selected action",
+      "paragraphs": [
+        "The finished five-second edit contains one selected indoor jump-shot sequence followed by a three-second HoopCut ending. The original caption remains on screen. Treat the source as a basketball demonstration: the edit does not establish a competitive game, score, player identity or measured shooting distance."
+      ]
+    },
+    {
+      "id": "apply",
+      "nav_title": "Separate footage from graphics",
+      "heading": "Separate footage from graphics",
+      "paragraphs": [
+        "Watch the ball rise after release and follow it toward the basket. Then replay while looking at the trail. The overlay should help locate the ball without becoming evidence for a release angle or shooting percentage. Open the original source when you need the surrounding examples; this selection is not a summary of every shot in that source."
+      ],
+      "links": [
+        [
+          "Watch the selected shot",
+          "/videos/indoor-jump-shot-demonstration"
+        ],
+        [
+          "Explore basketball videos",
+          "/videos"
+        ],
+        [
+          "Try the Shot Tracer tool",
+          "/shot-tracer"
+        ]
+      ]
+    }
+  ],
+  "questions": [
+    [
+      "Does this clip show a complete workout?",
+      "No. It preserves one selected shot from a longer short video; the branded ending is not playing time."
+    ],
+    [
+      "Which footage is used on this page?",
+      "One selected indoor jump-shot demonstration from @PETERDANYLIV, with the original caption retained, a ball trail and a three-second HoopCut ending."
+    ]
+  ]
+}

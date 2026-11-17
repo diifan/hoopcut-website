@@ -2668,5 +2668,492 @@
         "A short list of visible observations, uncertainties, and evidence needed for a next review."
       ]
     ]
+  },
+  {
+    "slug": "jump-shot-release-frame-selection",
+    "video_id": "LGc-jvwS-Hc",
+    "keyword": "choose a jump-shot release frame for video review",
+    "title": "Choose a Jump-Shot Release Frame for Video Review | HoopCut",
+    "h1": "Choose a Useful Release Frame",
+    "description": "Find a defensible release frame in a basketball clip without confusing a drawn trail with the ball leaving the hand.",
+    "meta_description": "Find a defensible release frame in a basketball clip without confusing a drawn trail with the ball leaving the hand.",
+    "intro": "Find a defensible release frame in a basketball clip without confusing a drawn trail with the ball leaving the hand.",
+    "date_modified": "2026-11-13",
+    "heading": "Choose a Useful Release Frame",
+    "sections": [
+      {
+        "id": "observe",
+        "nav_title": "Locate the hand-to-ball separation",
+        "heading": "Locate the hand-to-ball separation",
+        "paragraphs": [
+          "Replay the shooting portion before the orange ending. Pause around the moment the ball separates from the hand, then compare neighboring frames. Save the earliest clearly separated frame rather than guessing from a single blurred image. If separation is hidden, label the frame as approximate and preserve the adjacent frames."
+        ]
+      },
+      {
+        "id": "apply",
+        "nav_title": "Make a review card",
+        "heading": "Make a review card",
+        "paragraphs": [
+          "Record the source link, the approximate time and what is visible at the hand. Add a second frame from the upward flight so another viewer can understand your selection. This creates a reproducible review reference; it does not diagnose mechanics. Do not use the beginning of the colored trail as the release timestamp because effect timing may differ from hand contact."
+        ],
+        "links": [
+          [
+            "Watch the selected shot",
+            "/videos/indoor-jump-shot-demonstration"
+          ],
+          [
+            "Explore basketball videos",
+            "/videos"
+          ],
+          [
+            "Try the Shot Tracer tool",
+            "/shot-tracer"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Can the first trail frame define release?",
+        "No. Select release from the recorded ball and hand; an overlay is an editing layer."
+      ],
+      [
+        "Which footage is used on this page?",
+        "One selected indoor jump-shot demonstration from @PETERDANYLIV, with the original caption retained, a ball trail and a three-second HoopCut ending."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-ball-trail-occlusion-check",
+    "video_id": "LGc-jvwS-Hc",
+    "keyword": "check ball-trail occlusion in basketball footage",
+    "title": "Check Ball-Trail Occlusion in Basketball Footage | HoopCut",
+    "h1": "Check Whether the Trail Hides the Ball",
+    "description": "Review a basketball tracer around the hand, ball and rim using an occlusion checklist for a finished edit.",
+    "meta_description": "Review a basketball tracer around the hand, ball and rim using an occlusion checklist for a finished edit.",
+    "intro": "Review a basketball tracer around the hand, ball and rim using an occlusion checklist for a finished edit.",
+    "date_modified": "2026-11-13",
+    "heading": "Check Whether the Trail Hides the Ball",
+    "sections": [
+      {
+        "id": "observe",
+        "nav_title": "Inspect three important regions",
+        "heading": "Inspect three important regions",
+        "paragraphs": [
+          "Use the release, middle of flight and approach to the rim as separate inspection points. At each point, identify the real ball before examining the graphic. A bright line can blend with the ball or nearby lighting; visibility at one frame does not prove the entire track is clear."
+        ]
+      },
+      {
+        "id": "apply",
+        "nav_title": "Keep a specific correction list",
+        "heading": "Keep a specific correction list",
+        "paragraphs": [
+          "For your own edit, write the time, affected object and proposed adjustment: reduce width, shorten persistence or change contrast. Replay at normal speed after each change. The embedded example is a finished video, so its trail cannot be switched off here. A fair comparison requires the matching original frames, not a different shot from the same creator."
+        ],
+        "links": [
+          [
+            "Watch the selected shot",
+            "/videos/indoor-jump-shot-demonstration"
+          ],
+          [
+            "Explore basketball videos",
+            "/videos"
+          ],
+          [
+            "Try the Shot Tracer tool",
+            "/shot-tracer"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Can I remove this embedded trail?",
+        "No. It is baked into this uploaded video; use original footage for an unmodified comparison."
+      ],
+      [
+        "Which footage is used on this page?",
+        "One selected indoor jump-shot demonstration from @PETERDANYLIV, with the original caption retained, a ball trail and a three-second HoopCut ending."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-caption-context-review",
+    "video_id": "LGc-jvwS-Hc",
+    "keyword": "read basketball video captions in context",
+    "title": "Read Basketball Video Captions in Context | HoopCut",
+    "h1": "Separate a Basketball Caption from Verified Facts",
+    "description": "Use a captioned shooting demonstration to avoid turning humorous labels into unsupported claims about a player or game.",
+    "meta_description": "Use a captioned shooting demonstration to avoid turning humorous labels into unsupported claims about a player or game.",
+    "intro": "Use a captioned shooting demonstration to avoid turning humorous labels into unsupported claims about a player or game.",
+    "date_modified": "2026-11-13",
+    "heading": "Separate a Basketball Caption from Verified Facts",
+    "sections": [
+      {
+        "id": "observe",
+        "nav_title": "Transcribe before interpreting",
+        "heading": "Transcribe before interpreting",
+        "paragraphs": [
+          "The selected shot retains a source caption. Record the words as a caption attributed to the original creator, then describe the action separately. A label about a player role is not independent evidence of team selection, coaching decisions or competitive ability. Avoid carrying the label into your own title as a factual biography."
+        ]
+      },
+      {
+        "id": "apply",
+        "nav_title": "Write a neutral replacement summary",
+        "heading": "Write a neutral replacement summary",
+        "paragraphs": [
+          "A useful summary says what the viewer can inspect: one indoor jump shot, a visible ball trail and a short branded ending. If discussing the creator\u2019s joke, make that context explicit and link to the source. Do not invent a coach, league, score or result to explain the caption."
+        ],
+        "links": [
+          [
+            "Watch the selected shot",
+            "/videos/indoor-jump-shot-demonstration"
+          ],
+          [
+            "Explore basketball videos",
+            "/videos"
+          ],
+          [
+            "Try the Shot Tracer tool",
+            "/shot-tracer"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Does a source caption verify a player\u2019s role?",
+        "No. It is creator-provided text and may be illustrative or humorous; the clip does not independently verify the role."
+      ],
+      [
+        "Which footage is used on this page?",
+        "One selected indoor jump-shot demonstration from @PETERDANYLIV, with the original caption retained, a ball trail and a three-second HoopCut ending."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-short-action-ending-timing",
+    "video_id": "LGc-jvwS-Hc",
+    "keyword": "plan action and end-card timing for basketball shorts",
+    "title": "Plan Action and End-Card Timing for Basketball Shorts | HoopCut",
+    "h1": "Budget Playing Time and the Branded Ending",
+    "description": "Use a five-second basketball edit to distinguish action duration from a three-second end card when planning a short reel.",
+    "meta_description": "Use a five-second basketball edit to distinguish action duration from a three-second end card when planning a short reel.",
+    "intro": "Use a five-second basketball edit to distinguish action duration from a three-second end card when planning a short reel.",
+    "date_modified": "2026-11-13",
+    "heading": "Budget Playing Time and the Branded Ending",
+    "sections": [
+      {
+        "id": "observe",
+        "nav_title": "Count action and ending separately",
+        "heading": "Count action and ending separately",
+        "paragraphs": [
+          "This export lasts five seconds, including an existing three-second branded ending. That leaves roughly two seconds for the selected basketball sequence. When evaluating an edit, report both durations; a five-second file does not contain five seconds of shooting action."
+        ]
+      },
+      {
+        "id": "apply",
+        "nav_title": "Review the transition at normal speed",
+        "heading": "Review the transition at normal speed",
+        "paragraphs": [
+          "Watch the last visible basketball moment before the cut to orange. Ask whether the action has a readable finish and whether the ending interrupts the viewer\u2019s understanding. For a new edit, preserve enough surrounding footage to resolve that question before adding branding. Do not slow or loop the action solely to make a short source appear longer without labeling the change."
+        ],
+        "links": [
+          [
+            "Watch the selected shot",
+            "/videos/indoor-jump-shot-demonstration"
+          ],
+          [
+            "Explore basketball videos",
+            "/videos"
+          ],
+          [
+            "Try the Shot Tracer tool",
+            "/shot-tracer"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Is the whole five seconds basketball action?",
+        "No. Three seconds are the branded ending; action and end-card duration should be reported separately."
+      ],
+      [
+        "Which footage is used on this page?",
+        "One selected indoor jump-shot demonstration from @PETERDANYLIV, with the original caption retained, a ball trail and a three-second HoopCut ending."
+      ]
+    ]
+  },
+  {
+    "slug": "vertical-jump-shot-headroom-check",
+    "video_id": "LGc-jvwS-Hc",
+    "keyword": "check headroom for a vertical jump-shot video",
+    "title": "Check Headroom for a Vertical Jump-Shot Video | HoopCut",
+    "h1": "Keep the Ball Flight Inside a Portrait Frame",
+    "description": "Plan portrait basketball framing around the full ball flight, using a short indoor example to check top-edge clearance.",
+    "meta_description": "Plan portrait basketball framing around the full ball flight, using a short indoor example to check top-edge clearance.",
+    "intro": "Plan portrait basketball framing around the full ball flight, using a short indoor example to check top-edge clearance.",
+    "date_modified": "2026-11-13",
+    "heading": "Keep the Ball Flight Inside a Portrait Frame",
+    "sections": [
+      {
+        "id": "observe",
+        "nav_title": "Review the highest visible ball position",
+        "heading": "Review the highest visible ball position",
+        "paragraphs": [
+          "A standing player fitting inside the frame does not guarantee the shot will fit. Replay the flight and inspect the distance between the ball and the upper edge. Include the rim in the same review. If any relevant position leaves the frame, mark it as missing rather than continuing a guessed trajectory.",
+          "In this example the ball reaches the upper image boundary during the upward flight. That is a concrete framing limitation to log; the rendered trail does not establish positions outside the recording."
+        ]
+      },
+      {
+        "id": "apply",
+        "nav_title": "Plan the next recording",
+        "heading": "Plan the next recording",
+        "paragraphs": [
+          "Before recording your own session, test a representative high shot from the intended position. Adjust camera position or framing until both the player and expected flight have room. Keep the camera stable during the attempt. This example cannot establish a universal camera height or distance because lens, court and shot position change the required coverage."
+        ],
+        "links": [
+          [
+            "Watch the selected shot",
+            "/videos/indoor-jump-shot-demonstration"
+          ],
+          [
+            "Explore basketball videos",
+            "/videos"
+          ],
+          [
+            "Try the Shot Tracer tool",
+            "/shot-tracer"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Can a tracer recover a ball outside the frame?",
+        "It cannot supply observed positions that were never recorded. Missing flight should remain an explicit limitation."
+      ],
+      [
+        "Which footage is used on this page?",
+        "One selected indoor jump-shot demonstration from @PETERDANYLIV, with the original caption retained, a ball trail and a three-second HoopCut ending."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-shot-replay-note-template",
+    "video_id": "LGc-jvwS-Hc",
+    "keyword": "a time-based note template for basketball replays",
+    "title": "A Time-Based Note Template for Basketball Replays | HoopCut",
+    "h1": "Write Replay Notes Another Viewer Can Follow",
+    "description": "Create timestamped basketball video notes that distinguish observations, uncertainties and editing requests.",
+    "meta_description": "Create timestamped basketball video notes that distinguish observations, uncertainties and editing requests.",
+    "intro": "Create timestamped basketball video notes that distinguish observations, uncertainties and editing requests.",
+    "date_modified": "2026-11-13",
+    "heading": "Write Replay Notes Another Viewer Can Follow",
+    "sections": [
+      {
+        "id": "observe",
+        "nav_title": "Use a three-column note",
+        "heading": "Use a three-column note",
+        "paragraphs": [
+          "For each observation, record an approximate time, the visible fact and a question or editing request. For example, note where the ball is visible near release before asking whether another frame would show separation more clearly. Keep questions out of the fact column."
+        ]
+      },
+      {
+        "id": "apply",
+        "nav_title": "Preserve the correct reference",
+        "heading": "Preserve the correct reference",
+        "paragraphs": [
+          "Attach the exact uploaded link and the original source link. State that the uploaded version contains a selected shot and a branded ending, so timestamps will differ from the original. Finish with one next action for the editor. Avoid rating overall consistency from this single selected attempt; the note is a review aid, not a performance assessment."
+        ],
+        "links": [
+          [
+            "Watch the selected shot",
+            "/videos/indoor-jump-shot-demonstration"
+          ],
+          [
+            "Explore basketball videos",
+            "/videos"
+          ],
+          [
+            "Try the Shot Tracer tool",
+            "/shot-tracer"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Should source and edited timestamps be interchangeable?",
+        "No. Selection and the added ending change timing; label which version each timestamp refers to."
+      ],
+      [
+        "Which footage is used on this page?",
+        "One selected indoor jump-shot demonstration from @PETERDANYLIV, with the original caption retained, a ball trail and a three-second HoopCut ending."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-short-audio-cut-review",
+    "video_id": "LGc-jvwS-Hc",
+    "keyword": "review audio cuts in a basketball short",
+    "title": "Review Audio Cuts in a Basketball Short | HoopCut",
+    "h1": "Check Sound Across the Shot and Ending",
+    "description": "Use an audio review workflow for short basketball exports without inventing sounds or music that are not verified.",
+    "meta_description": "Use an audio review workflow for short basketball exports without inventing sounds or music that are not verified.",
+    "intro": "Use an audio review workflow for short basketball exports without inventing sounds or music that are not verified.",
+    "date_modified": "2026-11-13",
+    "heading": "Check Sound Across the Shot and Ending",
+    "sections": [
+      {
+        "id": "observe",
+        "nav_title": "Listen before describing the soundtrack",
+        "heading": "Listen before describing the soundtrack",
+        "paragraphs": [
+          "Play the exported file with sound at a comfortable level. Listen around the beginning, action-to-ending transition and final frame. Log any audible clipping, abrupt level change or unwanted silence. Do not assume a ball bounce or whistle exists just because the image suggests it; this page makes no claim about particular sounds in the example."
+        ]
+      },
+      {
+        "id": "apply",
+        "nav_title": "Check both listening conditions",
+        "heading": "Check both listening conditions",
+        "paragraphs": [
+          "Replay on a phone speaker and with headphones when available, then mute it and confirm the visual story still works. For your own edit, compare levels before applying a fade. Keep a note of any source music and its permissions separately; giving source credit does not grant permission to reuse a soundtrack."
+        ],
+        "links": [
+          [
+            "Watch the selected shot",
+            "/videos/indoor-jump-shot-demonstration"
+          ],
+          [
+            "Explore basketball videos",
+            "/videos"
+          ],
+          [
+            "Try the Shot Tracer tool",
+            "/shot-tracer"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Does crediting the creator clear music rights?",
+        "No. Attribution and permission are separate records; check the applicable rights before reusing audio."
+      ],
+      [
+        "Which footage is used on this page?",
+        "One selected indoor jump-shot demonstration from @PETERDANYLIV, with the original caption retained, a ball trail and a three-second HoopCut ending."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-video-thumbnail-action-frame",
+    "video_id": "LGc-jvwS-Hc",
+    "keyword": "select an action thumbnail for a basketball clip",
+    "title": "Select an Action Thumbnail for a Basketball Clip | HoopCut",
+    "h1": "Choose a Thumbnail That Matches the Shot",
+    "description": "Choose a representative basketball thumbnail while avoiding end-card frames and exaggerated claims about the visible action.",
+    "meta_description": "Choose a representative basketball thumbnail while avoiding end-card frames and exaggerated claims about the visible action.",
+    "intro": "Choose a representative basketball thumbnail while avoiding end-card frames and exaggerated claims about the visible action.",
+    "date_modified": "2026-11-13",
+    "heading": "Choose a Thumbnail That Matches the Shot",
+    "sections": [
+      {
+        "id": "observe",
+        "nav_title": "Choose from the action portion",
+        "heading": "Choose from the action portion",
+        "paragraphs": [
+          "Inspect candidate frames before the orange ending. Prefer a frame where the player, ball or shooting action is understandable at a small size. An end card may show the brand clearly but tells a prospective viewer little about the basketball sequence."
+        ]
+      },
+      {
+        "id": "apply",
+        "nav_title": "Test the small preview",
+        "heading": "Test the small preview",
+        "paragraphs": [
+          "Reduce the candidate to phone-card size and check whether text or a trail obscures the important subject. Compare it with the actual playback so the thumbnail does not imply a different shot or outcome. Do not add a made-up score, player name or claim of a perfect shot. The goal is an accurate preview, not a second story that the video cannot support."
+        ],
+        "links": [
+          [
+            "Watch the selected shot",
+            "/videos/indoor-jump-shot-demonstration"
+          ],
+          [
+            "Explore basketball videos",
+            "/videos"
+          ],
+          [
+            "Try the Shot Tracer tool",
+            "/shot-tracer"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Should the thumbnail show the branded ending?",
+        "For an action-focused page, a representative action frame usually communicates the content more directly; the ending remains part of the video."
+      ],
+      [
+        "Which footage is used on this page?",
+        "One selected indoor jump-shot demonstration from @PETERDANYLIV, with the original caption retained, a ball trail and a three-second HoopCut ending."
+      ]
+    ]
+  },
+  {
+    "slug": "basketball-short-source-edit-record",
+    "video_id": "LGc-jvwS-Hc",
+    "keyword": "keep a source-to-edit record for basketball shorts",
+    "title": "Keep a Source-to-Edit Record for Basketball Shorts | HoopCut",
+    "h1": "Document What Changed in a Basketball Edit",
+    "description": "Keep source, selected action, tracer and branded-ending records separate when documenting a short basketball video.",
+    "meta_description": "Keep source, selected action, tracer and branded-ending records separate when documenting a short basketball video.",
+    "intro": "Keep source, selected action, tracer and branded-ending records separate when documenting a short basketball video.",
+    "date_modified": "2026-11-13",
+    "heading": "Document What Changed in a Basketball Edit",
+    "sections": [
+      {
+        "id": "observe",
+        "nav_title": "Record the transformation",
+        "heading": "Record the transformation",
+        "paragraphs": [
+          "Save the original URL, downloaded file hash, selected segment, processed export hash and uploaded URL. For this example, describe one selected indoor shot, an added ball trail and a three-second ending. Preserve original creator context instead of implying that HoopCut filmed the scene."
+        ]
+      },
+      {
+        "id": "apply",
+        "nav_title": "Keep permission and processing separate",
+        "heading": "Keep permission and processing separate",
+        "paragraphs": [
+          "A processing record establishes which bytes were used and what editing occurred. It does not establish permission to publish. Maintain the rights-holder permission or license evidence as a separate field and mark missing evidence as unknown. This makes later corrections possible without silently changing the source or duplicating an upload."
+        ],
+        "links": [
+          [
+            "Watch the selected shot",
+            "/videos/indoor-jump-shot-demonstration"
+          ],
+          [
+            "Explore basketball videos",
+            "/videos"
+          ],
+          [
+            "Try the Shot Tracer tool",
+            "/shot-tracer"
+          ]
+        ]
+      }
+    ],
+    "questions": [
+      [
+        "Does a file hash prove publishing permission?",
+        "No. A hash identifies file contents; permission needs its own evidence."
+      ],
+      [
+        "Which footage is used on this page?",
+        "One selected indoor jump-shot demonstration from @PETERDANYLIV, with the original caption retained, a ball trail and a three-second HoopCut ending."
+      ]
+    ]
   }
 ]
