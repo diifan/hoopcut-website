@@ -105,5 +105,50 @@
     "display_aspect_ratio": "9:16",
     "display_title": "Review Three Selected Indoor Shooting Sequences",
     "editorial_summary": "Use the clips as a viewing exercise, not as a complete record of a workout. The source is indoor training footage, and the edit selects three shooting sequences; it is not a pickup game and does not show every exercise from the source. The ball trail is a visual overlay, not a measurement of accuracy or mechanics."
+  },
+  {
+    "video_id": "PiZzuN_9LbE",
+    "slug": "one-on-one-pull-up-jump-shot-ball-trail",
+    "status": "unlisted_playback_verified",
+    "channel_handle": "@HoopCut-Office",
+    "upload_receipt_id": "HC-2026-11-17-U03",
+    "verified_at": "2026-11-17T05:04:09.723666+00:00",
+    "published_at": "2026-11-17T05:01:38.193673+00:00",
+    "title": "One-on-One Pull-Up Jump Shot with Ball Trail | HoopCut",
+    "description": "One continuous indoor one-on-one sequence: a player gathers, releases a contested jump shot and the ball reaches the basket. HoopCut adds a trail based on measured ball positions and a three-second branded ending. This short excerpt does not establish a player identity, score or shooting consistency.\n\nOriginal footage: https://www.youtube.com/shorts/fl_q_pcoHvg\nCreator: @RunTheFloorTv\nExplore HoopCut: https://hoopcut.ai/",
+    "scene_notes": "Black-shirt player gathers and releases a contested indoor jump shot against a gray-shirt defender; camera follows the ball to the basket.",
+    "source_url": "https://www.youtube.com/watch?v=fl_q_pcoHvg",
+    "source_handle": "@RunTheFloorTv",
+    "duration_seconds": 5.434,
+    "tags": [
+      "basketball",
+      "jump shot",
+      "shot tracer",
+      "HoopCut",
+      "one on one"
+    ],
+    "display_aspect_ratio": "9:16",
+    "youtube_api_status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "unlisted",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    },
+    "anonymous_playback": {
+      "anonymous": true,
+      "status": "passed",
+      "video_id": "PiZzuN_9LbE",
+      "watch_video_id": "PiZzuN_9LbE",
+      "watch_ad_free": true,
+      "watch_played_seconds": 3.043042,
+      "embed_played_seconds": 3.011824152587891,
+      "embed_video_id": "PiZzuN_9LbE",
+      "checked_at": "2026-11-17T05:04:09.723666+00:00"
+    },
+    "h1": "Watch a Contested One-on-One Pull-Up Jump Shot",
+    "editorial_summary": "A player in black rises for a jump shot while a gray-shirt defender contests. This short, continuous excerpt keeps the release, visible flight and basket finish together. Use the replay to separate what the camera shows from what a highlight cannot establish."
   }
 ]

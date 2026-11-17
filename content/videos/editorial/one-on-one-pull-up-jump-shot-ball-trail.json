@@ -1,0 +1,84 @@
+{
+  "slug": "one-on-one-pull-up-jump-shot-ball-trail",
+  "video_id": "PiZzuN_9LbE",
+  "meta_description": "Watch one indoor one-on-one pull-up jump shot with a measured ball trail. Review the gather, contest and finish without mistaking camera movement for shot mechanics.",
+  "heading": "Read one possession without inventing the rest of the game",
+  "intro": "A player in black rises for a jump shot while a gray-shirt defender contests. This short, continuous excerpt keeps the release, visible flight and basket finish together. Use the replay to separate what the camera shows from what a highlight cannot establish.",
+  "date_modified": "2026-11-17",
+  "sections": [
+    {
+      "id": "sequence",
+      "nav_title": "The sequence",
+      "heading": "Follow the shooter, then the ball",
+      "paragraphs": [
+        "Start with the black-shirt player rather than the bright trail. Notice the ball being gathered before the upward shooting motion. The gray-shirt defender is still in the frame as the shooter rises. After release, move your attention to the real basketball, then to the rim. The camera follows the flight, so the players move toward the edge of the picture even though the possession remains continuous.",
+        "This is a selected shot excerpt, not a complete possession log. The edit does not establish the preceding pass, number of earlier dribbles, game score or either player's identity. A useful note is 'contested jump shot, release and basket visible.' A claim about a named move or a defender's mistake would require more context."
+      ]
+    },
+    {
+      "id": "screen-motion",
+      "nav_title": "Camera movement",
+      "heading": "Use the backboard to recognize the pan",
+      "paragraphs": [
+        "On a second replay, watch the backboard support and wall rather than the shooter. Their movement across the screen reveals the camera's pan. This matters when reviewing a ball trail: a screen-space path combines ball movement with camera movement. Its apparent slope is not a calibrated release angle, and its length is not a distance measurement.",
+        "If you make a comparison clip, preserve the same framing throughout release and flight. Do not use a tighter crop halfway through the shot and then interpret the changed screen position as a sudden change in the ball's physical path."
+      ],
+      "checks": [
+        [
+          "Reference",
+          "Locate a fixed background feature before release."
+        ],
+        [
+          "Pan",
+          "Notice whether that feature shifts with the rest of the court."
+        ],
+        [
+          "Conclusion",
+          "Describe visible movement; leave physical angles and distances unmeasured."
+        ]
+      ]
+    },
+    {
+      "id": "trail-check",
+      "nav_title": "Trace and finish",
+      "heading": "Check the real ball at the end of the trail",
+      "paragraphs": [
+        "The light-blue trail is baked into this finished export. It was rendered from detected ball positions; the page does not add a new live analysis layer. Compare the end of the graphic with the basketball at several positions as it approaches the basket. Then replay at normal speed to judge whether the effect helps you follow the action without hiding the rim.",
+        "The selected basketball action lasts about 2.4 seconds, followed by the three-second HoopCut ending. The branding is part of the export, not another play. Keeping those intervals distinct avoids treating the full player duration as the flight time or as the length of an entire possession."
+      ]
+    },
+    {
+      "id": "review-record",
+      "nav_title": "Save a useful note",
+      "heading": "Record an observation someone else can check",
+      "paragraphs": [
+        "For a review session, write down the source link, the visible shooter description, and one question. For this excerpt, a precise question is whether the release and rim remain visible during the pan. Ask a second viewer to replay the same shot before discussing an interpretation. If you disagree, identify the moment and the visible object instead of assigning a player rating from a single selected highlight.",
+        "Original footage is linked below the player and credited to RunTheFloorTv. Credit identifies the source; it is not a statement that the creator endorses HoopCut. For your own projects, retain the original recording and source context alongside the finished edit."
+      ],
+      "links": [
+        [
+          "Browse other basketball clips",
+          "/videos"
+        ],
+        [
+          "Plan a basketball highlight edit",
+          "/blog/how-to-make-a-basketball-highlight-video"
+        ]
+      ]
+    }
+  ],
+  "questions": [
+    [
+      "Does this clip show a full one-on-one game?",
+      "No. It shows one selected continuous shooting excerpt. It does not establish a score, player identity or shooting percentage."
+    ],
+    [
+      "Can I read a release angle from the light-blue trail?",
+      "No. The camera pans and the clip has no spatial calibration. The graphic is a visual aid, not an angle or speed measurement."
+    ],
+    [
+      "Why is the video longer than the basketball action?",
+      "The export includes a three-second HoopCut ending after approximately 2.4 seconds of selected action. The ending should not be counted as shot flight time."
+    ]
+  ]
+}
