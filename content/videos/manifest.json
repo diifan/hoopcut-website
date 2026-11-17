@@ -367,5 +367,51 @@
       "receipt_path": "/var/lib/swi-codex/xcut-seo-agent/data/hoopcut-daily/playback/HC-2026-11-17-U04.json"
     },
     "editorial_summary": "A dark-shirt player in light pants rises for a jumper while a blue-shirt defender in red shorts raises a hand. The wider court view retains other players and the basket; a measured light-blue trail follows the visible ball."
+  },
+  {
+    "video_id": "XmMmP4fyaMA",
+    "slug": "training-change-of-direction-drive-review",
+    "status": "public_verified",
+    "channel_handle": "@HoopCut-Office",
+    "upload_receipt_id": "HC-2026-11-12-01",
+    "verified_at": "2026-11-17T05:54:44.514849+00:00",
+    "published_at": "2026-11-17T05:54:44.514849+00:00",
+    "title": "Indoor Basketball Drive and Finish with Shot Tracer | HoopCut",
+    "description": "A short indoor basketball training sequence: a change of direction and a finish near the basket. HoopCut adds a ball trail and a three-second branded ending. This is training footage; no player, event or score is asserted.\n\nOriginal footage: https://www.youtube.com/shorts/0gr4Z3joec8\nCreator: @iTrainbasketball\nExplore HoopCut: https://hoopcut.ai/\n\n#Basketball #ShotTracer #HoopCut",
+    "scene_notes": "A dark-shirt player changes direction in front of a white-shirt training partner, moves toward the right side of the basket and finishes the sequence near the rim. This is an indoor training excerpt, followed by the HoopCut ending.",
+    "source_url": "https://www.youtube.com/watch?v=0gr4Z3joec8",
+    "duration_seconds": 6.434,
+    "tags": [
+      "basketball",
+      "basketball training",
+      "shot tracer",
+      "HoopCut"
+    ],
+    "display_aspect_ratio": "9:16",
+    "thumbnail_width": 480,
+    "thumbnail_height": 854,
+    "h1": "Review a Change of Direction in a Short Training Drive",
+    "editorial_summary": "A dark-shirt player changes direction in front of a white-shirt training partner, moves toward the right side of the basket and finishes the sequence near the rim. This is an indoor training excerpt, followed by the HoopCut ending.",
+    "anonymous_playback": {
+      "anonymous": true,
+      "status": "passed",
+      "video_id": "XmMmP4fyaMA",
+      "watch_video_id": "XmMmP4fyaMA",
+      "watch_ad_free": true,
+      "watch_played_seconds": 3.027874,
+      "embed_played_seconds": 3.009677038146972,
+      "embed_video_id": "XmMmP4fyaMA",
+      "checked_at": "2026-11-17T06:20:10.515416+00:00",
+      "receipt_path": "/var/lib/swi-codex/xcut-seo-agent/data/daily/2026-11-17/HC-2026-11-12-01-anonymous-1414.json"
+    },
+    "youtube_api_status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "public",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    }
   }
 ]
