@@ -1,0 +1,74 @@
+{
+  "slug": "half-court-pickup-jumper-context-review",
+  "video_id": "fl4eiyW7L6o",
+  "meta_description": "Watch a half-court pickup jumper with surrounding players in view. Review the approach, contest and basket while keeping a short highlight separate from full-possession context.",
+  "heading": "Review a Pickup Jumper with the Surrounding Court in View",
+  "intro": "A dark-shirt player in light pants rises for a jumper while a blue-shirt defender in red shorts raises a hand. The wider court view retains other players and the basket; a measured light-blue trail follows the visible ball.",
+  "date_modified": "2026-11-17",
+  "sections": [
+    {
+      "id": "court-context",
+      "nav_title": "Court context",
+      "heading": "Read the shot within the visible court",
+      "paragraphs": [
+        "Start with one normal-speed replay that follows the whole scene. The frame includes several players around the shooter, rather than isolating the ball against an empty background. On a second pass, focus on the shooter\u2019s gather and the nearby raised hand. These are different viewing tasks; trying to track every player and the ball at once can hide useful details.",
+        "The edit contains about 3.8 seconds of selected action plus a three-second HoopCut ending. It is not the whole possession. The view cannot establish the previous pass, the score, team assignments or why the shooter chose this attempt. Record those fields as unknown instead of turning a short highlight into a full tactical explanation."
+      ]
+    },
+    {
+      "id": "occlusion",
+      "nav_title": "Overlapping players",
+      "heading": "Mark the moments you cannot see clearly",
+      "paragraphs": [
+        "Bodies overlap around the gather and release. When a hand or part of the basketball is hidden, compare the frames immediately before and after the obstruction. A later visible ball position does not reveal every movement that occurred while it was hidden. A useful review note identifies the gap rather than filling it with a guessed action.",
+        "For your own pickup recording, keep a continuous view of the shooter and basket where possible. Avoid a crop that removes the contest just to enlarge the ball. If a recording position is blocked repeatedly, change position between plays; moving during a shot can introduce another source of uncertainty."
+      ]
+    },
+    {
+      "id": "ball-reference",
+      "nav_title": "Ball reference",
+      "heading": "Follow the ball without measuring uncalibrated distances",
+      "paragraphs": [
+        "The camera pans toward the basket during the flight. Use the backboard and nearby players as references, but do not equate screen distance with a measured distance on court. The trail is rendered from measured image positions and helps locate the basketball; it does not supply a calibrated launch angle or ball speed.",
+        "The basketball and basket finish remain visible before the orange ending. Replay that transition separately when checking an edit. A clip that ends too early may leave the outcome unclear, while a long ending can outweigh the action. Report playing time and branding time separately when comparing short exports."
+      ]
+    },
+    {
+      "id": "review-record",
+      "nav_title": "Review record",
+      "heading": "Create a two-pass pickup review record",
+      "paragraphs": [
+        "Use the first pass for scene notes: indoor half-court view, nearby players, dark-shirt shooter, raised-hand contest and visible basket finish. Use the second pass for the action: gather, release interval and ball flight. Add an uncertainty column for obscured movement and context outside the excerpt.",
+        "For a useful collection, record misses and interrupted plays as well as successful highlights. This single selected jumper is an example for organizing observations, not evidence of a player\u2019s shooting percentage. Keep the source link and untouched recording so later viewers can distinguish the selected edit from the broader source."
+      ],
+      "links": [
+        [
+          "Use a basketball clip log",
+          "/templates/basketball-clip-log"
+        ],
+        [
+          "Browse basketball videos",
+          "/videos"
+        ],
+        [
+          "Plan a highlight video",
+          "/blog/how-to-make-a-basketball-highlight-video"
+        ]
+      ]
+    }
+  ],
+  "questions": [
+    [
+      "Does this page show the entire possession?",
+      "No. It shows one selected continuous shooting sequence, followed by the HoopCut ending. Earlier passes and decisions are outside the excerpt."
+    ],
+    [
+      "Can the camera view establish shot distance?",
+      "Not accurately without calibration. Perspective and camera movement make pixel distances unsuitable as court measurements."
+    ],
+    [
+      "What should a review note mark as unknown?",
+      "Mark obscured hand or ball movement, player identities, score and earlier possession context as unknown when the footage does not establish them."
+    ]
+  ]
+}

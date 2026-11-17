@@ -320,5 +320,52 @@
       "madeForKids": false,
       "selfDeclaredMadeForKids": false
     }
+  },
+  {
+    "video_id": "fl4eiyW7L6o",
+    "slug": "half-court-pickup-jumper-context-review",
+    "status": "unlisted_playback_verified",
+    "channel_handle": "@HoopCut-Office",
+    "upload_receipt_id": "HC-2026-11-17-U04",
+    "verified_at": "2026-11-17T05:42:51.755934+00:00",
+    "published_at": "2026-11-17T05:41:18.502073+00:00",
+    "title": "Half-Court Pickup Jumper over a Raised-Hand Contest | HoopCut",
+    "h1": "Review a Pickup Jumper with the Surrounding Court in View",
+    "description": "One continuous indoor one-on-one excerpt: a dark-shirt player in light pants gathers for a jumper as a blue-shirt defender in red shorts raises a hand. Release, flight and basket finish are visible. HoopCut adds a trail based on measured ball positions and a three-second branded ending. This short excerpt does not establish a player identity, score or shooting consistency.\n\nOriginal footage: https://www.youtube.com/shorts/EqcrYGBBMio\nCreator: @cantfakethetape\nExplore HoopCut: https://hoopcut.ai/",
+    "scene_notes": "A dark-shirt player in light pants rises for a jumper while a blue-shirt defender in red shorts raises a hand. The wider court view retains other players and the basket; a measured light-blue trail follows the visible ball.",
+    "source_url": "https://www.youtube.com/watch?v=EqcrYGBBMio",
+    "duration_seconds": 6.8,
+    "tags": [
+      "basketball",
+      "jump shot",
+      "shot tracer",
+      "HoopCut",
+      "one on one"
+    ],
+    "display_aspect_ratio": "9:16",
+    "local_review_media": "/review-media/HC-2026-11-13-01.mp4",
+    "youtube_api_status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "unlisted",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    },
+    "source_handle": "@cantfakethetape",
+    "anonymous_playback": {
+      "anonymous": true,
+      "status": "passed",
+      "video_id": "fl4eiyW7L6o",
+      "watch_video_id": "fl4eiyW7L6o",
+      "watch_ad_free": true,
+      "watch_played_seconds": 3.01114,
+      "embed_played_seconds": 3.0135052136230467,
+      "embed_video_id": "fl4eiyW7L6o",
+      "checked_at": "2026-11-17T05:42:51.755934+00:00",
+      "receipt_path": "/var/lib/swi-codex/xcut-seo-agent/data/hoopcut-daily/playback/HC-2026-11-17-U04.json"
+    },
+    "editorial_summary": "A dark-shirt player in light pants rises for a jumper while a blue-shirt defender in red shorts raises a hand. The wider court view retains other players and the basket; a measured light-blue trail follows the visible ball."
   }
 ]
