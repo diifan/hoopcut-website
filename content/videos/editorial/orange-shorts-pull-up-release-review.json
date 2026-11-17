@@ -1,0 +1,74 @@
+{
+  "slug": "orange-shorts-pull-up-release-review",
+  "video_id": "e1n5ZDrcS28",
+  "meta_description": "Follow a black-shirt shooter in orange shorts through a contested pull-up. Use frame order and visible ball positions to separate observations from unmeasured shooting claims.",
+  "heading": "Review a Pull-Up Release Without Guessing the Shooting Angle",
+  "intro": "Follow a black-shirt shooter in orange shorts through a contested pull-up. Use frame order and visible ball positions to separate observations from unmeasured shooting claims.",
+  "date_modified": "2026-11-17",
+  "sections": [
+    {
+      "id": "release-reference",
+      "nav_title": "Find the first clearly separated ball",
+      "heading": "Find the first clearly separated ball",
+      "paragraphs": [
+        "The shooter rises in a black shirt and orange shorts while a navy-shirt defender raises an arm. To locate release, compare the last frame in which hand and ball visibly overlap with the first frame showing a clear gap. If the hand is hidden, record a small interval instead of declaring an exact release frame.",
+        "This is a camera observation, not a biomechanical measurement. The view does not reveal the three-dimensional angle between wrist, elbow and shoulder. A useful note says what is visible: the ball separates above the raised shooting hand, then travels toward the rim."
+      ]
+    },
+    {
+      "id": "moving-camera",
+      "nav_title": "Use the basket as a moving reference",
+      "heading": "Use the basket as a moving reference",
+      "paragraphs": [
+        "The camera tilts upward with the basketball. A ball that moves only a little on the screen can still be moving through the gym because the image follows it. Check the backboard and roof structure between frames before interpreting apparent ball speed.",
+        "For your own footage, keep a stationary reference such as a backboard corner in view. If the camera moves, describe the visible arc qualitatively. Do not turn screen pixels into a release angle, height or speed without calibration and a suitable recording setup."
+      ]
+    },
+    {
+      "id": "trail-reading",
+      "nav_title": "Read the trail with the ball",
+      "heading": "Read the trail with the ball",
+      "paragraphs": [
+        "The short light-blue mark follows measured ball positions in the exported clip. At some moments it is short because the ball and camera move together in the image. The basketball itself remains the primary evidence; the mark is a viewing aid.",
+        "Replay once with attention on the actual ball and once on the relation between ball and rim. A rendered effect cannot supply an unseen release or prove shooting consistency. The clip includes one selected attempt and a three-second branded ending."
+      ]
+    },
+    {
+      "id": "review-note",
+      "nav_title": "Save a reproducible release note",
+      "heading": "Save a reproducible release note",
+      "paragraphs": [
+        "Use four fields: source clip, release interval, visible reference and uncertainty. For this example, identify the orange-shorts shooter, note the hand-to-ball separation, use the backboard as the reference and mark the moving camera as a limitation.",
+        "Keep the untouched source alongside a selected highlight. A future reviewer can then check whether the edit removed an important step before release. Source credit is shown below the player; it does not imply endorsement or independent permission."
+      ],
+      "links": [
+        [
+          "Use a basketball clip log",
+          "/templates/basketball-clip-log"
+        ],
+        [
+          "Browse basketball videos",
+          "/videos"
+        ],
+        [
+          "Plan a basketball highlight",
+          "/blog/how-to-make-a-basketball-highlight-video"
+        ]
+      ]
+    }
+  ],
+  "questions": [
+    [
+      "Can I measure the release angle from this clip?",
+      "Not reliably from this moving, uncalibrated camera view. Use it to identify visible event order rather than a numerical angle."
+    ],
+    [
+      "Why is the ball trail short in some frames?",
+      "The graphic follows measured positions in the image. Camera motion and the recent visible positions affect its appearance; it is not a separate trajectory measurement."
+    ],
+    [
+      "Does the clip show shooting consistency?",
+      "No. It shows one selected attempt, not a complete sample of attempts."
+    ]
+  ]
+}
