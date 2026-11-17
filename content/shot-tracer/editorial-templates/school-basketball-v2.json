@@ -1,0 +1,222 @@
+[
+  {
+    "slug": "rock-canyon-high-school",
+    "status": "draft",
+    "intent": "hudl-query-rock-canyon-high-school",
+    "keyword": "rock canyon high school",
+    "label": "Rock Canyon High School",
+    "title": "Rock Canyon High School Basketball Shot Tracer | HoopCut",
+    "description": "Add a shot tracer to your own Rock Canyon High School basketball clip. Upload a game recording, preview the ball trail and export your highlight.",
+    "heading": "Rock Canyon High School basketball highlights — add a shot tracer",
+    "intro": "Have a basketball clip from Rock Canyon High School? Make the shot stand out with a visible ball trail. Upload your recording, select the play and preview your traced highlight — from the catch to the finish at the basket.",
+    "heroDetail": "Keep the pass, release and finish in view. Select up to 30 seconds, mark the hoop and preview the effect before saving your clip.",
+    "toolHeading": "Add a tracer to your Rock Canyon High School basketball clip",
+    "workflowHeading": "From game recording to traced basketball highlight",
+    "sampleHeading": "See how a shot tracer changes a basketball clip",
+    "faqHeading": "Editing your Rock Canyon High School basketball highlights",
+    "examplesHeading": "Watch the ball trail in action",
+    "sections": [
+      {
+        "heading": "Choose a shot for your Rock Canyon High School basketball highlight",
+        "text": "A useful game highlight shows how the shot develops. Start just before the catch or dribble, keep the release in view and let the clip run until the ball reaches the basket. A tracer draws attention to the flight, while the surrounding play gives viewers the moment that led to it.",
+        "subsections": [
+          {
+            "heading": "Keep the setup and finish together",
+            "text": "For a catch-and-shoot play, include the pass. For a pull-up jumper, include the last dribble. Trim dead time around the possession so the highlight stays focused on the shot."
+          }
+        ]
+      },
+      {
+        "heading": "Preview the tracer through a busy game sequence",
+        "text": "Upload your saved clip in the tool above, select up to 30 seconds and mark the hoop. Watch the preview from release to finish. Pay particular attention when a defender crosses the ball or the camera pans: the finished trail should help viewers follow the shot.",
+        "subsections": [
+          {
+            "heading": "Check the moment the ball leaves the hand",
+            "text": "Replay the release and the arrival at the rim. If the ball disappears behind another player, try a clearer attempt from your recording and compare the result."
+          }
+        ]
+      },
+      {
+        "heading": "Save your Rock Canyon High School basketball clip with a tracer",
+        "text": "When the preview looks right, export the Firework effect free and save the traced version alongside your original. Give the file a useful name with the game date and play so you can find it when putting together a personal highlight collection.",
+        "subsections": [
+          {
+            "heading": "Prepare the clip for sharing",
+            "text": "Play the saved clip once before sharing it. Include the player or game details you know in your caption, and retain the source recording if you want a longer version later."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "How do I add a tracer to my Rock Canyon High School basketball video?",
+        "Upload your saved recording using the tool above, select up to 30 seconds and mark the hoop. Preview the shot trail, then export the Firework effect free when you are happy with the result."
+      ],
+      [
+        "What makes a game clip suitable for a shot tracer?",
+        "Choose a continuous shot with the ball and basket visible. Include the pass or final dribble, the release and the finish. If players block the ball, inspect the preview carefully or choose a clearer attempt."
+      ],
+      [
+        "Can I paste a Hudl link into this uploader?",
+        "Use a video file saved on your device. This uploader does not import Hudl links; upload a recording you own or have permission to edit."
+      ],
+      [
+        "Is the demo a Rock Canyon High School basketball video?",
+        "The demo is a shared HoopCut basketball example. It lets you see the effect before uploading your own clip. HoopCut is an independent editing tool."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Rock Canyon High School sports on Hudl",
+        "url": "https://fan.hudl.com/usa/co/highlands-ranch/organization/4470/rock-canyon-high-school"
+      }
+    ],
+    "workflowSteps": [
+      {
+        "title": "Upload your game recording",
+        "text": "Pick a saved clip with the shooter, ball and basket visible."
+      },
+      {
+        "title": "Select the shot and preview its trail",
+        "text": "Choose up to 30 seconds, mark the hoop and watch the tracer from release to basket."
+      },
+      {
+        "title": "Export your traced highlight",
+        "text": "Save the Firework effect free, then keep or share the edited clip."
+      }
+    ],
+    "appCTA": {
+      "heading": "Give your next basketball highlight a different look",
+      "text": "Try the free Firework export here, or explore more basketball tracer effects in the HoopCut app."
+    },
+    "examples": [
+      [
+        "/videos/basketball-shot-tracer-example",
+        "Watch a HoopCut basketball tracer example",
+        "Watch a shared basketball example before trying the effect on your own footage. This is not footage from the school."
+      ]
+    ],
+    "demandEvidence": {
+      "source": "outputs/01a15cb7-89dc-7b62-a331-20fa1af01b40/hudl-dedup-2026-11-13/hudl-keywords-deduplicated.csv",
+      "keyword": "rock canyon high school",
+      "searchVolume": "9900",
+      "keywordDifficulty": "25"
+    },
+    "exampleEvidence": null,
+    "reviewedBy": null,
+    "topic": "fan-basketball",
+    "editorialIntent": "fan",
+    "note": "Independent HoopCut editing tool; not affiliated with Rock Canyon High School. Demo footage is a shared basketball example.",
+    "localReviewBatch": "hudl-20261117-samples"
+  },
+  {
+    "slug": "sequoia-high-school",
+    "status": "draft",
+    "intent": "hudl-query-sequoia-high-school",
+    "keyword": "sequoia high school",
+    "label": "Sequoia High School",
+    "title": "Sequoia High School Basketball Shot Tracer | HoopCut",
+    "description": "Make your Sequoia High School basketball shot stand out. Upload a practice or game clip, preview a tracer and export a highlight with HoopCut.",
+    "heading": "Sequoia High School basketball highlights — add a shot tracer",
+    "intro": "Turn your Sequoia High School basketball recording into a highlight worth sharing. Pick a jumper from practice or a game, upload your clip and add a visible trail that follows the ball toward the hoop.",
+    "heroDetail": "Start with one clear attempt: the shooter, ball and basket in frame. Select up to 30 seconds and preview the trail before exporting.",
+    "toolHeading": "Add a tracer to your Sequoia High School basketball clip",
+    "workflowHeading": "From practice recording to a shareable shot",
+    "sampleHeading": "See how a shot tracer changes a basketball clip",
+    "faqHeading": "Editing your Sequoia High School basketball highlights",
+    "examplesHeading": "Watch the ball trail in action",
+    "sections": [
+      {
+        "heading": "Choose a shot for your Sequoia High School basketball highlight",
+        "text": "A practice jumper can make a clear, focused highlight. Choose an attempt where the ball stays visible from release to basket, with a little time before and after the shot. Use the tracer to draw attention to the flight without cutting away the footwork and follow-through.",
+        "subsections": [
+          {
+            "heading": "Start with one uninterrupted attempt",
+            "text": "Pick a continuous section of the recording rather than a montage with cuts during the shot. Keep the phone steady and leave room above the shooter for the full arc."
+          }
+        ]
+      },
+      {
+        "heading": "Make the shot trail easy to follow",
+        "text": "Upload the recording, select the attempt and mark the basket. Preview the trail against the gym or outdoor background. Check that you can still see the ball and follow its path all the way toward the hoop before choosing your finished version.",
+        "subsections": [
+          {
+            "heading": "Review the clip at its original framing",
+            "text": "Make sure the basket and the top of the shot remain in frame. A tight crop that cuts off part of the arc makes the effect harder to follow."
+          }
+        ]
+      },
+      {
+        "heading": "Save your Sequoia High School basketball clip with a tracer",
+        "text": "Export the Firework effect free when you are happy with the preview. Keep the edited attempt beside the original practice recording and give it a session date or shot label so it is easy to find when you want to share it.",
+        "subsections": [
+          {
+            "heading": "Keep a copy for your next practice review",
+            "text": "Save the original as well as the traced copy. The trail is a visual effect that makes a shot easier to follow; it does not measure shooting accuracy or release mechanics."
+          }
+        ]
+      }
+    ],
+    "faq": [
+      [
+        "How do I add a tracer to my Sequoia High School basketball video?",
+        "Upload your saved recording using the tool above, select up to 30 seconds and mark the hoop. Preview the shot trail, then export the Firework effect free when you are happy with the result."
+      ],
+      [
+        "Can I use a basketball practice clip?",
+        "Yes. A single practice attempt with a visible release, ball flight and basket is a useful starting point. Keep the camera steady and leave enough space in frame for the full shot."
+      ],
+      [
+        "Can I paste a Hudl link into this uploader?",
+        "Use a video file saved on your device. This uploader does not import Hudl links; upload a recording you own or have permission to edit."
+      ],
+      [
+        "Is the demo a Sequoia High School basketball video?",
+        "The demo is a shared HoopCut basketball example. It lets you see the effect before uploading your own clip. HoopCut is an independent editing tool."
+      ]
+    ],
+    "sources": [
+      {
+        "title": "Sequoia High School sports on Hudl",
+        "url": "https://fan.hudl.com/usa/ca/redwood-city/organization/9259/sequoia-high-school"
+      }
+    ],
+    "workflowSteps": [
+      {
+        "title": "Choose a practice or game shot",
+        "text": "Upload one clear attempt from your own basketball recording."
+      },
+      {
+        "title": "Select the shot and preview its trail",
+        "text": "Choose up to 30 seconds, mark the hoop and watch the tracer from release to basket."
+      },
+      {
+        "title": "Export your traced highlight",
+        "text": "Save the Firework effect free, then keep or share the edited clip."
+      }
+    ],
+    "appCTA": {
+      "heading": "Give your next basketball highlight a different look",
+      "text": "Try the free Firework export here, or explore more basketball tracer effects in the HoopCut app."
+    },
+    "examples": [
+      [
+        "/videos/basketball-shot-tracer-example",
+        "Watch a HoopCut basketball tracer example",
+        "Watch a shared basketball example before trying the effect on your own footage. This is not footage from the school."
+      ]
+    ],
+    "demandEvidence": {
+      "source": "outputs/01a15cb7-89dc-7b62-a331-20fa1af01b40/hudl-dedup-2026-11-13/hudl-keywords-deduplicated.csv",
+      "keyword": "sequoia high school",
+      "searchVolume": "9900",
+      "keywordDifficulty": "28"
+    },
+    "exampleEvidence": null,
+    "reviewedBy": null,
+    "topic": "fan-basketball",
+    "editorialIntent": "fan",
+    "note": "Independent HoopCut editing tool; not affiliated with Sequoia High School. Demo footage is a shared basketball example.",
+    "localReviewBatch": "hudl-20261117-samples"
+  }
+]
