@@ -150,5 +150,50 @@
     },
     "h1": "Watch a Contested One-on-One Pull-Up Jump Shot",
     "editorial_summary": "A player in black rises for a jump shot while a gray-shirt defender contests. This short, continuous excerpt keeps the release, visible flight and basket finish together. Use the replay to separate what the camera shows from what a highlight cannot establish."
+  },
+  {
+    "video_id": "UiYJ-ZfjRyE",
+    "slug": "off-dribble-jumper-close-contest-video",
+    "status": "unlisted_playback_verified",
+    "channel_handle": "@HoopCut-Office",
+    "upload_receipt_id": "HC-2026-11-17-U09",
+    "verified_at": "2026-11-17T05:11:33.237480+00:00",
+    "published_at": "2026-11-17T05:10:41.568330+00:00",
+    "title": "Off-Dribble Jump Shot Against a Close Contest | HoopCut",
+    "description": "One continuous indoor one-on-one excerpt: a navy-shirt player gathers into a jump shot against a black-shirt defender in orange shorts. Release, flight and basket finish are visible. HoopCut adds a trail based on measured ball positions and a three-second branded ending. This short excerpt does not establish a player identity, score or shooting consistency.\n\nOriginal footage: https://www.youtube.com/shorts/FqhiIyfN3Rc\nCreator: @RunTheFloorTv\nExplore HoopCut: https://hoopcut.ai/",
+    "scene_notes": "Navy-shirt player gathers into an indoor jump shot against a black-shirt defender in orange shorts; release, measured ball flight and basket finish remain visible.",
+    "source_url": "https://www.youtube.com/watch?v=FqhiIyfN3Rc",
+    "source_handle": "@RunTheFloorTv",
+    "duration_seconds": 6.2,
+    "tags": [
+      "basketball",
+      "jump shot",
+      "shot tracer",
+      "HoopCut",
+      "one on one"
+    ],
+    "display_aspect_ratio": "9:16",
+    "youtube_api_status": {
+      "uploadStatus": "processed",
+      "privacyStatus": "unlisted",
+      "license": "youtube",
+      "embeddable": true,
+      "publicStatsViewable": true,
+      "madeForKids": false,
+      "selfDeclaredMadeForKids": false
+    },
+    "anonymous_playback": {
+      "anonymous": true,
+      "status": "passed",
+      "video_id": "UiYJ-ZfjRyE",
+      "watch_video_id": "UiYJ-ZfjRyE",
+      "watch_ad_free": true,
+      "watch_played_seconds": 3.038577,
+      "embed_played_seconds": 3.014965675750733,
+      "embed_video_id": "UiYJ-ZfjRyE",
+      "checked_at": "2026-11-17T05:11:33.237480+00:00"
+    },
+    "h1": "Watch an Off-Dribble Jumper Against a Close Contest",
+    "editorial_summary": "The navy-shirt player gathers into a jump shot as a black-shirt defender in orange shorts raises a hand. This continuous excerpt includes the setup, release and basket finish, with a measured light-blue ball trail and a three-second HoopCut ending."
   }
 ]
