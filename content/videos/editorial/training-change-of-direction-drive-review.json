@@ -1,0 +1,74 @@
+{
+  "slug": "training-change-of-direction-drive-review",
+  "video_id": "XmMmP4fyaMA",
+  "meta_description": "Watch an indoor training drive and review the change of direction, movement past a training partner and basket approach without treating a drill as a game possession.",
+  "heading": "Review a Change of Direction in a Short Training Drive",
+  "intro": "A dark-shirt player changes direction in front of a white-shirt training partner, moves toward the right side of the basket and finishes the sequence near the rim. This is an indoor training excerpt, followed by the HoopCut ending.",
+  "date_modified": "2026-11-17",
+  "sections": [
+    {
+      "id": "sequence",
+      "nav_title": "Sequence",
+      "heading": "Separate the direction change from the basket approach",
+      "paragraphs": [
+        "On the first replay, follow the moving player from the initial low dribble to the change of direction and the route past the training partner. On the second replay, concentrate on the approach to the basket. Keeping those viewing tasks separate makes it easier to describe what is visible without treating every movement as one named technique.",
+        "The white-shirt partner stays in the central foreground while the dark-shirt player travels behind and beyond him toward the basket. That overlap matters: a single camera angle cannot reveal every hand contact or foot position throughout the drive. Write a short sequence description and mark hidden intervals instead of assigning a detailed footwork label from incomplete frames."
+      ]
+    },
+    {
+      "id": "partner",
+      "nav_title": "Training context",
+      "heading": "Do not equate a training partner with game defense",
+      "paragraphs": [
+        "The clip is training footage. A person positioned in front of the ball handler can provide an obstacle or a movement reference, but this excerpt does not establish the instructions given to either person. Avoid calling the attempt a defensive breakdown or claiming the move works against a particular coverage. Neither conclusion follows from the selected action alone.",
+        "For a useful review of your own drill, save the task instruction alongside the recording: starting position, intended route, whether the partner is active and what counts as a completed repetition. If those details are unavailable, label them unknown. The same visible movement can serve different practice objectives, so the instructions belong in the record rather than in a guessed caption."
+      ]
+    },
+    {
+      "id": "occlusion",
+      "nav_title": "Visibility gaps",
+      "heading": "Use the basket as an endpoint, not a substitute for hidden detail",
+      "paragraphs": [
+        "The basket remains in the upper part of the image while the moving player passes behind the foreground partner. Replay the approach and ball appearance near the rim separately. A visible endpoint does not prove the exact hand position or foot sequence during an earlier obstruction. The trail helps locate the visible ball; it does not reconstruct hidden technique.",
+        "When filming a similar drill, test the camera position with one practice repetition before recording a set. Retain the partner, route and basket together. If the partner repeatedly blocks the important gather, change the camera position between repetitions, then note that the comparison angle changed. Do not silently compare two perspectives as though they were identical."
+      ]
+    },
+    {
+      "id": "practice-log",
+      "nav_title": "Practice log",
+      "heading": "Build a review record without inventing performance statistics",
+      "paragraphs": [
+        "Use one row per recorded repetition: source filename, time interval, visible direction change, visibility gap, basket approach and a question for the next session. Add the drill instruction when it is known. For this short example, a reasonable question is whether another camera angle would keep the gather visible as the player passes the partner.",
+        "One selected clip is not a session success rate. Keep the unselected repetitions, including mistakes and obstructed views, if you want to compare a session later. Preserve the original recording and distinguish the action excerpt from the three-second branded ending when measuring the amount of training footage available for review."
+      ],
+      "links": [
+        [
+          "Organize a basketball clip log",
+          "/templates/basketball-clip-log"
+        ],
+        [
+          "Browse basketball examples",
+          "/videos"
+        ],
+        [
+          "Plan a basketball highlight",
+          "/blog/how-to-make-a-basketball-highlight-video"
+        ]
+      ]
+    }
+  ],
+  "questions": [
+    [
+      "Is this a pickup-game possession?",
+      "No. The saved source and publishing record identify this as indoor training footage."
+    ],
+    [
+      "Can this angle establish every step and hand contact?",
+      "No. The foreground partner obscures part of the drive; hidden details should remain unknown."
+    ],
+    [
+      "Does one selected finish measure training progress?",
+      "No. Compare a documented set of repetitions under known conditions rather than deriving a percentage or improvement claim from one excerpt."
+    ]
+  ]
+}
