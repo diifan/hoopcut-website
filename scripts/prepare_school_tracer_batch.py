@@ -31,6 +31,31 @@ def label(keyword):
     s = keyword.title()
     return re.sub(r'\b(Nba|Ncaa|Usa|Ucla|Usc|Mit|Nyu|Ucf|Uab|Ucsd|Uconn)\b', lambda m: m[0].upper(), s)
 
+def hold_reason(row):
+    key = normalized(row['Keyword'])
+    if context(row)['source_type'] == 'profile':
+        return 'Export points to an athlete profile; verify school identity before using the school template.'
+    if re.search(r'\b(before:|staff|directory|programs|logo|website|division|live|myvc|winter high school sports|vs|hudl academy|hudl high school)', key):
+        return 'Administrative, biographical, live-video or malformed intent needs a different content treatment.'
+    if re.search(r'\bacademy sports\b|\b(?:sports academy|thunder academy|elite academy)\b', key):
+        return 'Retailer or sports-academy ambiguity needs identity research.'
+    return ''
+
+def saved_hudl_copy(page):
+    if not normalized(page['keyword']).endswith(' hudl'):
+        return page
+    school = re.sub(r'\s+Hudl$', '', page['label'])
+    old_label = page['label']
+    page = json.loads(json.dumps(page).replace(old_label, school))
+    page['title'] = f'{school} Hudl Clips: Basketball Shot Tracer | HoopCut'
+    page['heading'] = f'{school} Hudl clips — add a basketball shot tracer'
+    page['description'] = f'Add a tracer to your saved {school} basketball clip. Upload a video file, preview the shot trail and export with HoopCut.'
+    page['intro'] = (f'Putting together a basketball highlight from a saved {school} Hudl clip? '
+                     'Upload a video file you own or have permission to edit, choose the shot and preview its ball trail. '
+                     'Use the uploader below to work with your recording.')
+    page['heroDetail'] = 'Start with a video file on your device. This tool does not import a Hudl URL or sign in to Hudl; select up to 30 seconds and mark the hoop to preview the tracer.'
+    return page
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--pool', type=Path, required=True)
@@ -38,6 +63,8 @@ def main():
     ap.add_argument('--batch', required=True)
     ap.add_argument('--count', type=int, default=2000)
     ap.add_argument('--approval', required=True)
+    ap.add_argument('--local-review', action='store_true', help='Prepare production metadata locally; no publication approval.')
+    ap.add_argument('--allow-short-batch', action='store_true', help='Use the actual remaining eligible count instead of padding a batch.')
     args = ap.parse_args()
     target = ROOT / 'content/shot-tracer/batches' / args.batch / 'pages.json'
     if target.exists():
@@ -50,18 +77,23 @@ def main():
     with args.csv.open(encoding='utf-8-sig') as f:
         source = list(csv.DictReader(f))
     candidates = []
+    held = []
     for ordinal, row in enumerate(source):
         key = normalized(row['Keyword'])
         state = pool.get(key, {})
         permitted = state.get('status') == 'available' or state.get('batch_id') == 'hudl-20261117-samples'
         if key in keys or not permitted or not eligible(key):
             continue
+        reason = hold_reason(row)
+        if reason:
+            held.append({'keyword': row['Keyword'], 'reason': reason, 'source_url': row['URL']})
+            continue
         candidates.append((ordinal, row))
     samples = json.loads((ROOT / 'content/shot-tracer/editorial-templates/school-basketball-v2.json').read_text())
     approved_samples = {normalized(p['keyword']): p for p in samples}
     candidates.sort(key=lambda x: (normalized(x[1]['Keyword']) not in approved_samples,
                                    -float(x[1]['Search Volume'] or 0), x[0]))
-    if len(candidates) < args.count:
+    if len(candidates) < args.count and not args.allow_short_batch:
         raise SystemExit(f'Only {len(candidates)} eligible unused school terms; requested {args.count}')
     taxonomy_file = ROOT / 'content/shot-tracer/internal-link-taxonomy.json'
     taxonomy = json.loads(taxonomy_file.read_text())
@@ -100,21 +132,26 @@ def main():
                     'text': 'Find the possession in your recording and note its timestamp. Include the pass or last dribble, the release and the finish. Use that continuous section in the uploader, then watch the tracer at both ends of the shot before saving.',
                     'subsections': [{'heading': 'When to choose a different possession', 'text': 'A crowded lane, a sudden zoom or a camera pan can hide the ball. Preview the full shot and choose a clearer recording if the trail does not follow the visible flight.'}]})
         p.update(slug=slug, keyword=row['Keyword'], intent='hudl-query-'+slug, status='approved')
+        p = saved_hudl_copy(p)
         p.pop('localReviewBatch', None)
-        p['demandEvidence'] = {'source': 'User-provided Semrush Hudl US export', 'file': args.csv.name,
+        p['demandEvidence'] = {'source': 'User-provided Semrush Hudl US export', 'file': row.get('_SourceFile') or args.csv.name,
             'keyword': row['Keyword'], 'searchVolume': row['Search Volume'], 'keywordDifficulty': row['Keyword Difficulty'],
             'competitorUrl': row['URL'], 'dataTimestamp': row['Timestamp'], 'market': 'US',
             'note': 'Historical export estimate, not measured HoopCut demand or a traffic forecast.'}
         p['exampleEvidence'] = {'url': '/videos/basketball-shot-tracer-example', 'scope': 'Shared demo, not school-specific footage.'}
         p['reviewedBy'] = 'Owner approved school-basketball copy-v2 samples and authorized this 2000-page release on 2026-11-17.'
         p['releaseApproval'] = {'batch_id': args.batch, 'user_instruction': args.approval}
+        if args.local_review:
+            p['reviewedBy'] = 'Shared copy-v2 template approved on 2026-11-17; this new batch awaits owner review.'
+            p['releaseApproval'] = {'batch_id': args.batch, 'publication_authorized': False, 'scope': 'Local review only'}
         taxonomy['pages'][slug] = {'category': 'fan-basketball', 'relatedGroup': args.batch+'-'+school_type+'-'+mode}
         selection.append({'keyword': row['Keyword'], 'slug': slug, 'source_ordinal': ordinal,
                           'source_url': row['URL'], 'mode': mode, 'school_type': school_type})
         pages.append(p)
     dump(target, pages); dump(taxonomy_file, taxonomy)
     dump(ROOT / 'content/shot-tracer/keyword-profiles' / (args.batch+'-selection.json'), selection)
-    manifest = {'batchId': args.batch, 'status': 'approved_for_publication', 'newPages': len(pages),
+    manifest = {'batchId': args.batch, 'status': 'pending_review' if args.local_review else 'approved_for_publication', 'newPages': len(pages),
+        'publicationAuthorized': not args.local_review, 'requestedPages': args.count, 'heldKeywords': held,
         'sourceFile': args.csv.name, 'sourceSha256': hashlib.sha256(args.csv.read_bytes()).hexdigest(),
         'urls': ['https://hoopcut.ai/shot-tracer/'+p['slug'] for p in pages], 'previewSlugs': [p['slug'] for p in pages],
         'selectionPolicy': 'Unused school/academy/college terms; reviewed samples included; other sports and administrative queries left in pool.',
