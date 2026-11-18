@@ -1,8 +1,8 @@
 {
   "batchId": "hudl-20261118-local",
-  "status": "pending_review",
+  "status": "approved_for_publication",
   "newPages": 331,
-  "publicationAuthorized": false,
+  "publicationAuthorized": true,
   "requestedPages": 2000,
   "heldKeywords": [
     {
@@ -864,6 +864,6 @@
     "game": 207,
     "practice": 124
   },
-  "approval": "Local preparation only; no publication approval. Includes new 2026-11-18 pool import.",
+  "approval": "User approved: 这些先上线。然后你再找2000个关键词上线页面 (2026-11-18)",
   "limitations": "Shared editing product and school-use templates; no claim of unique school footage or guaranteed indexing/traffic."
 }
