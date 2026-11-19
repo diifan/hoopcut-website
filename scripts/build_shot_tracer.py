@@ -53,6 +53,8 @@ def category_path(category,number=1):
 def category_page_count(category):return (len(category['pages'])+PAGE_SIZE-1)//PAGE_SIZE
 
 def category_catalog(pages,taxonomy):
+    cached=taxonomy.get('_build_index')
+    if cached and cached['pages'] is pages:return cached['categories']
     mapping=taxonomy['pages']
     result=[]
     for category in taxonomy['categories']:
@@ -62,16 +64,33 @@ def category_catalog(pages,taxonomy):
 
 def related_pages(p,pages,taxonomy=None):
     taxonomy=taxonomy or load_link_taxonomy()
-    by_slug={x['slug']:x for x in pages if x['slug']}
+    cached=taxonomy.get('_build_index')
+    cached=cached if cached and cached['pages'] is pages else None
+    by_slug=cached['by_slug'] if cached else {x['slug']:x for x in pages if x['slug']}
     if not p['slug']:return [by_slug[s] for s in taxonomy['featured'] if s in by_slug][:4]
     group=taxonomy['pages'].get(p['slug'],{}).get('relatedGroup')
     if not group:return []
+    if cached:return cached['neighbors'].get(p['slug'],[])
     peers=sorted(s for s in by_slug if taxonomy['pages'].get(s,{}).get('relatedGroup')==group)
     # A circular neighborhood distributes relevant links instead of repeatedly
     # recommending the first three records. Unclassified pages get no fallback.
     position=peers.index(p['slug'])
     ordered=peers[position+1:]+peers[:position]
     return [by_slug[s] for s in ordered[:3]]
+
+def prepare_build_index(pages,taxonomy):
+    categories=category_catalog(pages,taxonomy)
+    by_slug={p['slug']:p for p in pages if p['slug']}
+    groups={}
+    for slug in by_slug:
+        group=taxonomy['pages'].get(slug,{}).get('relatedGroup')
+        if group:groups.setdefault(group,[]).append(slug)
+    neighbors={}
+    for peers in groups.values():
+        peers.sort()
+        for i,slug in enumerate(peers):
+            neighbors[slug]=[by_slug[peers[(i+n)%len(peers)]] for n in range(1,min(4,len(peers)))]
+    taxonomy['_build_index']={'pages':pages,'categories':categories,'by_slug':by_slug,'neighbors':neighbors,'category_by_slug':{p['slug']:c for c in categories for p in c['pages']}}
 
 def category_navigation(categories,current=None):
     if not categories:return ''
@@ -164,7 +183,8 @@ def render(p,pages,shell,taxonomy=None):
     crumbs=[('Home','/'),('Basketball shot tracer','/shot-tracer')]
     if p['slug']:
         crumbs.append(('Workflows','/shot-tracer/scenarios'))
-        category=next((c for c in categories if p in c['pages']),None)
+        cached=taxonomy.get('_build_index')
+        category=cached['category_by_slug'].get(p['slug']) if cached and cached['pages'] is pages else next((c for c in categories if p in c['pages']),None)
         if category:crumbs.append((category['label'],category_path(category)))
         crumbs.append((p.get('label',p['heading']),route(p)))
     content='<div class="tracer-content"'+(' id="keyword-guide"' if p.get('keyword') else '')+'>'
@@ -296,6 +316,7 @@ def build(root=ROOT,preview_slugs=(),preview_batch=None):
     visible=[p for p in pages if p['status']=='approved' or p['slug'] in preview_slugs]
     scenes=[p for p in visible if p['slug']]
     taxonomy=load_link_taxonomy(root)
+    prepare_build_index(visible,taxonomy)
     shell=(root/'content/shot-tracer/tool.html').read_text()
     # Read the product destination centrally, never per keyword.
     config=root/'content/site-config.json'
