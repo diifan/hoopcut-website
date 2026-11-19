@@ -32,7 +32,7 @@
       ],
       [
         "Reopen the export on the viewing device",
-        "Play the actual exported file outside the editor. Check the opening frame, every transition and the final frame. Look at the player and ball on a phone, not only on a large editing display. A vertical crop may remove an off-ball teammate or the top of a shot; reframe or keep a wider version when that context matters. Keep the original recording and a clean master, rather than making later edits from a compressed social upload."
+        "Play the actual exported file outside the editor. Check the opening frame, every transition and the final frame. Look at the player and ball on a phone, not only on a large editing display. A vertical crop may remove an off-ball teammate or the top of a shot; reframe or keep a wider version when that context matters. Keep the original recording and a clean master, rather than making later edits from a compressed social upload. Listen across each cut as well as watching it. If a cut interrupts a whistle or spoken cue that explains the play, move the boundary to keep that cue intelligible."
       ],
       [
         "Practice with the prepared ten-shot sample",
@@ -261,7 +261,7 @@
       ],
       [
         "Does Hoopcut run in a browser?",
-        "A browser-based editor is not verified for this product. The product discussed here is the iPhone Hoopcut application."
+        "The separate Shot Tracer web tool accepts your own basketball video: select a short range, preview the trail and export it. Follow the limits shown in that tool. This iPhone guide covers the app workflow; the prepared clipping and tracer demos remain sample players."
       ]
     ],
     "reference": "the phone workflow",
@@ -276,7 +276,7 @@
       "basketball highlight app for iphone"
     ],
     "demo": true,
-    "dateModified": "2026-10-29",
+    "dateModified": "2026-11-19",
     "editorialLinks": [
       [
         "Try the ten-shot basketball clipping sample",
@@ -289,6 +289,10 @@
       [
         "Plan source timestamps in a basketball clip log",
         "/templates/basketball-clip-log"
+      ],
+      [
+        "Add a tracer to your own video in the web tool",
+        "/shot-tracer"
       ]
     ]
   },
@@ -305,7 +309,7 @@
       ],
       [
         "Separate three kinds of correction",
-        "When reviewing the AI workflow, distinguish false selections, missed moments and wrong player assignments. A valid score attributed to the wrong person is a different problem from an event that never occurred. Keep notes by category. This makes the AI workflow results easier to repair and helps you recognize whether a particular recording angle is unsuitable."
+        "When reviewing the AI workflow, distinguish false selections, missed moments and wrong player assignments. A valid score attributed to the wrong person is a different problem from an event that never occurred. Keep notes by category. This makes the AI workflow results easier to repair and helps you recognize whether a particular recording angle is unsuitable. Use one log row per expected play, with its source timestamp and a found, missed or wrong-player note. Count repeated suggestions for the same possession once when comparing coverage."
       ],
       [
         "Preserve human judgment at export",
@@ -444,7 +448,7 @@
       ],
       [
         "Can the website add a tracer to my uploaded video?",
-        "The browser demo reviews a prepared reel and does not process uploaded games. Hoopcut’s iPhone app provides the basketball Shot Tracer feature. The sample is not a recording of the app’s editing controls."
+        "Yes. Open the separate Shot Tracer web tool, import your basketball video, choose a range of up to 30 seconds, then preview and export the Firework effect. The prepared demo linked in this guide still plays an existing sample; uploading and processing happen in the web tool."
       ],
       [
         "Can I turn the trail off in the sample?",
@@ -463,7 +467,7 @@
       "basketball ball trail effect"
     ],
     "demo": true,
-    "dateModified": "2026-10-30",
+    "dateModified": "2026-11-19",
     "editorialLinks": [
       [
         "Select the clips before choosing their effects",
@@ -472,6 +476,10 @@
       [
         "Record source times for your selected attempts",
         "/templates/basketball-clip-log"
+      ],
+      [
+        "Upload a short basketball clip to the Shot Tracer web tool",
+        "/shot-tracer"
       ]
     ],
     "sectionTools": {
@@ -549,7 +557,7 @@
       ],
       [
         "Prepare supporting information honestly",
-        "Keep contact and identifying details accurate and appropriate to share. Label source games and retain timestamps so a coach can ask for context. Do not invent statistics, credentials or interest from programs. Test the viewing link from the recipient’s perspective, including whether it requires an unexpected login. Ask for permission before distributing footage you are not entitled to share."
+        "Keep contact and identifying details accurate and appropriate to share. Label source games and retain timestamps so a coach can ask for context. Do not invent statistics, credentials or interest from programs. Test the viewing link from the recipient’s perspective, including whether it requires an unexpected login. Ask for permission before distributing footage you are not entitled to share. When clips come from several games, keep a private cross-reference from each reel segment to its source filename and timestamp. A coach can then request the surrounding possession without you having to search the whole library again."
       ],
       [
         "Prepare a tryout or evaluation film submission",
@@ -655,7 +663,7 @@
       ],
       [
         "Set a clip budget before a time target",
-        "To choose a running time, write down the distinct ideas the edit needs to show: a finish, a passing read, a defensive action or a team moment. Select one strong example for each, then see what additional footage adds. Remove repeated evidence before cutting every possession so tightly that nobody can follow the play."
+        "To choose a running time, write down the distinct ideas the edit needs to show: a finish, a passing read, a defensive action or a team moment. Select one strong example for each, then see what additional footage adds. Remove repeated evidence before cutting every possession so tightly that nobody can follow the play. For example, six eight-second clips plus a four-second introduction and a two-second ending total 54 seconds before transition overlaps or added pauses. Treat that as a planning calculation, then check the actual exported runtime."
       ],
       [
         "Create separate versions when needs conflict",
@@ -722,7 +730,7 @@
     "sections": [
       [
         "Example one: a readable made shot",
-        "For these storyboard examples, start with a possession that includes the catch, preparation, release and visible result. Identify the athlete before movement becomes crowded. A tracer may clarify the flight in a social version, while a clean copy preserves evaluation context. These these storyboard examples teach that the basket is the outcome of a play rather than the entire story."
+        "For these storyboard examples, start with a possession that includes the catch, preparation, release and visible result. Identify the athlete before movement becomes crowded. A tracer may clarify the flight in a social version, while a clean copy preserves evaluation context. These storyboard examples teach that the basket is the outcome of a play rather than the entire story."
       ],
       [
         "Example two: the pass that creates the chance",
@@ -730,7 +738,7 @@
       ],
       [
         "Example three: a team sequence",
-        "Use these storyboard examples to plan a defensive stop followed by transition, with each contribution identifiable. Keep continuity honest; do not join unrelated possessions to imply a single event. Review these storyboard examples without music and explain what each player contributes. If the sequence needs a long spoken explanation, the boundaries or selection may need work."
+        "Use these storyboard examples to plan a defensive stop followed by transition, with each contribution identifiable. Keep continuity honest; do not join unrelated possessions to imply a single event. Review these storyboard examples without music and explain what each player contributes. If the sequence needs a long spoken explanation, the boundaries or selection may need work. When the next clip comes from a different possession or game, use a clear break or a brief source label in your edit so viewers do not read the cut as one continuous play."
       ],
       [
         "Scope of this guide",
@@ -807,7 +815,7 @@
       ],
       [
         "Review the saved file before sharing",
-        "Watch the exported file from beginning to end on a phone, including the first frame, text, audio and ending. Check that the saved crop preserves the play, the Shot Tracer is readable if used, and no private team or player information was added unintentionally. Use footage and audio you have permission to share, confirm credits with the people involved, then preview the actual post. Save the source timestamps and final version so a correction does not require rebuilding the entire reel."
+        "Watch the exported file from beginning to end on a phone, including the first frame, text, audio and ending. Check that the saved crop preserves the play, the Shot Tracer is readable if used, and no private team or player information was added unintentionally. Use footage and audio you have permission to share, confirm credits with the people involved, then preview the actual post. Save the source timestamps and final version so a correction does not require rebuilding the entire reel. Watch once with the sound muted, too. If a spoken explanation is essential to identifying the play, add a concise visible label in your editing workflow and check that it survives the final crop."
       ]
     ],
     "checklist": [
@@ -924,7 +932,7 @@
       ],
       [
         "Prepare early and rehearse playback",
-        "A practical planning schedule is to collect names, photos and recordings two weeks before the event, assemble the first cut a week before, and reserve the final days for corrections and playback testing. Adjust this schedule to your school’s deadline. Confirm the screen format and audio setup with the person running the ceremony. Keep a local backup and check the complete playback sequence, including the transition to the next player."
+        "A practical planning schedule is to collect names, photos and recordings two weeks before the event, assemble the first cut a week before, and reserve the final days for corrections and playback testing. Adjust this schedule to your school’s deadline. Confirm the screen format and audio setup with the person running the ceremony. Keep a local backup and check the complete playback sequence, including the transition to the next player. Number the tribute files in the agreed roster order and put the same filenames on the playback cue sheet. Rehearse from that list so a similarly named file does not introduce the wrong senior."
       ]
     ],
     "checklist": [
@@ -1021,7 +1029,7 @@
     "sections": [
       [
         "Choose a caption that fits the clip",
-        "Start with the subject of the post, not the loudest line. If the video shows a teammate making the extra pass, credit the decision rather than writing as though you scored. If it is a practice recording, name the drill or the work behind it instead of implying the footage is a tournament win. A specific observation makes even a short caption useful. Write the line so someone who did not attend the game can understand why you chose that moment."
+        "Start with the subject of the post, not the loudest line. If the video shows a teammate making the extra pass, credit the decision rather than writing as though you scored. If it is a practice recording, name the drill or the work behind it instead of implying the footage is a tournament win. A specific observation makes even a short caption useful. Write the line so someone who did not attend the game can understand why you chose that moment. After any last-minute trim, compare the caption with the exported clip again: a credit for the extra pass may need revising if that pass is no longer visible."
       ],
       [
         "Pair short basketball captions with a readable opening",
@@ -1270,7 +1278,7 @@
       ],
       [
         "Name the files before you build the season library",
-        "Use a consistent scheme such as team-season-player-number-asset-take, then have someone verify that each name points to the right person. Keep a completion sheet, a folder of originals and a separate folder of approved selections. Check your team’s process for image use and public sharing before publishing identifiable athletes, especially youth players. This planning guide does not replace the school or organization’s rules. Do not include private contact details or an athlete’s unpublished schedule in a public filename, graphic or social caption."
+        "Use a consistent scheme such as team-season-player-number-asset-take, then have someone verify that each name points to the right person. Keep a completion sheet, a folder of originals and a separate folder of approved selections. Check your team’s process for image use and public sharing before publishing identifiable athletes, especially youth players. This planning guide does not replace the school or organization’s rules. Do not include private contact details or an athlete’s unpublished schedule in a public filename, graphic or social caption. Mark the chosen take number on the completion sheet before distributing the approved folder. Keep rejected takes with the originals so a helper does not accidentally publish an outtake with the same player name."
       ],
       [
         "Connect media day to real game highlights",
@@ -1443,7 +1451,7 @@
       ],
       [
         "Rehearse the file on the event equipment",
-        "Save a local copy of the final video and test it on the actual laptop, screen and speakers when access is available. Check whether the room can hear spoken thanks and whether names are readable from the back. Have a still-image or spoken alternative if playback fails, and assign one person to run the file. Confirm any music or other third-party assets are appropriate for your intended use rather than assuming a social-media audio option also covers event playback. This guide does not supply licensed music or promise that a platform’s terms apply elsewhere."
+        "Save a local copy of the final video and test it on the actual laptop, screen and speakers when access is available. Check whether the room can hear spoken thanks and whether names are readable from the back. Have a still-image or spoken alternative if playback fails, and assign one person to run the file. Confirm any music or other third-party assets are appropriate for your intended use rather than assuming a social-media audio option also covers event playback. This guide does not supply licensed music or promise that a platform’s terms apply elsewhere. Keep the backup on a separate device or storage medium, and open it before the event; a second filename on the same laptop does not help if that laptop becomes unavailable."
       ],
       [
         "Use game clips for the part Hoopcut can help with",
@@ -1590,7 +1598,7 @@
       ],
       [
         "Log source time rather than guessing from the scoreboard",
-        "The game clock and the recording clock measure different things. A timeout may stop one while the other continues. Write a source filename and elapsed video time in the clip log, then add the period or game clock as a separate note. If you pause recording between periods, give the next file a distinct name. A useful entry identifies the player, what happened and where the clip begins. Mark uncertainty for later review instead of entering a made-up timestamp that another editor cannot locate."
+        "The game clock and the recording clock measure different things. A timeout may stop one while the other continues. Write a source filename and elapsed video time in the clip log, then add the period or game clock as a separate note. If you pause recording between periods, give the next file a distinct name. A useful entry identifies the player, what happened and where the clip begins. Mark uncertainty for later review instead of entering a made-up timestamp that another editor cannot locate. If the camera splits a long recording into multiple files, give each part its own log entry and use the elapsed time within that file. Note the part order so an editor does not look for a timestamp beyond the end of the first file."
       ],
       [
         "Keep the original before you make highlights",
@@ -1700,7 +1708,7 @@
       ],
       [
         "Record short, labeled sets",
-        "Name each set by drill and angle, such as corner-catch-set-01 or left-finish-side-02. Leave a little time before and after a repetition so the setup is visible. If you stop the recording, create a new log row rather than continuing old elapsed timestamps. Do not keep handling the phone between every attempt if that breaks the practice routine. A short block you can review clearly is more useful than a long recording with no notes. Keep the session structure simple enough to repeat next time."
+        "Name each set by drill and angle, such as corner-catch-set-01 or left-finish-side-02. Leave a little time before and after a repetition so the setup is visible. If you stop the recording, create a new log row rather than continuing old elapsed timestamps. Do not keep handling the phone between every attempt if that breaks the practice routine. A short block you can review clearly is more useful than a long recording with no notes. Keep the session structure simple enough to repeat next time. At the beginning of a set, say the drill name, camera angle and set number aloud before the first repetition. This gives you a reference inside the recording even if the phone assigns an automatic filename."
       ],
       [
         "Keep review notes separate from performance claims",
@@ -1810,7 +1818,7 @@
       ],
       [
         "Set the hierarchy before adding decoration",
-        "Read the design in this order: player, number, event, optional short message. If a viewer needs to search for the name, enlarge it or reduce competing elements. Leave a quiet area around each text block. The downloadable SVG remains editable, while the PNG export is a flattened image for convenience. Neither supplies a commercial printer’s bleed specification. Confirm the required dimensions and margins with your print provider, then check a proof at the final intended scale. Do not assume a screen preview guarantees print readability."
+        "Read the design in this order: player, number, event, optional short message. If a viewer needs to search for the name, enlarge it or reduce competing elements. Leave a quiet area around each text block. The downloadable SVG remains editable, while the PNG export is a flattened image for convenience. Neither supplies a commercial printer’s bleed specification. Confirm the required dimensions and margins with your print provider, then check a proof at the final intended scale. Do not assume a screen preview guarantees print readability. Proof the longest player name first at the intended print size. If it wraps or crowds the number, adjust the shared layout before producing the rest of the roster."
       ],
       [
         "Connect the poster to the rest of senior night",
@@ -1919,7 +1927,7 @@
       ],
       [
         "Build the budget from quantity and actual quotes",
-        "Separate the number of recipients from the number of items. Ten seniors receiving two cards each means twenty cards, while a single shared display is one expense. Record unit cost, quantity and extra cost in the budget tool; it calculates line totals and the combined amount. The sample numbers are fictional planning inputs, not prices. Include packaging or shipping as separate lines when needed. Use the notes column for the quote date and owner so another organizer can verify the amount without searching a message thread."
+        "Separate the number of recipients from the number of items. Ten seniors receiving two cards each means twenty cards, while a single shared display is one expense. Record unit cost, quantity and extra cost in the budget tool; it calculates line totals and the combined amount. The sample numbers are fictional planning inputs, not prices. Include packaging or shipping as separate lines when needed. Use the notes column for the quote date and owner so another organizer can verify the amount without searching a message thread. Mark each budget line as quoted, ordered or paid, and record whether a deposit is part of the quoted total. This helps the organizer distinguish an estimate from money already spent without counting a deposit twice."
       ],
       [
         "Plan the handoff and a copy of anything digital",
@@ -2032,7 +2040,7 @@
       ],
       [
         "Make a setup photo and a packing list",
-        "Before the event, arrange the approved items once, photograph the intended setup for your own team and note who brings each piece. Pack the table card, supports, message cards and pens together. At cleanup, check borrowed and personal items against the list. The printable program and memory card can use the same verified roster details as the table label. Consistency reduces correction work and helps the display feel coherent without buying a coordinated decoration package."
+        "Before the event, arrange the approved items once, photograph the intended setup for your own team and note who brings each piece. Pack the table card, supports, message cards and pens together. At cleanup, check borrowed and personal items against the list. The printable program and memory card can use the same verified roster details as the table label. Consistency reduces correction work and helps the display feel coherent without buying a coordinated decoration package. Add an owner and return destination to the private packing list for each borrowed item. Check items off when returned, rather than treating removal from the display as the end of cleanup."
       ]
     ],
     "checklist": [
