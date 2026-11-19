@@ -2,6 +2,7 @@ import sys, pathlib, unittest
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/"scripts"))
 from tracer_keyword_policy import rejection_reason, identity_aligned
 BAD=['4.2gpa', 'actor reema lagoo', '3.3gpa', '3.7gpa', 'aidra fox gif', 'colin hurley actor', '3.1gpa', 'how tall was actor james arness', '43/50 grade', 'actress ariyan johnson', 'aidra fox creampie', 'aidra fox brandi love', '3.9gpa', 'aidra fox hookup hotshot', 'pierson fode naked', 'aidra fox twitter', 'ohiya casino resort', 'taylee wood anal', 'akih hentai', '192lbs to kg', 'aidra fox deepthroat', 'aidra fox naked', '3.75gpa', 'ary vilchis onlyfans']
+BAD += ['calixa apartment homes', 'the breyley apartments', 'amario hotel', 'dillow taylor obits', 'breyley apartments']
 class PolicyTest(unittest.TestCase):
  def test_reported_unrelated_intents(self):
   for keyword in BAD:
