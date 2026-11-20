@@ -57,3 +57,9 @@ body:has(#effects:not([hidden])) .intro{padding:28px 0 25px}body:has(#effects:no
 
 header nav{display:flex;gap:18px;flex-wrap:wrap}header nav a{color:inherit;text-decoration:none;font-size:14px}header nav a[aria-current]{color:#ffad69}@media(max-width:600px){header{flex-wrap:wrap;gap:18px}header nav{width:100%;justify-content:center}}
 #hoop-panel{grid-column:1/-1;padding:20px 0}#hoop-panel[hidden]{display:none}.hoop-frame{position:relative;max-width:760px;margin:16px auto}.hoop-frame canvas{display:block;width:100%;height:auto}.hoop-frame #hoop-boxes{position:absolute;inset:0;pointer-events:none}#hoop-boxes button{pointer-events:auto;position:absolute;transform:translate(-50%,-50%);min-width:44px;min-height:44px;padding:4px;border:2px solid #ff861b;background:#1118;color:white;border-radius:8px}#hoop-boxes button[aria-pressed=true]{border-color:#57ed9c;background:#116b3bd9}#hoop-confirm:disabled{opacity:.4}#hoop-frame-label{font-variant-numeric:tabular-nums}
+
+/* Import guidance stays available without JavaScript. */
+.clip-checklist{margin:20px 0;padding:16px 18px;border:1px solid #414738;border-radius:12px;text-align:left;color:#c5c9bd;font-size:14px;line-height:1.65}
+.clip-checklist summary{cursor:pointer;min-height:44px;align-content:center;color:#f2f3eb;font-weight:600}
+.clip-checklist summary:focus-visible,.clip-checklist a:focus-visible{outline:2px solid #ff996f;outline-offset:4px}
+.clip-checklist ul{padding-left:20px;margin:12px 0}.clip-checklist li+li{margin-top:10px}.clip-checklist strong{color:#f2f3eb}.clip-checklist p{margin:12px 0 0}.clip-checklist a{color:#ffad85;text-decoration:underline;text-underline-offset:3px}
