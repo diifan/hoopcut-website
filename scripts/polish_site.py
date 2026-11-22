@@ -64,6 +64,20 @@ def build():
     store = urlsplit(request_url)
     assert store.scheme == 'https' and store.netloc == 'apps.apple.com' and store.path.endswith('/id'+config['app']['appId']), 'Use the verified app detail URL'
 
+    social_profiles = config.get('social', {})
+    social_names = {'youtube':'YouTube', 'tiktok':'TikTok', 'instagram':'Instagram'}
+    social_domains = {'youtube':'www.youtube.com', 'tiktok':'www.tiktok.com', 'instagram':'www.instagram.com'}
+    for network, url in social_profiles.items():
+        profile = urlsplit(url)
+        assert network in social_names and profile.scheme == 'https' and profile.netloc == social_domains[network] and profile.path not in ('','/') and not profile.query and not profile.fragment, 'Use an official HTTPS social profile URL'
+
+    def social_footer(match):
+        footer = re.sub(r'<a\b(?=[^>]*\bdata-social="(?:youtube|tiktok|instagram)")[^>]*>.*?</a>', '', match[0], flags=re.S)
+        if not social_profiles:
+            return footer
+        links = ''.join('<a class="social-link" href="'+H(url,quote=True)+'" target="_blank" rel="me noopener" data-social="'+network+'" aria-label="Hoopcut on '+social_names[network]+' (opens in a new tab)">'+social_names[network]+'</a>' for network,url in social_profiles.items())
+        return footer.replace('<a href="/terms">', links+'<a href="/terms">', 1)
+
     images = media['images']
     def variant(src, width=960):
         info = images[src]
@@ -121,6 +135,22 @@ def build():
             src = src.replace(old, 'Hoopcut is available on the App Store for iPhone. Download the app to create basketball highlights with auto clipping and Shot Tracer. Check the App Store listing for current pricing, device requirements and availability.')
         src = src.replace('Current access and feature availability may vary.', 'Available on the App Store for iPhone. Check the listing for device requirements and current feature availability.')
         if file == ROOT/'index.html':
+            home = config['homepage']
+            src = re.sub(r'<title>.*?</title>', '<title>'+H(home['title'])+'</title>', src, count=1, flags=re.S)
+            def home_meta(match):
+                tag = Tag(match[0])
+                key = tag.attrs.get('name', tag.attrs.get('property'))
+                if key in ('description', 'og:description', 'twitter:description'):
+                    tag.attrs['content'] = home['description']
+                elif key in ('og:title', 'twitter:title'):
+                    tag.attrs['content'] = home['title']
+                return tag.render()
+            src = re.sub(r'<meta\b[^>]*>', home_meta, src)
+            src = re.sub(r'<div class="hero-kicker">.*?</div>', '<div class="hero-kicker">'+H(home['tagline'])+'</div>', src, count=1, flags=re.S)
+            src = re.sub(r'<h1>.*?</h1><p>.*?</p>', '<h1>'+H(home['heading'])+'</h1><p>'+H(home['intro'])+'</p>', src, count=1, flags=re.S)
+            src = src.replace('<section class="hero"', '<section class="hero brand-hero"', 1)
+            if 'href="/assets/brand-hero.css"' not in src:
+                src = src.replace('</head>', '<link rel="stylesheet" href="/assets/brand-hero.css"></head>')
             # The original customer review block is intentionally untouched.
             src = re.sub(r'(<video\b[^>]*id="banner-video"[^>]*>).*?(</video>)', r'\1\2', src, flags=re.S)
             src = re.sub(r'<video\b[^>]*id="banner-video"[^>]*>', lambda m:m[0].replace(' autoplay','').replace('preload="metadata"','preload="none"'), src)
@@ -130,14 +160,24 @@ def build():
         if file == ROOT/'blog/index.html':
             src = src.replace('Better footage.<br><span>Better highlights.</span>', 'Basketball guides.<br><span>Better highlights.</span>')
         src = re.sub(r'<(?:img|image|video|source|link)\b[^>]*>', optimize_tag, src)
+        src = re.sub(r'<footer\b.*?</footer>', social_footer, src, flags=re.S)
+        if social_profiles and 'href="/assets/social.css"' not in src:
+            src = src.replace('</head>', '<link rel="stylesheet" href="/assets/social.css"></head>')
 
         # Organization identity is shared; schema never invents price or ratings.
         def schema(match):
             data = json.loads(match[1]); nodes = data.get('@graph',[data])
             nodes = [x for x in nodes if x.get('@id') != BASE+'/#organization']
             org = {'@type':'Organization','@id':BASE+'/#organization','name':'Hoopcut','legalName':'SWINK AI INC.','url':BASE+'/','logo':{'@type':'ImageObject','url':BASE+'/assets/blog/brand-icon.png'},'email':config['app']['contactEmail'],'description':'Basketball auto clipping and Shot Tracer for iPhone.'}
+            if social_profiles:
+                org['sameAs'] = list(social_profiles.values())
             nodes.append(org)
+            if file == ROOT/'index.html':
+                nodes = [x for x in nodes if x.get('@id') != BASE+'/#app']
+                nodes.append({'@type':'MobileApplication','@id':BASE+'/#app','name':'Hoopcut','url':BASE+'/','applicationCategory':'MultimediaApplication','operatingSystem':'iOS','downloadUrl':request_url,'sameAs':[request_url],'publisher':{'@id':org['@id']},'description':config['homepage']['description']})
             for node in nodes:
+                if file == ROOT/'index.html' and node.get('@type') == 'WebPage':
+                    node.update(name=config['homepage']['title'], description=config['homepage']['description'], mainEntity={'@id':BASE+'/#app'})
                 if node.get('@type') in ['WebSite','WebPage','CollectionPage','Blog','BlogPosting']:
                     node['publisher'] = {'@id':org['@id']}
                 for key in ('author','publisher'):
@@ -180,6 +220,8 @@ def build():
         stamp = node.find(ns+'lastmod')
         if stamp is None:
             stamp = ET.SubElement(node,ns+'lastmod'); stamp.text = DATE
+        if node.findtext(ns+'loc') == BASE+'/':
+            stamp.text = config['homepage']['dateModified']
     ET.register_namespace('', ns[1:-1]); tree.write(ROOT/'sitemap.xml',encoding='utf-8',xml_declaration=True)
     settings = json.loads((ROOT/'vercel.json').read_text())
     settings['redirects'] = [{'source':'/:path*','has':[{'type':'host','value':'www.hoopcut.ai'}],'destination':'https://hoopcut.ai/:path*','permanent':True}]

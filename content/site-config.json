@@ -5,6 +5,19 @@
     "appStoreUrl": "https://apps.apple.com/us/app/hoopcut-basketball-highlights/id6824860341",
     "contactEmail": "hello@goswie.com"
   },
+  "social": {
+    "youtube": "https://www.youtube.com/@HoopCut-Office",
+    "tiktok": "https://www.tiktok.com/@hoopcutai",
+    "instagram": "https://www.instagram.com/hoopcut_office/"
+  },
+  "homepage": {
+    "dateModified": "2026-11-22",
+    "title": "Hoopcut: AI Basketball Highlights & Shot Tracer",
+    "description": "Create basketball highlights with Hoopcut for iPhone by Swink AI Inc. Automatically find made shots, edit your clips and add Shot Tracer effects.",
+    "heading": "Hoopcut turns your basketball videos into highlights.",
+    "tagline": "Your game. Your highlights.",
+    "intro": "The basketball highlight app for iPhone by Swink AI Inc. Automatically find made shots, edit your clips and follow the ball with Shot Tracer."
+  },
   "analytics": {
     "enabled": false,
     "customEvents": false,
