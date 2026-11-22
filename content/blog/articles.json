@@ -448,7 +448,7 @@
       ],
       [
         "Can the website add a tracer to my uploaded video?",
-        "Yes. Open the separate Shot Tracer web tool, import your basketball video, choose a range of up to 30 seconds, then preview and export the Firework effect. The prepared demo linked in this guide still plays an existing sample; uploading and processing happen in the web tool."
+        "Yes. Open the separate Shot Tracer web tool and import an MP4, MOV or WebM file from your device, up to 512 MB. A video link is not a video file. Choose a range of up to 30 seconds, then preview and export the Firework effect. The prepared demo linked in this guide still plays an existing sample; uploading and processing happen in the web tool."
       ],
       [
         "Can I turn the trail off in the sample?",
@@ -467,7 +467,7 @@
       "basketball ball trail effect"
     ],
     "demo": true,
-    "dateModified": "2026-11-19",
+    "dateModified": "2026-11-22",
     "editorialLinks": [
       [
         "Select the clips before choosing their effects",
