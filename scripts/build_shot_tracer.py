@@ -27,6 +27,9 @@ def load_pages(root=ROOT):
         batch=json.loads(file.read_text())
         if not isinstance(batch,list):raise ValueError(f'Expected a page array in {file.name}')
         pages.extend(batch)
+    withdrawn_file = root / "content/shot-tracer/withdrawn-slugs.json"
+    withdrawn = set(json.loads(withdrawn_file.read_text())) if withdrawn_file.exists() else set()
+    pages = [page for page in pages if page["slug"] not in withdrawn]
     validate(pages)
     return pages
 
