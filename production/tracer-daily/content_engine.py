@@ -16,6 +16,20 @@ from urllib.parse import urlparse
 EXCLUDE = re.compile(r'\b(weather|obituar\w*|funeral|death|dead|murder|arrest|jail|prison|porn|nude|sex|restaurant\w*|pizza|barber\w*|salon|real estate|realtor|auction\w*|financial|bank|loan|insurance|dentist|dental|hospital|clinic|veterinar\w*|church|bible|sermon|prayer|meaning|pronounce|recipe|menu|lyrics|movie|novel|book|wedding|divorce|wife|husband|net worth|salary|jobs|employment|tuition|admission\w*|calendar|lunch|powerschool|login|log in|tickets|scores?|live|stream\w*|rankings?|roster|vs|football|soccer|baseball|softball|hockey|volleyball|lacrosse|wrestling|rugby|cricket|golf|swimming|gymnastics|cheerleading|tennis)\b', re.I)
 
 
+RESEARCH_HOSTS = {'ncsasports.org', 'www.ncsasports.org', 'xbotgo.com', 'www.xbotgo.com', 'sportsvisio.com', 'www.sportsvisio.com'}
+def research_context(url, keyword):
+    parsed = urlparse(url)
+    if parsed.scheme != 'https' or parsed.hostname not in RESEARCH_HOSTS:
+        return None
+    route = parsed.path.lower()
+    # New exports contain many other sports: require an explicit basketball context.
+    if 'basketball' not in route and 'basketball' not in keyword.casefold():
+        return None
+    if parsed.hostname in {'ncsasports.org', 'www.ncsasports.org'}:
+        return 'school-sports-source' if '/athletic-scholarships/' in route or '/recruiting/' in route else 'basketball-recruiting-source'
+    return 'basketball-video-workflow'
+
+
 def _load(path):
     path = Path(path).resolve()
     spec = importlib.util.spec_from_file_location('_tracer_' + hashlib.sha256(str(path).encode()).hexdigest()[:16], path)
@@ -101,13 +115,15 @@ def select_candidates(pool_path, source_manifest_path, cache_path,
                     failure = 'unresolved_source_fetch'
                     continue
                 title = probe.get('title', '')
-                if not policy.identity_aligned(keyword, title):
-                    continue
                 parsed = urlparse(url)
-                if parsed.hostname not in ('hudl.com', 'www.hudl.com', 'support.hudl.com', 'fan.hudl.com'):
+                context = research_context(url, keyword)
+                identity = title + (' ' + re.sub(r'[-_/]', ' ', parsed.path) if context else '')
+                if not policy.identity_aligned(keyword, identity):
+                    continue
+                if parsed.hostname not in ('hudl.com', 'www.hudl.com', 'support.hudl.com', 'fan.hudl.com') and not context:
                     continue
                 route = parsed.path
-                context = ('school-sports-source' if '/organization/' in route or '/team/' in route
+                context = context or ('school-sports-source' if '/organization/' in route or '/team/' in route
                            else 'sports-video-source' if '/video/' in route
                            else 'sports-profile-source' if '/profile/' in route
                            else 'editing-workflow' if 'hudl' in key and re.search(r'video|edit|highlight|clip|download|upload|library|camera|telestrat', key)

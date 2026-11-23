@@ -6,3 +6,7 @@ production/
 tests/
 docs/
 .env*
+
+dist/
+
+node_modules/
