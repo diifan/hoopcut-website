@@ -27,6 +27,12 @@ def load_pages(root=ROOT):
         batch=json.loads(file.read_text())
         if not isinstance(batch,list):raise ValueError(f'Expected a page array in {file.name}')
         pages.extend(batch)
+    # Preserve original generation records, but never publish withdrawn pages,
+    # including through draft previews or a later import of the same keyword.
+    unpublished_file=root/'content/shot-tracer/unpublished-slugs.json'
+    unpublished=set(json.loads(unpublished_file.read_text())) if unpublished_file.exists() else set()
+    normalize=lambda value:re.sub(r'[^a-z0-9]+','-',value.casefold()).strip('-')
+    pages=[p for p in pages if p['slug'] not in unpublished and normalize(p.get('keyword','')) not in unpublished]
     validate(pages)
     return pages
 
