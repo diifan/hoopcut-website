@@ -81,7 +81,7 @@ def main():
   tries=6 if name in ('fetch-main','refresh-main') else 1
   for attempt in range(tries):
    if attempt:time.sleep(min(2 ** (attempt-1),8))
-   try:p=subprocess.run([str(a) for a in argv],cwd=cwd,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,timeout=min(timeout,60) if tries>1 else timeout)
+   try:p=subprocess.run([str(a) for a in argv],cwd=cwd,stdout=subprocess.PIPE,stderr=subprocess.PIPE,text=True,timeout=min(timeout,60) if tries>1 else timeout,env=(dict(os.environ,HTTP_PROXY=cfg['proxy'],HTTPS_PROXY=cfg['proxy'],http_proxy=cfg['proxy'],https_proxy=cfg['proxy']) if str(argv[0])==cfg['vercel'] else None))
    except subprocess.TimeoutExpired as exc:
     if tries==1:raise
     p=subprocess.CompletedProcess(argv,124,'','Transport timeout')
