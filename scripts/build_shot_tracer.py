@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate approved tracer landing pages from one shared, functional tool shell."""
 import html
+import secrets
 import argparse
 import json
 import re
@@ -181,6 +182,10 @@ def keyword_navigation(p):
     return '<nav class="keyword-jumps" aria-label="On this page">'+''.join(links)+'</nav>'
 
 def render(p,pages,shell,taxonomy=None):
+    style=p.get('tracerStyle','comic-pop')
+    shell=shell.replace('<body>', '<body data-tracer-style="'+H(style,quote=True)+'">')
+    shell=shell.replace('/assets/optimized/reel-blue-960.1279e4ffb3f9.mp4','/assets/tracer-styles/'+style+'.mp4').replace('/assets/optimized/blue-960.ae04340fd2ff.webp','/assets/tracer-styles/'+style+'.webp')
+
     taxonomy=taxonomy or load_link_taxonomy()
     categories=category_catalog(pages,taxonomy)
     crumbs=[('Home','/'),('Basketball shot tracer','/shot-tracer')]
@@ -216,7 +221,7 @@ def render(p,pages,shell,taxonomy=None):
     intro+='</section>'
     if p.get('keyword'):
         intro+=keyword_navigation(p)
-        shell=shell.replace('<body>','<body class="keyword-landing">')
+        shell=shell.replace('<body data-tracer-style=','<body class="keyword-landing" data-tracer-style=')
         shell=shell.replace('href="/shot-tracer" aria-current="page"','href="/shot-tracer" aria-current="location"')
         shell=shell.replace('</head>','<link rel="stylesheet" href="/assets/tracer-keywords.css"><script defer src="/assets/tracer-keyword-nav.js"></script></head>')
         if p.get('toolHeading'):
@@ -320,6 +325,18 @@ def build(root=ROOT,preview_slugs=(),preview_batch=None):
     scenes=[p for p in visible if p['slug']]
     taxonomy=load_link_taxonomy(root)
     prepare_build_index(visible,taxonomy)
+    catalog=json.loads((root/'assets/tracer-styles/catalog.json').read_text())
+    assignment_path=root/'content/shot-tracer/style-assignments.json'
+    assignments=json.loads(assignment_path.read_text()) if assignment_path.exists() else {'version':catalog['version'],'pages':{},'remaining':[]}
+    for page in pages:
+        key=page['slug'] or '__home__'
+        if key not in assignments['pages']:
+            if not assignments['remaining']:
+                assignments['remaining']=[x['id'] for x in catalog['styles']]
+                secrets.SystemRandom().shuffle(assignments['remaining'])
+            assignments['pages'][key]=assignments['remaining'].pop()
+        page['tracerStyle']=assignments['pages'][key]
+    assignment_path.write_text(json.dumps(assignments,indent=2)+'\n')
     shell=(root/'content/shot-tracer/tool.html').read_text()
     # Read the product destination centrally, never per keyword.
     config=root/'content/site-config.json'

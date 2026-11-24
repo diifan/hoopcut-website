@@ -1,0 +1,130 @@
+{
+  "version": "gallery-longtail-v3-20261118",
+  "styles": [
+    {
+      "id": "comic-pop",
+      "name": "Comic Pop",
+      "family": "comic-preview-20261117"
+    },
+    {
+      "id": "splash-brush",
+      "name": "Splash Brush",
+      "family": "comic-preview-20261117"
+    },
+    {
+      "id": "comet-ink",
+      "name": "Comet Ink",
+      "family": "comic-preview-20261117"
+    },
+    {
+      "id": "manga-swish",
+      "name": "Manga Swish",
+      "family": "comic-preview-20261117"
+    },
+    {
+      "id": "arcane-spark",
+      "name": "Arcane Spark",
+      "family": "material-preview-20261117-burst-v3"
+    },
+    {
+      "id": "kinetic-pulse",
+      "name": "Kinetic Pulse",
+      "family": "material-preview-20261117-burst-v3"
+    },
+    {
+      "id": "plasma-jet",
+      "name": "Plasma Jet",
+      "family": "material-preview-20261117-burst-v3"
+    },
+    {
+      "id": "prism-shards",
+      "name": "Prism Shards",
+      "family": "material-preview-20261117-burst-v3"
+    },
+    {
+      "id": "ink-smoke",
+      "name": "Ink Smoke",
+      "family": "material-preview-20261117-burst-v3"
+    },
+    {
+      "id": "holo-glitch",
+      "name": "Holo Glitch",
+      "family": "material-preview-20261117-burst-v3"
+    },
+    {
+      "id": "water-crown",
+      "name": "Water Crown",
+      "family": "material-preview-20261117-expansion-v4"
+    },
+    {
+      "id": "meteor-impact",
+      "name": "Meteor Impact",
+      "family": "material-preview-20261117-expansion-v4"
+    },
+    {
+      "id": "chain-lightning",
+      "name": "Chain Lightning",
+      "family": "material-preview-20261117-expansion-v4"
+    },
+    {
+      "id": "aurora-bloom",
+      "name": "Aurora Bloom",
+      "family": "material-preview-20261117-expansion-v4"
+    },
+    {
+      "id": "green-release",
+      "name": "Green Release",
+      "family": "reference-burst-v2-20261118"
+    },
+    {
+      "id": "heat-check",
+      "name": "Heat Check",
+      "family": "reference-burst-v2-20261118"
+    },
+    {
+      "id": "ice-cold",
+      "name": "Ice Cold",
+      "family": "reference-burst-v2-20261118"
+    },
+    {
+      "id": "voltage",
+      "name": "Voltage",
+      "family": "reference-burst-v2-20261118"
+    },
+    {
+      "id": "street-ink",
+      "name": "Street Ink",
+      "family": "reference-burst-v2-20261118"
+    },
+    {
+      "id": "court-manga",
+      "name": "Court Manga",
+      "family": "reference-burst-v2-20261118"
+    },
+    {
+      "id": "red-drive",
+      "name": "Red Drive",
+      "family": "anime-v2-20261118"
+    },
+    {
+      "id": "ace-afterimage",
+      "name": "Ace Afterimage",
+      "family": "anime-v2-20261118"
+    },
+    {
+      "id": "pure-swish",
+      "name": "Pure Swish",
+      "family": "anime-v2-20261118"
+    },
+    {
+      "id": "manga-ink",
+      "name": "Manga Ink",
+      "family": "anime-v2-20261118"
+    },
+    {
+      "id": "clutch-impact",
+      "name": "Clutch Impact",
+      "family": "anime-v2-20261118"
+    }
+  ]
+}

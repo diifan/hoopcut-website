@@ -1,0 +1,181 @@
+{
+  "version": "gallery-longtail-v3-20261118",
+  "styles": [
+    {
+      "id": "comic-pop",
+      "name": "Comic Pop",
+      "family": "comic-preview-20261117",
+      "index": 0,
+      "renderer": "vendor/comic-preview-20261117.py"
+    },
+    {
+      "id": "splash-brush",
+      "name": "Splash Brush",
+      "family": "comic-preview-20261117",
+      "index": 1,
+      "renderer": "vendor/comic-preview-20261117.py"
+    },
+    {
+      "id": "comet-ink",
+      "name": "Comet Ink",
+      "family": "comic-preview-20261117",
+      "index": 2,
+      "renderer": "vendor/comic-preview-20261117.py"
+    },
+    {
+      "id": "manga-swish",
+      "name": "Manga Swish",
+      "family": "comic-preview-20261117",
+      "index": 3,
+      "renderer": "vendor/comic-preview-20261117.py"
+    },
+    {
+      "id": "arcane-spark",
+      "name": "Arcane Spark",
+      "family": "material-preview-20261117-burst-v3",
+      "index": 0,
+      "renderer": "vendor/material-preview-20261117-burst-v3.py"
+    },
+    {
+      "id": "kinetic-pulse",
+      "name": "Kinetic Pulse",
+      "family": "material-preview-20261117-burst-v3",
+      "index": 1,
+      "renderer": "vendor/material-preview-20261117-burst-v3.py"
+    },
+    {
+      "id": "plasma-jet",
+      "name": "Plasma Jet",
+      "family": "material-preview-20261117-burst-v3",
+      "index": 2,
+      "renderer": "vendor/material-preview-20261117-burst-v3.py"
+    },
+    {
+      "id": "prism-shards",
+      "name": "Prism Shards",
+      "family": "material-preview-20261117-burst-v3",
+      "index": 3,
+      "renderer": "vendor/material-preview-20261117-burst-v3.py"
+    },
+    {
+      "id": "ink-smoke",
+      "name": "Ink Smoke",
+      "family": "material-preview-20261117-burst-v3",
+      "index": 4,
+      "renderer": "vendor/material-preview-20261117-burst-v3.py"
+    },
+    {
+      "id": "holo-glitch",
+      "name": "Holo Glitch",
+      "family": "material-preview-20261117-burst-v3",
+      "index": 5,
+      "renderer": "vendor/material-preview-20261117-burst-v3.py"
+    },
+    {
+      "id": "water-crown",
+      "name": "Water Crown",
+      "family": "material-preview-20261117-expansion-v4",
+      "index": 0,
+      "renderer": "vendor/material-preview-20261117-expansion-v4.py"
+    },
+    {
+      "id": "meteor-impact",
+      "name": "Meteor Impact",
+      "family": "material-preview-20261117-expansion-v4",
+      "index": 1,
+      "renderer": "vendor/material-preview-20261117-expansion-v4.py"
+    },
+    {
+      "id": "chain-lightning",
+      "name": "Chain Lightning",
+      "family": "material-preview-20261117-expansion-v4",
+      "index": 2,
+      "renderer": "vendor/material-preview-20261117-expansion-v4.py"
+    },
+    {
+      "id": "aurora-bloom",
+      "name": "Aurora Bloom",
+      "family": "material-preview-20261117-expansion-v4",
+      "index": 3,
+      "renderer": "vendor/material-preview-20261117-expansion-v4.py"
+    },
+    {
+      "id": "green-release",
+      "name": "Green Release",
+      "family": "reference-burst-v2-20261118",
+      "index": 0,
+      "renderer": "vendor/reference-burst-v2-20261118.py"
+    },
+    {
+      "id": "heat-check",
+      "name": "Heat Check",
+      "family": "reference-burst-v2-20261118",
+      "index": 1,
+      "renderer": "vendor/reference-burst-v2-20261118.py"
+    },
+    {
+      "id": "ice-cold",
+      "name": "Ice Cold",
+      "family": "reference-burst-v2-20261118",
+      "index": 2,
+      "renderer": "vendor/reference-burst-v2-20261118.py"
+    },
+    {
+      "id": "voltage",
+      "name": "Voltage",
+      "family": "reference-burst-v2-20261118",
+      "index": 3,
+      "renderer": "vendor/reference-burst-v2-20261118.py"
+    },
+    {
+      "id": "street-ink",
+      "name": "Street Ink",
+      "family": "reference-burst-v2-20261118",
+      "index": 4,
+      "renderer": "vendor/reference-burst-v2-20261118.py"
+    },
+    {
+      "id": "court-manga",
+      "name": "Court Manga",
+      "family": "reference-burst-v2-20261118",
+      "index": 5,
+      "renderer": "vendor/reference-burst-v2-20261118.py"
+    },
+    {
+      "id": "red-drive",
+      "name": "Red Drive",
+      "family": "anime-v2-20261118",
+      "index": 0,
+      "renderer": "vendor/anime-v2-20261118.py"
+    },
+    {
+      "id": "ace-afterimage",
+      "name": "Ace Afterimage",
+      "family": "anime-v2-20261118",
+      "index": 1,
+      "renderer": "vendor/anime-v2-20261118.py"
+    },
+    {
+      "id": "pure-swish",
+      "name": "Pure Swish",
+      "family": "anime-v2-20261118",
+      "index": 2,
+      "renderer": "vendor/anime-v2-20261118.py"
+    },
+    {
+      "id": "manga-ink",
+      "name": "Manga Ink",
+      "family": "anime-v2-20261118",
+      "index": 3,
+      "renderer": "vendor/anime-v2-20261118.py"
+    },
+    {
+      "id": "clutch-impact",
+      "name": "Clutch Impact",
+      "family": "anime-v2-20261118",
+      "index": 4,
+      "renderer": "vendor/anime-v2-20261118.py"
+    }
+  ],
+  "inference": "existing measured native make/miss evidence only; gallery trajectories excluded"
+}

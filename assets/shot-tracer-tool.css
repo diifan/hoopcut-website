@@ -63,3 +63,7 @@ header nav{display:flex;gap:18px;flex-wrap:wrap}header nav a{color:inherit;text-
 .clip-checklist summary{cursor:pointer;min-height:44px;align-content:center;color:#f2f3eb;font-weight:600}
 .clip-checklist summary:focus-visible,.clip-checklist a:focus-visible{outline:2px solid #ff996f;outline-offset:4px}
 .clip-checklist ul{padding-left:20px;margin:12px 0}.clip-checklist li+li{margin-top:10px}.clip-checklist strong{color:#f2f3eb}.clip-checklist p{margin:12px 0 0}.clip-checklist a{color:#ffad85;text-decoration:underline;text-underline-offset:3px}
+
+.effect-list.gallery-styles{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));max-height:390px;overflow:auto;gap:8px}.gallery-styles button{min-width:0;padding:8px;display:flex;flex-direction:column;align-items:stretch}.gallery-styles img{width:100%;aspect-ratio:2/1;object-fit:cover;border-radius:6px}.gallery-styles .effect-name{font-size:12px}
+
+.gallery-styles img{height:auto}
