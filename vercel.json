@@ -58,5 +58,15 @@
       ]
     }
   },
-  "installCommand": "npm ci"
+  "installCommand": "npm ci",
+  "rewrites": [
+    {
+      "source": "/auth/tiktok/advertiser/callback",
+      "destination": "/api/tiktok/advertiser-callback"
+    },
+    {
+      "source": "/auth/tiktok/account/callback",
+      "destination": "/api/tiktok/account-callback"
+    }
+  ]
 }
