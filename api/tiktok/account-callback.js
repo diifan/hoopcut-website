@@ -1,2 +1,2 @@
-import { callbackHandler } from '../../lib/tiktok-callback.js';
-export default callbackHandler('account');
+import {route,callback} from '../../lib/tiktok-oauth.js';
+export default route(callback);

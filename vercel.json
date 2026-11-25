@@ -56,6 +56,10 @@
       "regions": [
         "sin1"
       ]
+    },
+    "api/tiktok/*.js": {
+      "maxDuration": 60,
+      "includeFiles": "lib/supabase-ca.crt"
     }
   },
   "installCommand": "npm ci",
@@ -67,6 +71,10 @@
     {
       "source": "/auth/tiktok/account/callback",
       "destination": "/api/tiktok/account-callback"
+    },
+    {
+      "source": "/auth/tiktok/connect",
+      "destination": "/api/tiktok/connect"
     }
   ]
 }

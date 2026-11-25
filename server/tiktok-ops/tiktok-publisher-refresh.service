@@ -1,0 +1,16 @@
+[Unit]
+Description=Refresh authorized TikTok publisher account tokens
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=swi-codex
+ExecStart=/usr/bin/python3 /var/lib/swi-codex/.local/state/tiktok-publisher/tiktok-admin.py refresh
+Environment=HTTPS_PROXY=http://127.0.0.1:7890
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+TimeoutStartSec=90
