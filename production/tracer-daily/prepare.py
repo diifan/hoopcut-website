@@ -45,7 +45,7 @@ def collect_occupied(worktree,batch_id):
  reservations=[]
  for f in (ROOT/'state').glob('*.reservation.json'):reservations.append(read(f))
  keys,slugs=occupied(reservations,batch_id)
- files=set(PROJECT_ROOT.glob('website*/content/shot-tracer/batches/*/pages.json'))
+ files=set(PROJECT_ROOT.glob('website*/content/shot-tracer/batches/*/*.json'))
  files.update((worktree/'content/shot-tracer').glob('*.json'))
  for f in files:
   if f.parent.name==batch_id:continue
@@ -146,10 +146,11 @@ def main():
    else:selected=eligible[:args.target]
    r.update(eligible_count=len(eligible),shortfall=max(0,args.target-len(selected)),eligible_remaining_after_reservation=max(0,len(eligible)-len(selected)))
    r['checks']['selection_counts']=counts
-   r['next_day_pool_warning']={'required':r['eligible_remaining_after_reservation']<args.target,'for_day':(dt.date.fromisoformat(day)+dt.timedelta(days=1)).isoformat(),'eligible_remaining':r['eligible_remaining_after_reservation'],'shortfall':max(0,args.target-r['eligible_remaining_after_reservation']),'delivery_owner':'controller; SEO-Agent group mention to Cao Shiyu'}
-   if len(selected)<args.target and counts.get('unresolved_source_fetch',0):
+   unresolved=sum(v for k,v in counts.items() if k.startswith('unresolved_') and isinstance(v,int))
+   r['next_day_pool_warning']={'verification_complete':unresolved==0,'unresolved':unresolved,'required':unresolved==0 and r['eligible_remaining_after_reservation']<args.target,'for_day':(dt.date.fromisoformat(day)+dt.timedelta(days=1)).isoformat(),'eligible_remaining':r['eligible_remaining_after_reservation'],'shortfall':max(0,args.target-r['eligible_remaining_after_reservation']),'delivery_owner':'controller; SEO-Agent group mention to Cao Shiyu'}
+   if len(selected)<args.target and unresolved:
     r['next_day_pool_warning']['required']=False
-    checkpoint('source_evidence_incomplete',generated_count=0,error='来源抓取尚未完成，不能判定词池不足',blockers=[{'type':'source_fetch_incomplete','unresolved_keywords':counts['unresolved_source_fetch'],'eligible_count':len(selected)}]);return 2
+    checkpoint('source_evidence_incomplete',generated_count=0,error='来源抓取尚未完成，不能判定词池不足',blockers=[{'type':'source_fetch_incomplete','unresolved_keywords':unresolved,'eligible_count':len(selected)}]);return 2
    if len(selected)<args.target:
     checkpoint('insufficient_pool',generated_count=0,shortfall=args.target-len(selected),blockers=[{'type':'pool_shortfall','eligible_count':len(selected),'shortfall':args.target-len(selected)}]);return 2
    save(reservation_file,{'batch_id':batch,'day':day,'keywords':[x['keyword'] for x in selected],'slugs':[x['slug'] for x in selected],'selected':selected,'pool_sha256':r['pool_sha256'],'receipt':str(args.receipt.resolve())})

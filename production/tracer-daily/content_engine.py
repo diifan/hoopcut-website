@@ -17,6 +17,11 @@ EXCLUDE = re.compile(r'\b(weather|obituar\w*|funeral|death|dead|murder|arrest|ja
 
 
 RESEARCH_HOSTS = {'ncsasports.org', 'www.ncsasports.org', 'xbotgo.com', 'www.xbotgo.com', 'sportsvisio.com', 'www.sportsvisio.com'}
+# Verified in the existing Semrush homecourt.ai competitor report, 2026-11-24.
+# Keep explicit basketball context and identity alignment mandatory for these sources.
+RESEARCH_HOSTS.update(h for domain in ('homecourt.ai', 'shottracker.com', 'hoopsalytics.com',
+    'noahbasketball.com', 'dribbleup.com', 'thehoopsgeek.com', 'hoopcoach.org', 'elitehoopsapp.com')
+    for h in (domain, 'www.' + domain))
 def research_context(url, keyword):
     parsed = urlparse(url)
     if parsed.scheme != 'https' or parsed.hostname not in RESEARCH_HOSTS:

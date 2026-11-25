@@ -13,6 +13,9 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 ALLOWED = {'hudl.com', 'www.hudl.com', 'fan.hudl.com', 'support.hudl.com', 'ncsasports.org', 'www.ncsasports.org', 'xbotgo.com', 'www.xbotgo.com', 'sportsvisio.com', 'www.sportsvisio.com'}
+ALLOWED.update(h for domain in ('homecourt.ai', 'shottracker.com', 'hoopsalytics.com',
+    'noahbasketball.com', 'dribbleup.com', 'thehoopsgeek.com', 'hoopcoach.org', 'elitehoopsapp.com')
+    for h in (domain, 'www.' + domain))
 MAX_BODY = 1024 * 1024
 _LOCAL = threading.local()
 
