@@ -139,7 +139,8 @@ def main():
    if len(cached_eligible)>=args.target:
     cache_counts={'reused_verified_eligible':len(cached_eligible),'refresh_skipped_sufficient_verified_cache':True}
    else:
-    cache_counts=refresh_cache(snapshot,args.source_manifest,ROOT/cfg['cache_path'],keys,slugs,worktree/'scripts',proxy=cfg['proxy'],max_workers=8)
+    source_proxy=cfg.get('proxy_policy',{}).get('primary') or cfg['proxy']
+    cache_counts=refresh_cache(snapshot,args.source_manifest,ROOT/cfg['cache_path'],keys,slugs,worktree/'scripts',proxy=source_proxy,max_workers=8)
    r['checks']['source_cache_refresh']=cache_counts
    eligible,counts=select_candidates(snapshot,args.source_manifest,ROOT/cfg['cache_path'],keys,slugs,worktree/'scripts')
    reservation=read(reservation_file) if reservation_file.exists() else None
