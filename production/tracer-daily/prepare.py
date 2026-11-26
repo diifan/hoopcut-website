@@ -98,7 +98,10 @@ def main():
    if probe.returncode==0 and len(fields)==2 and fields[1]=='refs/heads/main' and fields[0]==local:
     r['checks']['live_main_fallback']={'commit':local,'verified_at':dt.datetime.now(dt.timezone.utc).isoformat(),'exact_match':True}
     return probe.stdout.strip()
-  if p.returncode:raise RuntimeError(f'{name}: exit {p.returncode}; see {log}')
+  if p.returncode:
+   if 'exceeded our fair use limits' in (p.stdout+p.stderr).lower():
+    raise RuntimeError('vercel_team_fair_use_block: Your Team exceeded our fair use limits and has been blocked.')
+   raise RuntimeError(f'{name}: exit {p.returncode}; see {log}')
   return p.stdout.strip()
  git=['git','-c','http.proxy='+os.environ.get('HOOPCUT_GIT_PROXY',cfg['proxy']),'-c','http.version=HTTP/1.1','-c','http.postBuffer=524288000']
  def api(path,name):return json.loads(run([cfg['vercel'],'api',path,'--scope',cfg['scope']],name=name,timeout=120))
@@ -223,7 +226,8 @@ def main():
   return 0
  except Exception as e:
   r.setdefault('failure_history',[]).append({'at':dt.datetime.now(dt.timezone.utc).isoformat(),'stage':r.get('stage'),'error':str(e)})
-  checkpoint('preparation_failed',ready_for_promotion=False,error=str(e),blockers=[{'type':'preparation_error','detail':str(e)}]);return 1
+  external='vercel_team_fair_use_block' in str(e)
+  checkpoint('blocked_vercel_fair_use' if external else 'preparation_failed',ready_for_promotion=False,error=str(e),blockers=[{'type':'vercel_team_fair_use_block' if external else 'preparation_error','detail':str(e),'external_recovery_required':external}]);return 1
  finally:
   lock.close()
 if __name__=='__main__':sys.exit(main())
